@@ -1,0 +1,66 @@
+- [User profile](user_profile.md) — Spanish-speaking macOS dev on M4 Air; free/local-first/no-telemetry preferences.
+- [InterviewApp project](project_interviewapp.md) — ParakeetAI-like macOS Swift assistant at ~/Desktop/InterviewApp; Phase 0 done, Phase 1 is the SwiftPM skeleton + invisible overlay.
+- [Moscú project state](project_moscu_state.md) — Estado actualizado 2026-05-22: Pases 1-26 + F1-F6 + Ruta A/B completados. Proyecto en ~/Desktop/InterviewApp/antigravity/, build con `./scripts/run-app.sh release`.
+- [Moscú second brain](project_moscu_second_brain.md) — second-brain vision, Phase 1-3 roadmap, and the Microsoft Graph decision overriding local-first.
+- [Appriss support role](project_appriss_support_role.md) — Juan es L2 Support en Appriss Retail (cola RCS); contexto de la migración/unificación de Incident.
+- [Jira read-only](feedback_jira_read_only.md) — nunca escribir en Jira; yo redacto el paso a paso, él lo aplica manualmente.
+- [13 usuarios en membership.Users](project_membership_users_13.md) — investigación jul 2026; la discrepancia con Kiran es de clave de join, no de datos.
+- [Esquema de usuarios Incident](reference_esquema_usuarios_incident.md) — llaves de comparación y ruta de migración lpuser2 → Users + lhua, según Kiran.
+- [Accesos de Juan](project_juan_accesos.md) — Control Panel USPROD, DB read+write, Snowflake, SnowTime, Azure limitado. No pedirle permisos a otros.
+- [Equipo Support Appriss](project_appriss_support_team.md) — roster real (12 personas, quién es de Colombia y quién de India); única fuente para asignar tickets.
+- [Triage backlog 3 ago 2026](project_backlog_triage_2026_08_03.md) — 37 sin asignar en 11 patrones, reparto propuesto y los 6 pendientes que quedaron abiertos.
+- [Workflow RCS en Jira](reference_jira_rcs_workflow.md) — cerrar son dos pasos, Resolve a Completed y después Close; nada se cierra solo.
+- [Reglas de comentarios](feedback_comentarios_reglas.md) — checklist obligatorio de cliente/interno/Teams, aplicado siempre sin que lo pida.
+- [Estilo de mensajes](feedback_estilo_mensajes.md) — sin guiones, humano y conciso, tono colaborativo, no concluir de más.
+- [Flujo de tickets](project_flujo_tickets.md) — todo ticket arranca desde Kristine Guide + Cheat Sheet + reuniones de Moscú, no desde cero.
+- [Truco Screen Designer rebuild](reference_screen_designer_rebuild.md) — atajo de Kiran para pantallas rotas/404 (?ADMIN=9QQP + Build All Screens), con la advertencia de Santikos.
+- [Control Panel, dónde está cada cosa](reference_control_panel_admin.md) — el flag Disabled está en User details junto al email, y las cinco pestañas donde Kiran lo buscó sin encontrarlo.
+- [Patrones de la Unificación](reference_unificacion_patrones.md) — email como username, duplicados con sufijo 1/2/3, timeout 300→30, y la regla de no perseguir el síntoma antes que la causa.
+- [Ficha de clientes y ruta de change requests](reference_ficha_clientes_onboarding.md) — CSM/PM/devs viven en los tickets "Set Up System Monitoring"; incluye CWH cliente 248.
+- [Estado abierto 5 ago 2026](project_estado_abierto_2026_08_05.md) — RCS-28075 y Vedant, el pedido para la próxima ola de unificación, y dónde quedaron los documentos nuevos.
+- [Página Confluence del retrospective](reference_confluence_unificacion_bucket_review.md) — pageId 478077845530, v4 con 64 tickets, y los 3 labels que faltan aplicar en Jira.
+- [Agrupar no es causa raíz](feedback_agrupar_no_es_causa_raiz.md) — el error del CWH G1 con Edwin: leer los comentarios antes de decir "es el mismo patrón".
+- [Campo Product Type en Jira](reference_jira_product_type_field.md) — cf[15196] separa Incident de Secure 5; el filtro que faltó en el barrido de la Unificación.
+- [Multidistrito en LHUA](reference_multidistrito_lhua.md) — con dos distritos asignados solo se ve uno; confirmado con Dayna Rivera en Vitamin Shoppe.
+- [Jerarquía de ubicaciones en Incident](reference_jerarquia_ubicaciones_incident.md) — LHUA asigna tiendas, el distrito se hereda del StoreIdent primario; y qué ya se descartó.
+- [Acceso SQL a los tenants](reference_acceso_sql_tenants.md) — Bastion + SSMS, nomenclatura de las DB, Client IDs 209/423/433 y el barrido cross-database.
+- [Configuration items y feature flags](reference_configuration_items_features.md) — viven en secure.ConfigurationItem y el valor efectivo puede ser CustomerEditedValue.
+- [Descarga de PDF rota por ERMS](reference_erms_lpms_descarga_pdf.md) — ERMS sube los archivos al directorio lpms; causa raíz de RCS-28124 según Kiran.
+- [Borradores al final](feedback_borradores_al_final.md) — no redactar comentarios mientras queden consultas por correr; primero cerrar la evidencia.
+- [Playbook ARDM de Peyman](reference_ardm_playbook_peyman.md) — tablas de referencia, rastrear un campo hasta su join, Greenplum vs Snowflake, backup y dedup.
+- [Instancias ARDM por cliente](reference_ardm_instancias_clientes.md) — el client matrix, qué cliente vive en qué GP, BYF = Big Y 362, y el acceso a los clusters.
+- [RCS-28077 y RCS-28003](project_rcs_28077_28003.md) — estado de los dos tickets de Sebastián al 11 ago: datos corregidos, código pendiente.
+- [Peyman Motlagh](reference_peyman_motlagh.md) — la fuente de ARDM, prefiere llamadas grabadas a chat, y se va en diciembre de 2026.
+- [Bloqueos de Cloudflare](reference_waf_cloudflare_bloqueos.md) — la página de bloqueo dice si el disparador es contenido o país; sin Ray ID no se agrupa nada.
+- [Reparto de cola 11 ago 2026](project_reparto_cola_2026_08_11.md) — 46 a 24, dueños por bucket, y por qué repartir todo no es un plan.
+- [Estado de Juan 11 ago 2026](project_estado_juan_2026_08_11.md) — los 5 pendientes concretos y el cambio de contacto a Brandon Bigelow.
+- [RCS-28256 Tailored Brands](project_rcs_28256_tailored_brands.md) — cliente 209: flags confirmados, despliegue descartado, solo queda el timeout de Izenda sin dueño.
+- [Estado abierto 11 ago 2026](project_estado_abierto_2026_08_11.md) — la cola al cerrar el día y qué se hace primero mañana.
+- [Leer Teams antes de investigar](feedback_leer_teams_antes_de_investigar.md) — el equipo suele haberlo hecho ya; el hilo es evidencia de primera clase.
+- [Chat Unificación 12 ago 2026](project_teams_unificacion_2026_08_12.md) — PRs de performance de Chris, AutoZone P1 no es unificación, flags de Walmart 300.
+- [RCS-27973 y RCS-28283](project_rcs_27973_28283.md) — GAP canceladas en Identify con causa confirmada, y el 28283 que Nikita creía escalado y no lo está.
+- [Procedimiento de escalación a L3](reference_escalacion_l3_procedimiento.md) — el ENG se auto-crea con la transición; solo Infra y Security se quedan a tu nombre.
+- [Fechas en Jira](feedback_fechas_jira_updated.md) — created y updated no sirven para contar silencio; contar desde el último comentario real.
+- [Acuse de primer contacto](feedback_ack_primer_contacto.md) — 3 o 4 frases sin nada técnico; releer appriss-jira-support antes de escribir, no citarla de memoria.
+- [Bucket review sesión 2](project_bucket_review_sesion2.md) — 88/50 al 13 ago, lo que la reunión agregó a la página de JR y las 5 decisiones abiertas.
+- [Estado abierto 13 ago 2026](project_estado_abierto_2026_08_13.md) — lo que salió a PROD hoy, por qué no le toca a Juan, y sus pendientes uno por uno.
+- [Medir lentitud con DevTools](reference_medir_lentitud_web_devtools.md) — tenant de control, Preserve log, y el TTFB que decide si el tiempo es del servidor o del cliente.
+- [Regresión de plan en Query Store](reference_query_store_regresion_plan.md) — misma consulta de subsegundo a 57 s: estimador de cardinalidad 140 vs 160.
+- [Verificar la fuente, no el resumen](feedback_verificar_la_fuente_no_el_resumen.md) — el PR que Chris llamó "caching" era otra cosa; leer y nunca accionar en sistemas ajenos.
+- [Diagnóstico de SSO en Incident](reference_sso_incident_diagnostico.md) — el SSO Response Log dice en un vistazo si el bloqueo es nuestro o del IdP del cliente.
+- [Bucket de adjuntos Uni_Jul_26](project_uni_jul_26_attachments.md) — el tag, los tres tickets, y por qué probar 150 MB no cierra un caso de 686 MB.
+- [Escalación ADUSA 14 ago 2026](project_adusa_escalacion_2026_08_14.md) — el VP de IT pidió rollback y mencionó el contrato; los compromisos dados y las dos cosas que quedaron mal dichas.
+- [Ficha ADUSA y mis tickets](project_adusa_ficha_y_tickets.md) — Client ID 441, contactos, y el estado real de los ocho tickets de Juan al 14 ago.
+- [Izenda, las dos rutas](reference_izenda_adusa_dos_rutas.md) — el visor y la entrega programada leen fuentes distintas; los tres defectos que el cliente llama igual.
+- [ChangeLocation y RecreateCaseNo](reference_recreate_caseno_changelocation.md) — por qué el case number no sigue a la tienda, la herramienta que lo arregla, y las 3 pruebas de UI para descartar duplicado.
+- [RCS-28240 United Supermarkets](project_rcs_28240_united_supermarkets.md) — SSO de test parado desde abril esperando que Albertsons toque su IdP.
+- [LPUser, LPUser2 y membership.Users](reference_lpuser_lpuser2_membership.md) — membership se sembró de LPUser pero nettrack lee LPUser2; de ahí salen los usuarios rotos y el punto ciego del fix de Kiran.
+- [Standup ADUSA 18 ago 2026](project_adusa_standup_2026_08_18.md) — causa raíz completa de la migración de usuarios, el encuadre de los 800K y los tickets sin dueño.
+- [Moscú sin GPT](project_moscu_sin_gpt.md) — la key de Azure murió; Moscú queda como almacén y Claude Code pasa a ser el motor.
+- [Flujo de trabajo: Cerebro](project_flujo_trabajo_cerebro.md) — raíz única en ~/Desktop/Cerebro con buscar, guardar y exportar.
+- [Nada se queda solo en la consola](feedback_nada_solo_en_consola.md) — todo entregable se escribe a inbox/ en el momento, no al final.
+- [Proceso RCA en Appriss](reference_proceso_rca_appriss.md) — Shorthand vs Report, SLA desde resolución, ticket OUTM previo, y los 3 Claude Skills ya construidos para generarlo.
+- [Estado abierto 18 ago 2026](project_estado_abierto_2026_08_18.md) — RCS-28379, Izenda global (ENG-5649), Stater Bros (RCS-28431) activo, causa raíz Izenda→502 confirmada en la reunión ADUSA, y qué del barrido 28021/28196/28415 quedó bien o mal confirmado.
+- [Tracker ADUSA para el cliente, 18 ago](project_adusa_tracker_cliente_18ago.md) — construido y validado, correo listo, falta verificar 10 puntos en Jira; el handoff completo está en Cerebro.
+- [Formato del tracker y método de correo de J.R.](reference_tracker_adusa_formato.md) — 10 columnas al cliente vs 14 internas, y las 7 reglas de sus correos con la métrica de longitud.
+- [Hosts PU vs clásico](reference_hosts_pu_vs_clasico.md) — app.apprissretail.com es PU y usprod no lo es; el host de la URL decide quién administra los permisos.

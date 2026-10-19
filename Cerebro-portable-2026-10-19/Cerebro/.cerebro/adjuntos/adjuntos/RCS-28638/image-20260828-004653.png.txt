@@ -1,0 +1,26 @@
+# Adjunto image-20260828-004653.png
+Ruta: adjuntos/RCS-28638/image-20260828-004653.png
+Tipo: png
+Ticket: RCS-28638
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Transaction ID
+=
+2608273342446971618
+Store No
+Cashier No
+219 1077380
+End Trans Date Time
+27/08/2026 12:11:49 PM
+Transaction Amount
+-500.00
+Register
+618
+Transaction
+44
+Transaction Type
+Return/Exchange With Proof Of Purchase
+Financial Statement Date
+Order Number
+Proof Type

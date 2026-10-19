@@ -1,0 +1,66 @@
+# Adjunto 2608267428125472187-20260827-054700.jpg
+Ruta: adjuntos/RCS-28612/2608267428125472187-20260827-054700.jpg
+Tipo: jpg
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Myer Group
+Garden City
+www.myer.com.au
+Myer Pty Ltd
+26/08/2026 11:59:37 AM
+Team Member: Johanna
+Pos 123
+Store 47
+Cashier 1221615
+Trans# 41
+*** SALE ***
+QTY
+SUNGLASS HUT CONCESSION ITEM
+827829740
+Class Group: 1327
+SUNGLASS HUT CONCESSION ITEM
+827829740
+-1
+Class Group: 1327
+SUNGLASS HUT CONCESSION ITEM
+827829740
+1
+Class Group: 1327
+Price
+$0.00
+$0.00
+$473.00
+SUNGLASS HUT CONCESSION ITEM
+827829740
+Class Group: 1327
+% OFF ITEM
+Value Change Reason: Brand Partner Offer
+$473.00
+$-189.20
+Amt
+$0.00
+$0.00
+V
+$473.00
+$283.80
+TOTAL
+$756.80
+Mastercard
+$756.80
+Card No 1B1420ABF02708A0181C5C92C560135FABF31CA51817
+AUTH: 109108
+TAX INVOICE
+GST Incl. In Total $68.8
+Customer Information
+Customer Name: JAMES MORRIS
+Address: 3 SYKES PLACE
+Suburb: HAMILTON HIL
+State: WA
+Postal Code: 6163
+Phone#: 0406940556
+ITEMS SOLD
+ITEMS RETURNED
+?
+Business Date: 26/08/2026

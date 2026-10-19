@@ -1,0 +1,24 @@
+# Adjunto mapa-tendertype-pacsun.txt
+Ruta: adjuntos/RCS-29129/mapa-tendertype-pacsun.txt
+Tipo: txt
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+Mapa TenderType PacSun en returns, 24 jul a 25 sep 2026, Composer + Snowflake ARDM_213
+21 CC Visa
+14 CC MasterCard
+6 Debit Card
+24 TikTok
+22 Gift Card
+30 PayPal
+19 Cash
+2 CC American Express
+7 CC Discover
+29 Amex
+28 AfterPay
+33 Klarna
+34 Affirm
+32 GE
+31 MKT
+99 Unknown
+11 15 17 Merchandise Return Card: sin uso

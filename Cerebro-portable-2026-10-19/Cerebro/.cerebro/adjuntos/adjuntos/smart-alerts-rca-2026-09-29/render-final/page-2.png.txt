@@ -1,0 +1,64 @@
+# Adjunto page-2.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render-final/page-2.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+Incident Timeline
+Times below use Pacific Daylight Time, UTC-7. The supplied template says PST; September dates require PDT. Jira displays
+EDT and Teams displays Bogotá time, UTC-5. Times describe the stated event, not the ticket updated field.
+Date
+Sep 20
+Sep 24
+Sep 24
+Sep 25
+Sep 27
+Sep 27
+Sep 27
+Sep 27
+Sep 28
+Sep 28
+Sep 28
+Sep 28
+Time PDT
+Action / Notes
+07:12 approx.
+Earlier case 0619-27 records completed alert processing. Reported nonreceipt remains a separate
+unresolved cause. [S3]
+04:06:43
+Last observed completed ADUSA run, 11:06:43 UTC. This bounds the investigation; it does not establish
+exact onset. [S3]
+13:20 approx.
+First missing-history example identified by Leigh Ann, reported in her September 25 comment. [S3]
+17:47
+Support publishes the corrected log analysis: 89 Begin, zero End, 76 in-process exits in the sampled
+window; queue count rises from 217 to 222. [S3]
+04:17 / 04:28
+11:33
+Jira records escalation from Medium to High at 04:17 and on-call acknowledgement at 04:28. [S2]
+J.R. relays the customer workaround: extra staff run reports and send manual leadership emails; one alert
+reportedly arrived five times. [S4]
+15:30
+Russ finds eight of nine listed subjects in provider logs. Case 0143-14 is absent. These checks disprove a
+complete transport outage. [S4]
+18:39
+07:38
+Kiran records ConfigureAwait(False) on both Await calls as the solution in ENG-9486. [S1]
+Manual QA task ENG-9533 transitions to Done. Test scope and results need attachment to the final
+evidence package. [S5]
+09:43
+11:30 approx.
+13:42
+Kiran posts "Deploying" in Teams. This is a deployment update, not proof of completed US rollout. [S4]
+|Jim reports ADUSA alerts arriving again, as published by Support in RCS-29123. [S2]
+Joe confirms receipt of a Vitamin Shoppe test alert in the customer-visible ticket. [S6]
+Business Impact
+ADUSA described disruption to critical incident communications across Asset Protection, Operations and Legal for at least two
+brands, and used manual reporting and emails. Vitamin Shoppe reported failed incident notifications. Engineering identifies
+exposure across cohesion-mode customers with active Smart Alerts. The confirmed customer examples do not measure the
+entire population. [S1, 54, 56]
+The total of missed, duplicate and delivered notifications remains unknown. Missing SmartAlertProcess rows are not a
+reliable count of undelivered mail. No source establishes loss of underlying incident records; confirm data integrity and the
+unrecovered notification backlog before making a no-data-loss statement.
+Internal Use Only | 2

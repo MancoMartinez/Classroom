@@ -1,0 +1,11 @@
+# Adjunto page-5.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render/page-5.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+External delivery follows the completed retro, uses plain language and customer-specific scope, and requires approval from
+the Support Manager, the involved department Manager and the Support VP. Do not include other customers in a customer's
+external RCA. [P1, P2]
+Internal Use Only | 5

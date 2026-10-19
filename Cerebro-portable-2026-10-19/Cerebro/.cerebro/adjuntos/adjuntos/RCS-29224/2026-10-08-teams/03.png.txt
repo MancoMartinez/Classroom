@@ -1,0 +1,33 @@
+# Adjunto 03.png
+Ruta: adjuntos/RCS-29224/2026-10-08-teams/03.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+et notifications for urgent messages and from your priority contacts.
+Jenny Wang Chat Shared
+Notes
+Recap
+Change settings
+X
+Storyline
+Thursday 2:03 PM
+Hello Jenny. Hope you're having a great day
+I have some questions about the AAP data issues. As Shaun mentioned in the group chat.
+they want to change the time they send the Inventory file, from 1:30AM EST to 9:30AM EST.
+I'm reaching out to you because its not clear to me if this will have any impact on our side
+or side effects?
+From what I gather, the time the file is sent is not an issue but the way some values are
+calculated can be affected, right?
+99
+Jenny Wang Thursday 2:56 PM
+The design I have implemented before migration to Snowlime is -
+• job nuts daily
+• wait till we received all inventory files
+• wait till pos data has been processed and loaded
+that was the old design. And I can't speak for SnowTime.
+Thursday 3:09 PM
+I see. Thank you Jenny. Appreciate your feedback
+Type a message
++

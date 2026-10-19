@@ -1,0 +1,815 @@
+{
+  "rows": [
+    {
+      "key": "RCS-27233",
+      "status": "Closed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "PVH - no see all categories - example indent report in Izenda",
+      "comments": 145,
+      "recent": 2,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-27542",
+      "status": "Closed",
+      "assignee": "Camila Cortes",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Boot Barn - Users cannot complete an audit as they are getting this error",
+      "comments": 40,
+      "recent": 5,
+      "talos": 0,
+      "last": {
+        "id": "3372341",
+        "date": "2026-09-29"
+      }
+    },
+    {
+      "key": "RCS-27765",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Winn-Dixie - Data file check",
+      "comments": 22,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3382959",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-27847",
+      "status": "Work in progress",
+      "assignee": "Yemliha Kamber",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Samsung -  3rd Party Infra Readiness Checklist information needed.",
+      "comments": 5,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-27864",
+      "status": "Under Customer Review",
+      "assignee": "Nikita Rathore",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Alshaya - Total Void Count",
+      "comments": 26,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3380735",
+        "date": "2026-10-04"
+      }
+    },
+    {
+      "key": "RCS-27947",
+      "status": "Under Customer Review",
+      "assignee": "Bikash Kumar",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "CTC - Mark's NRR Transactions Not Showing Postal Code",
+      "comments": 19,
+      "recent": 3,
+      "talos": 0,
+      "last": {
+        "id": "3381036",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-27973",
+      "status": "Under Customer Review",
+      "assignee": "Peyman Motlagh",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "GAP-Cancelled orders data sync to Appriss for Customer bala Kotipalli",
+      "comments": 25,
+      "recent": 1,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28021",
+      "status": "Closed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Ahold - Unable to use Izenda",
+      "comments": 44,
+      "recent": 2,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28033",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Big Y Foods- LPMS Login Issue",
+      "comments": 55,
+      "recent": 1,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28099",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "CWH - HYP to RCS - Item Discount Logic",
+      "comments": 11,
+      "recent": 2,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28212",
+      "status": "Closed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "APIS - Elevated Cases have wrong Case Type",
+      "comments": 24,
+      "recent": 4,
+      "talos": 0,
+      "last": {
+        "id": "3382041",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-28223",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "McDonald's - Restaurant Manager and Crew Cash Audit Questions",
+      "comments": 38,
+      "recent": 10,
+      "talos": 0,
+      "last": {
+        "id": "3383206",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-28240",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "United Supermarkets <> Appriss Retail Platform Unification Announcement | Appriss Incident Update Requested",
+      "comments": 12,
+      "recent": 2,
+      "talos": 0,
+      "last": {
+        "id": "3383011",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-28256",
+      "status": "Under Engineering Review",
+      "assignee": "Matthew Kamminga",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Appriss Incident Time Out(s) and Slow Load times",
+      "comments": 57,
+      "recent": 3,
+      "talos": 0,
+      "last": {
+        "id": "3375606",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "key": "RCS-28281",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Ahold - Transaction Data Load For August 10, 2026 Incomplete  (AHL/ Ahold Instance of 5.4)",
+      "comments": 26,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3382958",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-28294",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Vallarta - Smart Alerts no Triggering ",
+      "comments": 43,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3375710",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "key": "RCS-28327",
+      "status": "Work in progress",
+      "assignee": "Juan Ramirez",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Delhaize (DHZ): Loyalty Discounts not Specified",
+      "comments": 9,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3374011",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "key": "RCS-28351",
+      "status": "Closed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Blain's - Unable to Attach Files to Case Reports",
+      "comments": 12,
+      "recent": 1,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28469",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "PVH-not able to add any document print form.",
+      "comments": 12,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28534",
+      "status": "Under Customer Review",
+      "assignee": "Diego Buelvas",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Stater Bros. - Legal Follow Up Smart Alert not working",
+      "comments": 30,
+      "recent": 15,
+      "talos": 0,
+      "last": {
+        "id": "3381349",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-28581",
+      "status": "Waiting for Software Release",
+      "assignee": "Mauricio Zapata",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "CWH- POS Number has regressed to previous mapping",
+      "comments": 9,
+      "recent": 1,
+      "talos": 0,
+      "last": {
+        "id": "3370256",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "key": "RCS-28638",
+      "status": "Closed",
+      "assignee": "Sebastian Garces",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Myer Australia - Mapping of Proof Type, Order No and Financial Statement Date is missing since 09/08/26",
+      "comments": 21,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28667",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "New users added to the platform",
+      "comments": 14,
+      "recent": 2,
+      "talos": 0,
+      "last": {
+        "id": "3373333",
+        "date": "2026-09-30"
+      }
+    },
+    {
+      "key": "RCS-28671",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "THD - Searches Producing only Errors",
+      "comments": 63,
+      "recent": 18,
+      "talos": 0,
+      "last": {
+        "id": "3381523",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-28683",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Apoyo local / Local support",
+      "summary": "Adding additional associate to case ",
+      "comments": 11,
+      "recent": 1,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28693",
+      "status": "Under Engineering Review",
+      "assignee": "Matthew Kamminga",
+      "role": "Apoyo local / Local support",
+      "summary": "Ahold Delhaize - User not provisioned to system unable to log in - SSO error should have defaulted to Store Reporter Role",
+      "comments": 25,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28700",
+      "status": "Closed",
+      "assignee": "Luis Hernandez",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "7-Eleven - Secure 5 - Load test files to QA site",
+      "comments": 70,
+      "recent": 7,
+      "talos": 0,
+      "last": {
+        "id": "3373447",
+        "date": "2026-09-30"
+      }
+    },
+    {
+      "key": "RCS-28753",
+      "status": "Closed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Nike - Logic for Manual Discount Amount field",
+      "comments": 23,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28756",
+      "status": "Under Customer Review",
+      "assignee": "Bikash Kumar",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Nike - ECOM Load issue since 28th August",
+      "comments": 39,
+      "recent": 13,
+      "talos": 0,
+      "last": {
+        "id": "3374745",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "key": "RCS-28809",
+      "status": "Work in progress",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "Kohl's - Employee Table Not Updating Home Stores",
+      "comments": 9,
+      "recent": 2,
+      "talos": 0,
+      "last": {
+        "id": "3382031",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-28871",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": " Walgreens -Peak Season Readiness 2026 : 3rd party connect (Appriss Retail)",
+      "comments": 15,
+      "recent": 4,
+      "talos": 0,
+      "last": {
+        "id": "3382963",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-28881",
+      "status": "Work in progress",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Nexcom - Unable to Edit APIS Audit",
+      "comments": 42,
+      "recent": 18,
+      "talos": 0,
+      "last": {
+        "id": "3383534",
+        "date": "2026-10-07"
+      }
+    },
+    {
+      "key": "RCS-28909",
+      "status": "Closed",
+      "assignee": "Diego Buelvas",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Urban Outfitters- Location - Incident Appriss",
+      "comments": 28,
+      "recent": 3,
+      "talos": 0,
+      "last": {
+        "id": "3374035",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "key": "RCS-28945",
+      "status": "Under Customer Review",
+      "assignee": "Hao T Nguyen",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Loblaw - Gift Card Redemption Showing Incorrectly ",
+      "comments": 18,
+      "recent": 2,
+      "talos": 0,
+      "last": {
+        "id": "3370509",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "key": "RCS-28977",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Vallarta Supermarkets, intermittent login and session errors across Chrome and Internet Explorer",
+      "comments": 4,
+      "recent": 0,
+      "talos": 0,
+      "last": null
+    },
+    {
+      "key": "RCS-28984",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Skechers - Unable to login to Incident",
+      "comments": 14,
+      "recent": 5,
+      "talos": 0,
+      "last": {
+        "id": "3383652",
+        "date": "2026-10-07"
+      }
+    },
+    {
+      "key": "RCS-28992",
+      "status": "Work in progress",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "ICA - Duplication records",
+      "comments": 4,
+      "recent": 2,
+      "talos": 0,
+      "last": {
+        "id": "3382022",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29026",
+      "status": "Work in progress",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Ahold - Smart Alert for Case No 2026 Food Lion ,LLC-0619-27",
+      "comments": 24,
+      "recent": 8,
+      "talos": 0,
+      "last": {
+        "id": "3381889",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29037",
+      "status": "Closed",
+      "assignee": "Sanath Acharya",
+      "role": "Historial ampliado / Historical scope",
+      "summary": "Appriss Internal - Claire’s VPN Outage: Catch-Up File Requirements Query [API Ingestion]",
+      "comments": 10,
+      "recent": 3,
+      "talos": 0,
+      "last": {
+        "id": "3370147",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "key": "RCS-29054",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Big 5 - New store alignment",
+      "comments": 14,
+      "recent": 10,
+      "talos": 0,
+      "last": {
+        "id": "3383207",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29055",
+      "status": "Under Customer Review",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "Kohl's Corporation - Idle Timer Too Short",
+      "comments": 7,
+      "recent": 5,
+      "talos": 0,
+      "last": {
+        "id": "3375698",
+        "date": "2026-10-02"
+      }
+    },
+    {
+      "key": "RCS-29104",
+      "status": "Under Delivery Review",
+      "assignee": "Damodaran Chandrababu",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "GPC - Missing Tender Details",
+      "comments": 8,
+      "recent": 0,
+      "talos": 1,
+      "last": null
+    },
+    {
+      "key": "RCS-29123",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Ahold-Delhaize - Smart Alerts are not generating today",
+      "comments": 12,
+      "recent": 5,
+      "talos": 1,
+      "last": {
+        "id": "3381531",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29126",
+      "status": "Work in progress",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "VF Corp - no search results for new case created AND Case missing",
+      "comments": 6,
+      "recent": 3,
+      "talos": 1,
+      "last": {
+        "id": "3373478",
+        "date": "2026-09-30"
+      }
+    },
+    {
+      "key": "RCS-29129",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "PacSun - We need a MERCH CARD Refund Ranking Rpt by Dollar & Count, (identical to the CASH Refund Ranking Rpt, location & example attached).",
+      "comments": 11,
+      "recent": 1,
+      "talos": 1,
+      "last": {
+        "id": "3371895",
+        "date": "2026-09-29"
+      }
+    },
+    {
+      "key": "RCS-29130",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Winn-Dixie - No transactions loaded for last hour",
+      "comments": 11,
+      "recent": 6,
+      "talos": 1,
+      "last": {
+        "id": "3383650",
+        "date": "2026-10-07"
+      }
+    },
+    {
+      "key": "RCS-29132",
+      "status": "Work in progress",
+      "assignee": "Luis Hernandez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "PacSun: Flag Merch Card refunds on non receipted returns, refunds to a different tender, and cards used by multiple customers",
+      "comments": 2,
+      "recent": 0,
+      "talos": 1,
+      "last": null
+    },
+    {
+      "key": "RCS-29140",
+      "status": "Work in progress",
+      "assignee": "Vedant Shirude",
+      "role": "Apoyo local / Local support",
+      "summary": "GoodwillSC -Property Damage Alert Emails",
+      "comments": 3,
+      "recent": 3,
+      "talos": 1,
+      "last": {
+        "id": "3381347",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29145",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "Vitamin Shoppe Inc - Smart Alerts are not triggering",
+      "comments": 7,
+      "recent": 7,
+      "talos": 0,
+      "last": {
+        "id": "3370899",
+        "date": "2026-09-28"
+      }
+    },
+    {
+      "key": "RCS-29146",
+      "status": "Under Customer Review",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "J Crew Group - Case Item ",
+      "comments": 6,
+      "recent": 6,
+      "talos": 0,
+      "last": {
+        "id": "3383284",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29147",
+      "status": "Under Customer Review",
+      "assignee": "Enrique Jimenez",
+      "role": "Apoyo local / Local support",
+      "summary": "Prada - Not able to log into PRADA account",
+      "comments": 7,
+      "recent": 7,
+      "talos": 0,
+      "last": {
+        "id": "3381608",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29152",
+      "status": "Under Delivery Review",
+      "assignee": "Adarsh Kumar",
+      "role": "Apoyo local / Local support",
+      "summary": "SBX - Line Voids and Cancels are missing items in the receipt",
+      "comments": 15,
+      "recent": 15,
+      "talos": 0,
+      "last": {
+        "id": "3383038",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29195",
+      "status": "Under Customer Review",
+      "assignee": "Diego Buelvas",
+      "role": "Apoyo local / Local support",
+      "summary": "Property Damage Smart alerts not triggering",
+      "comments": 9,
+      "recent": 9,
+      "talos": 1,
+      "last": {
+        "id": "3382713",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29205",
+      "status": "Work in progress",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "SBX NA - Work Item - \"Refunds - Refund to a Partners SVC or Credit Debit Card with no Partner Discount – fiscal period\" not producing results",
+      "comments": 14,
+      "recent": 14,
+      "talos": 1,
+      "last": {
+        "id": "3383254",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29206",
+      "status": "Under Customer Review",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "SBX NA - Work Item - \"Discounts - Partner Discount with controllable discounts on serve ware\" not producing results",
+      "comments": 8,
+      "recent": 8,
+      "talos": 1,
+      "last": {
+        "id": "3374861",
+        "date": "2026-10-01"
+      }
+    },
+    {
+      "key": "RCS-29207",
+      "status": "Completed",
+      "assignee": "Juan Martinez",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "SBX NA - Work Item - \"SFE - Star Farming same day high volume\" not producing results",
+      "comments": 15,
+      "recent": 15,
+      "talos": 1,
+      "last": {
+        "id": "3382815",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29231",
+      "status": "Under Delivery Review",
+      "assignee": "Mauricio Lancheros",
+      "role": "Apoyo local / Local support",
+      "summary": "Urban Outfitters - Cashier Summary - Refund where Original Transaction was Reprint Receipt- Report no longer functioning ",
+      "comments": 12,
+      "recent": 12,
+      "talos": 1,
+      "last": {
+        "id": "3381968",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RCS-29234",
+      "status": "Accepted into Development",
+      "assignee": "Shandana Khan",
+      "role": "Apoyo local / Local support",
+      "summary": "ADUSA - LPMS will not save cases",
+      "comments": 22,
+      "recent": 22,
+      "talos": 1,
+      "last": {
+        "id": "3382583",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29288",
+      "status": "Under Customer Review",
+      "assignee": "Sebastian Garces",
+      "role": "Asignación en periodo / Owned in period",
+      "summary": "McDonald's Monthly Alignment Report - October 2026",
+      "comments": 8,
+      "recent": 8,
+      "talos": 1,
+      "last": {
+        "id": "3383160",
+        "date": "2026-10-06"
+      }
+    },
+    {
+      "key": "RCS-29293",
+      "status": "Under Customer Review",
+      "assignee": "Luis Hernandez",
+      "role": "Apoyo local / Local support",
+      "summary": "Chanel - Smart Alert not emailing despite case displaying sent.",
+      "comments": 5,
+      "recent": 5,
+      "talos": 1,
+      "last": {
+        "id": "3382007",
+        "date": "2026-10-05"
+      }
+    },
+    {
+      "key": "RTS-208690",
+      "status": "Closed",
+      "assignee": "Anil P",
+      "role": "Apoyo local / Local support",
+      "summary": "[SnowTime] C037_CVS [GP9 | US LA4] -- Data Loader errors",
+      "comments": 9,
+      "recent": 9,
+      "talos": 0,
+      "last": {
+        "id": "3374654",
+        "date": "2026-10-01"
+      }
+    }
+  ],
+  "comments": 1309,
+  "talos": 15
+}

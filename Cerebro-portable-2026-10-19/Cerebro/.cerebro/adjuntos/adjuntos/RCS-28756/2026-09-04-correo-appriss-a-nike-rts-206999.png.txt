@@ -1,0 +1,67 @@
+# Adjunto 2026-09-04-correo-appriss-a-nike-rts-206999.png
+Ruta: adjuntos/RCS-28756/2026-09-04-correo-appriss-a-nike-rts-206999.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+[RTS-206999] - Nike - Load
+@ Summarize this email
+A
+Appriss Retail - Support
+© < Reply
+If Reply all Forward
+To: Gilgan, Taylor (WHQ) <taylor.gilgan@nike.com>; Coomler, Chris <chris.coomler@nike.com>; +4 others
+Cc: © Bryant McAnnally;
+• Camila Cortes;
+© Aimee Wadsworth; DG-L1RetailCustomerSupport; +3 others
+Fri 9/4/2026 7:44 PM
+Hello Team,
+We have noticed that we stopped receiving ECOM data from your end to our ingestion APl, from 2026-08-28, Due to this, we
+are observing low data loaded from Trading day 2026-08-28.
+Data load status -
+Trading Day
+2026-09-03
+2026-09-02
+2026-09-01
+2026-08-31
+2026-08-30
+2026-08-29
+2026-08-28
+2026-08-27
+2026-08-26
+2026-08-25
+2026-08-24
+2026-08-23
+2026-08-22
+2026-08-21
+Stores
+1,318
+2,191
+2,188
+2,216
+2,125
+2,232
+2,223
+2,231
+2,228
+2,221
+2,177
+2,092
+2,236
+2.238
+Transactions
+483,165
+468,035
+474,968
+538,524
+773,466
+926,118
+652,802
+776,668
+768,397
+762,401
+788,068
+896,974
+1,061,070
+907.326

@@ -1,0 +1,69 @@
+# Adjunto ryan-log-load_lp-20260925-1928.png
+Ruta: adjuntos/RCS-29083/ryan-log-load_lp-20260925-1928.png
+Tipo: png
+Ticket: RCS-29083
+Modificado: 2026-09-26
+
+Texto reconocido por OCR:
+9758
+9759
+9760
+9761
+9762
+9763
+9764
+9765
+9766
+9767
+9768
+9769
+9770
+9771
+9772
+9773
+9774
+9775
+9776
+0777
+9778
+9779
+9780
+97811
+9782
+9784
+9785
+9786
+**********************************************************************
+Fri 09/25/2026 19:27:59.76
+Setipserverenv.cmd completed....
+********************************************************************%
+Fri 09/25/2026 19:28:00.42 Starting Sedgwick process
+Fri 09/25/2026 19:28:00.53 SEV* files found. Continue processing.
+Fri 09/25/2026 19:28:00.65 Starting file encryption process
+Fri 09/25/2026 19:28:01.77 Completed file encryption process. errorleve1=0
+Fri 09/25/2026 19:28:02.05 Starting Source file SFTP process
+Fri 09/25/2026 19:28:02.15 Z:\Feeds\7-Eleven\config\SFTPPutSedgwick.config
+Fri 09/25/2026 19:28:06.74 SETP process for source files completed.
+Eri 09/25/2026 19:28:06.92
+Copying files to GallagherBasset
+Fri 09/25/2026 19:28:07.74 Done Copying files to GallagherBasset
+Fri 09/25/2026 19:28:08.08 Moved Sedgwick files to Done folder
+Fri 09/25/2026 19:28:08.25 Moving on to GallagherBasset process
+Eri 09/25/2026 19:28:08.44 Starting GallagherBasset process
+Eri 09/25/2026 19:28:08.52 Encrypting files|
+Fri 09/25/2026 19:28:09.46 Done Encrypting files
+Fri 09/25/2026 19:28:09.58 Starting SETP
+Fri 09/25/2026 19:28:09.68 2:\Feeds\7-Eleven\config\SFTPPutGallagher.conf1g
+Fri 09/25/2026 19:28:14.19 SFTP completed successfully
+Fri 09/25/2026 19:28:14.29 Moving files to GallagherBassett Done folder
+Fri 09/25/2026 19:28:14.54 Files moved
+Fri 09/25/2026 19:28:14.63 Ending GallagherBasset process
+Fri 09/25/2026 19:28:14.84 Ended Source file SFIP process
+Fri 09/25/2026 19:28:15.00 magsubj "7-Eleven process completed successfully"
+Fri 09/25/2026 19:28:15.09
+10965 7 ern 37080/00 Lane Fro completes oursorussy, so acto reuses. e
+magbody "7-Eleven Sedgwick/Gallagher SFIP process completed successfully. No action required."
+Fri 09/25/2026 19:28:15.19
+Fri 09/25/2026 19:28:15.27
+joblog 2Feeds-Eleven logs\Load_lp.10g
+Finished

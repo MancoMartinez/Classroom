@@ -1,0 +1,29 @@
+PBI - Current Location Listing (Jim Cosseboom Test)
+Campos capturados en Report Designer, pestana Fields, antes de tocar el reporte.
+Lista parcial, la pantalla se corto antes del final, verificar contra memoria propia.
+Formato: campo de origen seguido de la descripcion que tenia asignada.
+
+SecurityAccountNum: Location Code
+Division: Brand
+Region: Region
+District: District
+StoreNo: Location #
+StoreName: Location Name
+StoreType: Location Type
+Address1: Address1
+City: City
+State: State
+Zip: Zip
+StoreUser6: County
+DivisionManagerID: AP Director
+RegionalManagerID: AP Division/Region
+DistrictManagerID: AP Mgr/Spec
+OpsDivisionManagerID: Ops Division SVP/VP
+OpsRegionalManagerID: Ops Regional VP
+OpsDistrictManagerID: Ops District Director
+SecurityCodeLastChanged (nombre truncado en pantalla, verificar): Recent CAP Score Date
+SecurityContractExpir (nombre truncado en pantalla, verificar): Next CAP Score Date
+StoreUser8: CAP Score
+StoreUser9: Internal Risk Rating
+StoreUser10: Market Segment
+HighRiskStore: High Risk Store

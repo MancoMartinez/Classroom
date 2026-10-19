@@ -1,0 +1,379 @@
+{
+  "sesiones": {
+    "local_f945d5d5-c803-47bb-aefa-2fd6e68c66d5": {
+      "titulo": "David's tickets assignment review",
+      "cosechado": "2026-08-27T14:01:58",
+      "inbox": "inbox/2026-08-27-cosecha-salida-david-vargas.md"
+    },
+    "local_c3f3a283-f4b8-42d7-a140-4976e98ec0c5": {
+      "titulo": "RTS escalation team assignments",
+      "cosechado": "2026-08-27T14:01:58",
+      "inbox": "inbox/2026-08-27-cosecha-rts-escalacion.md"
+    },
+    "local_957c60cc-8505-4e22-8c2b-900c01c874cf": {
+      "titulo": "Caso de Sebastian 28452",
+      "cosechado": "2026-08-27T14:01:58",
+      "inbox": "inbox/2026-08-27-cosecha-rcs-28452.md"
+    },
+    "local_72d9daf2-1a75-43d6-9c90-948a319b3f83": {
+      "titulo": "RCS-28223 trabajo continuacion",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-28223.md"
+    },
+    "local_3f09bb45-325d-4cb2-a71c-040296fd2840": {
+      "titulo": "Cerebro Ticket RCS-27991",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-27991.md"
+    },
+    "local_51ddf5b8-b44c-4ef1-835e-af304f5f95bc": {
+      "titulo": "RCS-28556 SEbas G",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-28556.md"
+    },
+    "local_1ff27ec3-fce5-4e5d-82ff-e524c8fb0dca": {
+      "titulo": "Cerebro Ticket RCS-28093",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-28093.md"
+    },
+    "local_e93bcd3d-25a9-4514-8748-e0e0db914bb0": {
+      "titulo": "Cerebro Ticket RCS-28123",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-28123.md"
+    },
+    "local_6b9ddbe6-cea3-4ade-a8bb-a3632ed3e03c": {
+      "titulo": "Cerebro Ticket RCS-28294",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-rcs-28294.md"
+    },
+    "local_7cfc3365-2457-4fcb-b097-3583e6c4fd25": {
+      "titulo": "Visual Cron",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-visual-cron.md"
+    },
+    "local_19ba3b08-1343-4154-940d-76ecfee6008b": {
+      "titulo": "Azure links y PR",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-azure-pr.md"
+    },
+    "local_a166a9b0-f99e-4837-b2a5-623d5f29618c": {
+      "titulo": "Cerebro knowledge organization",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-cerebro-persistencia.md"
+    },
+    "local_acf1b969-2fc1-4284-a566-d094def0cf73": {
+      "titulo": "Luxottica - Edwin",
+      "cosechado": "2026-08-28T09:20:39",
+      "inbox": "inbox/2026-08-28-cosecha-luxottica.md"
+    },
+    "local_ab6d807e-2f38-43dc-8391-7df101bbe81f": {
+      "titulo": "Traducciones",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-traducciones.md"
+    },
+    "local_e3fd54bb-46fc-4e37-b348-de3ac2724e7f": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-cola-proceso.md"
+    },
+    "local_82b793ff-9432-4abd-93b2-93f1e7db5867": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-cola-proceso.md"
+    },
+    "local_2c86f407-b8b7-4cc0-b29b-eed21a678c7f": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-cola-proceso.md"
+    },
+    "local_be10f332-b636-4ec8-bce8-dfc4d6b17038": {
+      "titulo": "Jim email updates verification",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-jim-tracker.md"
+    },
+    "local_659260da-3f2b-4ed2-9e99-7ad7ddd931ce": {
+      "titulo": "Cerebro asignacion diaria",
+      "cosechado": "2026-08-28T09:20:40",
+      "inbox": "inbox/2026-08-28-cosecha-asignacion-reglas.md"
+    },
+    "local_9d927335-a359-40db-bb83-90a7d88e9d63": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-31-cola-manana.md"
+    },
+    "local_353194d1-70c8-48de-aab0-74ef46408865": {
+      "titulo": "Guia para proceder - incidente ASDA A2IPriceCast",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-incidente-asda-a2ipricecast.md"
+    },
+    "local_d7a2f47d-9fdc-4ebd-89bb-d0cfbcbbe3e7": {
+      "titulo": "RCS-28621 datos no visibles",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-rcs-28621-datos-no-visibles-diagnostico.md"
+    },
+    "local_f332f240-85dd-44df-8392-dea4e1ab59f4": {
+      "titulo": "RCS-28621 file upload process",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-rcs-28621-quien-carga-el-archivo.md"
+    },
+    "local_180df40f-e23a-4406-86df-22d8e74da2fa": {
+      "titulo": "RCS-28621 manual file upload",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-rcs-28621-quien-carga-el-archivo.md"
+    },
+    "local_c642348f-80e3-4b11-bceb-ccadcbdcc5dd": {
+      "titulo": "Engineering processes support meeting - KT Kiran",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-KT-reunion-kiran.md"
+    },
+    "local_b823488f-7344-40e4-8875-cec96e1c2206": {
+      "titulo": "Transcripts consolidation",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "brain/sessions.db chunk 1706, guardado directo, sin archivo inbox"
+    },
+    "local_da077d8d-3c7c-4187-88d5-df36131ba387": {
+      "titulo": "Cerebro asignacion diaria (corrida 2026-08-28)",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "asignaciones/2026-08-28.md"
+    },
+    "local_502a7443-1f8c-43d7-b2bd-9e13589cfb6b": {
+      "titulo": "Cerebro Ticket RCS-28638 Myer",
+      "cosechado": "2026-08-31T09:08:29",
+      "inbox": "inbox/2026-08-28-rcs-28638-myer-header-ext.md"
+    },
+    "local_9d03ced8-75ba-4b99-8e9c-b3331ad76a4e": {
+      "titulo": "Administradores de tickets Vallarta",
+      "cosechado": "2026-09-01T09:11:19",
+      "inbox": "inbox/2026-09-01-cosecha-vallarta-admins.md"
+    },
+    "local_96c44601-41c1-4a02-8a2d-0c7ef495cf4b": {
+      "titulo": "RCS-28581 investigacion avance",
+      "cosechado": "2026-09-01T09:11:19",
+      "inbox": "inbox/2026-09-01-cosecha-rcs-28581.md"
+    },
+    "local_c803ec7e-3e24-4ec6-8b9f-2628420911be": {
+      "titulo": "RCS-28618 ticket analysis",
+      "cosechado": "2026-09-01T09:11:19",
+      "inbox": "inbox/2026-09-01-cosecha-rcs-28618.md"
+    },
+    "local_1305e0cf-dfd9-47a5-9cd1-6ecee9c5032a": {
+      "titulo": "Cerebro Ticket RCS-27941",
+      "cosechado": "2026-09-01T09:11:19",
+      "inbox": "inbox/2026-09-01-cosecha-rcs-27941.md"
+    },
+    "local_55981825-a75e-4809-9638-5e0eeba51a72": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-09-01T09:11:59",
+      "inbox": "inbox/2026-09-01-cosecha-sin-hallazgos.md"
+    },
+    "local_bfa1e34d-0152-4cee-a547-b88025912f0d": {
+      "titulo": "Cerebro asignacion diaria",
+      "cosechado": "2026-09-01T09:11:59",
+      "inbox": "inbox/2026-09-01-cosecha-sin-hallazgos.md"
+    },
+    "local_bb507016-362f-48fa-9351-2ae2badef68d": {
+      "titulo": "Ticket RCS-28671 HIGH 2 september",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_cb6e90fd-75e8-4070-83bd-724f85b240e4": {
+      "titulo": "Cerebro cola manana 2 sep",
+      "cosechado": "2026-09-02T09:18:53",
+      "inbox": "inbox/2026-09-02-cosecha-clasificador-cola-envejecido.md"
+    },
+    "local_90848306-5eef-47b4-ae57-20f094e19e68": {
+      "titulo": "Investigacion con desglose tecnico, THD 8/29",
+      "cosechado": "2026-09-02T09:18:53",
+      "inbox": "inbox/2026-09-02-cosecha-thd-hueco-datos-8-29.md"
+    },
+    "local_957fbfa6-2704-4100-95a2-127530a04613": {
+      "titulo": "Ahold y J.R transcripciones analisis",
+      "cosechado": "2026-09-02T09:18:53",
+      "inbox": "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md"
+    },
+    "local_169d1048-f2c6-45ce-ae42-fafd1cfb91b7": {
+      "titulo": "Alo Yoga meeting prep",
+      "cosechado": "2026-09-02T09:18:53",
+      "inbox": "inbox/2026-09-02-cosecha-alo-yoga-estado.md"
+    },
+    "local_43069ff0-794d-4903-a058-a536d3250e02": {
+      "titulo": "Cerebro asignacion diaria, segunda corrida 1 sep",
+      "cosechado": "2026-09-02T09:18:53",
+      "inbox": "inbox/2026-09-02-cosecha-reparto-perfil-vs-margen.md"
+    },
+    "local_148e700a-e58a-414f-8d5d-a944c93fd6df": {
+      "titulo": "RCS-28612 ticket guidance",
+      "cosechado": "2026-09-02T09:18:54",
+      "inbox": "sin hallazgos nuevos, entregable de 13 pasos ya vive en outputs de esa sesion"
+    },
+    "local_5212ef37-aab9-43bd-9b67-c6461e2c8581": {
+      "titulo": "Que hacer estando ahi",
+      "cosechado": "2026-09-02T09:18:54",
+      "inbox": "sin hallazgos, pipeline jparocua/eng-7932-2 corrida 20260901.9 exitosa"
+    },
+    "local_163435f0-f1b9-4578-a268-6b8e0c17a2bd": {
+      "titulo": "Cerebro asignacion diaria, primera corrida 2 sep",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-clasificador-cola-set-referencia-caduco.md"
+    },
+    "local_b0e30963-ebac-4f46-a165-1db9db4a9b79": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-clasificador-cola-set-referencia-caduco.md"
+    },
+    "local_fe6e5567-7400-4bc1-b3ef-44b95546c918": {
+      "titulo": "RCS-28212 ticket resolution",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-rcs-28212-apis-case-elevation.md"
+    },
+    "local_234dc114-1f0e-4f9f-ac8e-5b3742dc36de": {
+      "titulo": "RCS-28148 data loading issue",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-rcs-28148-ms-1password-decision.md"
+    },
+    "local_6137e830-b3db-4d7c-9c70-5fd725feea4e": {
+      "titulo": "Cliente number lookup",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-dhl-client-number-sin-confirmar.md"
+    },
+    "local_d03e24c2-aaec-4c55-9ef5-2e908df0f6c0": {
+      "titulo": "Customer-facing updates plan",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "inbox/2026-09-03-cosecha-rcs-28702-respuesta-y-estado-cinco-tickets.md"
+    },
+    "local_fa9770a1-0172-4b9f-a687-2d1df3135738": {
+      "titulo": "CVS Engage Insights SSO troubleshooting",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "sin hallazgos nuevos, explicacion de conocimiento ya existente"
+    },
+    "local_b6361f91-88d3-4209-8d4e-a369691abe56": {
+      "titulo": "Retros y tickets",
+      "cosechado": "2026-09-03T09:30:17",
+      "inbox": "sin hallazgos nuevos, confirma que Juan no tiene retro RCA ejecutado, proceso ya documentado en flujos"
+    },
+    "local_1b94d0d4-29e9-48bb-8776-1a35571e0b4d": {
+      "titulo": "ADUSA tickets analysis",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-adusa-rcs28693-acceso.md"
+    },
+    "local_499e196c-926b-4073-8faa-91a55ee2a9d6": {
+      "titulo": "RCS-28753 ticket",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-rcs28753-nike-precedente-descuento.md"
+    },
+    "local_04925369-5aa3-48cd-9839-b8b51623cfb1": {
+      "titulo": "ICA receipt viewer issues analysis",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-secure-ica-prs-estado.md"
+    },
+    "local_ae0af428-14b7-4461-b772-427b2d64cc42": {
+      "titulo": "Pendo definition inquiry",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-pendo-ideas-portal-proceso.md"
+    },
+    "local_27334dae-f46e-403a-9904-ea5a3c4d9aa3": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-clasificador-cola-rcs28753.md"
+    },
+    "local_4f5226ba-e308-4612-9682-8fc461d15401": {
+      "titulo": "Stater Bros customer update tickets",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-varios-menor.md"
+    },
+    "local_83ba4d60-d14e-47b5-9c51-333ee5d430c0": {
+      "titulo": "RCS-28482 reproduction steps",
+      "cosechado": "2026-09-04T09:15:42",
+      "inbox": "inbox/2026-09-04-cosecha-varios-menor.md"
+    },
+    "local_68cb1e1f-69d5-4ed7-9eab-b52a08342b3e": {
+      "titulo": "Cerebro asignacion diaria",
+      "cosechado": "2026-09-04T09:15:43",
+      "inbox": "inbox/2026-09-04-cosecha-varios-menor.md"
+    },
+    "local_9ad5ec1e-9ca1-460a-9d93-c9b7105b1d7a": {
+      "titulo": "RCS-28281 ticket progress",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_7edf6862-cd8b-4413-8458-3f317b6a13e0": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-roster-clasificador-sistema.md"
+    },
+    "local_80ecab05-68d6-4064-890e-8f0623909314": {
+      "titulo": "Ticket RCS-28327 guidance",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "sin hallazgos nuevos, ticket ya cerrado y verificado en Jira, ver bitacora/RCS-28327.md"
+    },
+    "local_b5000a47-3bc0-4690-942b-7d2dfebe9d5b": {
+      "titulo": "ARDM load error debugging",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_6f8950f6-2446-4fa0-b505-2e32c6dc4e8b": {
+      "titulo": "RCS-28756 ARDM load issue",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "sin hallazgos nuevos, sesion se detuvo antes de investigar por instruccion del usuario, ver local_b5000a47 para el hallazgo real"
+    },
+    "local_b7fb0c17-bb98-4ae2-aaab-f66ccb90131a": {
+      "titulo": "THD and StarterBros ticket updates",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_aef2c829-3f5c-431d-a273-53bbba8c680f": {
+      "titulo": "RCS-27407 support process",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_aeb22187-58fa-4042-938d-2301bf55cd51": {
+      "titulo": "Verificacion permisos admin",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_54ee52b9-4bfa-40db-bf69-2d3164b0fe19": {
+      "titulo": "RCS-28631 ticket process",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_ed541761-5a2d-49fd-a0f0-b725b03148c2": {
+      "titulo": "RCS-28709 store data issues",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_541233ae-d1c7-4192-9fe0-0732db197bdb": {
+      "titulo": "Respuesta de cierre cliente",
+      "cosechado": "2026-09-07T09:30:33",
+      "inbox": "inbox/2026-09-07-cosecha-roster-clasificador-sistema.md"
+    },
+    "local_74708718-d8e9-4b11-b1aa-f02248041415": {
+      "titulo": "Cerebro asignacion diaria",
+      "cosechado": "2026-09-07T09:30:34",
+      "inbox": "inbox/2026-09-07-cosecha-roster-clasificador-sistema.md"
+    },
+    "local_d7f60905-378d-45b6-93a5-96911565ca28": {
+      "titulo": "Informe equipo soporte ultimas 3 semanas",
+      "cosechado": "2026-09-07T09:30:34",
+      "inbox": "inbox/2026-09-07-cosecha-tickets-tecnicos.md"
+    },
+    "local_33961b4e-8d59-41d9-af19-d513e1547167": {
+      "titulo": "Cerebro cola manana",
+      "cosechado": "2026-09-08T09:08:34",
+      "inbox": "inbox/2026-09-08-cosecha-varios.md"
+    },
+    "local_c606f340-6b12-4e85-b136-482f6b9954f1": {
+      "titulo": "Securee developer addition",
+      "cosechado": "2026-09-08T09:08:34",
+      "inbox": "inbox/2026-09-08-cosecha-varios.md"
+    },
+    "local_50a6cc50-f9e7-4445-9fb8-3906b5e82d38": {
+      "titulo": "Cerebro asignacion diaria",
+      "cosechado": "2026-09-08T09:08:34",
+      "inbox": "inbox/2026-09-08-cosecha-varios.md"
+    },
+    "local_27f8f29b-1781-4b55-a1cc-a9fe82203e88": {
+      "titulo": "New Relic project overview",
+      "cosechado": "2026-09-08T09:08:34",
+      "inbox": "inbox/2026-09-08-cosecha-varios.md"
+    }
+  }
+}

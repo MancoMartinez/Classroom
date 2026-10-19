@@ -1,0 +1,1267 @@
+{
+ "adjuntos/RCS-27765/image-20260915-164240.png": {
+  "firma": "1:85847:1789581568",
+  "ok": true,
+  "chars": 784
+ },
+ "adjuntos/RCS-27941/image-20260722-211547.png": {
+  "firma": "1:48179:1788886004",
+  "ok": true,
+  "chars": 442
+ },
+ "adjuntos/RCS-27941/image-20260722-212051.png": {
+  "firma": "1:54736:1788886004",
+  "ok": true,
+  "chars": 428
+ },
+ "adjuntos/RCS-27941/image-20260722-212119.png": {
+  "firma": "1:35560:1788886004",
+  "ok": true,
+  "chars": 321
+ },
+ "adjuntos/RCS-27941/image-20260722-212147.png": {
+  "firma": "1:22431:1788886004",
+  "ok": true,
+  "chars": 313
+ },
+ "adjuntos/RCS-27941/image-20260722-212224.png": {
+  "firma": "1:96539:1788886004",
+  "ok": true,
+  "chars": 704
+ },
+ "adjuntos/RCS-27941/image-20260722-212252.png": {
+  "firma": "1:63184:1788886004",
+  "ok": true,
+  "chars": 510
+ },
+ "adjuntos/RCS-27941/image-20260722-212324.png": {
+  "firma": "1:60804:1788886004",
+  "ok": true,
+  "chars": 510
+ },
+ "adjuntos/RCS-27941/image-20260722-212430.png": {
+  "firma": "1:47445:1788886004",
+  "ok": true,
+  "chars": 410
+ },
+ "adjuntos/RCS-27941/image-20260728-140910.png": {
+  "firma": "1:77613:1788886004",
+  "ok": true,
+  "chars": 539
+ },
+ "adjuntos/RCS-27941/image-20260813-202708.png": {
+  "firma": "1:62298:1788886004",
+  "ok": true,
+  "chars": 582
+ },
+ "adjuntos/RCS-27941/image-20260813-202829.png": {
+  "firma": "1:31450:1788886004",
+  "ok": true,
+  "chars": 639
+ },
+ "adjuntos/RCS-27941/image-20260820-162157.png": {
+  "firma": "1:93483:1788886004",
+  "ok": true,
+  "chars": 915
+ },
+ "adjuntos/RCS-27941/image-20260820-162236.png": {
+  "firma": "1:77252:1788886004",
+  "ok": true,
+  "chars": 804
+ },
+ "adjuntos/RCS-27941/image-20260820-163953.png": {
+  "firma": "1:81528:1788886004",
+  "ok": true,
+  "chars": 578
+ },
+ "adjuntos/RCS-27941/image-20260820-164013.png": {
+  "firma": "1:42462:1788886004",
+  "ok": true,
+  "chars": 427
+ },
+ "adjuntos/RCS-27941/image-20260820-164054.png": {
+  "firma": "1:41811:1788886004",
+  "ok": true,
+  "chars": 430
+ },
+ "adjuntos/RCS-27941/image-20260820-164113.png": {
+  "firma": "1:72813:1788886004",
+  "ok": true,
+  "chars": 538
+ },
+ "adjuntos/RCS-27941/image001.png": {
+  "firma": "1:63905:1788886004",
+  "ok": true,
+  "chars": 481
+ },
+ "adjuntos/RCS-27991/2026-08-26-harbor-freight-engage-analytics-tiles-error.png": {
+  "firma": "1:41908:1788886008",
+  "ok": true,
+  "chars": 522
+ },
+ "adjuntos/RCS-28032/HARVit1.har": {
+  "firma": "1:10339335:1788886008",
+  "ok": true,
+  "chars": 6293
+ },
+ "adjuntos/RCS-28032/LEEME.md": {
+  "firma": "1:4867:1788886008",
+  "ok": true,
+  "chars": 4971
+ },
+ "adjuntos/RCS-28032/eml_extract/att01_image001.png": {
+  "firma": "1:634:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att02_image002.png": {
+  "firma": "1:564:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att03_image003.png": {
+  "firma": "1:548:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att04_image004.png": {
+  "firma": "1:612:1788886006",
+  "ok": true,
+  "chars": 167
+ },
+ "adjuntos/RCS-28032/eml_extract/att05_image005.png": {
+  "firma": "1:251:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att06_image006.png": {
+  "firma": "1:447:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att07_image007.png": {
+  "firma": "1:325:1788886006",
+  "ok": true,
+  "chars": 163
+ },
+ "adjuntos/RCS-28032/eml_extract/att08_image008.png": {
+  "firma": "1:28724:1788886006",
+  "ok": true,
+  "chars": 213
+ },
+ "adjuntos/RCS-28032/eml_extract/att09_image009.png": {
+  "firma": "1:2938:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att10_image010.png": {
+  "firma": "1:3268:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att11_image011.png": {
+  "firma": "1:3201:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att12_image012.png": {
+  "firma": "1:3201:1788886006",
+  "ok": true,
+  "chars": 167
+ },
+ "adjuntos/RCS-28032/eml_extract/att13_image013.png": {
+  "firma": "1:3010:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att14_image014.png": {
+  "firma": "1:3107:1788886006",
+  "ok": true,
+  "chars": 164
+ },
+ "adjuntos/RCS-28032/eml_extract/att15_image015.png": {
+  "firma": "1:2962:1788886006",
+  "ok": true,
+  "chars": 163
+ },
+ "adjuntos/RCS-28032/eml_extract/att16_image016.jpg": {
+  "firma": "1:62828:1788886006",
+  "ok": true,
+  "chars": 213
+ },
+ "adjuntos/RCS-28032/eml_extract/att17_image017.png": {
+  "firma": "1:56776:1788886006",
+  "ok": true,
+  "chars": 316
+ },
+ "adjuntos/RCS-28032/eml_extract/att18_image.png": {
+  "firma": "1:634:1788886006",
+  "ok": true,
+  "chars": 158
+ },
+ "adjuntos/RCS-28032/eml_extract/att19_image.png": {
+  "firma": "1:564:1788886006",
+  "ok": true,
+  "chars": 158
+ },
+ "adjuntos/RCS-28032/eml_extract/att20_image.png": {
+  "firma": "1:548:1788886006",
+  "ok": true,
+  "chars": 158
+ },
+ "adjuntos/RCS-28032/eml_extract/att21_image.png": {
+  "firma": "1:612:1788886006",
+  "ok": true,
+  "chars": 161
+ },
+ "adjuntos/RCS-28032/eml_extract/att22_image.png": {
+  "firma": "1:251:1788886006",
+  "ok": true,
+  "chars": 158
+ },
+ "adjuntos/RCS-28032/eml_extract/att23_image.png": {
+  "firma": "1:447:1788886006",
+  "ok": true,
+  "chars": 158
+ },
+ "adjuntos/RCS-28032/eml_extract/att24_image.png": {
+  "firma": "1:325:1788886006",
+  "ok": true,
+  "chars": 157
+ },
+ "adjuntos/RCS-28032/eml_extract/att25_image.png": {
+  "firma": "1:28724:1788886006",
+  "ok": true,
+  "chars": 207
+ },
+ "adjuntos/RCS-28032/eml_extract/att26_image.png": {
+  "firma": "1:123142:1788886006",
+  "ok": true,
+  "chars": 596
+ },
+ "adjuntos/RCS-28032/eml_extract/att27_image.png": {
+  "firma": "1:34476:1788886006",
+  "ok": true,
+  "chars": 290
+ },
+ "adjuntos/RCS-28032/eml_extract/att28_image.png": {
+  "firma": "1:183057:1788886006",
+  "ok": true,
+  "chars": 680
+ },
+ "adjuntos/RCS-28032/eml_extract/att29_image.png": {
+  "firma": "1:195109:1788886006",
+  "ok": true,
+  "chars": 851
+ },
+ "adjuntos/RCS-28032/eml_extract/att30_image.png": {
+  "firma": "1:214816:1788886006",
+  "ok": true,
+  "chars": 907
+ },
+ "adjuntos/RCS-28032/image (1).png": {
+  "firma": "1:3268:1788886006",
+  "ok": true,
+  "chars": 142
+ },
+ "adjuntos/RCS-28032/image (2).png": {
+  "firma": "1:3201:1788886006",
+  "ok": true,
+  "chars": 142
+ },
+ "adjuntos/RCS-28032/image (3).png": {
+  "firma": "1:3201:1788886006",
+  "ok": true,
+  "chars": 145
+ },
+ "adjuntos/RCS-28032/image (4).png": {
+  "firma": "1:3010:1788886006",
+  "ok": true,
+  "chars": 142
+ },
+ "adjuntos/RCS-28032/image (5).png": {
+  "firma": "1:3107:1788886006",
+  "ok": true,
+  "chars": 142
+ },
+ "adjuntos/RCS-28032/image (6).png": {
+  "firma": "1:2962:1788886006",
+  "ok": true,
+  "chars": 141
+ },
+ "adjuntos/RCS-28032/image (7).png": {
+  "firma": "1:62828:1788886006",
+  "ok": true,
+  "chars": 191
+ },
+ "adjuntos/RCS-28032/image (8).png": {
+  "firma": "1:26714:1788886008",
+  "ok": true,
+  "chars": 377
+ },
+ "adjuntos/RCS-28032/image-20260729-161147.png": {
+  "firma": "1:74070:1788886006",
+  "ok": true,
+  "chars": 1122
+ },
+ "adjuntos/RCS-28032/image-20260729-161311.png": {
+  "firma": "1:44695:1788886006",
+  "ok": true,
+  "chars": 762
+ },
+ "adjuntos/RCS-28032/image-20260729-161351.png": {
+  "firma": "1:48668:1788886006",
+  "ok": true,
+  "chars": 806
+ },
+ "adjuntos/RCS-28032/image-20260729-163104.png": {
+  "firma": "1:92509:1788886006",
+  "ok": true,
+  "chars": 1114
+ },
+ "adjuntos/RCS-28032/image-20260729-163131.png": {
+  "firma": "1:22860:1788886006",
+  "ok": true,
+  "chars": 401
+ },
+ "adjuntos/RCS-28032/image.png": {
+  "firma": "1:2938:1788886008",
+  "ok": true,
+  "chars": 134
+ },
+ "adjuntos/RCS-28032/image001.png": {
+  "firma": "1:5449:1788886006",
+  "ok": true,
+  "chars": 195
+ },
+ "adjuntos/RCS-28212/DESCRIPCION-capturas.md": {
+  "firma": "1:6143:1788886004",
+  "ok": true,
+  "chars": 6221
+ },
+ "adjuntos/RCS-28223/DESCRIPCION-capturas.md": {
+  "firma": "1:3076:1788886008",
+  "ok": true,
+  "chars": 3210
+ },
+ "adjuntos/RCS-28223/McDonald's Manager and Crew Cash Audit.pdf": {
+  "firma": "1:599123:1788886008",
+  "ok": true,
+  "chars": 199
+ },
+ "adjuntos/RCS-28223/_extract/pg-000.png": {
+  "firma": "1:299192:1788886008",
+  "ok": true,
+  "chars": 1451
+ },
+ "adjuntos/RCS-28223/_extract/pg-001.png": {
+  "firma": "1:286267:1788886008",
+  "ok": true,
+  "chars": 1287
+ },
+ "adjuntos/RCS-28223/image-20260819-201232.png": {
+  "firma": "1:265902:1788886008",
+  "ok": true,
+  "chars": 695
+ },
+ "adjuntos/RCS-28223/image001 (e2b8fae3-4beb-42df-b019-29f8e14664a8).png": {
+  "firma": "1:206116:1788886008",
+  "ok": true,
+  "chars": 747
+ },
+ "adjuntos/RCS-28223/image001.png": {
+  "firma": "1:1460:1788886008",
+  "ok": true,
+  "chars": 141
+ },
+ "adjuntos/RCS-28281/8.12.2026 Transactions Per Minute Per Hour.xlsx": {
+  "firma": "1:18793:1790291171",
+  "ok": true,
+  "chars": 6793
+ },
+ "adjuntos/RCS-28281/8.19.2026 Transactions Per Minute Per Hour.xlsx": {
+  "firma": "1:18745:1790291172",
+  "ok": true,
+  "chars": 5530
+ },
+ "adjuntos/RCS-28281/8.20.2026 Transactions Per Minute Per Hour.xlsx": {
+  "firma": "1:18717:1790291172",
+  "ok": true,
+  "chars": 5550
+ },
+ "adjuntos/RCS-28281/8.22.2026 Transactions Per Minute Per Hour.xlsx": {
+  "firma": "1:18718:1790291173",
+  "ok": true,
+  "chars": 5544
+ },
+ "adjuntos/RCS-28281/8.25.2026 Transactions Per Minute Per Hour.xlsx": {
+  "firma": "1:18780:1790291173",
+  "ok": true,
+  "chars": 5573
+ },
+ "adjuntos/RCS-28294/2026-ADUP-40-96.pdf": {
+  "firma": "1:86479:1788886004",
+  "ok": true,
+  "chars": 1311
+ },
+ "adjuntos/RCS-28294/image-20260812-181001.png": {
+  "firma": "1:415368:1788886004",
+  "ok": true,
+  "chars": 793
+ },
+ "adjuntos/RCS-28482/2026-09-08-campos-outlook-export.txt": {
+  "firma": "1:897:1788886004",
+  "ok": true,
+  "chars": 1058
+ },
+ "adjuntos/RCS-28482/2026-09-08-campos-pbi-current-location-listing.txt": {
+  "firma": "1:1026:1788886004",
+  "ok": true,
+  "chars": 1215
+ },
+ "adjuntos/RCS-28556/01-block-page-url-nameplate.png": {
+  "firma": "1:1661870:1788886006",
+  "ok": true,
+  "chars": 474
+ },
+ "adjuntos/RCS-28556/02-block-page-rayid-clientip.png": {
+  "firma": "1:1072997:1788886006",
+  "ok": true,
+  "chars": 409
+ },
+ "adjuntos/RCS-28581/DESCRIPCION.md": {
+  "firma": "1:1606:1788886004",
+  "ok": true,
+  "chars": 1722
+ },
+ "adjuntos/RCS-28581/image-20260825-230117-actual-pos-863485.png": {
+  "firma": "1:51492:1788886004",
+  "ok": true,
+  "chars": 432
+ },
+ "adjuntos/RCS-28581/image-20260825-230316-esperado-pos-TILLD04.png": {
+  "firma": "1:36787:1788886004",
+  "ok": true,
+  "chars": 438
+ },
+ "adjuntos/RCS-28612/2608267428125472187-20260827-054700.jpg": {
+  "firma": "1:58358:1788886004",
+  "ok": true,
+  "chars": 1041
+ },
+ "adjuntos/RCS-28612/27cd-47cd-95d4-dae8fa4c4482-image-20260827-055643.png": {
+  "firma": "1:90634:1788886004",
+  "ok": true,
+  "chars": 995
+ },
+ "adjuntos/RCS-28612/3370-4123-b62e-622a7888db13-image-20260827-055735.png": {
+  "firma": "1:63427:1788886004",
+  "ok": true,
+  "chars": 926
+ },
+ "adjuntos/RCS-28612/4a6e-496f-95bb-9ae094a8d345-image-20260827-053414.png": {
+  "firma": "1:55170:1788886004",
+  "ok": true,
+  "chars": 626
+ },
+ "adjuntos/RCS-28612/763d-4291-beee-2cacefb2b0ce-image-20260827-061018.png": {
+  "firma": "1:36661:1788886004",
+  "ok": true,
+  "chars": 538
+ },
+ "adjuntos/RCS-28612/9132-45f9-8214-de4985a26561-image-20260827-055538.png": {
+  "firma": "1:56505:1788886004",
+  "ok": true,
+  "chars": 717
+ },
+ "adjuntos/RCS-28612/b0fa-4cbd-9f86-c42bc6687022-image-20260827-053513.png": {
+  "firma": "1:55604:1788886004",
+  "ok": true,
+  "chars": 773
+ },
+ "adjuntos/RCS-28612/b1fd-46c7-a5d2-05ffce103435-image-20260827-060716.png": {
+  "firma": "1:46544:1788886004",
+  "ok": true,
+  "chars": 595
+ },
+ "adjuntos/RCS-28612/cb17-4c16-9936-df06339a7221-2608267428125472187-20260827-054700.jpg": {
+  "firma": "1:58358:1788886004",
+  "ok": true,
+  "chars": 1097
+ },
+ "adjuntos/RCS-28612/e64c-4148-8cee-d43ba2718c52-image-20260827-055554.png": {
+  "firma": "1:52831:1788886004",
+  "ok": true,
+  "chars": 614
+ },
+ "adjuntos/RCS-28612/f413-4d21-93ad-e506cd290a16-image-20260827-054907.png": {
+  "firma": "1:54501:1788886004",
+  "ok": true,
+  "chars": 484
+ },
+ "adjuntos/RCS-28612/image-20260827-053414.png": {
+  "firma": "1:55170:1788886004",
+  "ok": true,
+  "chars": 570
+ },
+ "adjuntos/RCS-28612/image-20260827-053513.png": {
+  "firma": "1:55604:1788886004",
+  "ok": true,
+  "chars": 717
+ },
+ "adjuntos/RCS-28612/image-20260827-054907.png": {
+  "firma": "1:54501:1788886004",
+  "ok": true,
+  "chars": 428
+ },
+ "adjuntos/RCS-28612/image-20260827-055538.png": {
+  "firma": "1:56505:1788886004",
+  "ok": true,
+  "chars": 661
+ },
+ "adjuntos/RCS-28612/image-20260827-055554.png": {
+  "firma": "1:52831:1788886004",
+  "ok": true,
+  "chars": 558
+ },
+ "adjuntos/RCS-28612/image-20260827-055643.png": {
+  "firma": "1:90634:1788886004",
+  "ok": true,
+  "chars": 939
+ },
+ "adjuntos/RCS-28612/image-20260827-055735.png": {
+  "firma": "1:63427:1788886004",
+  "ok": true,
+  "chars": 870
+ },
+ "adjuntos/RCS-28612/image-20260827-060716.png": {
+  "firma": "1:46544:1788886004",
+  "ok": true,
+  "chars": 539
+ },
+ "adjuntos/RCS-28612/image-20260827-061018.png": {
+  "firma": "1:36661:1788886004",
+  "ok": true,
+  "chars": 482
+ },
+ "adjuntos/RCS-28618/README-capturas.md": {
+  "firma": "1:3378:1788886006",
+  "ok": true,
+  "chars": 3475
+ },
+ "adjuntos/RCS-28638/image-20260828-004653.png": {
+  "firma": "1:27633:1788886006",
+  "ok": true,
+  "chars": 437
+ },
+ "adjuntos/RCS-28638/image-20260828-004816.png": {
+  "firma": "1:74748:1788886006",
+  "ok": true,
+  "chars": 853
+ },
+ "adjuntos/RCS-28638/image-20260828-004849.png": {
+  "firma": "1:47587:1788886006",
+  "ok": true,
+  "chars": 587
+ },
+ "adjuntos/RCS-28667/2026-09-24-gabriel-quist-hierarchies-asignada.png": {
+  "firma": "1:92327:1790276122",
+  "ok": true,
+  "chars": 346
+ },
+ "adjuntos/RCS-28667/2026-09-24-hierarchies-selector-tiendas.png": {
+  "firma": "1:159480:1790276122",
+  "ok": true,
+  "chars": 924
+ },
+ "adjuntos/RCS-28667/2026-09-24-llamada-kiran-transcripcion.md": {
+  "firma": "1:16549:1790281988",
+  "ok": true,
+  "chars": 16719
+ },
+ "adjuntos/RCS-28671/2026-09-01-ericka-wi-248159-cabecera.png": {
+  "firma": "1:70242:1788886004",
+  "ok": true,
+  "chars": 519
+ },
+ "adjuntos/RCS-28671/2026-09-01-ericka-wi-248159-error-detalle.png": {
+  "firma": "1:41555:1788886004",
+  "ok": true,
+  "chars": 437
+ },
+ "adjuntos/RCS-28671/2026-09-01-ericka-wi-248159-events-error.png": {
+  "firma": "1:82045:1788886004",
+  "ok": true,
+  "chars": 472
+ },
+ "adjuntos/RCS-28671/DESCRIPCION.md": {
+  "firma": "1:4217:1790616514",
+  "ok": true,
+  "chars": 4332
+ },
+ "adjuntos/RCS-28671/canada01-markdowns-by-ldap-7135.png": {
+  "firma": "1:161689:1790616468",
+  "ok": true,
+  "chars": 1041
+ },
+ "adjuntos/RCS-28671/image-20260831-132901.png": {
+  "firma": "1:63935:1788886004",
+  "ok": true,
+  "chars": 421
+ },
+ "adjuntos/RCS-28671/image-20260831-132917.png": {
+  "firma": "1:25053:1788886004",
+  "ok": true,
+  "chars": 316
+ },
+ "adjuntos/RCS-28671/image-20260831-132933.png": {
+  "firma": "1:90691:1788886004",
+  "ok": true,
+  "chars": 670
+ },
+ "adjuntos/RCS-28671/log-774fbb98-instantanalytics.png": {
+  "firma": "1:84060:1790616466",
+  "ok": true,
+  "chars": 1123
+ },
+ "adjuntos/RCS-28671/viewer-trans-8989.png": {
+  "firma": "1:170338:1790616466",
+  "ok": true,
+  "chars": 1226
+ },
+ "adjuntos/RCS-28671/wi-248159-events-url-fti.png": {
+  "firma": "1:120774:1790616465",
+  "ok": true,
+  "chars": 770
+ },
+ "adjuntos/RCS-28709/image-20260921-194758.png": {
+  "firma": "1:217582:1790021150",
+  "ok": true,
+  "chars": 934
+ },
+ "adjuntos/RCS-28756/2026-09-04-correo-appriss-a-nike-rts-206999.png": {
+  "firma": "1:135273:1788984491",
+  "ok": true,
+  "chars": 1133
+ },
+ "adjuntos/RCS-28756/2026-09-09-azure-captured-messages-juan-filtro-entityname.png": {
+  "firma": "1:273088:1788987235",
+  "ok": true,
+  "chars": 796
+ },
+ "adjuntos/RCS-28756/2026-09-09-azure-captured-messages-juan-tooltip-6h.png": {
+  "firma": "1:426757:1788987234",
+  "ok": true,
+  "chars": 1179
+ },
+ "adjuntos/RCS-28756/2026-09-09-azure-eventhub-captured-messages-c67.png": {
+  "firma": "1:150112:1788984993",
+  "ok": true,
+  "chars": 1266
+ },
+ "adjuntos/RCS-28756/2026-09-09-azure-incoming-messages-c67.png": {
+  "firma": "1:269453:1788989850",
+  "ok": true,
+  "chars": 778
+ },
+ "adjuntos/RCS-28756/2026-09-09-azure-metrics-vista-juan-sin-metrica.png": {
+  "firma": "1:477198:1788984993",
+  "ok": true,
+  "chars": 1578
+ },
+ "adjuntos/RCS-28756/2026-09-09-correo-taylor-gilgan-5-preguntas.png": {
+  "firma": "1:71619:1788984491",
+  "ok": true,
+  "chars": 1011
+ },
+ "adjuntos/RCS-28756/2026-09-09-ecom-data-load-check-hasta-0827.png": {
+  "firma": "1:36030:1788984490",
+  "ok": true,
+  "chars": 222
+ },
+ "adjuntos/RCS-28809/gp3-reference_employee-columnas.png": {
+  "firma": "1:299443:1788988496",
+  "ok": true,
+  "chars": 903
+ },
+ "adjuntos/RCS-28809/image-20260908-111716.png": {
+  "firma": "1:42859:1788986135",
+  "ok": true,
+  "chars": 476
+ },
+ "adjuntos/RCS-28809/snowflake-reference_employee-4068590.csv": {
+  "firma": "1:598:1788990838",
+  "ok": true,
+  "chars": 866
+ },
+ "adjuntos/RCS-28881/image-20260910-204539.png": {
+  "firma": "1:88392:1789152823",
+  "ok": true,
+  "chars": 316
+ },
+ "adjuntos/RCS-28911/2026-09-14-ftp-downloaded-list.png": {
+  "firma": "1:48478:1789509988",
+  "ok": true,
+  "chars": 616
+ },
+ "adjuntos/RCS-28911/2026-09-14-ftp-output-text.png": {
+  "firma": "1:161846:1789509988",
+  "ok": true,
+  "chars": 446
+ },
+ "adjuntos/RCS-28911/2026-09-14-joblog-excerpt.txt": {
+  "firma": "1:897:1789507350",
+  "ok": true,
+  "chars": 1044
+ },
+ "adjuntos/RCS-28911/2026-09-14-joblog-result-output.png": {
+  "firma": "1:312434:1789507341",
+  "ok": true,
+  "chars": 1268
+ },
+ "adjuntos/RCS-29037/image-20260924-210107.png": {
+  "firma": "1:100543:1790284751",
+  "ok": true,
+  "chars": 1300
+ },
+ "adjuntos/RCS-29053/image-20260923-115835.png": {
+  "firma": "1:58634:1790291275",
+  "ok": true,
+  "chars": 625
+ },
+ "adjuntos/RCS-29057/9998-11-incident-workbench.png": {
+  "firma": "1:285334:1790304368",
+  "ok": true,
+  "chars": 1149
+ },
+ "adjuntos/RCS-29057/9999-223-report-narrative.png": {
+  "firma": "1:152041:1790305853",
+  "ok": true,
+  "chars": 1007
+ },
+ "adjuntos/RCS-29057/Investigation Report 1.pdf": {
+  "firma": "1:94365:1790279804",
+  "ok": true,
+  "chars": 866
+ },
+ "adjuntos/RCS-29057/Investigation Report.pdf": {
+  "firma": "1:97573:1790279803",
+  "ok": true,
+  "chars": 1235
+ },
+ "adjuntos/RCS-29057/LP_EXTERNAL 2.pdf": {
+  "firma": "1:159662:1790279803",
+  "ok": true,
+  "chars": 1480
+ },
+ "adjuntos/RCS-29057/LP_EXTERNAL 3.pdf": {
+  "firma": "1:159662:1790304366",
+  "ok": true,
+  "chars": 1480
+ },
+ "adjuntos/RCS-29057/LP_EXTERNAL 4.pdf": {
+  "firma": "1:159675:1790304366",
+  "ok": true,
+  "chars": 1470
+ },
+ "adjuntos/RCS-29057/LP_EXTERNAL 5.pdf": {
+  "firma": "1:160846:1790304367",
+  "ok": true,
+  "chars": 1503
+ },
+ "adjuntos/RCS-29057/LP_EXTERNAL 6.pdf": {
+  "firma": "1:166291:1790305853",
+  "ok": true,
+  "chars": 1621
+ },
+ "adjuntos/RCS-29057/LP_INTERNAL.pdf": {
+  "firma": "1:163855:1790304368",
+  "ok": true,
+  "chars": 1795
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL.docx": {
+  "firma": "1:144204:1790305854",
+  "ok": true,
+  "chars": 3491
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL2.docx": {
+  "firma": "1:141478:1790305855",
+  "ok": true,
+  "chars": 2977
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL201272023.docx": {
+  "firma": "1:141437:1790305855",
+  "ok": true,
+  "chars": 2989
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL2old.docx": {
+  "firma": "1:110463:1790305856",
+  "ok": true,
+  "chars": 3149
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNALLINK.docx": {
+  "firma": "1:111863:1790305857",
+  "ok": true,
+  "chars": 3273
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL_Hann.docx": {
+  "firma": "1:110500:1790305857",
+  "ok": true,
+  "chars": 3164
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNAL_LinkedCases.docx": {
+  "firma": "1:144204:1790305858",
+  "ok": true,
+  "chars": 3515
+ },
+ "adjuntos/RCS-29057/templates/LP_EXTERNALold.docx": {
+  "firma": "1:112180:1790305858",
+  "ok": true,
+  "chars": 3853
+ },
+ "adjuntos/RCS-29083/apis270-7eleven-home-julie-barber.png": {
+  "firma": "1:361355:1790359686",
+  "ok": true,
+  "chars": 882
+ },
+ "adjuntos/RCS-29083/correo-peta-dashboards-gl-wc.png": {
+  "firma": "1:385405:1790359685",
+  "ok": true,
+  "chars": 2439
+ },
+ "adjuntos/RCS-29083/ryan-etl01-sedgwick-done-folder.png": {
+  "firma": "1:95312:1790427859",
+  "ok": true,
+  "chars": 1316
+ },
+ "adjuntos/RCS-29083/ryan-log-load_lp-20260925-1928.png": {
+  "firma": "1:95739:1790427859",
+  "ok": true,
+  "chars": 2158
+ },
+ "adjuntos/RCS-29103/01-investigation-findings-2026-065.png": {
+  "firma": "1:134426:1790284090",
+  "ok": true,
+  "chars": 811
+ },
+ "adjuntos/RCS-29103/02-filter-builder-extra-rootcause.png": {
+  "firma": "1:159897:1790284091",
+  "ok": true,
+  "chars": 739
+ },
+ "adjuntos/RCS-29103/03-er-followup-205148.png": {
+  "firma": "1:163432:1790284092",
+  "ok": true,
+  "chars": 1661
+ },
+ "adjuntos/RCS-29103/04-alert-history-205148.png": {
+  "firma": "1:125454:1790284092",
+  "ok": true,
+  "chars": 1046
+ },
+ "adjuntos/RCS-29103/05-alert-history-205157.png": {
+  "firma": "1:116774:1790284093",
+  "ok": true,
+  "chars": 989
+ },
+ "adjuntos/RCS-29103/06-select-inprocess-rootcause-enrique.png": {
+  "firma": "1:248446:1790284662",
+  "ok": true,
+  "chars": 475
+ },
+ "adjuntos/RCS-29103/CAPTURAS.md": {
+  "firma": "1:897:1790284108",
+  "ok": true,
+  "chars": 1007
+ },
+ "adjuntos/RCS-29104/gpc-pos-invoice-visa.png": {
+  "firma": "1:144465:1790285640",
+  "ok": true,
+  "chars": 402
+ },
+ "adjuntos/RCS-29104/q1-snowflake.csv": {
+  "firma": "1:31:1790286498",
+  "ok": true,
+  "chars": 283
+ },
+ "adjuntos/RCS-29104/secure-refunds-by-cashier-sin-tender.png": {
+  "firma": "1:270777:1790285641",
+  "ok": true,
+  "chars": 1968
+ },
+ "adjuntos/RCS-29126/2026-09-30-active-incidents-150020.png": {
+  "firma": "1:394232:1790802503",
+  "ok": true,
+  "chars": 1136
+ },
+ "adjuntos/RCS-29126/2026-09-30-case-details-2026-150020-1.png": {
+  "firma": "1:827462:1790802504",
+  "ok": true,
+  "chars": 1597
+ },
+ "adjuntos/RCS-29126/2026-09-30-factboard-6-yakow.png": {
+  "firma": "1:441825:1790805307",
+  "ok": true,
+  "chars": 749
+ },
+ "adjuntos/RCS-29126/2026-09-30-investigaciones-completed.png": {
+  "firma": "1:552835:1790805308",
+  "ok": true,
+  "chars": 1016
+ },
+ "adjuntos/RCS-29126/2026-09-30-manage-attachments-2026-150020-1.png": {
+  "firma": "1:119681:1790803092",
+  "ok": true,
+  "chars": 626
+ },
+ "adjuntos/RCS-29126/2026-09-30-notificaciones-mike.png": {
+  "firma": "1:496416:1790805307",
+  "ok": true,
+  "chars": 1088
+ },
+ "adjuntos/RCS-29126/2026-150020-1-Investigation Notes-Ray Nichols.pdf": {
+  "firma": "1:638396:1790802983",
+  "ok": true,
+  "chars": 2202
+ },
+ "adjuntos/RCS-29126/2026-150020-3-exported_pdf_7.pdf": {
+  "firma": "1:887877:1790805306",
+  "ok": true,
+  "chars": 15953
+ },
+ "adjuntos/RCS-29129/092526 Request for MRC Refund Ranking Rpt.pptx.pdf": {
+  "firma": "1:93998:1790371271",
+  "ok": true,
+  "chars": 693
+ },
+ "adjuntos/RCS-29129/2026-09-25-composer-cash-conditions.png": {
+  "firma": "1:387782:1790371645",
+  "ok": true,
+  "chars": 1784
+ },
+ "adjuntos/RCS-29129/2026-09-25-composer-cash-display.png": {
+  "firma": "1:186724:1790371645",
+  "ok": true,
+  "chars": 781
+ },
+ "adjuntos/RCS-29129/2026-09-25-recibo-giftcard-218.pdf": {
+  "firma": "1:64596:1790374256",
+  "ok": true,
+  "chars": 169
+ },
+ "adjuntos/RCS-29129/2026-09-25-recibo-giftcard-4905.pdf": {
+  "firma": "1:62737:1790373889",
+  "ok": true,
+  "chars": 171
+ },
+ "adjuntos/RCS-29129/2026-09-25-roseanne-escenario1.png": {
+  "firma": "1:158067:1790380457",
+  "ok": true,
+  "chars": 1125
+ },
+ "adjuntos/RCS-29129/2026-09-25-roseanne-escenario2.png": {
+  "firma": "1:286035:1790380458",
+  "ok": true,
+  "chars": 2058
+ },
+ "adjuntos/RCS-29129/2026-09-25-snowflake-tenders-returns.csv": {
+  "firma": "1:370:1790373071",
+  "ok": true,
+  "chars": 873
+ },
+ "adjuntos/RCS-29129/mapa-tendertype-pacsun.txt": {
+  "firma": "1:311:1790378101",
+  "ok": true,
+  "chars": 452
+ },
+ "adjuntos/RCS-29145/teams.html": {
+  "firma": "1:3705:1790692864",
+  "ok": true,
+  "chars": 3804
+ },
+ "adjuntos/RCS-29146/backup-pre-update-20261006.csv": {
+  "firma": "1:29553:1791332538",
+  "ok": true,
+  "chars": 3172
+ },
+ "adjuntos/RCS-29224/2026-10-08-teams/01.png": {
+  "firma": "1:189790:1791929760",
+  "ok": true,
+  "chars": 1004
+ },
+ "adjuntos/RCS-29224/2026-10-08-teams/02.png": {
+  "firma": "1:140208:1791929764",
+  "ok": true,
+  "chars": 1069
+ },
+ "adjuntos/RCS-29224/2026-10-08-teams/03.png": {
+  "firma": "1:252774:1791929768",
+  "ok": true,
+  "chars": 1097
+ },
+ "adjuntos/RCS-29224/2026-10-08-teams/04.png": {
+  "firma": "1:191078:1791929784",
+  "ok": true,
+  "chars": 840
+ },
+ "adjuntos/RCS-29224/2026-10-08-teams/05.png": {
+  "firma": "1:643832:1791929913",
+  "ok": true,
+  "chars": 4072
+ },
+ "adjuntos/RCS-29224/2026-10-14-teams/01.png": {
+  "firma": "1:207425:1791988483",
+  "ok": true,
+  "chars": 825
+ },
+ "adjuntos/RCS-29224/2026-10-14-teams/02.png": {
+  "firma": "1:255888:1791988523",
+  "ok": true,
+  "chars": 759
+ },
+ "adjuntos/RCS-29224/2026-10-14-teams/03.png": {
+  "firma": "1:248765:1791988535",
+  "ok": true,
+  "chars": 744
+ },
+ "adjuntos/RCS-29224/2026-10-14-teams/04.png": {
+  "firma": "1:271248:1791988546",
+  "ok": true,
+  "chars": 1087
+ },
+ "adjuntos/RCS-29237/pr-58961/clients/us/c092_khl/models/enrichment/enrich_ardm_item.sql": {
+  "firma": "1:14702:1791583746",
+  "ok": true,
+  "chars": 14854
+ },
+ "adjuntos/RCS-29237/pr-58961/clients/us/c092_khl/models/mapping/map_ardm_item.sql": {
+  "firma": "1:61137:1791583746",
+  "ok": true,
+  "chars": 60167
+ },
+ "adjuntos/RCS-29237/pr-58961/clients/us/c092_khl/models/mapping/map_ardm_itemdiscount.sql": {
+  "firma": "1:19816:1791583746",
+  "ok": true,
+  "chars": 19975
+ },
+ "adjuntos/RCS-29237/pr-58961/clients/us/c092_khl/models/mapping/map_reference_product.sql": {
+  "firma": "1:3220:1791583746",
+  "ok": true,
+  "chars": 3395
+ },
+ "adjuntos/RCS-29237/pr-58961/snowtimeBase/macros/data/ardm_lookback.sql": {
+  "firma": "1:9097:1791583746",
+  "ok": true,
+  "chars": 9212
+ },
+ "adjuntos/RCS-29237/pr-58961/snowtimeBase/macros/data/reference_source.sql": {
+  "firma": "1:2132:1791583746",
+  "ok": true,
+  "chars": 1975
+ },
+ "adjuntos/RCS-29310/MicrosoftTeams-video.mp4": {
+  "firma": "1:2215437:1791584532",
+  "ok": true,
+  "chars": 172
+ },
+ "adjuntos/RCS-29310/image-20261009-170650.png": {
+  "firma": "1:751329:1791584532",
+  "ok": true,
+  "chars": 747
+ },
+ "adjuntos/RCS-29350/Logs-2026-10-09_11_31_51.json": {
+  "firma": "1:57661:1791563949",
+  "ok": true,
+  "chars": 57809
+ },
+ "adjuntos/RCS-29350/Logs-2026-10-09_11_32_36.json": {
+  "firma": "1:88266:1791563950",
+  "ok": true,
+  "chars": 60148
+ },
+ "adjuntos/RCS-29350/Logs-2026-10-09_11_36_12.json": {
+  "firma": "1:51073:1791563950",
+  "ok": true,
+  "chars": 51221
+ },
+ "adjuntos/RCS-29350/sql-notify-2026-10-09.txt": {
+  "firma": "1:6520:1791563951",
+  "ok": true,
+  "chars": 6600
+ },
+ "adjuntos/THD-2026-09-22/Carrera-73-14.srt": {
+  "firma": "1:39181:1790107632",
+  "ok": true,
+  "chars": 39321
+ },
+ "adjuntos/THD-2026-09-22/Carrera-73-15.srt": {
+  "firma": "1:21841:1790107480",
+  "ok": true,
+  "chars": 21981
+ },
+ "adjuntos/confluence-474627801097/image-20260415-174353.png": {
+  "firma": "1:29700:1791927772",
+  "ok": true,
+  "chars": 906
+ },
+ "adjuntos/jump-server-2026-10-13/aviso-mike-tasch.png": {
+  "firma": "1:154240:1791928026",
+  "ok": true,
+  "chars": 1362
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/build_document.py": {
+  "firma": "1:18628:1790696042",
+  "ok": true,
+  "chars": 18749
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/2026-09-29-smart-alerts-rca-internal.pdf": {
+  "firma": "1:156834:1790695864",
+  "ok": true,
+  "chars": 14945
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-1.png": {
+  "firma": "1:265815:1790695878",
+  "ok": true,
+  "chars": 2170
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-2.png": {
+  "firma": "1:321076:1790695878",
+  "ok": true,
+  "chars": 2740
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-3.png": {
+  "firma": "1:414185:1790695878",
+  "ok": true,
+  "chars": 3588
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-4.png": {
+  "firma": "1:362249:1790695878",
+  "ok": true,
+  "chars": 2933
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-5.png": {
+  "firma": "1:49791:1790695878",
+  "ok": true,
+  "chars": 460
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render/page-6.png": {
+  "firma": "1:416858:1790695878",
+  "ok": true,
+  "chars": 3381
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/2026-09-29-smart-alerts-rca-internal.pdf": {
+  "firma": "1:155763:1790696043",
+  "ok": true,
+  "chars": 14913
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/page-1.png": {
+  "firma": "1:265718:1790696044",
+  "ok": true,
+  "chars": 2175
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/page-2.png": {
+  "firma": "1:321076:1790696044",
+  "ok": true,
+  "chars": 2746
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/page-3.png": {
+  "firma": "1:414185:1790696044",
+  "ok": true,
+  "chars": 3594
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/page-4.png": {
+  "firma": "1:352723:1790696044",
+  "ok": true,
+  "chars": 3208
+ },
+ "adjuntos/smart-alerts-rca-2026-09-29/render-final/page-5.png": {
+  "firma": "1:416798:1790696044",
+  "ok": true,
+  "chars": 3387
+ },
+ "investigaciones/evidencia-excel-urban-2026-09-17/1184025.png": {
+  "firma": "1:159994:1789659978",
+  "ok": true,
+  "chars": 2154
+ },
+ "investigaciones/evidencia-excel-urban-2026-09-17/1315787.xlsx": {
+  "firma": "1:30318:1789659978",
+  "ok": true,
+  "chars": 5712
+ },
+ "investigaciones/evidencia-excel-urban-2026-09-17/1403034.png": {
+  "firma": "1:163843:1789659978",
+  "ok": true,
+  "chars": 1261
+ },
+ "investigaciones/evidencia-excel-urban-2026-09-17/1403035.png": {
+  "firma": "1:56926:1789659977",
+  "ok": true,
+  "chars": 568
+ },
+ "investigaciones/evidencia-excel-urban-2026-09-17/1403036.png": {
+  "firma": "1:63648:1789659978",
+  "ok": true,
+  "chars": 420
+ },
+ "investigaciones/evidencia-smart-alerts-inprocess-2026-09-18/rcs28294-log-blobnotfound.png": {
+  "firma": "1:290110:1789749135",
+  "ok": true,
+  "chars": 2936
+ },
+ "investigaciones/evidencia-smart-alerts-inprocess-2026-09-18/rcs28294-log-inprocess-quit.png": {
+  "firma": "1:65938:1789749134",
+  "ok": true,
+  "chars": 603
+ },
+ "adjuntos/RCS-29452/bfv-reference-employee-filas-duplicadas.csv": {
+  "firma": "1:42748:1792107199",
+  "ok": true,
+  "chars": 5093
+ },
+ "adjuntos/RCS-29469/Appriss Incident Security ID Examples.xlsx": {
+  "firma": "1:570564:1792174658",
+  "ok": true,
+  "chars": 236
+ },
+ "adjuntos/RCS-29469/appriss_sso_locations_20261014024505.csv": {
+  "firma": "1:254031:1792174653",
+  "ok": true,
+  "chars": 2883
+ },
+ "adjuntos/RCS-29469/appriss_sso_permissions_20261014014506.csv": {
+  "firma": "1:211292:1792174654",
+  "ok": true,
+  "chars": 2307
+ },
+ "adjuntos/RCS-29469/appriss_sso_teams_20261014034500.csv": {
+  "firma": "1:198966:1792174656",
+  "ok": true,
+  "chars": 2259
+ },
+ "adjuntos/RCS-29469/csv-crosscheck.json": {
+  "firma": "1:3093:1792174739",
+  "ok": true,
+  "chars": 3221
+ },
+ "adjuntos/RCS-29469/jira-evidencia-2026-10-16.json": {
+  "firma": "1:36076:1792174673",
+  "ok": true,
+  "chars": 36206
+ },
+ "adjuntos/RCS-29469/2026-10-16-GetUserSecurityLevel-definition.sql": {
+  "firma": "1:896:1792181853",
+  "ok": true,
+  "chars": 1077
+ },
+ "adjuntos/RCS-29469/2026-10-16-validacion-cuentas-juan.tsv": {
+  "firma": "1:761:1792181632",
+  "ok": true,
+  "chars": 1095
+ },
+ "adjuntos/RCS-29469/2026-10-16-validacion-teams-juan.tsv": {
+  "firma": "1:501:1792181762",
+  "ok": true,
+  "chars": 758
+ }
+}

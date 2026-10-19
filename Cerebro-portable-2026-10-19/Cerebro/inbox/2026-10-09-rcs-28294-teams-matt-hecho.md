@@ -1,0 +1,1 @@
+Done. Reset InProcess to 0 for 311 Vallarta cases created before 10/1, IDs saved first. 0 left at 1. The newest stuck one was created 9/28 15:33 UTC, so it lines up with the deadlock fix. Thanks Matt.

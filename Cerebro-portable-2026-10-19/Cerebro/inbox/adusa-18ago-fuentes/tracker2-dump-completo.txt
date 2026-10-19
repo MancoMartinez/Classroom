@@ -1,0 +1,343 @@
+====================================================================================================
+RCS-28014 Resolved | Viraj Kansara
+SUMMARY: New Appriss URL is asking for email address
+ISSUE: After the overnight cutover the new URL prompted for a password instead of passing users through single sign-on, ahead of the 6:00 AM Eastern start of shift.
+NEXT: Resolved 7/29 in a live session with the ADUSA team. Closed.
+CAUSE:  
+ADUSA COMMENTS: 7/29/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: High
+====================================================================================================
+RCS-28042 Resolved | Viraj Kansara
+SUMMARY: Eric Lauseng unable to access system
+ISSUE: A contracted Central Station user hit a redirect loop at sign-in because the global Employee ID attribute was not populated on the Azure and Entra profile for contractor and vendor accounts.
+NEXT: ADUSA's IAM team populated the field and the sync completed. Leigh Ann confirmed on 8/4 that Eric signed in successfully on 8/1. Closed.
+CAUSE:  
+ADUSA COMMENTS: 8/1/2026 - Resolved - ADUSA IAM issue
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28059 Resolved | Vedant Shirude
+SUMMARY: Users are getting "Sorry, you have been blocked" message using the new LPMS URL
+ISSUE: Users at store and corporate locations were intermittently blocked at sign-in. Traffic routed through the ADUSA proxy service was exiting through Canadian nodes, which the Appriss web security rule was rejecting.
+NEXT: Canada was allowed on 7/31, April confirmed users could log on and asked us to close, and it was closed on 8/3. Two loose ends: Appriss still owes ADUSA the IP addresses behind the new URL, and which other countries traffic may exit through.
+CAUSE:  
+ADUSA COMMENTS: 7/31/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: High
+====================================================================================================
+RCS-28053 Resolved | David Vargas
+SUMMARY: Requesting the NON SAML link to LPMS
+ISSUE: Central Station needed the non-SAML sign-in link that existed on the prior platform. The legacy shared account did not carry over cleanly.
+NEXT: The Central Station account was rebuilt and unlocked on 8/5. Leigh Ann confirmed on 8/6 that a manager signed in and can work the queue. Resolved. A gap remains: no way for an ADUSA admin to change an email or unlock an account without a ticket.
+CAUSE:  
+ADUSA COMMENTS: 8/5/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28135 Resolved | Juan Martinez
+SUMMARY: Duplicated users
+ISSUE: Some people appeared twice in the user table, the second record carrying an email with a digit appended, from the prior system allowing one person several login IDs under a shared email.
+NEXT: The duplicate records were removed on 8/4 and confirmed resolved the same evening. Closed.
+CAUSE:  
+ADUSA COMMENTS: 8/4/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28177 Pending Ahold verification | Viraj Kansara
+SUMMARY: Error when performing search on case for user that has a 1 in his email address
+ISSUE: Searching for a case returns an error message, appearing to be restricted to people with a number in their email address. Affected user: nicholas.wilson2@stopandshop.com, who cannot enter or search cases.
+NEXT: 8/12/2026 - Status moved from Under Support Review to Work in progress; now with Appriss engineering directly.
+CAUSE: User Migration
+ADUSA COMMENTS: 8/13/2026 - Still an issue. Currently being worked on by Appriss.
+APPRISS NOTES: 8/18/2026 - 44 user records corrected 8/14; 
+jonathan.wright2@hannaford.com corrected 8/17. 
+Awaiting ADUSA retest.
+PRIORITY: Medium
+====================================================================================================
+RCS-28342 Pending Ahold verification | Juan Martinez
+SUMMARY: Anthony Lopez - Employee data missing from profile
+ISSUE: Not all claim data is present for Anthony Lopez; Title is missing and he is a case approver, and with no visible User ID it is difficult to route approvals to the correct person.
+NEXT: With Appriss support for initial triage; not yet assigned to an engineer.
+CAUSE: User Migration
+ADUSA COMMENTS: 8/13/2026 - Still an issue with some users not having their job title updated in the LPMS user file from claim data.  Anthony Lopez was manually updated but other users are having issues.. Currently being worked on by Appriss.
+APPRISS NOTES: 8/18/2026 - Record corrected 8/14, job title now shows on both entries. Awaiting ADUSA confirmation.
+PRIORITY: Medium
+====================================================================================================
+RCS-28023 Resolved | Viraj Kansara
+SUMMARY: Users are unable to create cases when restricted by Division
+ISSUE: AP Level 1/2/lead users could not create cases because user-to-location assignments pointed at records whose brand did not match the store's division.
+NEXT: Corrected 7/31. Last affected user confirmed working 8/6. Closed; the separate employee-search problem stays open under RCS-28093.
+CAUSE:  
+ADUSA COMMENTS: 7/31/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28043 Resolved | Viraj Kansara
+SUMMARY: Users with Store locations that are duplicates in other brands
+ISSUE: Users assigned to Stop & Shop and Giant Food of Landover locations were seeing only the matching Food Lion store number because store numbers duplicating across brands had both locations assigned to the profile.
+NEXT: Correction applied 7/30; last named user confirmed working 8/6. Closed 8/12 per Jira.
+CAUSE:  
+ADUSA COMMENTS: 7/30/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28093 Active with Appriss | Edwin Garzon
+SUMMARY: Employees not restricted by Store location
+ISSUE: Employee search returns employees from more than one brand for the same store number, both inside a case and in the admin employee table search.
+NEXT: 8/12/2026 - Jira shows Under Support Review, a step back from the prior Accepted into Development state; recommend confirming with engineering whether this was reopened for further triage.
+CAUSE: Feature Request
+ADUSA COMMENTS: 8/13/2026 - Still an issue from both inside a case and when an admin searches the employee table.
+APPRISS NOTES: Feature request. Lets talk through this to be sure
+8/18/2026 - Leigh Ann said on 8/14 the store-locator part could be closed. 
+
+The open part is cross-brand employee search, which we are treating as a feature request. Ad data has same IDs in different level. If we implement this feature, data would not allow it.
+PRIORITY: Medium
+====================================================================================================
+RCS-28115 Resolved | J.R. Teagle
+SUMMARY: LPMS fields are not clickable
+ISSUE: Dropdown fields and the SAVE button did not respond on several incident entry screens, caused by an unhandled script error on the narrative field.
+NEXT: Hotfix and cache clear went in 8/1; validated on the Shoplifting screen and marked resolved 8/5. Other screen types were not individually re-verified.
+CAUSE:  
+ADUSA COMMENTS: 8/1/2026 - This issue has been resolved
+APPRISS NOTES: None
+PRIORITY: Critical
+====================================================================================================
+RCS-28123 Active with Appriss | Juan Martinez
+SUMMARY: Case assignment issues
+ISSUE: Assigning a case to an individual returns "Assigned to can't be blank." The case shows assigned within itself but not against the individual in search, and the assignee gets repeated assignment emails.
+NEXT: Open with Appriss; case and intended assignee were supplied 8/4 to reproduce. 8/12/2026 - status unchanged, still open.
+CAUSE: None
+ADUSA COMMENTS: 8/13/2026 - Still an issue
+APPRISS NOTES: 8/18/2026 - Update deployed to prod 8/17, verifying. 
+Follow up on the 8/14 report that users can no longer print a case PDF from the confirmation screen and have to use the workbench.
+Seek approval to approve a record to validation today?
+PRIORITY: Medium
+====================================================================================================
+RCS-28196 Active with Appriss | Vedant Shirude
+SUMMARY: AD Shoplifting Entry: two fields that used to be blank now default to No
+ISSUE: Law Enforcement Notified and Vehicle Involved used to render blank on the AD Shoplifting Entry page; they now default to No, so a saved case can record No where nobody answered.
+NEXT: Open with Appriss since 8/6; leading candidate is a default that existed as a per-client setting and was not carried across in the unified structure, unconfirmed. 8/12/2026 - status unchanged.
+CAUSE: Database Migration
+ADUSA COMMENTS: 8/13/2026 - Still an issue
+APPRISS NOTES: DB column default should be null. 
+RESOLVED - Gabor work with Jon and fix for this customer today.
+PRIORITY: Medium
+====================================================================================================
+RCS-28304 Awaiting Ahold input | Vedant Shirude
+SUMMARY: Case tier - abbreviated on Central Station Master page
+ISSUE: Case tier is not fully displayed on the Central Station Master page and was unavailable entirely on a new case; reported with a screenshot showing it should read the full tier text.
+NEXT: Appriss to confirm whether the tier field is character-limited and expand it if so.
+CAUSE: Feature Request
+ADUSA COMMENTS: 8/13/2026 - Not affecting functionality - is a display limitation on the Case entry Screen.  Will submit as an enhancement request to restore previous field length.
+APPRISS NOTES: 8/18/2026 - Confirmed a fixed display width, by design, and truncated in legacy too. 
+ADUSA said they will raise an enhancement request. 
+PRIORITY: Medium
+====================================================================================================
+RCS-28025 Resolved | Viraj Kansara
+SUMMARY: Unable to view Attachments
+ISSUE: Attachments would not open due to a misconfigured client ID routing files to the wrong folder, plus commas in filenames producing a malformed response header.
+NEXT: Filename fix reached production 8/6; confirmed jpg/png/mp4 open. Closed. Comma-filename cases from 8/4 testing were not specifically retested.
+CAUSE:  
+ADUSA COMMENTS: 8/6/2026 - Resolved.
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28124 Pending Ahold verification | Juan Martinez
+SUMMARY: Certain attachments not visible
+ISSUE: PDF and MOV attachments were not displaying while JPEG did; a MOV example case was supplied 8/3.
+NEXT: Marked Completed/Resolved in Jira as of 8/12. Two open questions remain worth a final check: the brand pattern from 8/4 testing was never fully explained, and this ticket's PDF/MOV symptom vs. RCS-28025's jpg/png/mp4 fix were never confirmed to be the same root cause.
+CAUSE: None
+ADUSA COMMENTS: 8/11/2026 - Reported as resolved. 
+8/13/2026 - Users still reporting issues, ticket will be re-opened.
+APPRISS NOTES: 8/18/2026 - Reopened 8/13: Hannaford cannot attach video, Forbidden error. Fix deployed and tested 8/14, awaiting ADUSA retest. A duplicate of this ticket also sits in the New Issues section below.
+QA not passed. Issues with deployment. Deploy and test today.
+PRIORITY: Medium
+====================================================================================================
+RCS-28021 Active with Appriss | Juan Martinez
+SUMMARY: Unable to use Izenda
+ISSUE: Reports preview correctly but the data export fails, and specifically fails in Microsoft Edge where it works in Chrome. A separate config issue on the report itself was fixed 7/31.
+NEXT: 8/12/2026 - Jira shows Work in progress, reverted from the prior Resolution Suggested state; recommend confirming current investigation status with Juan Martinez.
+CAUSE: Izenda
+ADUSA COMMENTS: 8/11/2026 - Still an issue. Automated reports are running but some data is missing. Some Adhoc reports run and export, however the file is blank, others will not export.
+APPRISS NOTES: Matt added himself to the emails that get sent out to validate. We testing this is fixed in prod.
+- customer said they're still having problems
+8/18/2026 - Reproduced 8/14: the report date range does not hold reliably, so reports can return older records silently. Scheduled reports rerun 8/14 against current data. Leigh Ann confirmed 8/17 that export still fails. Need one named report that fails to export.
+Matt added himself to a scheuled report. Report run. Email sent.
+Fixed
+PRIORITY: Medium
+====================================================================================================
+RCS-28161 Active with Appriss | Shandana Khan
+SUMMARY: Unable to Export files from the platform in order to make line up changes
+ISSUE: Stores.csv will not open, blocking the ability to make lineup changes for the brands.
+NEXT: Accepted into development; fix not yet delivered.
+CAUSE: Export from Izenda This is working in the test environment however the fix needs to be included in the release branch
+ADUSA COMMENTS: 8/13/2026 - Still remains an issue.
+APPRISS NOTES: Consider load balancing. Still testing in TEST.
+8/18/2026 - Blank CSV confirmed on the 8/11 screen share. 
+Fix in test. Ripp reported no update as of 8/17.
+Tested in test on 08-18. Deploy today then test in Prod.
+PRIORITY: Medium
+====================================================================================================
+RCS-28075 Resolved | Vedant Shirude
+SUMMARY: Users are experiencing Time Outs
+ISSUE: Central Station associates were timed out of the application, most often on incident creation; two administrators also could not get in at all due to a missing permission group.
+NEXT: Admin permission groups were added 8/5; database indexing improvements went in 8/6. Closed 8/12 per Jira. A written root cause was still owed to ADUSA, and the 60-minute session timeout (shortened from the prior platform, no auto-save) has not been revisited.
+CAUSE:  
+ADUSA COMMENTS: 8/11/2026 - Resolved
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28030 Resolved | Juan Martinez
+SUMMARY: Server time needs adjusted to EST
+ISSUE: Timestamps on journal notes and attachment uploads showed four hours ahead of local time because migration defaulted user profiles to UTC rather than Eastern.
+NEXT: Eastern time applied across all ADUSA accounts; closed 8/4.
+CAUSE:  
+ADUSA COMMENTS: No current report of issues. Looking at User file, it appears to be correct
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28041 Resolved | Viraj Kansara
+SUMMARY: Request to remove "Secure Incident Management System" from email sender display name
+ISSUE: ADUSA asked for the notification email display name to be removed because Outlook rules that group mail by display name stopped working.
+NEXT: Declined and closed 8/4; Product confirmed the display name is deliberate and won't be made configurable per client. Sending address is unchanged so rules/allow-lists still work.
+CAUSE:  
+ADUSA COMMENTS: 8/4/2026 - Resolved as this is a new system configuration and cannot be changed.  Users will be advised of the change.
+APPRISS NOTES: None
+PRIORITY: Medium
+====================================================================================================
+RCS-28109 Resolved | Matthew Kamminga
+SUMMARY: Send to Flock appearing as an action item on case closure
+ISSUE: Since the move to the new URL, "Send to Flock" appears as a case-closure action item that ADUSA cannot remove from configuration directly.
+NEXT: Appriss believes the underlying change is already in place and is confirming before calling it fixed. 8/12/2026 - still under engineering review.
+CAUSE:  
+ADUSA COMMENTS: 8/11/2026 - Appears to be resolved.
+APPRISS NOTES: 8/18/2026 - Removed from view on all cases 8/14. Resolved.
+PRIORITY: Medium
+====================================================================================================
+RCS-28281 Active with Appriss | Edwin Garzon
+SUMMARY: Transaction Data Load For August 10, 2026 Incomplete (AHL/Ahold Instance of 5.4)
+ISSUE: Transaction data loaded to the Ahold 5.4 instance for 8/10 stopped after 2:00 PM, leaving the day's load incomplete; flagged as high priority since it affects all users.
+NEXT: With Appriss support; investigating the incomplete load.
+CAUSE:  
+ADUSA COMMENTS: This is a ticket for the Secure system, not incident (LPMS)
+APPRISS NOTES: 8/18/2026 - All received files loaded. Duplicate files in the delivery reduced usable volume. 8/10 came in at 1,066,691 transactions across 726 stores against roughly 2.1 to 2.3 million on 8/7 to 8/9. Why the day stops in the early afternoon is not established. High priority and no reply to ADUSA since 8/11.
+PRIORITY: High
+====================================================================================================
+RCS-28125 Resolved | Vlad Bogus
+SUMMARY: Load Data For Testing EBT Card Length Change for Delhaize in Zeus 3.5 and Secure 5.4
+ISSUE: Related to RCS-27990; test data files were transmitted to validate the EBT card length change hasn't broken other downstream POS processes.
+NEXT: Awaiting test results/confirmation on the transmitted test files.
+CAUSE:  
+ADUSA COMMENTS: This is a ticket for the Secure system, not incident (LPMS)
+APPRISS NOTES: 8/18/2026 - Test files loaded 8/6. Marked complete 8/17.
+PRIORITY: Medium
+====================================================================================================
+RCS-28292 Active with Appriss | Gulshan Kumar
+SUMMARY: Server Migration for LPMS Store File
+ISSUE: Ahold notified Appriss of a server migration (Project Robinson) that could affect receipt of the daily LPMS store file, planned 8/20 11:00 PM - 8/21 6:00 AM ET.
+NEXT: Informational; Appriss support to monitor feeds during the 8/20-8/21 migration window.
+CAUSE:  
+ADUSA COMMENTS: No action needed yet; migration scheduled for 8/20-8/21.
+APPRISS NOTES: 8/18/2026 - ADUSA confirmed 8/13 that the existing IP carries over, so this is back with Appriss. Window is 8/20 11:00 PM to 8/21 6:00 AM ET. Confirm no allow-list change is needed and agree how the store file is verified on the morning of 8/21.
+PRIORITY: Medium
+====================================================================================================
+RCS-28353 Active with Appriss | Juan Martinez
+SUMMARY: Unable to edit location data
+ISSUE: Difficulty updating employee data in individual location records (i.e. District Manager).  Receiving Error 502
+NEXT:  
+CAUSE: Linked to speed
+ADUSA COMMENTS: Ticket opened 8/13/2026
+APPRISS NOTES: Ripp multi perf PRs in Prod. Retest. Gina: unable to reproduce in test demo7
+8/18/2026 - Performance fixes reached production the evening of 8/17. Retest the store profile update with ADUSA.
+502 errors. In progress.
+PRIORITY: Medium
+====================================================================================================
+RCS-28356 Active with Appriss | Camila Cortes
+SUMMARY: System latency
+ISSUE: Users experiencing increased latency
+NEXT:  
+CAUSE:  
+ADUSA COMMENTS: Ticket opened 8/13/2026
+APPRISS NOTES: Ripp multi perf PRs in Prod. One for about screen label caching in PR. Retest. Gina.
+8/18/2026 - Performance fixes reached production the evening of 8/17. High priority. 
+PRIORITY: High
+====================================================================================================
+RCS-28365 Resolved | Bikash Kumar
+SUMMARY: Users are not able to open cases as no locations found in menu
+ISSUE: When searching for a location to open a case to, the search is not finding a matching location
+NEXT:  
+CAUSE: User Migration
+ADUSA COMMENTS: Ticket Opened 8/13/2026
+APPRISS NOTES: Related to user fixes last week to ensure migration was correct? Retest?
+8/18/2026 - Location 7225 assigned 8/13. ADUSA confirmed resolved 8/17. Close out in Jira.
+PRIORITY: Medium
+====================================================================================================
+RCS-28369 Resolved | Viraj Kansara
+SUMMARY: When changing the location of a case, it is not always changing the case number of the case
+ISSUE: Case #2026-GIANT/MARTINS (GIANT FOOD STORES, LLC)-6510-22 was updated to Location #6313 but the case number did not change.
+NEXT:  
+CAUSE: Fix in Test
+ADUSA COMMENTS: Ticket opened 8/13/2026
+APPRISS NOTES: Fix and tested in PROD. 
+8/18/2026 - Fix went out in the 8/17 morning release and was verified in prod. ADUSA validated 8/14. Close out in Jira. This row says Location 6313; Jira and the test case say 6314, confirm which is right.
+PRIORITY: Medium
+====================================================================================================
+RCS-28364 Pending Ahold verification | Juan Martinez
+SUMMARY: When searching by some users, older cases are not appearing
+ISSUE: Brian Somsky shows as not having any prior cases.  When doing a search by Admin, it shows 2 cases.  Global ID in User file appears to be incorrect.
+NEXT:  
+CAUSE: User Migration
+ADUSA COMMENTS: Ticket opened 08/13/2026
+APPRISS NOTES: 8/18/2026 - Record updated 8/14 to match the prior system identifier. Awaiting the retest. Anthony Powell was reported 8/14 with the same symptom and is not yet tracked anywhere. linked to RCS-28177 likely a disconnect in userid across the two tables
+PRIORITY: Medium
+====================================================================================================
+RCS-28378 Awaiting Ahold input |  
+SUMMARY: Buttons missing from some page
+ISSUE: Next and Save buttons are missing from some pages.
+NEXT:  
+CAUSE: None
+ADUSA COMMENTS: Ticket opened 08/13/2026
+APPRISS NOTES: 8/18/2026 - Unassigned. Seek clarity from ADUSA on 8/14: which page, which users, and a screenshot.
+PRIORITY: Medium
+====================================================================================================
+RCS-28379 Active with Appriss | Diego Buelvas
+SUMMARY: Cases missing Case Owner, Assigned to and Creator
+ISSUE: Some cases are missing the names of the Case Owner, who it is assigned to and who created the case
+NEXT:  
+CAUSE: User Migration
+ADUSA COMMENTS: Ticket opened 08/13/2026
+
+8/17/2026 - Still appears to be an issue - Some case examples are on the next sheet
+APPRISS NOTES: 8/18/2026 - Correction pass across the affected case records completed 8/17. Cause was a user identity mismatch plus some accounts incorrectly deactivated. Case examples are on the second sheet of the customer copy.
+3 users migrated correctly (timing issue) Expected fixed today.
+PRIORITY: Medium
+====================================================================================================
+RCS-28407 Active with Appriss | Edwin Garzon
+SUMMARY: Frequent receipt of the 502 Error when trying to perform various functions in LPMS
+ISSUE: When trying to perform a variety of functions in LPMS, users are receiviing a 502 error deleting data entered into the system when it occurs during a case entry.
+NEXT:  
+CAUSE: None
+ADUSA COMMENTS: Ticket opened 08/17/2026
+APPRISS NOTES: 8/18/2026 - This row was logged as RCS-28047, which belongs to a different account. Corrected to RCS-28407. Engineering identified the underlying issue and performance fixes reached production the evening of 8/17.
+PRIORITY: High
+====================================================================================================
+RCS-28413 Active with Appriss |  
+SUMMARY: Izenda data incorrect
+ISSUE: Data within Izenda reports is incorrect.  An example is a Food Lion Central Division report prior to 7/28 was pulling over 270 cases for Interview by Source; it is now only pulling 66 cases.
+NEXT:  
+CAUSE: None
+ADUSA COMMENTS: Ticket opened 08/17/2026
+APPRISS NOTES: 8/18/2026 - Unassigned. Verify the true Central Division case count against the report; managers already received the 66 case version.
+PRIORITY: Medium
+====================================================================================================
+RCS-28415 Active with Appriss |  
+SUMMARY: New users unable to create cases after being provisioned to LPMS
+ISSUE: New users unable to create cases after being provisioned to LPMS.  One example is Ryan Cummings with Stop & Shop
+NEXT:  
+CAUSE: Customer Data
+ADUSA COMMENTS: Ticket opened 08/17/2026
+APPRISS NOTES: 8/18/2026 - Unassigned. Two new users had no location assigned. ADUSA added store 0722 to one of them, which produced Food Lion rather than the Stop & Shop access they need.
+
+GP: RESOVLED - Goes to non-unique stores issue for 1 user (store 0722 exists in Food Lion too). Removed location and added correct division for one; added location to hierarchy for the other. RCS ticket updated
+PRIORITY: Medium

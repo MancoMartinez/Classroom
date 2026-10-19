@@ -1,0 +1,16 @@
+# Adjunto 2026-10-16-validacion-teams-juan.tsv
+Ruta: adjuntos/RCS-29469/2026-10-16-validacion-teams-juan.tsv
+Tipo: tsv
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+## Hoja 2026-10-16-validacion-teams-juan.tsv
+6 filas x 6 columnas.
+
+Primeras filas (tabuladas):
+UserName	TeamName	Persistent	InsertedDateTime	UtcDateFrom	UtcDateTo
+Cheneria.Chevalier@josabank.com	Location Manager	NULL	2026-10-15 10:34:36.000	NULL	NULL
+Christi.Winters@menswearhouse.com	Location Manager	NULL	2026-10-15 10:34:36.000	NULL	NULL
+Emeldia.Pryor@kgstores.com	Location Manager	NULL	2026-10-15 10:34:36.000	NULL	NULL
+Jacinta.Titus@kgstores.com	Location Manager	NULL	2026-10-15 10:34:36.000	NULL	NULL
+Rahim.Mehdiyev@menswearhouse.com	Location Manager	NULL	2026-10-15 10:34:36.000	NULL	NULL

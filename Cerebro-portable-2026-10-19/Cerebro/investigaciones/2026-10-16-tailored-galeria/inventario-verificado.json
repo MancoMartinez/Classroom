@@ -1,0 +1,1098 @@
+[
+  {
+    "ticket": "RCS-28256",
+    "id": "1401316",
+    "filename": "image001.png",
+    "size": 63905,
+    "path": "adjuntos/RCS-28256/1401316-image001.png",
+    "sha256": "c137c42d7cf25e7ac5735805dae80aa616be7cfb5c5802b05645d8930b76a3e8"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441711",
+    "filename": "image001 (bc6ee0fc-4f1c-48aa-a4aa-d3374e1f21bc).png",
+    "size": 25307,
+    "path": "adjuntos/RCS-28256/1441711-image001__bc6ee0fc-4f1c-48aa-a4aa-d3374e1f21bc_.png",
+    "sha256": "97c6322317581cd74f8f9622c9c4bc12b30ffaceaf6f19ceedb486a49f22be0e"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401315",
+    "filename": "image002.png",
+    "size": 45570,
+    "path": "adjuntos/RCS-28256/1401315-image002.png",
+    "sha256": "21db382dad60fce2b869afd576f93112708c52c7caf46cac7930a8c476fd1622"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441710",
+    "filename": "image002 (127b7256-b276-4ff6-bb5b-93d0f5119114).png",
+    "size": 30710,
+    "path": "adjuntos/RCS-28256/1441710-image002__127b7256-b276-4ff6-bb5b-93d0f5119114_.png",
+    "sha256": "b9decef1cbe472e9a3f4285e3210be5702920211fa30bbd7b16b2db5ed4a8faf"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401314",
+    "filename": "image003.png",
+    "size": 41316,
+    "path": "adjuntos/RCS-28256/1401314-image003.png",
+    "sha256": "8bddad99c38daf6d507c678b1589ff8fe900a57b9ae419559699f31f427fbb4f"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406679",
+    "filename": "image-20260803-192847.png",
+    "size": 162267,
+    "path": "adjuntos/RCS-28256/1406679-image-20260803-192847.png",
+    "sha256": "225b1c0d3ed6b713a274a805dbcb0427f510426f6355cb9850165c8f75ad46ae"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401174",
+    "filename": "image-20260810-133829.png",
+    "size": 49435,
+    "path": "adjuntos/RCS-28256/1401174-image-20260810-133829.png",
+    "sha256": "12ea2598e2d7996ecc33874d3484ed6e46dd99614191c072a1a5f0da152fdc28"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401176",
+    "filename": "image-20260810-133921.png",
+    "size": 58388,
+    "path": "adjuntos/RCS-28256/1401176-image-20260810-133921.png",
+    "sha256": "74d5bae13cd60887fd80edfd57f0dd007fdced891e2777281aa7868974725987"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401175",
+    "filename": "image-20260810-134143.png",
+    "size": 128881,
+    "path": "adjuntos/RCS-28256/1401175-image-20260810-134143.png",
+    "sha256": "073fb5710e3b66433d60f7b0ed65612505c17c2e3094f54644016474813bf11a"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401177",
+    "filename": "image-20260810-134314.png",
+    "size": 14976,
+    "path": "adjuntos/RCS-28256/1401177-image-20260810-134314.png",
+    "sha256": "5726895e128567439aafca79aae5e0f19751444ecfaed4a683c38171d6b0b690"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401218",
+    "filename": "image-20260810-141854.png",
+    "size": 19401,
+    "path": "adjuntos/RCS-28256/1401218-image-20260810-141854.png",
+    "sha256": "77f952f062ffbeb03396a839e0707ea8da75f0fda9a0cd5dc849bdd082ee38b3"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401217",
+    "filename": "image-20260810-141921.png",
+    "size": 13886,
+    "path": "adjuntos/RCS-28256/1401217-image-20260810-141921.png",
+    "sha256": "6e003e2bfb8c9586fd51c3ff18d3581881d13dfad3e53b23cd1f7f61b8d88d85"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401343",
+    "filename": "image-20260810-164245.png",
+    "size": 22884,
+    "path": "adjuntos/RCS-28256/1401343-image-20260810-164245.png",
+    "sha256": "2eb4b8586f36970f71e0e2c0a07a28a86e5b788360ac307b6416dae9b6d65828"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401342",
+    "filename": "image-20260810-164336.png",
+    "size": 92794,
+    "path": "adjuntos/RCS-28256/1401342-image-20260810-164336.png",
+    "sha256": "4f7d087fb6dbbd9635f31a89be587ec97e9d9810495af8652935d1662553599d"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401535",
+    "filename": "image-20260810-203019.png",
+    "size": 135372,
+    "path": "adjuntos/RCS-28256/1401535-image-20260810-203019.png",
+    "sha256": "5f25d94dd3c6c1c57c590f4f36dd4276a138e36a0fe6c53a91bf870b40aeb0d1"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402240",
+    "filename": "image-20260811-153415.png",
+    "size": 12763,
+    "path": "adjuntos/RCS-28256/1402240-image-20260811-153415.png",
+    "sha256": "567f79a7d602c72a32dff90fda4b04d9515e6d38d75b05756d9dd5312afdb0e8"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402241",
+    "filename": "image-20260811-185225.png",
+    "size": 5392,
+    "path": "adjuntos/RCS-28256/1402241-image-20260811-185225.png",
+    "sha256": "8a603ade50c78820eae4525ec9c81494a141aabd2dce6cba4430f30ed26b0629"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402239",
+    "filename": "image-20260811-185703.png",
+    "size": 76931,
+    "path": "adjuntos/RCS-28256/1402239-image-20260811-185703.png",
+    "sha256": "5af915e86b28e4ce83ea746910a762514252af58f2657e374e1acc9b4c8a449f"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404486",
+    "filename": "image-20260814-134128.png",
+    "size": 14940,
+    "path": "adjuntos/RCS-28256/1404486-image-20260814-134128.png",
+    "sha256": "77e47041fdcbc5755f55d541fecfac59305aec825967abf7f8a93785eed78926"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404599",
+    "filename": "image-20260814-163134.png",
+    "size": 79129,
+    "path": "adjuntos/RCS-28256/1404599-image-20260814-163134.png",
+    "sha256": "4a1b7a44c273034228c2e8b4588fefc3be11b478c6916e181ab73fbd4d94c5b5"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404598",
+    "filename": "image-20260814-163158.png",
+    "size": 85124,
+    "path": "adjuntos/RCS-28256/1404598-image-20260814-163158.png",
+    "sha256": "861eeaccf6b9a15bfc4cb2f6b6860999ee157e1b118d66cc83b8e3797d4b6d01"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406319",
+    "filename": "image-20260818-140934.png",
+    "size": 72166,
+    "path": "adjuntos/RCS-28256/1406319-image-20260818-140934.png",
+    "sha256": "7bdb84f1dfd0d1783c1471c2e08017943f8c734ad289f514e8412124683b0226"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406320",
+    "filename": "image-20260818-140955.png",
+    "size": 24032,
+    "path": "adjuntos/RCS-28256/1406320-image-20260818-140955.png",
+    "sha256": "3202195184d16bb302b99b9bd63752b3938ffc343d6dc06348d03b6937528488"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406340",
+    "filename": "image-20260818-142306.png",
+    "size": 30772,
+    "path": "adjuntos/RCS-28256/1406340-image-20260818-142306.png",
+    "sha256": "441774fd5f7b2f47cfe520924b9440c8d8083916a53e2ef33da7dbd9b774edc5"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406341",
+    "filename": "image-20260818-142730.png",
+    "size": 144629,
+    "path": "adjuntos/RCS-28256/1406341-image-20260818-142730.png",
+    "sha256": "103607f11c9202f9c4ce98280ecd172e3b825738e8c88cbcea277765b00c6c3a"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406680",
+    "filename": "image-20260818-182207.png",
+    "size": 71510,
+    "path": "adjuntos/RCS-28256/1406680-image-20260818-182207.png",
+    "sha256": "8e0b309b4264b79b97a9b531370f4567168b85c21fda39863e1f6e482f213924"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1410337",
+    "filename": "image-20260824-211757.png",
+    "size": 41231,
+    "path": "adjuntos/RCS-28256/1410337-image-20260824-211757.png",
+    "sha256": "60e29c815ac0f9f2e5e65b4f14dc53742c3dccbce468a2306da7a9811408c15f"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1410336",
+    "filename": "image-20260824-212609.png",
+    "size": 6077,
+    "path": "adjuntos/RCS-28256/1410336-image-20260824-212609.png",
+    "sha256": "e5d3818c5f819b27a8e8a939c0b3f2cf6f720b00658661867c25bec9acff8a99"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418696",
+    "filename": "image-20260908-190622.png",
+    "size": 40943,
+    "path": "adjuntos/RCS-28256/1418696-image-20260908-190622.png",
+    "sha256": "b5a437d314aed4208bf1eab04ec24ad49a7c8bb27628af4410766016f0b2e800"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418697",
+    "filename": "image-20260908-190702.png",
+    "size": 32576,
+    "path": "adjuntos/RCS-28256/1418697-image-20260908-190702.png",
+    "sha256": "b17aa63dc0628c2c3b8e958f7c4b214331a1aecb64926839408e7438cca95b87"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418712",
+    "filename": "image-20260908-191212.png",
+    "size": 41086,
+    "path": "adjuntos/RCS-28256/1418712-image-20260908-191212.png",
+    "sha256": "365f07f79e3b85388eca78298efa5041acc0b6c3ea3079873f04b4fb832ba71b"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441727",
+    "filename": "image-20260922-211934.png",
+    "size": 20485,
+    "path": "adjuntos/RCS-28256/1441727-image-20260922-211934.png",
+    "sha256": "42942f5e12ee2ee3b0c4b92b19dd9df0b7fba065af815e2d6ec5d5f416024609"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441732",
+    "filename": "image-20260922-212640.png",
+    "size": 115513,
+    "path": "adjuntos/RCS-28256/1441732-image-20260922-212640.png",
+    "sha256": "5b35b3492f2439a5ae3a60f3a3ee642c94091e0e163bb92d10f2780a063110b1"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441728",
+    "filename": "image-20260922-213544.png",
+    "size": 87759,
+    "path": "adjuntos/RCS-28256/1441728-image-20260922-213544.png",
+    "sha256": "d6ccb5fdfe5ad07fd53b9ef9585b13b1434b0c0f8c56967c5cf602e910213b6f"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441733",
+    "filename": "image-20260923-110205.png",
+    "size": 149126,
+    "path": "adjuntos/RCS-28256/1441733-image-20260923-110205.png",
+    "sha256": "282f04b0c222e5ba8623c374823bf1f2de4bfbae778cf39051b0c84b0b00e7f2"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441735",
+    "filename": "image-20260923-111349.png",
+    "size": 189981,
+    "path": "adjuntos/RCS-28256/1441735-image-20260923-111349.png",
+    "sha256": "692d6e67ef0aee332a0664768f6f259d1c95e7b14f66cf39c8fde578a6a3a2bf"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1431162",
+    "filename": "image-20260928-165357.png",
+    "size": 36433,
+    "path": "adjuntos/RCS-28256/1431162-image-20260928-165357.png",
+    "sha256": "6fc9ec3f60a7ad05693490b4389a56e3d3bf2ea42f0788b4288a945143182dc2"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441734",
+    "filename": "image-20261001-144919.png",
+    "size": 34338,
+    "path": "adjuntos/RCS-28256/1441734-image-20261001-144919.png",
+    "sha256": "11ed3ccb7681075f665961976678c809daef8868cefc4434caa17b195822b882"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441726",
+    "filename": "image-20261001-145430.png",
+    "size": 19164,
+    "path": "adjuntos/RCS-28256/1441726-image-20261001-145430.png",
+    "sha256": "23457b8b4d3aa6aef588a851a51e34ced9a0321fe69eacf50d6aeb999d380093"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441730",
+    "filename": "image-20261001-150348.png",
+    "size": 95949,
+    "path": "adjuntos/RCS-28256/1441730-image-20261001-150348.png",
+    "sha256": "745b4acf2393bca42d1fe44ff27b70e8b1b748ecc765d26ad1dec6db91b62179"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441737",
+    "filename": "image-20261001-152242.png",
+    "size": 153057,
+    "path": "adjuntos/RCS-28256/1441737-image-20261001-152242.png",
+    "sha256": "649aa05025a472a3331bc88698192fad62a50b6ff568801de38f435e2ccb1a41"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441729",
+    "filename": "image-20261001-153754.png",
+    "size": 137713,
+    "path": "adjuntos/RCS-28256/1441729-image-20261001-153754.png",
+    "sha256": "744bc794cca70d99ff34400a795e070e5061b24ffff56f5b9f88acb3fb8214b9"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1439996",
+    "filename": "image-20261012-193511.png",
+    "size": 37135,
+    "path": "adjuntos/RCS-28256/1439996-image-20261012-193511.png",
+    "sha256": "4a363edb3f92c27804e9d7d1dbc902a4e6b3186a2866b45d95ec0dbc58a64f40"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440047",
+    "filename": "image-20261012-203545.png",
+    "size": 78316,
+    "path": "adjuntos/RCS-28256/1440047-image-20261012-203545.png",
+    "sha256": "c3753c750c4fd654b66d68115d7e3b67f227c4fd18ace47353954f8f18c16625"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440544",
+    "filename": "image-20261013-135030.png",
+    "size": 50110,
+    "path": "adjuntos/RCS-28256/1440544-image-20261013-135030.png",
+    "sha256": "b2eb46fcaa5b8a1d4089b30abba04146fd2e40e88cfdc1421866aff4ab6f030e"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440543",
+    "filename": "image-20261013-135323.png",
+    "size": 54927,
+    "path": "adjuntos/RCS-28256/1440543-image-20261013-135323.png",
+    "sha256": "d18e23bd33394762d02024f74ccd9f2cef5f421daa6f46d4577f7aef3f163492"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441731",
+    "filename": "image-20261014-154021.png",
+    "size": 93458,
+    "path": "adjuntos/RCS-28256/1441731-image-20261014-154021.png",
+    "sha256": "de00bc91a6917dcffbb1a65a6bb7080a0f870e01ef03efe08c223558f90a19d9"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441736",
+    "filename": "image-20261014-160957.png",
+    "size": 47747,
+    "path": "adjuntos/RCS-28256/1441736-image-20261014-160957.png",
+    "sha256": "d6a91c8bda14e8b565bb3695fba3682cc3bf65a0bdcffb36985ddddfac7680eb"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388505",
+    "filename": "image-20260617-141956.png",
+    "size": 79028,
+    "path": "adjuntos/RCS-27578/1388505-image-20260617-141956.png",
+    "sha256": "43fd4598060c36f95a5a69ea20966e1168dfee5c3a9e992be3588169ea5e4828"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388503",
+    "filename": "image-20260617-201637.png",
+    "size": 88894,
+    "path": "adjuntos/RCS-27578/1388503-image-20260617-201637.png",
+    "sha256": "e16d92b16903dea2c144d397d9cc162b944e66949c4cd6621cc35c0ea18d4a36"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1374290",
+    "filename": "image-20260626-174933.png",
+    "size": 35509,
+    "path": "adjuntos/RCS-27578/1374290-image-20260626-174933.png",
+    "sha256": "447f914dbf2d5c23f76af3efa1b62b32230f3c1fc9527ba9f2f1f038aad407d5"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375205",
+    "filename": "image-20260629-132917.png",
+    "size": 37986,
+    "path": "adjuntos/RCS-27578/1375205-image-20260629-132917.png",
+    "sha256": "77ff2bb29e73ff367e2f4e7f166c20be2a87cdeb7cfbe65fa1ed0c0a0317bf95"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375209",
+    "filename": "image-20260629-133652.png",
+    "size": 161199,
+    "path": "adjuntos/RCS-27578/1375209-image-20260629-133652.png",
+    "sha256": "e9e133c724a53f7c979353a2224f357dca1bc254b1ab54fec349bde9dbcac00f"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375826",
+    "filename": "image-20260630-180651.png",
+    "size": 38724,
+    "path": "adjuntos/RCS-27578/1375826-image-20260630-180651.png",
+    "sha256": "321c554f9546ed1d1eab297ef6ee2e6d674dc57f9c70caa1b9f97571bd921499"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375825",
+    "filename": "image-20260630-180704.png",
+    "size": 30758,
+    "path": "adjuntos/RCS-27578/1375825-image-20260630-180704.png",
+    "sha256": "ee54ac7f7772a0e4c47b34924da3b8f56fbb0dd18b9eed1d2651da38debc17f7"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378614",
+    "filename": "image-20260706-142909.png",
+    "size": 28216,
+    "path": "adjuntos/RCS-27578/1378614-image-20260706-142909.png",
+    "sha256": "cc660e765094bfdd49f66f6549c085c2fd75fd8b976e633a03572e136447c9ee"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378616",
+    "filename": "image-20260706-143108.png",
+    "size": 42882,
+    "path": "adjuntos/RCS-27578/1378616-image-20260706-143108.png",
+    "sha256": "cba0f2b761278873421b61e193a53c47edd350bc4d63328e703811c26a61929b"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378612",
+    "filename": "image-20260706-143135.png",
+    "size": 37843,
+    "path": "adjuntos/RCS-27578/1378612-image-20260706-143135.png",
+    "sha256": "37e414badf3c59db4dd4ca21f7087798e44b371e1da0dffff4ad0ea1ab065854"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378613",
+    "filename": "image-20260706-143155.png",
+    "size": 36844,
+    "path": "adjuntos/RCS-27578/1378613-image-20260706-143155.png",
+    "sha256": "7b075d72499f524e6e82152e170d6524edecc2ef927312b93ca9f484d07a78d9"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378615",
+    "filename": "image-20260706-143217.png",
+    "size": 120853,
+    "path": "adjuntos/RCS-27578/1378615-image-20260706-143217.png",
+    "sha256": "1832854755a2656ecda5726477a55c437963b1b6a50ec3a17998b040a4d7409c"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388497",
+    "filename": "image-20260721-202524.png",
+    "size": 92318,
+    "path": "adjuntos/RCS-27578/1388497-image-20260721-202524.png",
+    "sha256": "7e4217b5ccfa913e8680b4ceb7489008d0d6452d7cb8d65e5d07cb7bef8272aa"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388499",
+    "filename": "RE_ Appriss SSO & Incident .msg",
+    "size": 694272,
+    "path": "adjuntos/RCS-27578/1388499-RE__Appriss_SSO___Incident_.msg",
+    "sha256": "e9e10cb67234c322a9ebed224af2199b456289f7b5626b6c52a43b3caf116b47"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388501",
+    "filename": "RE_ Appriss SSO & Incident  (41b2a6bb-928a-428c-b99f-81be164ae04d).msg",
+    "size": 1516032,
+    "path": "adjuntos/RCS-27578/1388501-RE__Appriss_SSO___Incident___41b2a6bb-928a-428c-b99f-81be164ae04d_.msg",
+    "sha256": "96b95e604d7372d16f55ba1ea08608700651ef8b92802dd153833fe7b6272aee"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1411197",
+    "filename": "image001 (da0a2557-1eca-4220-a157-5ec176c3a2d0).png",
+    "size": 224566,
+    "path": "adjuntos/RCS-27941/1411197-image001__da0a2557-1eca-4220-a157-5ec176c3a2d0_.png",
+    "sha256": "b1beab13dc76300e2e6bb50b88cff91a2a1e89c57546a5c3ab6ec5a872ba7493"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414784",
+    "filename": "image002.png",
+    "size": 153399,
+    "path": "adjuntos/RCS-27941/1414784-image002.png",
+    "sha256": "e47203a4a17a0b8fb6b1877611ce3c298f8869b05a0e75994246445675844bc3"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414783",
+    "filename": "image003.png",
+    "size": 138865,
+    "path": "adjuntos/RCS-27941/1414783-image003.png",
+    "sha256": "598fffd01a6a4b466c51e4b65902c7c543a7dbce976e8ede977bb2379e7a3c02"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389660",
+    "filename": "image-20260722-211547.png",
+    "size": 48179,
+    "path": "adjuntos/RCS-27941/1389660-image-20260722-211547.png",
+    "sha256": "7c2e79e92cc31b54fc44ef40198b5f680d325e7c403575a5975bfa8c05874535"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389661",
+    "filename": "image-20260722-212051.png",
+    "size": 54736,
+    "path": "adjuntos/RCS-27941/1389661-image-20260722-212051.png",
+    "sha256": "d6533a79843d34c88b9bb8fad348b4e2d3b533f353f565be86100df67a8a9d0a"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389656",
+    "filename": "image-20260722-212119.png",
+    "size": 35560,
+    "path": "adjuntos/RCS-27941/1389656-image-20260722-212119.png",
+    "sha256": "242df9ad96d29d7f584983f5bb8b7979fbe92ab3f6c1e1ff7fd330c3744136d4"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389659",
+    "filename": "image-20260722-212147.png",
+    "size": 22431,
+    "path": "adjuntos/RCS-27941/1389659-image-20260722-212147.png",
+    "sha256": "be7530cf78774c63103a4b55b936a1cf16b031ef0999d2ec692d93206d61e99a"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389658",
+    "filename": "image-20260722-212224.png",
+    "size": 96539,
+    "path": "adjuntos/RCS-27941/1389658-image-20260722-212224.png",
+    "sha256": "37d6097a921286137513e97cedd735c2063653dd4d2b0d7a674fa8c043113ec7"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389654",
+    "filename": "image-20260722-212252.png",
+    "size": 63184,
+    "path": "adjuntos/RCS-27941/1389654-image-20260722-212252.png",
+    "sha256": "ec7a12f5c0fdbef103bc4f9337d0b17618f666d669e7a29052cce55b9e5df66a"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389657",
+    "filename": "image-20260722-212324.png",
+    "size": 60804,
+    "path": "adjuntos/RCS-27941/1389657-image-20260722-212324.png",
+    "sha256": "777754014674d519969dacb52d0445ed83916b45a7b28b50bde456602a14af8a"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389655",
+    "filename": "image-20260722-212430.png",
+    "size": 47445,
+    "path": "adjuntos/RCS-27941/1389655-image-20260722-212430.png",
+    "sha256": "58befbf02689db403413f8f0b95263d13af647ebc611423cda84a10bad8daad4"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1392616",
+    "filename": "image-20260728-140910.png",
+    "size": 77613,
+    "path": "adjuntos/RCS-27941/1392616-image-20260728-140910.png",
+    "sha256": "adb543f739edeea9a9bb6345dbc3fb0d981054634b2c3ef8346cee6069383f9b"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1403922",
+    "filename": "image-20260813-202708.png",
+    "size": 62298,
+    "path": "adjuntos/RCS-27941/1403922-image-20260813-202708.png",
+    "sha256": "4f1df5f3d3828cd5e978e652fa9a03b7abfe9a772a772dafab06dcd24feaf4a5"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1403921",
+    "filename": "image-20260813-202829.png",
+    "size": 31450,
+    "path": "adjuntos/RCS-27941/1403921-image-20260813-202829.png",
+    "sha256": "c58db8c8a923fb94d659a785d6a926ec863c88b66c70656ddd3ffc8aa15b7e41"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408101",
+    "filename": "image-20260820-162157.png",
+    "size": 93483,
+    "path": "adjuntos/RCS-27941/1408101-image-20260820-162157.png",
+    "sha256": "df7b9d1c8e8e6f3b903e56d4975db32107163fc923117e8043e5dc80421d48c2"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408100",
+    "filename": "image-20260820-162236.png",
+    "size": 77252,
+    "path": "adjuntos/RCS-27941/1408100-image-20260820-162236.png",
+    "sha256": "77112f92e9401131b8657a5a35c43fb7692b7f5f9e5e52c32d87ffa74a87a310"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408102",
+    "filename": "image-20260820-163953.png",
+    "size": 81528,
+    "path": "adjuntos/RCS-27941/1408102-image-20260820-163953.png",
+    "sha256": "9f9b4c5ee507d0a22a4aedd076338eead00fc624115b5aca6d861b2d04b56819"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408103",
+    "filename": "image-20260820-164013.png",
+    "size": 42462,
+    "path": "adjuntos/RCS-27941/1408103-image-20260820-164013.png",
+    "sha256": "e48ce48fc077f0330266d1d5a161bd6cf0f28ac5816ac5a1c207280646894d16"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408104",
+    "filename": "image-20260820-164054.png",
+    "size": 41811,
+    "path": "adjuntos/RCS-27941/1408104-image-20260820-164054.png",
+    "sha256": "fc0ca3e26f352fa54bfdef5342b41fb291bbb7082768adc4064db784802a212a"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408105",
+    "filename": "image-20260820-164113.png",
+    "size": 72813,
+    "path": "adjuntos/RCS-27941/1408105-image-20260820-164113.png",
+    "sha256": "b2f6b6c0ef454dffb389c28f8b68c2219fcbafe049e9761c64002b8ecf217b87"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414961",
+    "filename": "image-20260901-161834.png",
+    "size": 83729,
+    "path": "adjuntos/RCS-27941/1414961-image-20260901-161834.png",
+    "sha256": "741e9fb425e8ec6885544b541ce10ffacb5e84938e40e1186c7c4d4911e3e769"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414958",
+    "filename": "image-20260901-161900.png",
+    "size": 84441,
+    "path": "adjuntos/RCS-27941/1414958-image-20260901-161900.png",
+    "sha256": "f2b35da579f56a08fc61509689f53247b9c041b7473b9569f28a0176d3e152b4"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414960",
+    "filename": "image-20260901-161911.png",
+    "size": 83374,
+    "path": "adjuntos/RCS-27941/1414960-image-20260901-161911.png",
+    "sha256": "2251177fe32744180e9411f7012001eab3d5d7be7563dbf75a0490104119d305"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414959",
+    "filename": "image-20260901-162059.png",
+    "size": 119915,
+    "path": "adjuntos/RCS-27941/1414959-image-20260901-162059.png",
+    "sha256": "ed39097ae92d4ca4575f5fb26c5d53e1be411e5e9c280d8e101440ceb4f8528b"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1415521",
+    "filename": "image-20260902-142504.png",
+    "size": 137842,
+    "path": "adjuntos/RCS-27941/1415521-image-20260902-142504.png",
+    "sha256": "e176b34f09da2cb72d3a72b840acc5c652fdf59d15efb864fdb82080d5c6bf2e"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1415520",
+    "filename": "image-20260902-143027.png",
+    "size": 59115,
+    "path": "adjuntos/RCS-27941/1415520-image-20260902-143027.png",
+    "sha256": "2334c7144e617871d6d43b355804896b89f843d26a10b365b6915a19ba686870"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1418720",
+    "filename": "image-20260908-202446.png",
+    "size": 107585,
+    "path": "adjuntos/RCS-27941/1418720-image-20260908-202446.png",
+    "sha256": "7e0f4b1e49e14fdf55688b93c168be502ad423080fa86f3d2a0371ab3b8ddbb3"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1419146",
+    "filename": "image-20260909-141159.png",
+    "size": 105694,
+    "path": "adjuntos/RCS-27941/1419146-image-20260909-141159.png",
+    "sha256": "eb427ff6389f1f740fcf5bcce4912aae86ff5eab82e17d09606897017b67b120"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420026",
+    "filename": "image-20260910-151207.png",
+    "size": 36228,
+    "path": "adjuntos/RCS-27941/1420026-image-20260910-151207.png",
+    "sha256": "b93204931793a2694cf35f1c9679c9826e3f05218b7f3726e22d135892ed00ac"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420027",
+    "filename": "image-20260910-151231.png",
+    "size": 72308,
+    "path": "adjuntos/RCS-27941/1420027-image-20260910-151231.png",
+    "sha256": "cffd610dd0592e35c680c65d3fc4cf4a4f301c12345909b7869b47cf8cd109b8"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420024",
+    "filename": "image-20260910-151409.png",
+    "size": 25196,
+    "path": "adjuntos/RCS-27941/1420024-image-20260910-151409.png",
+    "sha256": "66a6b5ab6bf4fec236ba89e9b3f27281118ae020874aec88ef4b1aa80019d3c5"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420025",
+    "filename": "image-20260910-151445.png",
+    "size": 24790,
+    "path": "adjuntos/RCS-27941/1420025-image-20260910-151445.png",
+    "sha256": "bea9c528a5f3fc82391b7f902e5beb3f74e2cb359e7876c7fbdb8ca33193ef1b"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420452",
+    "filename": "image-20260911-000238.png",
+    "size": 136647,
+    "path": "adjuntos/RCS-27941/1420452-image-20260911-000238.png",
+    "sha256": "347bd3e90feb2794d062e11e81b0da7970835399fbfe353480c9d4bba160e776"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424220",
+    "filename": "image-20260917-144320.png",
+    "size": 47960,
+    "path": "adjuntos/RCS-28973/1424220-image-20260917-144320.png",
+    "sha256": "2972811dbae3a23a9a9afc3b8bec0c12394d25e6a160e9241f23ca0d1743f9b3"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424217",
+    "filename": "image-20260917-144340.png",
+    "size": 45429,
+    "path": "adjuntos/RCS-28973/1424217-image-20260917-144340.png",
+    "sha256": "9582db1e36574f759b71e0352fa7e4840e8afe481ccf53e84bcd36cea50112eb"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424223",
+    "filename": "image-20260917-144409.png",
+    "size": 47319,
+    "path": "adjuntos/RCS-28973/1424223-image-20260917-144409.png",
+    "sha256": "cf32a735607b26eaf4c1aaad37a2dc8ba414e27c84bdb7b1f64ae29de8f7e532"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424221",
+    "filename": "image-20260917-144427.png",
+    "size": 43431,
+    "path": "adjuntos/RCS-28973/1424221-image-20260917-144427.png",
+    "sha256": "18c606382a99feb538810eee2d31023e334907c968fb9ea89312a08ba675673a"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424218",
+    "filename": "image-20260917-144520.png",
+    "size": 46706,
+    "path": "adjuntos/RCS-28973/1424218-image-20260917-144520.png",
+    "sha256": "1909aa5c8ecd2b9610c9bfcc5fa54bee6a518acc36a8b0bfa31069fa5d717243"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424219",
+    "filename": "image-20260917-144537.png",
+    "size": 43668,
+    "path": "adjuntos/RCS-28973/1424219-image-20260917-144537.png",
+    "sha256": "aca4802bf0f93a5f47d895111190b5bc638ba9abe322ccbb0fae84599bb34078"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424224",
+    "filename": "image-20260917-144558.png",
+    "size": 46729,
+    "path": "adjuntos/RCS-28973/1424224-image-20260917-144558.png",
+    "sha256": "d9e31ebae2868285de055471e6d5d1252960394c690bdd4b34b3434a07edf2fb"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424222",
+    "filename": "image-20260917-144618.png",
+    "size": 42637,
+    "path": "adjuntos/RCS-28973/1424222-image-20260917-144618.png",
+    "sha256": "c77072d0aaba812511220fc975282a8e1f6e10b448b157f658c04607d289b23e"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1426964",
+    "filename": "image-20260921-175822.png",
+    "size": 159652,
+    "path": "adjuntos/RCS-29027/1426964-image-20260921-175822.png",
+    "sha256": "ff3fd1a7cf6171942a4e6964411d9c5762813c615d36a63fb77e4ba5e53a2af0"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1426963",
+    "filename": "image-20260921-175903.png",
+    "size": 128804,
+    "path": "adjuntos/RCS-29027/1426963-image-20260921-175903.png",
+    "sha256": "ef44ac19edb48f8b6aeac96587cf4b66db6f0cd0a0fad6fd2f37bd5e13c8144a"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1428810",
+    "filename": "image-20260924-083142.png",
+    "size": 118368,
+    "path": "adjuntos/RCS-29027/1428810-image-20260924-083142.png",
+    "sha256": "2258d99c4d2d258c5ce3bbcd5131bfe515f37a22f43cfd36663c18c69d6c6af0"
+  },
+  {
+    "ticket": "RCS-28157",
+    "id": "1398927",
+    "filename": "image-20260806-113947.png",
+    "size": 182609,
+    "path": "adjuntos/RCS-28157/1398927-image-20260806-113947.png",
+    "sha256": "5ac5669f0dcb833d83815f017fb23da553f187790a5905e4fb934fcd61446434"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337286",
+    "filename": "image001.png",
+    "size": 50547,
+    "path": "adjuntos/RCS-26519/1337286-image001.png",
+    "sha256": "7219aa7dc16f676caa415c03a0df9eaaee89461db091cbd7a41d643bd3a52b74"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337650",
+    "filename": "image001 (309327dc-0be0-40ed-8db6-86ba2405eb69).png",
+    "size": 119819,
+    "path": "adjuntos/RCS-26519/1337650-image001__309327dc-0be0-40ed-8db6-86ba2405eb69_.png",
+    "sha256": "3de343ae31732e0ce5a106da3a44ea3f5bfa8f95acdb88e2b26f605912b7c21b"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337285",
+    "filename": "image002.png",
+    "size": 63905,
+    "path": "adjuntos/RCS-26519/1337285-image002.png",
+    "sha256": "c137c42d7cf25e7ac5735805dae80aa616be7cfb5c5802b05645d8930b76a3e8"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337653",
+    "filename": "image002 (bb0de7e6-bbc9-4cbb-b434-73a701351b93).png",
+    "size": 133690,
+    "path": "adjuntos/RCS-26519/1337653-image002__bb0de7e6-bbc9-4cbb-b434-73a701351b93_.png",
+    "sha256": "21e76ce9b6ae38b94098537fe8b26b75cef5f64ef74a5da4577406ded69f2a08"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337652",
+    "filename": "image003.png",
+    "size": 30673,
+    "path": "adjuntos/RCS-26519/1337652-image003.png",
+    "sha256": "142d1b7e6504cbf76f766169cd8d344bb94200a597458051858d69259007592b"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1337651",
+    "filename": "image005.png",
+    "size": 29731,
+    "path": "adjuntos/RCS-26519/1337651-image005.png",
+    "sha256": "2cfe55be840c17fbd819ae7674010aa40439c76580cfadaa6dbc1fcd5eef511b"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325574",
+    "filename": "image-20260416-210427.png",
+    "size": 28789,
+    "path": "adjuntos/RCS-26519/1325574-image-20260416-210427.png",
+    "sha256": "a1b6dd0ae45ad44a31e1a333166b1cd7619edb754bc0f304c20a0c467ae7703c"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325571",
+    "filename": "image-20260416-210521.png",
+    "size": 43727,
+    "path": "adjuntos/RCS-26519/1325571-image-20260416-210521.png",
+    "sha256": "3afdc3b21f9a6cfdb6c66f7085a5c49c288a110ef7f907c7ea51a3adf3a3ea99"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325576",
+    "filename": "image-20260416-210738.png",
+    "size": 49456,
+    "path": "adjuntos/RCS-26519/1325576-image-20260416-210738.png",
+    "sha256": "98f8e803f4cb639623adb03d4628db09b3c1887df5a4eb5e4212ce560b88298c"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325572",
+    "filename": "image-20260416-210906.png",
+    "size": 28095,
+    "path": "adjuntos/RCS-26519/1325572-image-20260416-210906.png",
+    "sha256": "7eeeabcc95882ac877b9f74f0d5fbb74ba2968656570a416e31ad77fe82c6f65"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325573",
+    "filename": "image-20260416-211645.png",
+    "size": 177354,
+    "path": "adjuntos/RCS-26519/1325573-image-20260416-211645.png",
+    "sha256": "5df08194cb2de8376088baa94fd7a1ad0c91eea4f6bc00d8d68e603ea5b0a574"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325577",
+    "filename": "image-20260416-211842.png",
+    "size": 38222,
+    "path": "adjuntos/RCS-26519/1325577-image-20260416-211842.png",
+    "sha256": "a6354d78944606bb964a32f36ae126753246992a5ba5ba7ad75615798926bb90"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325575",
+    "filename": "image-20260416-211902.png",
+    "size": 22831,
+    "path": "adjuntos/RCS-26519/1325575-image-20260416-211902.png",
+    "sha256": "2c539c6d1ab518859cc39fd4553478d3ba2bfa0bd8165b33dcb196557e28057b"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325861",
+    "filename": "image-20260417-134321.png",
+    "size": 28881,
+    "path": "adjuntos/RCS-26519/1325861-image-20260417-134321.png",
+    "sha256": "fb477029b6bfc0ad7fef1dd8cf6616086e41ac37da1ea169c313fbc0893d6a2d"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325860",
+    "filename": "image-20260417-134406.png",
+    "size": 27908,
+    "path": "adjuntos/RCS-26519/1325860-image-20260417-134406.png",
+    "sha256": "60dc134da62b8b80ffc7d0358aaaae804e5ed29d2f947c30e0cbda643e5b537b"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325859",
+    "filename": "image-20260417-134539.png",
+    "size": 27391,
+    "path": "adjuntos/RCS-26519/1325859-image-20260417-134539.png",
+    "sha256": "ed7e5a1e1369d262756f95962ba14035d06089447326a675a83d1467614c6231"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1325986",
+    "filename": "image-20260417-161944.png",
+    "size": 45298,
+    "path": "adjuntos/RCS-26519/1325986-image-20260417-161944.png",
+    "sha256": "5af2e2608e33e9a96872bdf64932e545269f16cd2e50eefaad0ad9f1d042de70"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1332709",
+    "filename": "image-20260428-204925.png",
+    "size": 193745,
+    "path": "adjuntos/RCS-26519/1332709-image-20260428-204925.png",
+    "sha256": "3c4539361f43f981166f3650f6f634b0f0db13006ce3a6215ff34767fb2f7019"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1332708",
+    "filename": "image-20260428-204933.png",
+    "size": 190843,
+    "path": "adjuntos/RCS-26519/1332708-image-20260428-204933.png",
+    "sha256": "9e1b8808883cac677132edda9c731e2f9e8582fda1a801e1d9ea64b739862501"
+  },
+  {
+    "ticket": "RCS-26519",
+    "id": "1332707",
+    "filename": "image-20260428-204944.png",
+    "size": 189744,
+    "path": "adjuntos/RCS-26519/1332707-image-20260428-204944.png",
+    "sha256": "fde025972c49a4d9825d4cafeabc4e9bf67704a64f7cf633c5787c6211f53974"
+  },
+  {
+    "ticket": "RCS-26584",
+    "id": "1337646",
+    "filename": "image001.png",
+    "size": 119819,
+    "path": "adjuntos/RCS-26584/1337646-image001.png",
+    "sha256": "3de343ae31732e0ce5a106da3a44ea3f5bfa8f95acdb88e2b26f605912b7c21b"
+  },
+  {
+    "ticket": "RCS-26584",
+    "id": "1337645",
+    "filename": "image002.png",
+    "size": 133690,
+    "path": "adjuntos/RCS-26584/1337645-image002.png",
+    "sha256": "21e76ce9b6ae38b94098537fe8b26b75cef5f64ef74a5da4577406ded69f2a08"
+  },
+  {
+    "ticket": "RCS-26584",
+    "id": "1337648",
+    "filename": "image004.png",
+    "size": 29731,
+    "path": "adjuntos/RCS-26584/1337648-image004.png",
+    "sha256": "2cfe55be840c17fbd819ae7674010aa40439c76580cfadaa6dbc1fcd5eef511b"
+  },
+  {
+    "ticket": "RCS-26584",
+    "id": "1337649",
+    "filename": "image005.png",
+    "size": 63905,
+    "path": "adjuntos/RCS-26584/1337649-image005.png",
+    "sha256": "c137c42d7cf25e7ac5735805dae80aa616be7cfb5c5802b05645d8930b76a3e8"
+  },
+  {
+    "ticket": "RCS-26584",
+    "id": "1328438",
+    "filename": "image-20260422-135102.png",
+    "size": 112216,
+    "path": "adjuntos/RCS-26584/1328438-image-20260422-135102.png",
+    "sha256": "a01393a0eb4b803f335c614d64eaad0c359377903c080694af7e3544ea95046b"
+  },
+  {
+    "ticket": "RCS-27325",
+    "id": "1364088",
+    "filename": "image-20260609-135209.png",
+    "size": 63307,
+    "path": "adjuntos/RCS-27325/1364088-image-20260609-135209.png",
+    "sha256": "c39171ef04db9856b188772a28ce576cb1e3a7ca29ba26bd0d5ce57e9a7ac169"
+  },
+  {
+    "ticket": "RCS-27325",
+    "id": "1364089",
+    "filename": "image-20260609-135537.png",
+    "size": 112354,
+    "path": "adjuntos/RCS-27325/1364089-image-20260609-135537.png",
+    "sha256": "fc748f703cff86d1ac116a9a96058604ba78c8918e7da4ab7fc9dc46448aad97"
+  },
+  {
+    "ticket": "RCS-27325",
+    "id": "1366587",
+    "filename": "image-20260612-180539.png",
+    "size": 84565,
+    "path": "adjuntos/RCS-27325/1366587-image-20260612-180539.png",
+    "sha256": "822768ea6436bfced82143facaff443f0faea24b3a97183353032a7830961a88"
+  },
+  {
+    "ticket": "RCS-27325",
+    "id": "1368905",
+    "filename": "image-20260617-142915.png",
+    "size": 139312,
+    "path": "adjuntos/RCS-27325/1368905-image-20260617-142915.png",
+    "sha256": "4d8a6a137d8c9dba1c9032da0888037a28bfa303cb44e86529174c07c4c7267e"
+  }
+]

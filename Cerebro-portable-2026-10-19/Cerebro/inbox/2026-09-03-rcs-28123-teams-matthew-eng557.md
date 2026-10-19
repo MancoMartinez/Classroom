@@ -1,0 +1,1 @@
+Matthew, quick check on ENG-557. It's sitting in Backlog with no assignee and nothing logged since it was created. It maps to the "Assigned to can't be blank" error Jim Cosseboom reported again on RCS-28123 on 8/19, after ENG-7192 deployed. Is this still valid, did it get covered somewhere else, or does it need to go into planning? Need to know before I close out RCS-28123.

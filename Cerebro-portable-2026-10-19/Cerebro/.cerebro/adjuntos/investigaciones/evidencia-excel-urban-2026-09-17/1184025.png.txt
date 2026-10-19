@@ -1,0 +1,172 @@
+# Adjunto 1184025.png
+Ruta: investigaciones/evidencia-excel-urban-2026-09-17/1184025.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-17
+
+Texto reconocido por OCR:
+Portal > Store > Explorer > Composer
+Results
+Same Tender Card e
+Same tender card used.
+Appriss Transaction ID
+Appriss Transaction Type
+End Trans Date Time
+Store No
+Register
+Sale
+09/14/2025 3:17:42 PM
+150
+2506290000134834501
+Sale
+06/29/2025 8:06:25 PM
+150
+2506210000133232946 Sale
+06/21/2025 3:53:24 PM
+4
+3
+1
+2506217035050547408 Sale
+06/21/2025 12:29:27 PM
+2199
+2506030000129504225
+Sale
+06/03/2025 4:54:41 PM
+150
+2505310000128992478
+Sale
+05/31/2025 5:40:23 PM
+4
+2
+AutoSave
+Search
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Developer Help
+Aptos Narrow
+|11
+~ A
+#b Wrap Text
+General
+Paste
+I U ~
+A r
+EMerge & Center
+$ = %
+Clipboard
+Font
+Alignment
+Number
+B19
+X V fx ~
+1 Appriss Transaction ID Appriss Transaction Type End Trans Date Time
+2 2509140000150771179
+Sale
+9/14/2025 3:17:42 PM
+3 2506290000134834501
+4 2506210000133232946
+Sale
+6/29/2025 8:06:25 PM
+Sale
+6/21/2025 3:53:24 PM
+5 2506217035050547408
+Sale
+6/21/2025 12:29:27 PM
+6 2506030000129504225
+Sale
+6/3/2025 4:54:41 PM
+7 2505310000128992478
+Sale
+5/31/2025 5:40:23 PM
+Store No Register Trans Num Cashier No
+150
+2
+3995 001500000331855
+150
+3
+2494001500000172964
+9480 000040000335284
+2199
+150
+335284
+4517 001500000191848
+7227000040000358931
+Trans Num
+Cashier No
+Trans Amount
+Account Number
+3995
+001500000331855
+4.10
+MX-HURKRSVivnre
+2494
+001500000172964
+48.00
+MXEHvRkRSsVTyhce
+9480
+000040000335284
+52.07
+MXEHvRkRSsVTyhce
+335284
+47.36
+MXEHvRkRSsVTyhce
+001500000191848
+32.00
+MXEHvRkRSsVTyhce
+7227
+000040000358931
+280.07
+MXEHvRkRSsVTyhce
+Conditional Format as
+Cell
+Formatting
+Table ~
+Styles
+Styles
+Insert
+Delete Format
+E. AutoSum
+Fill ~
+• Clear ~
+Sort & Find &
+Filter ~ Select ~
+Cells
+Editing
+Trans Amount Account Number Customer Full Name Total Staff Discount Amount
+4.1
+48
+52.07
+47.36
+32
+280.07
+32
+20.4
+142.4
+Customer Full Name
+Tabular
+6 results
+Total Staff Discount Amount
+John David Perdomo
+Chart
+0.00
+32.00
+8.00
+0.00
+20.40
+142.40
+TB
+• Comments
+Sensitivity
+Sensitivity
+Add-ins
+@ Share ~
+Analyze
+Data

@@ -1,0 +1,32 @@
+# Adjunto image-20260729-161147.png
+Ruta: adjuntos/RCS-28032/image-20260729-161147.png
+Tipo: png
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Access Issues
+BB
+Brandon Bigelow< Brandon.Bigelow@vitaminshoppe.com>
+To: © Appriss Retail - Support
+Cc: Joe Austin <joseph.austin@vitaminshoppe.com>
+• You forwarded this message on Wed 7/29/2026 9:37 PM
+EXTERNAL SENDER
+Reply
+* Reply all
+Forward
+Wed 7/29/2026 9:37 PM
+Good Morning.
+Reaching out to ascertain if the platform is currently down? It appears to be defaulting to the new URL and I was able to login and it prompted me to
+update my password but upon changing my password I am now receiving the below message
+Session Error
+Your Incident session could not be established. This is usually
+caused by a temporary account configuration issue.
+Please return to the Secure portal and sign in again. If the problem
+persists, contact your administrator.
+Very Respectfully,
+Brandon Bigelow
+Loss Prevention and Safety Supervisor, Distribution AZ
+Cane Corso Dad. USMC Veteran. Gamer. Health Enthusiast.
+"Slow is Smooth, Smooth is Fast"
+Shop with us | @ 0 i • d

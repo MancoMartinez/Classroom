@@ -1,0 +1,133 @@
+#!/usr/bin/env python3
+"""Mide si el cerebro necesita vectores, en vez de suponerlo.
+
+Compara cuatro recuperadores sobre los mismos fragmentos y las mismas preguntas:
+
+  FTS5     el indice que ya tiene la base, coincidencia lexica con prefijos
+  BM25     ranking lexico clasico sobre TF-IDF, la linea base honesta
+  LSA      TF-IDF reducido con SVD, un canal semantico denso sin redes neuronales
+  RRF      fusion de rangos reciprocos de FTS5 y LSA, el hibrido
+
+La metrica es recall@5 sobre `cola/EVAL-recuperacion.json`. Cada pregunta esta escrita
+evitando el vocabulario del fragmento correcto, que es donde un recuperador semantico
+deberia ganarle a uno lexico. Si no gana aqui, no gana en ningun lado.
+
+Uso:  python3 bin/eval_recuperacion.py
+"""
+import json, os, re, sqlite3, sys, unicodedata
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+DB = os.environ.get("CEREBRO_DB", os.path.join(ROOT, "brain", "sessions.db"))
+K = 5
+
+
+def sin_tildes(s):
+    return "".join(c for c in unicodedata.normalize("NFD", s.lower())
+                   if unicodedata.category(c) != "Mn")
+
+
+def cargar():
+    con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+    filas = con.execute("SELECT id, title, body FROM knowledge_chunks ORDER BY id").fetchall()
+    con.close()
+    return [(i, f"{t}\n{b}") for i, t, b in filas]
+
+
+def gold(docs, patron):
+    rx = re.compile(patron, re.I | re.S)
+    return {i for i, txt in docs if rx.search(txt)}
+
+
+def fts5(consulta, k):
+    con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+    palabras = [w + "*" for w in re.findall(r"[\wáéíóúñ]{3,}", consulta.lower())]
+    for expr in (" ".join(palabras), " OR ".join(palabras)):
+        if not expr:
+            continue
+        try:
+            r = [x[0] for x in con.execute(
+                "SELECT rowid FROM chunks_fts WHERE chunks_fts MATCH ? ORDER BY rank LIMIT ?",
+                (expr, k))]
+        except sqlite3.OperationalError:
+            r = []
+        if r:
+            con.close()
+            return r
+    con.close()
+    return []
+
+
+def main():
+    casos = json.load(open(os.path.join(ROOT, "cola", "EVAL-recuperacion.json"),
+                           encoding="utf-8"))["casos"]
+    docs = cargar()
+    ids = [i for i, _ in docs]
+    textos = [sin_tildes(t) for _, t in docs]
+    print(f"{len(docs)} fragmentos, {len(casos)} preguntas, recall@{K}\n")
+
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.decomposition import TruncatedSVD
+    from sklearn.preprocessing import normalize
+    import numpy as np
+
+    tfidf = TfidfVectorizer(sublinear_tf=True, min_df=1, ngram_range=(1, 2),
+                            max_features=200000)
+    X = tfidf.fit_transform(textos)
+    svd = TruncatedSVD(n_components=256, random_state=0)
+    Z = normalize(svd.fit_transform(X))
+
+    aciertos = {"FTS5": 0, "BM25": 0, "LSA": 0, "RRF": 0}
+    vacios = 0
+    fallos_fts = []
+
+    for c in casos:
+        g = gold(docs, c["ancla"])
+        if not g:
+            vacios += 1
+            continue
+        q = c["q"]
+        r_fts = fts5(q, K)
+
+        qv = tfidf.transform([sin_tildes(q)])
+        sim_bm = (X @ qv.T).toarray().ravel()
+        r_bm = [ids[j] for j in np.argsort(-sim_bm)[:K]]
+
+        qz = normalize(svd.transform(qv))
+        sim_lsa = (Z @ qz.T).ravel()
+        orden_lsa = [ids[j] for j in np.argsort(-sim_lsa)[:50]]
+        r_lsa = orden_lsa[:K]
+
+        # Reciprocal rank fusion de FTS5 y LSA.
+        puntos = {}
+        for rank, d in enumerate(fts5(q, 50)):
+            puntos[d] = puntos.get(d, 0) + 1 / (60 + rank)
+        for rank, d in enumerate(orden_lsa):
+            puntos[d] = puntos.get(d, 0) + 1 / (60 + rank)
+        r_rrf = [d for d, _ in sorted(puntos.items(), key=lambda x: -x[1])[:K]]
+
+        for nombre, r in (("FTS5", r_fts), ("BM25", r_bm), ("LSA", r_lsa), ("RRF", r_rrf)):
+            if g & set(r):
+                aciertos[nombre] += 1
+        if not (g & set(r_fts)):
+            fallos_fts.append((q, c["ancla"], len(g), bool(g & set(r_rrf))))
+
+    n = len(casos) - vacios
+    if vacios:
+        print(f"{vacios} preguntas descartadas: el ancla no encontro ningun fragmento\n")
+    print(f"{'recuperador':10} {'recall@5':>9}")
+    for nombre in ("FTS5", "BM25", "LSA", "RRF"):
+        print(f"{nombre:10} {aciertos[nombre]}/{n} = {aciertos[nombre]/n:>6.0%}")
+
+    if fallos_fts:
+        print(f"\nDonde FTS5 falla ({len(fallos_fts)}):")
+        for q, a, ng, rescatado in fallos_fts:
+            marca = "RRF lo rescata" if rescatado else "el hibrido tampoco"
+            print(f"  · {q[:66]:68} {marca}")
+
+    print("\nLimitacion honesta: LSA es un canal semantico sin redes neuronales. "
+          "Un modelo de embeddings real puede rendir mejor. Ese brazo del experimento "
+          "no corre en el sandbox de Cowork, hay que correrlo en el Mac.")
+
+
+if __name__ == "__main__":
+    main()

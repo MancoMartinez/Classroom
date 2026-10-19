@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-28",
+  "cases": 101,
+  "metric": "hit-rate@5 por ancla regex en el fragmento recuperado",
+  "limits": "Set heredado, sin holdout ni evaluación humana. Fragmentos del corpus completo; no comparable directamente con cifras antiguas sobre 1776 documentos de SQLite. No mide exactitud de respuestas.",
+  "index": {
+    "sources": 3373,
+    "chunks": 15823,
+    "vector_chunks": 15823,
+    "model": "intfloat/multilingual-e5-small",
+    "synced": "2026-09-28T22:48:09.829914+00:00",
+    "coverage": "SQLite knowledge_chunks/items, reuniones, conversaciones, sesiones, Q&A y relaciones registradas; texto completo de inbox, bitácora, memorias, investigaciones, flujos, triage y Claude outputs. Fichas y espejo son vistas duplicadas; se leen por ticket. Adjuntos binarios no indexados.",
+    "warning": "Fechas son de documentos, no prueba de vigencia. Estado de tickets requiere Jira. Coaparición no demuestra causa común."
+  },
+  "bm25": {
+    "hits": 36,
+    "total": 101,
+    "median_seconds": 0.0025134579627774656
+  },
+  "hybrid": {
+    "hits": 48,
+    "total": 101,
+    "median_seconds": 0.09558183397166431
+  }
+}

@@ -1,0 +1,262 @@
+# Cerebro. Estado real al 8 sep 2026
+
+Primer archivo que se lee al migrar. Todo lo de abajo esta medido, no estimado. Auditoria corrida
+el 8 sep 2026 sobre la carpeta `Cerebro-2026-08-18`.
+
+## Que es esto
+
+Segundo cerebro de Juan Martinez, Lead Support Engineer en Appriss Retail vía Nuaav, UTC-5. Guarda
+lo que se aprende trabajando tickets RCS, lo devuelve cuando hace falta, y le da a Claude el
+contexto que Jira no tiene.
+
+Cuatro capas, de mas cruda a mas destilada:
+
+| Capa | Que guarda | Cuanto hay | Salud |
+|---|---|---|---|
+| `brain/sessions.db` | Conocimiento en SQLite con FTS5 | 1744 chunks en 27 carpetas | Viva. Ingerida hasta el 8 sep |
+| `tickets/` | Una ficha por ticket con su rastro | 530 fichas | Indice regenerado el 8 sep, al dia |
+| `inbox/` | Lo nuevo sin clasificar | 327 notas | Ingerida. 147 notas se descartaron a proposito |
+| `flujos/` y `investigaciones/` | Procesos y causas raiz establecidas | 3 flujos, 2 investigaciones, 2 indices curados | Indices al dia al 8 sep. Falta mapa de timeout y de SSO |
+
+`brain/memoria/` guarda 68 memorias de Claude Code, con indice en `MEMORY.md`. `bitacora/` guarda lo
+que Juan reporta haber trabajado antes de que llegue a Jira. `cola/` ordena los tickets abiertos por
+urgencia real. `asignaciones/` guarda el reparto diario al equipo Colombia.
+
+## Cifras de la base
+
+    chunks              1744  en 27 carpetas, rango 25 may a 8 sep 2026
+    sin embedding        289  la busqueda es FTS5, no vectorial
+    items                491  304 tareas abiertas, 182 notas
+    meetings              99
+    conversaciones        16
+    integridad            ok  verificado con PRAGMA integrity_check
+
+## Lo que se arreglo hoy
+
+**La base dejo de aprender el 28 ago.** Entre el 25 ago y el 8 sep se escribieron 289 notas en
+`inbox/` y entro un solo chunk a la base. El cerebro se volvio una pila de markdown. Se escribio
+`bin/ingerir_inbox.py`, que agrupa las notas por ticket, extrae que pasa, causa, evidencia y que
+sigue, y escribe un chunk consolidado por caso. Resultado: 95 chunks nuevos, 46 tickets
+consolidados, 49 cosechas y notas sueltas. Verificado, FTS5 sincronizado, integridad ok.
+
+**147 notas se descartaron a proposito.** 101 bloques pegables, porque ese texto ya vive en Jira. 16
+fotos de cola, porque describen un momento que ya paso. 30 planes y andamios de trabajo. En la base
+entra la conclusion, no la cronica.
+
+**Los backups se comian la carpeta.** `bin/guardar` copiaba la base de 31MB en cada escritura y
+nunca borraba. Ocho copias, 250MB de los 294MB de la carpeta. Ahora rota y deja las dos mas
+recientes.
+
+**`bin/buscar` estaba roto en Cowork.** Abria con `mode=ro` y fallaba con `disk I/O error`. Ahora cae
+a `immutable=1` y lee igual.
+
+**Las cinco skills de Cerebro se acortaron 21%,** de 44.8KB a 35.5KB, sin perder una sola regla
+dura. Lo que se corto fue la justificacion narrativa, no el contenido.
+
+**El formato de entregable cambio.** Antes cada ticket producia un informe de 10.3KB promedio mas un
+instructivo de 6.4KB. Ahora produce un archivo con techo de 2500 caracteres: que pasa, causa,
+evidencia, que hago hoy, precedentes, compromisos. La historia se consulta con `bin/buscar`, no se
+recrea en el archivo.
+
+## Lo que sigue roto
+
+**El motor de IA de Moscu esta muerto.** La key de Azure murio el 18 ago 2026, 401 en chat y en
+embeddings. La app almacena y busca, no razona. El motor de inteligencia es Claude. Transcribir en
+Moscu, procesar con Claude, guardar de vuelta. No pidas una key nueva. Si se prueban embeddings, van
+locales y en el Mac, porque torch no entra en el sandbox de Cowork.
+
+**El recall de la busqueda es mas bajo de lo que se creia. Remedido el 8 sep 2026.** El set paso de
+32 a 101 preguntas y FTS5 da **33% de recall@5**, no 48%.
+
+El 48% estaba inflado. Diez de los 32 casos originales tenian anclas que apuntaban a mas de treinta
+fragmentos, y una no apuntaba a ninguno. Un ancla amplia se acierta por azar y no mide nada. Al
+apretarlas, la misma medicion sobre el set viejo cae, y sobre el set de 101 casos queda en 33%.
+
+Regla de calidad que quedo escrita en el propio set: **un ancla debe apuntar a entre 1 y 30
+fragmentos.** Fuera de ese rango la pregunta no mide.
+
+Lo establecido sigue siendo lo mismo, con mas fuerza: el recall absoluto es bajo. Dos de cada tres
+preguntas escritas como las escribe Juan no traen el fragmento correcto en los primeros cinco
+resultados.
+
+**La comparacion contra el canal semantico ya corrio, y la respuesta es que los vectores no son el
+cuello de botella.** scikit-learn se instalo el 8 sep 2026 con `--break-system-packages`, decision
+de Juan. Los comandos diarios siguen sin dependencias.
+
+Cinco brazos sobre las 101 preguntas: FTS5 33%, BM25 38%, LSA 38%, RRF 39%, BM25 mas LSA 39%.
+
+**Ninguna pareja se separa.** McNemar exacto en las cuatro comparaciones da p de 0.26 a 1.00.
+
+El contraste que decide no es FTS5 contra el hibrido, porque FTS5 rankea peor que BM25 y cualquier
+cosa que se le sume parece ayudar. El contraste que decide es **BM25 contra BM25 mas el canal
+semantico: mueve cinco preguntas en total, dos y tres, con p igual a 1.00.** BM25 y LSA empatan en
+38% y fallan en preguntas distintas, diez y diez. Encuentran cosas distintas y ninguno es mejor.
+
+**El techo no lo pone el recuperador.** Cinco metodos distintos se estancan en la misma banda de 33
+a 39%. Si el ranking fuera el problema, algun brazo se separaria.
+
+Limitacion que hay que decir: el evaluador busca solo contra `knowledge_chunks`. `bin/buscar` busca
+ademas en memorias, fichas, mesa e inbox. El 33% es un piso, no la experiencia de Juan.
+
+La pregunta util ya no es que recuperador rankea mejor. Es por que cinco recuperadores distintos
+fallan en las mismas dos terceras partes. Eso apunta al tamaño de los fragmentos, a los titulos, o
+al canal que el evaluador no mira.
+
+Detalle en `cola/INFORME-recuperacion.md`.
+
+**Habia un journal caliente del 4 sep 13:22 junto a la base.** `sessions.db-journal` de 49KB, de una
+escritura interrumpida. La base migrada va sin journal y con integridad verificada. Si en el Mac
+aparece otro, no lo borres a mano, abre la base con `sqlite3` y deja que haga rollback.
+
+**El clasificador de la cola está en 100%. Arreglado el 8 sep 2026.** `bin/eval_cola.py` da 15 de
+15. Lo que estuvo semanas escrito aquí como defecto del código era en dos de cuatro casos una
+etiqueta vencida.
+
+El 73% se diagnosticó mal. El set de `cola/EVAL-clasificador.json` se fijó el 3 sep leyendo el
+último comentario de cada ticket ese día. El volcado llegaba al 8 sep. Seis tickets recibieron
+comentarios en medio, y los cuatro fallos eran cuatro de esos seis. Refrescar dos etiquetas subió la
+exactitud de 73% a 87% sin tocar el léxico.
+
+Lo que decía este documento contra lo que mostró el volcado:
+
+| Ticket | Causa que estaba escrita | Lo que muestra el volcado |
+|---|---|---|
+| RCS-27941 | Colton Neal tiene cuenta completa, su promesa se lee como de Appriss | Falso. Colton sí es `qm:`. El 7 sep Juan le preguntó y no contestó. Nivel 3 correcto, la etiqueta 1 estaba vencida |
+| RCS-28753 | El único comentario es el triage de Akshaya y `es_interno` lo descarta | Falso. Hay 11 comentarios y el triage no se marca interno. Peyman respondió al cliente el 8 sep. Nivel 4 correcto, la etiqueta 2 estaba vencida |
+| RCS-28289 | El nivel 1 no tiene filtro léxico | Correcto. Joe Austin se comprometió él el 8 sep y el ticket subía a nivel 1 igual |
+| RCS-27765 | "we will be monitoring the thread" se lee como pedido | Otra causa. Dispara `do you have` dentro de "Do you have a request or problem", el pie del portal de IT del cliente pegado en el comentario |
+
+Los tres arreglos que se aplicaron:
+
+1. **Filtro léxico en el nivel 1.** Si el último mensaje del cliente trae compromiso propio o solo
+   acuse de recibo, sin pregunta ni pedido, el ticket baja a nivel 3. Decisión de Juan del 8 sep.
+   `cliente_devuelve_pelota()` en `bin/cola.py`.
+2. **Correos pegados fuera del análisis.** `sin_citas()` recorta el comentario en el primer bloque
+   citado, cabecera de Outlook, firma o pie de portal. El léxico se aplica solo a lo que Appriss
+   escribió de su puño.
+3. **Identificación del cliente por tres vías.** Cuenta `qm:`, dominio del correo en el nombre
+   visible, y lista manual. Medido sobre los 46 autores del volcado: de los 33 sin `qm:`, uno solo
+   era cliente, `damir.demirovic@nike.com` con cuenta `712020:`. Los otros 32 eran Appriss.
+
+**La causa de fondo era que el set caduca en silencio.** Se agregó `bin/refrescar_eval.py`, que
+compara la fecha de fijado contra el último comentario de cada ticket y nombra las etiquetas
+vencidas. `bin/eval_cola.py` ahora avisa solo, y marca cada fallo que cae sobre una etiqueta
+vencida. Corre `refrescar` antes de creerle a una caída de exactitud.
+
+**`flujos/` e `investigaciones/`. Reencuadrado el 8 sep 2026.** El conteo de archivos sueltos era
+cierto y la lectura era incompleta. Los dos `INDICE.md` no estan vacios, son mapas curados que
+enrutan a 50 memorias y a los espejos de markdown. Lo que estaba desactualizado era la curaduria,
+del 24 de agosto.
+
+Se midio el hueco contando, sobre las 443 fichas de ticket, cuantas tocan cada tema recurrente.
+Escalacion a ENG 156 fichas el 35%, Unificacion 97, Izenda 83, SSO 82, timeout y 502 56, Smart
+Alerts 46. De todos, Smart Alerts era el unico sin una sola entrada en ninguno de los dos indices.
+
+Se escribio `investigaciones/smart-alerts-familia-de-fallas.md`, que reune siete mecanismos
+distintos bajo el mismo sintoma y abre con un discriminador de cuatro preguntas. Escalacion a ENG no
+se duplico porque `reference_escalacion_l3_procedimiento.md` ya lo cubre y esta verificado contra
+Confluence el 7 sep.
+
+Los dos indices se actualizaron y quedaron sin rutas rotas, verificado con barrido. Lo que sigue son
+los mapas de timeout y 502, hoy repartido entre tres memorias que no se citan, y de SSO, que tiene
+material del 4 de septiembre sin incorporar.
+
+**El espejo de markdown no se regeneraba.** `brain/markdown/` existe para leer el cerebro sin
+SQLite y estaba dos semanas atrasado. Se agrego el comando `espejo`, que ahora corre dentro de
+`cerrar`.
+
+**17 de 92 sesiones sin cosechar, y probablemente perdidas.** `cosecha/registro.json` lleva 75
+marcadas. Las 17 pendientes son chats de trabajo cuyo hallazgo nunca llego a la base. Esos chats
+viven en la cuenta de Claude del PC anterior. Desde el Mac, con otra cuenta, no se alcanzan. O se
+exportan desde esa cuenta, o se dan por perdidos. El paso 6 de `cerebro-asignacion` solo alcanza las
+sesiones de la cuenta activa.
+
+## Donde vive Cerebro. Medido, no supuesto
+
+Claude Code en terminal es la casa de Cerebro. Cowork sirve para consultar.
+
+La prueba: en el sandbox de Cowork la carpeta se monta por FUSE y SQLite no puede tomar el bloqueo.
+Se probaron tres formas de abrir la base desde ahi.
+
+| Prueba | Resultado |
+|---|---|
+| Lectura normal, base sin journal al lado | funciona |
+| Escritura, cualquier caso | `disk I/O error`, siempre |
+| Lectura normal, con journal caliente al lado | `disk I/O error` |
+| Lectura con `immutable=1` | funciona, ignora el journal |
+
+Consecuencia directa: `bin/guardar` y `bin/ingerir_inbox.py` no pueden correr en Cowork. El cerebro
+no puede aprender desde ahi. Ese fue el motivo real por el que la base se congelo dos semanas.
+
+Reparto que funciona:
+
+| Tarea | Donde |
+|---|---|
+| Alimentar la base, ingerir, indexar, RAG, embeddings | Claude Code en terminal |
+| Investigar un ticket, redactar comentarios, la cola diaria | Cualquiera de los dos |
+| Consultar el cerebro, leer fichas, buscar precedentes | Cualquiera de los dos |
+| Entregables de Office, xlsx, docx, pptx, adjuntos e imagenes | Cowork |
+| Instalar torch, probar embeddings locales | Solo terminal, y solo en el Mac |
+
+### Vuelta al Mac, 8 sep 2026
+
+La carpeta volvio al Mac y quedo en `~/Cerebro`. Estuvo en `~/Downloads` el rato del traslado. Se
+movio porque los documentos asumen `~/Cerebro` y porque Downloads es carpeta de paso que macOS
+limpia.
+
+Verificado en el Mac, no supuesto:
+
+| Comprobacion | Resultado |
+|---|---|
+| Las cuatro del paso 6 de `PASOS.md` | pasan con las cifras exactas |
+| `chunks` contra `fts` | 1744 contra 1744, indice sincronizado |
+| `integrity_check` | ok, sin journal |
+| Escritura en SQLite, probada sobre copia | funciona, escribio el chunk |
+| `ingerir` en ensayo | 0 pendientes, el inbox esta al dia |
+| `evaluar` | 73% al llegar, los mismos cuatro fallos nombrados. Arreglado a 100% el mismo dia |
+| `indexar` | 530 fichas |
+
+Se agrego `cerebro.sh`, el equivalente de `cerebro.ps1` para zsh y bash. Resuelve su raiz solo, asi
+que carga desde cualquier directorio. Esta en `~/.zshrc`, los atajos quedan cargados al abrir la
+terminal. Trae un comando nuevo, `cerrar`, que encadena `ingerir-aplicar`, `indexar` y `estado`.
+
+Las 29 skills del zip quedaron en `~/.claude/skills`. Las dos que ya estaban instaladas, versiones
+viejas de `appriss-hr-question` y `appriss-jira-support`, se respaldaron antes de pisarlas.
+
+`CLAUDE.md` apuntaba a `_MIGRACION-2026-09-08/ESTADO.md`, carpeta que no existe. Corregido a
+`ESTADO.md` en la raiz. Cualquier sesion de Claude que siguiera esa ruta se quedaba sin el estado.
+
+Cowork queda en modo consulta, por decision de Juan. La regla esta escrita en `CLAUDE.md`.
+
+## Reglas que no se negocian
+
+1. Jira es de solo lectura. Nunca `addComment`, `transition`, `edit` ni `create`. Claude redacta,
+   Juan pega.
+2. Azure DevOps y sistemas de terceros: leer, nunca accionar.
+3. SQL contra produccion: solo `SELECT`.
+4. Nada que valga se queda en el scroll de la consola. Todo entregable se escribe a
+   `inbox/AAAA-MM-DD-tema.md` en el momento.
+5. Español para hablar con Juan. Ingles para todo lo que se pega en Jira, Confluence o Teams.
+6. Sin guiones como conectores, sin markdown en bloques pegables, sin negritas ahi.
+7. Sin adversativas correctivas, sin incisos entre parentesis, voz activa, sin adjetivos sin numero
+   detras. El detalle esta en `CLAUDE.md`.
+
+## Por donde entrar
+
+| Juan pide | Entra por |
+|---|---|
+| La cola, el panorama, que hay pendiente | `cola/COLA.md`, skill `cerebro-cola` |
+| Un ticket concreto | `tickets/RCS-XXXXX.md`, skill `cerebro-ticket` |
+| Como se hace algo | `flujos/INDICE.md` |
+| Una causa raiz o un mapa de sistema | `investigaciones/INDICE.md` |
+| El reparto del dia al equipo | skill `cerebro-asignacion` |
+| Redactar para ingenieria o para el cliente | skills `cerebro-comentario`, `cerebro-respuesta-cliente` |
+
+Antes de responder cualquier cosa de trabajo, busca. Casi siempre ya hay algo escrito:
+
+    bin/buscar "lo que sea"
+    bin/buscar RCS-28535
+
+Para levantar la carpeta en una maquina nueva, lee `PASOS.md`. Trae el paso a paso de Mac primero
+y Windows en apendice, las cuatro comprobaciones que confirman que la migracion salio bien, y la
+tabla de fallas.

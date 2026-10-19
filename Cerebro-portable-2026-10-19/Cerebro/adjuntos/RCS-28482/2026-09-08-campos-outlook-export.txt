@@ -1,0 +1,29 @@
+Outlook Export (Jim Cosseboom Test)
+Campos capturados en Report Designer, pestana Fields, antes de tocar el reporte.
+Lista parcial, la pantalla se corto antes del final, verificar contra memoria propia.
+Formato: campo de origen seguido de la descripcion que tenia asignada.
+
+StoreName: First Name
+StoreNo: Last Name
+StoreName: Company
+Address1: Business Street
+City: Business City
+State: Business State
+Zip: Business Postal Code
+Country: Business Country
+PhoneNo: Business Phone
+SecurityAccountNum: Account
+EmailAddr: E-mail Address
+StoreOpenDate: Anniversary
+Region: Region
+District: District
+StoreType: Location Type
+StoreUser6: County
+StoreUser8: CAP Score
+FirstName: Div/Reg APM
+LastName: sin descripcion propia, va con la fila anterior
+FirstName: APS/Lead
+LastName: sin descripcion propia, va con la fila anterior
+SquareFeet: Square Feet
+StoreUser3: Pharmacy
+StoreUser1: In-Store Bank Yes/No

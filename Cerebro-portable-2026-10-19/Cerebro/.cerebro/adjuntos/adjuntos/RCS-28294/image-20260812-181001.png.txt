@@ -1,0 +1,49 @@
+# Adjunto image-20260812-181001.png
+Ruta: adjuntos/RCS-28294/image-20260812-181001.png
+Tipo: png
+Ticket: RCS-28294
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Change History
+Change History
+Case No
+2026-ADUP-40-96
+Operation
+CHANGE.SUSPECT_FIRSTNAME
+SAVE.CASE
+SAVE.CASE
+VIEW PAGE
+SAVE.CASE
+Page 1 of 1(23 Items)
+Subject Name
+FERNANDO TORRES
+Date Changed
+Vidata dave
+User Name
+8/11/2026 12:37 AM
+VALDEZ, VIANNEY
+8/11/2026 12:37 AM
+VALDEZ, VIANNEY
+8/11/2026 12:37 AM
+VALDEZ, VIANNEY
+8/11/2026 12:23 AM
+VALDEZ, VIANNEY
+8/11/2026 12:23 AM
+VALDEZ, VIANNEY
+Change History
+Case No
+2026-ADUP-40-96
+2026-ADUP-40-96
+2026-ADUP-40-96
+2026-ADUP-40-96
+2026-ADUP-40-96
+Close
+Case Data
+TORRES
+SUSPECT_FIRSTNAME Changed Value From: To:
+FERNANDO
+HRFirstReport.aspx
+HRFirstReport.aspx
+HRFirstReport.aspx
+...

@@ -1,0 +1,42 @@
+# Adjunto image-20260827-053513.png
+Ruta: adjuntos/RCS-28612/image-20260827-053513.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Myer Group
+Chatswood
+www.myer.com.au
+Myer Pty Ltd
+28/06/20266:00:34 PM
+Team Member: Sukhwinder
+Pos 411
+Store 204
+Cashier 1109207
+MYER one Number: 6278041276926017
+Trans# 77
+*** CUSTOMER ORDER/SALE ***
+*** SALE ***
+QTY
+Price
+Amt
+SEALY EXQUISITE MARRAKESH LUX PL MAT DB
+157705960
+1
+$7649.00
+Class Group: 4422
+60% off Sealy sel stores (397298)
+$-4589.40
+Value Change Reason: BUY GET OFFER
+Bonus Delivery Sealy (395408)
+$-75.00
+Value Change Reason: SPEND 5999 DISCOUNT
+DELIVERY FEE
+DeliveryFee
+$75.00
+Delivery Carrier: OTHER
+$2984.60
+$75.00
+TOTAL
+$3059.60

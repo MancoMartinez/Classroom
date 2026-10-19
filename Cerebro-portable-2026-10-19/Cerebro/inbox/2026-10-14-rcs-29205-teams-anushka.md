@@ -1,0 +1,3 @@
+Thank you so much, Anushka, this is really clear, and great catch on the seed and rebuild overlap. I am happy with the answers, so I will approve the PR. The 0.3% difference and the x_refundtoown approximation sound reasonable as long as they are documented in the closing note.
+
+Yes, I will verify the work items for 24 Aug to 27 Sep once the rebuild is done. One question so I check the right thing: that run completed with 0 rows rather than failing, so would it regenerate on its own after the rebuild, or does someone need to rerun it? Could you let me know here when the operator finishes the seed, the tender rebuild and the paid in and paid out reload? Thanks again!

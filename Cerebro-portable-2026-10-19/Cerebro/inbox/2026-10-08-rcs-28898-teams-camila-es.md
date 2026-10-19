@@ -1,0 +1,1 @@
+Hola Camila, lo confirmamos con SQL en la base de Urban. El store 1449 es StoreIdent 503 y su última fila en Shoplifting es del 6 dic 2025, así que el caso de esa investigación nunca se escribió. La causa (error incident.LPUser, ligado a ENG-6976) quedó como probable. Nadie la validó ni hizo retest, y el ticket cerró con workaround.

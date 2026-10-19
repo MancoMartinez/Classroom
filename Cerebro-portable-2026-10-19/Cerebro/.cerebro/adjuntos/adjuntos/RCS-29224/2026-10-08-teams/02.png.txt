@@ -1,0 +1,24 @@
+# Adjunto 02.png
+Ruta: adjuntos/RCS-29224/2026-10-08-teams/02.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+co
+Daniel Endersby Thursday 10:00 AM
+it will be loaded as soon as it arrives, i'm not worrid about that
+the issue us is it used in part of the ardm data load
+which means coming later in the day could affect rows that day before it's loaded, if it's
+referenced
+it's it's stand alone then no issue
+Jenny Wang Thursday 10:14 AM
+it's not completely stand alone, we grab the sale/return quantity and amount from
+ardm_item table for each store and sku and use them to populate the
+totalsalesquantity/totalsalesvalue/totalreturedquantity/totalreturnedvalue in
+inventory_itemposition table.
+so before we load position table, it's better to have that day's ardm_item populated already.
+These doesn't change the record count in the position table if ardm_item isn't ready, but the
+sale/return value will not populated correctly
+Shaun Callow added Enrique Jimenez to the chat and shared all chat history.
+Shaun Callow Thursday 11:53 AM

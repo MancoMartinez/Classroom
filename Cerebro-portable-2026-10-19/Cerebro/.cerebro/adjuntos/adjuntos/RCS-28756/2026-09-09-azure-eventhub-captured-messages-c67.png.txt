@@ -1,0 +1,50 @@
+# Adjunto 2026-09-09-azure-eventhub-captured-messages-c67.png
+Ruta: adjuntos/RCS-28756/2026-09-09-azure-eventhub-captured-messages-c67.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+Microsoft Azure
+Q Search resources, services, and docs (G+/)
+Home › prd-datacloud-wus2-ehub-1
+hi pro-datacloud-wus2-ehub-1| Metrics * ... •
+Event Hubs Namespace
+How can I programmatically access Azure metrics?
+P Search
+«
++ New chart C Refresh I Share V
+E Overview
+• Activity log
+9Q Access control (IAM)
+• Tags
+* Diagnose and solve problems
+Eo Data Explorer
+* Resource visualizer
+Events
+> Settings
+Sum Captured Messages. for prd-datacloud-wus2-ehub-1 where EntityName = 'c67_rawdata_order 0
++ Add metric V * Add filter *x: Apply splitting
+pro-datacloud-wus2-ehub... Captured Messages., Sum • 7 EntityN... = c67 _rawdata... O
+V Entities
+E Event Hubs
+E. Schema Registry
+V Monitoring
+# Alerts
+tial Metrics
+• Diagnostic settings
+® Logs
+o Advisor recommendations
+› Automation
+> Help
+THE RETAIL EQUATION, INC (TRE...
+X
+(Local Time: Last 30 days (Automatic - 1 hour) ]
+L Line chart VeDrill into Logs V New alert rule Save to dashboard V..
+Ang 16
+• Captured Messages. (Sum), prd-datacloud-wus2-ehub-1 | 65.53M
+Aug 23
+Aug 30
+Sep 05
+UTC +05:30
+& Give Feedback

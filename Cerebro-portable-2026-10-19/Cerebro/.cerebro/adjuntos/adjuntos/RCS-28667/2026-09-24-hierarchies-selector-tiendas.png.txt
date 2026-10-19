@@ -1,0 +1,57 @@
+# Adjunto 2026-09-24-hierarchies-selector-tiendas.png
+Ruta: adjuntos/RCS-28667/2026-09-24-hierarchies-selector-tiendas.png
+Tipo: png
+Ticket: RCS-28667
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+USPROD > Home
+Appriss > Users
+apps.apprissretail.com/adusa/platform/cpf/membership#/edit/e9868693-6c4c-4a11-befb-db140f86147a/hierarchies
+Lo Company Links
+V Securee developer a...
+/ Jim email updates v...
+88
+APPRISS*
+RETAIL
+B Save
+Portal > Settings > Users
+Gabriel Quist
+User details
+Permission groups
+Hierarchies
+User teams
+Secure Incident
+Advanced Properties
+SSO+
+Hierarchies
+Select Hierarchy
+Standard Location Hierarchy
+Members
+7
+Select Level
+District
+Hierarchy Name
+Standard Location Hierarchy
+Level
+Level Name
+Location
+Select Locations
+Choose values to add
+Nothing selected
+Filter...
+Asheville/Spartanburg
+Achland
+Augusta
+Baltimore
+Blacksburg
+Cary
+Charleston
+Charlotte East
+Add »
+1 result
+on Name
+iffice
+*
+Filter...
+g

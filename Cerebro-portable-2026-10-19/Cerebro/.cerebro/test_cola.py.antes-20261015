@@ -1,0 +1,26 @@
+"""Regresión: trabajo interno no responde al cliente, orden y visibilidad de Jira."""
+import datetime, tempfile
+import cola
+from pathlib import Path
+
+def main():
+    now=datetime.datetime.fromisoformat('2026-09-28T22:00:00+00:00')
+    def comment(day,aid,body,public=True,kind='atlassian'):
+        return {'created':f'2026-09-{day}T12:00:00+00:00','body':body,'jsdPublic':public,
+                'author':{'accountId':aid,'displayName':aid,'accountType':kind}}
+    client=comment('25','qm:customer','<p>Can you send the invitation?</p>')
+    internal=comment('28',cola.JUAN,'<p>Investigating</p>',False)
+    bot=comment('28','new-bot','Completed',True,'app')
+    ack=comment('24',cola.JUAN,'I will provide an update')
+    issue={'key':'RCS-99999','fields':{'comment':{'comments':[internal,client,bot,ack]},'priority':{'name':'High'}}}
+    with tempfile.TemporaryDirectory() as td:
+        old=cola.ROOT;cola.ROOT=td
+        (Path(td)/'bitacora').mkdir()
+        (Path(td)/'bitacora/RCS-99999.md').write_text('## 2026-09-28\nDraft prepared (17:00)')
+        result,bit=cola.clasificar_final(issue,now)
+        assert result['nivel']==1 and result['ultimo']['cliente'] and bit
+        issue['fields']['comment']['comments'].append(comment('28',cola.JUAN,'<p>Could you confirm access?</p>'))
+        assert cola.clasificar_final(issue,now)[0]['nivel']==3
+        cola.ROOT=old
+    print('OK: visibilidad, bots, cronología y borradores sin ocultar deuda pública')
+if __name__=='__main__':main()

@@ -1,0 +1,24 @@
+# Adjunto gpc-pos-invoice-visa.png
+Ruta: adjuntos/RCS-29104/gpc-pos-invoice-visa.png
+Tipo: png
+Ticket: RCS-29104
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+ALL GOOOS RETUR
+Custoner Signature
+I agree to pay total neount
+according to card samuer agreesent
+REMIT TO:P.D. Box 409043
+THIU
+Tender Tyr
+Visa
+Anount:
+400979 450.47 CR
+Name Not
+Subtotal
+TAXTABLE 5 6.7500%
+Total
+421.99CR
+28.48CR
+450.47 CR

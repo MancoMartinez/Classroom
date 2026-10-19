@@ -1,0 +1,452 @@
+1
+00:00:00,000 --> 00:00:29,440
+ So essentially what you end up having is we've got what we call like a four part key for a transaction, which is like date store registered transaction ID. That's what a transaction is. We have this subtotal that we send you guys. So let's say on this transaction here it's, you know, 914. It's the subtotal. So that's like all items added together minus tax essentially.
+
+2
+00:00:30,000 --> 00:00:48,180
+ Well, this total item sale amount, this is a field that APRIS is deriving from our item level files. So basically when they add up all the items, they're going to get a subtotal essentially that's called total item sale amount.
+
+3
+00:00:48,180 --> 00:01:00,780
+ And we just compared the two together to make sure that they match when they don't match or when they haven't matched. Historically, what that meant was you guys didn't load all the item level data.
+
+4
+00:01:01,080 --> 00:01:15,180
+ So if you're familiar item level data, when you join that back to the header level data, that's going to be joined on that four part key here. And what would happen is they'd load the header data, but not all the item level.
+
+5
+00:01:15,180 --> 00:01:33,080
+ And so we'd see discrepancies between these two fields. Well, you guys are having issues just about every day now on our loads. And what's happening is I think you're performing reloads of the data, but not recalculating this field.
+
+6
+00:01:33,080 --> 00:01:43,080
+ So when I go and search it in the tool, it still shows as a discrepancy. But when I actually check the receipt image, all the items are there. So you actually loaded them all in.
+
+7
+00:01:43,080 --> 00:01:55,080
+ So that's kind of what we're dealing with right now. And I don't really have a good accurate way to report out the current issues at hand because that field right there is not recalculating in time.
+
+8
+00:01:55,080 --> 00:02:13,080
+ That makes sense. Yeah, absolutely. And again, and I shared this before, like, because yesterday I told you that this was fixed. I was my, it was my misunderstanding. It was fixed. The report for the 21st.
+
+9
+00:02:13,080 --> 00:02:23,080
+ Uh, the thing is that we don't have right now in place a long term solution. Uh, so what the engineering team is doing is that they are monitoring every day.
+
+10
+00:02:23,080 --> 00:02:42,080
+ I mean, starting today, uh, to make sure that the recalculation works because of course, for the 22nd, you didn't see like the calculation of that field at all, because that was on this page. Yeah. Um, so, uh, yeah, what we, what we are, what the plan that we have is that
+
+11
+00:02:42,080 --> 00:02:55,080
+ we're keep monitoring. This is not, I would not expect that it's gonna take longer to have the long term solution, but I want, don't want to promise you an ETA until I have the confirmation from the engineering side.
+
+12
+00:02:55,080 --> 00:03:11,080
+ Um, I expect this is gonna be fixed as long term by the end of the week. Uh, but I will keep you informed in the meantime, what they're gonna do is that manually, and this is gonna be recalculated, uploaded information.
+
+13
+00:03:11,080 --> 00:03:32,080
+ And reconciliated. So it is showing properly on your end every single day. Um, of course, it takes a while to have that done. For example, for the 22nd, I'm still waiting for confirmation that is done. Um, but yeah, the, the aim is that we have this fixed at the end of the week.
+
+14
+00:03:32,080 --> 00:03:54,080
+ Okay. Okay. Okay. That is not happening every single day. Yep. Most definitely. I appreciate it. And that's, that's kind of, here's the thing is, I think we are having, it's not only issues with that field calculating, but I do think there's discrepancies at times where we'll see like, hey, header level data is loaded, but item level data is not.
+
+15
+00:03:54,080 --> 00:04:23,080
+ And the reason I say is because I basically, I've got a dashboard that records every time we see a discrepancy in those fields. So it tells me that the original load that you guys did potentially did have discrepancies. And if you performed any reloads, it's just not recalculating that field. But like, I can actually report out on every single time we've had a discrepancy between the two. That's, that's every, every instance that you see in this section here.
+
+16
+00:04:23,080 --> 00:04:32,080
+ Um, and it'll tell me for how long it was an issue until that field was recalculated, if that makes sense.
+
+17
+00:04:32,080 --> 00:04:38,080
+ Besides that field of the total amount, there is any other field that you see is failing?
+
+18
+00:04:38,080 --> 00:04:44,080
+ Uh, yeah, there is. Um, I'll show it to you. Give me a sec.
+
+19
+00:04:44,080 --> 00:05:07,080
+ So I'll run the search. I've got this saved out there. Um, there is total item sale amount. And then, sorry, I've got a toolbar that's in the way that's not viewable by y'all. Let me get this out of the way.
+
+20
+00:05:07,080 --> 00:05:16,080
+ Um, there is another field that also doesn't update. Um, it's called total item.
+
+21
+00:05:16,080 --> 00:05:31,080
+ Um, total item quantity. That one also, um, is a derived field that I've been noticing doesn't have an update as well. So what it'll say, I don't have this, um, within our email chain.
+
+22
+00:05:31,080 --> 00:05:44,080
+ And I can tell you right now there's no discrepancies cause you've, you reloaded these fields. But what you'll notice is total item quantity will say like quantity of one, but then you pull up the receipt and it's actually got like three items.
+
+23
+00:05:44,080 --> 00:06:12,080
+ Yeah. So I'm noticing that one, that one is actually, uh, I can bring that into my search and make it really easy for me to spot check because I can say, okay, I run it. It says there's a discrepancy, but if there's like quantity of one, uh, lately now, like I say, it's not been like this historically, but within the past few days, what I've noticed is it'll say quantity of one.
+
+24
+00:06:12,080 --> 00:06:20,080
+ And then I checked the receipt and it's actually more items than that. And then I can add those together and I see, Oh, okay. Well, it actually matches the subtotal.
+
+25
+00:06:20,080 --> 00:06:35,080
+ So there's really no issue for the end user at this time. Historically when they were reloading, like when we were, if we ever had an item level problem, that field would update almost immediately when they would do the reload.
+
+26
+00:06:35,080 --> 00:06:46,080
+ So what would end up happening is I could see like, if there's an issue and it says, you know, item quantity of one, that receipt would show item quantity of one.
+
+27
+00:06:46,080 --> 00:06:52,080
+ And it's supposed to be, let's say three. And I could say, okay, well, there is an issue that performed the reload.
+
+28
+00:06:52,080 --> 00:07:04,080
+ It would automatically update the three for the odd quantity or the total odd quantity. And then I can see, Oh, okay. Problem's gone. We're good to go. So that's basically those, those two fields.
+
+29
+00:07:04,080 --> 00:07:21,080
+ Any other, that's what I was just gonna, sorry. I was just gonna say, should we, would it be wise to have all calculated fields checked on our own, just in case, I don't know what other ones are in the background to be honest, but Matt, you might know.
+
+30
+00:07:21,080 --> 00:07:48,080
+ Yeah, but if you have another one that you have captured, that is miscalculated, please let me know. And also, I'm gonna make sure that all calculated files are being checked. What happens after reload. So we can make sure that after the migration of snowflake, we don't have issues on, on those calculations of the fields.
+
+31
+00:07:48,080 --> 00:08:05,080
+ Uh, if you have any other that you have point out, please let me know because that helps the engineers to see if it's exactly the same root cause update. So of total item sales amount, or if it's a different root cause because it's possible. I'm not sure.
+
+32
+00:08:05,080 --> 00:08:08,080
+ That is the only reason why it's failing, right?
+
+33
+00:08:08,080 --> 00:08:17,080
+ Yep. A hundred percent. Um, I will tell you. So some of the calculated fields that you'll see, I'm just kind of, um,
+
+34
+00:08:17,080 --> 00:08:31,080
+ um, or illustrating this. Uh, so you think about like next transaction, subtotal, next transaction, total, next transaction type. You also have fields that are called, I think, previous transaction.
+
+35
+00:08:31,080 --> 00:08:41,080
+ Yeah. So previous transaction, gross sale amount, subtotal type, all of those. So all of those are also, um, considered calculated fields.
+
+36
+00:08:41,080 --> 00:08:55,080
+ We don't send them in our data feed. You actually derive them from our data. Um, so that's another thing is I'm sure you have a repository out there somewhere of all the derived fields that you guys calculate.
+
+37
+00:08:55,080 --> 00:09:13,080
+ I'm sure you say when a reload happens, you have to recalculate all those fields because you didn't have all the data to begin with and now you do. So they would need to be recalculated. Just something. So Erica, that's a great point. Actually. It's not just the two fields that we had pointed out today.
+
+38
+00:09:13,080 --> 00:09:17,080
+ Yeah, I was thinking about it as you were talking. I'm like, there's gotta be others.
+
+39
+00:09:17,080 --> 00:09:37,080
+ Now, the other thing, Pamela, it's just something to point out. I don't know if this is, you know, something you, you really, I don't know if this is a good point or not, but our average load time lately, um, let's see, currently we're three hours behind, three hours, three hours.
+
+40
+00:09:37,080 --> 00:10:06,080
+ Okay. So if you look at these dates, you guys are loading transactions on average, like from the time the transaction actually happens to the time that it's loaded into Aparis, it's about a three hour gap. That's, that's pretty short. Like that's not long at all. And so I know we want as close to real time as, as possible, but I will tell you, Pamela, one of the things that you're going to end up running into doing that, we only send you a batch feed every four hours.
+
+41
+00:10:06,080 --> 00:10:35,080
+ So I wonder if you guys are loading a little bit too quickly and it's causing issues. Like if you, if you almost need to back that time up a little bit and say, okay, instead of loading within three hours, like let it hit, let's see. I'm not sure if you're involved in the GCS bucket or not, but basically the team that pulls from the GCS bucket, allow them enough time to grab the transaction, the new transactions that are there, and then be ready for you guys to then load into the bucket.
+
+42
+00:10:35,080 --> 00:10:42,080
+ And then load into the portal. Maybe a three hour, like maybe three hours behind is a little bit too little. I don't know.
+
+43
+00:10:42,080 --> 00:10:51,080
+ So that's four. Well, if we're loading every four hours.
+
+44
+00:10:51,080 --> 00:11:05,080
+ Yeah, no, we wouldn't. Sorry. I think it would have to involve something like, okay, when we load at 10 o'clock, we're taking four hours of files, but we're not taking six to 10. We're taking five to nine kind of thing.
+
+45
+00:11:05,080 --> 00:11:22,080
+ Yep. I mean, I could check if, if I really wanted to check and see what's the max time that's loaded into Akris right now, I could actually build a search that does that. So it'd tell us what that time gap is. Um, give me a second.
+
+46
+00:11:22,080 --> 00:11:31,080
+ That might actually, that might actually solve our problem with missing transactions in that last 10 minutes or so when, when we upload.
+
+47
+00:11:31,080 --> 00:11:53,080
+ Yeah, it won't. That one's an IT problem. Okay. It's an IT problem. Yeah. So they're grabbing everything that IT sends to the GCS bucket and then they're loading it in the portal. I just wonder if they're loading it too quickly. So IT basically hasn't sent them everything yet. Which Camilla, that's the other thing.
+
+48
+00:11:53,080 --> 00:12:05,080
+ You know, your infrastructure team does extract files from our GCS buckets. They're not supposed to extract those files until they receive what's called a, um, a marker file.
+
+49
+00:12:05,080 --> 00:12:21,080
+ So what it is is every four hours, the batch load happens for that four hour gap or that four hour timeframe. And when all of the files are created and loaded into the GCS bucket for that four hour timeframe, they're supposed to be there.
+
+50
+00:12:21,080 --> 00:12:34,080
+ They put a stamp on it with what they call a marker file. And once that marker file makes it, then you guys are basically alerted that, Hey, now we can load in that four hour timeframe. Does that make sense?
+
+51
+00:12:34,080 --> 00:12:45,080
+ Yeah, absolutely. I don't have an answer for that. To be pretty honest, I need to go to the data team and infrastructure to see why we are like loading data.
+
+52
+00:12:45,080 --> 00:12:56,080
+ Like that pass on three hours since your batches are for four hours. I just seen that we are extracting that information before the marker file is in place.
+
+53
+00:12:56,080 --> 00:13:03,080
+ I'm going to make some research and I give you answers because to be pretty honest, I don't have that answer for you right now.
+
+54
+00:13:03,080 --> 00:13:22,080
+ And because you're building this, I just wanted to point out to the previous topic that we were talking about that was the calculation fields. I'm going to focus on those that we are seeing errors because we need them to be, um, I mean, they are failing on your reports.
+
+55
+00:13:22,080 --> 00:13:36,080
+ Uh, but the other that are not failing, uh, we're going to review that, but with less priority. I mean, it's going to take us longer because we need to review each of them, how they are being calculated, if they're being updated or not.
+
+56
+00:13:36,080 --> 00:13:48,080
+ Uh, and also we need to review if it's the same root cause or not. Uh, so I'm going to like focus on those two that you told me the total item sales amount and total item quantity.
+
+57
+00:13:48,080 --> 00:13:57,080
+ The other ones net transactions, all of them and previous transactions, all of them. And we're going to take a while to, to review those. Okay.
+
+58
+00:13:57,080 --> 00:14:03,080
+ Okay. Makes sense. I appreciate it. And just to call out and, and I do want to make sure that I cover this as well.
+
+59
+00:14:03,080 --> 00:14:11,080
+ I'm not saying the transactions, like they absolutely can show up, um, less than four hours. I get that.
+
+60
+00:14:11,080 --> 00:14:23,080
+ And here's the reason is if you think about it, if we run a four, so I'll just tell you the next batch that runs with our IT department to be able to load transactions.
+
+61
+00:14:23,080 --> 00:14:30,080
+ They're going to run it at four o'clock PM Eastern time. So right now it's three 53. So it's seven minutes. They're going to run that job.
+
+62
+00:14:30,080 --> 00:14:38,080
+ What that job will do is it's going to run everything from 12 o'clock to four o'clock of transactions.
+
+63
+00:14:38,080 --> 00:14:46,080
+ So it will actually catch transactions up until, I mean, even right now, they're going to, those transactions are going to be loaded in. That's totally fine.
+
+64
+00:14:46,080 --> 00:14:58,080
+ But those jobs from our IT department, they take from what I've seen about 30 minutes to run so they, so they can get all the files and then they put their stamp on it with their marker file.
+
+65
+00:14:58,080 --> 00:15:13,080
+ And then you guys are able to load. I just don't know how long it takes for then your infrastructure team to then take those files and load them in for y'all to have them ready to then load into the portal.
+
+66
+00:15:13,080 --> 00:15:20,080
+ Cause I know infrastructure doesn't load it into the portal. They like send it to a, some sort of file delivery team from what I understand.
+
+67
+00:15:20,080 --> 00:15:28,080
+ And then that team then loads it into the portal. It just seems to me like that should take a little longer than, than what it does.
+
+68
+00:15:28,080 --> 00:15:34,080
+ And I just wonder if not everything's loaded in, in time. That's all I'm saying.
+
+69
+00:15:34,080 --> 00:15:35,080
+ Okay.
+
+70
+00:15:35,080 --> 00:15:47,080
+ Have you seen any misses data because of that? That you think is possible that the reason that we are missing transactions because of that?
+
+71
+00:15:47,080 --> 00:15:55,080
+ No, I mean, it's a, it's, it's only really a theory. I don't have a way to map that, unfortunately, cause I can't see what your infrastructure team is playing.
+
+72
+00:15:55,080 --> 00:15:56,080
+ Of course.
+
+73
+00:15:56,080 --> 00:15:57,080
+ Yes.
+
+74
+00:15:57,080 --> 00:15:59,080
+ I don't have a way to map that.
+
+75
+00:15:59,080 --> 00:16:08,080
+ And just let me confirm. You, you saw these last, like three hours batches, uh, after the migration, right?
+
+76
+00:16:08,080 --> 00:16:17,080
+ You start seeing those like at the end of August or just, I think September 4th.
+
+77
+00:16:17,080 --> 00:16:30,080
+ Yeah. So it looks like we saw 829. It started to go down. So 830. So on average, starting 830, you saw about three and a half hours behind.
+
+78
+00:16:30,080 --> 00:16:35,080
+ And that stayed pretty consistent through the month of September.
+
+79
+00:16:35,080 --> 00:16:42,080
+ I can't go back further than this in my dashboard. I have to look and see if I have historical data because I may not, unfortunately.
+
+80
+00:16:42,080 --> 00:16:53,080
+ But I will say prior to, I mean, really, so I'm thinking of previous months, we were more seeing like the five to eight hours behind on average.
+
+81
+00:16:53,080 --> 00:17:00,080
+ Like that's typically where we were sitting. I do know three hours was like, wow, you guys are doing it super quick now.
+
+82
+00:17:00,080 --> 00:17:05,080
+ And it just makes me wonder if they start to load these files before they ever get the marker file in.
+
+83
+00:17:05,080 --> 00:17:13,080
+ I would need to confirm that, but I'm also one that we take into account that we were on a migration.
+
+84
+00:17:13,080 --> 00:17:18,080
+ So the new software that we're using that is a snowflake is faster and is more efficient.
+
+85
+00:17:18,080 --> 00:17:23,080
+ So that is possible. One of the reasons why you see less time to upload the information.
+
+86
+00:17:23,080 --> 00:17:30,080
+ But I want to confirm that back. I don't want to, to say it is, that is the reason.
+
+87
+00:17:30,080 --> 00:17:38,080
+ And I want you also to confirm that they are waiting for the marker file in order to start uploading the information.
+
+88
+00:17:38,080 --> 00:17:49,080
+ And so we are making sure that that is the process, that the process is the same, but the timeline is different because we have a better system and software in use.
+
+89
+00:17:49,080 --> 00:17:56,080
+ It makes sense. Okay. I appreciate it. Um, real quick, just so that I can follow up on what I was telling you a minute ago.
+
+90
+00:17:56,080 --> 00:18:02,080
+ Um, so the max time, it looks like for Eastern time is one o'clock PM in the portal.
+
+91
+00:18:02,080 --> 00:18:07,080
+ Currently it's currently like almost four o'clock. So we're looking at about three hours behind.
+
+92
+00:18:07,080 --> 00:18:11,080
+ Um, I was going to click into this transaction just to see what it was.
+
+93
+00:18:11,080 --> 00:18:15,080
+ Oh, I don't have anything beautiful.
+
+94
+00:18:15,080 --> 00:18:21,080
+ Matt, while you're doing that, just a quick heads up.
+
+95
+00:18:21,080 --> 00:18:25,080
+ I'll probably need to set up one on one time with you to discuss your previous meeting.
+
+96
+00:18:25,080 --> 00:18:27,080
+ Cause I have a hard stop at four.
+
+97
+00:18:27,080 --> 00:18:31,080
+ Totally fine. Um, I'll shoot you an email with availability.
+
+98
+00:18:31,080 --> 00:18:33,080
+ Oh, if you want to shoot me an email and then we'll take it from there.
+
+99
+00:18:33,080 --> 00:18:37,080
+ Yeah, we'll do that. Um, I just need you to get some parties involved.
+
+100
+00:18:37,080 --> 00:18:45,080
+ Okay. Sounds good. I appreciate it. Um, but anyway, so I think that that should cover what we, what we need today.
+
+101
+00:18:45,080 --> 00:18:48,080
+ I know we're right up on time. So apologies for that.
+
+102
+00:18:48,080 --> 00:18:52,080
+ No, it's okay. Um, just what I'd like to recap real quick.
+
+103
+00:18:52,080 --> 00:19:03,080
+ So, uh, what we discussed with Erica and Corey, uh, before, uh, I'm gonna, uh, ping again, engineering team on those things that we're waiting for development and engineering review.
+
+104
+00:19:03,080 --> 00:19:08,080
+ And if it's possible to give you an EPA when the fix is gonna be placed.
+
+105
+00:19:08,080 --> 00:19:13,080
+ And also if the work item can be fixed before the long-term solution is done.
+
+106
+00:19:13,080 --> 00:19:21,080
+ Um, about, um, the calculations, we're gonna focus on the two that we are seeing, um, they are not working.
+
+107
+00:19:21,080 --> 00:19:30,080
+ And we're gonna also take the review of, of the other fields, their calculations to make sure that they are not failing in the future.
+
+108
+00:19:30,080 --> 00:19:36,080
+ And also to confirm why the upload time is lower than before.
+
+109
+00:19:36,080 --> 00:19:39,080
+ If it's because of the migration and we are more efficient, that's pretty good.
+
+110
+00:19:39,080 --> 00:19:43,080
+ And that, or if not, if there is something else that we are missing.
+
+111
+00:19:43,080 --> 00:19:51,080
+ Um, so, uh, maybe today, no, because for most of my people is the last hour.
+
+112
+00:19:51,080 --> 00:19:59,080
+ Uh, but tomorrow I promise I'm gonna send to you an email with the recap of everything and hopefully some updates on the topics that we discussed.
+
+113
+00:19:59,080 --> 00:20:13,060
+ discuss. Okay, perfect. Thank you. Really appreciate the time today. I think this was super productive. And yeah, thank you so much. Thank you, everybody. It was nice to meet you. Have a good one. Bye.
+

@@ -1,0 +1,847 @@
+{
+  "fecha": "2026-10-16",
+  "antes": {
+    "total": 15,
+    "adusa": 0,
+    "basicos": 1,
+    "por_prioridad": {
+      "Medium": 12,
+      "Low": 2,
+      "Undefined": 1
+    },
+    "edad_media_dias": 0.1,
+    "edad_max_dias": 0.4,
+    "mas_de_7_dias": 0
+  },
+  "cupo_total": 6,
+  "equipo": {
+    "Luis Hernandez": {
+      "accountId": "712020:7cb67354-171b-4f4b-b5f6-46a5c57cbd4d",
+      "nivel": "normal",
+      "puesto": "Senior Full Stack Engineer",
+      "perfil": "React y .NET. Senior Full Stack, ya nivelado con el resto del equipo desde el 28 sep 2026.",
+      "techo_abiertos": 16,
+      "incremento_diario": 3,
+      "cruda": 17,
+      "activa": 3,
+      "espera": 14,
+      "abiertos": [
+        {
+          "key": "RCS-29470",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "Wegmans - Request for Root Cause of Data Load Delay – RTS-209888"
+        },
+        {
+          "key": "RCS-29394",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "PPG - Report created needs some revisions - Attached is previous report and new report.  Smart Alerts still not working"
+        },
+        {
+          "key": "RCS-29367",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Chanel - Employee Lorianne Pimental Blocked"
+        },
+        {
+          "key": "RCS-29366",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Chanel - Employee Kim Dean Blocked "
+        },
+        {
+          "key": "RCS-29365",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Chanel Inc - Employee Jennifer Ho Blocked"
+        },
+        {
+          "key": "RCS-29349",
+          "estado": "Under Customer Review",
+          "prioridad": "Low",
+          "summary": "Add New User, Remove User"
+        },
+        {
+          "key": "RCS-29330",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Walmart - Missing Customer Name"
+        },
+        {
+          "key": "RCS-29293",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "Chanel - Smart Alert not emailing despite case displaying sent."
+        },
+        {
+          "key": "RCS-29289",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Watsco - Production Environment Slow Down"
+        },
+        {
+          "key": "RCS-29237",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Kohl's - Item Descriptions Missing"
+        },
+        {
+          "key": "RCS-29235",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Walmart - Gift Card Activation with Aborted Transaction"
+        },
+        {
+          "key": "RCS-29198",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Walmart - New Tender Type"
+        },
+        {
+          "key": "RCS-29132",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "PacSun: Flag Merch Card refunds on non receipted returns, refunds to a different tender, and cards used by multiple customers"
+        },
+        {
+          "key": "RCS-28991",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "TJX - Ecom file testing in reference to RCS-28260"
+        },
+        {
+          "key": "RCS-28813",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Vitamin Shoppe - Audit Smart Alert for Store Mgr Store Loss Review not Triggered"
+        },
+        {
+          "key": "RCS-28699",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Big5 - Appriss Report"
+        },
+        {
+          "key": "RCS-27407",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "PPG - New Audit with different name needs to be loaded into the Smart Alert Email- "
+        }
+      ],
+      "margen_techo": 0,
+      "cupo": 0
+    },
+    "Sebastian Garces": {
+      "accountId": "712020:239d8bd1-42fb-47ac-8e49-8698e657fbba",
+      "nivel": "normal",
+      "puesto": "Support Engineer",
+      "perfil": "Ya nivelado con el resto del equipo desde el 28 sep 2026, sin restriccion de nuevo.",
+      "techo_abiertos": 16,
+      "incremento_diario": 3,
+      "cruda": 15,
+      "activa": 7,
+      "espera": 8,
+      "abiertos": [
+        {
+          "key": "RCS-29453",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "AutoZone  - First Scan of Puerto Rico Customer ID Barcode is Failing, Second Scan is Successful"
+        },
+        {
+          "key": "RCS-29436",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "VFC - Discount Employee ID Incorrect"
+        },
+        {
+          "key": "RCS-29432",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "M&S - Set Up System Monitoring (Ecomm)"
+        },
+        {
+          "key": "RCS-29331",
+          "estado": "Work in progress",
+          "prioridad": "High",
+          "summary": "The Home Depot - Next Transaction ID and Previous Transaction ID Not working and cannot find in parameter list"
+        },
+        {
+          "key": "RCS-29328",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Lulu - Unable to create a new Metric"
+        },
+        {
+          "key": "RCS-29310",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "Claire's - User unable to access platform "
+        },
+        {
+          "key": "RCS-29306",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Lululemon - Map Override Reason Description in Engage Data Area"
+        },
+        {
+          "key": "RCS-29305",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Signet - Employee and Store List Upload"
+        },
+        {
+          "key": "RCS-29288",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "McDonald's Monthly Alignment Report - October 2026"
+        },
+        {
+          "key": "RCS-29234",
+          "estado": "Work in progress",
+          "prioridad": "High",
+          "summary": "ADUSA - LPMS will not save cases"
+        },
+        {
+          "key": "RCS-29152",
+          "estado": "Under Engineering Review",
+          "prioridad": "Medium",
+          "summary": "SBX - Line Voids and Cancels are missing items in the receipt"
+        },
+        {
+          "key": "RCS-29058",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "3Sixty - Error message for user Alma Ayala"
+        },
+        {
+          "key": "RCS-28951",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Footlocker - Elevated User \"EBR Investigator Supervisor\" needs access to edit all fields after case in Finalized Status"
+        },
+        {
+          "key": "RCS-28862",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "WHS - Item void - cashed off - no sale question not pulling correct results when compared to S3"
+        },
+        {
+          "key": "RCS-26420",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Appriss Internal 057 RLC duplication"
+        }
+      ],
+      "margen_techo": 1,
+      "cupo": 1
+    },
+    "Diego Buelvas": {
+      "accountId": "712020:20065f69-a041-443a-8b58-b79b1649d0b4",
+      "nivel": "normal",
+      "puesto": "Full Stack Engineer",
+      "perfil": "Attachments y print docs. Exports e Izenda. Rendering y UI. Lleva Delhaize.",
+      "techo_abiertos": 16,
+      "incremento_diario": 3,
+      "cruda": 21,
+      "activa": 4,
+      "espera": 17,
+      "abiertos": [
+        {
+          "key": "RCS-29450",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Wild Fork Foods - Refund Cashier "
+        },
+        {
+          "key": "RCS-29448",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Sainsbury's - Verify fix in Test view: Age Restricted/BRM refused items now sent as Voided instead of £0 price"
+        },
+        {
+          "key": "RCS-29431",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "NIKE - Manual Discount Amount - Display On Receipt"
+        },
+        {
+          "key": "RCS-29416",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "3Sixty - User Christopher Peralta Issues logging in"
+        },
+        {
+          "key": "RCS-29414",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "TJX Europe - Deletion on Pinned Dashboards"
+        },
+        {
+          "key": "RCS-29354",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Best Buy Co. Inc - One of the LPMS ADMIN user unable to access case documents despite having required permissions."
+        },
+        {
+          "key": "RCS-29332",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "Nordstrom - Spotlight Search Permissions - Need to Limit Results"
+        },
+        {
+          "key": "RCS-29279",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "Work Item No Longer Generating on Delay"
+        },
+        {
+          "key": "RCS-29255",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "Incident (Legacy) pop up preventing submit and enter in reports "
+        },
+        {
+          "key": "RCS-29249",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "ANC503 has Vector cameras, but no CCTV option on the receipts"
+        },
+        {
+          "key": "RCS-29248",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Genuine Parts Co - Lee Reese is unable to add videos to his cases."
+        },
+        {
+          "key": "RCS-29232",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "TJX - Spotlight Search View Permissions - Non Admin"
+        },
+        {
+          "key": "RCS-29209",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Vallarta - Izenda report fields updates revert when running reports"
+        },
+        {
+          "key": "RCS-29204",
+          "estado": "Work in progress",
+          "prioridad": "High",
+          "summary": "VFC - Users having issues accessing Incident"
+        },
+        {
+          "key": "RCS-29186",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Card No not showing as expected "
+        },
+        {
+          "key": "RCS-29094",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Coop - \"yestedays\" Notification Links return you to the Log In page  "
+        },
+        {
+          "key": "RCS-28843",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Nordstrom-Changes to Search Display Fields Causing Error for Chart"
+        },
+        {
+          "key": "RCS-28814",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "TJX Rerung Fields"
+        },
+        {
+          "key": "RCS-28534",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Stater Bros. - Legal Follow Up Smart Alert not working"
+        },
+        {
+          "key": "RCS-28151",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "Vitamin Shoppe - Export to Excel not working"
+        },
+        {
+          "key": "RCS-24049",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Casey's - Updates to Outlier needed"
+        }
+      ],
+      "margen_techo": 0,
+      "cupo": 0
+    },
+    "Edwin Garzon": {
+      "accountId": "712020:9e64bce4-462c-48d2-887a-2d2e3dee5936",
+      "nivel": "normal",
+      "puesto": "Data Engineer",
+      "perfil": "Location hierarchy. Cargas de datos y feeds. Campos faltantes en transacciones.",
+      "techo_abiertos": 16,
+      "incremento_diario": 3,
+      "cruda": 14,
+      "activa": 5,
+      "espera": 9,
+      "abiertos": [
+        {
+          "key": "RCS-29449",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "DSW Engage Insights Top Returned Skus not Displaying Item Description"
+        },
+        {
+          "key": "RCS-29417",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Paid In and Paid out data missing for multiple stores after 8/19"
+        },
+        {
+          "key": "RCS-29355",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Delhaize - ADUSA - Data Load Needed into Delhaize Instance"
+        },
+        {
+          "key": "RCS-29336",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Tilly's - Data Privacy Compliance Deletion Notification"
+        },
+        {
+          "key": "RCS-29191",
+          "estado": "Under Customer Review",
+          "prioridad": "High",
+          "summary": "The Children's Place - Aspect Data load Failure"
+        },
+        {
+          "key": "RCS-29164",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Error when Adding Additional Subject to Case"
+        },
+        {
+          "key": "RCS-29049",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Big 5 Sporting Goods Corp - Please remove old store #s for employee ID 2558928"
+        },
+        {
+          "key": "RCS-28744",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "H&M - tender type and sub tender type mapping "
+        },
+        {
+          "key": "RCS-28624",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Lux - CAMS upload picture issue"
+        },
+        {
+          "key": "RCS-28591",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Walmart - CFT Details / Query not Working"
+        },
+        {
+          "key": "RCS-28274",
+          "estado": "Under Delivery Review",
+          "prioridad": "Medium",
+          "summary": "TG Jones - Original Transaction Amount not mapped at Header Level"
+        },
+        {
+          "key": "RCS-28085",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Ollie's - User Access Incorrect"
+        },
+        {
+          "key": "RCS-26878",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Loblaw - Wallet ID not populating"
+        },
+        {
+          "key": "RCS-26205",
+          "estado": "Under Customer Review",
+          "prioridad": "Low",
+          "summary": "TJX EU - STORECAT format change to support 4-digit store numbers"
+        }
+      ],
+      "margen_techo": 2,
+      "cupo": 2
+    },
+    "Sebastian Rueda": {
+      "accountId": "712020:ae769ae6-4093-403d-847f-a3a13075b642",
+      "nivel": "normal",
+      "puesto": "Senior Data Engineer",
+      "perfil": "Data integrity. Duplicacion de filas. Mapeo de campos. Feeds y loads.",
+      "techo_abiertos": 16,
+      "incremento_diario": 3,
+      "cruda": 13,
+      "activa": 9,
+      "espera": 4,
+      "abiertos": [
+        {
+          "key": "RCS-29430",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "Tailored Brands - Missing Customer Data (Name, Address, Customer ID)"
+        },
+        {
+          "key": "RCS-29334",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Nordstrom Inc - Restaurant (Toast) data: clarify how Discount Reason and Discount Code are derived in Appriss"
+        },
+        {
+          "key": "RCS-29333",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Gap - Is Pick up Store Number in data"
+        },
+        {
+          "key": "RCS-29247",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Appriss (formerly SECURE / SysRepublic) System Issue"
+        },
+        {
+          "key": "RCS-29210",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Goodwill CC - Audit Smart Alert showing wrong score"
+        },
+        {
+          "key": "RCS-29169",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Starbucks - Error on report \"Transaction Journal - Cash Tender\" - Post Void Flag"
+        },
+        {
+          "key": "RCS-29072",
+          "estado": "Waiting for Software Release",
+          "prioridad": "Medium",
+          "summary": "Watsco Production Environment - Quick Receipts are slow to load"
+        },
+        {
+          "key": "RCS-28824",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Delhaize (DHZ): Store and Cashier Profiles Return Errors"
+        },
+        {
+          "key": "RCS-28571",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "Winn-Dixie- Systemic Missing Item Position Data — Suspected to Affect Multiple Stores/Articles (Example: Store 2472, WG 234959, July 20–29, 2026)"
+        },
+        {
+          "key": "RCS-28452",
+          "estado": "Under Support Review",
+          "prioridad": "Low",
+          "summary": "SpartanNash - PDF files in Associate Theft Smart Alert are showing up with a TempArea "
+        },
+        {
+          "key": "RCS-28158",
+          "estado": "Work in progress",
+          "prioridad": "Medium",
+          "summary": "McDonald's Alignment Report - August 2026"
+        },
+        {
+          "key": "RCS-27951",
+          "estado": "Under Customer Review",
+          "prioridad": "Medium",
+          "summary": "Alshaya - Total Error Correct Count and Amount not captured"
+        },
+        {
+          "key": "RCS-27180",
+          "estado": "Under Support Review",
+          "prioridad": "Medium",
+          "summary": "Hot Topic - Item Discounts Missing"
+        }
+      ],
+      "margen_techo": 3,
+      "cupo": 3
+    }
+  },
+  "tickets": [
+    {
+      "key": "RCS-29456",
+      "summary": "ICA - Mapping return item.",
+      "prioridad": "Medium",
+      "tipo": "SOW Estimation",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.4,
+      "callado_dias": 0.4,
+      "buckets": [
+        "datos"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29458",
+      "summary": "Winn-Dixie - Cashier Coaching Transaction Search - Error Message",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.3,
+      "callado_dias": 0.3,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29459",
+      "summary": "Tilly's - Go-Forward Automation for Data Deletion Requests",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.3,
+      "callado_dias": 0.3,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29460",
+      "summary": "TJX Europe - deleting evidence from lead",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.3,
+      "callado_dias": 0.3,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29462",
+      "summary": "[Action Required] Ralph Lauren Holiday Peak Readiness & Escalation Verification – APPRISS",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.2,
+      "callado_dias": 0.2,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29465",
+      "summary": "Williams-Sonoma - Assistance with adding Reference to existing search",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.2,
+      "callado_dias": 0.2,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29466",
+      "summary": "Missing Payment Details for United Division 15 for 10/7 and 10/8",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.2,
+      "callado_dias": 0.2,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29467",
+      "summary": "In Ardene - I try to drill to the journal and it is empty",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.1,
+      "callado_dias": 0.1,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29468",
+      "summary": "CTP Card numbers showing as pending",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.1,
+      "callado_dias": 0.1,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29471",
+      "summary": "BR Factory Returns / Submit a Claim Asset Refresh",
+      "prioridad": "Medium",
+      "tipo": "SOW Estimation",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29472",
+      "summary": "Error Messages on 10/14 and 10/15 receipts All Divsions",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29473",
+      "summary": "Nordstrom - Question on change in data",
+      "prioridad": "Medium",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "sin clasificar"
+      ],
+      "dificultad": "basico",
+      "motivo_dificultad": "un usuario o una config: question",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29474",
+      "summary": "Report \"1-Voids - Cash Post Voids With No Subsequent Re-Ring - Enter Store\" Inaccurate",
+      "prioridad": "Low",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "reportes",
+        "jerarquia"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29475",
+      "summary": "RNRs duplicating",
+      "prioridad": "Low",
+      "tipo": "Incident",
+      "estado": "Under Support Review",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "datos"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "senal de alcance amplio: duplicat",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    },
+    {
+      "key": "RCS-29477",
+      "summary": "DSG - Claims daily work items and daily reports are not running",
+      "prioridad": "Undefined",
+      "tipo": "Incident",
+      "estado": "Open",
+      "reporter": null,
+      "edad_dias": 0.0,
+      "callado_dias": 0.0,
+      "buckets": [
+        "reportes"
+      ],
+      "dificultad": "normal",
+      "motivo_dificultad": "sin senal clara de ticket basico",
+      "adusa": false,
+      "motivo_adusa": null,
+      "url": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Adjunto 04.png
+Ruta: adjuntos/RCS-29224/2026-10-14-teams/04.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-14
+
+Texto reconocido por OCR:
+Shaun Callow 8:43 a.m.
+ah ok - Kenny
+Daniel Endersby
+8:50 a.m.
+system
+i had to say something so i said we're upgrading to new hardware thus the new url and both poining to the same
+Shaun Callow 8:51 a.m.
+OK - I think we just say we need to reschedule to when Kenny is back online later
+Daniel Endersby 8:54 a.m.
+• Yes. If all the inventory files nove together and everything else stays the sane, you're fine.
+The Inventory feeds are the 14 APPRISS_* tutes in_sources. ynt. Each one 1s natched as MAPPRIS_40MEs*, txt. pap:
+CONDET
+CURITS
+GLPSUB
+TITOSC
+IITFIL
+*APPRISS_CONDET*, txt. P9p
+*APPRISS_CCNTHS*, txt. P9P
+"APPRISS_GPSUB*. txt. P9P
+*APPRISS ELIDSL, LXL. POL
+*APPRISS_ MFIL*- txt •P9R
+MSTROG
+SHKDTL
+SKUFIL
+STATINT
+STRAST
+*APPRISS_ETVIT*, txt-pap
+*APPRISS MSTPOK txt nor
+*APPRISS_SHKDTL*, txt. pap
+*APPRISS_SKUFIL*. txt.P9p
+*APPRISS_STRINVDT*, txt. pog
+*APPRISS_STRNST*, txt-PP
+INV question
+if they delay all inv related file it'll be fine

@@ -1,0 +1,1 @@
+No worries at all, Ryan, that makes total sense! I will use the Scheduling Assistant in Outlook and send an invite within your hours. I am planning to invite the support team so everyone can learn the workflow. Is there anyone else you would like me to include, from Delivery or the SnowTime team? Thanks again for setting this up!

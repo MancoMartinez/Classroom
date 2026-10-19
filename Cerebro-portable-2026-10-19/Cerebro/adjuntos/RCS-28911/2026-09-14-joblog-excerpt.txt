@@ -1,0 +1,12 @@
+Mon 09/14/2026 10:00:03.15         Starting load process.
+**********************************************************************
+Mon 09/14/2026 10:00:03.18 -STORE-  Source file not found to load F:\Clients\Delhaize\RefLoader_Prod\data\pii-pgp-DA_Store_info.dat.pgp.
+Mon 09/14/2026 10:00:03.19 -EMPLOYEE- Reference files found in data folder.
+Mon 09/14/2026 10:00:03.19 -EMPLOYEE- Starting Reference File load process.
+Mon 09/14/2026 10:00:03.19 -EMPLOYEE- Source file name: pii-pgp-DA_Employee_Info.dat.
+Mon 09/14/2026 10:00:30.12 -EMPLOYEE- App return code = 0 
+Mon 09/14/2026 10:00:30.12 -EMPLOYEE- Load completed successfully.
+Mon 09/14/2026 10:00:30.31  No additional files found to load.  
+**********************************************************************
+Mon 09/14/2026 10:00:30.31  Ended load process. Exit code:0
+**********************************************************************

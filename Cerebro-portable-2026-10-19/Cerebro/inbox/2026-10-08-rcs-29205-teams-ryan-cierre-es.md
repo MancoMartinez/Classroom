@@ -1,0 +1,1 @@
+Sí, Anushka del equipo de SnowTime está ayudando con esto. Muchas gracias por las respuestas, Ryan, ayudan mucho. Si te parece bien, le comparto tu branch y estas notas para que pueda aprovechar el trabajo que ya hiciste.

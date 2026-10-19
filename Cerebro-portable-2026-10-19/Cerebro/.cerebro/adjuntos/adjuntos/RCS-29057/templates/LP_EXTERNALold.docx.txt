@@ -1,0 +1,204 @@
+# Adjunto LP_EXTERNALold.docx
+Ruta: adjuntos/RCS-29057/templates/LP_EXTERNALold.docx
+Tipo: docx
+Ticket: RCS-29057
+Modificado: 2026-09-24
+
+
+«MASTERCASE_CASETYPE»
+«mastercase_casetier»
+
+«Store_Storename»
+«Store_Address1»
+«Store_City» ,  «Store_State»    «Store_Zip»
+Store #:   «Store_StoreNo»
+Case #:  «Shoplifting_CaseNo»
+Incident Details
+Completed By:
+«Accident_CompletedBy»
+Incident Date:
+«shoplifting_incidentdate»
+Action Taken:
+«Shoplifting_ActionTaken»
+Source of Info:
+«Shoplifting_SourceofInfo»
+Suspect(s) Identified?
+«Suspect_IsEncrypted»
+Video Retained?
+«Shoplifting_IncidentVideoTaped»
+Vehicle Involved?
+«Accident_VehicleInvolved»
+Police Notified?
+«Accident_PoliceFireContacted»
+Loss Occurred?
+«Shoplifting_MerchandiseLoss»
+Apprehended?
+«BandE_DataCut»
+Apprehend Date:
+«Shoplifting_Apprehended»
+Apprehended By:
+«Shoplifting_ApprehendedByWhom1»
+Apprehended Loc:
+«Shoplifting_ApprehendedLoc»
+Suspect  Information
+First Name :
+«suspect_firstname»
+Middle:
+«suspect_middleinitial»
+Last Name:
+«suspect_lastname»
+Phone No:
+«suspect_phoneno»
+Date of Birth:
+«suspect_dateofbirth»
+Age:
+«Suspect_suspectage»
+Address1:
+«Suspect_Address»
+Address2:
+«Suspect_Address2»
+City:
+«Suspect_City»
+State:
+«Suspect_State»
+Zip:
+«Suspect_Zip»
+Build:
+«Suspect_Build»
+Sex:
+«Suspect_Sex»
+Race:
+«Suspect_Race»
+Height:
+«Suspect_Height»
+Weight:
+«Suspect_Weight»
+Hair:
+«Suspect_HairColor»
+Eyes:
+«Suspect_EyeColor»
+Attire:
+«Shoplifting_Attire»
+Identifying Feature:
+«Suspect_IdentifyingFeature»
+Police  Information
+Department:
+«Shoplifting_PoliceDept»
+CaseNo:
+«Shoplifting_PoliceCaseNo»
+PhoneNo:
+«Shoplifting_PolicePhoneNo»
+Address:
+«ShopliftingExtra_PoliceAddress»
+City, State:
+«ShopliftingExtra_PoliceCity» ,  «ShopliftingExtra_PoliceState»
+Zip:
+«ShopliftingExtra_PoliceZip»
+Officer Name:
+«Shoplifting_PoliceOfficer1»
+BadgeNo :
+«Shoplifting_PoliceBadgeNo1»
+Vehicle  Information
+Make
+Model
+Style
+Year
+Color
+License Plate
+License State
+«tablestart:vehicle» «vehicle_vmake»
+«vehicle_vmodel»
+«vehicle_vstyle»
+«vehicle_vyear»
+«vehicle_vcolor»
+«vehicle_vlicplate»
+«Vehicle_vLicPlateState» «tableend:vehicle»
+Item Details
+Date
+Item Description
+Qty
+Cost
+Price
+Total Price
+Disposition
+Rec overy
+Damage
+«tablestart:merchandise» «Merchandise_DateStolen»
+«Merchandise_UPCCode»
+«Merchandise_Description»
+«Merchandise_Quantity»
+«Merchandise_ItemCost»
+«Merchandise_PricePerItem»
+«Merchandise_TotalPrice»
+«Merchandise_Disposition»
+«Merchandise_Recovered»
+«Merchandise_Damage» «tableend:merchandise»
+
+Total  Dollars
+«shoplifting_totalstolen»
+
+Total Damaged
+«Shoplifting_MerchDamageTotal»
+
+Total Recovered
+«Shoplifting_TotalAmtRecovered»
+
+Total Unrecovered
+«Shoplifting_TotalAmtUnRecovered»
+
+
+Report Narrative
+«shoplifting_reportnarrative»
+People Involved
+Contact Information
+Role
+Notes
+«TableStart:Witness» «witness_firstname»  «witness_lastname»
+«witness_address»
+«witness_city»,  «witness_state»  «witness_zip»
+(H) «witness_homephone»
+(W) «witness_workphone»
+(M) «witness_alternatephone»
+«Witness_EmailAddress»
+«Witness_PersonType»
+«witness_notes» «tableend:Witness»
+Journal Notes
+Date
+Summary
+Detail
+«tablestart:casejournal» «casejournal_journaldate»
+«casejournal_journalsummary»
+«casejournal_journaldetail» «tableend:casejournal»
+Video Evidence
+Video Retained?
+«Shoplifting_IncidentVideoTaped»
+Camera Date/Time:
+«Shoplifting_CameraDateTime»
+Camera Num:
+«Shoplifting_CameraNum»
+CCTV System:
+«Shoplifting_CCTVSystemType»
+Archive Video Location:
+«Shoplifting_ArchiveVideoLoc»
+Court Information
+Trial Date
+Court Room
+Court Location
+Disposition
+Plea
+Penalty
+Notes
+«tablestart:Court» «court_trialdate»
+«court_courtroom»
+«Court_CourtLocation»
+«Court_CaseDisposition»
+«Court_SubjectsPlea»
+«Court_Penalty»
+«Court_Notes» «tableend:court»
+Attachments
+Filename
+Upload Date
+File Description
+«TableStart:RelatedDoc» «RelatedDoc_FileName»
+«RelatedDoc_UploadDate»
+«RelatedDoc_DocDesc» «tableend:RelatedDoc»

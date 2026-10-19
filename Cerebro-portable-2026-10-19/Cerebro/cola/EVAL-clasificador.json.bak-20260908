@@ -1,0 +1,29 @@
+{
+ "descripcion": "Etiquetas de referencia para el clasificador de urgencia de bin/cola.py. Se fijaron el 24 ago 2026 y se refrescaron el 3 sep 2026 leyendo el ultimo comentario publico, no bot y no interno, de los 17 tickets abiertos de Juan ese dia, uno por uno contra el volcado crudo de Jira. Cualquier cambio al lexico se mide contra esto antes de darlo por bueno. Este set caduca solo: a medida que pasan los dias los tickets reciben comentarios nuevos y las etiquetas dejan de reflejar el ultimo movimiento real. Si la exactitud baja, revisa primero si la etiqueta quedo vieja antes de tocar el lexico.",
+ "fijado": "2026-09-03",
+ "niveles": {
+  "1": "TE TOCA RESPONDER, el ultimo humano de cara al cliente fue el cliente",
+  "2": "PROMESA SIN CUMPLIR, Appriss prometio un update que no llego",
+  "3": "ESPERANDO AL CLIENTE, Appriss pidio algo y no contestan",
+  "4": "EN MOVIMIENTO INTERNO, nada pendiente de cara al cliente"
+ },
+ "casos": [
+  {"ticket": "RCS-27941", "nivel": 1, "evidencia": "Colton Neal, cliente: I will work on this and get back to you next week sometime"},
+  {"ticket": "RCS-28294", "nivel": 1, "evidencia": "Tatiana Barcenas, cliente: we will continue to use Internet Explorer"},
+  {"ticket": "RCS-28753", "nivel": 2, "evidencia": "unico comentario es el triage automatico de Akshaya Purappemane, will follow up as soon as they've had a chance to review"},
+  {"ticket": "RCS-27676", "nivel": 3, "evidencia": "Juan: the public IP addresses we need to whitelist, pide confirmacion de Azure"},
+  {"ticket": "RCS-27959", "nivel": 3, "evidencia": "Juan: could you run your tests and confirm"},
+  {"ticket": "RCS-28122", "nivel": 3, "evidencia": "Juan: could you confirm whether the issue has been fully resolved"},
+  {"ticket": "RCS-28282", "nivel": 3, "evidencia": "Juan: we need the list of countries, once you send that we will apply it"},
+  {"ticket": "RCS-28289", "nivel": 3, "evidencia": "Juan: I'll be waiting for the update once Scott is back"},
+  {"ticket": "RCS-28496", "nivel": 3, "evidencia": "Juan: I'll wait for the response to the comment my colleague Rajith requested"},
+  {"ticket": "RCS-28099", "nivel": 4, "evidencia": "David Vargas: Perfect, thanks for the update, sin promesa ni pedido"},
+  {"ticket": "RCS-28153", "nivel": 4, "evidencia": "bitacora 27 ago posterior al ultimo comentario, fix liberado en ENG-7184, falta pegar"},
+  {"ticket": "RCS-28327", "nivel": 4, "evidencia": "Juan: investigation is active, no voy a dar fecha hasta confirmar la causa, sin promesa de fecha"},
+  {"ticket": "RCS-28581", "nivel": 4, "evidencia": "bitacora 31 ago posterior al ultimo comentario, investigacion arrancada sobre DO-9495"},
+  {"ticket": "RCS-27765", "nivel": 4, "evidencia": "Juan: the email has been replied to and we will be monitoring the thread"},
+  {"ticket": "RCS-27791", "nivel": 4, "evidencia": "Juan: wanted to confirm that everything is working on your end, tono de cierre no de pedido explicito"},
+  {"ticket": "RCS-28671", "nivel": 4, "evidencia": "Manisha Naik, ingenieria interna, aporto el log pedido, te menciono directo"},
+  {"ticket": "RCS-28756", "nivel": 4, "evidencia": "Ganesh Nayak, reporte interno via Teams, ticket recien creado sin pedido ni promesa"}
+ ]
+}

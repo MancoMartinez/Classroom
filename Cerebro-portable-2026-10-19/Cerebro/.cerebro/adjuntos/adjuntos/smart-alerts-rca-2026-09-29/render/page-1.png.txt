@@ -1,0 +1,41 @@
+# Adjunto page-1.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render/page-1.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+Internal Use Only
+Smart Alerts September 2026
+Root Cause Analysis Report
+September 29, 2026 | Prepared by Juan Martinez | For the internal post mortem
+Incident field
+Evidence supported position
+Incident start time
+Exact onset unconfirmed. ADUSA last completed run: September 24, 04:06:43 PDT / 11:06:43 UTC. Vitamin
+Shoppe reported an approximate September 23 onset.
+Incident end time
+US recovery observed September 28. ADUSA: approximately 11:30 PDT / 18:30 UTC, reported by Jim through
+Support. Vitamin Shoppe confirmed a test at 13:42 PDT / 20:42 UTC. Exact deployment completion times
+remain open.
+Duration
+Not finalized. ADUSA reference window from last completion to reported recovery: approximately 4 days 7
+hours 23 minutes. This is not a verified continuous email outage.
+Ticket number
+PBM identifier:
+Primary: RCS-29123. Related: RCS-29145 and RCS-29026. Engineering: ENG-9486.
+Severity and product
+RCS-29123 and RCS-29145: High. Formal P-number: _
+. Secure Incident Smart Alerts, cohesion
+mode.
+Incident Description
+ADUSA and Vitamin Shoppe reported missing Smart Alert notifications and missing alert history. Some emails reached
+recipients while application processing failed to finish. Cases could remain flagged as in process, preventing subsequent alert
+attempts. The September 28 correction restored processing for new activity in the validated examples. [S1-S4]
+This report covers the shared September release regression. RCS-29026 also contains an earlier September 20 nonreceipt
+report for Food Lion case 0619-27. That run completed and recorded history; its delivery failure remains unexplained. The
+evidence does not establish that the later regression caused the earlier failure. [S3]
+Engineering confirms the technical deadlock mechanism. The retrospective must still establish the systemic prevention gap,
+complete impact reconciliation and assign follow-up dates. Use the worksheet on page 4 to resolve these items before
+preparing the external RCA.
+Internal Use Only | 1

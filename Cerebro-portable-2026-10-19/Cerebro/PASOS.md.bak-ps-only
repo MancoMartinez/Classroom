@@ -1,0 +1,304 @@
+# Migrar Cerebro a otra máquina. Paso a paso
+
+Orden de lectura: este archivo para montar, `ESTADO.md` para saber qué hay y qué está roto.
+
+Todo lo de abajo está probado el 8 sep 2026. Solo necesitas Python 3. Nada de pip, ni entorno
+virtual, ni dependencias.
+
+---
+
+## Regla que evita el desastre
+
+**El cerebro viaja, no se bifurca.** `brain/sessions.db` es un archivo SQLite. Dos máquinas
+escribiendo en dos copias producen dos cerebros distintos y no hay forma de fusionarlos sin perder
+trabajo.
+
+Trabaja siempre en una sola máquina a la vez. Cuando cambies de máquina, lleva el zip completo y
+reemplaza la carpeta entera. Nunca copies solo `inbox/` de un lado al otro esperando que se junten.
+
+Si un día trabajaste en las dos por error, la máquina con el `sessions.db` más reciente manda.
+Lo de la otra se recupera a mano desde `inbox/`, que es texto plano y sí se puede leer.
+
+---
+
+## Paso 1. Llevar el zip
+
+El zip está en `Cerebro-2026-09-08.zip`, junto a esta carpeta. Pesa cerca de 75MB.
+
+USB, OneDrive, Drive o Dropbox. Los tres sirven. Por correo no pasa.
+
+No lo metas en git. La base de 33MB y los 21MB de adjuntos no van en un repo. Si quieres versionar,
+versiona `bin/`, `flujos/`, `investigaciones/`, `brain/memoria/` y los `.md` de la raíz.
+
+---
+
+## Paso 2. Descomprimir en la máquina nueva
+
+PowerShell:
+
+```powershell
+cd $HOME
+Expand-Archive -Path "$HOME\Downloads\Cerebro-2026-09-08.zip" -DestinationPath $HOME -Force
+cd $HOME\Cerebro
+dir
+```
+
+Tiene que aparecer `ESTADO.md`, `CLAUDE.md`, `cerebro.ps1`, y las carpetas `brain`, `bin`,
+`tickets`, `inbox`, `skills`.
+
+Mac o Linux:
+
+```bash
+cd ~ && unzip ~/Downloads/Cerebro-2026-09-08.zip && cd ~/Cerebro
+chmod +x bin/buscar bin/guardar bin/anotar bin/exportar.sh
+```
+
+---
+
+## Paso 3. Confirmar que hay Python
+
+```powershell
+python --version
+```
+
+Si responde con un número de versión, sigue. Si abre la tienda de Microsoft o dice que no existe:
+
+```powershell
+winget install Python.Python.3.12
+```
+
+Cierra y vuelve a abrir PowerShell después de instalar. Nada más hace falta.
+
+---
+
+## Paso 4. Instalar las skills
+
+Las cinco skills de Cerebro viven en tu cuenta de Claude y bajan solas cuando inicias sesión en la
+app de escritorio. Para Claude en terminal hay que copiarlas al disco.
+
+PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
+Copy-Item -Recurse -Force "$HOME\Cerebro\skills\*" "$HOME\.claude\skills\"
+dir "$HOME\.claude\skills" | Select-Object -First 10
+```
+
+Mac o Linux:
+
+```bash
+mkdir -p ~/.claude/skills && cp -r ~/Cerebro/skills/* ~/.claude/skills/
+```
+
+Van 29 skills. Las cinco de Cerebro son `cerebro-cola`, `cerebro-ticket`, `cerebro-comentario`,
+`cerebro-respuesta-cliente` y `cerebro-asignacion`. El resto son las de Appriss y las de formato,
+sirven igual.
+
+---
+
+## Paso 5. Cargar los atajos de PowerShell
+
+Los scripts `bin/guardar` y `bin/anotar` originales están escritos en bash y PowerShell no los
+ejecuta. Por eso existen `bin/guardar.py` y `bin/anotar.py`, que hacen lo mismo en Python, y
+`cerebro.ps1`, que te deja los comandos cortos.
+
+Cárgalo una vez por sesión de PowerShell, desde la raíz de la carpeta:
+
+```powershell
+cd $HOME\Cerebro
+. .\cerebro.ps1
+```
+
+El punto y el espacio del principio importan. Sin ellos las funciones no quedan cargadas.
+
+Tiene que imprimir `Cerebro cargado` en verde y la lista de comandos.
+
+Para no repetirlo cada vez, agrégalo a tu perfil:
+
+```powershell
+Add-Content $PROFILE "`n. $HOME\Cerebro\cerebro.ps1"
+```
+
+Si PowerShell se queja de la política de ejecución:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+---
+
+## Paso 6. Verificar que llegó completo
+
+Cuatro comprobaciones. Si las cuatro pasan, la migración salió bien.
+
+```powershell
+estado
+```
+
+Espera exactamente esto:
+
+```
+chunks      1744
+fts         1744
+carpetas    27
+items       491
+integridad  ok
+ultimo      2026-09-08
+backups     1
+journal     no
+tickets     532
+inbox       319
+```
+
+`chunks` igual a `fts` significa que el índice de búsqueda está sincronizado. Si difieren, la
+búsqueda va a devolver menos de lo que hay y hay que reconstruir el índice, ver
+`cola/INFORME-recuperacion.md`.
+
+`journal` tiene que decir `no`. Si dice `SI, cuidado`, no borres el archivo a mano. Abre la base una
+vez con Python y deja que haga rollback: `python -c "import sqlite3; sqlite3.connect('brain/sessions.db').execute('select 1')"`.
+
+```powershell
+buscar "izenda export"
+```
+
+Tiene que devolver resultados en CONOCIMIENTO, en TICKETS y en SIN CLASIFICAR. Si CONOCIMIENTO sale
+vacío y los otros dos traen cosas, el índice FTS5 se rompió en el traslado.
+
+```powershell
+buscar RCS-28535
+```
+
+Tiene que imprimir la ficha del ticket. Es el atajo para cualquier identificador.
+
+```powershell
+indexar
+evaluar
+```
+
+`indexar` regenera `tickets/` y debe decir cerca de 530 fichas. `evaluar` mide el clasificador de la
+cola y hoy da 73%, con cuatro fallos nombrados. Eso es lo esperado, no un problema del traslado.
+La causa está en `ESTADO.md`.
+
+---
+
+## Paso 7. Abrir Claude en la carpeta
+
+```powershell
+cd $HOME\Cerebro
+claude
+```
+
+`CLAUDE.md` se carga solo y trae el contrato completo: dónde está cada cosa, las reglas que no se
+negocian, y el techo de 2500 caracteres por entregable.
+
+Primera frase útil para arrancar, para confirmar que Claude ve la carpeta y la base:
+
+```
+Lee ESTADO.md y dime en cinco líneas qué está roto hoy y qué falta ingerir.
+```
+
+Si Claude te contesta sin haber leído nada, o inventa cifras, la carpeta no está montada como
+directorio de trabajo. Sal, vuelve a entrar desde `$HOME\Cerebro`, y verifica con `dir CLAUDE.md`.
+
+---
+
+## Paso 8. Lo que falta cubrir, en orden
+
+Esto es la deuda real que queda. Está en `ESTADO.md` con el detalle.
+
+**1. Ingerir lo que se acumule.** Al cerrar cada día:
+
+```powershell
+ingerir              # ensayo, dice qué va a entrar y qué descarta
+ingerir-aplicar      # escribe en la base
+indexar              # regenera las fichas
+```
+
+Sin este paso el cerebro no aprende. Ya pasó: 289 notas en `inbox/` y un solo chunk en la base entre
+el 25 de agosto y el 8 de septiembre.
+
+**2. Cosechar las 17 sesiones pendientes.** `cosecha/registro.json` lleva 75 de 92 marcadas. Las 17
+que faltan son chats cuyo hallazgo nunca llegó a la base. Con Claude abierto en la carpeta:
+
+```
+Corre el paso 6 de cerebro-asignacion y cosecha las sesiones pendientes.
+```
+
+**3. Arreglar el clasificador de la cola.** Está en 73%. Necesita dos decisiones tuyas: quién cuenta
+como cliente más allá de las cuentas `qm:`, y si un acuse de recibo del cliente debe subir un ticket
+a nivel 1. La causa está en la línea 29 de `bin/cola.py`.
+
+**4. Llenar `flujos/` e `investigaciones/`.** Tres archivos y uno, contra 1744 chunks. Ahí debería
+vivir lo que se repite. Es la deuda más grande.
+
+**5. Embeddings locales, solo si decides que valen.** El recall medido es 48% con FTS5 contra 58%
+con canal semántico, p igual a 0.51 sobre 31 preguntas. No es concluyente. Antes de instalar torch,
+lleva el set de evaluación a 100 casos con `bin/eval_recuperacion.py`.
+
+---
+
+## Paso 9. Rutina diaria, ya montado
+
+Mañana:
+
+```powershell
+cd $HOME\Cerebro
+. .\cerebro.ps1
+claude
+```
+
+Y dentro de Claude, según lo que necesites: la cola del día, un ticket concreto, o el reparto al
+equipo. Las skills se disparan solas por lo que pidas.
+
+Antes de investigar cualquier cosa, busca. Casi siempre ya hay algo escrito:
+
+```powershell
+buscar "el síntoma concreto"
+```
+
+Al cerrar el día:
+
+```powershell
+anotar RCS-28482 "pegué el comentario interno, quedó en Under Support Review"
+ingerir-aplicar
+indexar
+```
+
+Una nota puntual entra a mano:
+
+```powershell
+carpetas
+guardar 16 "Título del hallazgo" "el cuerpo de la nota"
+guardar-archivo 16 "Título del hallazgo" inbox\2026-09-08-tema.md
+```
+
+Carpetas útiles: 16 RCS Soluciones, 19 RCS Procesos, 26 ADUSA, 17 Reuniones, 27 Cerebro.
+
+---
+
+## Paso 10. Volver a empacar cuando cambies de máquina
+
+```powershell
+cd $HOME
+Compress-Archive -Path "$HOME\Cerebro" -DestinationPath "$HOME\Cerebro-$(Get-Date -Format yyyy-MM-dd).zip" -Force
+```
+
+Antes de empacar, corre `ingerir-aplicar` e `indexar`. Un zip con `inbox/` sin ingerir se lleva el
+trabajo en texto plano y deja la base atrasada.
+
+---
+
+## Si algo falla
+
+| Síntoma | Causa y qué hacer |
+|---|---|
+| `disk I/O error` al escribir en la base | Estás en el sandbox de Cowork, no en terminal. La carpeta se monta por FUSE y SQLite no puede tomar el bloqueo. Deja la nota en `inbox/` e ingiere desde PowerShell |
+| `bin/guardar` no se ejecuta | Es bash. En PowerShell usa `guardar` de `cerebro.ps1`, o `python bin\guardar.py` |
+| `buscar` no imprime nada | Falta cargar `cerebro.ps1`, o no estás en la raíz. Prueba `python bin\buscar "término"` |
+| CONOCIMIENTO vacío y el resto con resultados | El índice FTS5 se rompió. Reconstruir según `cola/INFORME-recuperacion.md` |
+| `chunks` distinto de `fts` en `estado` | Lo mismo de arriba. La búsqueda está devolviendo menos de lo que hay |
+| `journal SI, cuidado` | Escritura interrumpida. Abre la base con Python y deja que haga rollback. No borres el archivo |
+| Claude no ve la carpeta | Abriste `claude` fuera de `$HOME\Cerebro`. Sal y entra desde la raíz |
+| `evaluar` da menos de 73% | El léxico del clasificador se movió más. La cola puede estar mal ordenada. Avísalo antes de usarla |
+| La política de ejecución bloquea el `.ps1` | `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` |
+| Moscú abierta al escribir | Ciérrala. En Mac `bin/guardar` lo detecta y se detiene. En Windows no hay esa verificación |

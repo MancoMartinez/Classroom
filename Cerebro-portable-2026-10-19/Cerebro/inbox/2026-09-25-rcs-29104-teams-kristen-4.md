@@ -1,0 +1,3 @@
+Hi Kristen, I think we found what is going on with RCS-29104. GPC sends each order as a set of 3 files: order, line items and tender. From what I can see, since early May some orders come in again a day later with only the order and line items, and that version replaces the first one without its payment. That is what happened with the refund in your example.
+
+When you talk to GPC, do you think you could ask if anything changed in their export around early May? I believe they agreed during onboarding to always send the 3 files together, so maybe something shifted on their side. I am also checking with our data team how we could recover the transactions since then, and I will keep you posted.

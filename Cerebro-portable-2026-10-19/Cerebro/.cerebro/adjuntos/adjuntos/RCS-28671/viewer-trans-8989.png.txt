@@ -1,0 +1,102 @@
+# Adjunto viewer-trans-8989.png
+Ruta: adjuntos/RCS-28671/viewer-trans-8989.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-28
+
+Texto reconocido por OCR:
+Portal > Secure Store > Results
+Viewer
+Transactions
+Q Results
+Journal
+$73.07
+08/27/2026 8:37:17 AM
+Store
+Trans No.
+7135
+POS
+8989
+Cashier
+Sale
+Items
+2
+51
+DXM6269
+Selected
+Receipt
+Audit
+Links
+Associated 0
+4 Pin
+& Image
+& PDF
+Cashier DXM6269
+Sale
+QTY
+Price
+Amt
+Manuel Pot 6/15cm Natural
+1001809685
+$6.98
+$6.98
+Manuel Pot 8"/21cm Natural
+1001809686
+$14.98
+$14.98
+SAKRETE MORTAR MIX TYPEN 30KG
+1000109073
+P 1
+$10.20
+$10.20
+SAKRETE MORTAR MIX TYPEN 30KG
+1000109073
+HENRY MAGIC JOINTING SAND 18 1KG
+1000144920
+10
+$10.20
+$10.20
+$22.13
+$221.30
+SAKRETE MORTAR MIX TYPEN 30KG
+1000109073
+$10.20
+$51.00
+**MANUAL PRICE OVERRIDE**
+HENRY MAGIC JOINTING SAND 18 1KG
+1000144920
+RSN: - AMT OFF MKDN
+$22.13
+$-55.33
+***MANUAL PRICE OVERRIDE**
+HENRY MAGIC JOINTING SAND 18 1KG
+1000144920
+4
+RSN: -AMT OFF MKDN
+$22.13
+$-4426
+$55.32
+$110.65
+SUBTOTAL
+SALES TAX
+TOTAL
+$44.26
+$88.52
+$64.66
+$841
+$73.07
+DEBIT
+Card No 1262034041293206
+CouponCode:
+AUTH: 00 APPROVED
+Contactless
+ITEMS SOLD
+ITEMS RETURNED
+ITEMS VOIDED
+ITEM DISCOUNTS
+4 Pinned (0/4)
+Pin some items to see them here.
+R0%
+50%
+-50%
+$73.07

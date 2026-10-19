@@ -1,0 +1,250 @@
+I have recently I have a finished meeting with a client. I don't remember the name.
+Having fun out there then?
+Yeah.
+So, when someone says "crack your stones", do you know what that means?
+Crack, sorry?
+Crack your stones.
+Crack your stones, yeah.
+Crack your balls, yeah.
+Arrass you, you know.
+I don't mean to crack your stones about the shit in the other meeting, it's just we only
+have a limited period of time, and I always want to make sure that what we're saying in
+those meetings is something that everybody needs to hear.
+You know what I mean?
+Or at least it can't always be everybody, but most people need to hear.
+So just always try to think about that for that meeting as we're doing it.
+Yeah, yeah.
+Okay.
+I understand.
+All right.
+So let's talk about this one here.
+Let's see.
+Do I have this ticket open?
+I do.
+Starbucks, line voids, and cancels are missing items.
+So I'm curious what happened here.
+Like we had this ticket.
+If you look at the history, Shan said we need delivery.
+And then you took the ticket and you reassigned it to Diego.
+Diego said nothing in the ticket, but changed it to work in progress, put it on a delivery
+review, gave it to Carl.
+Actually, sorry.
+Diego gave it to Carl.
+Carl blanked it to unassigned.
+Then put it back to Camila.
+Then it went back to work in progress.
+Then it went to you.
+Then it went back to delivery.
+Then it went to Adarsh.
+And like, if you look at the fucking comments, man, none of the reason why this happened is
+reflected in here, even in internal notes.
+So, you know, should we be chasing Adarsh?
+Should this have been assigned to Adarsh?
+Probably not.
+If we need engineering, Snowtime, to my earlier comment, we need to put it to Shan.
+And I recognize that's a new process because we're following this crazy fucking weird process
+for Snowtime before.
+But what's happening here?
+I tried to talk with Diego about this yesterday in short minutes.
+I think that this is a lot of confusion in short time because Diego usually escalate to engineering
+and ping to Shandana in teams.
+It's the normal process.
+But Shandana says maybe last week, don't ping me.
+I receive a notification.
+I don't need more.
+And they go, ah, okay.
+And this same week, we received a message from Camila in April's support team channel
+to say all things relational with this Snowtime, we need to ping to Adarsh.
+Yeah?
+Yeah.
+No more.
+That's right.
+Yes, Adarsh.
+Yes.
+And Diego received this ticket and see something relational with this Snowtime.
+Don't say anything in the ticket.
+Don't say anything to Shandana.
+Don't say anything to anyone and just to escalate automatically because I see this.
+But Diego don't review the document that the Snowtime teams share with us.
+It's an actual PDF that have all the steps necessary.
+The support team needs to do before escalate to Snowtime.
+And yesterday I said, Diego, you reviewed this document because we have actually, we actually,
+we have a process with the Snowtime escalation.
+No, just ping Adarsh in teams and say, no, I don't review that.
+Sorry.
+I need to review.
+I need to fix the process that I do with this previous ticket, this ticket specifically.
+Yeah.
+It's just a mistake with a lot of confusion around.
+And this is the actual.
+Sorry.
+We've been, I get it.
+I get it.
+Right.
+It's a process confusion.
+It's okay.
+Sometimes it's been confusing.
+But we need to get this ticket out of Adarsh's name.
+And I want to be crisp with you, Juan.
+When I'm saying this right now, I don't mean that I want at seven o'clock tonight this to happen
+because you see Diego didn't do it and you go in and make the changes.
+I mean, before lunch, before noon, your time.
+I want this ticket out of Adarsh's name.
+I want it in the appropriate person's name.
+I want a customer facing comment to apologize to them and tell them we're still working on this.
+And then I want us to follow the right process to get this escalated to the right team.
+Okay.
+Okay.
+I want all that done in the next, like two hours, you know, one hour and 50 minutes, please.
+Sure.
+Sure.
+Okay.
+I don't know.
+But I have a relationship with this because I have, this week is very, what's a good week?
+Right?
+Now a lot of tickets, all good.
+But I see your board, your actual board that you build to see.
+Mm-hmm.
+But I have other board with automation in teams.
+Uh, I don't know if you maybe other day you, you have to check it, but because I see actually
+a lot of, um, members, me too, uh, forget put, uh, correct follow ups in the, in the tickets.
+Yeah.
+The correct comments, the updates.
+I need to review all days, all mornings, uh, yesterday and today.
+People by people per member by member.
+Uh, for example, that's it.
+That's the, and that's where I was talking to you before about it.
+Like a team lead, you know, yeah.
+Legitimately four hours a day working on tickets, four hours a day, following up on your team,
+using my dashboard, using your dashboard, whatever tools work for you.
+I'm just, these are the, this is the tool I use to build for myself.
+Candidly.
+I didn't build this for you guys.
+I built it for me.
+Yeah.
+So, and then I shared it with you guys and you guys have given me some features to add
+to it since then you need a tool in order to manage your team, to get them to do the
+things that you need to do.
+So you have to inspect their work every day and every day you have to talk to them.
+And if you have people that you're consistently following up on that are fucking up in the
+same way, you have to evolve your conversation.
+And I'm going to be very clear with you what I mean by that.
+When I first talked to somebody about an issue, I'm like, Hey man, look, you've got 12 tickets
+of your 20 that haven't had an update and you know, three or more business days.
+And then I asked them to update them.
+And the next day I come in and they've got 13 out of 20.
+I'm like, Hey, we talked about this yesterday.
+Where are we at?
+And they say, Oh, I was so busy.
+I was working on this ticket.
+And then I had this escalation.
+And you say, I know because this is support and that happens every day.
+But I told you that we have to do this and it's important.
+And I need you to break 30 minutes off of your time today or an hour and do it.
+And then the next day you come in and you run your report and you see, they've done seven
+of them.
+They haven't done all of them.
+Okay.
+Back to them.
+And you say, good work doing your seven, but there's more that you need to do.
+And then the third or fourth time you have that conversation, you say, Hey, am I not saying
+something right?
+Like, are you help me understand why, why you're not able to do this?
+Right.
+I also manage tickets.
+Help me understand why it is that you're not capable of doing this thing.
+And either they, after you do that multiple times and then you do it for a couple of weeks,
+either they get with the process or they don't.
+And if they don't, then you talk to Camila and you talk to me or she'll talk to me and
+we start what's most likely a performance improvement plan for that person, which is to say, okay,
+we've talked to you about this a lot and you're not doing it.
+So we're going to write down exactly what we want you to do, how we want you to do it
+and why.
+And we're going to check back in in 30 days.
+And in 30 days, if you've been doing it, great.
+If you haven't been doing it, we're going to have a problem.
+Okay.
+So, you know, and this is what I tell everybody is I don't want to micromanage you.
+My goal is I run a report and I see everything is good.
+And we're good to go because you're adults and I trust you.
+But in order to get to that point, I need to run my report and everything needs to be good.
+And if it's not, you need to have a good explanation to me as to why it's not.
+And it needs to be an exception, not the rule.
+Yeah.
+Okay.
+Got it.
+Got it here.
+I just wanted to say that this issue is where it began.
+Don't play it.
+And the team will work better based on all the incidents that have happened in regarding internal and customer comments.
+Yeah.
+I'm sure that we can be all work better.
+I know we can, man.
+Look, it's about getting your process.
+And that's what I keep saying again and again.
+That's why I show in the monthly meeting these frameworks of a day.
+You have to build your own process that works for you.
+And that doesn't work for everybody.
+Right?
+Some people don't have the mindset in order to do that.
+And they just deal with fire.
+Like, oh, this one's on fire now.
+This one's on fire now.
+This one's on fire now.
+Well, if that's all you're doing, you're going to be on fire all the time.
+You need to build processes that help you control those fires and make it less of an issue.
+So, you know, we'll coach them and some people will get with it and it'll be great.
+And other people won't and we'll fire them and we'll find other people that aren't.
+You know, this is unfortunately the nature of the game in any company.
+Okay.
+So, you know, just make sure you're staying on top of these guys.
+And this isn't just you, Juan.
+I'm sure you heard Baraj talk about on the call.
+I put my foot up Baraj's ass about several tickets on his team side too that were not doing what I needed them to do.
+You know, my goal is a customer escalate something to me or an account team escalate something to me.
+I look at the ticket and I see everything I need to see.
+I see all the comments that tell me what's going on.
+I see that we put it to the right team.
+I see that we're keeping the customer up to date.
+And if we're doing all those things, most escalations for me, I could deflect.
+I can say, all right, guys, look, we sent this to engineering two weeks ago.
+I know that sucks.
+I'm going to escalate it with engineering, but that takes a while.
+You know, these things aren't fast.
+But when I'm like, yes, we didn't say anything to you for three weeks and no one actually owns the ticket.
+And, you know, there's no notes anywhere in it or no notes from Jira and I have no fucking idea what's going on.
+Then we all fail, right?
+We all fail.
+My goal is not to pull you guys in for these conversations.
+Okay.
+To just be able to run by looking at the tickets and reading the dashboard.
+But to do that, they've all got to be following the process.
+I promise you.
+I promise.
+And I will promise the team, too, when I talk to them.
+If we all get good at following these processes 95% plus of the times, so much noise is going to go away.
+We're going to be able to focus on our true problems and get them resolved.
+You know, right now, all these escalations are just noise.
+They're just noise.
+They stop us from doing the shit that we need to do.
+So if we get good at the basics, if we get good at the framework, that noise fades away.
+And then we can focus on the customer problems.
+Okay.
+Okay.
+Thanks.
+Thanks.
+Thanks for your time very much.
+I appreciate your work.
+Thank you.
+Yeah, yeah.
+Happy to have fun.
+I always learn something.
+I don't know.
+Happy to do so, man.
+It's my job.
+And I'm always learning, too.
+So have a good weekend.
+I'll talk to you.
+Bye-bye.
+Bye.
+Bye.

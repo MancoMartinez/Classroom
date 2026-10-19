@@ -1,0 +1,1 @@
+Yes, showstopper. Customer needs this resolved by Oct 9 to close out an audit due Oct 19, flagged that Oct 1. On the code question, current evidence points to a session level lock in classic ASP while the response streams, not a setting we can flip in app. That needs your read, not something support can patch from the admin side.

@@ -1,0 +1,11 @@
+# Adjunto Appriss Incident Security ID Examples.xlsx
+Ruta: adjuntos/RCS-29469/Appriss Incident Security ID Examples.xlsx
+Tipo: xlsx
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+## Hoja No Security Incident ID
+Vacía.
+
+## Hoja Emails
+Vacía.

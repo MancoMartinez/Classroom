@@ -1,0 +1,51 @@
+# Adjunto appriss_sso_teams_20261014034500.csv
+Ruta: adjuntos/RCS-29469/appriss_sso_teams_20261014034500.csv
+Tipo: csv
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+## Hoja appriss_sso_teams_20261014034500.csv
+4095 filas x 2 columnas.
+
+Primeras filas (tabuladas):
+Username	Team
+Mark.Kus@tailoredbrands.com	Location Manager
+William.Yeomans@tailoredbrands.com	Location Manager
+Jake.Ginsberg@mooresclothing.com	Location Manager
+Abiola.Egbetola@tailoredbrands.com	Location Manager
+Faith.Vieney@tailoredbrands.com	Location Manager
+Zack.GabrielOconnor@mooresclothing.com	Location Manager
+Joana.Korita@tailoredbrands.com	Location Manager
+Coburn.Cockburn@mooresclothing.com	Location Manager
+Sergio.Chilelli@mooresclothing.com	Location Manager
+Michael.Dancuo@mooresclothing.com	Location Manager
+Sandra.Stevens@mooresclothing.com	Location Manager
+Grace.Kay@mooresclothing.com	Location Manager
+Zoe.Gard@mooresclothing.com	Location Manager
+Angela.Williams@tailoredbrands.com	Location Manager
+Maria.J.Perez@tailoredbrands.com	Location Manager
+David.Shook@tailoredbrands.com	Administrators
+Duvone.EnglandJr@tailoredbrands.com	Location Manager
+Carol.Bergson@mooresclothing.com	Location Manager
+Richard.Sullivan@tailoredbrands.com	Location Manager
+Andrew.Dafforn@tailoredbrands.com	Location Manager
+Kalisha.Roberson@tailoredbrands.com	Location Manager
+Jaypee.Illescas@mooresclothing.com	Location Manager
+Aaron.Baiden@mooresclothing.com	Location Manager
+Elie.Kassim@mooresclothing.com	Location Manager
+Philip.Elie@tailoredbrands.com	Location Manager
+Christine.Couture@tailoredbrands.com	Location Manager
+Donald.Deacon@mooresclothing.com	Location Manager
+Laceedon.Orth@tailoredbrands.com	Location Manager
+Jermaine.Francis@mooresclothing.com	Location Manager
+Raul.Moreno@tailoredbrands.com	Location Manager
+Sidney.Patterson@mooresclothing.com	Location Manager
+Marlen.Samaniego@tailoredbrands.com	Location Manager
+Patricia.Sullivan@mooresclothing.com	Location Manager
+Samantha.Hammond@mooresclothing.com	Location Manager
+Amy.Valle@tailoredbrands.com	Location Manager
+Ricky.AcevesNuno@tailoredbrands.com	Location Manager
+Juan.Perez@tailoredbrands.com	Location Manager
+Khyler.Scott@mooresclothing.com	Location Manager
+Kyle.Finney@menswearhouse.com	Location Manager
+... 4055 filas más.

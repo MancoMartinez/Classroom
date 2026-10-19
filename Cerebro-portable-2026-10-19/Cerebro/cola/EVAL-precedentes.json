@@ -1,0 +1,687 @@
+{
+ "descripcion": "Construye el golden set ticket->precedente desde las secciones de precedentes ya escritas.",
+ "fijado": "2026-10-15",
+ "relevancia": "fragmento de un documento cuyo nombre o cuerpo cita un precedente y que no menciona al sujeto",
+ "casos": [
+  {
+   "q": "Stater Bro - Print Journal not working",
+   "sujeto": "ENG-8008",
+   "precedentes": [
+    "RCS-28242"
+   ],
+   "fuentes": [
+    "inbox/2026-09-09-eng-8008-print-journal-stater-bros.md"
+   ]
+  },
+  {
+   "q": "Incident -[PC] demo7 – Attachment upload fails with \"The web server returned unexpected response.\" on Case Detail (Attachments + Suspect Photo)",
+   "sujeto": "ENG-9699",
+   "precedentes": [
+    "RCS-28022",
+    "RCS-28535"
+   ],
+   "fuentes": [
+    "inbox/2026-10-01-vallarta-adriel-upload-eng-9699.md"
+   ]
+  },
+  {
+   "q": "PPG - New Audit with different name needs to be loaded into the Smart Alert Email-",
+   "sujeto": "RCS-27407",
+   "precedentes": [
+    "RCS-28161"
+   ],
+   "fuentes": [
+    "inbox/2026-09-04-rcs-27407-informe.md"
+   ]
+  },
+  {
+   "q": "ICA - Degraded system performance – slow response times and delayed loading",
+   "sujeto": "RCS-27549",
+   "precedentes": [
+    "RCS-27994"
+   ],
+   "fuentes": [
+    "inbox/2026-09-09-rcs-27549.md"
+   ]
+  },
+  {
+   "q": "APIS - Elevated Cases have wrong Case Type",
+   "sujeto": "RCS-28212",
+   "precedentes": [
+    "RCS-12432",
+    "RCS-1508",
+    "RCS-27330",
+    "RCS-3053"
+   ],
+   "fuentes": [
+    "inbox/2026-09-02-rcs-28212-informe.md",
+    "inbox/2026-09-15-rcs-28212-hoy.md"
+   ]
+  },
+  {
+   "q": "McDonald's - Restaurant Manager and Crew Cash Audit Questions",
+   "sujeto": "RCS-28223",
+   "precedentes": [
+    "RCS-28294",
+    "RCS-28486",
+    "RCS-28676",
+    "RCS-28984",
+    "RCS-29147"
+   ],
+   "fuentes": [
+    "inbox/2026-10-06-rcs-28223-session-error-admin-hugo.md"
+   ]
+  },
+  {
+   "q": "Vallarta - Smart Alerts no Triggering",
+   "sujeto": "RCS-28294",
+   "precedentes": [
+    "RCS-28465",
+    "RCS-28534"
+   ],
+   "fuentes": [
+    "inbox/2026-09-14-rcs-28294-inprocess-no-aplica.md"
+   ]
+  },
+  {
+   "q": "Ahold-Delhaize - Anthony Lopez - Employee data missing from profile",
+   "sujeto": "RCS-28342",
+   "precedentes": [
+    "RCS-28177"
+   ],
+   "fuentes": [
+    "inbox/2026-09-14-rcs-28342-fix-titulos.md"
+   ]
+  },
+  {
+   "q": "GUESS- Cannot unlock user account",
+   "sujeto": "RCS-28389",
+   "precedentes": [
+    "RCS-27519",
+    "RCS-27886",
+    "RCS-28053",
+    "RCS-28080",
+    "RCS-28166",
+    "RCS-28346"
+   ],
+   "fuentes": [
+    "bitacora/RCS-28389.md",
+    "inbox/2026-09-11-rcs-28389.md"
+   ]
+  },
+  {
+   "q": "AHL/DLZ - Greyed out fields in Izenda",
+   "sujeto": "RCS-28482",
+   "precedentes": [
+    "RCS-28379",
+    "RCS-28589",
+    "RCS-28596",
+    "RCS-28683"
+   ],
+   "fuentes": [
+    "inbox/2026-09-03-rcs-28482-informe.md"
+   ]
+  },
+  {
+   "q": "Vitamin Shoppe - User Blocked",
+   "sujeto": "RCS-28556",
+   "precedentes": [
+    "RCS-28059",
+    "RCS-28282"
+   ],
+   "fuentes": [
+    "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md"
+   ]
+  },
+  {
+   "q": "WMT-QL Refund Audits Not Working",
+   "sujeto": "RCS-28618",
+   "precedentes": [
+    "RCS-27485",
+    "RCS-28602"
+   ],
+   "fuentes": [
+    "inbox/2026-09-01-cosecha-rcs-28618.md"
+   ]
+  },
+  {
+   "q": "APP-Please Import Attached Employee File for Incident",
+   "sujeto": "RCS-28621",
+   "precedentes": [
+    "RCS-25133",
+    "RCS-25389",
+    "RCS-26462",
+    "RCS-26464",
+    "RCS-27345",
+    "RCS-28622"
+   ],
+   "fuentes": [
+    "inbox/2026-08-28-rcs-28621-datos-no-visibles-diagnostico.md",
+    "inbox/2026-08-28-rcs-28621-quien-carga-el-archivo.md"
+   ]
+  },
+  {
+   "q": "Nordstrom - Checking on status of new work items",
+   "sujeto": "RCS-28631",
+   "precedentes": [
+    "RCS-17323",
+    "RCS-28283",
+    "RCS-28618"
+   ],
+   "fuentes": [
+    "inbox/2026-09-04-rcs-28631-informe.md"
+   ]
+  },
+  {
+   "q": "Myer Australia - Mapping of Proof Type, Order No and Financial Statement Date is missing since 09/08/26",
+   "sujeto": "RCS-28638",
+   "precedentes": [
+    "RCS-22051",
+    "RCS-25061",
+    "RCS-26010",
+    "RCS-26403",
+    "RCS-27262",
+    "RCS-27644",
+    "RCS-28518",
+    "RCS-28559",
+    "RCS-28612"
+   ],
+   "fuentes": [
+    "inbox/2026-08-28-rcs-28638-myer-header-ext.md"
+   ]
+  },
+  {
+   "q": "THD - EBR Secure - Recent Transaction Receipt not generating receipt view",
+   "sujeto": "RCS-28649",
+   "precedentes": [
+    "RCS-27140",
+    "RCS-28581",
+    "RCS-28621"
+   ],
+   "fuentes": [
+    "inbox/2026-09-01-rcs-28649-informe.md"
+   ]
+  },
+  {
+   "q": "New users added to the platform",
+   "sujeto": "RCS-28667",
+   "precedentes": [
+    "RCS-28415",
+    "RCS-28519"
+   ],
+   "fuentes": [
+    "inbox/2026-09-24-rcs-28667.md"
+   ]
+  },
+  {
+   "q": "THD - Searches Producing only Errors",
+   "sujeto": "RCS-28671",
+   "precedentes": [
+    "RCS-28170",
+    "RCS-28543"
+   ],
+   "fuentes": [
+    "inbox/2026-09-02-rcs-28671-work-items-sin-transacciones.md",
+    "inbox/2026-09-28-rcs-28671.md"
+   ]
+  },
+  {
+   "q": "Urban - Items Missing from Transactions",
+   "sujeto": "RCS-28678",
+   "precedentes": [
+    "RCS-28649"
+   ],
+   "fuentes": [
+    "inbox/2026-09-22-rcs-28678.md"
+   ]
+  },
+  {
+   "q": "Stater Bros - Trouble submitting reports",
+   "sujeto": "RCS-28709",
+   "precedentes": [
+    "RCS-28022",
+    "RCS-28742"
+   ],
+   "fuentes": [
+    "inbox/2026-09-04-rcs-28709-informe.md"
+   ]
+  },
+  {
+   "q": "Nike - Logic for Manual Discount Amount field",
+   "sujeto": "RCS-28753",
+   "precedentes": [
+    "RCS-21540",
+    "RCS-28049",
+    "RCS-28420",
+    "RCS-28508",
+    "RCS-28770"
+   ],
+   "fuentes": [
+    "inbox/2026-09-03-rcs-28753-informe.md"
+   ]
+  },
+  {
+   "q": "Nike - ECOM Load issue since 28th August",
+   "sujeto": "RCS-28756",
+   "precedentes": [
+    "RCS-27485",
+    "RCS-28618",
+    "RCS-28620",
+    "RCS-28753"
+   ],
+   "fuentes": [
+    "inbox/2026-09-04-rcs-28756-informe.md",
+    "inbox/2026-09-09-rcs-28756.md",
+    "inbox/2026-09-10-rcs-28756.md"
+   ]
+  },
+  {
+   "q": "THD - APPRISS Sign ON ERROR",
+   "sujeto": "RCS-28779",
+   "precedentes": [
+    "RCS-28240",
+    "RCS-28556"
+   ],
+   "fuentes": [
+    "inbox/2026-09-04-rcs-28779-informe.md"
+   ]
+  },
+  {
+   "q": "Bunnings-Users are not getting email notifications for cases Assigned",
+   "sujeto": "RCS-28795",
+   "precedentes": [
+    "RCS-28123",
+    "RCS-28766"
+   ],
+   "fuentes": [
+    "inbox/2026-09-08-rcs-28795-informe.md"
+   ]
+  },
+  {
+   "q": "Kohl's - Employee Table Not Updating Home Stores",
+   "sujeto": "RCS-28809",
+   "precedentes": [
+    "RCS-22335",
+    "RCS-28077",
+    "RCS-28184"
+   ],
+   "fuentes": [
+    "inbox/2026-09-09-rcs-28809.md",
+    "inbox/2026-10-05-rcs-28809.md"
+   ]
+  },
+  {
+   "q": "Walgreens -Peak Season Readiness 2026 : 3rd party connect (Appriss Retail)",
+   "sujeto": "RCS-28871",
+   "precedentes": [
+    "RCS-27840",
+    "RCS-27847"
+   ],
+   "fuentes": [
+    "inbox/2026-09-15-rcs-28871.md"
+   ]
+  },
+  {
+   "q": "Guess - Izenda Database View - Option Missing",
+   "sujeto": "RCS-28872",
+   "precedentes": [
+    "RCS-15815",
+    "RCS-27598"
+   ],
+   "fuentes": [
+    "inbox/2026-09-17-rcs-28872-amqcomment-vista.md",
+    "inbox/2026-10-07-rcs-28872.md"
+   ]
+  },
+  {
+   "q": "Nexcom - Unable to Edit APIS Audit",
+   "sujeto": "RCS-28881",
+   "precedentes": [
+    "RCS-28032",
+    "RCS-28139",
+    "RCS-28212",
+    "RCS-28449",
+    "RCS-28709",
+    "RCS-28852"
+   ],
+   "fuentes": [
+    "inbox/2026-09-11-rcs-28881.md",
+    "inbox/2026-09-14-rcs-28881.md",
+    "inbox/2026-09-21-rcs-28881.md"
+   ]
+  },
+  {
+   "q": "Ahold-Delhaize - Location File Updates Not Made",
+   "sujeto": "RCS-28911",
+   "precedentes": [
+    "RCS-28093",
+    "RCS-28292",
+    "RCS-28588"
+   ],
+   "fuentes": [
+    "inbox/2026-09-15-rcs-28911.md"
+   ]
+  },
+  {
+   "q": "Goodwill Sacramento - Smart Alerts",
+   "sujeto": "RCS-28915",
+   "precedentes": [
+    "RCS-27407"
+   ],
+   "fuentes": [
+    "inbox/2026-10-07-rcs-28915.md"
+   ]
+  },
+  {
+   "q": "Skechers - Unable to login to Incident",
+   "sujeto": "RCS-28984",
+   "precedentes": [
+    "RCS-28321",
+    "RCS-28486"
+   ],
+   "fuentes": [
+    "inbox/2026-09-17-rcs-28984.md"
+   ]
+  },
+  {
+   "q": "FinishLine - Store 449 unable to enter singles info",
+   "sujeto": "RCS-28997",
+   "precedentes": [
+    "RCS-28701"
+   ],
+   "fuentes": [
+    "inbox/2026-09-22-rcs-28997-singles-info.md"
+   ]
+  },
+  {
+   "q": "Ahold - Smart Alert for Case No 2026 Food Lion ,LLC-0619-27",
+   "sujeto": "RCS-29026",
+   "precedentes": [
+    "RCS-28078",
+    "RCS-28294"
+   ],
+   "fuentes": [
+    "inbox/2026-09-24-rcs-29026.md",
+    "inbox/2026-09-28-rcs-29026.md"
+   ]
+  },
+  {
+   "q": "Appriss Internal - Claire's VPN Outage: Catch-Up File Requirements Query [API Ingestion]",
+   "sujeto": "RCS-29037",
+   "precedentes": [
+    "RCS-28170",
+    "RCS-28620"
+   ],
+   "fuentes": [
+    "inbox/2026-09-21-rcs-29037.md",
+    "inbox/2026-09-24-rcs-29037.md"
+   ]
+  },
+  {
+   "q": "Big 5 - New store alignment",
+   "sujeto": "RCS-29054",
+   "precedentes": [
+    "RCS-8330"
+   ],
+   "fuentes": [
+    "inbox/2026-09-22-rcs-29054.md"
+   ]
+  },
+  {
+   "q": "Kohl's Corporation - Idle Timer Too Short",
+   "sujeto": "RCS-29055",
+   "precedentes": [
+    "RCS-28153",
+    "RCS-28346"
+   ],
+   "fuentes": [
+    "inbox/2026-09-28-rcs-29055.md"
+   ]
+  },
+  {
+   "q": "Ahold -Delhaize - Investigation Request - Narrative missing",
+   "sujeto": "RCS-29057",
+   "precedentes": [
+    "RCS-22886",
+    "RCS-2697",
+    "RCS-27573",
+    "RCS-28196"
+   ],
+   "fuentes": [
+    "Claude outputs/2026-09-24-rcs-29057.md",
+    "inbox/2026-09-22-rcs-29057.md",
+    "inbox/2026-09-24-rcs-29057.md"
+   ]
+  },
+  {
+   "q": "7- Eleven - APIS - Claims feed stopped working",
+   "sujeto": "RCS-29083",
+   "precedentes": [
+    "RCS-26609"
+   ],
+   "fuentes": [
+    "inbox/2026-09-25-rcs-29083.md",
+    "inbox/2026-09-26-rcs-29083.md"
+   ]
+  },
+  {
+   "q": "Stater Bros - Smart Alert Not Working",
+   "sujeto": "RCS-29103",
+   "precedentes": [
+    "RCS-28294",
+    "RCS-28465",
+    "RCS-28534"
+   ],
+   "fuentes": [
+    "inbox/2026-09-24-rcs-29103.md"
+   ]
+  },
+  {
+   "q": "GPC - Missing Tender Details",
+   "sujeto": "RCS-29104",
+   "precedentes": [
+    "RCS-28632",
+    "RCS-28649",
+    "RCS-28834"
+   ],
+   "fuentes": [
+    "inbox/2026-09-24-rcs-29104.md"
+   ]
+  },
+  {
+   "q": "Ahold-Delhaize - Smart Alerts are not generating today",
+   "sujeto": "RCS-29123",
+   "precedentes": [
+    "RCS-28294",
+    "RCS-29145"
+   ],
+   "fuentes": [
+    "inbox/2026-09-28-rcs-29123.md"
+   ]
+  },
+  {
+   "q": "VF Corp - no search results for new case created AND Case missing",
+   "sujeto": "RCS-29126",
+   "precedentes": [
+    "RCS-26453",
+    "RCS-28006",
+    "RCS-28898",
+    "RCS-29171"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-rcs-29126.md"
+   ]
+  },
+  {
+   "q": "Vitamin Shoppe Inc - Smart Alerts are not triggering",
+   "sujeto": "RCS-29145",
+   "precedentes": [
+    "RCS-28149",
+    "RCS-29026",
+    "RCS-29123"
+   ],
+   "fuentes": [
+    "inbox/2026-09-28-rcs-29145.md"
+   ]
+  },
+  {
+   "q": "Prada - Not able to log into PRADA account",
+   "sujeto": "RCS-29147",
+   "precedentes": [
+    "RCS-28061",
+    "RCS-28486",
+    "RCS-28977"
+   ],
+   "fuentes": [
+    "inbox/2026-09-28-rcs-29147.md"
+   ]
+  },
+  {
+   "q": "SBX - Line Voids and Cancels are missing items in the receipt",
+   "sujeto": "RCS-29152",
+   "precedentes": [
+    "RCS-28510",
+    "RCS-28725",
+    "RCS-28873"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-asignacion-rcs-29152.md"
+   ]
+  },
+  {
+   "q": "Estee Lauder - Low store loaded from Trading day 2026-09-24 & Low Transaction from Trading day 2026-09-21",
+   "sujeto": "RCS-29179",
+   "precedentes": [
+    "RCS-29225"
+   ],
+   "fuentes": [
+    "inbox/2026-10-09-rcs-29179.md"
+   ]
+  },
+  {
+   "q": "Property Damage Smart alerts not triggering",
+   "sujeto": "RCS-29195",
+   "precedentes": [
+    "RCS-28534"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-rcs-29195.md"
+   ]
+  },
+  {
+   "q": "SBX NA - Work Item - \"Refunds - Refund to a Partners SVC or Credit Debit Card with no Partner Discount – fiscal period\" not producing results",
+   "sujeto": "RCS-29205",
+   "precedentes": [
+    "RCS-28671",
+    "RCS-28848",
+    "RCS-28873"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-rcs-29205.md"
+   ]
+  },
+  {
+   "q": "SBX NA - Work Item - \"Discounts - Partner Discount with controllable discounts on serve ware\" not producing results",
+   "sujeto": "RCS-29206",
+   "precedentes": [
+    "RCS-28248",
+    "RCS-28873"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-rcs-29206.md"
+   ]
+  },
+  {
+   "q": "SBX NA - Work Item - \"SFE - Star Farming same day high volume\" not producing results",
+   "sujeto": "RCS-29207",
+   "precedentes": [
+    "RCS-28671",
+    "RCS-28848",
+    "RCS-28873"
+   ],
+   "fuentes": [
+    "inbox/2026-09-30-rcs-29207.md"
+   ]
+  },
+  {
+   "q": "AAP - Inventory File - Change to time we receive the file.",
+   "sujeto": "RCS-29224",
+   "precedentes": [
+    "RCS-27837",
+    "RCS-28126",
+    "RCS-29244"
+   ],
+   "fuentes": [
+    "inbox/2026-10-08-rcs-29224.md"
+   ]
+  },
+  {
+   "q": "Urban Outfitters - Cashier Summary - Refund where Original Transaction was Reprint Receipt- Report no longer functioning",
+   "sujeto": "RCS-29231",
+   "precedentes": [
+    "RCS-28873",
+    "RCS-29207"
+   ],
+   "fuentes": [
+    "inbox/2026-10-02-rcs-29231.md"
+   ]
+  },
+  {
+   "q": "ADUSA - LPMS will not save cases",
+   "sujeto": "RCS-29234",
+   "precedentes": [
+    "RCS-28075",
+    "RCS-28115"
+   ],
+   "fuentes": [
+    "inbox/2026-10-01-rcs-29234-apoyo-sebastian.md"
+   ]
+  },
+  {
+   "q": "Claire's - User unable to access platform",
+   "sujeto": "RCS-29310",
+   "precedentes": [
+    "RCS-28042"
+   ],
+   "fuentes": [
+    "inbox/2026-10-09-rcs-29310.md"
+   ]
+  },
+  {
+   "q": "SpartanNash - Reference Text is printing in the audit report again",
+   "sujeto": "RCS-29338",
+   "precedentes": [
+    "RCS-19415",
+    "RCS-26171",
+    "RCS-27315",
+    "RCS-27794"
+   ],
+   "fuentes": [
+    "inbox/2026-10-08-rcs-29338.md"
+   ]
+  },
+  {
+   "q": "Wild Fork Foods - Notification Email Forwarding is not working",
+   "sujeto": "RCS-29350",
+   "precedentes": [
+    "RCS-29021",
+    "RCS-29138"
+   ],
+   "fuentes": [
+    "inbox/2026-10-09-rcs-29350.md"
+   ]
+  },
+  {
+   "q": "Urban Outfitters - Receipt states \"Return Without Receipt\" but has receipt information",
+   "sujeto": "RCS-29361",
+   "precedentes": [
+    "RCS-28510",
+    "RCS-29028",
+    "RCS-29231"
+   ],
+   "fuentes": [
+    "inbox/2026-10-08-rcs-29361.md"
+   ]
+  }
+ ]
+}

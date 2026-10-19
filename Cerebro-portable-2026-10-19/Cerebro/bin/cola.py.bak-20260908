@@ -1,0 +1,277 @@
+#!/usr/bin/env python3
+"""Ordena la cola de tickets de Juan de mas urgente a menos.
+
+El modelo es lexicografico, no un puntaje opaco. Cuatro niveles, y dentro de cada nivel
+se ordena por dias de silencio de cara al cliente. Cada ticket sale con el motivo escrito
+para que se pueda auditar y discutir.
+
+  Nivel 1  TE TOCA RESPONDER      el ultimo humano que hablo fue el cliente
+  Nivel 2  PROMESA SIN CUMPLIR    tu ultimo comentario prometio un update que no llego
+  Nivel 3  ESPERANDO AL CLIENTE   preguntaste y no contestan, toca perseguir
+  Nivel 4  EN MOVIMIENTO INTERNO  ingenieria trabajando, nada pendiente de cara al cliente
+
+Reglas que respeta, tomadas de brain/memoria:
+  · `updated` de Jira no es señal de actividad. El reloj cuenta desde el ultimo comentario real.
+  · Los comentarios de Automation for Jira y las notas internas no responden al cliente.
+  · Jira es la fuente de verdad. Este script solo lee un volcado, nunca escribe en Jira.
+
+Uso:
+    python3 bin/cola.py cola/jira-dump.json
+    python3 bin/cola.py cola/jira-dump.json --json     # solo el estado, sin markdown
+"""
+import json, sys, os, re, datetime
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+JUAN = "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b"
+JIRA = "https://trebuco.atlassian.net/browse/"
+
+# Cuentas de Jira Service Management del lado del cliente.
+ES_CLIENTE = lambda aid: aid.startswith("qm:")
+# Bots y automatizaciones. No hablan por Appriss ni por el cliente.
+BOTS = ("557058:",)
+MARCAS_INTERNAS = ("internal note", "a comment has been made on the internal",
+                   "the following linked issue was commented")
+
+# Compromisos de cara al cliente. Alta precision, en ingles, tal como se escriben en RCS.
+PROMESA = [
+    r"i will provide an update", r"will provide an update",
+    r"i will get back", r"we will get back", r"get back to you",
+    r"we will come back", r"will come back with",
+    r"we are checking", r"we are reviewing", r"we are looking",
+    r"i am looking into", r"looking into (it|this)", r"have begun reviewing",
+    r"will follow up", r"i'?ll follow up", r"we will follow up",
+    r"we'?ll confirm", r"will confirm once", r"once that is done",
+    r"we will pass", r"we will update", r"will let you know", r"keep you posted",
+    r"as soon as i have something", r"as soon as possible",
+    r"we will take it from there", r"we are working on",
+    r"i'?ll update you", r"i will update you", r"once i have more",
+    r"actively investigating", r"we will investigate", r"i will investigate",
+    r"will continue to (look|investigate|work|dig)", r"will see what we can do",
+    r"i'?ll (look|check|review|dig)", r"we'?ll (look|check|review)",
+    r"more findings", r"will provide", r"we will let",
+]
+# Pedidos al cliente. Cuando el ultimo movimiento es esto, la pelota es del cliente.
+PREGUNTA = [
+    r"could you", r"can you", r"would you", r"are you able",
+    r"please confirm", r"please provide", r"please let us know", r"please try",
+    r"please have", r"please share", r"please send", r"please ask",
+    r"do you (have|know|already)", r"we (still )?need (the|a|you)",
+    r"waiting on", r"we are still waiting",
+    r"i'?ll wait for", r"i will wait", r"we'?ll wait", r"we will wait",
+    r"i'?ll be waiting", r"i will be waiting", r"we'?ll be waiting",
+    r"we will be waiting", r"still waiting (to hear|for|on)",
+    r"awaiting (your|the|a)", r"pending your",
+]
+
+
+def parse_fecha(s):
+    s = re.sub(r"([+-]\d{2})(\d{2})$", r"\1:\2", s)
+    return datetime.datetime.fromisoformat(s)
+
+
+def limpiar(texto):
+    """Quita mentions, smartlinks, imagenes y el sello EXTERNAL SENDER."""
+    t = re.sub(r"<custom[^>]*>(.*?)</custom>", r"\1", texto, flags=re.S)
+    t = re.sub(r"!\[\]\([^)]*\)", " ", t)
+    t = t.replace("EXTERNAL SENDER", " ")
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def es_interno(cuerpo):
+    b = cuerpo.lower()[:220]
+    return any(m in b for m in MARCAS_INTERNAS)
+
+
+def ultima_posicion(texto, patrones):
+    """Devuelve la posicion del ultimo patron que aparece, o -1. Sirve de desempate:
+    lo que se dijo mas cerca del final es lo que quedo en el aire."""
+    bajo = texto.lower()
+    pos = -1
+    for p in patrones:
+        for m in re.finditer(p, bajo):
+            pos = max(pos, m.start())
+    return pos
+
+
+def bitacora_de(tid):
+    """Ultima entrada que Juan reporto por chat. Formato: '## AAAA-MM-DD' al inicio de linea."""
+    p = os.path.join(ROOT, "bitacora", f"{tid}.md")
+    if not os.path.exists(p):
+        return None
+    txt = open(p, encoding="utf-8", errors="replace").read()
+    fechas = re.findall(r"^##\s*(\d{4}-\d{2}-\d{2})", txt, flags=re.M)
+    if not fechas:
+        return None
+    ult = max(fechas)
+    bloque = txt.split(f"## {ult}", 1)[1].strip().split("\n## ")[0].strip()
+    return {"fecha": ult, "nota": bloque[:400]}
+
+
+def clasificar(issue, ahora):
+    f = issue["fields"]
+    comentarios = f.get("comment", {}).get("comments", [])
+    tid = issue["key"]
+
+    # Ultimo comentario de cada lado, ignorando bots.
+    ult_cliente = ult_appriss = ult_publico = None
+    for c in comentarios:
+        aid = c["author"]["accountId"]
+        if aid.startswith(BOTS):
+            continue
+        cuerpo = limpiar(c["body"])
+        interno = es_interno(c["body"])
+        reg = {"fecha": parse_fecha(c["created"]), "autor": c["author"]["displayName"],
+               "cuerpo": cuerpo, "interno": interno, "cliente": ES_CLIENTE(aid),
+               "mio": aid == JUAN}
+        if not interno:
+            ult_publico = reg
+        if ES_CLIENTE(aid):
+            ult_cliente = reg
+        elif not interno:
+            ult_appriss = reg
+
+    dias = lambda r: (ahora - r["fecha"]).days if r else None
+
+    # Dos señales que no cambian el nivel pero si obligan a mirar el ticket.
+    alertas = []
+    if ult_appriss and dias(ult_appriss) >= 7:
+        alertas.append(f"el cliente no oye nada de Appriss hace {dias(ult_appriss)} dias")
+    ultimo_cualquiera = None
+    for c in comentarios:
+        if not c["author"]["accountId"].startswith(BOTS):
+            ultimo_cualquiera = c
+    if ultimo_cualquiera and ultimo_cualquiera["author"]["accountId"] != JUAN \
+            and "juan martinez" in ultimo_cualquiera["body"].lower():
+        alertas.append(f"{ultimo_cualquiera['author']['displayName']} te menciono directo")
+
+    def r(nivel, etiqueta, motivo, ref):
+        return {"nivel": nivel, "etiqueta": etiqueta, "motivo": motivo,
+                "dias": dias(ref) if ref else 9999, "ultimo": ref, "alertas": alertas,
+                "silencio_cliente": dias(ult_appriss) if ult_appriss else None}
+
+    # Nivel 1: el ultimo que hablo de cara al cliente fue el cliente.
+    if ult_publico and ult_publico["cliente"]:
+        return r(1, "TE TOCA RESPONDER",
+                 f"{ult_publico['autor']} escribio hace {dias(ult_publico)} dias y nadie de Appriss contesto",
+                 ult_publico)
+
+    if ult_appriss:
+        texto = ult_appriss["cuerpo"]
+        p_prom = ultima_posicion(texto, PROMESA)
+        p_preg = ultima_posicion(texto, PREGUNTA)
+        d = dias(ult_appriss)
+        quien = "prometiste" if ult_appriss["mio"] else f"{ult_appriss['autor']} prometio"
+        # Nivel 3: lo ultimo que quedo en el aire fue un pedido al cliente.
+        if p_preg > p_prom:
+            pedido = "pediste" if ult_appriss["mio"] else f"{ult_appriss['autor']} pidio"
+            return r(3, "ESPERANDO AL CLIENTE",
+                     f"{pedido} algo hace {d} dias y no hay respuesta", ult_appriss)
+        # Nivel 2: prometiste un update y no volviste.
+        if p_prom >= 0:
+            return r(2, "PROMESA SIN CUMPLIR",
+                     f"{quien} un update hace {d} dias y no llego", ult_appriss)
+
+    # Nivel 4: ingenieria moviendose, nada pendiente de cara al cliente.
+    ref = ult_appriss or ult_publico
+    return r(4, "EN MOVIMIENTO INTERNO",
+             "sin nada pendiente de cara al cliente" if ref else "sin comentarios", ref)
+
+
+def clasificar_final(issue, ahora):
+    """clasificar() mas el override de bitacora. Este es el pipeline completo, el mismo
+    que corre main(). eval_cola.py debe medir esto, no clasificar() a secas, o el eval
+    reprueba casos que el override ya resuelve."""
+    c = clasificar(issue, ahora)
+    bit = bitacora_de(issue["key"])
+    # Si Juan reporto trabajo despues del ultimo comentario, el ticket deja de quemar.
+    if bit and c["ultimo"] and bit["fecha"] >= c["ultimo"]["fecha"].date().isoformat():
+        c = {**c, "nivel": 4, "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+             "motivo": f"lo reportaste el {bit['fecha']} y todavia no esta en Jira"}
+    return c, bit
+
+
+def main():
+    dump = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "cola", "jira-dump.json")
+    solo_json = "--json" in sys.argv
+    d = json.load(open(dump, encoding="utf-8"))
+    nodos = d["issues"]["nodes"]
+    ahora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-4)))
+
+    filas = []
+    for i in nodos:
+        f = i["fields"]
+        c, bit = clasificar_final(i, ahora)
+        filas.append({
+            "ticket": i["key"], "resumen": f["summary"],
+            "estado": f["status"]["name"],
+            "prioridad": (f.get("priority") or {}).get("name", ""),
+            "reporta": (f.get("reporter") or {}).get("displayName", ""),
+            "labels": f.get("labels", []),
+            "edad": (ahora - parse_fecha(f["created"])).days,
+            "nivel": c["nivel"], "etiqueta": c["etiqueta"], "motivo": c["motivo"],
+            "dias": c["dias"], "alertas": c.get("alertas", []),
+            "silencio_cliente": c.get("silencio_cliente"),
+            "ultimo_autor": c["ultimo"]["autor"] if c["ultimo"] else "",
+            "ultimo_texto": (c["ultimo"]["cuerpo"][:300] if c["ultimo"] else ""),
+            "bitacora": bit,
+            "url": JIRA + i["key"],
+        })
+
+    filas.sort(key=lambda r: (r["nivel"], -r["dias"]))
+
+    os.makedirs(os.path.join(ROOT, "cola"), exist_ok=True)
+    estado = {"generado": ahora.isoformat(), "total": len(filas), "tickets": filas}
+    with open(os.path.join(ROOT, "cola", "estado.json"), "w", encoding="utf-8") as fh:
+        json.dump(estado, fh, ensure_ascii=False, indent=1, default=str)
+    if solo_json:
+        print(f"{len(filas)} tickets en cola/estado.json")
+        return
+
+    niveles = {1: "Te toca responder", 2: "Prometiste y no cumpliste",
+               3: "Esperando al cliente", 4: "En movimiento, sin deuda"}
+    conteo = {n: sum(1 for r in filas if r["nivel"] == n) for n in niveles}
+
+    L = [f"# Cola de Juan", "",
+         f"Generado {ahora.strftime('%Y-%m-%d %H:%M')} hora Colombia, desde Jira en vivo. "
+         f"{len(filas)} tickets abiertos asignados.", "",
+         "Orden: primero de quien es la pelota, despues cuanto lleva callado. "
+         "El estado real siempre esta en Jira.", "",
+         "| Nivel | Que significa | Cuantos |", "|---|---|---|"]
+    for n, nom in niveles.items():
+        L.append(f"| {n} | {nom} | {conteo[n]} |")
+    L.append("")
+
+    pos = 0
+    nivel_actual = None
+    for r in filas:
+        if r["nivel"] != nivel_actual:
+            nivel_actual = r["nivel"]
+            L += ["", f"## Nivel {nivel_actual}. {niveles[nivel_actual]}", ""]
+        pos += 1
+        L.append(f"### {pos}. [{r['ticket']}]({r['url']}) · {r['resumen']}")
+        L.append(f"`{r['estado']}` · prioridad {r['prioridad'] or 'sin definir'} · "
+                 f"reporta {r['reporta']} · abierto hace {r['edad']} dias")
+        L.append("")
+        L.append(f"**{r['etiqueta']}.** {r['motivo'][0].upper() + r['motivo'][1:]}.")
+        for a in r["alertas"]:
+            L.append("")
+            L.append(f"Aviso: {a}.")
+        if r["ultimo_texto"]:
+            L.append("")
+            L.append(f"> Ultimo movimiento, {r['ultimo_autor']}: {r['ultimo_texto']}…")
+        if r["bitacora"]:
+            L.append("")
+            L.append(f"Bitacora {r['bitacora']['fecha']}: {r['bitacora']['nota'][:220]}")
+        L.append("")
+        L.append(f"Ficha: `tickets/{r['ticket']}.md` · Bitacora: `bitacora/{r['ticket']}.md`")
+        L.append("")
+
+    with open(os.path.join(ROOT, "cola", "COLA.md"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L).rstrip() + "\n")
+    print(f"{len(filas)} tickets. Niveles: " +
+          ", ".join(f"{n}={conteo[n]}" for n in niveles))
+    print(f"escrito: cola/COLA.md y cola/estado.json")
+
+
+if __name__ == "__main__":
+    main()

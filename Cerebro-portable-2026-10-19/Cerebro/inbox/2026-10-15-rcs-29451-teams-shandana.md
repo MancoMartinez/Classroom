@@ -1,0 +1,1 @@
+Shandana Khan, Matthew Kamminga asked me to send you https://trebuco.atlassian.net/browse/RCS-29451 for a new ENG ticket. Tailored Brands users created through SSO do not get their Incident security level on their first sign in. The internal note has the Grafana sequence and the affected users.

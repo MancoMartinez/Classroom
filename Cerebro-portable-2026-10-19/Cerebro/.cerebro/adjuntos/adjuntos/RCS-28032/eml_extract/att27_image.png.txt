@@ -1,0 +1,11 @@
+# Adjunto att27_image.png
+Ruta: adjuntos/RCS-28032/eml_extract/att27_image.png
+Tipo: png
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+New Audit
+Select Location
+1016|
+STEP 1: Please click in the field above to enter a store number, address, city, etc. to find a store

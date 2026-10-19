@@ -1,0 +1,1 @@
+Hi Ryan, quick update on RCS-29057. Leigh Ann confirmed the behavior is expected, since the workbench notes that Synopsis does not print, so there is no need to copy the existing cases. I am taking the ticket back to close it. Thanks for the quick input on this one!

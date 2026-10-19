@@ -1,0 +1,54 @@
+# Adjunto appriss_sso_locations_20261014024505.csv
+Ruta: adjuntos/RCS-29469/appriss_sso_locations_20261014024505.csv
+Tipo: csv
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+## Hoja appriss_sso_locations_20261014024505.csv
+4095 filas x 8 columnas.
+
+Primeras filas (tabuladas):
+Username	Company	Brand	DeptDescrShort	Zone	Region	District	Location
+Mark.Kus@tailoredbrands.com		SSU		CORPORATE			5013
+William.Yeomans@tailoredbrands.com		SSU		CORPORATE			1099
+Jake.Ginsberg@mooresclothing.com		MSP	C102	Canada	Canada East		45
+Abiola.Egbetola@tailoredbrands.com		SSU		CORPORATE			1099
+Faith.Vieney@tailoredbrands.com		SSU		CORPORATE			5013
+Zack.GabrielOconnor@mooresclothing.com		MSP	C003	Canada	Canada West/Central		46
+Joana.Korita@tailoredbrands.com		SSU					4001
+Coburn.Cockburn@mooresclothing.com		MSP	C102	Canada	Canada East		18
+Sergio.Chilelli@mooresclothing.com		MSP	C003	Canada	Canada West/Central		46
+Michael.Dancuo@mooresclothing.com		MSP	C105	Canada	Canada East		83
+Sandra.Stevens@mooresclothing.com		MSP	C105	Canada	Canada East		83
+Grace.Kay@mooresclothing.com		MSP	C105	Canada	Canada East		47
+Zoe.Gard@mooresclothing.com		MSP	C105	Canada	Canada East		5
+Angela.Williams@tailoredbrands.com		SSU		CORPORATE			1099
+Maria.J.Perez@tailoredbrands.com		SSU		CORPORATE			1099
+David.Shook@tailoredbrands.com	TBI	SSU		CORPORATE			
+Duvone.EnglandJr@tailoredbrands.com		SSU		CORPORATE			1091
+Carol.Bergson@mooresclothing.com		MSP	C005	Canada	Canada West/Central		102
+Richard.Sullivan@tailoredbrands.com		SSU		CORPORATE			5096
+Andrew.Dafforn@tailoredbrands.com		SSU		CORPORATE			2097
+Kalisha.Roberson@tailoredbrands.com		SSU		CORPORATE			1091
+Jaypee.Illescas@mooresclothing.com		MSP	C005	Canada	Canada West/Central		102
+Aaron.Baiden@mooresclothing.com		MSP	C005	Canada	Canada West/Central		48
+Elie.Kassim@mooresclothing.com		MSP	C003	Canada	Canada West/Central		103
+Philip.Elie@tailoredbrands.com		SSU		CORPORATE			1091
+Christine.Couture@tailoredbrands.com		SSU		CORPORATE			2005
+Donald.Deacon@mooresclothing.com		MSP	C003	Canada	Canada West/Central		103
+Laceedon.Orth@tailoredbrands.com		SSU		CORPORATE			2005
+Jermaine.Francis@mooresclothing.com		MSP	C103	Canada	Canada East		51
+Raul.Moreno@tailoredbrands.com		SSU		CORPORATE			2005
+Sidney.Patterson@mooresclothing.com		MSP	C103	Canada	Canada East		51
+Marlen.Samaniego@tailoredbrands.com		SSU		CORPORATE			2005
+Patricia.Sullivan@mooresclothing.com		MSP	C105	Canada	Canada East		83
+Samantha.Hammond@mooresclothing.com		MSP	C105	Canada	Canada East		106
+Amy.Valle@tailoredbrands.com		SSU		CORPORATE			2005
+Ricky.AcevesNuno@tailoredbrands.com		SSU		CORPORATE			1098
+Juan.Perez@tailoredbrands.com		SSU		CORPORATE			1098
+Khyler.Scott@mooresclothing.com		MSP	C001	Canada	Canada West/Central		107
+Kyle.Finney@menswearhouse.com		TMW	S503	South	Texas		1103
+... 4055 filas más.
+
+Columnas numéricas:
+Location: n=3983 ceros=0 min=1 max=5502 suma=9.03695e+06

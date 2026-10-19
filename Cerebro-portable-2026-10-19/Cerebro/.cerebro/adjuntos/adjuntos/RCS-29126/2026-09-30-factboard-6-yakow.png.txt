@@ -1,0 +1,37 @@
+# Adjunto 2026-09-30-factboard-6-yakow.png
+Ruta: adjuntos/RCS-29126/2026-09-30-factboard-6-yakow.png
+Tipo: png
+Ticket: RCS-29126
+Modificado: 2026-09-30
+
+Texto reconocido por OCR:
+- Company Links
+& https://apps.apprissretail.com/vfcorp/platform/factboard#/edit/6
+• Summary - Overvi...
+USPROD > Home
+(EUPKOD > Home
+A My roles - Microso...
+A qa-Ipms-rdp-001 -...
+Mike Croze
+• RTS
+$ GP Python Scripts
+* Appriss Support te...
+• Docs
+EO7 APPRISS®
+L Share -
+Portal > Investigations
+Investigation
+Ryan Yakow-TNF 20
+ASM Ryan Yakow: Processing fraudulent refunds onto his own personal card
+Investigation Type:
+Refund Fraud - Credit
+150020
+Owner:
+Mike Croze
+EJ
+Evidence
+Enrique Jimenez
+17 Secure Store Transactions
+View in Event Viewer
+Enrique Jimenez - +
+ESP

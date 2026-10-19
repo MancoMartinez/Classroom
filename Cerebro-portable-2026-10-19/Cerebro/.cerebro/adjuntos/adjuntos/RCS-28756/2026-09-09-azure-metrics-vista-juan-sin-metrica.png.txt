@@ -1,0 +1,76 @@
+# Adjunto 2026-09-09-azure-metrics-vista-juan-sin-metrica.png
+Ruta: adjuntos/RCS-28756/2026-09-09-azure-metrics-vista-juan-sin-metrica.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+^
+portal.azure.com
+* Solucionar problemas de sesión y caché del navegador - Claude
+* [RCS-28756] Appriss Internal - Nike - ECOM Load issue since 28th A...
+::: = Microsoft Azure
+Q Search resources, services, and docs (G+/)
+Home › prd-datacloud-wus2-ehub-1
+pro-datacloud-wus2-ehub-1 | Metrics * …
+Event Hubs Namespace
+• Search
+# Overview
+Activity log
+% Access control (IAM)
+Tags
+X Diagnose and solve problems
+Eo, Data Explorer
+i Resource visualizer
+Events
+> Settings
+› Entities
+› Monitoring
+› Automation
+> Help
++ New chart i Refresh LE Share V
+Chart Title O
++ Add metric
+*T Add filter ** Apply splitting
+Scope
+Metric Namespace
+[pro-datacloud-wus2-ehub-1 Event Hub standard... v
+Metric
+Select metric
+100
+90
+80
+70
+60
+Select a metric above to see data appear on this chart or learn more below:
+50
+40
+Filter + Split 2
+30
+Apply filters and splits to
+identify outlying segments
+Plot multiple metrics o
+Create charts with multiple
+metrics and resources
+Build custom
+dashboards
+Pin charts to your dashboards
+20
+10
++ c
+A prd-datacloud-wus2-ehub-1 - Microsoft Azure
+jmartinez@trebu.co
+THE RETAIL EQUATION, INC (TRE...
+X
+Local Time: Last 24 hours (Automatic)
+L Line chart V Le Drill into Logs V Q New alert rule
+- Save to dashboard V 223 ...
+Aggregation
+• Select aggregation
+6PM
+Wed 09
+6 AM
+12PM
+Add or remove favorites by pressing Cmd + Shift +F
+UTC-05:00
+Or Give Feedback

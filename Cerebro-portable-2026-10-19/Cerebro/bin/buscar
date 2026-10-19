@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Entrada compatible: python3 bin/buscar 'síntoma' o RCS-12345. Motor local compartido con MCP."""
+import json,os,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent.parent
+python=ROOT/'.venv-cerebro/bin/python'
+if python.exists() and Path(sys.prefix).resolve() != (ROOT/'.venv-cerebro').resolve():
+    os.execv(str(python),[str(python),__file__,*sys.argv[1:]])
+from cerebro_motor import search
+if __name__=='__main__':
+    q=' '.join(sys.argv[1:]).strip()
+    if not q:sys.exit('Uso: python3 bin/buscar "síntoma" | RCS-12345')
+    print(json.dumps(search(q),ensure_ascii=False,indent=2))

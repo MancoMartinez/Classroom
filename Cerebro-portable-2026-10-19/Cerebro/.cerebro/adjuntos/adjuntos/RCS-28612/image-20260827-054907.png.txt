@@ -1,0 +1,38 @@
+# Adjunto image-20260827-054907.png
+Ruta: adjuntos/RCS-28612/image-20260827-054907.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Transaction ID
+=
+2608267428125472187
+Store
+No
+47
+1221615
+26/08/2026
+11:59:37
+AM
+Register
+123
+Transaction
+41
+Transaction
+Amount
+756.80
+Keycode
+Item
+Receipt
+Description
+827829740 SUNGLASS
+HUT
+CONCESSION
+ITEM
+Delivery
+Carrier
+Delivery
+Comments
+Delivery
+Instructions

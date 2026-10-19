@@ -1,0 +1,37 @@
+# Adjunto image-20260908-111716.png
+Ruta: adjuntos/RCS-28809/image-20260908-111716.png
+Tipo: png
+Ticket: RCS-28809
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+Associate Home Store
+765
+531
+575
+Associate First Name
+Sean
+Sean
+Sean
+Associate Last Name
+Orellana
+Orellana
+Orellana
+Original Hire Date
+Date in Current Role
+Days since Original Hire Date
+271
+271
+271
+Days in Current Role
+271
+271
+271
+Associate DOB
+6/28/2005
+6/28/2005
+6/28/2005
+Term Status
+Regular
+Regular
+Regular

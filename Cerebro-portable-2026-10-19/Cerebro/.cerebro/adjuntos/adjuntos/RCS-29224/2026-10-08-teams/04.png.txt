@@ -1,0 +1,29 @@
+# Adjunto 04.png
+Ruta: adjuntos/RCS-29224/2026-10-08-teams/04.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+Daniel Endersby Chat
+Shared Notes Recap Storyline
+trom tem winners
+left join tlog_twin
+on item_winners_recordsource = Verify
+and tlog twin.transactionid = item_winners.transactionid
+and tlog_twin.recordseqno = item_winners.recordseqno
+88
+...
+copy pasta into claude, might gain it some insight
+assuming you're running claude inside the snowtiem code repo so it has the context
+Thursday 4:10 PM
+thank you Daniel. I'm taking a look
+Daniel Endersby Thursday 4:31PM
+https://dev.azure.com/apprissde
+8912 a=files
+a fix in this pr
+i will run a cleanup script over night
+not 100% if this will fix but getting closer
+Secure/ git/SnowTime/pullrequest/58
+Thursday 6:55 PM
+that sound great. Daniel. Thank you

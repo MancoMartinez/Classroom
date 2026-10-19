@@ -1,0 +1,110 @@
+# Adjunto 2026-09-25-composer-cash-conditions.png
+Ruta: adjuntos/RCS-29129/2026-09-25-composer-cash-conditions.png
+Tipo: png
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+Texto reconocido por OCR:
+SYSTEM SELECTION
+Manage Alerts
+Search For Incident
+0 Smart Alert History
+USPROD > Home
+* Appriss > Composer
+c0 Manage Alerts
+[RCS-29123] Ahold-Delh X
+• Inbox - Juan Martinez - ( X
+I+
+https://apps.apprissretail.com/pacsun/platform/explorer#/search?searchPath=%2Fpublic%2Flp%20investigative%20reports%2Fcash%20refunds%20w%20ranking%20dollars%20count.search&builderPath=%2Fsystem%2Febr%2F.…
+Ca Company Links
+• Import favorites
+So Engineering Onbo...
+On Call
+PACSUN
+APP
+"RISS
+RETAIL
++ New
+• Open
+• Save
+B Save As
+• Run
+@ Options
+• References
+8
+• Dependencies
+Portal > Secure Store > Explorer
+Composer
+CASH REFUNDS w Ranking Dollars Count CASH REFUNDS w Ranking of Dollars and Count
+Conditions
+=
+Sale Date
+Between
+Optional parameter: 08/12/2026
+Optional parameter: 06/12/2026
+And
+HEADER Transaction Type
+In
+Return
+Cash
+AND
+TENDER Tender Type In
+LOCATION Region Number
+Equal to Optional parameter
+HEADER
+Store No
+Equal to
+Optional parameter
++ Add Filter
+e Add Group
+:-
+Q
+Data Area: Secure Store
+X
+Chat
+L+
+Change Area
+**
+Display e
+Display Fields
+= D
+LOCATION Region Number
+= 0
+LOCATION
+District Number
+HEADER
+Store No
+= 0
+IRFADER
+Cashier No
+=
+EMPOYSE
+Last name
+= gl
+EMPLOYEE
+First name
+= •
+Sum of Amount
+Sorting: Ascending
+Sorting Order: 0
+= • Unique Count of Appriss Trans ID
+= • Rank of
+: Add Display Field
+Display Filters
++ Add Filter
+Expanded Display Fields
+:-
+Cash Refund DOLLAR Amt
+Cash Refund Trans COUNT
+RANK of Trans Amt and Count
+:-
+:-
+:-
+© Add Group
+Current search is being used in different application. Please contact Administrator before editing it.
+Show more
+4
+Q
+Search
+>-
+9/25/2026

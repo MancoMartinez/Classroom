@@ -1,0 +1,42 @@
+# Adjunto Investigation Report 1.pdf
+Ruta: adjuntos/RCS-29057/Investigation Report 1.pdf
+Tipo: pdf
+Ticket: RCS-29057
+Modificado: 2026-09-24
+
+## Página 1
+STRICTLY CONFIDENTIAL PAGE 1 Printed:  September 24, 2026
+INVESTIGATION REPORT
+CASE INFORMATION
+Case Name:
+Case Type: Miscellaneous Investigation
+Case #: 2026-AHOLD DELHAIZE USA SERVICES, LLC-9998-
+10
+Investigator: Juan Martinez
+Date Opened: September 24, 2026
+Last Updated: September 24, 2026
+Case Status: OPEN
+Estimated Case Value: $0.00
+CASE SUMMARY
+test
+CASE REPORT
+test
+
+
+## Página 2
+STRICTLY CONFIDENTIAL PAGE 2 Printed:  September 24, 2026
+APPENDICES
+JOURNAL NOTES
+Journal Date Created By Summary Detail
+ATTACHMENTS
+Filename Upload 
+Date
+File Description
+RELATED INCIDENTS/CASES
+Date CaseNo Location City, State Incident Date Link Notes
+   - 
+COURT INFORMATION
+Court Location:
+Disposition:
+Sentence:
+Notes:

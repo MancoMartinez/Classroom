@@ -1,0 +1,707 @@
+{
+  "issue": {
+    "id": "1397659",
+    "key": "RCS-29451",
+    "fields": {
+      "statusCategory": {
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      },
+      "lastViewed": "2026-10-15T15:25:27.581-0400",
+      "labels": [],
+      "issuelinks": [
+        {
+          "id": "495585",
+          "type": {
+            "id": "10320",
+            "name": "Relates",
+            "inward": "relates to",
+            "outward": "relates to"
+          },
+          "inwardIssue": {
+            "id": "1373436",
+            "key": "RCS-28256",
+            "fields": {
+              "summary": "Appriss Incident Time Out(s) and Slow Load times",
+              "status": {
+                "description": "",
+                "name": "Under Customer Review",
+                "id": "12379",
+                "statusCategory": {
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "name": "High",
+                "id": "9"
+              },
+              "issuetype": {
+                "id": "10102",
+                "description": "Issue is related to a production outage.",
+                "name": "Incident",
+                "subtask": false,
+                "hierarchyLevel": 0
+              }
+            }
+          }
+        },
+        {
+          "id": "495607",
+          "type": {
+            "id": "10627",
+            "name": "Cloners",
+            "inward": "is cloned by",
+            "outward": "clones"
+          },
+          "inwardIssue": {
+            "id": "1398084",
+            "key": "ENG-10069",
+            "fields": {
+              "summary": "Tailored Brands users created through SSO do not get their Incident security level on their first sign in",
+              "status": {
+                "description": "",
+                "name": "Backlog",
+                "id": "10031",
+                "statusCategory": {
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "To Do"
+                }
+              },
+              "priority": {
+                "name": "Medium",
+                "id": "8"
+              },
+              "issuetype": {
+                "id": "1",
+                "description": "A problem which impairs or prevents the functions of the product.",
+                "name": "Bug",
+                "subtask": false,
+                "hierarchyLevel": 0
+              }
+            }
+          }
+        }
+      ],
+      "assignee": {
+        "accountId": "5f45724e91e67a003fef5920",
+        "emailAddress": "skhan@apprissretail.com",
+        "displayName": "Shandana Khan",
+        "active": true,
+        "timeZone": "Europe/Madrid",
+        "accountType": "atlassian"
+      },
+      "components": [],
+      "subtasks": [],
+      "reporter": {
+        "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+        "emailAddress": "colton.neal@tailoredbrands.com",
+        "displayName": "Colton Neal",
+        "active": true,
+        "timeZone": "America/New_York",
+        "accountType": "customer"
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "issuetype": {
+        "id": "10102",
+        "description": "Issue is related to a production outage.",
+        "name": "Incident",
+        "subtask": false,
+        "hierarchyLevel": 0
+      },
+      "project": {
+        "id": "19251",
+        "key": "RCS",
+        "name": "Retail Customer Support",
+        "projectTypeKey": "service_desk",
+        "simplified": false
+      },
+      "watches": {
+        "watchCount": 2,
+        "isWatching": true
+      },
+      "updated": "2026-10-16T04:44:41.501-0400",
+      "description": "<p data-local-id=\"89df86d1dd9e\">Split from <a href=\"https://trebuco.atlassian.net/browse/RCS-28256\">RCS-28256 </a>so the user access reports can be tracked separately from the slow load times.</p><p data-local-id=\"a2b677a4f94d\">Users reported so far: Paul Bubelnik Jr, Nancy Bolhoff, Rachel Dill, Chaz Hyman, Vincent Fortner and Chris Orth.</p><p data-local-id=\"16be6d30b7a0\">Reported symptoms. Incident Security ID shows blank in the user&#039;s Secure Incident settings even though the daily SSO file assigns a level. The store hierarchy shows blank for users at office, hub and distribution center locations, so they cannot select a store when creating an incident.</p><p data-local-id=\"79842b0a2626\">Current status. The Incident Security ID was set manually for the users listed above, and Chris Orth&#039;s store was added manually. The underlying cause is under review.</p>",
+      "timetracking": {},
+      "summary": "Tailored Brands - Secure Incident access: blank Incident Security ID and missing store hierarchy",
+      "comment": {
+        "comments": [
+          {
+            "id": "3396998",
+            "author": {
+              "accountId": "712020:5f6efc8d-c500-4911-8b8a-d4435f7d3fa6",
+              "emailAddress": "ngowda@apprissretail.com",
+              "displayName": "Nithish Gowda",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "body": "<p data-local-id=\"a2c2f4e41cf0\">Hello,</p><p data-local-id=\"3ab70bc4c972\">Thank you for contacting Appriss Retail Support.</p><p data-local-id=\"e11c7086c055\">We’ve received your ticket and are routing it to the appropriate team for assistance. The assigned representative will follow up as soon as they’ve had a chance to review.</p><p data-local-id=\"a23762b90af0\">Kind Regards,</p><p data-local-id=\"1d924778016d\">Appriss Retail Support </p>",
+            "updateAuthor": {
+              "accountId": "712020:5f6efc8d-c500-4911-8b8a-d4435f7d3fa6",
+              "emailAddress": "ngowda@apprissretail.com",
+              "displayName": "Nithish Gowda",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-15T13:58:49.905-0400",
+            "updated": "2026-10-15T13:58:49.905-0400",
+            "jsdPublic": true
+          },
+          {
+            "id": "3397002",
+            "author": {
+              "accountId": "5f8852df6932330076610600",
+              "emailAddress": "nhawkins@apprissretail.com",
+              "displayName": "Nick Hawkins",
+              "active": true,
+              "timeZone": "Europe/London",
+              "accountType": "atlassian"
+            },
+            "body": "<p>🤖 Talos triage · confidence: medium</p><p><strong>Talos can make mistakes. Please check important information.</strong></p><p><strong>Verdict</strong><br>No known or recurring incident matches, and nothing I read points to a code defect. The six users share a pattern (office, hub and distribution center staff), so the check is whether the sign-in data for them carries a level and a store assignment.</p><p><strong>What we checked</strong></p><ul><li><p>Nothing in the client&#039;s notes or the cross-client known-incident list matches this symptom.</p></li><li><p>At each sign-in the security level is taken from the first of these that has a value: a level set in Secure&#039;s SSO admin screen, the level sent by the customer&#039;s sign-in system, or a configured default. If none has a value, the level stays blank.</p></li><li><p>No default level is set up for this client. The setting that would supply one is not present for Tailored Brands.</p></li><li><p>A user&#039;s store assignments are rebuilt at each sign-in from the store list the customer&#039;s sign-in system sends. If a user&#039;s sign-in carries no store, their store hierarchy stays empty. That fits the users who have no single store (office, hub, distribution center).</p></li><li><p>This client&#039;s setup maps users to Incident security levels by team membership. Users who are not in one of the listed teams would get no level from that mapping.</p></li><li><p>The &quot;daily SSO file&quot; is not something I could find in the code. I could not confirm which feed sets the level, and I could not see what was sent for these six users.</p></li></ul><p><strong>Next</strong></p><ul><li><p>Compare what the customer&#039;s sign-in system sent for one affected user (for example Chris Orth) with a user whose level and stores show correctly.</p></li><li><p>Check whether the six users are in a team listed in the client&#039;s Incident mapping, and whether their sign-in carries any store or hierarchy values.</p></li></ul>",
+            "updateAuthor": {
+              "accountId": "5f8852df6932330076610600",
+              "emailAddress": "nhawkins@apprissretail.com",
+              "displayName": "Nick Hawkins",
+              "active": true,
+              "timeZone": "Europe/London",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-15T14:03:37.002-0400",
+            "updated": "2026-10-15T14:03:37.002-0400",
+            "jsdPublic": false
+          },
+          {
+            "id": "3397050",
+            "author": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "body": "<p data-local-id=\"0f09835899fd\"><strong>Escalating to Secure Engineering.</strong> The Incident security level from SSO+ is not applied on the sign in that creates the user. Matthew Kamminga confirmed on Teams on 2026-10-15 that it should apply on creation and on later sign ins, and asked to route this to a new ENG ticket.</p><h2 data-local-id=\"f06bcddbea52\">1. Environment and steps to reproduce</h2><p data-local-id=\"10ca0303da30\">Production, tenant 209 tbi, <code>sqldb-prd-wus2-arp-production-209-tbi-platform</code>. Logs from Grafana Explore, <code>grafanacloud-apprissretail-logs</code>, clientId 209. Every query was read only.</p><h3 data-local-id=\"ffe050157a08\">Rachel Dill, 2026-10-13</h3><ol data-local-id=\"bb49940ea271\"><li data-local-id=\"902e5d5117f1\"><p data-local-id=\"6c1fd9cb8de5\">Her row exists in <code>sso.SecurityLevelAssignments</code>: SecurityID 5, Persistent NULL, loaded 2026-10-13 10:42 UTC. <code>EXEC sso.GetUserSecurityLevel</code> returns 5 for her.</p></li><li data-local-id=\"99ad687f4738\"><p data-local-id=\"596b0955ac48\">Her first SSO sign in, 2026-10-13 19:23:49 UTC, creates the account.</p></li><li data-local-id=\"7652fa55984b\"><p data-local-id=\"79e7be8223a8\">Check <code>membership.Users.SecurityID</code>, or Portal, Settings, Users, Rachel Dill, Secure Incident tab.</p></li></ol><p data-local-id=\"24583fd327ce\">Expected: Location Manager, SecurityID 5. Actual: NULL. I set it manually on 2026-10-14. It held after her next sign in on 2026-10-14 19:58 UTC.</p><p data-local-id=\"c85c61956ac7\">Grafana sequence for that sign in:</p><table data-local-id=\"dc3e1ac5-55d0-477b-97b4-275a7940ebbe\"><thead><tr><th data-local-id=\"6a64cba19dda\"><p data-local-id=\"42172a90caac\">UTC</p></th><th data-local-id=\"44c35245d87b\"><p data-local-id=\"6559b7fa3a79\">Sender</p></th><th data-local-id=\"4a6c7d416538\"><p data-local-id=\"facf66eb1d5e\">Message</p></th></tr></thead><tbody><tr><td data-local-id=\"ac89222428ee\"><p data-local-id=\"3c7e7a3d5272\">19:23:49.582</p></td><td data-local-id=\"af2c40ad79d4\"><p data-local-id=\"022f275caa71\">SsoService</p></td><td data-local-id=\"cd92e6bb8f19\"><p data-local-id=\"7c7c07a7585e\">Identified 1 SSO Extra permission groups to assign</p></td></tr><tr><td data-local-id=\"1dd958b83496\"><p data-local-id=\"aa1369f05a26\">19:23:49.586</p></td><td data-local-id=\"c662b932450d\"><p data-local-id=\"27627ee15d1e\">SsoService</p></td><td data-local-id=\"ac97a0e421e3\"><p data-local-id=\"bf240d8f7a7c\">Identified 1 SSO Extra teams to assign</p></td></tr><tr><td data-local-id=\"b47a56fad881\"><p data-local-id=\"da1dda065bb2\">19:23:49.641</p></td><td data-local-id=\"5ec7f02c4f84\"><p data-local-id=\"fe2b4b9f8de3\">MembershipService</p></td><td data-local-id=\"7a552879f854\"><p data-local-id=\"880df135a2a2\">User Rachel Dill has been created</p></td></tr><tr><td data-local-id=\"261f4e37bd48\"><p data-local-id=\"5cb4e713174d\">19:23:49.660</p></td><td data-local-id=\"94b91f758527\"><p data-local-id=\"7ff41ec4dc2d\">SsoService</p></td><td data-local-id=\"afbc321e1844\"><p data-local-id=\"1747a2c335e7\">Sso user created, User Data with <code>&quot;SecurityID&quot;:null</code></p></td></tr><tr><td data-local-id=\"6ad82e93d284\"><p data-local-id=\"7a1df93f4b5b\">19:23:49.684</p></td><td data-local-id=\"7f12bda6995c\"><p data-local-id=\"74f5215d18f3\">MembershipService</p></td><td data-local-id=\"e2d13412be6f\"><p data-local-id=\"3bb8bcac3f4e\">Added to ApprissCase Users, Basic Users</p></td></tr><tr><td data-local-id=\"94b668049ba3\"><p data-local-id=\"51bfdf12d550\">19:23:49.698</p></td><td data-local-id=\"e69e9aad31d0\"><p data-local-id=\"80a02743f28c\">MembershipService</p></td><td data-local-id=\"52572c5553d2\"><p data-local-id=\"1c9f2b47bd81\">Added to Location Manager user team</p></td></tr><tr><td data-local-id=\"ae7ce29a61e6\"><p data-local-id=\"a58fd551d5e0\">19:23:56.732</p></td><td data-local-id=\"17a1b6bf78d0\"><p data-local-id=\"efeadf019b8c\">Saml2</p></td><td data-local-id=\"daf8d6746f04\"><p data-local-id=\"172646304a49\">Logged on</p></td></tr></tbody></table><p data-local-id=\"c636260830fd\">No line about the security level.</p><h2 data-local-id=\"e2e9c7c1cd81\">2. Findings</h2><p data-local-id=\"0e329de7d368\">Users created through SSO between 2026-10-09 and 2026-10-15, all with level 5 in <code>sso.SecurityLevelAssignments</code>:</p><table data-local-id=\"fc1177c4-54f6-443e-95a0-0785ae109e4b\"><thead><tr><th data-local-id=\"7d0d6857d721\"><p data-local-id=\"f31fda2cba70\">User</p></th><th data-local-id=\"0b9d19a1bd0b\"><p data-local-id=\"14e1567ad82b\">Created UTC</p></th><th data-local-id=\"a70d3ecdfe1b\"><p data-local-id=\"8ab3904adefa\">Last sign in UTC</p></th><th data-local-id=\"aeedbdbcd8f7\"><p data-local-id=\"a0fac7507cc5\">Account level</p></th></tr></thead><tbody><tr><td data-local-id=\"59e3eb440106\"><p data-local-id=\"d2e52e982e75\">Ashley N Carter</p></td><td data-local-id=\"b07cb56599b3\"><p data-local-id=\"1987c4a9bfe6\">10-09 20:24:16</p></td><td data-local-id=\"6d3eca70de18\"><p data-local-id=\"7e92018bbb8f\">10-09 20:27:23</p></td><td data-local-id=\"9acad4fbe505\"><p data-local-id=\"5ad78cf68fc5\">5</p></td></tr><tr><td data-local-id=\"f686a4eb05f5\"><p data-local-id=\"df7f1098eecc\">Teegan Baker</p></td><td data-local-id=\"b4d85adc7ae2\"><p data-local-id=\"811b303fd9e5\">10-10 17:58:30</p></td><td data-local-id=\"60eb8f32958b\"><p data-local-id=\"5848cab490ca\">10-10 18:00:39</p></td><td data-local-id=\"af6250666ecc\"><p data-local-id=\"2a0c0ce5450b\">5</p></td></tr><tr><td data-local-id=\"43ac0767c4dd\"><p data-local-id=\"be2e4bd4ca12\">Jordan Shields</p></td><td data-local-id=\"89a30d5da3de\"><p data-local-id=\"8aae15e1fc9d\">10-11 20:44:20</p></td><td data-local-id=\"7929a3a68c1d\"><p data-local-id=\"625ba2326f67\">10-11 20:50:28</p></td><td data-local-id=\"003da22cedcb\"><p data-local-id=\"58a5e4e0ede9\">5</p></td></tr><tr><td data-local-id=\"6727478d79ca\"><p data-local-id=\"b0c8b664eb30\">Alexis Post</p></td><td data-local-id=\"5a7b3b62693d\"><p data-local-id=\"6e02ad54d63d\">10-13 19:22:23</p></td><td data-local-id=\"c6188297b7ab\"><p data-local-id=\"d60221dc3bc5\">10-13 19:50:47</p></td><td data-local-id=\"4911dab1df85\"><p data-local-id=\"fca262cf074d\">5</p></td></tr><tr><td data-local-id=\"4754ab16d9a9\"><p data-local-id=\"342fb44711c5\">Theresa Veasley</p></td><td data-local-id=\"d7ab33d643fd\"><p data-local-id=\"5934e051609a\">10-15 17:17:42</p></td><td data-local-id=\"fd32bd96fc55\"><p data-local-id=\"2a7f21dc72d6\">10-15 17:46:18</p></td><td data-local-id=\"05eb26b619bf\"><p data-local-id=\"8c706f85b07d\">5</p></td></tr><tr><td data-local-id=\"ec02b6cb6050\"><p data-local-id=\"f82b9d1093ba\">Brett Virtue</p></td><td data-local-id=\"2aa4a61a3a83\"><p data-local-id=\"343f1b97c2af\">10-14 19:47:05</p></td><td data-local-id=\"ca383a489124\"><p data-local-id=\"7b085f98343a\">same</p></td><td data-local-id=\"7a44dc480402\"><p data-local-id=\"702514520578\">NULL</p></td></tr><tr><td data-local-id=\"69c17c804e2f\"><p data-local-id=\"ff864bebd21c\">Doris Mays</p></td><td data-local-id=\"91d25cbee112\"><p data-local-id=\"a0dc3a1b2b52\">10-14 20:00:25</p></td><td data-local-id=\"22b174df5c7c\"><p data-local-id=\"e0089820d4ea\">same</p></td><td data-local-id=\"024d92c019a8\"><p data-local-id=\"ce3d25b5b48a\">NULL</p></td></tr><tr><td data-local-id=\"7f1c0eb23981\"><p data-local-id=\"32618308df4c\">Tamieko Jones</p></td><td data-local-id=\"6c82b7065e85\"><p data-local-id=\"4369713062c0\">10-15 14:00:02</p></td><td data-local-id=\"3dabec1c4750\"><p data-local-id=\"5517dfb7f2e4\">same</p></td><td data-local-id=\"f04330eb1714\"><p data-local-id=\"7fde866516a7\">NULL</p></td></tr></tbody></table><p data-local-id=\"440f6be66927\">Every user who signed in again has the level. Every user whose only sign in created the account does not. Verified.</p><p data-local-id=\"82f17f1fef88\">49 users who signed in since 2026-07-02 have a feed level above 0 and a NULL SecurityID in <code>membership.Users</code> and in the lpuser view. Verified. How many of them signed in only once is not checked yet.</p><p data-local-id=\"199be8d50ea9\"><strong>My reading, unverified:</strong> the security level step is skipped on user creation and runs on later sign ins.</p><h2 data-local-id=\"ba17f98414d7\">3. Troubleshooting performed</h2><p data-local-id=\"620ef9d03c17\">Ruled out so far: the feed, the rows are present; <code>sso.GetUserSecurityLevel</code>, its current definition orders by Persistent with no Persistent = 1 filter and returns 5; the lpuser view, every affected user is in it. Detail in my internal note of 2026-10-14 on <a href=\"https://trebuco.atlassian.net/browse/RCS-28256\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-28256</a> .</p><p data-local-id=\"d62e28edac75\">Outside the ticket: Teams with Matthew Kamminga on 2026-10-15, and an email thread with J.R. Teagle on the same reports. Workaround in use: setting Incident Security ID manually in the Portal.</p><h2 data-local-id=\"42e0b53c1ef8\">4. Still open</h2><ol data-local-id=\"fc64d4f203bf\"><li data-local-id=\"b6f4b1130181\"><p data-local-id=\"9881da86642f\">Does the SSO user creation path call the security level assignment, and is that the step that is skipped?</p></li><li data-local-id=\"90317a9d756e\"><p data-local-id=\"f7b8dce47999\">Once confirmed, could the affected accounts be corrected in one pass, or should Support set them one by one?</p></li></ol><p data-local-id=\"ad378b039b2e\">Related: <a href=\"https://trebuco.atlassian.net/browse/RCS-28256\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-28256</a>  and <a href=\"https://trebuco.atlassian.net/browse/RCS-27578\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-27578</a> .</p>",
+            "updateAuthor": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-15T15:02:24.461-0400",
+            "updated": "2026-10-15T15:02:24.461-0400",
+            "jsdPublic": false
+          },
+          {
+            "id": "3397054",
+            "author": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "body": "<p data-local-id=\"4860ac8bb615\">Hello <span data-local-id=\"81a3e571-4f1f-4cb9-9b43-bc7e6ba8b9e3\" data-type=\"mention\" data-user-id=\"qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc\">@Colton Neal</span> ,</p><p data-local-id=\"2086e14437ca\">Thank you for your patience on this. We have passed the blank Incident Security ID reports to our engineering team for review.</p><p data-local-id=\"a06d8fe579e4\">In the meantime, if another user shows a blank Incident Security ID, please let us know here and we will set it for them.</p><p data-local-id=\"7da94b5d4d19\">Kind regards,<br>Juan Martinez<br>Appriss Retail Support</p>",
+            "updateAuthor": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-15T15:03:21.615-0400",
+            "updated": "2026-10-15T15:03:21.615-0400",
+            "jsdPublic": true
+          }
+        ],
+        "maxResults": 4,
+        "total": 4,
+        "startAt": 0
+      },
+      "statuscategorychangedate": "2026-10-16T04:44:38.904-0400",
+      "fixVersions": [],
+      "priority": {
+        "name": "Medium",
+        "id": "8"
+      },
+      "versions": [],
+      "status": {
+        "description": "",
+        "name": "Accepted into Development",
+        "id": "14712",
+        "statusCategory": {
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "creator": {
+        "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+        "emailAddress": "jmartinez@apprissretail.com",
+        "displayName": "Juan Martinez",
+        "active": true,
+        "timeZone": "America/New_York",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "workratio": -1,
+      "created": "2026-10-15T13:57:43.013-0400",
+      "attachment": [],
+      "customFields": {
+        "Problem": {
+          "id": "customfield_15195",
+          "value": {
+            "value": "App Functionality Unavailable",
+            "id": "26294"
+          }
+        },
+        "Severity": {
+          "id": "customfield_15199",
+          "value": {
+            "value": "3 - Normal",
+            "id": "16560"
+          }
+        },
+        "Product Type": {
+          "id": "customfield_15196",
+          "value": {
+            "value": "Incident (f.k.a. LPMS)",
+            "id": "28534"
+          }
+        },
+        "[CHART] Date of First Response": {
+          "id": "customfield_21746",
+          "value": "2026-10-15T13:58:49.905-0400"
+        },
+        "Monitor": {
+          "id": "customfield_15191",
+          "value": "https://prtg.solutions-sysrepublic.com/"
+        },
+        "Target Assignment Time": {
+          "id": "customfield_18575",
+          "value": {
+            "id": "53",
+            "name": "Target Assignment Time",
+            "completedCycles": [
+              {
+                "startTime": {
+                  "iso8601": "2026-10-15T13:57:43-0400",
+                  "jira": "2026-10-15T13:57:43.013-0400",
+                  "friendly": "Yesterday 1:57 PM",
+                  "epochMillis": 1792087063013
+                },
+                "stopTime": {
+                  "iso8601": "2026-10-15T13:57:55-0400",
+                  "jira": "2026-10-15T13:57:55.099-0400",
+                  "friendly": "Yesterday 1:57 PM",
+                  "epochMillis": 1792087075099
+                },
+                "breachTime": {
+                  "iso8601": "2026-10-15T14:27:43-0400",
+                  "jira": "2026-10-15T14:27:43.013-0400",
+                  "friendly": "Yesterday 2:27 PM",
+                  "epochMillis": 1792088863013
+                },
+                "breached": false,
+                "goalDuration": {
+                  "millis": 1800000,
+                  "friendly": "30m"
+                },
+                "elapsedTime": {
+                  "millis": 12086,
+                  "friendly": "0m"
+                },
+                "remainingTime": {
+                  "millis": 1787914,
+                  "friendly": "29m"
+                }
+              }
+            ],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Time to resolution": {
+          "id": "customfield_15187",
+          "value": {
+            "id": "43",
+            "name": "Time to resolution",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Assignment date (current assignee)": {
+          "id": "customfield_20085",
+          "value": "2026-10-15T15:02:00.000-0400"
+        },
+        "Target First Response": {
+          "id": "customfield_18672",
+          "value": {
+            "id": "54",
+            "name": "Target First Response",
+            "completedCycles": [
+              {
+                "startTime": {
+                  "iso8601": "2026-10-15T13:57:43-0400",
+                  "jira": "2026-10-15T13:57:43.013-0400",
+                  "friendly": "Yesterday 1:57 PM",
+                  "epochMillis": 1792087063013
+                },
+                "stopTime": {
+                  "iso8601": "2026-10-15T13:58:49-0400",
+                  "jira": "2026-10-15T13:58:49.905-0400",
+                  "friendly": "Yesterday 1:58 PM",
+                  "epochMillis": 1792087129905
+                },
+                "breachTime": {
+                  "iso8601": "2026-10-16T12:57:43-0400",
+                  "jira": "2026-10-16T12:57:43.013-0400",
+                  "friendly": "Today 12:57 PM",
+                  "epochMillis": 1792169863013
+                },
+                "breached": false,
+                "goalDuration": {
+                  "millis": 28800000,
+                  "friendly": "8h"
+                },
+                "elapsedTime": {
+                  "millis": 66892,
+                  "friendly": "1m"
+                },
+                "remainingTime": {
+                  "millis": 28733108,
+                  "friendly": "7h 58m"
+                }
+              }
+            ],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Assigned Team First Response": {
+          "id": "customfield_18673",
+          "value": {
+            "id": "55",
+            "name": "Assigned Team First Response",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Time to Resolution": {
+          "id": "customfield_19992",
+          "value": {
+            "id": "74",
+            "name": "TJX Time to Resolution",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Roadmap Rank": {
+          "id": "customfield_22368",
+          "value": {
+            "value": "Not Committed",
+            "id": "31694"
+          }
+        },
+        "TJX Target First Response": {
+          "id": "customfield_19993",
+          "value": {
+            "id": "75",
+            "name": "TJX Target First Response",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Assigned Team First Response": {
+          "id": "customfield_19994",
+          "value": {
+            "id": "76",
+            "name": "TJX Assigned Team First Response",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Target Resolution Identified": {
+          "id": "customfield_19995",
+          "value": {
+            "id": "77",
+            "name": "TJX Target Resolution Identified",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Target Assignment Time": {
+          "id": "customfield_19997",
+          "value": {
+            "id": "78",
+            "name": "TJX Target Assignment Time",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Sentiment": {
+          "id": "customfield_19984",
+          "value": {
+            "id": "1000",
+            "name": "Negative"
+          }
+        },
+        "Request participants": {
+          "id": "customfield_14971",
+          "value": [
+            {
+              "accountId": "712020:176ba036-bdb4-4d3f-9c42-f77ea14f3a04",
+              "emailAddress": "rhatfield@apprissretail.com",
+              "displayName": "Rae Hatfield",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            }
+          ]
+        },
+        "Customer Request Type": {
+          "id": "customfield_14972",
+          "value": {
+            "requestType": {
+              "_expands": [
+                "field"
+              ],
+              "id": "87",
+              "name": "Support Ticket",
+              "description": "Use this link to create an incident ticket, training request, ask a question etc.",
+              "helpText": "{panel:borderStyle=solid|borderColor=#fa505f|borderWidth=2px|bgColor=#f9f9f9|titleBGColor=#fa505f|title=Support Ticket Guidelines}\n‎ To ensure efficient issue resolution, please provide the following information when submitting a support ticket:\n\n* Detailed steps to reproduce the issue\n* Associated URLs\n* Screenshots (when applicable)\n* Expected outcome and actual outcome\n‎ \n{panel}",
+              "defaultName": "Support Ticket",
+              "issueTypeId": "10102",
+              "serviceDeskId": "5",
+              "portalId": "5",
+              "groupIds": [
+                "18"
+              ],
+              "icon": {
+                "id": "17427"
+              }
+            },
+            "currentStatus": {
+              "status": "Accepted into Development",
+              "statusCategory": "INDETERMINATE",
+              "statusDate": {
+                "iso8601": "2026-10-16T04:44:38-0400",
+                "jira": "2026-10-16T04:44:38.904-0400",
+                "friendly": "Today 4:44 AM",
+                "epochMillis": 1792140278904
+              }
+            }
+          }
+        },
+        "Organizations": {
+          "id": "customfield_14973",
+          "value": [
+            {
+              "id": "245",
+              "uuid": "097c9028-d9ad-4767-8ac3-02c2be927b1c",
+              "name": "Tailored Brands",
+              "scimManaged": false
+            }
+          ]
+        },
+        "RCS: Issue Type": {
+          "id": "customfield_18881",
+          "value": {
+            "value": "Incident",
+            "id": "27039"
+          }
+        },
+        "Account Service Level": {
+          "id": "customfield_18873",
+          "value": {
+            "value": "High-Touch",
+            "id": "27035"
+          }
+        },
+        "Original Assignee": {
+          "id": "customfield_19965",
+          "value": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "emailAddress": "jmartinez@apprissretail.com",
+            "displayName": "Juan Martinez",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "atlassian"
+          }
+        },
+        "Complexity": {
+          "id": "customfield_22567",
+          "value": {
+            "value": "Medium",
+            "id": "32402"
+          }
+        },
+        "Response/Triage Time SLA Violation": {
+          "id": "customfield_18861",
+          "value": {
+            "value": "No",
+            "id": "27022"
+          }
+        },
+        "Assigned Time SLA Violation": {
+          "id": "customfield_18862",
+          "value": {
+            "value": "No",
+            "id": "27024"
+          }
+        },
+        "Resolution Time SLA Violation": {
+          "id": "customfield_18863",
+          "value": {
+            "value": "No",
+            "id": "27026"
+          }
+        },
+        "Note:": {
+          "id": "customfield_18858",
+          "value": "{panel:title=}\r\n*+Please do not edit the two time zone fields below. Thank you!:)+*\r\n{panel}\r\n"
+        },
+        "Suggested QA Scenarios": {
+          "id": "customfield_18859",
+          "value": "<table><thead><tr><th><p><strong>Pass/NoPass</strong></p></th><th><p><strong>Scenario</strong></p></th><th><p><strong>Expected Outcome</strong></p></th><th><p><strong>Actual Outcome</strong></p></th><th><p><strong>Notes</strong></p></th></tr></thead><tbody><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr></tbody></table>"
+        },
+        "Last Update By Assignee": {
+          "id": "customfield_18855",
+          "value": "2026-10-16T04:44:00.000-0400"
+        },
+        "Escalate Using Opsgenie": {
+          "id": "customfield_18827",
+          "value": "https://trebuco.atlassian.net/jira/ops/alerts"
+        },
+        "Rank": {
+          "id": "customfield_12270",
+          "value": "1|i4eicn:"
+        },
+        "Date of last comment": {
+          "id": "customfield_14570",
+          "value": "74227"
+        },
+        "Responders": {
+          "id": "customfield_18809",
+          "value": []
+        },
+        "Request language": {
+          "id": "customfield_18808",
+          "value": {
+            "languageCode": "en",
+            "displayName": "English"
+          }
+        },
+        "PRD Required?": {
+          "id": "customfield_20680",
+          "value": {
+            "value": "Yes",
+            "id": "29502"
+          }
+        },
+        "Development": {
+          "id": "customfield_18800",
+          "value": "{}"
+        }
+      }
+    },
+    "appliedContentFormat": "html"
+  },
+  "comments": {
+    "data": {
+      "startAt": 0,
+      "maxResults": 100,
+      "total": 4,
+      "isLast": true,
+      "appliedContentFormat": "html",
+      "comments": [
+        {
+          "id": "3396998",
+          "author": {
+            "accountId": "712020:5f6efc8d-c500-4911-8b8a-d4435f7d3fa6",
+            "displayName": "Nithish Gowda"
+          },
+          "body": "<p data-local-id=\"a2c2f4e41cf0\">Hello,</p><p data-local-id=\"3ab70bc4c972\">Thank you for contacting Appriss Retail Support.</p><p data-local-id=\"e11c7086c055\">We’ve received your ticket and are routing it to the appropriate team for assistance. The assigned representative will follow up as soon as they’ve had a chance to review.</p><p data-local-id=\"a23762b90af0\">Kind Regards,</p><p data-local-id=\"1d924778016d\">Appriss Retail Support </p>",
+          "created": "2026-10-15T13:58:49.905-0400",
+          "updated": "2026-10-15T13:58:49.905-0400",
+          "updateAuthor": {
+            "accountId": "712020:5f6efc8d-c500-4911-8b8a-d4435f7d3fa6",
+            "displayName": "Nithish Gowda"
+          },
+          "jsdPublic": true
+        },
+        {
+          "id": "3397002",
+          "author": {
+            "accountId": "5f8852df6932330076610600",
+            "displayName": "Nick Hawkins"
+          },
+          "body": "<p>🤖 Talos triage · confidence: medium</p><p><strong>Talos can make mistakes. Please check important information.</strong></p><p><strong>Verdict</strong><br>No known or recurring incident matches, and nothing I read points to a code defect. The six users share a pattern (office, hub and distribution center staff), so the check is whether the sign-in data for them carries a level and a store assignment.</p><p><strong>What we checked</strong></p><ul><li><p>Nothing in the client&#039;s notes or the cross-client known-incident list matches this symptom.</p></li><li><p>At each sign-in the security level is taken from the first of these that has a value: a level set in Secure&#039;s SSO admin screen, the level sent by the customer&#039;s sign-in system, or a configured default. If none has a value, the level stays blank.</p></li><li><p>No default level is set up for this client. The setting that would supply one is not present for Tailored Brands.</p></li><li><p>A user&#039;s store assignments are rebuilt at each sign-in from the store list the customer&#039;s sign-in system sends. If a user&#039;s sign-in carries no store, their store hierarchy stays empty. That fits the users who have no single store (office, hub, distribution center).</p></li><li><p>This client&#039;s setup maps users to Incident security levels by team membership. Users who are not in one of the listed teams would get no level from that mapping.</p></li><li><p>The &quot;daily SSO file&quot; is not something I could find in the code. I could not confirm which feed sets the level, and I could not see what was sent for these six users.</p></li></ul><p><strong>Next</strong></p><ul><li><p>Compare what the customer&#039;s sign-in system sent for one affected user (for example Chris Orth) with a user whose level and stores show correctly.</p></li><li><p>Check whether the six users are in a team listed in the client&#039;s Incident mapping, and whether their sign-in carries any store or hierarchy values.</p></li></ul>",
+          "created": "2026-10-15T14:03:37.002-0400",
+          "updated": "2026-10-15T14:03:37.002-0400",
+          "updateAuthor": {
+            "accountId": "5f8852df6932330076610600",
+            "displayName": "Nick Hawkins"
+          },
+          "jsdPublic": false
+        },
+        {
+          "id": "3397050",
+          "author": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "displayName": "Juan Martinez"
+          },
+          "body": "<p data-local-id=\"0f09835899fd\"><strong>Escalating to Secure Engineering.</strong> The Incident security level from SSO+ is not applied on the sign in that creates the user. Matthew Kamminga confirmed on Teams on 2026-10-15 that it should apply on creation and on later sign ins, and asked to route this to a new ENG ticket.</p><h2 data-local-id=\"f06bcddbea52\">1. Environment and steps to reproduce</h2><p data-local-id=\"10ca0303da30\">Production, tenant 209 tbi, <code>sqldb-prd-wus2-arp-production-209-tbi-platform</code>. Logs from Grafana Explore, <code>grafanacloud-apprissretail-logs</code>, clientId 209. Every query was read only.</p><h3 data-local-id=\"ffe050157a08\">Rachel Dill, 2026-10-13</h3><ol data-local-id=\"bb49940ea271\"><li data-local-id=\"902e5d5117f1\"><p data-local-id=\"6c1fd9cb8de5\">Her row exists in <code>sso.SecurityLevelAssignments</code>: SecurityID 5, Persistent NULL, loaded 2026-10-13 10:42 UTC. <code>EXEC sso.GetUserSecurityLevel</code> returns 5 for her.</p></li><li data-local-id=\"99ad687f4738\"><p data-local-id=\"596b0955ac48\">Her first SSO sign in, 2026-10-13 19:23:49 UTC, creates the account.</p></li><li data-local-id=\"7652fa55984b\"><p data-local-id=\"79e7be8223a8\">Check <code>membership.Users.SecurityID</code>, or Portal, Settings, Users, Rachel Dill, Secure Incident tab.</p></li></ol><p data-local-id=\"24583fd327ce\">Expected: Location Manager, SecurityID 5. Actual: NULL. I set it manually on 2026-10-14. It held after her next sign in on 2026-10-14 19:58 UTC.</p><p data-local-id=\"c85c61956ac7\">Grafana sequence for that sign in:</p><table data-local-id=\"dc3e1ac5-55d0-477b-97b4-275a7940ebbe\"><thead><tr><th data-local-id=\"6a64cba19dda\"><p data-local-id=\"42172a90caac\">UTC</p></th><th data-local-id=\"44c35245d87b\"><p data-local-id=\"6559b7fa3a79\">Sender</p></th><th data-local-id=\"4a6c7d416538\"><p data-local-id=\"facf66eb1d5e\">Message</p></th></tr></thead><tbody><tr><td data-local-id=\"ac89222428ee\"><p data-local-id=\"3c7e7a3d5272\">19:23:49.582</p></td><td data-local-id=\"af2c40ad79d4\"><p data-local-id=\"022f275caa71\">SsoService</p></td><td data-local-id=\"cd92e6bb8f19\"><p data-local-id=\"7c7c07a7585e\">Identified 1 SSO Extra permission groups to assign</p></td></tr><tr><td data-local-id=\"1dd958b83496\"><p data-local-id=\"aa1369f05a26\">19:23:49.586</p></td><td data-local-id=\"c662b932450d\"><p data-local-id=\"27627ee15d1e\">SsoService</p></td><td data-local-id=\"ac97a0e421e3\"><p data-local-id=\"bf240d8f7a7c\">Identified 1 SSO Extra teams to assign</p></td></tr><tr><td data-local-id=\"b47a56fad881\"><p data-local-id=\"da1dda065bb2\">19:23:49.641</p></td><td data-local-id=\"5ec7f02c4f84\"><p data-local-id=\"fe2b4b9f8de3\">MembershipService</p></td><td data-local-id=\"7a552879f854\"><p data-local-id=\"880df135a2a2\">User Rachel Dill has been created</p></td></tr><tr><td data-local-id=\"261f4e37bd48\"><p data-local-id=\"5cb4e713174d\">19:23:49.660</p></td><td data-local-id=\"94b91f758527\"><p data-local-id=\"7ff41ec4dc2d\">SsoService</p></td><td data-local-id=\"afbc321e1844\"><p data-local-id=\"1747a2c335e7\">Sso user created, User Data with <code>&quot;SecurityID&quot;:null</code></p></td></tr><tr><td data-local-id=\"6ad82e93d284\"><p data-local-id=\"7a1df93f4b5b\">19:23:49.684</p></td><td data-local-id=\"7f12bda6995c\"><p data-local-id=\"74f5215d18f3\">MembershipService</p></td><td data-local-id=\"e2d13412be6f\"><p data-local-id=\"3bb8bcac3f4e\">Added to ApprissCase Users, Basic Users</p></td></tr><tr><td data-local-id=\"94b668049ba3\"><p data-local-id=\"51bfdf12d550\">19:23:49.698</p></td><td data-local-id=\"e69e9aad31d0\"><p data-local-id=\"80a02743f28c\">MembershipService</p></td><td data-local-id=\"52572c5553d2\"><p data-local-id=\"1c9f2b47bd81\">Added to Location Manager user team</p></td></tr><tr><td data-local-id=\"ae7ce29a61e6\"><p data-local-id=\"a58fd551d5e0\">19:23:56.732</p></td><td data-local-id=\"17a1b6bf78d0\"><p data-local-id=\"efeadf019b8c\">Saml2</p></td><td data-local-id=\"daf8d6746f04\"><p data-local-id=\"172646304a49\">Logged on</p></td></tr></tbody></table><p data-local-id=\"c636260830fd\">No line about the security level.</p><h2 data-local-id=\"e2e9c7c1cd81\">2. Findings</h2><p data-local-id=\"0e329de7d368\">Users created through SSO between 2026-10-09 and 2026-10-15, all with level 5 in <code>sso.SecurityLevelAssignments</code>:</p><table data-local-id=\"fc1177c4-54f6-443e-95a0-0785ae109e4b\"><thead><tr><th data-local-id=\"7d0d6857d721\"><p data-local-id=\"f31fda2cba70\">User</p></th><th data-local-id=\"0b9d19a1bd0b\"><p data-local-id=\"14e1567ad82b\">Created UTC</p></th><th data-local-id=\"a70d3ecdfe1b\"><p data-local-id=\"8ab3904adefa\">Last sign in UTC</p></th><th data-local-id=\"aeedbdbcd8f7\"><p data-local-id=\"a0fac7507cc5\">Account level</p></th></tr></thead><tbody><tr><td data-local-id=\"59e3eb440106\"><p data-local-id=\"d2e52e982e75\">Ashley N Carter</p></td><td data-local-id=\"b07cb56599b3\"><p data-local-id=\"1987c4a9bfe6\">10-09 20:24:16</p></td><td data-local-id=\"6d3eca70de18\"><p data-local-id=\"7e92018bbb8f\">10-09 20:27:23</p></td><td data-local-id=\"9acad4fbe505\"><p data-local-id=\"5ad78cf68fc5\">5</p></td></tr><tr><td data-local-id=\"f686a4eb05f5\"><p data-local-id=\"df7f1098eecc\">Teegan Baker</p></td><td data-local-id=\"b4d85adc7ae2\"><p data-local-id=\"811b303fd9e5\">10-10 17:58:30</p></td><td data-local-id=\"60eb8f32958b\"><p data-local-id=\"5848cab490ca\">10-10 18:00:39</p></td><td data-local-id=\"af6250666ecc\"><p data-local-id=\"2a0c0ce5450b\">5</p></td></tr><tr><td data-local-id=\"43ac0767c4dd\"><p data-local-id=\"be2e4bd4ca12\">Jordan Shields</p></td><td data-local-id=\"89a30d5da3de\"><p data-local-id=\"8aae15e1fc9d\">10-11 20:44:20</p></td><td data-local-id=\"7929a3a68c1d\"><p data-local-id=\"625ba2326f67\">10-11 20:50:28</p></td><td data-local-id=\"003da22cedcb\"><p data-local-id=\"58a5e4e0ede9\">5</p></td></tr><tr><td data-local-id=\"6727478d79ca\"><p data-local-id=\"b0c8b664eb30\">Alexis Post</p></td><td data-local-id=\"5a7b3b62693d\"><p data-local-id=\"6e02ad54d63d\">10-13 19:22:23</p></td><td data-local-id=\"c6188297b7ab\"><p data-local-id=\"d60221dc3bc5\">10-13 19:50:47</p></td><td data-local-id=\"4911dab1df85\"><p data-local-id=\"fca262cf074d\">5</p></td></tr><tr><td data-local-id=\"4754ab16d9a9\"><p data-local-id=\"342fb44711c5\">Theresa Veasley</p></td><td data-local-id=\"d7ab33d643fd\"><p data-local-id=\"5934e051609a\">10-15 17:17:42</p></td><td data-local-id=\"fd32bd96fc55\"><p data-local-id=\"2a7f21dc72d6\">10-15 17:46:18</p></td><td data-local-id=\"05eb26b619bf\"><p data-local-id=\"8c706f85b07d\">5</p></td></tr><tr><td data-local-id=\"ec02b6cb6050\"><p data-local-id=\"f82b9d1093ba\">Brett Virtue</p></td><td data-local-id=\"2aa4a61a3a83\"><p data-local-id=\"343f1b97c2af\">10-14 19:47:05</p></td><td data-local-id=\"ca383a489124\"><p data-local-id=\"7b085f98343a\">same</p></td><td data-local-id=\"7a44dc480402\"><p data-local-id=\"702514520578\">NULL</p></td></tr><tr><td data-local-id=\"69c17c804e2f\"><p data-local-id=\"ff864bebd21c\">Doris Mays</p></td><td data-local-id=\"91d25cbee112\"><p data-local-id=\"a0dc3a1b2b52\">10-14 20:00:25</p></td><td data-local-id=\"22b174df5c7c\"><p data-local-id=\"e0089820d4ea\">same</p></td><td data-local-id=\"024d92c019a8\"><p data-local-id=\"ce3d25b5b48a\">NULL</p></td></tr><tr><td data-local-id=\"7f1c0eb23981\"><p data-local-id=\"32618308df4c\">Tamieko Jones</p></td><td data-local-id=\"6c82b7065e85\"><p data-local-id=\"4369713062c0\">10-15 14:00:02</p></td><td data-local-id=\"3dabec1c4750\"><p data-local-id=\"5517dfb7f2e4\">same</p></td><td data-local-id=\"f04330eb1714\"><p data-local-id=\"7fde866516a7\">NULL</p></td></tr></tbody></table><p data-local-id=\"440f6be66927\">Every user who signed in again has the level. Every user whose only sign in created the account does not. Verified.</p><p data-local-id=\"82f17f1fef88\">49 users who signed in since 2026-07-02 have a feed level above 0 and a NULL SecurityID in <code>membership.Users</code> and in the lpuser view. Verified. How many of them signed in only once is not checked yet.</p><p data-local-id=\"199be8d50ea9\"><strong>My reading, unverified:</strong> the security level step is skipped on user creation and runs on later sign ins.</p><h2 data-local-id=\"ba17f98414d7\">3. Troubleshooting performed</h2><p data-local-id=\"620ef9d03c17\">Ruled out so far: the feed, the rows are present; <code>sso.GetUserSecurityLevel</code>, its current definition orders by Persistent with no Persistent = 1 filter and returns 5; the lpuser view, every affected user is in it. Detail in my internal note of 2026-10-14 on <a href=\"https://trebuco.atlassian.net/browse/RCS-28256\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-28256</a> .</p><p data-local-id=\"d62e28edac75\">Outside the ticket: Teams with Matthew Kamminga on 2026-10-15, and an email thread with J.R. Teagle on the same reports. Workaround in use: setting Incident Security ID manually in the Portal.</p><h2 data-local-id=\"42e0b53c1ef8\">4. Still open</h2><ol data-local-id=\"fc64d4f203bf\"><li data-local-id=\"b6f4b1130181\"><p data-local-id=\"9881da86642f\">Does the SSO user creation path call the security level assignment, and is that the step that is skipped?</p></li><li data-local-id=\"90317a9d756e\"><p data-local-id=\"f7b8dce47999\">Once confirmed, could the affected accounts be corrected in one pass, or should Support set them one by one?</p></li></ol><p data-local-id=\"ad378b039b2e\">Related: <a href=\"https://trebuco.atlassian.net/browse/RCS-28256\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-28256</a>  and <a href=\"https://trebuco.atlassian.net/browse/RCS-27578\" data-card-appearance=\"inline\">https://trebuco.atlassian.net/browse/RCS-27578</a> .</p>",
+          "created": "2026-10-15T15:02:24.461-0400",
+          "updated": "2026-10-15T15:02:24.461-0400",
+          "updateAuthor": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "displayName": "Juan Martinez"
+          },
+          "jsdPublic": false
+        },
+        {
+          "id": "3397054",
+          "author": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "displayName": "Juan Martinez"
+          },
+          "body": "<p data-local-id=\"4860ac8bb615\">Hello <span data-local-id=\"81a3e571-4f1f-4cb9-9b43-bc7e6ba8b9e3\" data-type=\"mention\" data-user-id=\"qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc\">@Colton Neal</span> ,</p><p data-local-id=\"2086e14437ca\">Thank you for your patience on this. We have passed the blank Incident Security ID reports to our engineering team for review.</p><p data-local-id=\"a06d8fe579e4\">In the meantime, if another user shows a blank Incident Security ID, please let us know here and we will set it for them.</p><p data-local-id=\"7da94b5d4d19\">Kind regards,<br>Juan Martinez<br>Appriss Retail Support</p>",
+          "created": "2026-10-15T15:03:21.615-0400",
+          "updated": "2026-10-15T15:03:21.615-0400",
+          "updateAuthor": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "displayName": "Juan Martinez"
+          },
+          "jsdPublic": true
+        }
+      ]
+    }
+  }
+}

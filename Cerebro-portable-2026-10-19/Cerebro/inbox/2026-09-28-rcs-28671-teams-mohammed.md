@@ -1,0 +1,1 @@
+Hi Mohammed Mutahhar, quick one on THD RCS-28671, and I may be reading this wrong. After Friday's rerun I only find 2 new work items with period 8/27: 252329 and 252328. The other 15 have no replacement, including 248159, which is the one the customer is looking for. Did those definitions run and return nothing, or are they still pending? Details in my internal note on the RCS.

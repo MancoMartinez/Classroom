@@ -1,0 +1,353 @@
+{
+ "tickets_documentados": 98,
+ "precision_top1_sin_umbral": 0.469,
+ "umbral": {
+  "coseno": 0.8,
+  "margen": 0.01
+ },
+ "elegido": {
+  "coseno": 0.8,
+  "margen": 0.01,
+  "precision": 0.732,
+  "cobertura": 0.418
+ },
+ "nota": "Los títulos documentados pueden parecerse a las descripciones escritas a partir de ellos; la cifra es optimista.",
+ "curva": [
+  {
+   "coseno": 0.76,
+   "margen": 0.0,
+   "precision": 0.469,
+   "cobertura": 1.0
+  },
+  {
+   "coseno": 0.76,
+   "margen": 0.01,
+   "precision": 0.732,
+   "cobertura": 0.418
+  },
+  {
+   "coseno": 0.76,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.76,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.77,
+   "margen": 0.0,
+   "precision": 0.469,
+   "cobertura": 1.0
+  },
+  {
+   "coseno": 0.77,
+   "margen": 0.01,
+   "precision": 0.732,
+   "cobertura": 0.418
+  },
+  {
+   "coseno": 0.77,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.77,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.78,
+   "margen": 0.0,
+   "precision": 0.469,
+   "cobertura": 1.0
+  },
+  {
+   "coseno": 0.78,
+   "margen": 0.01,
+   "precision": 0.732,
+   "cobertura": 0.418
+  },
+  {
+   "coseno": 0.78,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.78,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.79,
+   "margen": 0.0,
+   "precision": 0.469,
+   "cobertura": 1.0
+  },
+  {
+   "coseno": 0.79,
+   "margen": 0.01,
+   "precision": 0.732,
+   "cobertura": 0.418
+  },
+  {
+   "coseno": 0.79,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.79,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.8,
+   "margen": 0.0,
+   "precision": 0.479,
+   "cobertura": 0.98
+  },
+  {
+   "coseno": 0.8,
+   "margen": 0.01,
+   "precision": 0.732,
+   "cobertura": 0.418
+  },
+  {
+   "coseno": 0.8,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.8,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.81,
+   "margen": 0.0,
+   "precision": 0.5,
+   "cobertura": 0.918
+  },
+  {
+   "coseno": 0.81,
+   "margen": 0.01,
+   "precision": 0.769,
+   "cobertura": 0.398
+  },
+  {
+   "coseno": 0.81,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.81,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.82,
+   "margen": 0.0,
+   "precision": 0.494,
+   "cobertura": 0.827
+  },
+  {
+   "coseno": 0.82,
+   "margen": 0.01,
+   "precision": 0.757,
+   "cobertura": 0.378
+  },
+  {
+   "coseno": 0.82,
+   "margen": 0.02,
+   "precision": 0.842,
+   "cobertura": 0.194
+  },
+  {
+   "coseno": 0.82,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.83,
+   "margen": 0.0,
+   "precision": 0.5,
+   "cobertura": 0.633
+  },
+  {
+   "coseno": 0.83,
+   "margen": 0.01,
+   "precision": 0.75,
+   "cobertura": 0.327
+  },
+  {
+   "coseno": 0.83,
+   "margen": 0.02,
+   "precision": 0.833,
+   "cobertura": 0.184
+  },
+  {
+   "coseno": 0.83,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.84,
+   "margen": 0.0,
+   "precision": 0.535,
+   "cobertura": 0.439
+  },
+  {
+   "coseno": 0.84,
+   "margen": 0.01,
+   "precision": 0.773,
+   "cobertura": 0.224
+  },
+  {
+   "coseno": 0.84,
+   "margen": 0.02,
+   "precision": 0.867,
+   "cobertura": 0.153
+  },
+  {
+   "coseno": 0.84,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.85,
+   "margen": 0.0,
+   "precision": 0.643,
+   "cobertura": 0.286
+  },
+  {
+   "coseno": 0.85,
+   "margen": 0.01,
+   "precision": 0.824,
+   "cobertura": 0.173
+  },
+  {
+   "coseno": 0.85,
+   "margen": 0.02,
+   "precision": 0.846,
+   "cobertura": 0.133
+  },
+  {
+   "coseno": 0.85,
+   "margen": 0.03,
+   "precision": 0.75,
+   "cobertura": 0.082
+  },
+  {
+   "coseno": 0.86,
+   "margen": 0.0,
+   "precision": 0.647,
+   "cobertura": 0.173
+  },
+  {
+   "coseno": 0.86,
+   "margen": 0.01,
+   "precision": 0.833,
+   "cobertura": 0.122
+  },
+  {
+   "coseno": 0.86,
+   "margen": 0.02,
+   "precision": 0.889,
+   "cobertura": 0.092
+  },
+  {
+   "coseno": 0.86,
+   "margen": 0.03,
+   "precision": 0.833,
+   "cobertura": 0.061
+  },
+  {
+   "coseno": 0.87,
+   "margen": 0.0,
+   "precision": 0.667,
+   "cobertura": 0.061
+  },
+  {
+   "coseno": 0.87,
+   "margen": 0.01,
+   "precision": 0.75,
+   "cobertura": 0.041
+  },
+  {
+   "coseno": 0.87,
+   "margen": 0.02,
+   "precision": 0.75,
+   "cobertura": 0.041
+  },
+  {
+   "coseno": 0.87,
+   "margen": 0.03,
+   "precision": 0.667,
+   "cobertura": 0.031
+  },
+  {
+   "coseno": 0.88,
+   "margen": 0.0,
+   "precision": 0.75,
+   "cobertura": 0.041
+  },
+  {
+   "coseno": 0.88,
+   "margen": 0.01,
+   "precision": 0.75,
+   "cobertura": 0.041
+  },
+  {
+   "coseno": 0.88,
+   "margen": 0.02,
+   "precision": 0.75,
+   "cobertura": 0.041
+  },
+  {
+   "coseno": 0.88,
+   "margen": 0.03,
+   "precision": 0.667,
+   "cobertura": 0.031
+  },
+  {
+   "coseno": 0.89,
+   "margen": 0.0,
+   "precision": 1.0,
+   "cobertura": 0.01
+  },
+  {
+   "coseno": 0.89,
+   "margen": 0.01,
+   "precision": 1.0,
+   "cobertura": 0.01
+  },
+  {
+   "coseno": 0.89,
+   "margen": 0.02,
+   "precision": 1.0,
+   "cobertura": 0.01
+  },
+  {
+   "coseno": 0.89,
+   "margen": 0.03,
+   "precision": 1.0,
+   "cobertura": 0.01
+  }
+ ]
+}

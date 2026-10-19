@@ -1,0 +1,33 @@
+# Adjunto 2026-09-14-ftp-output-text.png
+Ruta: adjuntos/RCS-28911/2026-09-14-ftp-output-text.png
+Tipo: png
+Ticket: RCS-28911
+Modificado: 2026-09-15
+
+Texto reconocido por OCR:
+Date:
+P/14/2026
+tmer
+~ 10:00:00 AM
+Execution time: 00:00:02.2
+Execution
+Find
+Success
+CODY
+Output (standard) - FTP/FTPS/SFTP/SCP
+Tert
+Task
+results
+Result output
+CPU
+ame
+Perrormance
+Standard outout
+export
+mployee Into.dat
+Table
+parsing
+KeStine
+Settings
+Standard error
+Goto

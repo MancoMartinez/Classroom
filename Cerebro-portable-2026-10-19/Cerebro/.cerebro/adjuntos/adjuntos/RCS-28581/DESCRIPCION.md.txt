@@ -1,0 +1,39 @@
+# Adjunto DESCRIPCION.md
+Ruta: adjuntos/RCS-28581/DESCRIPCION.md
+Tipo: md
+Ticket: RCS-28581
+Modificado: 2026-09-08
+
+# Adjuntos RCS-28581
+
+Los dos archivos son los mismos que James McKenna subio a Jira el 2026-08-25.
+El texto de abajo es lo que muestra cada imagen, para que quede buscable.
+
+## image-20260825-230117-actual-pos-863485.png
+Captura del comportamiento ACTUAL, el defecto.
+Encabezado de recibo Chemist Warehouse.
+Tienda: Chemist Warehouse Coburg Market, 409 to 413 Sydney Rd, Next door to Coburg Market, Coburg, Victoria.
+Store 036.
+Pos 863485, resaltado en amarillo.
+Cashier 37463 Meysam Noorifar.
+Order No: 5739233443017590.
+Tipo: RETAIL SALE.
+
+## image-20260825-230316-esperado-pos-TILLD04.png
+Captura del comportamiento ESPERADO, el que el cliente pide recuperar.
+Encabezado de recibo Chemist Warehouse.
+Tienda: Chemist Warehouse Sydney - Park Street, Shop 3 Ground Floor Corner George Street and Park Street 2 Park Street, Sydney, NSW.
+Store 803.
+Pos TILLD04, resaltado en amarillo.
+Cashier 114493 Tasmia Ahmed.
+Order No: 12789024214068481 (aparece como 1278902421406848 16 en la captura, el ultimo digito puede estar cortado).
+Tipo: RETAIL SALE.
+
+## Lo que la evidencia SI dice
+El valor esperado es alfanumerico, tipo TILLD04. El valor actual es un entero de 6 digitos, 863485.
+
+## Lo que la evidencia NO dice, y hay que resolver antes de concluir
+Las dos capturas son de TIENDAS DISTINTAS, store 036 contra store 803, y no traen fecha de
+transaccion visible. El cliente afirmo el 2026-08-26 que el corte parece ser por periodo de datos.
+La evidencia entregada no permite separar discriminador por fecha de discriminador por tienda.
+Hay que pedirle las dos transacciones comparables, o correr el SELECT.

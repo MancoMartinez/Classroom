@@ -1,0 +1,45 @@
+# Adjunto image-20260813-202829.png
+Ruta: adjuntos/RCS-27941/image-20260813-202829.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+File
+Get
+Data ~
+A1
+AutoSave
+2-P=
+Home
+Insert
+Draw
+Page Layout
+a From Text/CSV
+Ea From Picture
+From Web
+Recent Sources
+- From Table/Range
+Là Existing Connections
+Get & Transform Data
+V
+Ix v
+Username
+appriss_sso_permissions_20260812014508 - Read-Only v
+Formulas
+Data
+Review View
+Automate
+E Queries & Connections
+Refresh
+All ~
+# Properties
+2 Workbook Links
+Queries & Connections
+Stocks
+Help
+Username
+1256 Beverly.Wright@tailoredbrands.com
+4188
+T Group
+ApprissCase Search Users

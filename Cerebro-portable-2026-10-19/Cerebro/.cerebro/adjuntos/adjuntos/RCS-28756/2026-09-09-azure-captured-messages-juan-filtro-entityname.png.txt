@@ -1,0 +1,36 @@
+# Adjunto 2026-09-09-azure-captured-messages-juan-filtro-entityname.png
+Ruta: adjuntos/RCS-28756/2026-09-09-azure-captured-messages-juan-filtro-entityname.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+2-ehub-1 Metrics * ...
+X
+- New chart Refresh & Share V
+Local Time: Last 30 days (Automatic - 6 hours)
+Sum Captured Messages. for prd-datacloud-wus2-ehub-1 where EntityName = 'c67 _rawdata_order' D
++ Add metric
+*T Add filter *% Apply splitting
+, Drill into Logs V
+L! New alert rule
+- Save to dashboard V
+E prd-datacloud-wus2-ehub-1, Captured Messages., Sum O
+Property
+EntityName
+Operator
+Values
+c67_rawdata_order
+V
+1.80M
+800k
+600k
+400k
+200k
+Aug 16
+Aug 23
+Aug 30
+Sep 06
+UTC -05:00
+| Captured Messages. (Sum), prd-datacloud-wus2-ehub-1 | 64.61M
+Or Give Feedback

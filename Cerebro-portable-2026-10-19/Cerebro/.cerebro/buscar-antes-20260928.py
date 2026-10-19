@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+"""Busca en todo el segundo cerebro. Portable: solo necesita python3.
+
+    bin/buscar "izenda export"
+    bin/buscar RCS-28535           atajo, imprime la ficha
+    CEREBRO_DB=/otra/ruta.db bin/buscar "lo que sea"
+
+Antes usaba el binario sqlite3 y se tragaba los errores con 2>/dev/null. Asi fue como el indice
+FTS5 estuvo corrupto meses sin que nadie lo notara. Ahora los errores se muestran.
+"""
+import os, re, sqlite3, sys, unicodedata
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+DB = os.environ.get("CEREBRO_DB") or os.path.join(ROOT, "brain", "sessions.db")
+if not os.path.exists(DB):
+    DB = os.path.expanduser("~/Library/Application Support/InterviewApp/sessions.db")
+TICKET = re.compile(r"^(RCS|ENG|RTS|OUTM|DATASCI)-\d+$", re.I)
+
+
+def sin_tildes(s):
+    return "".join(c for c in unicodedata.normalize("NFD", s.lower())
+                   if unicodedata.category(c) != "Mn")
+
+
+def titulo(t):
+    print(f"\n── {t} " + "─" * max(0, 52 - len(t)))
+
+
+def abrir(db):
+    """Abre la base para lectura. Cae a inmutable cuando el entorno no permite bloqueos.
+
+    El sandbox de Cowork monta la carpeta por FUSE y ahi SQLite no puede tomar el bloqueo.
+    Un journal caliente al lado tambien mata la apertura normal, porque el rollback quiere
+    escribir. Con immutable=1 se lee igual y se ignora el journal.
+    """
+    for uri in (f"file:{db}?mode=ro", f"file:{db}?immutable=1"):
+        try:
+            con = sqlite3.connect(uri, uri=True)
+            con.execute("SELECT 1 FROM knowledge_chunks LIMIT 1").fetchone()
+            return con
+        except sqlite3.Error:
+            continue
+    print(f"  no pude abrir la base en {db}, sigo solo con texto plano")
+    return None
+
+
+def fts(con, tabla, consulta, sql, limite):
+    palabras = [w + "*" for w in re.findall(r"[\wáéíóúñ]{2,}", consulta.lower())]
+    if not palabras:
+        return []
+    for expr in (" ".join(palabras), " OR ".join(palabras)):
+        try:
+            r = con.execute(sql, (expr, limite)).fetchall()
+        except sqlite3.DatabaseError as e:
+            print(f"  el indice {tabla} fallo: {e}")
+            print(f"  reconstruyelo, ver cola/INFORME-recuperacion.md")
+            return []
+        if r:
+            return r
+    return []
+
+
+def grep(carpeta, consulta, limite, prefijo=""):
+    términos = [sin_tildes(w) for w in consulta.split() if len(w) > 2]
+    salida = []
+    for dp, _, fs in os.walk(carpeta):
+        for f in fs:
+            if not f.lower().endswith((".md", ".txt")):
+                continue
+            p = os.path.join(dp, f)
+            try:
+                txt = open(p, encoding="utf-8", errors="replace").read()
+            except OSError:
+                continue
+            plano = sin_tildes(txt)
+            hits = sum(1 for t in términos if t in plano)
+            if hits:
+                i = min((plano.find(t) for t in términos if t in plano), default=0)
+                salida.append((hits, os.path.relpath(p, ROOT).replace(os.sep, "/"),
+                               re.sub(r"\s+", " ", txt[max(0, i - 60):i + 120])))
+    salida.sort(key=lambda x: -x[0])
+    for _, ruta, frag in salida[:limite]:
+        print(f"  {prefijo}{ruta}")
+        print(f"      …{frag.strip()}…")
+    if not salida:
+        print("  nada")
+
+
+def main():
+    q = " ".join(sys.argv[1:]).strip()
+    if not q:
+        sys.exit('uso: bin/buscar "lo que sea"   |   bin/buscar RCS-28535')
+
+    if TICKET.match(q):
+        ficha = os.path.join(ROOT, "tickets", q.upper() + ".md")
+        if os.path.exists(ficha):
+            print(open(ficha, encoding="utf-8").read()[:4000])
+            print(f"\n  ficha completa: tickets/{q.upper()}.md")
+            bit = os.path.join(ROOT, "bitacora", q.upper() + ".md")
+            if os.path.exists(bit):
+                print(f"  bitacora: bitacora/{q.upper()}.md")
+            return
+
+    con = abrir(DB) if os.path.exists(DB) else None
+    if con is not None:
+        titulo("CONOCIMIENTO")
+        filas = fts(con, "chunks_fts", q, """
+            SELECT c.id, f.name, c.title,
+                   replace(snippet(chunks_fts,1,'»','«','…',14), char(10), ' ')
+            FROM chunks_fts JOIN knowledge_chunks c ON c.id=chunks_fts.rowid
+            JOIN knowledge_folders f ON f.id=c.folder_id
+            WHERE chunks_fts MATCH ? ORDER BY rank LIMIT ?""", 8)
+        for cid, carpeta, tit, frag in filas:
+            print(f"  [{cid}] {carpeta} › {(tit or '')[:58]}")
+            print(f"      {frag}")
+        if not filas:
+            print("  nada")
+
+        titulo("MESA DE TRABAJO")
+        filas = fts(con, "items_fts", q, """
+            SELECT i.id, i.status, i.title FROM items_fts
+            JOIN items i ON i.id=items_fts.rowid
+            WHERE items_fts MATCH ? ORDER BY rank LIMIT ?""", 6)
+        for iid, estado, tit in filas:
+            print(f"  [{iid}] {estado} · {(tit or '')[:70]}")
+        if not filas:
+            print("  nada")
+        con.close()
+    elif not os.path.exists(DB):
+        print(f"(sin base en {DB}, busco solo en texto plano)")
+
+    for carpeta, nombre, lim in (("brain/memoria", "MEMORIAS", 5),
+                                 ("tickets", "TICKETS", 6),
+                                 ("bitacora", "BITACORA", 4),
+                                 ("inbox", "SIN CLASIFICAR (inbox)", 4),
+                                 ("confluence/RTS-triage", "TRIAGE CONFLUENCE (precedentes)", 5)):
+        d = os.path.join(ROOT, carpeta)
+        if os.path.isdir(d):
+            titulo(nombre)
+            grep(d, q, lim)
+
+
+if __name__ == "__main__":
+    main()

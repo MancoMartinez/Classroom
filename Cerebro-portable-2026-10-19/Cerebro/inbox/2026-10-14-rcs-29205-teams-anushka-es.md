@@ -1,0 +1,3 @@
+Muchas gracias, Anushka, esto queda muy claro, y muy buena observación sobre el cruce entre el seed y el rebuild. Estoy conforme con las respuestas, así que voy a aprobar el PR. La diferencia del 0.3% y la aproximación de x_refundtoown me parecen razonables mientras queden documentadas en la nota de cierre.
+
+Sí, voy a verificar los work items del 24 ago al 27 sep cuando termine el rebuild. Una pregunta para revisar lo correcto: esa corrida terminó con 0 filas en lugar de fallar, así que ¿se regeneraría sola después del rebuild o alguien tiene que volver a correrla? ¿Me avisas aquí cuando el operador termine el seed, el rebuild de tender y la recarga de paid in y paid out? ¡Gracias de nuevo!

@@ -1,0 +1,822 @@
+{
+  "issue": {
+    "id": "1398181",
+    "key": "RCS-29469",
+    "fields": {
+      "statusCategory": {
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      },
+      "lastViewed": "2026-10-16T13:40:05.540-0400",
+      "labels": [],
+      "issuelinks": [],
+      "assignee": {
+        "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+        "emailAddress": "jmartinez@apprissretail.com",
+        "displayName": "Juan Martinez",
+        "active": true,
+        "timeZone": "America/New_York",
+        "accountType": "atlassian"
+      },
+      "components": [],
+      "subtasks": [],
+      "reporter": {
+        "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+        "emailAddress": "colton.neal@tailoredbrands.com",
+        "displayName": "Colton Neal",
+        "active": true,
+        "timeZone": "America/New_York",
+        "accountType": "customer"
+      },
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "votes": {
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      },
+      "issuetype": {
+        "id": "10102",
+        "description": "Issue is related to a production outage.",
+        "name": "Incident",
+        "subtask": false,
+        "hierarchyLevel": 0
+      },
+      "project": {
+        "id": "19251",
+        "key": "RCS",
+        "name": "Retail Customer Support",
+        "projectTypeKey": "service_desk",
+        "simplified": false
+      },
+      "watches": {
+        "watchCount": 3,
+        "isWatching": true
+      },
+      "updated": "2026-10-16T13:40:31.178-0400",
+      "description": "<p>Hello Rae/J.R,/Juan/Engineering Team,</p><p>As discussed on our recent call earlier today, attached are the requested location, teams, and permissions files, including a few examples of Users who did not have the security incident IDs listed within their profile. I also included a few emails of other Users who I may or may not have manually reviewed that may be experiencing the same issues as described on the call.</p><p>Please let us know if anything else is needed to help support fixing the issue.</p><p>Thank you,</p><p>Colton Neal</p>",
+      "timetracking": {},
+      "summary": "Tailored Brands - Appriss Incident Security ID Examples, Call Follow Up",
+      "comment": {
+        "comments": [
+          {
+            "id": "3398319",
+            "author": {
+              "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+              "emailAddress": "colton.neal@tailoredbrands.com",
+              "displayName": "Colton Neal",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "customer"
+            },
+            "body": "<div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"ba5cd1c0-fea1-4b45-8257-800c46ff4fb6\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"ffe96f04-220c-4579-a3be-4e12c86ad92e\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"f8b97e25-21bc-4ccd-ac29-7cdccb447d65\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"36fa3462-d1ea-4eb7-9f26-d5bcc5c9069c\"></div></div>",
+            "updateAuthor": {
+              "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+              "emailAddress": "colton.neal@tailoredbrands.com",
+              "displayName": "Colton Neal",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "customer"
+            },
+            "created": "2026-10-16T13:18:07.371-0400",
+            "updated": "2026-10-16T13:18:07.371-0400",
+            "jsdPublic": true
+          },
+          {
+            "id": "3398324",
+            "author": {
+              "accountId": "61f44bbaaeaacb0072265cd4",
+              "emailAddress": "sramdas@apprissretail.com",
+              "displayName": "Shireesh Ramdas",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "body": "<p data-local-id=\"233f3229b13c\">Hello Colton,</p><p data-local-id=\"c71f434c0c42\">Thank you for contacting Appriss Retail Support.</p><p data-local-id=\"6c346de1e6fc\">We’ve received your ticket and are routing it to the appropriate team for assistance. The assigned representative will follow up as soon as they’ve had a chance to review.</p><p data-local-id=\"d7f457023483\">Kind Regards,</p><p data-local-id=\"e0bb62c2195e\">Appriss Retail Support </p>",
+            "updateAuthor": {
+              "accountId": "61f44bbaaeaacb0072265cd4",
+              "emailAddress": "sramdas@apprissretail.com",
+              "displayName": "Shireesh Ramdas",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-16T13:19:57.217-0400",
+            "updated": "2026-10-16T13:19:57.217-0400",
+            "jsdPublic": true
+          },
+          {
+            "id": "3398328",
+            "author": {
+              "accountId": "5f8852df6932330076610600",
+              "emailAddress": "nhawkins@apprissretail.com",
+              "displayName": "Nick Hawkins",
+              "active": true,
+              "timeZone": "Europe/London",
+              "accountType": "atlassian"
+            },
+            "body": "<p>🤖 Talos triage · confidence: low</p><p><strong>Talos can make mistakes. Please check important information.</strong></p><p><strong>Verdict</strong><br>Not enough to call this a Secure bug yet. The ticket only lists examples of users with no security ID in their profile, and the attached files can&#039;t be read here. No known or recurring incident matches.</p><p><strong>What we checked</strong></p><ul><li><p>A user&#039;s &quot;security ID&quot; in Incident is stored on the user record. It is set at account creation and sign-in, or by an admin security-level assignment, so each affected user needs checking individually.</p></li><li><p>When a user signs in through single sign-on, the ID comes from the sign-in provider or an admin assignment. If neither supplies one, the user keeps whatever value they already had, which is 0 for a new account. Only Appriss and Trebu email addresses are forced to a fixed ID.</p></li><li><p>The client&#039;s notes and the shared known-incidents list have nothing on missing security IDs. The only Tailored Brands pattern listed is the cancelled-transaction one, which is unrelated.</p></li><li><p>I couldn&#039;t tell from the ticket whether these users sign in through single sign-on or with a local password. That changes where to look.</p></li></ul><p><strong>Next</strong></p><ul><li><p>Compare the affected users in Colton&#039;s files against the live data. Check how each one signs in, whether their security ID is blank or 0, and whether an admin security-level assignment exists for them.</p></li><li><p>Ask Colton when the IDs were last correct for these users, and whether anything changed on their side (sign-in provider group mappings, a new user import, a migration to platform login).</p></li></ul>",
+            "updateAuthor": {
+              "accountId": "5f8852df6932330076610600",
+              "emailAddress": "nhawkins@apprissretail.com",
+              "displayName": "Nick Hawkins",
+              "active": true,
+              "timeZone": "Europe/London",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-16T13:23:53.929-0400",
+            "updated": "2026-10-16T13:23:53.929-0400",
+            "jsdPublic": false
+          },
+          {
+            "id": "3398330",
+            "author": {
+              "accountId": "61f44bbaaeaacb0072265cd4",
+              "emailAddress": "sramdas@apprissretail.com",
+              "displayName": "Shireesh Ramdas",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "body": "<ul data-local-id=\"50757b53d096\"><li data-local-id=\"b7d3168588c5\"><p data-local-id=\"96eb35634304\"><a href=\"https://teams.microsoft.com/l/message/19:d3b0ee0652e64b87a253d54ba3252810@thread.tacv2/1792171421019?tenantId=00646d1d-3d1b-48b6-bb60-e85055107d85&amp;groupId=251a274e-8105-4474-9da9-bbacfce8f037&amp;parentMessageId=1792171421019&amp;teamName=Retail%20Ops&amp;channelName=AALPS%20Issues&amp;createdTime=1792171421019\">Shireesh Ramdas: Tailored Brands - Appriss Incident Security ID Examples, Call Fol... | AALPS Issues</a></p></li></ul>",
+            "updateAuthor": {
+              "accountId": "61f44bbaaeaacb0072265cd4",
+              "emailAddress": "sramdas@apprissretail.com",
+              "displayName": "Shireesh Ramdas",
+              "active": true,
+              "timeZone": "Asia/Kolkata",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-16T13:24:31.850-0400",
+            "updated": "2026-10-16T13:24:31.850-0400",
+            "jsdPublic": false
+          },
+          {
+            "id": "3398341",
+            "author": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "body": "<p data-local-id=\"ae5b13b76cb2\">Hello <span data-local-id=\"0e407fa7-f55a-4faf-956a-01f384de2a8e\" data-type=\"mention\" data-user-id=\"qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc\">@Colton Neal</span> </p><p data-local-id=\"f90a7e309fc4\">I have taken ownership of this ticket and will be investigating it for you. Please allow some time for me to research the issue and I will get back with you just as soon as I have any information.</p><p data-local-id=\"b453ded9eeaf\">Kind regards, </p>",
+            "updateAuthor": {
+              "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+              "emailAddress": "jmartinez@apprissretail.com",
+              "displayName": "Juan Martinez",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            },
+            "created": "2026-10-16T13:40:31.108-0400",
+            "updated": "2026-10-16T13:40:31.108-0400",
+            "jsdPublic": true
+          }
+        ],
+        "maxResults": 5,
+        "total": 5,
+        "startAt": 0
+      },
+      "statuscategorychangedate": "2026-10-16T13:40:13.369-0400",
+      "fixVersions": [],
+      "priority": {
+        "name": "High",
+        "id": "9"
+      },
+      "versions": [],
+      "status": {
+        "description": "This was auto-generated by Jira Service Desk during workflow import",
+        "name": "Work in progress",
+        "id": "12386",
+        "statusCategory": {
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "creator": {
+        "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+        "emailAddress": "colton.neal@tailoredbrands.com",
+        "displayName": "Colton Neal",
+        "active": true,
+        "timeZone": "America/New_York",
+        "accountType": "customer"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "workratio": -1,
+      "created": "2026-10-16T13:18:06.514-0400",
+      "attachment": [
+        {
+          "id": "1442936",
+          "filename": "appriss_sso_locations_20261014024505.csv",
+          "author": {
+            "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+            "emailAddress": "colton.neal@tailoredbrands.com",
+            "displayName": "Colton Neal",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "customer"
+          },
+          "created": "2026-10-16T13:17:48.127-0400",
+          "size": 254031,
+          "mimeType": "text/csv",
+          "content": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/content/1442936",
+          "thumbnail": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/thumbnail/1442936"
+        },
+        {
+          "id": "1442935",
+          "filename": "appriss_sso_permissions_20261014014506.csv",
+          "author": {
+            "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+            "emailAddress": "colton.neal@tailoredbrands.com",
+            "displayName": "Colton Neal",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "customer"
+          },
+          "created": "2026-10-16T13:17:48.051-0400",
+          "size": 211292,
+          "mimeType": "text/plain",
+          "content": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/content/1442935",
+          "thumbnail": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/thumbnail/1442935"
+        },
+        {
+          "id": "1442937",
+          "filename": "appriss_sso_teams_20261014034500.csv",
+          "author": {
+            "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+            "emailAddress": "colton.neal@tailoredbrands.com",
+            "displayName": "Colton Neal",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "customer"
+          },
+          "created": "2026-10-16T13:17:48.570-0400",
+          "size": 198966,
+          "mimeType": "text/plain",
+          "content": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/content/1442937",
+          "thumbnail": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/thumbnail/1442937"
+        },
+        {
+          "id": "1442938",
+          "filename": "Appriss Incident Security ID Examples.xlsx",
+          "author": {
+            "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+            "emailAddress": "colton.neal@tailoredbrands.com",
+            "displayName": "Colton Neal",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "customer"
+          },
+          "created": "2026-10-16T13:17:49.560-0400",
+          "size": 570564,
+          "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "content": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/content/1442938",
+          "thumbnail": "https://jira-prod-us-52-as-4.prod.atl-paas.net/rest/api/3/attachment/thumbnail/1442938"
+        }
+      ],
+      "customFields": {
+        "Problem": {
+          "id": "customfield_15195",
+          "value": {
+            "value": "Other",
+            "id": "26299"
+          }
+        },
+        "Severity": {
+          "id": "customfield_15199",
+          "value": {
+            "value": "3 - Normal",
+            "id": "16560"
+          }
+        },
+        "Product Type": {
+          "id": "customfield_15196",
+          "value": {
+            "value": "Incident (f.k.a. LPMS)",
+            "id": "28534"
+          }
+        },
+        "[CHART] Date of First Response": {
+          "id": "customfield_21746",
+          "value": "2026-10-16T13:19:57.217-0400"
+        },
+        "Monitor": {
+          "id": "customfield_15191",
+          "value": "https://prtg.solutions-sysrepublic.com/"
+        },
+        "Target Assignment Time": {
+          "id": "customfield_18575",
+          "value": {
+            "id": "53",
+            "name": "Target Assignment Time",
+            "completedCycles": [
+              {
+                "startTime": {
+                  "iso8601": "2026-10-16T13:18:06-0400",
+                  "jira": "2026-10-16T13:18:06.514-0400",
+                  "friendly": "Today 1:18 PM",
+                  "epochMillis": 1792171086514
+                },
+                "stopTime": {
+                  "iso8601": "2026-10-16T13:40:07-0400",
+                  "jira": "2026-10-16T13:40:07.718-0400",
+                  "friendly": "Today 1:40 PM",
+                  "epochMillis": 1792172407718
+                },
+                "breachTime": {
+                  "iso8601": "2026-10-16T13:48:06-0400",
+                  "jira": "2026-10-16T13:48:06.514-0400",
+                  "friendly": "Today 1:48 PM",
+                  "epochMillis": 1792172886514
+                },
+                "breached": false,
+                "goalDuration": {
+                  "millis": 1800000,
+                  "friendly": "30m"
+                },
+                "elapsedTime": {
+                  "millis": 1321204,
+                  "friendly": "22m"
+                },
+                "remainingTime": {
+                  "millis": 478796,
+                  "friendly": "7m"
+                }
+              }
+            ],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Time to resolution": {
+          "id": "customfield_15187",
+          "value": {
+            "id": "43",
+            "name": "Time to resolution",
+            "completedCycles": [],
+            "ongoingCycle": {
+              "startTime": {
+                "iso8601": "2026-10-16T13:18:06-0400",
+                "jira": "2026-10-16T13:18:06.514-0400",
+                "friendly": "Today 1:18 PM",
+                "epochMillis": 1792171086514
+              },
+              "breachTime": {
+                "iso8601": "2026-10-17T03:18:06-0400",
+                "jira": "2026-10-17T03:18:06.514-0400",
+                "friendly": "17/Oct/26 3:18 AM",
+                "epochMillis": 1792221486514
+              },
+              "breached": false,
+              "paused": false,
+              "withinCalendarHours": true,
+              "goalDuration": {
+                "millis": 50400000,
+                "friendly": "14h"
+              },
+              "elapsedTime": {
+                "millis": 3414427,
+                "friendly": "56m"
+              },
+              "remainingTime": {
+                "millis": 46985573,
+                "friendly": "13h 3m"
+              }
+            },
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Assignment date (current assignee)": {
+          "id": "customfield_20085",
+          "value": "2026-10-16T13:40:00.000-0400"
+        },
+        "Target First Response": {
+          "id": "customfield_18672",
+          "value": {
+            "id": "54",
+            "name": "Target First Response",
+            "completedCycles": [
+              {
+                "startTime": {
+                  "iso8601": "2026-10-16T13:18:06-0400",
+                  "jira": "2026-10-16T13:18:06.514-0400",
+                  "friendly": "Today 1:18 PM",
+                  "epochMillis": 1792171086514
+                },
+                "stopTime": {
+                  "iso8601": "2026-10-16T13:19:57-0400",
+                  "jira": "2026-10-16T13:19:57.217-0400",
+                  "friendly": "Today 1:19 PM",
+                  "epochMillis": 1792171197217
+                },
+                "breachTime": {
+                  "iso8601": "2026-10-17T13:18:06-0400",
+                  "jira": "2026-10-17T13:18:06.514-0400",
+                  "friendly": "17/Oct/26 1:18 PM",
+                  "epochMillis": 1792257486514
+                },
+                "breached": false,
+                "goalDuration": {
+                  "millis": 86400000,
+                  "friendly": "24h"
+                },
+                "elapsedTime": {
+                  "millis": 110703,
+                  "friendly": "1m"
+                },
+                "remainingTime": {
+                  "millis": 86289297,
+                  "friendly": "23h 58m"
+                }
+              }
+            ],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Assigned Team First Response": {
+          "id": "customfield_18673",
+          "value": {
+            "id": "55",
+            "name": "Assigned Team First Response",
+            "completedCycles": [
+              {
+                "startTime": {
+                  "iso8601": "2026-10-16T13:40:07-0400",
+                  "jira": "2026-10-16T13:40:07.718-0400",
+                  "friendly": "Today 1:40 PM",
+                  "epochMillis": 1792172407718
+                },
+                "stopTime": {
+                  "iso8601": "2026-10-16T13:40:31-0400",
+                  "jira": "2026-10-16T13:40:31.108-0400",
+                  "friendly": "Today 1:40 PM",
+                  "epochMillis": 1792172431108
+                },
+                "breachTime": {
+                  "iso8601": "2026-10-16T15:40:07-0400",
+                  "jira": "2026-10-16T15:40:07.718-0400",
+                  "friendly": "Today 3:40 PM",
+                  "epochMillis": 1792179607718
+                },
+                "breached": false,
+                "goalDuration": {
+                  "millis": 7200000,
+                  "friendly": "2h"
+                },
+                "elapsedTime": {
+                  "millis": 23390,
+                  "friendly": "0m"
+                },
+                "remainingTime": {
+                  "millis": 7176610,
+                  "friendly": "1h 59m"
+                }
+              }
+            ],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Time to Resolution": {
+          "id": "customfield_19992",
+          "value": {
+            "id": "74",
+            "name": "TJX Time to Resolution",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Roadmap Rank": {
+          "id": "customfield_22368",
+          "value": {
+            "value": "Not Committed",
+            "id": "31694"
+          }
+        },
+        "TJX Target First Response": {
+          "id": "customfield_19993",
+          "value": {
+            "id": "75",
+            "name": "TJX Target First Response",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Assigned Team First Response": {
+          "id": "customfield_19994",
+          "value": {
+            "id": "76",
+            "name": "TJX Assigned Team First Response",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Target Resolution Identified": {
+          "id": "customfield_19995",
+          "value": {
+            "id": "77",
+            "name": "TJX Target Resolution Identified",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "TJX Target Assignment Time": {
+          "id": "customfield_19997",
+          "value": {
+            "id": "78",
+            "name": "TJX Target Assignment Time",
+            "completedCycles": [],
+            "slaDisplayFormat": "NEW_SLA_FORMAT"
+          }
+        },
+        "Work item created forms": {
+          "id": "customfield_23882",
+          "value": [
+            {
+              "id": "78bb8591-7a78-4668-b40f-6c921aef4d34"
+            }
+          ]
+        },
+        "Sentiment": {
+          "id": "customfield_19984",
+          "value": {
+            "id": "1000",
+            "name": "Negative"
+          }
+        },
+        "Request participants": {
+          "id": "customfield_14971",
+          "value": [
+            {
+              "accountId": "712020:176ba036-bdb4-4d3f-9c42-f77ea14f3a04",
+              "emailAddress": "rhatfield@apprissretail.com",
+              "displayName": "Rae Hatfield",
+              "active": true,
+              "timeZone": "America/New_York",
+              "accountType": "atlassian"
+            }
+          ]
+        },
+        "Customer Request Type": {
+          "id": "customfield_14972",
+          "value": {
+            "requestType": {
+              "_expands": [
+                "field"
+              ],
+              "id": "87",
+              "name": "Support Ticket",
+              "description": "Use this link to create an incident ticket, training request, ask a question etc.",
+              "helpText": "{panel:borderStyle=solid|borderColor=#fa505f|borderWidth=2px|bgColor=#f9f9f9|titleBGColor=#fa505f|title=Support Ticket Guidelines}\n‎ To ensure efficient issue resolution, please provide the following information when submitting a support ticket:\n\n* Detailed steps to reproduce the issue\n* Associated URLs\n* Screenshots (when applicable)\n* Expected outcome and actual outcome\n‎ \n{panel}",
+              "defaultName": "Support Ticket",
+              "issueTypeId": "10102",
+              "serviceDeskId": "5",
+              "portalId": "5",
+              "groupIds": [
+                "18"
+              ],
+              "icon": {
+                "id": "17427"
+              }
+            },
+            "currentStatus": {
+              "status": "Work in progress",
+              "statusCategory": "INDETERMINATE",
+              "statusDate": {
+                "iso8601": "2026-10-16T13:40:13-0400",
+                "jira": "2026-10-16T13:40:13.369-0400",
+                "friendly": "Today 1:40 PM",
+                "epochMillis": 1792172413369
+              }
+            }
+          }
+        },
+        "Organizations": {
+          "id": "customfield_14973",
+          "value": [
+            {
+              "id": "245",
+              "uuid": "097c9028-d9ad-4767-8ac3-02c2be927b1c",
+              "name": "Tailored Brands",
+              "scimManaged": false
+            }
+          ]
+        },
+        "RCS: Issue Type": {
+          "id": "customfield_18881",
+          "value": {
+            "value": "Incident",
+            "id": "27039"
+          }
+        },
+        "Account Service Level": {
+          "id": "customfield_18873",
+          "value": {
+            "value": "High-Touch",
+            "id": "27035"
+          }
+        },
+        "Original Assignee": {
+          "id": "customfield_19965",
+          "value": {
+            "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+            "emailAddress": "jmartinez@apprissretail.com",
+            "displayName": "Juan Martinez",
+            "active": true,
+            "timeZone": "America/New_York",
+            "accountType": "atlassian"
+          }
+        },
+        "Complexity": {
+          "id": "customfield_22567",
+          "value": {
+            "value": "High",
+            "id": "32403"
+          }
+        },
+        "Response/Triage Time SLA Violation": {
+          "id": "customfield_18861",
+          "value": {
+            "value": "No",
+            "id": "27022"
+          }
+        },
+        "Assigned Time SLA Violation": {
+          "id": "customfield_18862",
+          "value": {
+            "value": "No",
+            "id": "27024"
+          }
+        },
+        "Locked forms": {
+          "id": "customfield_18867",
+          "value": 0
+        },
+        "Total forms": {
+          "id": "customfield_18868",
+          "value": 1
+        },
+        "Resolution Time SLA Violation": {
+          "id": "customfield_18863",
+          "value": {
+            "value": "No",
+            "id": "27026"
+          }
+        },
+        "Open forms": {
+          "id": "customfield_18865",
+          "value": 0
+        },
+        "Submitted forms": {
+          "id": "customfield_18866",
+          "value": 1
+        },
+        "Note:": {
+          "id": "customfield_18858",
+          "value": "{panel:title=}\r\n*+Please do not edit the two time zone fields below. Thank you!:)+*\r\n{panel}\r\n"
+        },
+        "Suggested QA Scenarios": {
+          "id": "customfield_18859",
+          "value": "<table><thead><tr><th><p><strong>Pass/NoPass</strong></p></th><th><p><strong>Scenario</strong></p></th><th><p><strong>Expected Outcome</strong></p></th><th><p><strong>Actual Outcome</strong></p></th><th><p><strong>Notes</strong></p></th></tr></thead><tbody><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr><tr><td><p></p></td></tr></tbody></table>"
+        },
+        "Last Update By Assignee": {
+          "id": "customfield_18855",
+          "value": "2026-10-16T13:40:00.000-0400"
+        },
+        "Escalate Using Opsgenie": {
+          "id": "customfield_18827",
+          "value": "https://trebuco.atlassian.net/jira/ops/alerts"
+        },
+        "Rank": {
+          "id": "customfield_12270",
+          "value": "1|i4eljc:"
+        },
+        "Date of last comment": {
+          "id": "customfield_14570",
+          "value": "2069"
+        },
+        "Responders": {
+          "id": "customfield_18809",
+          "value": []
+        },
+        "Request language": {
+          "id": "customfield_18808",
+          "value": {
+            "languageCode": "en",
+            "displayName": "English"
+          }
+        },
+        "PRD Required?": {
+          "id": "customfield_20680",
+          "value": {
+            "value": "Yes",
+            "id": "29502"
+          }
+        },
+        "Development": {
+          "id": "customfield_18800",
+          "value": "{}"
+        }
+      }
+    },
+    "appliedContentFormat": "html"
+  },
+  "comments": {
+    "startAt": 0,
+    "maxResults": 100,
+    "total": 5,
+    "isLast": true,
+    "appliedContentFormat": "html",
+    "comments": [
+      {
+        "id": "3398319",
+        "author": {
+          "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+          "displayName": "Colton Neal"
+        },
+        "body": "<div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"ba5cd1c0-fea1-4b45-8257-800c46ff4fb6\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"ffe96f04-220c-4579-a3be-4e12c86ad92e\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"f8b97e25-21bc-4ccd-ac29-7cdccb447d65\"></div></div><div data-type=\"media-group\"><div data-type=\"media\" data-media-type=\"file\" data-id=\"36fa3462-d1ea-4eb7-9f26-d5bcc5c9069c\"></div></div>",
+        "created": "2026-10-16T13:18:07.371-0400",
+        "updated": "2026-10-16T13:18:07.371-0400",
+        "updateAuthor": {
+          "accountId": "qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc",
+          "displayName": "Colton Neal"
+        },
+        "jsdPublic": true
+      },
+      {
+        "id": "3398324",
+        "author": {
+          "accountId": "61f44bbaaeaacb0072265cd4",
+          "displayName": "Shireesh Ramdas"
+        },
+        "body": "<p data-local-id=\"233f3229b13c\">Hello Colton,</p><p data-local-id=\"c71f434c0c42\">Thank you for contacting Appriss Retail Support.</p><p data-local-id=\"6c346de1e6fc\">We’ve received your ticket and are routing it to the appropriate team for assistance. The assigned representative will follow up as soon as they’ve had a chance to review.</p><p data-local-id=\"d7f457023483\">Kind Regards,</p><p data-local-id=\"e0bb62c2195e\">Appriss Retail Support </p>",
+        "created": "2026-10-16T13:19:57.217-0400",
+        "updated": "2026-10-16T13:19:57.217-0400",
+        "updateAuthor": {
+          "accountId": "61f44bbaaeaacb0072265cd4",
+          "displayName": "Shireesh Ramdas"
+        },
+        "jsdPublic": true
+      },
+      {
+        "id": "3398328",
+        "author": {
+          "accountId": "5f8852df6932330076610600",
+          "displayName": "Nick Hawkins"
+        },
+        "body": "<p>🤖 Talos triage · confidence: low</p><p><strong>Talos can make mistakes. Please check important information.</strong></p><p><strong>Verdict</strong><br>Not enough to call this a Secure bug yet. The ticket only lists examples of users with no security ID in their profile, and the attached files can&#039;t be read here. No known or recurring incident matches.</p><p><strong>What we checked</strong></p><ul><li><p>A user&#039;s &quot;security ID&quot; in Incident is stored on the user record. It is set at account creation and sign-in, or by an admin security-level assignment, so each affected user needs checking individually.</p></li><li><p>When a user signs in through single sign-on, the ID comes from the sign-in provider or an admin assignment. If neither supplies one, the user keeps whatever value they already had, which is 0 for a new account. Only Appriss and Trebu email addresses are forced to a fixed ID.</p></li><li><p>The client&#039;s notes and the shared known-incidents list have nothing on missing security IDs. The only Tailored Brands pattern listed is the cancelled-transaction one, which is unrelated.</p></li><li><p>I couldn&#039;t tell from the ticket whether these users sign in through single sign-on or with a local password. That changes where to look.</p></li></ul><p><strong>Next</strong></p><ul><li><p>Compare the affected users in Colton&#039;s files against the live data. Check how each one signs in, whether their security ID is blank or 0, and whether an admin security-level assignment exists for them.</p></li><li><p>Ask Colton when the IDs were last correct for these users, and whether anything changed on their side (sign-in provider group mappings, a new user import, a migration to platform login).</p></li></ul>",
+        "created": "2026-10-16T13:23:53.929-0400",
+        "updated": "2026-10-16T13:23:53.929-0400",
+        "updateAuthor": {
+          "accountId": "5f8852df6932330076610600",
+          "displayName": "Nick Hawkins"
+        },
+        "jsdPublic": false
+      },
+      {
+        "id": "3398330",
+        "author": {
+          "accountId": "61f44bbaaeaacb0072265cd4",
+          "displayName": "Shireesh Ramdas"
+        },
+        "body": "<ul data-local-id=\"50757b53d096\"><li data-local-id=\"b7d3168588c5\"><p data-local-id=\"96eb35634304\"><a href=\"https://teams.microsoft.com/l/message/19:d3b0ee0652e64b87a253d54ba3252810@thread.tacv2/1792171421019?tenantId=00646d1d-3d1b-48b6-bb60-e85055107d85&amp;groupId=251a274e-8105-4474-9da9-bbacfce8f037&amp;parentMessageId=1792171421019&amp;teamName=Retail%20Ops&amp;channelName=AALPS%20Issues&amp;createdTime=1792171421019\">Shireesh Ramdas: Tailored Brands - Appriss Incident Security ID Examples, Call Fol... | AALPS Issues</a></p></li></ul>",
+        "created": "2026-10-16T13:24:31.850-0400",
+        "updated": "2026-10-16T13:24:31.850-0400",
+        "updateAuthor": {
+          "accountId": "61f44bbaaeaacb0072265cd4",
+          "displayName": "Shireesh Ramdas"
+        },
+        "jsdPublic": false
+      },
+      {
+        "id": "3398341",
+        "author": {
+          "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+          "displayName": "Juan Martinez"
+        },
+        "body": "<p data-local-id=\"ae5b13b76cb2\">Hello <span data-local-id=\"0e407fa7-f55a-4faf-956a-01f384de2a8e\" data-type=\"mention\" data-user-id=\"qm:77071153-8149-425d-9cc5-2ef53c35a3bd:7fbd170e-378b-4b15-a44d-4856d507b4dc\">@Colton Neal</span> </p><p data-local-id=\"f90a7e309fc4\">I have taken ownership of this ticket and will be investigating it for you. Please allow some time for me to research the issue and I will get back with you just as soon as I have any information.</p><p data-local-id=\"b453ded9eeaf\">Kind regards, </p>",
+        "created": "2026-10-16T13:40:31.108-0400",
+        "updated": "2026-10-16T13:40:31.108-0400",
+        "updateAuthor": {
+          "accountId": "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b",
+          "displayName": "Juan Martinez"
+        },
+        "jsdPublic": true
+      }
+    ]
+  }
+}

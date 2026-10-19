@@ -1,0 +1,403 @@
+#!/usr/bin/env python3
+"""Ordena la cola de tickets de Juan de mas urgente a menos.
+
+El modelo es lexicografico, no un puntaje opaco. Cuatro niveles, y dentro de cada nivel
+se ordena por dias de silencio de cara al cliente. Cada ticket sale con el motivo escrito
+para que se pueda auditar y discutir.
+
+  Nivel 1  TE TOCA RESPONDER      el ultimo humano que hablo fue el cliente
+  Nivel 2  PROMESA SIN CUMPLIR    tu ultimo comentario prometio un update que no llego
+  Nivel 3  ESPERANDO AL CLIENTE   preguntaste y no contestan, toca perseguir
+  Nivel 4  EN MOVIMIENTO INTERNO  ingenieria trabajando, nada pendiente de cara al cliente
+
+Reglas que respeta, tomadas de brain/memoria:
+  · `updated` de Jira no es señal de actividad. El reloj cuenta desde el ultimo comentario real.
+  · Los comentarios de Automation for Jira y las notas internas no responden al cliente.
+  · Jira es la fuente de verdad. Este script solo lee un volcado, nunca escribe en Jira.
+
+Uso:
+    python3 bin/cola.py cola/jira-dump.json
+    python3 bin/cola.py cola/jira-dump.json --json     # solo el estado, sin markdown
+"""
+import json, sys, os, re, datetime
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+JUAN = "712020:688bd119-6d13-450b-95ac-b1ef3fbb547b"
+JIRA = "https://trebuco.atlassian.net/browse/"
+
+# Identificacion del cliente. Tres vias, en orden.
+#   1. Cuenta de Jira Service Management, el caso normal.
+#   2. Dominio del correo en el nombre visible. Medido el 8 sep 2026 sobre los 46 autores del
+#      volcado: de los 33 sin `qm:`, uno solo era cliente, damir.demirovic@nike.com con cuenta
+#      712020:. Los otros 32 eran Appriss e ingenieria.
+#   3. Lista manual, para el cliente que no muestra correo ni tiene cuenta qm:.
+DOMINIOS_INTERNOS = ("apprissretail.com", "appriss.com", "nuaav.com", "sysrepublic.com",
+                     "trebuco.com", "apprissinsights.com")
+CLIENTES_MANUALES = ()   # accountIds. Agrega aqui al cliente que las dos vias de arriba no atrapen.
+RE_CORREO = re.compile(r"[\w.+-]+@([\w-]+\.[\w.-]+)")
+
+
+def es_cliente(aid, nombre=""):
+    if aid.startswith("qm:") or aid in CLIENTES_MANUALES:
+        return True
+    m = RE_CORREO.search(nombre or "")
+    return bool(m) and m.group(1).lower().rstrip(".") not in DOMINIOS_INTERNOS
+
+
+# Compatibilidad con quien llame sin el nombre. Sin nombre solo puede ver la cuenta.
+ES_CLIENTE = lambda aid: es_cliente(aid, "")
+# Bots y automatizaciones. No hablan por Appriss ni por el cliente.
+BOTS = ("557058:",)
+MARCAS_INTERNAS = ("internal note", "a comment has been made on the internal",
+                   "the following linked issue was commented")
+
+# Compromisos de cara al cliente. Alta precision, en ingles, tal como se escriben en RCS.
+PROMESA = [
+    r"i will provide an update", r"will provide an update",
+    r"i will get back", r"we will get back", r"get back to you",
+    r"we will come back", r"will come back with",
+    r"we are checking", r"we are reviewing", r"we are looking",
+    r"i am looking into", r"looking into (it|this)", r"have begun reviewing",
+    r"will follow up", r"i'?ll follow up", r"we will follow up",
+    r"we'?ll confirm", r"will confirm once", r"once that is done",
+    r"we will pass", r"we will update", r"will let you know", r"keep you posted",
+    r"as soon as i have something", r"as soon as possible",
+    r"we will take it from there", r"we are working on",
+    r"i'?ll update you", r"i will update you", r"once i have more",
+    r"actively investigating", r"we will investigate", r"i will investigate",
+    r"will continue to (look|investigate|work|dig)", r"will see what we can do",
+    r"i'?ll (look|check|review|dig)", r"we'?ll (look|check|review)",
+    r"more findings", r"will provide", r"we will let",
+    # 9 sep 2026: RCS-28342 quedaba en nivel 4 con "I'll keep you updated" de hace 4 dias.
+    r"keep you (updated|informed|in the loop)", r"keep u updated",
+    r"i'?ll be working on", r"i will be working on", r"i'?m working on", r"i am working on",
+]
+# Pedidos al cliente. Cuando el ultimo movimiento es esto, la pelota es del cliente.
+PREGUNTA = [
+    r"could you", r"can you", r"would you", r"are you able",
+    r"please confirm", r"please provide", r"please let us know", r"please try",
+    r"please have", r"please share", r"please send", r"please ask",
+    r"please check", r"please verify", r"please review", r"please attempt",
+    r"do you (have|know|already)", r"we (still )?need (the|a|you)",
+    r"waiting on", r"we are still waiting",
+    r"i'?ll wait for", r"i will wait", r"we'?ll wait", r"we will wait",
+    r"i'?ll be waiting", r"i will be waiting", r"we'?ll be waiting",
+    r"we will be waiting", r"still waiting (to hear|for|on)",
+    r"awaiting (your|the|a)", r"pending your",
+    # 9 sep 2026: peticiones al cliente que el lexico no veia. Dos tickets, RCS-27941 y
+    # RCS-28294, quedaron en nivel 4 con una peticion viva encima.
+    r"if you (could|can)",
+    # 9 sep 2026: peticiones en imperativo, sin formula de cortesia. Juan las escribe asi.
+    r"i need (you|your)", r"we need (you|your)", r"i want you to", r"i need to know",
+    r"it'?s important that you", r"send me", r"send us", r"ask \w+ to",
+    r"can \w+ (run|check|try|send|confirm|attempt|verify)",
+    r"verify if", r"confirm (which|whether|if)",
+    r"you can (ask|try|clear|close|check|log|have)",
+    r"try (clearing|again|once more|logging)", r"retry",
+]
+
+# El cliente se compromete a volver el. Cuando su mensaje cierra asi, la pelota es suya y el
+# ticket no te toca a ti. Medido en RCS-28289: "Once I hear back from IT, I will let you know".
+CLIENTE_DEVUELVE = [
+    r"i'?ll let you know", r"i will let you know", r"we'?ll let you know", r"we will let you know",
+    r"i'?ll get back", r"i will get back", r"we'?ll get back", r"we will get back",
+    r"get back to you", r"come back to you",
+    r"i'?ll work on", r"i will work on", r"i am working on", r"i'?m working on",
+    r"we are (still )?working on", r"we'?re (still )?working on", r"still working on",
+    r"i'?ll (check|review|confirm|follow up|update|send|reach out)",
+    r"i will (check|review|confirm|follow up|update|send|reach out)",
+    r"we'?ll (check|review|confirm|follow up|update|send)",
+    r"we will (check|review|confirm|follow up|update|send)",
+    r"once i hear back", r"once we hear back", r"as soon as i (hear|know|have)",
+    r"waiting (on|for) (my|our|it|the) ", r"i'?ll be in touch", r"will keep you posted",
+]
+# Pedido o reclamo del cliente. Esto si te toca a ti, aunque venga con las gracias delante.
+# 9 sep 2026: promesa condicionada. "I will follow up once I hear back from your team" no es
+# una promesa pendiente de Appriss, es la pelota en el campo del cliente. Sin esta lista,
+# RCS-28240 y RCS-28351 subian a nivel 2 con el cliente debiendo datos.
+CONDICIONADA = [
+    r"once (i|we) hear back", r"once (that|this|it) is confirmed", r"once confirmed",
+    r"once you", r"when you", r"after you", r"as soon as you",
+    r"if you (are|do|still|see|continue)", r"upon (your|receipt)",
+    r"pending (your|the customer|the client)",
+]
+
+CLIENTE_PIDE = [
+    r"\?", r"could you", r"can you", r"would you", r"please ",
+    r"we need", r"i need", r"any update", r"do you have", r"do you know",
+    r"when will", r"what is the status", r"still (not|seeing|having|getting)",
+    r"is there (any|a)", r"let me know",
+]
+# Acuse de recibo puro. Solo cuenta si el mensaje no dice nada mas.
+CLIENTE_ACUSA = [
+    r"^(hi|hello|hey|good (morning|afternoon))?\s*[\w .,@-]{0,24}?\b"
+    r"(thanks|thank you|ok|okay|got it|received|noted|perfect|great|understood)\b",
+    r"appreciate (it|the|your)",
+]
+
+# Bloques que Appriss pega dentro de su comentario y que no son palabras de Appriss: correos
+# reenviados del cliente, cabeceras de Outlook, firmas y pies de portal. El lexico se aplica
+# solo a lo que Appriss escribio de su puño. Medido en RCS-27765, donde "Do you have a request
+# or problem", el pie del portal de IT del cliente, se leia como un pedido de Appriss.
+CORTES_CITA = [
+    r"email from (the )?customer", r"correo del cliente",
+    r"\s-{3,}\s", r"-{2,}\s*original message",
+    r"\bfrom:\s*[\w.+-]+@", r"\bon .{0,70}\bwrote:",
+    r"do you have a request or problem", r"log a ticket",
+    r"planned pto\s*:", r"confidentiality notice",
+    r"this (e-?mail|message)[^.]{0,60}(is intended|is confidential|and any attachments)",
+    r"sent from my (iphone|ipad|android|mobile)",
+]
+
+
+def sin_citas(texto):
+    """Recorta el comentario en el primer bloque citado o firma. Devuelve lo que Appriss
+    escribio de su puño. Si el comentario empieza con la cita, devuelve cadena vacia y el
+    ticket cae solo a nivel 4, que es lo correcto: Appriss no dijo nada propio."""
+    bajo = texto.lower()
+    corte = len(texto)
+    for pat in CORTES_CITA:
+        m = re.search(pat, bajo)
+        if m:
+            corte = min(corte, m.start())
+    return texto[:corte].strip()
+
+
+def cliente_devuelve_pelota(texto):
+    """True cuando el ultimo mensaje del cliente deja la pelota del lado del cliente: se
+    compromete el, o solo acusa recibo. Un pedido o una pregunta manda siempre a nivel 1."""
+    t = sin_citas(texto)
+    bajo = t.lower()
+    if any(re.search(p, bajo) for p in CLIENTE_PIDE):
+        return False
+    if any(re.search(p, bajo) for p in CLIENTE_DEVUELVE):
+        return True
+    # Acuse puro. Solo si el mensaje no trae contenido propio mas alla del saludo y la firma.
+    sustancia = re.sub(r"\b(hi|hello|hey|thanks|thank you|regards|best|kind regards|sincerely|"
+                       r"good morning|good afternoon|ok|okay|got it|noted|perfect|great)\b",
+                       " ", bajo)
+    sustancia = re.sub(r"[^a-z]+", " ", sustancia).strip()
+    return any(re.search(p, bajo) for p in CLIENTE_ACUSA) and len(sustancia) < 25
+
+
+def parse_fecha(s):
+    s = re.sub(r"([+-]\d{2})(\d{2})$", r"\1:\2", s)
+    return datetime.datetime.fromisoformat(s)
+
+
+def limpiar(texto):
+    """Quita mentions, smartlinks, imagenes y el sello EXTERNAL SENDER."""
+    t = re.sub(r"<custom[^>]*>(.*?)</custom>", r"\1", texto, flags=re.S)
+    t = re.sub(r"!\[\]\([^)]*\)", " ", t)
+    t = t.replace("EXTERNAL SENDER", " ")
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def es_interno(cuerpo):
+    b = cuerpo.lower()[:220]
+    return any(m in b for m in MARCAS_INTERNAS)
+
+
+def ultima_posicion(texto, patrones):
+    """Devuelve la posicion del ultimo patron que aparece, o -1. Sirve de desempate:
+    lo que se dijo mas cerca del final es lo que quedo en el aire."""
+    bajo = texto.lower()
+    pos = -1
+    for p in patrones:
+        for m in re.finditer(p, bajo):
+            pos = max(pos, m.start())
+    return pos
+
+
+def bitacora_de(tid):
+    """Ultima entrada que Juan reporto por chat. Formato: '## AAAA-MM-DD' al inicio de linea."""
+    p = os.path.join(ROOT, "bitacora", f"{tid}.md")
+    if not os.path.exists(p):
+        return None
+    txt = open(p, encoding="utf-8", errors="replace").read()
+    fechas = re.findall(r"^##\s*(\d{4}-\d{2}-\d{2})", txt, flags=re.M)
+    if not fechas:
+        return None
+    ult = max(fechas)
+    bloque = txt.split(f"## {ult}", 1)[1].strip().split("\n## ")[0].strip()
+    return {"fecha": ult, "nota": bloque[:400]}
+
+
+def clasificar(issue, ahora):
+    f = issue["fields"]
+    comentarios = f.get("comment", {}).get("comments", [])
+    tid = issue["key"]
+
+    # Ultimo comentario de cada lado, ignorando bots.
+    ult_cliente = ult_appriss = ult_publico = None
+    for c in comentarios:
+        aid = c["author"]["accountId"]
+        if aid.startswith(BOTS):
+            continue
+        cuerpo = limpiar(c["body"])
+        interno = es_interno(c["body"])
+        nombre = c["author"]["displayName"]
+        cliente = es_cliente(aid, nombre)
+        reg = {"fecha": parse_fecha(c["created"]), "autor": nombre,
+               "cuerpo": cuerpo, "interno": interno, "cliente": cliente,
+               "mio": aid == JUAN}
+        if not interno:
+            ult_publico = reg
+        if cliente:
+            ult_cliente = reg
+        elif not interno:
+            ult_appriss = reg
+
+    dias = lambda r: (ahora - r["fecha"]).days if r else None
+
+    # Dos señales que no cambian el nivel pero si obligan a mirar el ticket.
+    alertas = []
+    if ult_appriss and dias(ult_appriss) >= 7:
+        alertas.append(f"el cliente no oye nada de Appriss hace {dias(ult_appriss)} dias")
+    ultimo_cualquiera = None
+    for c in comentarios:
+        if not c["author"]["accountId"].startswith(BOTS):
+            ultimo_cualquiera = c
+    if ultimo_cualquiera and ultimo_cualquiera["author"]["accountId"] != JUAN \
+            and "juan martinez" in ultimo_cualquiera["body"].lower():
+        alertas.append(f"{ultimo_cualquiera['author']['displayName']} te menciono directo")
+
+    def r(nivel, etiqueta, motivo, ref):
+        return {"nivel": nivel, "etiqueta": etiqueta, "motivo": motivo,
+                "dias": dias(ref) if ref else 9999, "ultimo": ref, "alertas": alertas,
+                "silencio_cliente": dias(ult_appriss) if ult_appriss else None}
+
+    # Nivel 1: el ultimo que hablo de cara al cliente fue el cliente, y dejo algo pendiente
+    # para Appriss. Si el cliente se comprometio el, o solo acuso recibo, la pelota es suya y
+    # el ticket baja a nivel 3. Decision de Juan del 8 sep 2026.
+    if ult_publico and ult_publico["cliente"]:
+        if cliente_devuelve_pelota(ult_publico["cuerpo"]):
+            return r(3, "ESPERANDO AL CLIENTE",
+                     f"{ult_publico['autor']} se comprometio a volver hace {dias(ult_publico)} dias "
+                     f"y no ha vuelto", ult_publico)
+        return r(1, "TE TOCA RESPONDER",
+                 f"{ult_publico['autor']} escribio hace {dias(ult_publico)} dias y nadie de Appriss contesto",
+                 ult_publico)
+
+    if ult_appriss:
+        texto = sin_citas(ult_appriss["cuerpo"])
+        p_prom = ultima_posicion(texto, PROMESA)
+        p_preg = ultima_posicion(texto, PREGUNTA)
+        p_cond = ultima_posicion(texto, CONDICIONADA)
+        d = dias(ult_appriss)
+        quien = "prometiste" if ult_appriss["mio"] else f"{ult_appriss['autor']} prometio"
+        # Nivel 3: lo ultimo que quedo en el aire fue un pedido al cliente. La posicion sola
+        # no decide. Una promesa condicionada al cliente cede la pelota aunque cierre el texto.
+        if p_preg >= 0 and (p_preg > p_prom or p_cond >= 0):
+            pedido = "pediste" if ult_appriss["mio"] else f"{ult_appriss['autor']} pidio"
+            return r(3, "ESPERANDO AL CLIENTE",
+                     f"{pedido} algo hace {d} dias y no hay respuesta", ult_appriss)
+        # Nivel 2: prometiste un update y no volviste.
+        if p_prom >= 0:
+            return r(2, "PROMESA SIN CUMPLIR",
+                     f"{quien} un update hace {d} dias y no llego", ult_appriss)
+
+    # Nivel 4: ingenieria moviendose, nada pendiente de cara al cliente.
+    ref = ult_appriss or ult_publico
+    return r(4, "EN MOVIMIENTO INTERNO",
+             "sin nada pendiente de cara al cliente" if ref else "sin comentarios", ref)
+
+
+def clasificar_final(issue, ahora):
+    """clasificar() mas el override de bitacora. Este es el pipeline completo, el mismo
+    que corre main(). eval_cola.py debe medir esto, no clasificar() a secas, o el eval
+    reprueba casos que el override ya resuelve."""
+    c = clasificar(issue, ahora)
+    bit = bitacora_de(issue["key"])
+    # Si Juan reporto trabajo despues del ultimo comentario, el ticket deja de quemar.
+    if bit and c["ultimo"] and bit["fecha"] >= c["ultimo"]["fecha"].date().isoformat():
+        c = {**c, "nivel": 4, "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+             "motivo": f"lo reportaste el {bit['fecha']} y todavia no esta en Jira"}
+    return c, bit
+
+
+def main():
+    dump = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "cola", "jira-dump.json")
+    solo_json = "--json" in sys.argv
+    d = json.load(open(dump, encoding="utf-8"))
+    nodos = d["issues"]["nodes"]
+    ahora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-4)))
+
+    filas = []
+    for i in nodos:
+        f = i["fields"]
+        c, bit = clasificar_final(i, ahora)
+        filas.append({
+            "ticket": i["key"], "resumen": f["summary"],
+            "estado": f["status"]["name"],
+            "prioridad": (f.get("priority") or {}).get("name", ""),
+            "reporta": (f.get("reporter") or {}).get("displayName", ""),
+            "labels": f.get("labels", []),
+            "edad": (ahora - parse_fecha(f["created"])).days,
+            "nivel": c["nivel"], "etiqueta": c["etiqueta"], "motivo": c["motivo"],
+            "dias": c["dias"], "alertas": c.get("alertas", []),
+            "silencio_cliente": c.get("silencio_cliente"),
+            "ultimo_autor": c["ultimo"]["autor"] if c["ultimo"] else "",
+            "ultimo_texto": (c["ultimo"]["cuerpo"][:300] if c["ultimo"] else ""),
+            "bitacora": bit,
+            "url": JIRA + i["key"],
+        })
+
+    filas.sort(key=lambda r: (r["nivel"], -r["dias"]))
+
+    os.makedirs(os.path.join(ROOT, "cola"), exist_ok=True)
+    estado = {"generado": ahora.isoformat(), "total": len(filas), "tickets": filas}
+    with open(os.path.join(ROOT, "cola", "estado.json"), "w", encoding="utf-8") as fh:
+        json.dump(estado, fh, ensure_ascii=False, indent=1, default=str)
+    if solo_json:
+        print(f"{len(filas)} tickets en cola/estado.json")
+        return
+
+    niveles = {1: "Te toca responder", 2: "Prometiste y no cumpliste",
+               3: "Esperando al cliente", 4: "En movimiento, sin deuda"}
+    conteo = {n: sum(1 for r in filas if r["nivel"] == n) for n in niveles}
+
+    L = [f"# Cola de Juan", "",
+         f"Generado {ahora.strftime('%Y-%m-%d %H:%M')} hora Colombia, desde Jira en vivo. "
+         f"{len(filas)} tickets abiertos asignados.", "",
+         "Orden: primero de quien es la pelota, despues cuanto lleva callado. "
+         "El estado real siempre esta en Jira.", "",
+         "| Nivel | Que significa | Cuantos |", "|---|---|---|"]
+    for n, nom in niveles.items():
+        L.append(f"| {n} | {nom} | {conteo[n]} |")
+    L.append("")
+
+    pos = 0
+    nivel_actual = None
+    for r in filas:
+        if r["nivel"] != nivel_actual:
+            nivel_actual = r["nivel"]
+            L += ["", f"## Nivel {nivel_actual}. {niveles[nivel_actual]}", ""]
+        pos += 1
+        L.append(f"### {pos}. [{r['ticket']}]({r['url']}) · {r['resumen']}")
+        L.append(f"`{r['estado']}` · prioridad {r['prioridad'] or 'sin definir'} · "
+                 f"reporta {r['reporta']} · abierto hace {r['edad']} dias")
+        L.append("")
+        L.append(f"**{r['etiqueta']}.** {r['motivo'][0].upper() + r['motivo'][1:]}.")
+        for a in r["alertas"]:
+            L.append("")
+            L.append(f"Aviso: {a}.")
+        if r["ultimo_texto"]:
+            L.append("")
+            L.append(f"> Ultimo movimiento, {r['ultimo_autor']}: {r['ultimo_texto']}…")
+        if r["bitacora"]:
+            L.append("")
+            L.append(f"Bitacora {r['bitacora']['fecha']}: {r['bitacora']['nota'][:220]}")
+        L.append("")
+        L.append(f"Ficha: `tickets/{r['ticket']}.md` · Bitacora: `bitacora/{r['ticket']}.md`")
+        L.append("")
+
+    with open(os.path.join(ROOT, "cola", "COLA.md"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L).rstrip() + "\n")
+    print(f"{len(filas)} tickets. Niveles: " +
+          ", ".join(f"{n}={conteo[n]}" for n in niveles))
+    print(f"escrito: cola/COLA.md y cola/estado.json")
+
+
+if __name__ == "__main__":
+    main()

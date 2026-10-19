@@ -1,0 +1,15 @@
+Internal note. VF Corp, investigation to case conversion. Two blank exported PDFs and one case without subject.
+
+Read-only check on the VF Corp Platform DB, factboard.Board, 9/30:
+Board 5, Ray Nichols-TNF 20 Somerset, created 8/17. CaseID 451, CaseRecordNumber 2026-150020-1, StatusID 3.
+Board 6, Ryan Yakow-TNF 20, created 8/25. CaseID 461, CaseRecordNumber 2026-150020-2, StatusID 3.
+Board 7, Aarya Datta, created 9/21. CaseID 482, CaseRecordNumber 2026-150020-3, StatusID 3.
+
+Finding 1. The exported PDF attached to cases 2026-150020-1 and 2026-150020-2 opens blank, with only a # symbol and the logo. The PDF for 2026-150020-3, generated on 9/21 at 1:58 PM, contains all 17 events. This matches ENG-6676 and RCS-28006 (Casey's) and ENG-7440 / ARPP-644 (Bunnings).
+
+Finding 2. Case 2026-150020-2 (MasterCaseID 461) exists and opens by URL, but it has no subject name and does not appear in the customer's Active Cases list. The customer could not locate it for that reason.
+
+Requests for Engineering:
+1. Check the VF Corp Hatr logs for ExportGenericPageToPdf failures around 8/26/2026 for boards 5 and 6, and include this tenant in the ENG-6676 validation.
+2. Confirm why case 461 was created without a subject and whether that excludes it from the Active Cases list.
+3. Advise whether the exported PDFs for boards 5 and 6 can be regenerated once the fix is in place.

@@ -1,0 +1,1 @@
+OK: MCP stdio, cuatro herramientas, contexto reciente, lectura y búsqueda híbrida sin degradación

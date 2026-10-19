@@ -1,0 +1,49 @@
+# Adjunto image-20260827-055735.png
+Ruta: adjuntos/RCS-28612/image-20260827-055735.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Retail Transaction Details
+Store ID
+Transaction ID
+Total Amount
+Team Member Name
+Training Mode
+Delivery Carrier Type: AUSTRALIA POST
+VOIDED
+SALE
+SALE
+Item Count: 2
+47
+RT0471232608260041
+$756.80
+Johanna (1221615)
+DELIVERY FEE
+SUNGLASS HUT CONCESSION ITEM 1327
+SUNGLASS HUT CONCESSION ITEM 1327
+SUNGLASS HUT CONCESSION ITEM 1327
+Register ID
+Transaction Type
+Transaction Status
+Transaction Begin Date & Time
+Transaction End Date & Time
+047123
+Retail Transaction - RETAIL
+Finished
+26/08/202611:54:46 (GMT +08:00)
+26/08/202611:59:37 (GMT +08:00)
+987654320
+827829740
+827829740
+827829740
+40% OFF ITEM
+Reason Description: BRAND PARTNER OFFER
+$0.00 GST
+-$0.00 GST
+$473.00 GST
+$473.00 GST
+-$189.20
+Subtotal
+$756.80

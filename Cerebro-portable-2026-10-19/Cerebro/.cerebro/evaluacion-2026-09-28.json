@@ -1,0 +1,2451 @@
+{
+  "date": "2026-09-28",
+  "cases": 101,
+  "metric": "hit-rate@5 por ancla regex en el fragmento recuperado",
+  "limits": "Set heredado, sin holdout ni evaluación humana. Fragmentos del corpus completo; no comparable directamente con cifras antiguas sobre 1776 documentos de SQLite. No mide exactitud de respuestas.",
+  "index": {
+    "sources": 3373,
+    "chunks": 15823,
+    "vector_chunks": 15823,
+    "model": "intfloat/multilingual-e5-small",
+    "synced": "2026-09-28T22:48:09.829914+00:00",
+    "coverage": "SQLite knowledge_chunks/items, reuniones, conversaciones, sesiones, Q&A y relaciones registradas; texto completo de inbox, bitácora, memorias, investigaciones, flujos, triage y Claude outputs. Fichas y espejo son vistas duplicadas; se leen por ticket. Adjuntos binarios no indexados.",
+    "warning": "Fechas son de documentos, no prueba de vigencia. Estado de tickets requiere Jira. Coaparición no demuestra causa común."
+  },
+  "results": [
+    {
+      "query": "un usuario tiene el distrito asignado pero no ve ninguna tienda",
+      "anchor": "LHUA.*StoreIdent|StoreIdent.*LHUA",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:7",
+          "db:knowledge_chunks/1477:13",
+          "brain/memoria/reference_jerarquia_ubicaciones_incident.md:18",
+          "db:knowledge_chunks/323:1",
+          "db:knowledge_chunks/1477:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1477:13",
+          "db:knowledge_chunks/1606:54",
+          "db:knowledge_chunks/1607:35",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:7",
+          "brain/memoria/reference_esquema_usuarios_incident.md:34"
+        ]
+      }
+    },
+    {
+      "query": "el reporte no baja cuando le doy exportar pero el envio automatico si llega",
+      "anchor": "Izenda.*(programad|scheduled)|(programad|scheduled).*Izenda",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-25-rcs-29026-prueba-test.md:15",
+          "db:knowledge_chunks/1718:1",
+          "db:knowledge_chunks/1718:32",
+          "inbox/2026-09-02-cambios-desde-D12.md:21",
+          "db:knowledge_chunks/783:4"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-25-rcs-29026-prueba-test.md:15",
+          "db:knowledge_chunks/1718:3",
+          "inbox/2026-09-01-adusa-dos-reuniones-y-el-encargo-de-jr.md:255",
+          "inbox/2026-09-02-cambios-desde-D12.md:21",
+          "db:knowledge_chunks/996:8"
+        ]
+      }
+    },
+    {
+      "query": "despues de mover el caso a otra tienda quedo el numero viejo",
+      "anchor": "RecreateCaseNo",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/project_adusa_ficha_y_tickets.md:22",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:1",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:23",
+          "inbox/2026-09-02-prompt-portable-D13.md:29",
+          "db:knowledge_chunks/1530:5"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_recreate_caseno_changelocation.md:23",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:1",
+          "db:knowledge_chunks/1530:5",
+          "db:knowledge_chunks/1595:3",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:7"
+        ]
+      }
+    },
+    {
+      "query": "una pantalla quedo rota despues de la migracion como la arreglo",
+      "anchor": "9QQP|Screen Designer",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1480:1",
+          "brain/memoria/project_adusa_ficha_y_tickets.md:40",
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:76",
+          "brain/memoria/reference_screen_designer_rebuild.md:18",
+          "inbox/2026-09-01-rcs-28612-delivery-fee-pos.md:235"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-rcs-28223-causa-raiz.md:98",
+          "inbox/2026-08-24-rcs-28032-screen-labels-y-repro-juan.md:64",
+          "ESTADO.md:34",
+          "inbox/2026-09-08-migracion-mac-cerebro.md:25",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:221"
+        ]
+      }
+    },
+    {
+      "query": "no se puede bajar el archivo adjunto en pdf",
+      "anchor": "ERMS.*lpms|lpms.*ERMS",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "bitacora/RCS-28795.md:1",
+          "inbox/2026-09-21-rcs-29023-proceso-infra-bloqueo-cloudflare.md:45",
+          "inbox/2026-08-28-rcs-28621-quien-carga-el-archivo.md:98",
+          "investigaciones/smart-alerts-familia-de-fallas.md:71",
+          "inbox/2026-08-27-rcs-28223-hallazgos-pdf.md:64"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1608:65",
+          "brain/memoria/reference_erms_lpms_descarga_pdf.md:1",
+          "investigaciones/smart-alerts-familia-de-fallas.md:71",
+          "db:knowledge_chunks/1480:1",
+          "db:knowledge_chunks/1571:39"
+        ]
+      }
+    },
+    {
+      "query": "la opcion esta activada en la configuracion pero no hace efecto",
+      "anchor": "CustomerEditedValue",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1672:50",
+          "inbox/2026-09-04-rcs-27407-informe.md:77",
+          "db:knowledge_chunks/1672:32",
+          "bitacora/RCS-28212.md:214",
+          "db:knowledge_chunks/298:4"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-04-rcs-28671-native-command-comparison.md:55",
+          "inbox/2026-08-27-rcs-28223-causa-raiz.md:30",
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:56",
+          "inbox/2026-08-27-rcs-28223-causa-raiz.md:85",
+          "db:knowledge_chunks/1534:30"
+        ]
+      }
+    },
+    {
+      "query": "no puedo saber si la falla de ingreso es de ellos o nuestra",
+      "anchor": "SSO Response Log",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:1",
+          "db:knowledge_chunks/681:120",
+          "inbox/2026-08-18-diff-trackers.md:28",
+          "inbox/2026-09-11-rcs-28756-kafka-bridge.md:3",
+          "db:knowledge_chunks/1830:3"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:1",
+          "CLAUDE.md:44",
+          "db:knowledge_chunks/681:120",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:368",
+          "inbox/2026-08-18-diff-trackers.md:28"
+        ]
+      }
+    },
+    {
+      "query": "el usuario que migraron no aparece en la tabla de identidad",
+      "anchor": "LPUser2",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1561:1",
+          "investigaciones/INDICE.md:39",
+          "db:knowledge_chunks/1615:55",
+          "inbox/2026-09-02-cosecha-reparto-perfil-vs-margen.md:57",
+          "inbox/2026-09-09-blain-vivian-see-acceso.md:28"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_lpuser_lpuser2_membership.md:21",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:368",
+          "brain/memoria/reference_esquema_usuarios_incident.md:1",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:36",
+          "inbox/2026-09-09-blain-vivian-see-acceso.md:28"
+        ]
+      }
+    },
+    {
+      "query": "el cliente dice que va lento como compruebo donde se pierde el tiempo",
+      "anchor": "DevTools",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:1",
+          "db:knowledge_chunks/960:1",
+          "flujos/desbloquear-usuario-bloqueado.md:55",
+          "flujos/desbloquear-usuario-bloqueado.md:20",
+          "brain/memoria/feedback_nada_solo_en_consola.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:1",
+          "flujos/desbloquear-usuario-bloqueado.md:20",
+          "db:knowledge_chunks/1490:1",
+          "brain/memoria/feedback_comentarios_reglas.md:16",
+          "db:knowledge_chunks/1048:1"
+        ]
+      }
+    },
+    {
+      "query": "de un dia para otro se puso lenta sin que nadie cambiara nada",
+      "anchor": "Query Store|cardinalidad",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-31-guia-del-dia.md:180",
+          "inbox/2026-08-31-guia-del-dia.md:220",
+          "inbox/2026-08-25-cola-del-dia.md:117",
+          "inbox/2026-09-21-cola-verificacion-nivel-3-4-y-bug-28881.md:15",
+          "inbox/2026-08-31-cola-manana.md:42"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-31-guia-del-dia.md:180",
+          "inbox/2026-09-04-rcs-28671-comentario-mecanismo-monday.md:16",
+          "inbox/2026-08-31-guia-del-dia.md:220",
+          "db:knowledge_chunks/1323:6",
+          "inbox/2026-09-22-THD-preguntas-cliente-bilingue.md:44"
+        ]
+      }
+    },
+    {
+      "query": "bloquearon a un usuario desde la proteccion de red que hago",
+      "anchor": "Ray ID",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-14-rcs-28881.md:34",
+          "confluence/RTS-triage/RCS-28746-tg-jones-drilldown-duplicados.md:1",
+          "inbox/2026-09-22-THD-preguntas-cliente-bilingue.md:316",
+          "inbox/2026-09-25-rcs-29100-apoyo-meet.md:12",
+          "inbox/2026-09-28-rcs-29147.md:14"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "flujos/desbloquear-usuario-bloqueado.md:37",
+          "db:knowledge_chunks/1493:1",
+          "flujos/desbloquear-usuario-bloqueado.md:5",
+          "inbox/2026-09-11-rcs-28389.md:21",
+          "inbox/2026-09-21-rcs-29023-proceso-infra-bloqueo-cloudflare.md:45"
+        ]
+      }
+    },
+    {
+      "query": "quien sabe de los datos de greenplum y las instancias",
+      "anchor": "pyardm",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "investigaciones/INDICE.md:84",
+          "db:knowledge_chunks/1357:76",
+          "db:knowledge_chunks/1357:66",
+          "inbox/2026-08-28-rcs-28638-myer-header-ext.md:164",
+          "investigaciones/INDICE.md:92"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "investigaciones/INDICE.md:84",
+          "db:knowledge_chunks/1357:66",
+          "db:knowledge_chunks/1357:76",
+          "inbox/2026-08-28-rcs-28638-myer-header-ext.md:164",
+          "inbox/2026-08-31-rcs-28581-cwh-pos-number-regresion.md:267"
+        ]
+      }
+    },
+    {
+      "query": "como dejo el ticket bien cerrado para que no quede marcado",
+      "anchor": "Resolve.{0,20}Completed.{0,60}Close|dos dropdowns de Resolution",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-22-facteus-documentacion-review.md:78",
+          "inbox/2026-09-02-actualizaciones-cliente-thd-myer.md:41",
+          "inbox/2026-09-04-rcs-28779-PLAN.md:9",
+          "inbox/2026-09-01-cosecha-rcs-28618.md:52",
+          "inbox/2026-08-27-conexion-sql-lpms-uswest2.md:44"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-04-rcs-28779-PLAN.md:9",
+          "inbox/2026-09-01-adusa-dos-reuniones-y-el-encargo-de-jr.md:117",
+          "db:knowledge_chunks/1186:1",
+          "db:knowledge_chunks/1686:54",
+          "inbox/2026-09-22-facteus-documentacion-review.md:78"
+        ]
+      }
+    },
+    {
+      "query": "cuando puedo avisarle al cliente que el arreglo ya salio",
+      "anchor": "no comentar al cliente antes|antes de Under Support Review",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-26-respuestas-cliente-28281-28304-28021.md:81",
+          "db:knowledge_chunks/681:120",
+          "db:knowledge_chunks/1791:22",
+          "inbox/2026-09-03-cosecha-rcs-28702-respuesta-y-estado-cinco-tickets.md:22",
+          "db:knowledge_chunks/1301:8"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-22-facteus-documentacion-review.md:50",
+          "inbox/2026-08-31-cola-manana.md:42",
+          "inbox/2026-09-04-rcs-28556-respuesta-garces.md:16",
+          "inbox/2026-09-08-flujos-investigaciones-curaduria.md:27",
+          "inbox/2026-08-28-consolidado-reuniones.md:54"
+        ]
+      }
+    },
+    {
+      "query": "que hay que hacer antes de entregarle el analisis de causa al cliente",
+      "anchor": "Shorthand|OUTM",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-cambios-desde-el-D8.md:96",
+          "db:knowledge_chunks/1287:75",
+          "db:knowledge_chunks/1671:167",
+          "db:meetings/89:9",
+          "db:knowledge_chunks/1671:6"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1287:75",
+          "inbox/2026-08-27-cambios-desde-el-D8.md:96",
+          "db:knowledge_chunks/681:169",
+          "db:knowledge_chunks/1671:6",
+          "db:knowledge_chunks/1287:85"
+        ]
+      }
+    },
+    {
+      "query": "como paso un caso al equipo de tercer nivel",
+      "anchor": "se auto.?crea un ENG|auto-crea|autocrea",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-17-d23-generado.md:53",
+          "db:knowledge_chunks/1344:140",
+          "db:knowledge_chunks/1344:148",
+          "inbox/2026-08-28-recomendaciones-kiran-equipo.md:250",
+          "inbox/2026-09-24-rcs-28667.md:19"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1344:140",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:87",
+          "inbox/2026-09-02-rcs-28212-instructivo.md:78",
+          "inbox/2026-09-01-rcs-27941-PLAN.md:16",
+          "inbox/2026-08-27-rcs-28223-consultas.md:68"
+        ]
+      }
+    },
+    {
+      "query": "como separo en jira lo de una plataforma de la otra",
+      "anchor": "15196|Product Type",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/646:1",
+          "inbox/2026-08-28-KT-reunion-kiran.md:318",
+          "db:knowledge_chunks/656:43",
+          "investigaciones/RCS-28535-upload-forbidden.md:81",
+          "inbox/2026-08-18-jira-verificacion.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-19-adusa-verificacion-d3-y-correo-jim.md:3",
+          "brain/memoria/reference_jira_product_type_field.md:18",
+          "inbox/2026-09-04-rcs-28671-PLAN.md:1",
+          "db:knowledge_chunks/646:1",
+          "db:sessions/1:115"
+        ]
+      }
+    },
+    {
+      "query": "donde encuentro quien lleva la cuenta y el numero interno del cliente",
+      "anchor": "ficha.{0,30}cliente|client ID.{0,30}CSM|CSM.{0,20}PM.{0,20}client ID",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-24-adusa-traspaso-diego-edwin.md:1",
+          "db:knowledge_chunks/1481:13",
+          "flujos/tracker-interno-vs-tracker-cliente.md:14",
+          "confluence/RTS-triage/INDICE.md:37",
+          "db:knowledge_chunks/1481:1"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1481:1",
+          "bitacora/RCS-28032.md:30",
+          "db:knowledge_chunks/1594:115",
+          "flujos/tracker-interno-vs-tracker-cliente.md:47",
+          "inbox/2026-08-24-adusa-traspaso-diego-edwin.md:1"
+        ]
+      }
+    },
+    {
+      "query": "como me conecto a la base de datos de un cliente",
+      "anchor": "Bastion|SSMS",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/635:1",
+          "inbox/2026-08-28-meet-kiran-preguntas.md:95",
+          "db:knowledge_chunks/1555:11",
+          "inbox/2026-08-28-rcs-28621-datos-no-visibles-diagnostico.md:20",
+          "db:knowledge_chunks/299:4"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/300:2",
+          "db:knowledge_chunks/337:4",
+          "db:items/363:9",
+          "inbox/2026-08-31-rcs-28671-thd-searches-snowtime.md:165",
+          "inbox/2026-08-27-pasos-listar-delhaize-y-query-misc1.md:83"
+        ]
+      }
+    },
+    {
+      "query": "en que servidor de datos esta cada cuenta",
+      "anchor": "Product Delivery Client Matrix",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1570:113",
+          "db:knowledge_chunks/305:6",
+          "db:meetings/60:2",
+          "inbox/2026-08-28-rcs-28638-myer-header-ext.md:164",
+          "brain/memoria/project_appriss_support_role.md:15"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-28-rcs-28638-myer-header-ext.md:164",
+          "db:knowledge_chunks/305:6",
+          "db:knowledge_chunks/300:1",
+          "brain/memoria/project_appriss_support_role.md:15",
+          "db:knowledge_chunks/299:1"
+        ]
+      }
+    },
+    {
+      "query": "le pusieron dos zonas y solo le carga una",
+      "anchor": "multidistrito|dos distritos",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1506:67",
+          "db:knowledge_chunks/304:3",
+          "inbox/2026-08-18-diff-trackers.md:9",
+          "db:knowledge_chunks/1758:174",
+          "inbox/2026-08-28-consolidado-reuniones.md:189"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-18-diff-trackers.md:9",
+          "inbox/2026-09-07-verificacion-antes-de-d16.md:41",
+          "inbox/2026-08-28-KT-reunion-kiran.md:174",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:331",
+          "inbox/2026-08-28-KT-reunion-kiran.md:243"
+        ]
+      }
+    },
+    {
+      "query": "donde se deshabilita una cuenta de usuario",
+      "anchor": "flag Disabled|Disabled.{0,25}Control Panel",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1380:7",
+          "flujos/desbloquear-usuario-bloqueado.md:1",
+          "db:knowledge_chunks/1356:7",
+          "flujos/desbloquear-usuario-bloqueado.md:157",
+          "db:knowledge_chunks/1615:63"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "flujos/desbloquear-usuario-bloqueado.md:12",
+          "flujos/desbloquear-usuario-bloqueado.md:37",
+          "db:knowledge_chunks/1615:63",
+          "db:knowledge_chunks/1104:227",
+          "db:knowledge_chunks/1380:7"
+        ]
+      }
+    },
+    {
+      "query": "cual direccion es la nueva plataforma y cual la vieja",
+      "anchor": "apps\\.apprissretail\\.com.{0,80}nettrack|host.{0,20}PU",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1615:55",
+          "db:knowledge_chunks/621:1",
+          "db:knowledge_chunks/623:1",
+          "inbox/2026-08-28-meet-kiran-preguntas-por-ticket.md:26",
+          "db:knowledge_chunks/1574:43"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1615:55",
+          "db:knowledge_chunks/982:102",
+          "db:knowledge_chunks/1574:43",
+          "db:knowledge_chunks/1574:20",
+          "db:knowledge_chunks/982:109"
+        ]
+      }
+    },
+    {
+      "query": "que se rompio con el cambio grande del mes pasado",
+      "anchor": "Unificaci[oó]n.*Kiran|Kiran.*Unificaci[oó]n",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/921:27",
+          "db:knowledge_chunks/1326:90",
+          "inbox/2026-09-11-rcs-28389-ruta-db-vs-ui.md:38",
+          "MAPA.md:76",
+          "db:knowledge_chunks/1326:79"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-01-rcs-28649-informe.md:155",
+          "inbox/2026-08-28-consolidado-reuniones.md:247",
+          "inbox/2026-09-03-cola-manana.md:36",
+          "inbox/2026-09-22-THD-preguntas-cliente-bilingue.md:203",
+          "inbox/2026-09-01-rcs-28649-informe.md:264"
+        ]
+      }
+    },
+    {
+      "query": "que formato lleva la planilla que le mandamos a la cuenta grande",
+      "anchor": "tracker.*(Teagle|J\\.R\\.)|(Teagle|J\\.R\\.).*tracker",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-24-adusa-traspaso-diego-edwin.md:1",
+          "db:knowledge_chunks/1586:44",
+          "db:knowledge_chunks/1481:13",
+          "inbox/2026-09-08-migracion-mac-cerebro.md:43",
+          "db:knowledge_chunks/1802:43"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1586:67",
+          "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md:21",
+          "inbox/2026-09-02-cosecha-thd-hueco-datos-8-29.md:46",
+          "brain/memoria/reference_tracker_adusa_formato.md:54",
+          "bitacora/RCS-28881.md:83"
+        ]
+      }
+    },
+    {
+      "query": "que paso cuando los jefes del cliente se metieron a reclamar",
+      "anchor": "escalaci[oó]n ejecutiva|14 ago",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/922:4",
+          "inbox/2026-09-03-rcs-28753-instructivo.md:33",
+          "inbox/2026-09-02-rcs-28212-instructivo.md:271",
+          "inbox/2026-09-02-rcs-28212-instructivo.md:247",
+          "inbox/2026-08-28-KT-reunion-kiran.md:75"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/217:1",
+          "db:knowledge_chunks/1594:23",
+          "db:knowledge_chunks/1594:115",
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:81",
+          "db:knowledge_chunks/922:4"
+        ]
+      }
+    },
+    {
+      "query": "quienes son del equipo y de donde es cada uno",
+      "anchor": "roster real|equipo Support.{0,40}fuente de verdad",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1610:80",
+          "db:knowledge_chunks/625:1",
+          "inbox/2026-09-02-cambios-desde-D12.md:21",
+          "flujos/desbloquear-usuario-bloqueado.md:129",
+          "db:knowledge_chunks/1389:212"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1610:80",
+          "db:knowledge_chunks/1575:32",
+          "db:knowledge_chunks/1442:17",
+          "db:knowledge_chunks/358:1",
+          "db:knowledge_chunks/1575:57"
+        ]
+      }
+    },
+    {
+      "query": "los casos nuevos que abrio el contacto y nadie tomo",
+      "anchor": "28519|28533|28535",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-03-informe-actualizaciones-cliente-viraj.md:71",
+          "inbox/2026-08-18-acciones-standup-adusa.md:22",
+          "inbox/2026-08-24-adusa-d6-llamada-lunes.md:5",
+          "inbox/2026-09-04-rcs-28709-informe.md:9",
+          "inbox/2026-08-28-meet-kiran-handoff.md:208"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-informe-actualizaciones-cliente-viraj.md:71",
+          "inbox/2026-08-18-acciones-standup-adusa.md:22",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:68",
+          "db:knowledge_chunks/1594:69",
+          "inbox/2026-09-04-cola-manana.md:7"
+        ]
+      }
+    },
+    {
+      "query": "por que el pedido de revisar los registros de acceso estaba mal planteado",
+      "anchor": "28442|Torrid",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-18-rcs-28442-torrid-sso-asignacion.md:1",
+          "db:knowledge_chunks/1357:27",
+          "db:knowledge_chunks/1698:43",
+          "db:knowledge_chunks/1443:439",
+          "db:knowledge_chunks/773:65"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1357:27",
+          "db:knowledge_chunks/1698:43",
+          "investigaciones/INDICE.md:39",
+          "db:knowledge_chunks/1357:35",
+          "inbox/2026-08-18-rcs-28442-torrid-sso-asignacion.md:1"
+        ]
+      }
+    },
+    {
+      "query": "por que a la persona le sale que no tiene permiso al abrir el enlace",
+      "anchor": "28219|Nordstrom",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1374:1",
+          "inbox/2026-09-01-adusa-dos-reuniones-y-el-encargo-de-jr.md:197",
+          "db:knowledge_chunks/1377:5",
+          "inbox/2026-09-08-rcs-28795-informe.md:58",
+          "inbox/2026-09-11-cola-del-dia.md:5"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1374:1",
+          "db:knowledge_chunks/1594:15",
+          "db:knowledge_chunks/1377:5",
+          "db:knowledge_chunks/1494:1",
+          "db:knowledge_chunks/1597:1"
+        ]
+      }
+    },
+    {
+      "query": "cuanto costaria mover esto a otro motor de inteligencia",
+      "anchor": "costo real de mover|API de Claude",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-18-costo-claude-api.md:1",
+          "CLAUDE.md:139",
+          "db:knowledge_chunks/1702:54",
+          "ESTADO.md:61",
+          "inbox/2026-09-14-rcs-27765-guia-verificacion.md:17"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "CLAUDE.md:139",
+          "ESTADO.md:61",
+          "db:knowledge_chunks/1702:54",
+          "CLAUDE.md:157",
+          "db:knowledge_chunks/1702:46"
+        ]
+      }
+    },
+    {
+      "query": "por que la busqueda por significado dejo de funcionar",
+      "anchor": "embedding.{0,40}(nunca|sin)|168 de los 1623",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-rcs-28753-informe.md:68",
+          "inbox/2026-09-17-RCS-28339-root-cause.md:1",
+          "db:knowledge_chunks/1389:238",
+          "db:knowledge_chunks/1129:9",
+          "bitacora/RCS-28671.md:6"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-31-rcs-28671-thd-searches-snowtime.md:39",
+          "db:knowledge_chunks/311:1",
+          "db:knowledge_chunks/1454:93",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:499",
+          "db:knowledge_chunks/312:1"
+        ]
+      }
+    },
+    {
+      "query": "cambie los tipos de auditoria en una alerta y la pantalla lo guarda pero no pasa nada",
+      "anchor": "FiltersSQL|ManageSmartAlerts",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-25-rcs-28294-repro-smart-alerts.md:74",
+          "investigaciones/smart-alerts-familia-de-fallas.md:21",
+          "investigaciones/smart-alerts-familia-de-fallas.md:10",
+          "inbox/2026-09-04-rcs-27407-informe.md:119",
+          "db:knowledge_chunks/1712:30"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-25-rcs-28294-repro-smart-alerts.md:74",
+          "investigaciones/smart-alerts-familia-de-fallas.md:21",
+          "inbox/2026-09-04-rcs-27407-informe.md:119",
+          "db:knowledge_chunks/1712:30",
+          "investigaciones/smart-alerts-familia-de-fallas.md:10"
+        ]
+      }
+    },
+    {
+      "query": "el correo de aviso dejo de salir cuando reasignan un caso",
+      "anchor": "EmailOnReassign|ReAssignCase\\.aspx",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md:57",
+          "inbox/2026-09-08-rcs-28795-informe.md:5",
+          "db:knowledge_chunks/1786:57",
+          "investigaciones/smart-alerts-familia-de-fallas.md:10",
+          "db:knowledge_chunks/1693:115"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-08-rcs-28795-informe.md:5",
+          "db:knowledge_chunks/1752:3",
+          "db:knowledge_chunks/1722:1",
+          "db:knowledge_chunks/1722:12",
+          "db:knowledge_chunks/1531:1"
+        ]
+      }
+    },
+    {
+      "query": "las notificaciones salen un dia tarde de lo que deberian",
+      "anchor": "frontera de fecha UTC|trigger until the following day",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-31-guia-del-dia.md:400",
+          "inbox/2026-09-07-cola-tarde.md:1",
+          "inbox/2026-09-07-cola-tarde.md:65",
+          "inbox/2026-09-03-cosecha-clasificador-cola-set-referencia-caduco.md:24",
+          "db:knowledge_chunks/1787:24"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1287:25",
+          "db:knowledge_chunks/1826:25",
+          "inbox/2026-08-31-guia-del-dia.md:30",
+          "inbox/2026-09-14-rcs-28294-defecto-b-confirmado.md:14",
+          "inbox/2026-08-31-guia-del-dia.md:400"
+        ]
+      }
+    },
+    {
+      "query": "los avisos automaticos no salen si el usuario entro por la pantalla rapida",
+      "anchor": "Quick Entry|ENG-7359",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-16-cola-juan-cierres-respuestas-sla.md:75",
+          "inbox/2026-09-22-pase-de-guardia-adusa.md:172",
+          "inbox/2026-09-04-plan-revision-cola-verificado.md:11",
+          "inbox/2026-08-31-completed-a-closed.md:12",
+          "bitacora/RCS-28212.md:95"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-04-plan-revision-cola-verificado.md:11",
+          "inbox/2026-09-02-prompt-portable-D13.md:23",
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:29",
+          "db:knowledge_chunks/1594:15",
+          "inbox/2026-09-16-cola-juan-cierres-respuestas-sla.md:75"
+        ]
+      }
+    },
+    {
+      "query": "el aviso no encuentra el documento que deberia adjuntar",
+      "anchor": "GetBlobSize|FileLen\\(strPath\\)|blob storage gate",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-cola-completa-por-sla.md:143",
+          "db:knowledge_chunks/773:143",
+          "db:knowledge_chunks/1577:7",
+          "db:knowledge_chunks/1260:88",
+          "inbox/2026-09-16-cola-juan-cierres-respuestas-sla.md:39"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-26-cierre-28535-28482-y-correo-jim.md:88",
+          "inbox/2026-08-27-cola-completa-por-sla.md:143",
+          "db:knowledge_chunks/1531:12",
+          "db:knowledge_chunks/773:143",
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:7"
+        ]
+      }
+    },
+    {
+      "query": "el error dice que no encuentra una carpeta temporal",
+      "anchor": "TempArea",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-rcs-28223-consultas.md:153",
+          "inbox/2026-08-31-rcs-27941-respuesta-kiran.md:31",
+          "inbox/2026-08-31-rcs-28638-plan-ejecucion.md:88",
+          "inbox/2026-08-27-visualcron-conexion-y-feed-adusa.md:301",
+          "db:knowledge_chunks/1812:3"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1762:51",
+          "inbox/2026-08-28-cosecha-cerebro-persistencia.md:51",
+          "inbox/2026-08-27-visualcron-conexion-y-feed-adusa.md:301",
+          "inbox/2026-08-27-cosecha-rcs-28452.md:35",
+          "investigaciones/smart-alerts-familia-de-fallas.md:125"
+        ]
+      }
+    },
+    {
+      "query": "al cliente le sale una pantalla que dice que fue bloqueado antes de poder entrar",
+      "anchor": "Sorry, you have been blocked",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "bitacora/RCS-28881.md:104",
+          "inbox/2026-09-01-cosecha-rcs-28671-escalated.md:81",
+          "db:knowledge_chunks/1779:81",
+          "inbox/2026-09-01-rcs-28649-instructivo.md:94",
+          "db:knowledge_chunks/1531:12"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "flujos/desbloquear-usuario-bloqueado.md:73",
+          "flujos/desbloquear-usuario-bloqueado.md:20",
+          "db:knowledge_chunks/1488:1",
+          "inbox/2026-09-01-cola.md:151",
+          "inbox/2026-09-14-rcs-28223-repro-paso-a-paso.md:9"
+        ]
+      }
+    },
+    {
+      "query": "varios usuarios de canada no pueden autenticarse desde esta mañana",
+      "anchor": "VaultOperationLimitReached|Key Vault",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1751:1",
+          "db:knowledge_chunks/1751:35",
+          "brain/memoria/reference_unificacion_patrones.md:17",
+          "inbox/2026-08-27-cambios-desde-el-D8.md:18",
+          "db:knowledge_chunks/1832:3"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1751:3",
+          "inbox/2026-09-04-rcs-28779-informe.md:5",
+          "db:knowledge_chunks/1751:1",
+          "inbox/2026-09-02-rcs-28671-work-items-sin-transacciones.md:5",
+          "db:knowledge_chunks/1613:27"
+        ]
+      }
+    },
+    {
+      "query": "le vuelvo a poner el equipo al usuario y al dia siguiente lo perdio otra vez",
+      "anchor": "Mandatory Teams",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:103",
+          "db:knowledge_chunks/1608:13",
+          "brain/memoria/reference_jira_rcs_workflow.md:30",
+          "inbox/2026-09-22-THD-guia-reunion.md:38",
+          "brain/memoria/reference_multidistrito_lhua.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:103",
+          "db:knowledge_chunks/1775:14",
+          "brain/memoria/project_backlog_triage_2026_08_03.md:24",
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:120",
+          "db:knowledge_chunks/1608:13"
+        ]
+      }
+    },
+    {
+      "query": "como se si el proveedor de identidad del cliente esta respondiendo o no",
+      "anchor": "SSO Response Log",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:84",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:41",
+          "inbox/2026-08-18-rcs-28219-403-links-y-repro.md:31",
+          "db:knowledge_chunks/819:4",
+          "db:knowledge_chunks/862:95"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/204:1",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:84",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:112",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:41",
+          "db:knowledge_chunks/1594:75"
+        ]
+      }
+    },
+    {
+      "query": "el trafico del cliente sale por un proveedor de seguridad y lo rechazan",
+      "anchor": "ZSCALER|Zscaler",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:41",
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:26",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:84",
+          "db:knowledge_chunks/1734:31",
+          "inbox/2026-09-21-rcs-29023-proceso-infra-bloqueo-cloudflare.md:15"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:41",
+          "inbox/2026-08-28-cosecha-traducciones.md:43",
+          "inbox/2026-08-26-rcs-28556-zscaler-toronto-mismo-24-que-ahold.md:65",
+          "db:knowledge_chunks/1580:29",
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:26"
+        ]
+      }
+    },
+    {
+      "query": "necesito el identificador que trae la pantalla de rechazo para agrupar los casos",
+      "anchor": "Ray ID",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-02-prompt-portable-D13.md:37",
+          "db:knowledge_chunks/1790:12",
+          "db:knowledge_chunks/1559:9",
+          "tickets/DUDOSOS.md:1",
+          "inbox/2026-08-18-reunion-cliente-causa-raiz-izenda.md:70"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "brain/memoria/feedback_agrupar_no_es_causa_raiz.md:1",
+          "brain/memoria/project_adusa_ficha_y_tickets.md:36",
+          "db:knowledge_chunks/1676:70",
+          "db:knowledge_chunks/1559:9",
+          "brain/memoria/feedback_agrupar_no_es_causa_raiz.md:13"
+        ]
+      }
+    },
+    {
+      "query": "el navegador muestra un error de puerta de enlace y no hay rastro del proveedor de cdn",
+      "anchor": "YARP|Yarp",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1815:17",
+          "inbox/2026-09-08-rcs-28795-instructivo.md:48",
+          "inbox/2026-08-27-pasos-listar-delhaize-y-query-misc1.md:58",
+          "db:knowledge_chunks/953:138",
+          "investigaciones/evidencia-excel-urban-2026-09-17/azure-pr-verificacion.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-pasos-listar-delhaize-y-query-misc1.md:58",
+          "inbox/2026-09-17-rcs-28984.md:23",
+          "db:knowledge_chunks/1815:17",
+          "db:knowledge_chunks/1706:25",
+          "inbox/2026-09-08-rcs-28795-instructivo.md:48"
+        ]
+      }
+    },
+    {
+      "query": "mucha gente cierra la pestaña antes de que cargue, como lo mido",
+      "anchor": "\\b499\\b",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-28-KT-reunion-kiran.md:56",
+          "inbox/2026-09-09-rcs-27549-protocolo.md:5",
+          "inbox/2026-09-01-contexto-para-el-chat-de-jim.md:59",
+          "db:knowledge_chunks/1162:9",
+          "inbox/2026-09-22-pase-de-guardia-adusa.md:130"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-respuestas-27991-28482-28327-28153-27959.md:23",
+          "inbox/2026-08-28-KT-reunion-kiran.md:56",
+          "db:knowledge_chunks/1616:1",
+          "inbox/2026-09-22-pase-de-guardia-adusa.md:15",
+          "inbox/2026-09-09-rcs-27549-protocolo.md:5"
+        ]
+      }
+    },
+    {
+      "query": "la misma consulta paso de instantanea a tardar un minuto sin que nadie desplegara",
+      "anchor": "CardinalityEstimationModelVersion|estimador de cardinalidad",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-28-recomendaciones-kiran-equipo.md:250",
+          "inbox/2026-09-03-rcs-28482-informe.md:69",
+          "db:knowledge_chunks/1732:19",
+          "db:knowledge_chunks/1443:240",
+          "brain/memoria/project_rcs_28256_tailored_brands.md:34"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-24-rcs-28281-donde-consultar.md:57",
+          "brain/memoria/project_rcs_28256_tailored_brands.md:34",
+          "flujos/diagnostico-por-codigo-de-error.md:19",
+          "db:knowledge_chunks/1443:265",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:53"
+        ]
+      }
+    },
+    {
+      "query": "cual es el tope de tiempo que aguanta la aplicacion antes de rendirse",
+      "anchor": "CommandTimeout",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1491:36",
+          "brain/memoria/reference_query_store_regresion_plan.md:40",
+          "flujos/diagnostico-por-codigo-de-error.md:22",
+          "db:knowledge_chunks/956:1",
+          "db:meetings/38:7"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "flujos/diagnostico-por-codigo-de-error.md:22",
+          "db:knowledge_chunks/1491:36",
+          "brain/memoria/reference_query_store_regresion_plan.md:40",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:132",
+          "db:knowledge_chunks/280:1"
+        ]
+      }
+    },
+    {
+      "query": "el cliente dice que tarda muchisimo y no tengo ningun numero propio",
+      "anchor": "Waiting for server response|TTFB",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:78",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:188",
+          "db:knowledge_chunks/1490:1",
+          "brain/memoria/reference_unificacion_patrones.md:33",
+          "bitacora/RCS-28881.md:181"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "flujos/tracker-interno-vs-tracker-cliente.md:25",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:188",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:78",
+          "inbox/2026-09-11-skill-comentario-v2.md:290",
+          "db:knowledge_chunks/1490:1"
+        ]
+      }
+    },
+    {
+      "query": "el cliente no puede grabar la sesion del navegador, de donde saco los tiempos",
+      "anchor": "App Insights|appi-prd-wus2-arp",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_waf_cloudflare_bloqueos.md:27",
+          "inbox/2026-09-25-3sixty-guion-liderar-bilingue.md:69",
+          "db:knowledge_chunks/1326:27",
+          "db:knowledge_chunks/1714:3",
+          "db:knowledge_chunks/1000:11"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_waf_cloudflare_bloqueos.md:27",
+          "inbox/2026-09-28-rcs-28881-guion-llamada-grabacion.md:5",
+          "db:knowledge_chunks/1557:9",
+          "brain/memoria/project_adusa_escalacion_2026_08_14.md:38",
+          "db:knowledge_chunks/1772:43"
+        ]
+      }
+    },
+    {
+      "query": "a quien le queda el ticket cuando lo mando a infraestructura",
+      "anchor": "Under Infrastructure Review",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1599:54",
+          "inbox/2026-09-04-rcs-28556-respuesta-garces.md:32",
+          "db:knowledge_chunks/1677:7",
+          "inbox/2026-09-11-rcs-28389.md:21",
+          "db:knowledge_chunks/1251:5"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1599:54",
+          "db:knowledge_chunks/1275:54",
+          "db:meetings/68:6",
+          "inbox/2026-09-02-rcs-28212-instructivo.md:231",
+          "db:knowledge_chunks/1275:67"
+        ]
+      }
+    },
+    {
+      "query": "que tengo que dejar escrito antes de pasarlo a ingenieria",
+      "anchor": "antes de escalar|before this ticket can be moved to Engineering",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1600:15",
+          "db:knowledge_chunks/1599:33",
+          "inbox/2026-09-28-smart-alerts-personas-y-lecciones.md:18",
+          "inbox/2026-08-28-incidente-asda-a2ipricecast.md:25",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:94"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:94",
+          "inbox/2026-08-28-recomendaciones-kiran-equipo.md:88",
+          "CLAUDE.md:11",
+          "inbox/2026-09-03-rcs-28482-informe.md:77",
+          "inbox/2026-09-11-skill-comentario-v2.md:88"
+        ]
+      }
+    },
+    {
+      "query": "el cliente pide algo que no existe todavia en el producto",
+      "anchor": "Ideas Portal|Pendo",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-adusa-plan-ingenieria.md:27",
+          "flujos/tracker-interno-vs-tracker-cliente.md:47",
+          "inbox/2026-09-02-cosecha-thd-hueco-datos-8-29.md:55",
+          "db:knowledge_chunks/1785:55",
+          "inbox/2026-08-18-reconciliacion-28021-28196-28415.md:58"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-21-cola-verificacion-nivel-3-4-y-bug-28881.md:20",
+          "flujos/tracker-interno-vs-tracker-cliente.md:47",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:94",
+          "db:knowledge_chunks/1371:14",
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:81"
+        ]
+      }
+    },
+    {
+      "query": "cada cuanto tengo que actualizar un ticket segun su prioridad",
+      "anchor": "Critical.{0,30}hora",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:items/2:105",
+          "db:items/2:79",
+          "db:knowledge_chunks/1585:1",
+          "inbox/2026-09-03-respuestas-cliente-attachments.md:64",
+          "inbox/2026-09-04-rcs-28702-PLAN.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1585:1",
+          "db:knowledge_chunks/1344:103",
+          "db:knowledge_chunks/1344:110",
+          "db:knowledge_chunks/1499:78",
+          "db:knowledge_chunks/975:38"
+        ]
+      }
+    },
+    {
+      "query": "el usuario le da a exportar el reporte y no descarga nada",
+      "anchor": "ENG-5649",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/783:4",
+          "bitacora/RCS-28618.md:22",
+          "brain/memoria/reference_jerarquia_ubicaciones_incident.md:18",
+          "inbox/2026-09-09-blain-vivian-see-acceso.md:28",
+          "PASOS.md:393"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_izenda_adusa_dos_rutas.md:1",
+          "db:knowledge_chunks/1555:1",
+          "inbox/2026-08-31-vallarta-hilo-lpms-mapa-y-respuesta.md:26",
+          "inbox/2026-09-03-rcs-28482-informe.md:53",
+          "inbox/2026-09-09-blain-vivian-see-acceso.md:28"
+        ]
+      }
+    },
+    {
+      "query": "el reporte se ve bien en pantalla pero el envio programado trae otra cosa",
+      "anchor": "dos rutas|visor y la entrega",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-18-reunion-cliente-causa-raiz-izenda.md:102",
+          "inbox/2026-09-10-review-ahold-tracker-adusa.md:12",
+          "inbox/2026-09-22-facteus-documentacion-review.md:78",
+          "db:knowledge_chunks/1584:10",
+          "inbox/2026-09-24-rcs-29026.md:6"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-10-review-ahold-tracker-adusa.md:12",
+          "db:knowledge_chunks/1790:12",
+          "db:knowledge_chunks/1599:82",
+          "db:knowledge_chunks/1790:37",
+          "inbox/2026-08-18-reunion-cliente-causa-raiz-izenda.md:102"
+        ]
+      }
+    },
+    {
+      "query": "el usuario tiene el distrito asignado pero no le aparece ninguna tienda",
+      "anchor": "LHUA",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1477:13",
+          "brain/memoria/reference_jerarquia_ubicaciones_incident.md:18",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:7",
+          "db:knowledge_chunks/1606:54",
+          "inbox/2026-09-04-rcs-28709-PLAN.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1606:54",
+          "db:knowledge_chunks/1477:13",
+          "brain/memoria/reference_esquema_usuarios_incident.md:34",
+          "db:knowledge_chunks/1607:35",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:7"
+        ]
+      }
+    },
+    {
+      "query": "un usuario que pertenece a dos zonas solo ve una",
+      "anchor": "multidistrito|dos distritos",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_multidistrito_lhua.md:1",
+          "db:knowledge_chunks/1608:13",
+          "investigaciones/INDICE.md:39",
+          "inbox/2026-08-18-rcs-28219-403-links-y-repro.md:68",
+          "inbox/2026-09-11-eow-registro-cliente-y-uso-de-ia.md:313"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_multidistrito_lhua.md:1",
+          "brain/memoria/reference_esquema_usuarios_incident.md:36",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:320",
+          "db:knowledge_chunks/1716:8",
+          "brain/memoria/reference_esquema_usuarios_incident.md:34"
+        ]
+      }
+    },
+    {
+      "query": "hay tres tablas distintas con usuarios y no se cual manda",
+      "anchor": "LPUser2",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_lpuser_lpuser2_membership.md:1",
+          "brain/memoria/reference_esquema_usuarios_incident.md:23",
+          "brain/memoria/reference_esquema_usuarios_incident.md:1",
+          "inbox/2026-08-28-meet-kiran-preguntas-RCS.md:35",
+          "inbox/2026-09-09-eval-clasificador-77-a-100.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_lpuser_lpuser2_membership.md:1",
+          "brain/memoria/reference_esquema_usuarios_incident.md:1",
+          "brain/memoria/reference_esquema_usuarios_incident.md:23",
+          "inbox/2026-08-27-rcs-28223-continuidad-david-vargas.md:43",
+          "brain/memoria/reference_multidistrito_lhua.md:17"
+        ]
+      }
+    },
+    {
+      "query": "como entro a la base de datos de un tenant para consultar",
+      "anchor": "Bastion",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/299:1",
+          "inbox/2026-09-07-rcs-28281-informe.md:43",
+          "inbox/2026-08-28-meet-kiran-preguntas.md:77",
+          "inbox/2026-08-31-rcs-28618-analisis.md:103",
+          "db:knowledge_chunks/296:6"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-07-rcs-28281-informe.md:43",
+          "flujos/desbloquear-usuario-bloqueado.md:57",
+          "inbox/2026-08-27-rcs-28223-hallazgos-pdf.md:6",
+          "investigaciones/RCS-27942-carton-class-content-code.md:177",
+          "investigaciones/RCS-27942-carton-class-content-code.md:232"
+        ]
+      }
+    },
+    {
+      "query": "movi el caso de tienda y quedo con el numero de antes",
+      "anchor": "RecreateCaseNo",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/project_adusa_ficha_y_tickets.md:22",
+          "inbox/2026-08-24-rcs-28032-evidencia-dayna-y-escalacion.md:28",
+          "inbox/2026-09-09-rcs-27549-protocolo.md:15",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:23",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_recreate_caseno_changelocation.md:23",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:1",
+          "inbox/2026-09-09-rcs-27549-protocolo.md:15",
+          "inbox/2026-08-18-reunion-cliente-causa-raiz-izenda.md:70",
+          "inbox/2026-08-25-rcs-28032-cierre-evidencia-y-escalacion.md:63"
+        ]
+      }
+    },
+    {
+      "query": "la pantalla salio rota y da not found",
+      "anchor": "9QQP",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1784:39",
+          "brain/memoria/project_adusa_ficha_y_tickets.md:40",
+          "inbox/2026-08-24-rcs-28032-screen-labels-y-repro-juan.md:64",
+          "db:knowledge_chunks/1483:15",
+          "db:knowledge_chunks/1725:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_screen_designer_rebuild.md:1",
+          "brain/memoria/project_adusa_ficha_y_tickets.md:40",
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:76",
+          "db:knowledge_chunks/1597:1",
+          "db:knowledge_chunks/1594:15"
+        ]
+      }
+    },
+    {
+      "query": "la configuracion dice una cosa y el sistema se comporta distinto",
+      "anchor": "CustomerEditedValue",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "CLAUDE.md:83",
+          "db:knowledge_chunks/933:1",
+          "db:knowledge_chunks/1479:1",
+          "inbox/2026-09-01-escalar-a-eng.md:57",
+          "inbox/2026-09-03-rcs-28742-PLAN.md:30"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-28-rcs-28621-datos-no-visibles-diagnostico.md:150",
+          "db:knowledge_chunks/1479:1",
+          "flujos/diagnostico-por-codigo-de-error.md:48",
+          "inbox/2026-08-27-rcs-28223-causa-raiz.md:85",
+          "brain/memoria/reference_jira_product_type_field.md:18"
+        ]
+      }
+    },
+    {
+      "query": "el archivo pdf no se deja descargar",
+      "anchor": "ERMS.{0,60}lpms|lpms.{0,60}ERMS",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-28-RCS-28123-protocolo-reproduccion.md:114",
+          "db:knowledge_chunks/1388:40",
+          "inbox/2026-08-18-guia-proceso-rca.md:69",
+          "inbox/2026-08-28-acciones-28535-28123-28482.md:19",
+          "db:knowledge_chunks/1480:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1480:1",
+          "inbox/2026-08-28-acciones-28535-28123-28482.md:19",
+          "brain/memoria/reference_erms_lpms_descarga_pdf.md:1",
+          "db:knowledge_chunks/1718:3",
+          "inbox/2026-08-27-visualcron-conexion-y-feed-adusa.md:271"
+        ]
+      }
+    },
+    {
+      "query": "que va en el tracker del cliente y que no",
+      "anchor": "tracker interno|tracker de cliente|tracker del cliente",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "flujos/tracker-interno-vs-tracker-cliente.md:1",
+          "flujos/tracker-interno-vs-tracker-cliente.md:93",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:188",
+          "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md:10",
+          "inbox/2026-08-28-cosecha-jim-tracker.md:54"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "flujos/tracker-interno-vs-tracker-cliente.md:1",
+          "flujos/tracker-interno-vs-tracker-cliente.md:5",
+          "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md:8",
+          "db:knowledge_chunks/1786:10",
+          "inbox/2026-09-02-cosecha-tracker-columnas-cliente.md:57"
+        ]
+      }
+    },
+    {
+      "query": "como redacto el analisis de causa para el cliente",
+      "anchor": "Shorthand",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:129",
+          "db:knowledge_chunks/1287:75",
+          "inbox/2026-08-24-rcs-28032-har-newaudit-causa.md:1",
+          "inbox/2026-08-31-rcs-28618-analisis.md:668",
+          "inbox/2026-08-31-rcs-28618-analisis.md:642"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1287:75",
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:129",
+          "ESTADO.md:127",
+          "bitacora/RCS-28281.md:6",
+          "db:knowledge_chunks/1293:107"
+        ]
+      }
+    },
+    {
+      "query": "por que no puedo escribir en la base desde el entorno de la app",
+      "anchor": "disk I/O error",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:items/247:2",
+          "db:items/247:1",
+          "db:items/248:6",
+          "db:knowledge_chunks/918:82",
+          "AGENTS.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "CLAUDE.md:104",
+          "CLAUDE.md:122",
+          "db:knowledge_chunks/300:2",
+          "inbox/2026-09-04-rcs-27407-informe.md:89",
+          "investigaciones/RCS-27942-carton-class-content-code.md:85"
+        ]
+      }
+    },
+    {
+      "query": "como ordeno mis tickets por lo que de verdad urge",
+      "anchor": "TE TOCA RESPONDER",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1671:53",
+          "db:knowledge_chunks/1671:1",
+          "db:knowledge_chunks/681:169",
+          "CLAUDE.md:26",
+          "MAPA.md:83"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1671:53",
+          "inbox/2026-08-28-recomendaciones-kiran-equipo.md:34",
+          "db:knowledge_chunks/1671:1",
+          "db:knowledge_chunks/681:169",
+          "db:knowledge_chunks/1681:3"
+        ]
+      }
+    },
+    {
+      "query": "las etiquetas con las que mido el ordenador de la cola quedaron viejas",
+      "anchor": "caduca|vencid",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-26-cola-manana.md:5",
+          "CLAUDE.md:168",
+          "ESTADO.md:223",
+          "db:knowledge_chunks/1804:11",
+          "inbox/2026-09-10-cola-del-dia.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "CLAUDE.md:168",
+          "db:knowledge_chunks/1804:11",
+          "inbox/2026-09-02-cosecha-clasificador-cola-envejecido.md:28",
+          "inbox/2026-09-02-cosecha-clasificador-cola-envejecido.md:10",
+          "inbox/2026-08-26-cola-manana.md:5"
+        ]
+      }
+    },
+    {
+      "query": "donde vive cada cliente en la plataforma de datos",
+      "anchor": "ARDM_PRODUCTION|instancia.{0,40}Greenplum",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "investigaciones/INDICE.md:84",
+          "db:knowledge_chunks/290:3",
+          "db:knowledge_chunks/305:1",
+          "db:knowledge_chunks/299:1",
+          "db:knowledge_chunks/313:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "investigaciones/INDICE.md:84",
+          "db:knowledge_chunks/290:3",
+          "db:knowledge_chunks/313:1",
+          "db:knowledge_chunks/300:2",
+          "brain/memoria/reference_ardm_instancias_clientes.md:1"
+        ]
+      }
+    },
+    {
+      "query": "el ticket lleva semanas sin moverse y nadie le pone nota",
+      "anchor": "Under Support Review.{0,60}parad|atascad",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1586:14",
+          "inbox/2026-09-04-informe-camila-regreso.md:40",
+          "flujos/tracker-interno-vs-tracker-cliente.md:5",
+          "inbox/2026-09-01-rcs-28649-instructivo.md:15",
+          "inbox/2026-08-28-meet-kiran-handoff.md:208"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-04-informe-camila-regreso.md:40",
+          "inbox/2026-08-27-cola-completa-por-sla.md:192",
+          "db:knowledge_chunks/1187:1",
+          "inbox/2026-09-07-rcs-28281-informe.md:45",
+          "db:knowledge_chunks/1586:14"
+        ]
+      }
+    },
+    {
+      "query": "me piden separar en el tablero lo de un producto y lo del otro",
+      "anchor": "Product Type|cf\\[15196\\]",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-10-confluence-triage-diego.md:112",
+          "db:knowledge_chunks/1682:1",
+          "bitacora/RCS-28327.md:6",
+          "db:knowledge_chunks/1832:32",
+          "db:knowledge_chunks/1682:11"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-25-3sixty-guion-apoyo-reunion.md:37",
+          "db:meetings/20:5",
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:110",
+          "inbox/2026-09-10-confluence-triage-diego.md:112",
+          "CLAUDE.md:137"
+        ]
+      }
+    },
+    {
+      "query": "un ticket dice escalado pero es solo una etiqueta",
+      "anchor": "Escalated.*label|label.*Escalated",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "brain/memoria/project_rcs_27973_28283.md:15",
+          "inbox/2026-09-01-adusa-plan-escalacion-filas-61-69.md:327",
+          "db:knowledge_chunks/1601:80",
+          "db:knowledge_chunks/1000:5",
+          "inbox/2026-09-21-d25-generado.md:52"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-08-clasificador-urgencia-diagnostico.md:11",
+          "db:knowledge_chunks/1002:116",
+          "inbox/2026-08-31-cola-manana.md:80",
+          "inbox/2026-09-08-cola-manana.md:3",
+          "ESTADO.md:115"
+        ]
+      }
+    },
+    {
+      "query": "a que estados puedo mover un ticket que esta marcado como urgente",
+      "anchor": "Work in progress.{0,30}551|transicion.{0,20}551",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1679:142",
+          "db:items/247:2",
+          "db:items/247:1",
+          "db:knowledge_chunks/205:1",
+          "db:items/248:6"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-01-rcs-28612-delivery-fee-pos.md:599",
+          "db:knowledge_chunks/1679:117",
+          "db:knowledge_chunks/1260:41",
+          "db:knowledge_chunks/1679:61",
+          "inbox/2026-08-31-guia-del-dia.md:504"
+        ]
+      }
+    },
+    {
+      "query": "el correo automatico corta el numero de tienda",
+      "anchor": "\"075\".{0,20}\"75\"|075.{0,10}a.{0,10}75",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1563:1",
+          "inbox/2026-09-18-rcs-28997-finish-line-client-ids-prod-staging.md:16",
+          "inbox/2026-08-28-cola-manana.md:102",
+          "inbox/2026-09-09-rcs-27549-protocolo.md:15",
+          "inbox/2026-08-21-adusa-d5-transcript-y-correo-jim.md:19"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-09-rcs-27549-protocolo.md:15",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:188",
+          "brain/memoria/reference_recreate_caseno_changelocation.md:23",
+          "inbox/2026-09-21-d25-generado.md:41",
+          "db:knowledge_chunks/1676:70"
+        ]
+      }
+    },
+    {
+      "query": "los usuarios migrados no aparecen en la tabla de identidad",
+      "anchor": "13 usuarios|membership\\.Users",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-28-meet-kiran-handoff.md:31",
+          "db:knowledge_chunks/1562:9",
+          "brain/memoria/reference_esquema_usuarios_incident.md:1",
+          "investigaciones/INDICE.md:39",
+          "investigaciones/INDICE.md:12"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_esquema_usuarios_incident.md:1",
+          "brain/memoria/reference_esquema_usuarios_incident.md:40",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:368",
+          "db:knowledge_chunks/1540:119",
+          "brain/memoria/project_membership_users_13.md:1"
+        ]
+      }
+    },
+    {
+      "query": "el adjunto grande no sube",
+      "anchor": "4 MB|cuatro MB",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-08-migracion-mac-cerebro.md:43",
+          "db:knowledge_chunks/1802:43",
+          "inbox/2026-08-28-cosecha-jim-tracker.md:54",
+          "db:knowledge_chunks/1764:54",
+          "db:knowledge_chunks/1480:1"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-informe-actualizaciones-cliente-viraj.md:143",
+          "inbox/2026-09-08-migracion-mac-cerebro.md:43",
+          "investigaciones/RCS-28535-upload-forbidden.md:1",
+          "PASOS.md:269",
+          "db:knowledge_chunks/1802:43"
+        ]
+      }
+    },
+    {
+      "query": "que hago si el cliente manda una captura sin el pie de pagina",
+      "anchor": "baja(r)? el scroll|capturar el pie",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1488:1",
+          "brain/memoria/reference_waf_cloudflare_bloqueos.md:15",
+          "bitacora/RCS-28881.md:262",
+          "inbox/2026-09-08-clasificador-urgencia-diagnostico.md:64",
+          "inbox/2026-09-15-rcs-28756-update-saddam.md:33"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_waf_cloudflare_bloqueos.md:15",
+          "flujos/desbloquear-usuario-bloqueado.md:20",
+          "bitacora/RCS-28881.md:262",
+          "db:knowledge_chunks/1481:13",
+          "db:knowledge_chunks/1488:1"
+        ]
+      }
+    },
+    {
+      "query": "el cliente de nike pregunta como se calcula un descuento manual",
+      "anchor": "Manual Discount Amount",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1749:26",
+          "db:knowledge_chunks/1796:5",
+          "db:knowledge_chunks/1749:3",
+          "db:knowledge_chunks/1796:1",
+          "inbox/2026-09-03-rcs-28753-informe.md:5"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1749:26",
+          "db:knowledge_chunks/1749:23",
+          "inbox/2026-09-04-cosecha-rcs28753-nike-precedente-descuento.md:5",
+          "inbox/2026-09-03-rcs-28753-informe.md:5",
+          "bitacora/RCS-28753.md:10"
+        ]
+      }
+    },
+    {
+      "query": "dejaron de llegar los archivos de comercio electronico",
+      "anchor": "raw_order|load_raw_ecom",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-02-cosecha-thd-hueco-datos-8-29.md:46",
+          "db:knowledge_chunks/1706:1",
+          "db:knowledge_chunks/1742:3",
+          "inbox/2026-09-22-THD-RCS-28649.md:1",
+          "inbox/2026-09-01-cosecha-rcs-28618.md:52"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1742:95",
+          "db:knowledge_chunks/1742:1",
+          "inbox/2026-08-27-pasos-listar-delhaize-y-query-misc1.md:58",
+          "inbox/2026-09-02-cosecha-thd-hueco-datos-8-29.md:46",
+          "inbox/2026-08-28-rcs-28621-quien-carga-el-archivo.md:89"
+        ]
+      }
+    },
+    {
+      "query": "un caso de siete once copia mal el codigo corto",
+      "anchor": "7-Eleven|7-eleven",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1722:1",
+          "db:knowledge_chunks/1722:103",
+          "inbox/2026-09-15-rcs-28212-hoy.md:9",
+          "inbox/2026-09-02-rcs-28212-informe.md:9",
+          "db:knowledge_chunks/1823:3"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1722:30",
+          "db:knowledge_chunks/1722:103",
+          "inbox/2026-09-02-rcs-28212-informe.md:9",
+          "inbox/2026-09-15-rcs-28212-hoy.md:9",
+          "db:knowledge_chunks/1823:3"
+        ]
+      }
+    },
+    {
+      "query": "la cookie de sesion se renueva sola en una ventana movil",
+      "anchor": "TryRefreshPlatformCohesionCookie|CPFCookie",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-28-rcs-28671.md:1",
+          "db:knowledge_chunks/1445:20",
+          "db:knowledge_chunks/1721:3",
+          "inbox/2026-09-28-rcs-28671-wisc-soporte.md:48",
+          "inbox/2026-09-28-rcs-28671.md:6"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1445:20",
+          "db:knowledge_chunks/1721:3",
+          "inbox/2026-08-27-rcs-28153-fix-liberado.md:31",
+          "db:knowledge_chunks/1574:43",
+          "inbox/2026-09-28-rcs-28671.md:1"
+        ]
+      }
+    },
+    {
+      "query": "cuantos tickets tiene cada ingeniero ahora mismo",
+      "anchor": "RANKING COMPLETO|carga de tickets",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-adusa-plan-ingenieria.md:14",
+          "inbox/2026-09-03-adusa-plan-ingenieria.md:23",
+          "brain/memoria/reference_unificacion_patrones.md:37",
+          "inbox/2026-09-11-skill-comentario-v2.md:143",
+          "inbox/2026-09-08-clasificador-urgencia-diagnostico.md:39"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-adusa-plan-ingenieria.md:14",
+          "db:knowledge_chunks/1575:57",
+          "inbox/2026-09-03-rcs-28482-informe.md:69",
+          "inbox/2026-09-11-skill-comentario-v2.md:57",
+          "ESTADO.md:142"
+        ]
+      }
+    },
+    {
+      "query": "el ingeniero dice que una vez desplegado todos los clientes tienen el mismo codigo",
+      "anchor": "all the clients get the same code",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1492:1",
+          "brain/memoria/project_rcs_28077_28003.md:17",
+          "db:knowledge_chunks/1706:25",
+          "db:meetings/89:1",
+          "db:knowledge_chunks/1158:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_esquema_usuarios_incident.md:36",
+          "inbox/2026-09-04-rcs-27407-informe.md:64",
+          "db:knowledge_chunks/1492:1",
+          "db:knowledge_chunks/1731:3",
+          "brain/memoria/project_rcs_28077_28003.md:17"
+        ]
+      }
+    },
+    {
+      "query": "que pasa con las alertas cuando migran la base de datos",
+      "anchor": "Sportsman|migraci.{0,30}base de datos.{0,40}alert",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-27-cosecha-rcs-28452.md:63",
+          "db:knowledge_chunks/1077:120",
+          "inbox/2026-09-28-rcs-29026.md:3",
+          "db:knowledge_chunks/1828:3",
+          "db:knowledge_chunks/922:26"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:112",
+          "inbox/2026-09-04-rcs-27407-informe.md:100",
+          "db:knowledge_chunks/1712:3",
+          "inbox/2026-08-27-cosecha-rcs-28452.md:63",
+          "inbox/2026-09-22-THD-correcciones-excel.md:46"
+        ]
+      }
+    },
+    {
+      "query": "el usuario entra pero no ve los elementos de trabajo nuevos",
+      "anchor": "900, 901, 902|VirtualFilePath",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/754:42",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:53",
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:103",
+          "investigaciones/sso-cuatro-capas-donde-falla-el-login.md:120",
+          "inbox/2026-08-31-cambios-desde-el-D10-y-dos-correos.md:19"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:53",
+          "brain/memoria/reference_esquema_usuarios_incident.md:34",
+          "db:knowledge_chunks/1594:15",
+          "brain/memoria/reference_esquema_usuarios_incident.md:36",
+          "brain/memoria/reference_hosts_pu_vs_clasico.md:24"
+        ]
+      }
+    },
+    {
+      "query": "por que la busqueda del cerebro devuelve poco",
+      "anchor": "recall@5|FTS5",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-28-cambios-desde-el-D9.md:18",
+          "confluence/RTS-triage/INDICE.md:35",
+          "db:knowledge_chunks/1530:5",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:53",
+          "inbox/2026-09-03-rcs-28753-informe.md:61"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-09-28-cerebro-auditoria.md:1",
+          "inbox/2026-09-04-informe-camila-regreso.md:62",
+          "PASOS.md:382",
+          "inbox/2026-09-09-instructivo-cierre-del-dia.md:16",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:53"
+        ]
+      }
+    },
+    {
+      "query": "el equipo de datos del retailer recibe el ticket, que campos le pongo",
+      "anchor": "Sprint.{0,30}RCS Support Team|Team Ownership",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "inbox/2026-08-27-rts-escalacion-a-quien-asignar.md:18",
+          "inbox/2026-09-04-informe-camila-regreso.md:24",
+          "db:knowledge_chunks/1733:19",
+          "db:knowledge_chunks/922:4",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:112"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-28-consolidado-reuniones.md:174",
+          "db:knowledge_chunks/922:4",
+          "db:knowledge_chunks/1002:116",
+          "db:knowledge_chunks/293:1",
+          "inbox/2026-09-22-facteus-documentacion-review.md:82"
+        ]
+      }
+    },
+    {
+      "query": "el cliente quiere saber por que se cayo el servicio y nadie le contesto",
+      "anchor": "What was the root cause",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1821:139",
+          "db:knowledge_chunks/1821:119",
+          "inbox/2026-08-18-correo-FINAL.md:67",
+          "inbox/2026-09-03-teams-pings-plan-de-movimiento.md:8",
+          "inbox/2026-09-04-cola-manana.md:21"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1821:105",
+          "db:knowledge_chunks/1389:200",
+          "db:knowledge_chunks/1821:139",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:112",
+          "inbox/2026-09-08-clasificador-urgencia-diagnostico.md:22"
+        ]
+      }
+    },
+    {
+      "query": "hay dos tickets del mismo sintoma en clientes distintos, los junto",
+      "anchor": "agrupar no es causa|no enlazarlos|No enlazarlos",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "investigaciones/smart-alerts-familia-de-fallas.md:1",
+          "inbox/2026-08-31-cambios-desde-el-D10-y-dos-correos.md:68",
+          "db:knowledge_chunks/1444:144",
+          "inbox/2026-09-24-rcs-29057.md:22",
+          "db:knowledge_chunks/1532:11"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1576:35",
+          "db:knowledge_chunks/1827:7",
+          "db:knowledge_chunks/1444:144",
+          "db:knowledge_chunks/1601:54",
+          "inbox/2026-09-01-rcs-28649-informe.md:40"
+        ]
+      }
+    },
+    {
+      "query": "cuando una consulta se pone lenta puedo forzar el plan bueno",
+      "anchor": "forzar un plan|is_forced_plan",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-24-facteus-plan-respuesta-chris.md:67",
+          "db:chat_conversations/7:1",
+          "db:chat_conversations/1:1",
+          "db:chat_conversations/1:22",
+          "db:chat_conversations/13:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1491:36",
+          "brain/memoria/reference_query_store_regresion_plan.md:40",
+          "inbox/2026-08-25-rcs-27941-plan-verificacion-escalamiento.md:360",
+          "db:knowledge_chunks/1491:1",
+          "flujos/diagnostico-por-codigo-de-error.md:48"
+        ]
+      }
+    },
+    {
+      "query": "como saco la lista de planes de ejecucion de los ultimos dias",
+      "anchor": "query_store_runtime_stats|sys\\.query_store",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1491:1",
+          "inbox/2026-09-11-rcs-28389-lista-desbloqueo.md:33",
+          "brain/memoria/reference_query_store_regresion_plan.md:18",
+          "inbox/2026-09-22-planes-28581-28099-28984-29026.md:36",
+          "db:knowledge_chunks/1214:121"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "brain/memoria/reference_query_store_regresion_plan.md:18",
+          "db:knowledge_chunks/1491:1",
+          "inbox/2026-09-01-adusa-plan-escalacion-filas-61-69.md:391",
+          "db:knowledge_chunks/1491:16",
+          "inbox/2026-08-31-rcs-28638-plan-ejecucion.md:88"
+        ]
+      }
+    },
+    {
+      "query": "el numero de version de la base de datos influye en la lentitud",
+      "anchor": "compatibility_level|nivel de compatibilidad",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:28",
+          "db:knowledge_chunks/1490:1",
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:1",
+          "db:knowledge_chunks/1454:81",
+          "db:knowledge_chunks/1326:105"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:28",
+          "brain/memoria/reference_medir_lentitud_web_devtools.md:1",
+          "db:knowledge_chunks/1490:12",
+          "flujos/INDICE.md:52",
+          "db:knowledge_chunks/1490:1"
+        ]
+      }
+    },
+    {
+      "query": "que hago cuando ingenieria devuelve el ticket diciendo que es configuracion",
+      "anchor": "devolvio a Under Delivery|no es bug",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-15-rcs-28212-hoy.md:24",
+          "bitacora/RCS-28212.md:232",
+          "inbox/2026-09-24-rcs-29057.md:15",
+          "inbox/2026-09-11-eow-registro-cliente-y-uso-de-ia.md:105",
+          "inbox/2026-09-28-rcs-28212-prioridad-auditoria.md:1"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "bitacora/RCS-28212.md:232",
+          "inbox/2026-09-11-skill-comentario-v2.md:88",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:94",
+          "inbox/2026-09-11-eow-registro-cliente-y-uso-de-ia.md:105",
+          "inbox/2026-09-03-rcs-28753-instructivo.md:33"
+        ]
+      }
+    },
+    {
+      "query": "necesito saber si un arreglo ya salio en que version",
+      "anchor": "Release 1/2|August 2026 Release",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-03-informe-actualizaciones-cliente-viraj.md:23",
+          "inbox/2026-09-03-informe-actualizaciones-cliente-viraj.md:65",
+          "inbox/2026-08-18-correo-FINAL.md:67",
+          "db:knowledge_chunks/1613:19",
+          "inbox/2026-09-01-cola.md:5"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-25-rcs-28294-repro-smart-alerts.md:8",
+          "inbox/2026-08-18-correo-y-cambios-tracker-pm.md:167",
+          "investigaciones/excel-urban-root-cause-2026-09-17.md:42",
+          "inbox/2026-08-28-meet-kiran-handoff.md:136",
+          "inbox/2026-08-18-HANDOFF-adusa.md:161"
+        ]
+      }
+    },
+    {
+      "query": "un ingeniero confirmo por chat que la ruta correcta es otra",
+      "anchor": "waiting for Engineering IMO|Jon Morgan",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:76",
+          "inbox/2026-09-11-skill-comentario-v2.md:143",
+          "inbox/2026-09-01-contexto-para-el-chat-de-jim.md:70",
+          "db:knowledge_chunks/1739:61",
+          "db:knowledge_chunks/1412:38"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-11-skill-comentario-v2.md:143",
+          "inbox/2026-09-11-skill-comentario-v2.md:21",
+          "inbox/2026-09-01-adusa-plan-escalacion-filas-61-69.md:53",
+          "brain/memoria/feedback_estilo_mensajes.md:1",
+          "inbox/2026-08-24-rcs-28327-validacion-composer.md:76"
+        ]
+      }
+    },
+    {
+      "query": "el estado que suena a base de datos no lo usa nadie",
+      "anchor": "Waiting for Database Services|Under Database Services Review",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/635:1",
+          "db:knowledge_chunks/299:1",
+          "inbox/2026-08-27-rcs-28223-hallazgos-pdf.md:6",
+          "inbox/2026-09-24-facteus-plan-respuesta-chris.md:25",
+          "db:knowledge_chunks/1041:68"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/635:1",
+          "inbox/2026-09-11-eow-registro-cliente-y-uso-de-ia.md:313",
+          "ESTADO.md:25",
+          "inbox/2026-08-18-reunion-cliente-causa-raiz-izenda.md:86",
+          "inbox/2026-08-28-rcs-28621-datos-no-visibles-diagnostico.md:7"
+        ]
+      }
+    },
+    {
+      "query": "cuando el cliente ya reviso y quedo bien, que sigue",
+      "anchor": "Closed.{0,40}verifica|cliente verifica",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1823:3",
+          "inbox/2026-09-07-cosecha-roster-clasificador-sistema.md:21",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:62",
+          "db:knowledge_chunks/1799:21",
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:35"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-11-skill-respuesta-cliente-v2.md:62",
+          "inbox/2026-09-07-rcs-28281-informe.md:49",
+          "inbox/2026-09-02-rcs-28212-informe.md:248",
+          "db:knowledge_chunks/1287:51",
+          "db:knowledge_chunks/1823:3"
+        ]
+      }
+    },
+    {
+      "query": "los usuarios de una tienda no reciben nada y los de otra si",
+      "anchor": "Store 9718|store.{0,20}complet.{0,20}auditor",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1572:8",
+          "db:knowledge_chunks/1477:13",
+          "inbox/2026-08-24-adusa-d6-llamada-lunes.md:83",
+          "inbox/2026-08-24-adusa-traspaso-diego-edwin.md:48",
+          "db:knowledge_chunks/1815:11"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "db:knowledge_chunks/1606:54",
+          "db:knowledge_chunks/1560:11",
+          "brain/memoria/reference_esquema_usuarios_incident.md:34",
+          "db:knowledge_chunks/1477:13",
+          "db:knowledge_chunks/1815:11"
+        ]
+      }
+    },
+    {
+      "query": "me piden el detalle de una transaccion que no aparece",
+      "anchor": "fti\\.Transactions|ARDM_PRODUCTION",
+      "bm25": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1785:8",
+          "db:knowledge_chunks/1785:69",
+          "inbox/2026-09-02-rcs-28671-snowflake-para-alguien-con-acceso.md:28",
+          "inbox/2026-08-31-rcs-28638-prompt-claude-code.md:37",
+          "db:knowledge_chunks/1682:1"
+        ]
+      },
+      "hybrid": {
+        "hit": true,
+        "sources": [
+          "db:knowledge_chunks/1785:39",
+          "inbox/2026-08-28-rcs-28638-myer-header-ext.md:49",
+          "inbox/2026-09-01-rcs-28649-informe.md:234",
+          "inbox/2026-09-02-rcs-28671-snowflake-para-alguien-con-acceso.md:28",
+          "db:knowledge_chunks/1785:1"
+        ]
+      }
+    },
+    {
+      "query": "el trabajo quedo generado antes de que existieran los datos",
+      "anchor": "work item.{0,60}antes|generated before the underlying event",
+      "bm25": {
+        "hit": false,
+        "sources": [
+          "inbox/2026-09-15-d22-generado.md:86",
+          "db:knowledge_chunks/1690:3",
+          "inbox/2026-09-14-d21-generado.md:65",
+          "inbox/2026-09-15-d22-generado.md:101",
+          "inbox/2026-09-17-d23-generado.md:107"
+        ]
+      },
+      "hybrid": {
+        "hit": false,
+        "sources": [
+          "CLAUDE.md:11",
+          "db:knowledge_chunks/1596:17",
+          "brain/memoria/project_flujo_trabajo_cerebro.md:22",
+          "inbox/2026-09-15-d22-generado.md:86",
+          "inbox/2026-09-02-rcs-28671-work-items-sin-transacciones.md:144"
+        ]
+      }
+    }
+  ],
+  "bm25": {
+    "hits": 36,
+    "total": 101,
+    "median_seconds": 0.0025134579627774656
+  },
+  "hybrid": {
+    "hits": 48,
+    "total": 101,
+    "median_seconds": 0.09558183397166431
+  }
+}

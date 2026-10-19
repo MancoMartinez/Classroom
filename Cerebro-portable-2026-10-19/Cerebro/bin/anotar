@@ -1,0 +1,33 @@
+#!/bin/bash
+# Registra en la bitacora de un ticket lo que Juan ya trabajo. Append only, nunca pisa.
+#   bin/anotar RCS-28482 "pegue el comentario del MISC tab, quedo en Work in progress"
+#   bin/anotar RCS-28482 < nota.md
+#   bin/anotar RCS-28482 --ver
+set -uo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+TID="${1:-}"
+[ -z "$TID" ] && { echo "uso: bin/anotar RCS-28482 \"lo que hiciste\""; exit 1; }
+shift
+DIR="$ROOT/bitacora"; F="$DIR/$TID.md"
+mkdir -p "$DIR" "$ROOT/adjuntos/$TID"
+
+if [ "${1:-}" = "--ver" ]; then
+  [ -f "$F" ] && cat "$F" || echo "sin bitacora para $TID"
+  exit 0
+fi
+
+NOTA="$*"
+[ -z "$NOTA" ] && NOTA=$(cat)
+[ -z "$NOTA" ] && { echo "no llego nota"; exit 1; }
+
+HOY=$(date +%Y-%m-%d)
+HORA=$(date +%H:%M)
+[ -f "$F" ] || printf '# %s — bitacora\n\nLo que Juan reporto haber trabajado. Jira sigue siendo la fuente de verdad del estado.\nAdjuntos de este ticket en `adjuntos/%s/`.\n' "$TID" "$TID" > "$F"
+
+printf '\n## %s\n\n%s (%s)\n' "$HOY" "$NOTA" "$HORA" >> "$F"
+echo "anotado en bitacora/$TID.md"
+
+# La cola se recalcula sola si ya hay volcado de Jira.
+[ -f "$ROOT/cola/jira-dump.json" ] && python3 "$ROOT/bin/cola.py" "$ROOT/cola/jira-dump.json" >/dev/null 2>&1 \
+  && echo "cola recalculada"
+exit 0

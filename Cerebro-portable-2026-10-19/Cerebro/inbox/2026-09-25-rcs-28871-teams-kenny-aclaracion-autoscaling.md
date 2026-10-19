@@ -1,0 +1,1 @@
+Thanks Kenny. Just so I pass the right thing to Walgreens, is the autoscaling you mentioned already active on their current environment, or is that the one coming with the migration project you mentioned earlier for the certificate? Want to make sure I do not contradict what we already told them on that point.

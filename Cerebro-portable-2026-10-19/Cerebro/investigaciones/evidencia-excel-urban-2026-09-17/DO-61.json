@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"data\":{\"id\":\"1003111\",\"key\":\"DO-61\",\"fields\":{\"summary\":\"RCS Tickets\",\"comment\":{\"comments\":[],\"maxResults\":0,\"total\":0,\"startAt\":0},\"issuelinks\":[],\"status\":{\"description\":\"\",\"name\":\"In Development\",\"id\":\"12477\",\"statusCategory\":{\"id\":4,\"key\":\"indeterminate\",\"colorName\":\"yellow\",\"name\":\"In Progress\"}}},\"appliedContentFormat\":\"markdown\"}}"
+    }
+  ],
+  "isError": false
+}

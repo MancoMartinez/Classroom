@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Prueba reproducible sobre el corpus completo; las anclas son proxies, no juicio humano."""
+import collections, contextlib, datetime, hashlib, json, re, time
+import cerebro_motor as b
+
+def main():
+    b.build_vectors(download=False)
+    cases=json.loads((b.ROOT/'cola/EVAL-recuperacion.json').read_text())['casos']
+    results=[]; times=collections.defaultdict(list)
+    for case in cases:
+        row={'query':case['q'],'anchor':case['ancla']}
+        rx=re.compile(case['ancla'],re.I|re.S)
+        for mode in ('bm25','hybrid'):
+            start=time.perf_counter(); found=b.search(case['q'],5,mode,refresh=False)
+            times[mode].append(time.perf_counter()-start)
+            row[mode]={'hit':any(rx.search(r['title']+'\n'+r['body']) for r in found['results']),
+                       'sources':[r['path']+':'+str(r['line']) for r in found['results']]}
+        results.append(row)
+    summary={'date':datetime.datetime.now(datetime.timezone.utc).isoformat(),'cases':len(cases),'metric':'hit-rate@5 por ancla regex en el fragmento recuperado',
+             'limits':'Set heredado, sin holdout ni evaluación humana. Fragmentos del corpus completo; no comparable directamente con cifras antiguas sobre 1776 documentos de SQLite. No mide exactitud de respuestas.',
+             'index':b.status(),'results':results}
+    for mode in times:
+        summary[mode]={'hits':sum(r[mode]['hit'] for r in results),'total':len(cases),
+                       'median_seconds':sorted(times[mode])[len(cases)//2]}
+    stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S')
+    with contextlib.closing(b.connection()) as c:
+        summary['corpus_signature']=hashlib.sha256(json.dumps([tuple(r) for r in c.execute('SELECT path,signature FROM sources ORDER BY path')]).encode()).hexdigest()
+    summary['questions_sha256']=hashlib.sha256((b.ROOT/'cola/EVAL-recuperacion.json').read_bytes()).hexdigest()
+    out=b.ROOT/f'.cerebro/evaluacion-{stamp}.json';out.write_text(json.dumps(summary,ensure_ascii=False,indent=2))
+    print(json.dumps({k:v for k,v in summary.items() if k!='results'},ensure_ascii=False,indent=2))
+if __name__=='__main__':main()

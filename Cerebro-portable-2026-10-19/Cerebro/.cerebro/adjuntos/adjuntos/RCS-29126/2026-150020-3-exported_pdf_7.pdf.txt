@@ -1,0 +1,600 @@
+# Adjunto 2026-150020-3-exported_pdf_7.pdf
+Ruta: adjuntos/RCS-29126/2026-150020-3-exported_pdf_7.pdf
+Tipo: pdf
+Ticket: RCS-29126
+Modificado: 2026-09-30
+
+## Página 1
+Aarya Datta (#7)
+09/21/2026 5:49:20 PM
+TNF #20-Somerset. Additional subject: Ryan Yakow
+Owner: Mike Croze
+https://vfcorp.apprissretailcloud.com/platform//viewer#/store/live/factboard/7
+Event
+Event: 2605016318158484706
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605016318158484706
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 84416
+Cashier 874122
+Order No: 2605016318158484706
+Discount Staﬀ ID 00uepe54gntJV2ZwA5d7
+RETURN
+05/01/2026 3:03:47 PM
+  QTY Price Amt
+W EVO SD OS CREW Opal Frost (R)
+198266072388 -1.00 $30.00 $-30.00
+Orig Ticket No: 84289
+EMPLOYEE DISC % (50%) $30.00
+Payments
+SUBTOTAL $-30.00
+SALES TAX $-1.80
+TOTAL $-31.80
+Discounts
+EMPLOYEE DISC % (50%) $30.00
+TOTAL DISCOUNT $30.00
+Tenders
+DEBIT - USDEBIT $-31.80
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+Original Transaction Information
+Original Store Original Pos
+20 53
+Original Ticket No: Original Ticket Amount:
+84289 $0.00
+Original Cashier No: Original Trading Day:
+874122 04/27/2026
+Orig Order No
+2604272265793379991
+
+## Página 2
+Event
+Event: 2605018631120719284
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605018631120719284
+Event
+Event: 2605082476177097305
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605082476177097305
+05/01/2026 3:04:29 PM
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+05/01/2026 3:05:19 PM
+Store 150020 Pos 53 Trans# 84417
+Cashier 874122
+Order No: 2605018631120719284
+RETURN
+05/01/2026 3:04:45 PM
+  QTY Price Amt
+W 96 RETRO NUPTSE JKT TNF Black/R (NR)
+197804209934 -1.00 $380.00 $-380.00
+W EVO SD ST LG REG PNT WHITE DUNE (NR)
+197804154982 -1.00 $65.00 $-65.00
+Payments
+SUBTOTAL $-445.00
+SALES TAX $-26.70
+TOTAL $-471.70
+Tenders
+DEBIT - USDEBIT $-471.70
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 84697
+Cashier 874122
+Order No: 2605082476177097305
+RETURN
+
+## Página 3
+Event
+Event: 2605087144583276642
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605087144583276642
+05/08/2026 2:30:36 PM
+05/08/2026 2:29:51 PM
+  QTY Price Amt
+W VOYAGE RAIN 3L HD PKA GRANITE GREY (NR)
+198266146928 -1.00 $270.00 $-270.00
+Payments
+SUBTOTAL $-270.00
+SALES TAX $-16.20
+TOTAL $-286.20
+Tenders
+DEBIT - USDEBIT $-286.20
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 84698
+Cashier 874122
+Order No: 2605087144583276642
+Discount Staﬀ ID 00uepe54gntJV2ZwA5d7
+SALE
+05/08/2026 2:32:19 PM
+  QTY Price Amt
+U DISTORT LOGO RLX TEE Summit Navy/Lav
+199390164567 1.00 $45.00 $22.50
+EMPLOYEE DISC % (50%) $22.50
+Payments
+SUBTOTAL $22.50
+SALES TAX $1.35
+TOTAL $23.85
+Discounts
+EMPLOYEE DISC % (50%) $22.50
+TOTAL DISCOUNT $22.50
+Tenders
+DEBIT - USDEBIT $23.85
+Card No 433763 **** 0410
+Auth : 921130 Authorized
+Cardholder : UNKNOWN
+
+## Página 4
+Event
+Event: 2605096948383451639
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605096948383451639
+Event
+Event: 2605149794409246101
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605149794409246101
+05/08/2026 2:33:53 PM
+ITEMS SOLD 1
+ITEMS RETURNED 0
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+05/09/2026 6:04:20 PM
+Store 150020 Pos 51 Trans# 51283
+Cashier 874122
+Order No: 2605096948383451639
+RETURN
+05/09/2026 6:02:16 PM
+  QTY Price Amt
+W VOYAGE RAIN 3L HD PKA GRANITE GREY (NR)
+198266146928 -1.00 $270.00 $-270.00
+W TNF EASY PKBL CGO PNT WHITE DUNE (NR)
+198266213880 -1.00 $110.00 $-110.00
+Payments
+SUBTOTAL $-380.00
+SALES TAX $-22.80
+TOTAL $-402.80
+Tenders
+DEBIT - USDEBIT $-402.80
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 51 Trans# 51309
+Cashier 874122
+
+## Página 5
+Event
+Event: 2605146518836055545
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605146518836055545
+05/14/2026 5:07:13 PM
+Order No: 2605149794409246101
+Discount Staﬀ ID 00uepe54gntJV2ZwA5d7
+RETURN
+05/14/2026 5:05:09 PM
+  QTY Price Amt
+U DISTORT LOGO RLX TEE Summit Navy/Lav (R)
+199390164567 -1.00 $22.50 $-22.50
+Orig Ticket No: 84698
+EMPLOYEE DISC % (50%) $22.50
+M ANTORA TRICLIMATE TNF Black/Vanad (NR) V
+197642100011 -1.00 $290.00 $-290.00
+Payments
+SUBTOTAL $-22.50
+SALES TAX $-1.35
+TOTAL $-23.85
+Discounts
+EMPLOYEE DISC % (50%) $22.50
+TOTAL DISCOUNT $22.50
+Tenders
+DEBIT - USDEBIT $-23.85
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+Original Transaction Information
+Original Store Original Pos
+20 53
+Original Ticket No: Original Ticket Amount:
+84698 $0.00
+Original Cashier No: Original Trading Day:
+874122 05/08/2026
+Orig Order No
+2605089786832967837
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 51 Trans# 51310
+Cashier 874122
+Order No: 2605146518836055545
+RETURN
+
+## Página 6
+Event
+Event: 2605264528859823814
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605264528859823814
+05/14/2026 5:10:03 PM
+05/14/2026 5:07:32 PM
+  QTY Price Amt
+M ANTORA TRICLIMATE TNF Black/Vanad (NR)
+197642100011 -1.00 $290.00 $-290.00
+Payments
+SUBTOTAL $-290.00
+SALES TAX $-17.40
+TOTAL $-307.40
+Tenders
+DEBIT - USDEBIT $-307.40
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 85507
+Cashier 874122
+Order No: 2605264528859823814
+RETURN
+05/26/2026 5:09:10 PM
+  QTY Price Amt
+W QUEST INS JKT Frost Grey (NR) V
+198266150680 -1.00 $200.00 $-200.00
+W VOYAGE RAIN 3L HD JKT Cedar (NR) V
+198266191867 -1.00 $220.00 $-220.00
+W ESS OS CREW WHITE DUNE (NR)
+197065061807 -1.00 $44.50 $-44.50
+Payments
+SUBTOTAL $-44.50
+SALES TAX $-2.67
+TOTAL $-47.17
+Tenders
+DEBIT - USDEBIT $-47.17
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+
+## Página 7
+Event
+Event: 2605260126154433602
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2605260126154433602
+Event
+Event: 2606125713283196538
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2606125713283196538
+05/26/2026 5:11:05 PM
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+05/26/2026 5:13:26 PM
+Store 150020 Pos 53 Trans# 85508
+Cashier 874122
+Order No: 2605260126154433602
+RETURN
+05/26/2026 5:12:02 PM
+  QTY Price Amt
+W QUEST INS JKT Frost Grey (NR)
+198266150680 -1.00 $200.00 $-200.00
+W VOYAGE RAIN 3L HD JKT Cedar (NR)
+198266191867 -1.00 $220.00 $-220.00
+Payments
+SUBTOTAL $-420.00
+SALES TAX $-25.20
+TOTAL $-445.20
+Tenders
+DEBIT - USDEBIT $-445.20
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 52 Trans# 99940
+Cashier 874122
+Order No: 2606125713283196538
+
+## Página 8
+Event
+Event: 2606221907346255965
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2606221907346255965
+06/12/2026 7:40:02 PM
+RETURN
+06/12/2026 7:39:16 PM
+  QTY Price Amt
+W EVO SD REG SHORT TNF BLACK (NR)
+197804175611 -1.00 $50.00 $-50.00
+M WANDER JOGGER 2.0 SMOKED PEARL (NR)
+196575615364 -1.00 $80.00 $-80.00
+M TNF RB S/S Tee OBSIDIAN (NR)
+197804301218 -1.00 $55.00 $-55.00
+Payments
+SUBTOTAL $-185.00
+SALES TAX $-11.10
+TOTAL $-196.10
+Tenders
+DEBIT - USDEBIT $-196.10
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 3
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 52 Trans# 100428
+Cashier 874122
+Order No: 2606221907346255965
+RETURN
+06/22/2026 2:56:02 PM
+  QTY Price Amt
+TNF RB Large Tote TNF BLACK (NR)
+198266539546 -1.00 $64.00 $-64.00
+OTHER (IP) (60%) $96.00
+W JAIDA SS TEE Metal Pink Ligh (NR)
+198266193656 -1.00 $24.00 $-24.00
+OTHER (IP) (60%) $36.00
+W EVO SD OS CREW WHITE DUNE (NR)
+197804192762 -1.00 $18.00 $-18.00
+OTHER (IP) (70%) $42.00
+W HOME RLX SS TEE WHITE DUNE (NR)
+198266080222 -1.00 $14.00 $-14.00
+OTHER (IP) (60%) $21.00
+
+## Página 9
+Event
+Event: 2606249235292882154
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2606249235292882154
+06/22/2026 2:59:48 PM
+W VOYAGE RAIN 3L HD JKT Frost Grey (NR)
+198266147000 -1.00 $88.00 $-88.00
+OTHER (IP) (60%) $132.00
+Payments
+SUBTOTAL $-208.00
+SALES TAX $-12.48
+TOTAL $-220.48
+Discounts
+OTHER (IP) (60%) $96.00
+OTHER (IP) (60%) $36.00
+OTHER (IP) (70%) $42.00
+OTHER (IP) (60%) $21.00
+OTHER (IP) (60%) $132.00
+TOTAL DISCOUNT $327.00
+Tenders
+DEBIT - USDEBIT $-220.48
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 5
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 86756
+Cashier 874122
+Order No: 2606249235292882154
+RETURN
+06/24/2026 11:07:44 AM
+  QTY Price Amt
+U US SKI RLX HD TNF BLACK (NR)
+198270364998 -1.00 $32.00 $-32.00
+Payments
+SUBTOTAL $-32.00
+SALES TAX $-1.92
+TOTAL $-33.92
+Tenders
+DEBIT - USDEBIT $-33.92
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+
+## Página 10
+Event
+Event: 2606306583569943643
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2606306583569943643
+Event
+Event: 2606306630679371393
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2606306630679371393
+06/24/2026 11:10:13 AM
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+06/30/2026 4:00:10 PM
+Store 150020 Pos 53 Trans# 87026
+Cashier 916675
+Order No: 2606306583569943643
+Discount Staﬀ ID 00uepe54gntJV2ZwA5d7
+SALE
+06/30/2026 3:58:36 PM
+  QTY Price Amt
+M YUMIORI OFF PEAK 1/2 Stone Slab/Dimm
+198266148014 1.00 $140.00 $70.00
+EMPLOYEE DISC % (50%) $70.00
+Payments
+SUBTOTAL $70.00
+SALES TAX $4.20
+TOTAL $74.20
+Discounts
+EMPLOYEE DISC % (50%) $70.00
+TOTAL DISCOUNT $70.00
+Tenders
+GIFT_CARD - GCARD $60.00
+Card No 6035710662530108255
+Auth : 162586 Authorized
+Cardholder : UNKNOWN
+DEBIT - USDEBIT $14.20
+Card No 433763 **** 0410
+Auth : 982177 Authorized
+Cardholder : UNKNOWN
+ITEMS SOLD 1
+ITEMS RETURNED 0
+
+## Página 11
+Event
+Event: 2607031424547617026
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2607031424547617026
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+06/30/2026 5:44:08 PM
+Store 150020 Pos 53 Trans# 87029
+Cashier 916675
+Order No: 2606306630679371393
+Discount Staﬀ ID 00uepe54gntJV2ZwA5d7
+SALE
+06/30/2026 5:42:12 PM
+  QTY Price Amt
+W FUTUREFLC LT 1/2 ZIP TNF Black-NPF
+197641101668 1.00 $170.00 $85.00
+EMPLOYEE DISC % (50%) $85.00
+Payments
+SUBTOTAL $85.00
+SALES TAX $5.10
+TOTAL $90.10
+Discounts
+EMPLOYEE DISC % (50%) $85.00
+TOTAL DISCOUNT $85.00
+Tenders
+GIFT_CARD - GCARD $90.00
+Card No 6035710662530351368
+Auth : 160263 Authorized
+Cardholder : UNKNOWN
+DEBIT - USDEBIT $0.10
+Card No 433763 **** 0410
+Auth : 837479 Authorized
+Cardholder : UNKNOWN
+ITEMS SOLD 1
+ITEMS RETURNED 0
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 52 Trans# 100803
+Cashier 874122
+Order No: 2607031424547617026
+
+## Página 12
+Event
+Event: 2607067953346706721
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2607067953346706721
+07/03/2026 2:51:25 PM
+RETURN
+07/03/2026 2:49:54 PM
+  QTY Price Amt
+M GTX MOUNTAIN JACKET Pearl Stone/TNF (NR)
+198266132549 -1.00 $450.00 $-450.00
+M WANDER JOGGER 2.0 TNF BLACK (NR) V
+196575637649 -1.00 $80.00 $-80.00
+Payments
+SUBTOTAL $-450.00
+SALES TAX $-27.00
+TOTAL $-477.00
+Tenders
+DEBIT - USDEBIT $-477.00
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 1
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+Store 150020 Pos 53 Trans# 87234
+Cashier 874122
+Order No: 2607067953346706721
+RETURN
+07/06/2026 12:19:55 PM
+  QTY Price Amt
+M YUMIORI OFF PEAK 1/2 Stone Slab/Dimm (NR)
+198266148014 -1.00 $70.00 $-70.00
+OTHER (IP) (50%) $70.00
+W CRTOMONO TRI HD JKT TNF BLACK (NR)
+197804113934 -1.00 $185.00 $-185.00
+OTHER (IP) (50%) $185.00
+Payments
+SUBTOTAL $-255.00
+SALES TAX $-15.30
+TOTAL $-270.30
+Discounts
+OTHER (IP) (50%) $70.00
+
+## Página 13
+Event
+Event: 2607126265402505117
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2607126265402505117
+Event
+07/06/2026 12:22:15 PM
+OTHER (IP) (50%) $185.00
+TOTAL DISCOUNT $255.00
+Tenders
+DEBIT - USDEBIT $-270.30
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+07/12/2026 3:48:57 PM
+Store 150020 Pos 51 Trans# 51650
+Cashier 900179
+Order No: 2607126265402505117
+RETURN
+07/12/2026 3:47:21 PM
+  QTY Price Amt
+W DN SKY SS TNF BLACK (NR)
+197642894033 -1.00 $22.50 $-22.50
+OTHER (IP) (50%) $22.50
+W DUNE SKY LS TNF BLACK (NR)
+197642950678 -1.00 $30.00 $-30.00
+OTHER (IP) (50%) $30.00
+Payments
+SUBTOTAL $-52.50
+SALES TAX $-3.15
+TOTAL $-55.65
+Discounts
+OTHER (IP) (50%) $22.50
+OTHER (IP) (50%) $30.00
+TOTAL DISCOUNT $52.50
+Tenders
+DEBIT - USDEBIT $-55.65
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2
+
+## Página 14
+Event: 2607176110272841744
+https://vfcorp.apprissretailcloud.com/platform/viewer#/store/live/factboard/7?selectedEventId=2607176110272841744
+Store 150020
+USCA > USA > Michigan > Troy Somerset Collection 020 - TNF
+2800 West Big Beaver, Space #T249 Somerset Collection - North, Troy, Michigan, 48084
+07/17/2026 3:30:30 PM
+Store 150020 Pos 52 Trans# 101320
+Cashier 874122
+Order No: 2607176110272841744
+RETURN
+07/17/2026 3:29:36 PM
+  QTY Price Amt
+W EVO SD ST LG REG PNT TNF BLACK (NR)
+197804185085 -1.00 $65.00 $-65.00
+W VALLEY VIEW JACKET TNF BLACK (NR)
+198266145501 -1.00 $300.00 $-300.00
+Payments
+SUBTOTAL $-365.00
+SALES TAX $-21.90
+TOTAL $-386.90
+Tenders
+DEBIT - USDEBIT $-386.90
+Card No 433763 **** 0410
+Cardholder : UNKNOWN
+ITEMS SOLD 0
+ITEMS RETURNED 2

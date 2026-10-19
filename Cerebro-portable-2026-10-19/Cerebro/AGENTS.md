@@ -1,0 +1,68 @@
+# Cerebro: reglas permanentes del proyecto
+
+Aplican a todas las tareas y sesiones de agentes en esta carpeta y sus subcarpetas. Decisión de Juan del 16 de septiembre de 2026. Estas reglas sustituyen cualquier excepción histórica contradictoria en memorias, guías o habilidades del proyecto.
+
+1. brain/sessions.db es de SOLO LECTURA desde el agente, en cualquier entorno. El montaje FUSE puede impedir los bloqueos de SQLite. Nunca ejecutar bin/guardar ni bin/ingerir_inbox.py, tampoco en modo de ensayo. No escribir en la base por otro script, SQL o herramienta. Abrir SQLite con mode=ro; usar immutable=1 solo como alternativa de lectura si falla el bloqueo. Para guardar, escribir inbox/AAAA-MM-DD-tema.md y avisar a Juan. Juan ingiere desde su terminal con cerrar. El agente no ejecuta cerrar.
+2. Escribir todo entregable a inbox/AAAA-MM-DD-tema.md en el momento, antes de continuar. Nada que valga queda solo en el chat. Para Office, guardar el xlsx, docx o pptx y una nota con su ruta en inbox/AAAA-MM-DD-tema.md.
+3. Jira es de SOLO LECTURA. Nunca comentar, transicionar, editar ni crear tickets. Tampoco añadir etiquetas. Redactar el texto; Juan lo pega. Esta regla se aplica a conectores, navegador, API y scripts.
+4. Antes de investigar, buscar con python3 bin/buscar "el sintoma concreto" o python3 bin/buscar RCS-28535. Leer la ficha y las fuentes encontradas antes de repetir trabajo.
+5. Para trabajo repetido, consultar flujos/INDICE.md e investigaciones/INDICE.md antes de investigar desde cero. Para la cola, consultar tickets/INDICE.md. Verificar estados actuales en Jira. Usar fechas reales de comentarios para actividad, nunca inferirla de created o updated del ticket.
+6. Español para hablar con Juan. Inglés para todo texto destinado a pegarse en Jira, Confluence o Teams.
+7. Un entregable por ticket, máximo 2500 caracteres. Incluir qué pasa, causa confirmada o hipótesis, evidencia con fuente, qué hago hoy, precedentes y compromisos. Consultar la historia con bin/buscar; no recrearla en el archivo.
+8. Sin guiones como conectores. Sin Markdown ni negritas en bloques pegables.
+
+Trabajo habitual permitido: buscar, leer fichas, redactar comentarios y respuestas al cliente, crear entregables de Office. Consultar CLAUDE.md para contexto complementario compatible. SQL de producción y sistemas de terceros permanecen en solo lectura.
+
+## Accesos de Juan, verificados
+
+Hechos establecidos, no hipótesis. Fuente completa: `brain/memoria/project_juan_accesos.md` y `brain/memoria/reference_acceso_sql_tenants.md`. Nunca escribas "acceso sin verificar", nunca sugieras que Juan pida un permiso de esta lista ni que otra persona corra algo por él.
+
+1. SQL Server de producción: Azure Bastion, SSMS, instancia `sqlmi-prd-wus2-arp-001`, login `jmartinez@trebu.co` con Entra MFA. Credencial de lectura y de escritura separadas; si una consulta falla o sale vacía, primero el rol conectado. Bases `sqldb-prd-wus2-arp-production-NNN-xxx-platform`, NNN es el Client ID. Desde el agente todo es SELECT.
+2. Control Panel USPROD, roles SupportL2 y Engineers: WISC, Hatr Trigger Task, Ops Overview, Logs, Incident Logs, Search Stats, Sidekick, Returns Portal, Alerts, Arp Files, Global Config, Config Items, Enumerations, Feature Flags. Entrada a un tenant por "Click logo to sign in".
+3. Snowflake y SnowTime.
+4. Límites reales: Azure Portal con RBAC parcial, cerca de 14 VMs; APIS solo con el company ID `jcrew-prep`, cada tenant pide alta propia. Solo estos dos se tratan como acceso por confirmar.
+
+Lo que sí se verifica en la sesión: el dato concreto. Client ID de un tenant, nombre exacto de una base, columna, ruta de archivo, estado en Jira. Antes de dudar de un acceso, lee esta sección.
+
+## Recuperación compartida, 28 septiembre 2026
+
+Las ocho reglas anteriores permanecen intactas. Para consultar, preferir las herramientas MCP de cerebro si están disponibles: contexto_ticket para un ID, buscar_conocimiento para el síntoma, leer_fuente para evidencia completa y estado_cerebro para cobertura. Sin MCP, usar python3 bin/buscar y python3 bin/cerebro read. El mismo motor atiende ambas rutas.
+
+Para un ticket, leer la ficha, la última entrada pertinente de bitácora y notas recientes de source_paths, aunque una ficha vieja ya dé una explicación. El paquete es una selección, no todo el expediente. Buscar además el síntoma y sus precedentes. Si la primera consulta no sirve, reformular con el término técnico o en inglés; no concluir que no existe conocimiento por un único ranking vacío. Leer fuentes y correcciones antes de responder.
+
+Separar hecho confirmado, hipótesis descartada, borrador y compromiso publicado. Una fecha reciente no vuelve verdadero un documento. Coaparición de tickets no demuestra causa común. Una nota local no prueba que se envió un mensaje o se celebró una llamada. Confirmar estado, visibilidad y fecha de comentarios en Jira; pedir más páginas cuando el total supere los comentarios recibidos.
+
+El índice derivado .cerebro/retrieval.sqlite sí puede actualizarse y reconstruirse. Nunca confundirlo con brain/sessions.db, que continúa de solo lectura. Guardar el aprendizaje en inbox vuelve el texto consultable en la siguiente búsqueda, sin ejecutar ingestores. Adjuntos binarios todavía requieren lectura específica: el índice no comprende automáticamente imágenes, PDF ni Excel.
+
+Estado y límites actuales: ESTADO.md. Instrucciones de uso: inbox/2026-09-28-cerebro-guia-uso.md. La cola automática es orientativa; leer el informe humano más reciente antes de decidir prioridades.
+
+## Capa epistémica y verificación, 14 octubre 2026
+
+Las ocho reglas siguen intactas. Antes de entregar un comentario, una respuesta al cliente o un texto para Teams, pasarlo por verificar_borrador con destino cliente o interno. Corregir todo lo que aparezca en bloqueantes. Confirmar en Jira en vivo cada oración de verificar_en_jira. Para preguntas de causa, usar buscar_conocimiento con solo_hechos y leer después las hipótesis por separado. Tratar estados_jira y estado_volatil como historia. Una hipótesis marcada posiblemente_superada exige leer la fuente posterior antes de repetirla. Detalle en ESTADO.md.
+
+## Variantes, adjuntos y relaciones, 14 octubre 2026, noche
+
+Llamar buscar_conocimiento siempre con variantes: la consulta en el otro idioma y con el término técnico probable. Medido: hit@5 de 0.34 a 0.59. Para preguntas de patrón entre clientes o tickets, usar consultar_relaciones y leer la evidencia de cada ticket antes de afirmar un patrón. Los adjuntos de adjuntos/ e investigaciones/ se leen con leer_fuente por su ruta original. Tratar una familia inferida como hipótesis de agrupación.
+
+## Protocolo de mensajes y borradores, 15 octubre 2026
+
+Medido: del 15 sep al 14 oct se escribieron 381 borradores pegables en inbox para 50 tickets. RCS-29026 acumuló 48 y RCS-29205, 40. Casi todos se reescribieron por un hallazgo nuevo antes de pegarse.
+
+1. Investiga primero, redacta al final. No escribas un mensaje para nadie mientras la causa siga en HIPÓTESIS o falte un dato que cambie a quién va o qué se pide.
+2. Propón antes de redactar. Cierra la respuesta con un bloque Siguiente paso: a quién, para qué y qué pedir, máximo tres líneas por destinatario. Redacta el texto completo solo cuando Juan lo pida o lo apruebe.
+3. Verifica el dato antes de instruir. Los accesos de Juan de la sección Accesos de Juan son hechos: úsalos sin preguntar. Lo que se confirma en la sesión es el dato que la instrucción supone, como el Client ID, la base, la columna o la ruta, y el acceso de terceros. Lo no confirmado de eso va como pregunta, nunca como paso. Corrección del 16 oct 2026: la versión anterior de esta regla hacía dudar de accesos ya establecidos.
+4. Un borrador vivo por ticket y destinatario. Si un hallazgo lo cambia, reescríbelo como -v2 y di que el anterior quedó obsoleto. Nunca abras un mensaje paralelo para la misma persona.
+5. Cuando entre información nueva, lista los borradores pendientes que dejó inválidos antes de seguir.
+6. Ningún texto pegable que Juan no pidió, ni en el chat ni en inbox.
+
+## Cola y SLA, 15 octubre 2026
+
+El estado del ticket manda antes que el reloj. `bin/cola.py` aplica estas reglas y `bin/test_cola.py` las cubre.
+
+1. Under Customer Review, Waiting for Customer y cualquier estado de espera del cliente pausan el SLA en Jira. Ahi nunca hay SLA en riesgo. Si el cliente calla 5 días hábiles o más, el ticket va a la lista de seguimiento, sin urgencia de reloj.
+2. Under Support Review, Work in progress y los estados de ingeniería corren el reloj. El riesgo es tiempo hábil sin comentario público de Appriss: Critical 30 min, High 24 h, Medium 4 a 5 días hábiles. Low no tiene regla de Juan; el script usa 7 a 10 días hábiles por defecto.
+3. Una fecha comprometida en el último comentario público de Appriss reemplaza ese techo. Pasada la fecha sin update, el ticket sube a nivel 2 `UPDATE VENCIDO` aunque el léxico no vea una promesa. Caso fuente: RCS-28881, sesión del 13 oct sin resultado publicado.
+4. La prioridad del día es el cliente con el último mensaje y el reloj activo, y después la deuda de update tras el ownership con el techo cerca o vencido. Dentro de cada nivel va primero el reloj activo, luego vencido, luego por vencer, luego días callado.
+5. Los campos SLA de Jira Service Management mandan cuando traen un ciclo en curso: `ongoingCycle.paused`, `breached`, `remainingTime`. Campos: customfield_18672 Target First Response, customfield_18673 Assigned Team First Response, customfield_15187 Time to resolution, customfield_18575 Target Assignment Time, customfield_19992 a 19997 variantes TJX. Medido el 15 oct: los Medium solo traen ciclos de primera respuesta ya cerrados, así que la cadencia de la regla 2 es la que decide en la práctica. Un Time to resolution vencido hace semanas se reporta como dato, no cambia la prioridad del día.
+6. Con la pelota en el cliente y el estado activo, el reloj sigue corriendo. Se avisa a Juan para que decida la transición; el agente nunca transiciona.
+7. Nunca se usa `updated` de Jira como señal de actividad, y nunca se marca SLA en riesgo por días corridos sin mirar el estado.

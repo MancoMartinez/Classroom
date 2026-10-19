@@ -1,0 +1,1 @@
+Vedant, I traced 28779 through the Teams thread Shireesh linked this morning. It came down to Key Vault throttling behind the SAML2 login. Infrastructure fixed it with a rolling restart around 8 this morning. The closing comment and the Resolve step are ready in the inbox from today. Want me to paste it, or do you want to take it since you have ownership.

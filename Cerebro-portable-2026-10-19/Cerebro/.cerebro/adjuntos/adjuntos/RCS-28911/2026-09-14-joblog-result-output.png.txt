@@ -1,0 +1,80 @@
+# Adjunto 2026-09-14-joblog-result-output.png
+Ruta: adjuntos/RCS-28911/2026-09-14-joblog-result-output.png
+Tipo: png
+Ticket: RCS-28911
+Modificado: 2026-09-15
+
+Texto reconocido por OCR:
+Job Result Output - Refloader Prod Delhaize
+-
+•
+Date:
+9/14/2026
+Time:
+10:00:00 AM
+Execution time: 00:00:30.7
+Execution
+Success
+Job
+results
+Result output
+CPU
+Execution
+time
+Performance
+ROI
+Name, Value
+Filter.
+Export..
+Name
+Job id
+Unique Job process Id
+Unique counter process Id
+Name
+Group
+Description
+Result
+Exit code
+Creation time
+Modification time
+Started
+Completed
+Next run
+Number of executes
+Execution time
+Status
+Is active
+Created by
+Modified by
+Start reason
+Execute On Server Ids
+Execute On Server Names
+Agent Execute Type
+Agent Execution Count
+Trigger that started
+Value
+5f19862e-2e53-
+)60s5e55294
+ad806e76-ed29-4e77-b77b-545f9d7ed52f
+263
+Refloader Prod Delhaize
+Platform - Refloaders
+-Uses Job Variables*
+Success
+7/9/2025 6:27:11 PM
+7/30/2026 1:41:59 PM
+9/14/2026 10:00:00 AM
+9/14/2026 10:00:30 AM
+9/16/2026 10:00:00 AM
+329
+00:00:30.7
+Waiting
+True
+(AD] Ryan Barlow
+(AD] Ryan Barlow
+By Trigger
+4719603a-d38d-4a89-8d04-7db7d06b&a 16
+QA-LPMS-VC-001
+Execute Local Only:
+Every Monday, Tuesday, Wednesday, Thursday, Friday of the week at 10:00:00 AM since 7/10/2025
+Filtered: 25/25

@@ -1,0 +1,3 @@
+OBSOLETE. Use 2026-10-16-tbi-teams-lista-tickets-jr-v2.md. Revised at Juan’s request.
+
+As requested, here are the TBI RCS tickets we discussed, including the follow-up files Colton sent after the call: RCS-28256 covers slow loading when moving from Secure to Incident: https://trebuco.atlassian.net/browse/RCS-28256. RCS-29445 covers Izenda report loading, timeouts, server errors and Excel export failures: https://trebuco.atlassian.net/browse/RCS-29445. RCS-29451 tracks blank Incident Security IDs and missing store hierarchy assignments: https://trebuco.atlassian.net/browse/RCS-29451. RCS-29469 contains Colton's location, teams and permissions files and the workbook of affected-user examples for the access investigation: https://trebuco.atlassian.net/browse/RCS-29469.

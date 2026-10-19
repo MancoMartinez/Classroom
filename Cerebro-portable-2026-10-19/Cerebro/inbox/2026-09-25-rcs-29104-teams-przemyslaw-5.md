@@ -1,0 +1,1 @@
+Thank you so much, Przemysław, this was really helpful. It fits what I see, so I think you are right that they stopped keeping the full set. Kristen is reaching out to GPC now to ask what changed. I will let you know what they say, and I really appreciate you taking the time to walk me through all of this.

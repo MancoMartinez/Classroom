@@ -1,0 +1,35 @@
+# Adjunto image-20260828-004849.png
+Ruta: adjuntos/RCS-28638/image-20260828-004849.png
+Tipo: png
+Ticket: RCS-28638
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Myer Group
+Sydney City
+www.myer.com.au
+Myer Pty Ltd
+27/08/2026 12:11:49 PM
+Team Member: Aravinda
+Pos 618
+Store 219
+Cashier 1077380
+MYER one Number: 6278041400340812
+Trans# 44
+*** RETURN/EXCHANGE WITH PROOF OF PURCHASE ***
+Financial Statement Date:
+Proof Type:
+QTY
+Price
+Amt
+DE'LONGHI EC9255WI ARTE METAL PRO COLD B
+187370800
+-1
+$500.00
+Class Group: 4717
+RETURN REASON: OTHER REASON |
+$-500.00
+TOTAL
+Visa
+$-500.00
+$-500.00

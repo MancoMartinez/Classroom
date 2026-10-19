@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guion llamada Big 5</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1a;--mute:#6b6b66;--card:#fff;--line:#e2e1da;--say:#0b5cad;--saybg:#eaf2fb;--warn:#8a5a00;--warnbg:#fdf3dc}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--mute:#9c9b94;--card:#1f1f1c;--line:#34332f;--say:#8cc2ff;--saybg:#1b2a3a;--warn:#f0c36a;--warnbg:#3a2f15}}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--mute);font-size:14px;margin-bottom:18px}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:22px;font-size:15px}
+.facts b{font-weight:600}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:28px 0 8px}
+.say{background:var(--saybg);color:var(--say);border-left:4px solid var(--say);padding:10px 14px;border-radius:6px;margin:10px 0;font-size:19px}
+.do{color:var(--mute);font-size:15px;margin:6px 0}
+.warn{background:var(--warnbg);color:var(--warn);padding:10px 14px;border-radius:6px;margin:10px 0;font-size:15px}
+</style></head><body><main>
+<h1>RCS-29054 Big 5, guion de la llamada</h1>
+<div class="sub">Hoy 11:00 AM PDT, 1:00 PM Bogotá. Nancy Barajas y Peter Chang.</div>
+
+<div class="facts">
+<b>Datos que tienes:</b> 382 tiendas en el xlsx, las 382 existen en Snowflake. Región y distrito coinciden en todas. El RLPM difiere en 82 tiendas, todas con MI (Mike Ibarra) en el xlsx. Hoy Ibarra tiene 36 tiendas en Secure y el xlsx le da 116. Archivo fuente: <b>storemaster.txt</b> del ZIP diario, carga del 3 oct.
+</div>
+
+<h2>1. Apertura</h2>
+<div class="say">Hi Nancy, hi Peter. Thanks for joining. Nancy and Peter, did I say your names right?</div>
+<div class="say">The goal of this call is to confirm what is still pending on the district and LP alignment you sent in RCS-29054, and how it should reach Secure. I already compared your spreadsheet with what we have today, so I can be specific.</div>
+
+<h2>2. Lo que ya coincide</h2>
+<div class="say">Good news first. I compared all 382 stores in your spreadsheet with what Secure shows as of the October 3 file. Region and district match on all 382. For example, stores 7 and 87 are already in district 235.</div>
+<div class="say">Did you or your team already update the store file after we last wrote to you on September 22?</div>
+<div class="do">Escucha. No interrumpas. Anota la respuesta.</div>
+
+<h2>3. La diferencia</h2>
+<div class="say">What does not match is the RLPM. In your spreadsheet, 116 stores belong to MI, Mike Ibarra. In Secure today, only 36 stores show him. 82 stores show a different RLPM, mostly John Zaragoza or Peter Hebert.</div>
+<div class="say">Is the spreadsheet the correct, current assignment for those 82 stores?</div>
+<div class="do">Si dicen que el xlsx está desactualizado, pregunta cuál es la fuente correcta.</div>
+
+<h2>4. El feed</h2>
+<div class="say">Our system takes the RLPM from the store master file, storemaster.txt, inside your daily reference files ZIP. Who produces that file, and from which system?</div>
+<div class="say">Can your team update the RLPM in that file for those 82 stores? Once the next daily file arrives, I will verify the result on our side.</div>
+<div class="say">One thing I need to confirm. In Secure the RLPM appears as a full name, for example Zaragoza, John D. Your spreadsheet uses initials. Should the file keep the full name? If you change the format, please tell us before you do it, so the searches that filter by RLPM do not break.</div>
+
+<h2>5. Dudas abiertas</h2>
+<div class="say">Your spreadsheet notes two stores as closing. Which two are they?</div>
+<div class="say">Your spreadsheet covers three RLPMs. In our data there are other RLPMs too, for example Steven Flinchbaugh with 24 stores. Are those stores staying as they are?</div>
+
+<h2>6. Cierre</h2>
+<div class="say">So, to summarize. District and region already match. The pending item is the RLPM on 82 stores. Peter, you will check the store master file and tell us when the update goes into the daily feed. I will confirm it in Secure after it loads, and I will write the summary in the ticket today.</div>
+<div class="warn">No prometas fecha de carga.</div>
+
+<h2>Si te preguntan</h2>
+<div class="do">Por qué soporte no hace el cambio:</div>
+<div class="say">The location data comes from your daily file, so a manual change on our side would be overwritten by the next load.</div>
+<div class="do">Si piden subir el archivo al ticket:</div>
+<div class="say">I cannot take files through the ticket for this one. The change needs to come through your daily feed.</div>
+<div class="do">Si preguntan por fechas:</div>
+<div class="say">I cannot give a load date. I will verify once the file arrives.</div>
+<div class="do">Si preguntan algo técnico que no sabes:</div>
+<div class="say">I will check that and confirm in the ticket.</div>
+</main></body></html>

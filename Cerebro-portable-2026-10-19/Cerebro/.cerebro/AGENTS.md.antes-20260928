@@ -1,0 +1,14 @@
+# Cerebro: reglas permanentes del proyecto
+
+Aplican a todas las tareas y sesiones de agentes en esta carpeta y sus subcarpetas. Decisión de Juan del 16 de septiembre de 2026. Estas reglas sustituyen cualquier excepción histórica contradictoria en memorias, guías o habilidades del proyecto.
+
+1. brain/sessions.db es de SOLO LECTURA desde el agente, en cualquier entorno. El montaje FUSE puede impedir los bloqueos de SQLite. Nunca ejecutar bin/guardar ni bin/ingerir_inbox.py, tampoco en modo de ensayo. No escribir en la base por otro script, SQL o herramienta. Abrir SQLite con mode=ro; usar immutable=1 solo como alternativa de lectura si falla el bloqueo. Para guardar, escribir inbox/AAAA-MM-DD-tema.md y avisar a Juan. Juan ingiere desde su terminal con cerrar. El agente no ejecuta cerrar.
+2. Escribir todo entregable a inbox/AAAA-MM-DD-tema.md en el momento, antes de continuar. Nada que valga queda solo en el chat. Para Office, guardar el xlsx, docx o pptx y una nota con su ruta en inbox/AAAA-MM-DD-tema.md.
+3. Jira es de SOLO LECTURA. Nunca comentar, transicionar, editar ni crear tickets. Tampoco añadir etiquetas. Redactar el texto; Juan lo pega. Esta regla se aplica a conectores, navegador, API y scripts.
+4. Antes de investigar, buscar con python3 bin/buscar "el sintoma concreto" o python3 bin/buscar RCS-28535. Leer la ficha y las fuentes encontradas antes de repetir trabajo.
+5. Para trabajo repetido, consultar flujos/INDICE.md e investigaciones/INDICE.md antes de investigar desde cero. Para la cola, consultar tickets/INDICE.md. Verificar estados actuales en Jira. Usar fechas reales de comentarios para actividad, nunca inferirla de created o updated del ticket.
+6. Español para hablar con Juan. Inglés para todo texto destinado a pegarse en Jira, Confluence o Teams.
+7. Un entregable por ticket, máximo 2500 caracteres. Incluir qué pasa, causa confirmada o hipótesis, evidencia con fuente, qué hago hoy, precedentes y compromisos. Consultar la historia con bin/buscar; no recrearla en el archivo.
+8. Sin guiones como conectores. Sin Markdown ni negritas en bloques pegables.
+
+Trabajo habitual permitido: buscar, leer fichas, redactar comentarios y respuestas al cliente, crear entregables de Office. Consultar CLAUDE.md para contexto complementario compatible. SQL de producción y sistemas de terceros permanecen en solo lectura.

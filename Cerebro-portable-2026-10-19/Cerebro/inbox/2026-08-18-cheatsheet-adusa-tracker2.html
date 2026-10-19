@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<title>ADUSA — Cheat Sheet en vivo (Tracker-2, 18 ago)</title>
+<style>
+  :root{
+    --bg:#f6f5f1; --panel:#ffffff; --ink:#1c1b19; --sub:#5c584f; --line:#e4e0d6;
+    --accent:#a13d2e; --accent-soft:#f3e2dd;
+    --ok-bg:#e3efe1; --ok-ink:#2c6b3f;
+    --wait-bg:#fdf1d9; --wait-ink:#8a5a10;
+    --block-bg:#fbe6e2; --block-ink:#a13d2e;
+    --active-bg:#e5edf6; --active-ink:#2c5a8a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1b1a17; --panel:#252420; --ink:#efece4; --sub:#b3ada0; --line:#3a372f;
+      --accent:#e08a72; --accent-soft:#3a2622;
+      --ok-bg:#203327; --ok-ink:#8fd1a2;
+      --wait-bg:#3a2f14; --wait-ink:#e8c179;
+      --block-bg:#3a2320; --block-ink:#e08a72;
+      --active-bg:#1f2c3a; --active-ink:#8fb8e0;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1b1a17; --panel:#252420; --ink:#efece4; --sub:#b3ada0; --line:#3a372f;
+    --accent:#e08a72; --accent-soft:#3a2622;
+    --ok-bg:#203327; --ok-ink:#8fd1a2;
+    --wait-bg:#3a2f14; --wait-ink:#e8c179;
+    --block-bg:#3a2320; --block-ink:#e08a72;
+    --active-bg:#1f2c3a; --active-ink:#8fb8e0;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:var(--bg);padding:14px 20px 10px;border-bottom:1px solid var(--line)}
+  h1{font-size:19px;margin:0 0 2px}
+  .meta{color:var(--sub);font-size:12.5px;margin-bottom:10px}
+  #q{width:100%;padding:11px 14px;border-radius:9px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-size:15px}
+  #q:focus{outline:2px solid var(--accent)}
+  main{max-width:920px;margin:0 auto;padding:14px 20px 60px}
+  .group-title{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--sub);margin:22px 0 8px;display:flex;align-items:center;gap:8px}
+  .group-title .n{background:var(--line);color:var(--sub);border-radius:20px;padding:1px 8px;font-size:11px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+  .row1{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .ticket{font-weight:700;font-variant-numeric:tabular-nums}
+  .ticket a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--sub)}
+  .title{color:var(--sub);font-size:13.5px}
+  .pill{font-size:11px;padding:2px 9px;border-radius:20px;white-space:nowrap;font-weight:600}
+  .pill.ok{background:var(--ok-bg);color:var(--ok-ink)}
+  .pill.wait{background:var(--wait-bg);color:var(--wait-ink)}
+  .pill.block{background:var(--block-bg);color:var(--block-ink)}
+  .pill.active{background:var(--active-bg);color:var(--active-ink)}
+  .who{color:var(--sub);font-size:12.5px;margin-top:2px}
+  .ans{margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media (max-width:640px){.ans{grid-template-columns:1fr}}
+  .lang{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);margin-bottom:2px;font-weight:700}
+  .ans p{margin:0}
+  .resolved-list{font-size:13.5px}
+  .resolved-list .card{padding:9px 14px}
+  .resolved-list .ans{grid-template-columns:1fr 1fr;font-size:13px}
+  .hidden{display:none}
+  #empty{color:var(--sub);text-align:center;padding:30px 0;display:none}
+  .flag{background:var(--accent-soft);color:var(--accent);border-radius:6px;padding:6px 10px;font-size:12.5px;margin-top:8px}
+</style>
+</head>
+<body>
+<header>
+  <h1>ADUSA — Cheat sheet para la llamada de hoy</h1>
+  <div class="meta">Basado en <b>Appriss ADUSA-Support-Tracker-2.xlsx</b> (la que presenta Chris), 18 ago 2026 · 35 tickets · uso interno, no compartir pantalla</div>
+  <input id="q" type="text" placeholder="Buscar ticket, nombre o palabra clave… (RCS-28021, Izenda, Juan, latency…)" autofocus>
+</header>
+<main>
+
+<div class="group-title">Activos con Appriss — lo más probable que pregunten <span class="n">15</span></div>
+
+<div class="card" data-s="RCS-28093 Edwin Garzon Employees not restricted by Store location feature request">
+  <div class="row1"><span class="ticket">RCS-28093</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Employees not restricted by Store location</div>
+  <div class="who">Edwin Garzon · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>La parte del buscador de tiendas ya se cerró, Leigh Ann lo confirmó el 14. Lo que sigue abierto es la búsqueda de empleados cruzando marcas, y lo estamos tratando como solicitud de mejora, no como error: el dato comparte el mismo ID en niveles distintos y cambiarlo afecta la integridad de la información.</p></div>
+    <div><div class="lang">EN</div><p>The store-locator part is already closed, confirmed by Leigh Ann on the 14th. What remains is cross-brand employee search, treated as an enhancement request, not a defect — the data shares the same ID across levels and changing it affects data integrity.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28123 Juan Martinez Case assignment issues">
+  <div class="row1"><span class="ticket">RCS-28123</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Case assignment issues</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>El fix salió a producción el 17, lo estamos verificando. Hay algo nuevo del 14 que hay que sumar: ya no se puede imprimir el PDF del caso desde la pantalla de confirmación, hay que hacerlo desde el workbench.</p></div>
+    <div><div class="lang">EN</div><p>The fix went to production on the 17th, we're verifying it now. New item from the 14th to fold in: users can no longer print the case PDF from the confirmation screen, they need to use the workbench instead.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28196 Vedant Shirude AD Shoplifting Entry defaults database migration">
+  <div class="row1"><span class="ticket">RCS-28196</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">AD Shoplifting Entry: two fields default to No</div>
+  <div class="who">Vedant Shirude · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>La causa es un valor por defecto en una columna de la base que debía quedar en null y no en "No". Resuelto hoy, Gabor lo trabajó con Jon para este cliente.</p></div>
+    <div><div class="lang">EN</div><p>Root cause is a database column default that should be null, not "No". Resolved today, Gabor worked it with Jon for this client.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28021 Juan Martinez Izenda Unable to use Izenda export">
+  <div class="row1"><span class="ticket">RCS-28021</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Unable to use Izenda</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Reproducido el 14: el rango de fechas del reporte no se mantiene y puede devolver datos viejos sin avisar. Se relanzaron los reportes programados el 14, pero Leigh Ann confirmó el 17 que la exportación sigue fallando. Necesitamos un reporte puntual que falle, con nombre, para aislar la causa.</p></div>
+    <div><div class="lang">EN</div><p>Reproduced on the 14th: the report date range doesn't hold reliably and can silently return older data. Scheduled reports were rerun on the 14th, but Leigh Ann confirmed on the 17th that export still fails. We need one named report that fails so we can isolate it.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28161 Shandana Khan Unable to Export files Stores.csv line up changes">
+  <div class="row1"><span class="ticket">RCS-28161</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Unable to Export files (Stores.csv) for lineup changes</div>
+  <div class="who">Shandana Khan · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>El fix ya está probado en el ambiente de test desde hoy. Se despliega a producción hoy mismo y se vuelve a probar ahí.</p></div>
+    <div><div class="lang">EN</div><p>The fix is already tested in the test environment as of today. It deploys to production today and gets retested there.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28281 Edwin Garzon Transaction Data Load August 10 Incomplete high priority">
+  <div class="row1"><span class="ticket">RCS-28281</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Transaction Data Load for Aug 10 Incomplete (AHL/Ahold 5.4)</div>
+  <div class="who">Edwin Garzon · <b>Alta prioridad</b></div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Todos los archivos recibidos sí se cargaron. El volumen bajó porque llegaron archivos duplicados: el 8/10 cerró en 1,066,691 transacciones contra 2.1–2.3 millones los días 7 al 9. Todavía no está establecido por qué el proceso se corta a media tarde.</p></div>
+    <div><div class="lang">EN</div><p>All files received did load. Volume dropped because duplicate files came in: 8/10 closed at 1,066,691 transactions versus 2.1–2.3 million on the 7th–9th. Why the day cuts off mid-afternoon isn't established yet.</p></div>
+  </div>
+  <div class="flag">⚠ Sin respuesta a Ahold desde el 11 ago. Si preguntan por qué no hay update, dilo directo: se está investigando el corte de la tarde, no hay excusa que dar, solo el estado real.</div>
+</div>
+
+<div class="card" data-s="RCS-28292 Gulshan Kumar Server Migration LPMS Store File Robinson">
+  <div class="row1"><span class="ticket">RCS-28292</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Server Migration for LPMS Store File</div>
+  <div class="who">Gulshan Kumar · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Informativo. Ahold confirmó el 13 que la IP existente se mantiene, así que ahora es tarea nuestra monitorear. Ventana: 20 ago 11pm a 21 ago 6am hora del este. Falta confirmar que no hace falta cambio en la lista blanca y cómo se valida el archivo la mañana del 21.</p></div>
+    <div><div class="lang">EN</div><p>Informational. Ahold confirmed on the 13th the existing IP carries over, so it's on us to monitor. Window: Aug 20 11PM to Aug 21 6AM Eastern. Still need to confirm no allow-list change is needed and how we verify the store file the morning of the 21st.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28353 Juan Martinez Unable to edit location data 502 error performance">
+  <div class="row1"><span class="ticket">RCS-28353</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Unable to edit location data (Error 502)</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Los fixes de rendimiento llegaron a producción la noche del 17. Estamos re-probando la actualización de perfil de tienda con Ahold.</p></div>
+    <div><div class="lang">EN</div><p>Performance fixes reached production the evening of the 17th. We're retesting the store profile update with Ahold now.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28356 Camila Cortes System latency high priority">
+  <div class="row1"><span class="ticket">RCS-28356</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">System latency</div>
+  <div class="who">Camila Cortes · <b>Alta prioridad</b></div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Mismos fixes de rendimiento del 17, incluye uno de cacheo de etiquetas de pantalla. Prioridad alta, en re-prueba.</p></div>
+    <div><div class="lang">EN</div><p>Same performance fixes from the 17th, including one for screen-label caching. High priority, being retested.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28379 Diego Buelvas Cases missing Case Owner Assigned Creator user migration">
+  <div class="row1"><span class="ticket">RCS-28379</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Cases missing Case Owner, Assigned to and Creator</div>
+  <div class="who">Diego Buelvas · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Se hizo una corrección sobre los casos afectados el 17. La causa fue un desajuste de identidad de usuario más algunas cuentas desactivadas por error. Se espera resuelto hoy.</p></div>
+    <div><div class="lang">EN</div><p>A correction pass across the affected cases was completed on the 17th. Root cause was a user identity mismatch plus some accounts incorrectly deactivated. Expected fixed today.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28407 Edwin Garzon 502 error various functions renumbered ticket high priority">
+  <div class="row1"><span class="ticket">RCS-28407</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Frequent 502 Error in various LPMS functions</div>
+  <div class="who">Edwin Garzon · <b>Alta prioridad</b></div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Este ticket estaba mal referenciado como RCS-28047 (de otra cuenta), ya corregido a RCS-28407. Ingeniería identificó la causa y los fixes de rendimiento llegaron a producción la noche del 17.</p></div>
+    <div><div class="lang">EN</div><p>This row had the wrong ticket number, RCS-28047 which belongs to a different account, corrected to RCS-28407. Engineering identified the root cause and performance fixes reached production the evening of the 17th.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28413 unassigned Izenda data incorrect Food Lion Central Division">
+  <div class="row1"><span class="ticket">RCS-28413</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">Izenda data incorrect</div>
+  <div class="who">Sin asignar · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Sin asignar todavía. Ejemplo: un reporte de Food Lion Central Division que antes traía 270 casos ahora trae 66. Falta verificar cuál número es el real antes de decir cuál está mal; a los gerentes ya se les entregó la versión de 66.</p></div>
+    <div><div class="lang">EN</div><p>Not yet assigned. Example: a Food Lion Central Division report that used to pull 270 cases now pulls 66. Need to verify the true count before saying which is wrong; managers already received the 66-case version.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28415 unassigned New users unable to create cases Ryan Cummings resolved">
+  <div class="row1"><span class="ticket">RCS-28415</span><span class="pill active">Active with Appriss</span></div>
+  <div class="title">New users unable to create cases after provisioning</div>
+  <div class="who">Sin asignar · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>El caso de ejemplo, Ryan Cummings, ya está resuelto: era un problema de números de tienda no únicos entre marcas. Se corrigió la ubicación y división de los dos usuarios nuevos afectados.</p></div>
+    <div><div class="lang">EN</div><p>The example case, Ryan Cummings, is already resolved: it was a non-unique store-number issue across brands. Location and division were corrected for both affected new users.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28378 unassigned Buttons missing awaiting ahold">
+  <div class="row1"><span class="ticket">RCS-28378</span><span class="pill wait">Awaiting Ahold input</span></div>
+  <div class="title">Buttons missing from some page</div>
+  <div class="who">Sin asignar · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Sin asignar. Necesitamos que Ahold nos diga la página exacta, qué usuarios, y una captura de pantalla. Pedido el 14, sin respuesta todavía.</p></div>
+    <div><div class="lang">EN</div><p>Unassigned. We need Ahold to tell us the exact page, which users, and a screenshot. Asked on the 14th, no response yet.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28304 Vedant Shirude Case tier abbreviated feature request awaiting ahold">
+  <div class="row1"><span class="ticket">RCS-28304</span><span class="pill wait">Awaiting Ahold input</span></div>
+  <div class="title">Case tier abbreviated on Central Station Master page</div>
+  <div class="who">Vedant Shirude · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Confirmamos que es un ancho de campo fijo por diseño, y ya se truncaba igual en la plataforma anterior. No es un error funcional. Ahold va a mandar una solicitud formal de mejora.</p></div>
+    <div><div class="lang">EN</div><p>Confirmed it's a fixed display width by design, truncated the same way on the legacy platform too. Not a functional bug. Ahold will submit a formal enhancement request.</p></div>
+  </div>
+</div>
+
+<div class="group-title">Pendiente que Ahold confirme (ya arreglado de nuestro lado) <span class="n">4</span></div>
+
+<div class="card" data-s="RCS-28177 Viraj Kansara search error email number user migration pending ahold">
+  <div class="row1"><span class="ticket">RCS-28177</span><span class="pill wait">Pending Ahold verification</span></div>
+  <div class="title">Search error for users with a "1" in their email</div>
+  <div class="who">Viraj Kansara · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>44 registros de usuario se corrigieron el 14, y el de Jonathan Wright el 17. Esperando que Ahold vuelva a probar.</p></div>
+    <div><div class="lang">EN</div><p>44 user records were corrected on the 14th, and Jonathan Wright's on the 17th. Waiting on Ahold to retest.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28342 Juan Martinez Anthony Lopez missing data title pending ahold">
+  <div class="row1"><span class="ticket">RCS-28342</span><span class="pill wait">Pending Ahold verification</span></div>
+  <div class="title">Anthony Lopez — employee data missing from profile</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Se corrigió el 14, ya aparece el cargo en las dos entradas. Esperando que Ahold confirme.</p></div>
+    <div><div class="lang">EN</div><p>Corrected on the 14th, the job title now shows on both entries. Awaiting Ahold's confirmation.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28364 Juan Martinez older cases not appearing Brian Somsky Anthony Powell pending ahold">
+  <div class="row1"><span class="ticket">RCS-28364</span><span class="pill wait">Pending Ahold verification</span></div>
+  <div class="title">Older cases not appearing for some users</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>El registro se actualizó el 14 para que coincida con el identificador de la plataforma anterior. Esperando la re-prueba. Salió un caso nuevo parecido (Anthony Powell, reportado el 14) que aún no está en ningún ticket y probablemente comparte causa con RCS-28177.</p></div>
+    <div><div class="lang">EN</div><p>The record was updated on the 14th to match the prior system's identifier. Awaiting retest. A similar new case (Anthony Powell, reported on the 14th) isn't tracked anywhere yet and likely shares root cause with RCS-28177.</p></div>
+  </div>
+</div>
+
+<div class="card" data-s="RCS-28124 Juan Martinez attachments not visible PDF MOV Hannaford pending ahold">
+  <div class="row1"><span class="ticket">RCS-28124</span><span class="pill wait">Pending Ahold verification</span></div>
+  <div class="title">Certain attachments not visible (PDF/MOV)</div>
+  <div class="who">Juan Martinez · Medium</div>
+  <div class="ans">
+    <div><div class="lang">ES</div><p>Se reabrió el 13, Hannaford no podía adjuntar video (error Forbidden). El fix salió y se probó el 14, esperando confirmación de Ahold. Ojo: hay una fila duplicada de este ticket en la sección de casos nuevos del documento.</p></div>
+    <div><div class="lang">EN</div><p>Reopened on the 13th, Hannaford couldn't attach video (Forbidden error). Fix deployed and tested on the 14th, awaiting Ahold's confirmation. Note: there's a duplicate row for this ticket in the new-issues section of the document.</p></div>
+  </div>
+</div>
+
+<div class="group-title">Resueltos — por si preguntan qué pasó <span class="n">16</span></div>
+<div class="resolved-list">
+
+<div class="card" data-s="RCS-28014 Viraj Kansara URL asking for email address SSO resolved">
+  <div class="row1"><span class="ticket">RCS-28014</span><span class="pill ok">Resolved</span></div>
+  <div class="title">New URL asking for email instead of SSO — resuelto en vivo el 29/7 con el equipo de Ahold.</div>
+</div>
+<div class="card" data-s="RCS-28042 Viraj Kansara Eric Lauseng access resolved IAM">
+  <div class="row1"><span class="ticket">RCS-28042</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Eric Lauseng access — era falta de Employee ID en Azure/Entra, lo llenó el IAM de Ahold, confirmado 1/8.</div>
+</div>
+<div class="card" data-s="RCS-28059 Vedant Shirude blocked message Canada proxy resolved">
+  <div class="row1"><span class="ticket">RCS-28059</span><span class="pill ok">Resolved</span></div>
+  <div class="title">"Sorry, you have been blocked" — tráfico salía por Canadá y lo bloqueaba nuestra regla de seguridad, permitido el 31/7. Pendiente: darles las IPs de la nueva URL.</div>
+</div>
+<div class="card" data-s="RCS-28053 David Vargas non SAML link Central Station resolved">
+  <div class="row1"><span class="ticket">RCS-28053</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Link no-SAML para Central Station — cuenta reconstruida y desbloqueada el 5/8. Falta: forma de que un admin de Ahold cambie correo/desbloquee sin ticket.</div>
+</div>
+<div class="card" data-s="RCS-28135 Juan Martinez duplicated users resolved">
+  <div class="row1"><span class="ticket">RCS-28135</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Usuarios duplicados — registros eliminados el 4/8, confirmado esa misma noche.</div>
+</div>
+<div class="card" data-s="RCS-28023 Viraj Kansara unable to create cases division brand resolved">
+  <div class="row1"><span class="ticket">RCS-28023</span><span class="pill ok">Resolved</span></div>
+  <div class="title">No podían crear casos por restricción de división — corregido 31/7, último usuario confirmado 6/8.</div>
+</div>
+<div class="card" data-s="RCS-28043 Viraj Kansara duplicate store numbers brands resolved">
+  <div class="row1"><span class="ticket">RCS-28043</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Tiendas duplicadas entre marcas — corregido 30/7, cerrado 12/8.</div>
+</div>
+<div class="card" data-s="RCS-28115 JR Teagle LPMS fields not clickable resolved">
+  <div class="row1"><span class="ticket">RCS-28115</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Campos de LPMS no respondían al clic (error de script) — hotfix 1/8, validado 5/8. Prioridad crítica.</div>
+</div>
+<div class="card" data-s="RCS-28025 Viraj Kansara unable to view attachments resolved">
+  <div class="row1"><span class="ticket">RCS-28025</span><span class="pill ok">Resolved</span></div>
+  <div class="title">No se veían adjuntos — ruteo de client ID mal configurado, corregido 6/8.</div>
+</div>
+<div class="card" data-s="RCS-28075 Vedant Shirude timeouts resolved">
+  <div class="row1"><span class="ticket">RCS-28075</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Time outs de Central Station — grupos de permisos e indexación de base agregados, cerrado 12/8. Nota: aún se les debe una causa raíz por escrito, y el timeout de 60 min (sin auto-guardado) sigue sin revisarse.</div>
+</div>
+<div class="card" data-s="RCS-28030 Juan Martinez server time EST resolved">
+  <div class="row1"><span class="ticket">RCS-28030</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Hora del servidor 4 horas adelantada — perfiles quedaron en UTC en vez de Eastern, corregido, cerrado 4/8.</div>
+</div>
+<div class="card" data-s="RCS-28041 Viraj Kansara email sender display name declined resolved">
+  <div class="row1"><span class="ticket">RCS-28041</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Pidieron quitar el nombre del remitente de los correos — declinado y cerrado, Producto confirmó que es deliberado y no configurable por cliente.</div>
+</div>
+<div class="card" data-s="RCS-28109 Matthew Kamminga Send to Flock action item resolved">
+  <div class="row1"><span class="ticket">RCS-28109</span><span class="pill ok">Resolved</span></div>
+  <div class="title">"Send to Flock" aparecía como acción al cerrar caso — quitado de la vista el 14/8. Resuelto.</div>
+</div>
+<div class="card" data-s="RCS-28125 Vlad Bogus EBT card length Delhaize Zeus resolved">
+  <div class="row1"><span class="ticket">RCS-28125</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Prueba de cambio de largo de tarjeta EBT (Delhaize) — archivos de prueba cargados 6/8, marcado completo el 17/8.</div>
+</div>
+<div class="card" data-s="RCS-28365 Bikash Kumar no locations found menu resolved">
+  <div class="row1"><span class="ticket">RCS-28365</span><span class="pill ok">Resolved</span></div>
+  <div class="title">No aparecían ubicaciones al abrir caso — ubicación 7225 asignada el 13/8, Ahold confirmó resuelto el 17/8.</div>
+</div>
+<div class="card" data-s="RCS-28369 Viraj Kansara case number location change resolved">
+  <div class="row1"><span class="ticket">RCS-28369</span><span class="pill ok">Resolved</span></div>
+  <div class="title">Número de caso no cambiaba al mover de ubicación — fix salió en el release del 17/8, verificado en prod, Ahold validó el 14/8. Nota: esta fila dice ubicación 6313, Jira y el caso de prueba dicen 6314, confirmar cuál es.</div>
+</div>
+</div>
+
+</main>
+<div id="empty">Sin resultados. Prueba con el número de ticket o una palabra clave.</div>
+
+<script>
+const q = document.getElementById('q');
+const cards = Array.from(document.querySelectorAll('.card'));
+const groups = Array.from(document.querySelectorAll('.group-title'));
+q.addEventListener('input', () => {
+  const term = q.value.toLowerCase().trim();
+  let anyVisible = false;
+  cards.forEach(c => {
+    const hay = c.dataset.s.toLowerCase();
+    const show = term === '' || hay.includes(term);
+    c.classList.toggle('hidden', !show);
+    if (show) anyVisible = true;
+  });
+  groups.forEach(g => {
+    let sib = g.nextElementSibling;
+    let has = false;
+    while (sib && !sib.classList.contains('group-title')) {
+      const inner = sib.classList.contains('resolved-list') ? sib.querySelectorAll('.card') : [sib];
+      inner.forEach(c => { if (c.classList && c.classList.contains('card') && !c.classList.contains('hidden')) has = true; });
+      sib = sib.nextElementSibling;
+    }
+    g.classList.toggle('hidden', !has);
+  });
+  document.getElementById('empty').style.display = anyVisible ? 'none' : 'block';
+});
+</script>
+</body>
+</html>

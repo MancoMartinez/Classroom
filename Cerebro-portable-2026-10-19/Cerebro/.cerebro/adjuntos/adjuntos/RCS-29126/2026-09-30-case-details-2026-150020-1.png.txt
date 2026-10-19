@@ -1,0 +1,84 @@
+# Adjunto 2026-09-30-case-details-2026-150020-1.png
+Ruta: adjuntos/RCS-29126/2026-09-30-case-details-2026-150020-1.png
+Tipo: png
+Ticket: RCS-29126
+Modificado: 2026-09-30
+
+Texto reconocido por OCR:
+* Retail Customer Support - Q X
+* [RCS-29126] VF Corp - no se X | C USPROD > vic.com
+× ® Active Incidents x Case Details
+x= QA-LPMS-RDP-001
+Smart Alerts Runbook: Filter, X
++
+G®https://apps.Ipguys.net/vfcorp/nettrack/LPMS/INTERNALTHEFT.ASPX?MasterCaseID=451&Shoplifting|D=451&SuspectID=451&Storeldent=1060&EditMode=1&Mode=1
+@ Company Links | Summary - Overvi...
+C USPROD > Home
+C EUPROD > Home A My roles - Micros... A qa-Ipms-rdp-001 - RCS RTS GP Python Scripts Appriss Supportte.. Docs
+*
+A APPRISS
+VFCorp
+Case Information
++
+Back to Menu
+Quick Links
+CCTVApprox Time Of Incident
+CCTVDVRNo
+CCTVDVRNo
+Camera Num
+Camera Num
+CCTVType
+CCTV Comments
+Normal
+Arial
+12
+Admin
+Video of self-processed refund under cashier name of Ryan Yakow on 4/6/24. Additional incidents of Nichols approaching CCTV system and video cutting then resuming minutes after a refund is processed
+onto his card.
+8
+Incident Type
+Refund Fraud - Credit
+Incident Date
+8/25/2026
+Case No
+2026-150020-1
+Subject Name
+Nichols, Rayshawn
+Store No
+150020
+Store
+Troy, Michigan
+Case Status
+OPEN
+Case Owner
+Mike Croze
+Assigned To
+Mike Croze
+Created By
+Mike Croze
+Source of Info
+Secure
+nrique Jimenez - +
+EJ
+Enrique Jimenez
+Item Details
+Actions
+UPC/SKU Lookup
+Item Group
+UPCCode
+Description
+Items
+Recovered Damage
+Quantity Original Price
+Switch Price
+Price Per Item
+No data to display
+Total Price
+ESP
+4:04 PM
+9/30/2026
+Search
+Ш]
+?
+4:04 PM
+9/30/2026

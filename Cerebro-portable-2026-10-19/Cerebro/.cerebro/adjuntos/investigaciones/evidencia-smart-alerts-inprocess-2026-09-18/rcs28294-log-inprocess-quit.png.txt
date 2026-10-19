@@ -1,0 +1,25 @@
+# Adjunto rcs28294-log-inprocess-quit.png
+Ruta: investigaciones/evidencia-smart-alerts-inprocess-2026-09-18/rcs28294-log-inprocess-quit.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-18
+
+Texto reconocido por OCR:
+Log detail
+Client ID
+432
+Logged Date Time
+9/18/2026, 2:14:12 PM
+Severity
+Error
+Component
+N/A
+Sender
+N/A
+User ID
+N/A
+Message
+0. Quit ProcessSmartAlert because the smart alert for the case is still on processing. pSystemType=HR, pSystemID=48786
+Log Body
+0. Quit ProcessSmartAlert because the smart alert for the case is still on processing. pSystemType=HR, pSystemID=48786
+x

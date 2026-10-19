@@ -1,0 +1,1 @@
+{"reranker": {"enabled": true, "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1", "top_n": 30, "max_length": 512, "batch_size": 16}}

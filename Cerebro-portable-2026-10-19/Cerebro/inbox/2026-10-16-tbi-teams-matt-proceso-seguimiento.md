@@ -1,0 +1,1 @@
+Thanks, Matt. Could you confirm whether the one-row rule includes manual Persistent assignments, share the table and query where you saw inserts on the 15th, and point me to whoever can trace SSU + 2005 through the current SnowTime loader? Chris's supplied CSV has those values; we still need to match the consumed batch to his historical 90002005 assignment.

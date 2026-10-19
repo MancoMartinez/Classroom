@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>RCS-29435 Teams</title>
+<body style="font-family:Segoe UI,Calibri,Arial,sans-serif;font-size:15px">
+<p><b>Issue</b><br>Partner Lookup shows several Home Store Dept Name values for one partner.</p>
+<p><b>Evidence, partner 37045592 in C166_SBX.REFERENCE_EMPLOYEE</b></p>
+<ul>
+<li>5 rows, one per store, with 3 different X_HOMESTOREDEPTNAME values</li>
+<li>00559 AGOURA &amp; WESTLAKE on 3 rows</li>
+<li>10109 CAMPUS PARK &amp; COLLINS, inserted 6 Oct</li>
+<li>06609 SYCAMORE &amp; COCHRAN, inserted 7 Oct and updated 15 Oct</li>
+<li>C166_SBX_SNOWTIME.FLAT_EMPLOYEE, file of 15 Oct: one row for this partner, 06609</li>
+<li>Partner 32164302 looks correct: all 10 rows carry 18869 MULHOLLAND &amp; CALABASAS</li>
+</ul>
+<p><b>Scope</b><br>14018 of 2446272 partners in that table have more than one name. That may include renamed stores or inactive partners.</p>
+<p><b>Questions</b></p>
+<ol>
+<li>Did the load before the 27 Aug cutover update the name on every row of the partner?</li>
+<li>Can the current load do the same and the stale rows be corrected? Please clone the table first.</li>
+</ol>
+<p><b>Note</b><br>The source feed has one current store per partner, so I am not asking the customer to change data.</p>
+<p>Thanks.</p>
+</body>

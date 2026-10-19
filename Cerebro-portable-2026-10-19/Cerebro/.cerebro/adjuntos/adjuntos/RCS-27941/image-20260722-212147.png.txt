@@ -1,0 +1,12 @@
+# Adjunto image-20260722-212147.png
+Ruta: adjuntos/RCS-27941/image-20260722-212147.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Secure Incident
+• Secure Incident security groups can be configured in Incident Admin
+Incident Security ID O
+Administrators
+83 Go to Incident Admin

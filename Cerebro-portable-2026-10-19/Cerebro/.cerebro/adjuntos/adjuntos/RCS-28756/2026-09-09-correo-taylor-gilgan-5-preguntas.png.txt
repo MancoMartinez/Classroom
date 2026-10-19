@@ -1,0 +1,25 @@
+# Adjunto 2026-09-09-correo-taylor-gilgan-5-preguntas.png
+Ruta: adjuntos/RCS-28756/2026-09-09-correo-taylor-gilgan-5-preguntas.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+[RTS-206999] - Nike - Load
+@ Summarize this email
+GT
+Gilgan, Taylor (WHQ) < Taylor.Gilgan@nike.com>
+To: ® Appriss Retail - Support; Coomler, Chris <chris.coomler@nike.com>; ® Haffey, Joe; Global Loss Prevention <Global.LossPrevention2@nike.com>; +2 others
+Cc: • Bryant McAnnally; • Camila Cortes; Aimee Wadsworth; Wadsworth; DG-L1RetailCustomerSupport; O Carl Costelow; • Juan Martinez
+EXTERNAL SENDER
+< Reply « Reply all
+Forward
+Thu 9/10/2026 12:56 A
+Our internal Customer Insights team is looking into this and needs the following information from you to investigate further-
+1. Exact stream names
+2. Consumer client ID
+3. How the data is being consumed (Kafka consumer, S3 sink, or other)
+4. Filters being used
+5. Examples of missing data (missing specific events or no data at all).
+Thanks,
+Taylor

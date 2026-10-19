@@ -1,0 +1,58 @@
+# Adjunto 9998-11-incident-workbench.png
+Ruta: adjuntos/RCS-29057/9998-11-incident-workbench.png
+Tipo: png
+Ticket: RCS-29057
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+< GO https://apps.apprissretail.com/adusa/nettrack/LPMS/LPMSEditMenu.aspx?Shoplifting|D=1598143&MasterCaseID=1569764&SuspectID=1597165&Storeldent=127048LOC=
+Ca Company Links • | Import favorites | 62 Engineering Onbo... On Call
+PPRIS:
+Case Information
+Incident Type
+Identification Request
+Incident Date & Time
+9/24/2026
+Case No
+2026-AHOLD DELHAIZE USA
+SERVICES, LLC-9998-11
+Location#
+9998
+Location Name
+TEST LOCATION ONLY
+Incident Workbench
+Edit
+Delete
+EDITING:
+Case No
+2026-AHOLD DELHAIZE USA SERVICES, LLC-9998-11
+Add
+I do
+Chat
+Back to Menu
+Quick Links
+Support
+Admin
+User Tools
+Incident Information
+@ Identification Request
+@ Journal Notes
+9 Report Narrative
+7 Subject Information
+Actions
+* Update Case Type
+@ Manage Attachments
+&i Reassign Incident
+9. Reassign Case Owner
+• Task Management
+D Smart Alert History
+@ Case Linking
+B View / Print Incident
+• Email Incident
+* Change History
+Workflow Information
+/ Reject Case
+¿ Mark Case Completed
+• Q Search
+9:11 PM
+9/24/2026

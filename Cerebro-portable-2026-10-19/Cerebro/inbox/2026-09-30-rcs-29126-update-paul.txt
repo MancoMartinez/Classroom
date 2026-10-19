@@ -1,0 +1,12 @@
+Hi Paul,
+
+Thank you for following up. I have reproduced Mike's view by impersonating his user and I am now reviewing both points separately.
+
+For the search results, I am checking the attachment that Secure sends to the case during the conversion. Per the product documentation, the conversion delivers the investigation to Incident as a PDF under Manage Attachments and does not populate the Items grid. I will confirm whether the saved search results are included in that document for case 2026-150020-1 and for the second converted case.
+
+For the Ryan Yakow case, I am tracing the converted investigation on the Secure side to get the case number it was linked to, and searching Incident across all stores and closed cases.
+
+I will share the findings with you and Mike once both checks are complete.
+
+Kind regards,
+Enrique

@@ -1,0 +1,1 @@
+Thanks Matt, that helps. I will read the goodwillsacto nettrack logs around 08/31. One more thing so I look in the right place: which service or job sends the Smart Alerts for goodwillsacto on node-g, and was that node redeployed or changed around 08/31? The alert runs stop that day around 17:44 UTC.

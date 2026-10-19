@@ -1,0 +1,3 @@
+Sorry Ryan, that one is on me. I read the "Delivery, Secure 5" row on Aimee's page "Escalating Tickets to L3 Departments: Procedures and Responsibilities" as your team: https://trebuco.atlassian.net/wiki/spaces/RTS/pages/478006902856
+
+And yes, both look like mapping issues from the c166_sbx SnowTime cutover on 27 Aug, not the work items themselves. On RCS-29205 the tender field the definition filters on, x_partnerownedtoken, has been empty since the cutover. On RCS-29207 the definition compares x_MemberID, now TEXT, to a number. Does mapping like this fall on your side, or should I take it to the Support Data Team?

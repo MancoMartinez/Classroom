@@ -1,0 +1,133 @@
+# Adjunto secure-refunds-by-cashier-sin-tender.png
+Ruta: adjuntos/RCS-29104/secure-refunds-by-cashier-sin-tender.png
+Tipo: png
+Ticket: RCS-29104
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+C
+apps.apprissretail.com/genpt/platform/explorer#/results?builderPath=%2Fsystem%2Febr%2Fardm%2Fstore%2F3_0%2Fbuilder%2Fardm.builder&searchPath=%2F02bdabd4-6ca8-4505-87c5-439e26665e3b%2Funsaved%20searches%2F30684c1...
+*
+La Company Links
+88
+© Secure Control Panel C USSTAGING - Secur... M Prod MOA C SETeam C Client Office Hours
+• Code Two Signature
+app.eu.pendo.io: W... • Projects f Tempo - Project Tim... C Support Sites C Wiki Pages
+GPC
+< Composer
+I Summary
+B Save
+B Save As
+* Columns & Filters
+(→ Action
+9 Query
+Portal > Secure Store > Explorer › Composer
+Results
+Transaction Details
+All Refunds by Cashier e
+With a total of refunds processed by the same cashier
+Transaction ID
+Store
+No
+2609183765074771511
+CHA266
+2609188286580767601
+CHA266
+2609179617330521193
+CHA266
+2609161222872308858
+CHA266
+2609168855559712929
+CHA266
+2609155751144393165
+CHA266
+2609145836633485882
+CHA266
+**
+10
+10
+10
+10
+10
+10
+10
+[3 X
+GPC
+Store CHA266
+WAXHAW, NC
+3919D S Providence Rd, Waxhaw, NORTH CAROLINA
+Store CHA266
+9 Trans# 533653
+Cashier 1037-600006266 Demonte Anderson
+Order No: 533653
+Customer: C2AOD193D6E47853ACB43F97967D4E01
+Customer ID: 600006CHA---000000000000
+Customer Email: D41D8CD98F00B204E9800998ECF8427E
+Customer Phone: E0EC043B3F9E198EC09041687E4D4E8D
+RETURN
+QTY
+Price
+Amt
+REMAN/ALTERNATOR
+2136912- RAY
+$608.74
+$-345.99
+DEMAN/AITEDNATOD
+2136912- RAY
+-1
+$76.00
+$-76.00
+SUBTOTAL**
+CASSIAY
+TOTAL
+ITEMS SOLD
+ITEMS RETURNED
+Payments
+'342199"
+5-2848
+S-450.47
+09/17/2026 5:03:00 PM
+Ticket
+No
+533693
+533662
+533653
+533589
+533570
+533479
+533470
+99 results
+Filter...
+Total
+Amount
+Tender
+Type
+Tender
+Card
+Number
+Tender
+Cardholder
+Name
+Tender
+Amount
+Tender
+Wallet
+Email
+-70.32
+-377.88
+-450.47
+-459.01
+-11.74
+-13.88
+-365.07
+-18.940.44
+0 00
+Tabular
+Tender
+Appriss
+Card
+Type
+Chart
+Ten
+Payr
+Gate

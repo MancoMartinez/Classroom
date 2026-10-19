@@ -1,0 +1,22 @@
+# Adjunto image-20260729-161311.png
+Ruta: adjuntos/RCS-28032/image-20260729-161311.png
+Tipo: png
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Spaces / Retail Customer Support
+Customers
+Customers Organizations
+Products
+Add context about your customers
+You can now add custom detail fields to your customer profiles and use this information on work items and anywhere you can filter using QL. To get started, create your fields ir
+Read more about customer detail fields • Dismiss
+These people can request help in your space. You can select a customer to view and manage their information.
+Brandon.Bigelow@vitaminshoppe.com
+Filter v
+Customer not found? Try refining your search.
+Name
+Open requests
+Closed requests
+No matches for your search.

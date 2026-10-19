@@ -1,0 +1,2 @@
+Hi Kiran, quick check on the Smart Alerts root cause for Ahold RCS-29123 https://trebuco.atlassian.net/browse/RCS-29123
+From ENG-9486 https://trebuco.atlassian.net/browse/ENG-9486 I understand it was the deadlock exposed by the move to targetFramework 4.8 in PR 57544, fixed with ConfigureAwait(False), and not the parallel processing under ADUSA traffic we talked about on 9/28. Is that right? I want to make sure the RCA says the right thing.

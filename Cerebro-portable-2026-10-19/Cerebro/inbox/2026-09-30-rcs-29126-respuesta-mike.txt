@@ -1,0 +1,15 @@
+Hi Mike,
+
+Thank you for your patience. We reviewed the three investigations that show as In Case in your Secure account.
+
+Aarya Datta, case 2026-150020-3: the search results were transferred. When an investigation is moved to a case, the results are delivered as a PDF under Manage Attachments rather than in the Items section. The file 2026-150020-3-exported_pdf_7.pdf contains all 17 transactions, including the ones for Ryan Yakow on the card ending 0410.
+
+Ryan Yakow, case 2026-150020-2: the case was created, but without a subject name, which is why it does not show up when searching or in your Active Cases list. You can open it directly here:
+https://apps.lpguys.net/vfcorp/nettrack/LPMS/lpmseditmenu.aspx?MasterCaseID=461&ShopliftingID=461&SuspectID=461&StoreIdent=1060
+
+Ray Nichols, case 2026-150020-1, and Ryan Yakow, case 2026-150020-2: the PDF created during the transfer is blank in both cases. We are working on this with our Engineering team. In the meantime, the investigations and all their transactions are still available in Secure under Investigations, Completed.
+
+We will follow up as soon as we have an update.
+
+Kind regards,
+Enrique

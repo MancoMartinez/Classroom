@@ -1,0 +1,2 @@
+Thanks Matthew Kamminga, that helps. I checked the lpuser view and all of these users are in it, 181 with a level and 49 still without one, so the view does not explain the missing level.
+I will open one RCS for the access issues and keep the slowness in https://trebuco.atlassian.net/browse/RCS-28256 with https://trebuco.atlassian.net/browse/ENG-9990. I am checking the 9000xxxx locations with Ryan Barlow.

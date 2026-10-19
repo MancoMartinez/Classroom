@@ -1,0 +1,48 @@
+# Adjunto image-20260827-055643.png
+Ruta: adjuntos/RCS-28612/image-20260827-055643.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Retail Transaction Details
+Store ID
+Transaction ID
+Total Amount
+Team Member Name
+Training Mode
+RTO562072608260045
+$68.95
+Suzanne 1080038)
+N
+Register lI
+ransaction Typi
+Transaction Status
+Transaction Begin Date & Time
+Transaction End Date & Time
+056207
+Retail Transaction - RETAIL
+Finished
+26/08/2026 1501: 49 (CMT+100)
+Customer Details
+Card Number
+627804****•*8518
+SALE
+Delivery Carrier Type: AUSTRALIA POST
+Delivery Instructions: LEAVE AT FRONT DOOR IF NOONE HOME
+SALE
+DELIVERY FEE
+VAN HEUSEN VTSB1030 PNVB TAILORED PRINT 3311
+987654320
+218683600
+$59 Van Heusen business shirts (401091)
+Promotion Description: BUY GET OFFER
+Total $59 Van Heusen business shirts (401091): -$20.95
+Item Count: 1
+Authorized Online:
+Tender Entry Method:
+$9.95 GST
+$79.95 GST
+-$20.95
+true
+Keyed

@@ -1,0 +1,9 @@
+{
+  "sources": 3232,
+  "chunks": 13663,
+  "vector_chunks": 13663,
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "synced": "2026-09-28T22:37:49.360682+00:00",
+  "coverage": "SQLite knowledge_chunks/items y texto completo de inbox, bitácora, memorias, investigaciones, flujos, triage y Claude outputs. Fichas y espejo son vistas duplicadas; se leen por ticket. Adjuntos binarios no indexados.",
+  "warning": "Fechas son de documentos, no prueba de vigencia. Estado de tickets requiere Jira. Coaparición no demuestra causa común."
+}

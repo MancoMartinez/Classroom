@@ -1,0 +1,52 @@
+# Adjunto rcs28294-log-blobnotfound.png
+Ruta: investigaciones/evidencia-smart-alerts-inprocess-2026-09-18/rcs28294-log-blobnotfound.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-18
+
+Texto reconocido por OCR:
+Log detail
+Client ID
+432
+Logged Date Time
+9/18/2026, 2:17:52 PM
+Severity
+Error
+Component
+N/A
+Sender
+N/A
+User ID
+N/A
+16. SmartAlert.ProcessSmartAlert.Warning: ID=48786|AlertName=HR Alert Going back to process other alerts Printing.CreateDocument: The specified blob does not exist.&#10;Requestld:2a3f114-50le-005-2478-
+476085000000&#10;Time:2026-09-18714:17:52.7671364Z&#13;&#10; Status: 404 (The specified blob does not exist.) &#13;&#10;ErrorCode: BlobNotFound&#13;&#10;&#13;&#10;Content&#13;&#10;&#65279; &lt;?xml
+version=&quot;1.0&quot; encoding=&quot utt-8& quot;?&gt;&/t;Error&gt;&lt; Code&gt;BlobNotFound&lt;/Code&gt;&lt;Message&gt;The specified blob does not exist.&#10;Requestld:2ea3f14-50le-005a-2478-
+476085000000&#10;Time:2026-09-18714:17:52.7671364Z&lt;/ Message&gt;&lt;/Error&gt;&#13;&#10;&#13;&#10;Headers:&#13;&#10;x-ms-request-id: 2a3f114-50le-005-2478-476085000000&#13;&#10;x-ms-client-request-
+id: 0cc6cb82-f2d6-4a75-bcc0-717e3161403b&#13;&#10;x-ms-version: 2025-01-05&#13;&#10,x-ms-error-code: BlobNotFound&#13;&#10;Content-Length: 215&#13;&#10;Content-Type: application/xml&#13;&#10;Date: Fri, 18
+Sep 2026 14:17:51 GMT&#13;&#10;Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0&#13;&#10; - DLL Version:5.3.0
+Log Body
+16. SmartAlert.ProcessSmartAlert.Warning: ID=48786|AlertName=HR Alert 1|Going back to process other alerts|Printing.CreateDocument: The specified blob does not exist.&#10;Requestld:2ea3f114-50le-005a-2478-
+476085000000&#10;Time:2026-09-18T14:17:52.7671364Z&#13;&#10;Status: 404 (The specified blob does not exist.)&#13;&#10;ErrorCode: BlobNotFound&#13;&#10;&#13;&#10;Content:&#13;&#10;&#65279;&It;?xm|
+version=&quot;1.0&quot; encoding=&quot; utf- 8& quot;?&gt;&lt;Error&gt;&/t;Code&gt;BlobNotFound&lt;/Code&gt;&lt;Message&gt; The specified blob does not exist.&#10;Requestld:2a3f114-50le-005a-2478
+476085000000&#10;Time:2026-09-18T14:17:52.7671364Z&It;/Message&gt;&lt;/Error&gt;&#13;&#10;&#13;&#10;Headers:&#13;&#10;x-ms-request-id: 2ea3f114-50le-005a-2478-476085000000&#13;&#10;x-ms-client-request-
+d: Occ6cb82-f2d6-4a75-bcc0-717e3161403b&#13;&#10;x-ms-version: 2025-01-05&#13;&#10;x-ms-error-code: BlobNotFound&#13;&#10;Content-Length: 215&#13;&#10;Content-Type: application/xml&#13;&#10;Date: Fri, 18
+Sep 2026 14:17:51 GMT&#13;&#10;Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0&#13;&#10; - DLL Version:5.3.0|
+Additional Attributes
+Attribute
+AzureAppName
+AzureDeploymentslot
+clientid
+collector_instance_id
+deployment_environment
+detected_level
+grafana _host_id
+Value
+web-prd-wus2-arp-nettrack
+production
+432
+usprod
+debug
+9a67195e6lc7086e58a4f308b3e3e48d58fc988e03ad984dllbdbfl0a0ef7b91
+a0d030b69eeaa47483f2ecc6c373ec27bf3a663bl5fla29dd66686cadcfc5f30
+Cancel
+OK

@@ -1,0 +1,43 @@
+{#
+  reference_source — Deduplicated read of `map_<reference_table>` for the framework.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  FRAMEWORK INTERNAL — clients should not call this macro directly.
+
+  Symmetric with `mapping_source` for ARDM tables. Both downstream consumers
+  of reference mapping output — `validation_results` and `reference_merge` —
+  read through this macro so:
+    1. Client `map_reference_*` is allowed to emit dupes (e.g. when the same
+       reference feed is delivered daily and rebuilt across the run window).
+    2. The framework deduplicates once, on a single unique_key, by latest
+       updateddatetime.
+    3. The validate test's `_duplicate_key` rule only fires when the
+       framework's own dedup fails — never as noise from raw mapping output.
+
+  ─────────────────────────────────────────────────────────────────────────────
+  Returns a parenthesised SQL subquery; usable as
+    FROM {{ reference_source('reference_location') }} d
+
+  Supports both single-column and composite unique_keys. Composite keys appear
+  in the registry as a list (e.g. `['employeeid', 'locationid']` for
+  REFERENCE_EMPLOYEE — same employee at multiple stores is multiple rows).
+#}
+
+{% macro reference_source(table_name) %}
+  {%- set entry = find_table(table_name) -%}
+  {%- set unique_key = entry.unique_key -%}
+  {%- set is_composite = unique_key is iterable and unique_key is not string -%}
+
+  (
+    SELECT *
+    FROM {{ ref('map_' ~ table_name) }}
+    QUALIFY ROW_NUMBER() OVER (
+        PARTITION BY {% if is_composite -%}
+          {%- for k in unique_key %}{{ ', ' if not loop.first }}{{ k }}{% endfor -%}
+        {%- else -%}
+          {{ unique_key }}
+        {%- endif %}
+        ORDER BY updateddatetime DESC NULLS LAST
+    ) = 1
+  )
+{% endmacro %}

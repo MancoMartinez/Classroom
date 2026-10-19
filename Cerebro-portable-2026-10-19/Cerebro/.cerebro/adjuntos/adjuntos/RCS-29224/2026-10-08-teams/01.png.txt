@@ -1,0 +1,25 @@
+# Adjunto 01.png
+Ruta: adjuntos/RCS-29224/2026-10-08-teams/01.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+• Adarsh. • Andres, +9 0 Chat Shared Notes +1
+• Meet now ~ 8811
+Jenny Wang - would you know?
+Shaun Callow Thursday 9:59 AM
+Good timing Jenny, AAP have just escalated the ticket:
+https://trebuco.atlassian.net/browse/R6S=29224
+Jenny Wang Thursday 10:00 AM
+let me check how SnowTime configure the job schedule daily vs trickle, we want to wait for
+receiving all files before we start our job
+Daniel Endersby Thursday 10:00 AM
+it will be loaded as soon as it arrives, i'm not worrid about that
+the issue us is it used in part of the ardm data load
+which means coming later in the day could affect rows that day before it's loaded, if it's
+referenced
+it's it's stand alone then no issue
+Jenny Wang Thursday 10:14 AM
+it's not completely stand alone, we grab the sale/retur quantity and amount from
+ardm_item table for each store and sku and use them to populate the

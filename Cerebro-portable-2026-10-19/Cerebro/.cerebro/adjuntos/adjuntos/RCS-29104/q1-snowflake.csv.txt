@@ -1,0 +1,17 @@
+# Adjunto q1-snowflake.csv
+Ruta: adjuntos/RCS-29104/q1-snowflake.csv
+Tipo: csv
+Ticket: RCS-29104
+Modificado: 2026-09-24
+
+## Hoja q1-snowflake.csv
+4 filas x 2 columnas.
+
+Primeras filas (tabuladas):
+SRC	N
+HEADER	1
+ITEM	2
+TENDER	0
+
+Columnas numéricas:
+N: n=3 ceros=1 min=0 max=2 suma=3

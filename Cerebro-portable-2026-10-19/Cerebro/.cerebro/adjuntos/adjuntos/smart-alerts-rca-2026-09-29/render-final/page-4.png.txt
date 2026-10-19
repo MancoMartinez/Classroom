@@ -1,0 +1,63 @@
+# Adjunto page-4.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render-final/page-4.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+Post Mortem Worksheet
+Facilitator: Juan Martinez. Proposed participants: Kiran Vadday, Matthew Kamminga, Russ Harmon, Gina Pilato, J.R. Teagle, Kara Holthaus,
+Chris Rippingale and Ryan Barlow, with Vedant Shirude and the on-call/support representatives involved in triage. Confirm attendance and
+add other incident responders. J.R. explicitly requested Kara's participation. No meeting has been scheduled by this document. [S3, S4, P2]
+Why
+Confirmed answer or meeting input
+1. Why did
+Some processing attempts never completed or wrote history; customer examples also show missing notifications.
+alerts appear
+Some messages reached recipients.
+missing?
+2. Why did
+An asynchronous continuation waited on the ASP.NET context that the synchronous caller blocked.
+processing not
+complete?
+3. Why did this
+| The httpRuntime .NET 4.8 configuration activated the context behavior that exposed the existing blocking/await
+become a
+interaction.
+regression?
+4. Why did
+release controls
+Confirm regression coverage and release validation with Engineering and QA.
+allow this
+interaction?
+5. Why did
+detection and
+Identify the evidenced systemic gap in monitoring, testing or configuration management. Do not infer it from the fix
+response not
+alone.
+prevent
+prolonged
+impact?
+Meeting decisions to record: exact start and end per environment; affected tenant list; missed/duplicate notification counts; data integrity;
+residual risk; stale-case behavior; monitoring response and notification path; action owners and dates; external RCA reviewer approvals.
+Decision
+Write in
+PBM identifier and accountable owner
+Systemic root cause and prevention
+commitment
+EU / US validation evidence and remaining
+affected cases
+Final RCA delivery date and follow-up owner
+Process and Timing
+The current PBM policy requires scheduling the retrospective within 48 hours of the request. J.R. requested it September 29 at 08:52
+Bogotá time, so arrange it by October 1 at 08:52 Bogotá time. The policy targets the final RCA within five business days of cause
+confirmation. Engineering recorded the solution September 27; October 2 is the conservative planning target under a standard Monday-to-
+Friday calendar. Confirm the applicable confirmation milestone and delivery date. These are planning calculations, not published
+commitments. S1, S4, P1]
+The current workflow starts PBM tracking through the Problem Management label on the originating RCS. The search found no matching
+PBM/OUTM ticket; verify tracking before creating a duplicate. Juan must perform Jira changes. The older RSI policy says ten days from
+resolution and the older Outage page describes OUTM; use the current PBM policy for this RCA and resolve the process discrepancy with
+the process owner. [P1-P4]
+External delivery follows the completed retro, uses plain language and customer-specific scope, and requires approval from the Support
+Manager, the involved department Manager and the Support VP. Do not include other customers in a customer's external RCA. [P1, P2]
+Internal Use Only | 4

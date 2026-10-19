@@ -1,0 +1,55 @@
+# Adjunto 2026-09-30-investigaciones-completed.png
+Ruta: adjuntos/RCS-29126/2026-09-30-investigaciones-completed.png
+Tipo: png
+Ticket: RCS-29126
+Modificado: 2026-09-30
+
+Texto reconocido por OCR:
+Ca Company Links
+Ghttps://apps.apprissretail.com/vfcorp/platform/factboard#/list/completed
+• Summary - Overvi...
+© EUPROD > Home
+A My roles - Microso...
+A qa-Ipms-rdp-001 -...
+Mike Croze
+• RCS
+• RTS
+* GP Python Scripts
+* Appriss Supportte... Docs
+##
+TO REPRISSE
+Portal
+Investigations
+Completed Investigations
++ New
+Name
+Aarya Datta
+Ryan Yakow-TNF 20
+Ray Nichols-TNF 20 Somerset
+Description
+TNF #20-Somerset. Additional subject: Ryan Yakow
+ASM Ryan Yakow: Processing fraudulent refunds onto his own personal card
+All transactions with Debit card ending 8854
+Owner
+Mike Croze
+Mike Croze
+Mike Croze
+Created Date Time
+09/21/2026 1:49:20 PM
+08/25/2026 2:40:08 AM
+08/17/2026 3:31:30 PM
+Location ID
+150020
+150020
+3 results
+Completed status
+In Case
+In Case
+In Case
+Filter...
+Open
+Completed
+Completed reason
+EJ
+Enrique Jimenez
+«l

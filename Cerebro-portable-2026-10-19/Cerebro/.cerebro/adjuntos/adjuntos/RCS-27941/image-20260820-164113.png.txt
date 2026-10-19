@@ -1,0 +1,30 @@
+# Adjunto image-20260820-164113.png
+Ruta: adjuntos/RCS-27941/image-20260820-164113.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Portal > Settings > SSO+
+francesca.ramos@tailoredbrands.com
+Navigation
+Permission Groups
+Teams
+Location Hierarchy
+Security Level
+Permission Groups
+Choose values to add
+Nothing selected
+Group Name
+ApprissCase Search Users
+ApprissCase Search Users
+Date From
+Date To
+Persistent
+False
+True
+2 results
+Filter...
+Inserted Date Time
+08/18/2026, 11:37:33 PM
+04/14/2026, 07:58:57 AM

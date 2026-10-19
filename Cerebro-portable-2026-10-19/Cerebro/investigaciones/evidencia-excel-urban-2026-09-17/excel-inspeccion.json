@@ -1,0 +1,61 @@
+[
+  {
+    "sheet": "SearchResults",
+    "rows": 349,
+    "columns": 10,
+    "headers": [
+      "Appriss Transaction ID",
+      "Appriss Transaction Type",
+      "End Trans Date Time",
+      "Store No",
+      "Register",
+      "Trans Num",
+      "Cashier No",
+      "Ticket Amount",
+      "Account Number",
+      "Customer Full Name"
+    ],
+    "column_population": [
+      {
+        "column": 1,
+        "nonempty": 348
+      },
+      {
+        "column": 2,
+        "nonempty": 348
+      },
+      {
+        "column": 3,
+        "nonempty": 348
+      },
+      {
+        "column": 4,
+        "nonempty": 348
+      },
+      {
+        "column": 5,
+        "nonempty": 222
+      },
+      {
+        "column": 6,
+        "nonempty": 222
+      },
+      {
+        "column": 7,
+        "nonempty": 348
+      },
+      {
+        "column": 8,
+        "nonempty": 348
+      },
+      {
+        "column": 9,
+        "nonempty": 0
+      },
+      {
+        "column": 10,
+        "nonempty": 0
+      }
+    ]
+  }
+]

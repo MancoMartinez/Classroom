@@ -1,0 +1,28 @@
+# Adjunto 06-select-inprocess-rootcause-enrique.png
+Ruta: adjuntos/RCS-29103/06-select-inprocess-rootcause-enrique.png
+Tipo: png
+Ticket: RCS-29103
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+EJ
+hablando con Claude me puso a correr 2 consultas que creo que son similares a las que mencionas. Estos son los
+resultados
+100%
+• Results
+ShopliftingID
+1
+2
+205148
+205157
+No issues found
+Messages
+In Process
+1
+1
+Shoplifting| D
+205148
+205157
+RootCause
+Last and Final Waming
+NULL

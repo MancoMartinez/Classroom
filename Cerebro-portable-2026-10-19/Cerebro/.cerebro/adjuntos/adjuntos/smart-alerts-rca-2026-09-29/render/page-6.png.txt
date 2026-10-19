@@ -1,0 +1,52 @@
+# Adjunto page-6.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render/page-6.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+Evidence and Sources
+Current statuses checked September 29: RCS-29123 and RCS-29026 Under Customer Review; RCS-29145 Completed,
+resolution Resolved; ENG-9486 Development Complete; ENG-9533 Done; ENG-9589 Backlog. A ticket status does not
+establish the exact restoration time.
+S1 Engineering cause and correction
+https://trebuco.atlassian.net/browse/ENG-9486
+Description and 19 history entries. Solution entry September 27, 21:39:56 EDT. The production label at September 28, 08:30 EDT is not an
+environment-specific deployment completion record.
+S2 Primary ADUSA incident
+https://trebuco.atlassian.net/browse/RCS-29123
+All 10 comment entries and 20 history entries reviewed. September 28, 18:13 EDT internal and public comments contain validation and
+prospective recovery decision. Earlier Talos triage is superseded by engineering evidence.
+S3 Earlier case and investigation
+https://trebuco.atlassian.net/browse/RCS-29026
+All 20 comment entries reviewed. Internal correction September 25, 20:47 EDT; internal resolution evidence September 28, 18:14 EDT.
+Public history-based delivery claims are superseded by provider-aware analysis.
+S4 Teams incident thread
+Retail Ops > AALPS Issues > RCS-29123 - Ahold-Delhaize - Smart Alerts are not generating today
+76 text message entries reviewed, from Ayesha's September 27, 06:31 Bogotá post through Kiran's September 29, 10:23 response.
+Attached images/CSVs were not newly parsed. Existing Cerebro evidence and published Jira findings support the referenced log examples.
+Chris asks whether the fix is validated; Kiran explicitly says he did not test production himself.
+S5 Manual and automated QA
+https://trebuco.atlassian.net/browse/ENG-9533
+https://trebuco.atlassian.net/browse/ENG-9589
+Manual QA Done September 28, 10:38:21 EDT. Automation remains Backlog. Q4 planning metadata is not a delivery commitment.
+S6 Vitamin Shoppe confirmation
+https://trebuco.atlassian.net/browse/RCS-29145
+Seven comment entries loaded; recovery and resolution comments reviewed. Joe's public confirmation: September 28, 16:42 EDT. Status
+changed to Completed at 18:24:29 EDT; this is ticket resolution, not the deployment time.
+P1 Current policy and quality standard
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478066671617
+Authoritative policy: 48-hour meeting scheduling, five-business-day final RCA target, systemic Why and evidence requirements.
+P2 Current operational workflow
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478038687749
+Version 8, September 28, 2026. Retro, PBM tracking, external RCA approvals and delivery sequence.
+P3 Supplied Internal RCA template
+https://trebuco.atlassian.net/wiki/templates?space=PBM&template=474709983443
+Main report follows the supplied field and section order. Worksheet and evidence register support the retrospective.
+P4 Legacy process references
+https://trebuco.atlassian.net/wiki/spaces/RSI/pages/474840268801
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478022696993
+Legacy RCA SLA and Outage Ticket Process differ from current PBM instructions. Do not assume OUTM replaces current PBM tracking.
+Support contact: https://support.apprissretailcloud.com
++1-877-223-9481 / +1-866-274-3570
+Internal Use Only | 6

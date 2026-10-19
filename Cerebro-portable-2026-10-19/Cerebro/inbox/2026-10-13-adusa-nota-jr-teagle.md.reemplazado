@@ -1,0 +1,23 @@
+# Nota para J.R. Teagle, reenviable a Carl G
+
+Va con el D29 adjunto. Ingles, sin markdown, sin links porque puede acabar
+en manos del cliente.
+
+---
+
+Subject: ADUSA support status, 10/13
+
+J.R.,
+
+Attached is the ADUSA tracker refreshed to today. It lists all 78 tickets raised since the rollout, what each one is, where it stands and who it is waiting on. Ticket states were verified directly against Jira this morning.
+
+Where we are. Nineteen tickets are open. Fourteen sit with Appriss. Five are waiting on input from ADUSA: RCS-28281, RCS-27077, RCS-29108, RCS-29131 and RCS-29300. Fifty nine are resolved.
+
+Movement since Friday. No closures, five tickets advanced. RCS-29315, a user who cannot get past the sign in screen, reached engineering today after we confirmed her sign in arrives at the platform and no account is created for her. RCS-28667, new users arriving without a store hierarchy, was accepted into development on 10/2. RCS-29108, the case assignment emails, and RCS-27077, the new tender types, both moved back to ADUSA for confirmation. RCS-29376, the Reset Password option on the Admin users screen, moved to delivery review.
+
+New since Friday. RCS-29399, opened 10/12. ADUSA asked us to confirm whether transaction data is still arriving on both instances and, if it stopped, when, after an event on their side that is limiting access to externally hosted systems. Some of the Ahold data is arriving and none of the Delhaize data. We are preparing hour by hour counts for 10/11 through 10/13.
+
+Longest open. RCS-28281, the August transaction load gap on Secure, open since 8/11. We identified the missing window on 8/12 and asked for the resend on 9/24. We are still waiting on it.
+
+Regards,
+Juan

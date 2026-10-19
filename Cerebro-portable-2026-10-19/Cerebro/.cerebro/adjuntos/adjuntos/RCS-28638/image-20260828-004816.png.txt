@@ -1,0 +1,41 @@
+# Adjunto image-20260828-004816.png
+Ruta: adjuntos/RCS-28638/image-20260828-004816.png
+Tipo: png
+Ticket: RCS-28638
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Retail Transaction Details
+Store ID
+Transaction ID
+total AMOUnt
+Team Member Name
+Training Mode
+Authorized by Team Member
+219
+RT2196182708260044
+-$500.00
+Aravinda (1077380)
+1148897
+Customer Details
+Card Number
+627804******0812
+RETURN/EXCHANGE WITH PROOF OF PURCHASE
+Proof Type: CUSTOMER ORDER RETURN
+Customer Order Number: 2002504903
+RETURN
+Reason ID:RC19
+Reason Description:ŞlineltemDomainSpecific.returns.returnNotes
+Item(s) Retd: 1
+DE'LONGHI EC9255WI ARTE METAL PRO COLD B 4717|
+Transaction Begin Date & Time
+Transaction End Date & Time
+187370800
+219618
+Retail Transaction - RETAIL
+Finished
+27/08/2026 12:07:36 (GMT +10:00
+27/08/2026 12:11:49 (GMT +10:00
+Subtotal
+-$500.00 GST
+-$500.00

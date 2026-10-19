@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ADUSA — Después de la reunión del 18 de agosto</title>
+<style>
+  :root{
+    --bg:#f5f6f5; --panel:#ffffff; --panel2:#fafaf9;
+    --ink:#15181a; --sub:#596066; --faint:#878e94; --line:#e0e2e0;
+    --accent:#0f4c52; --accent-soft:#e2eeee;
+    --warn-bg:#fdf0dc; --warn-ink:#8a5410; --warn-line:#e8c48a;
+    --ok-bg:#e4efe4; --ok-ink:#2c6237;
+    --them-bg:#eae7f5; --them-ink:#4e3f8a;
+    --us-bg:#fde7e3; --us-ink:#9c3d2c;
+    --eng-bg:#e2ecf7; --eng-ink:#28557f;
+    --dup-bg:#ecedec; --dup-ink:#6b7278;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141715; --panel:#1e2220; --panel2:#242825;
+      --ink:#eceeea; --sub:#a8b0b3; --faint:#7d8588; --line:#333937;
+      --accent:#6cc0bd; --accent-soft:#1a3436;
+      --warn-bg:#3a2c14; --warn-ink:#e6bd7c; --warn-line:#5c4720;
+      --ok-bg:#1e3222; --ok-ink:#8ecb98;
+      --them-bg:#2a2543; --them-ink:#b0a2e6;
+      --us-bg:#3a221d; --us-ink:#e8927e;
+      --eng-bg:#1d2c3d; --eng-ink:#8ab6e0;
+      --dup-bg:#2a2e2c; --dup-ink:#98a0a3;
+    }
+  }
+  :root[data-theme="dark"]{
+      --bg:#141715; --panel:#1e2220; --panel2:#242825;
+      --ink:#eceeea; --sub:#a8b0b3; --faint:#7d8588; --line:#333937;
+      --accent:#6cc0bd; --accent-soft:#1a3436;
+      --warn-bg:#3a2c14; --warn-ink:#e6bd7c; --warn-line:#5c4720;
+      --ok-bg:#1e3222; --ok-ink:#8ecb98;
+      --them-bg:#2a2543; --them-ink:#b0a2e6;
+      --us-bg:#3a221d; --us-ink:#e8927e;
+      --eng-bg:#1d2c3d; --eng-ink:#8ab6e0;
+      --dup-bg:#2a2e2c; --dup-ink:#98a0a3;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif}
+  .serif{font-family:"Iowan Old Style",Georgia,"Times New Roman",serif}
+  code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+
+  header{position:sticky;top:0;z-index:20;background:var(--bg);padding:16px 22px 12px;border-bottom:1px solid var(--line)}
+  header h1{font-size:22px;margin:0 0 3px;letter-spacing:-.01em}
+  .stamp{color:var(--sub);font-size:12.5px;margin-bottom:11px}
+  .stamp b{color:var(--ink)}
+  #q{width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font-size:14.5px;font-family:inherit}
+  #q:focus{outline:2px solid var(--accent);outline-offset:-1px}
+
+  main{max-width:1000px;margin:0 auto;padding:18px 22px 70px}
+
+  h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--sub);margin:32px 0 4px;font-weight:700;display:flex;align-items:center;gap:9px}
+  h2.sec .n{background:var(--line);color:var(--sub);border-radius:20px;padding:1px 9px;font-size:11px;font-weight:700}
+  .seclead{color:var(--faint);font-size:13px;margin:0 0 12px}
+
+  .alert{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:9px;padding:14px 16px;margin-bottom:10px}
+  .alert h3{margin:0 0 6px;font-size:15px;color:var(--warn-ink)}
+  .alert p{margin:0 0 7px;font-size:14px;color:var(--ink)}
+  .alert p:last-child{margin-bottom:0}
+  .alert ul{margin:6px 0 0;padding-left:19px;font-size:14px}
+  .alert li{margin-bottom:4px}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:9px;margin-bottom:9px;overflow:hidden}
+  .chead{display:grid;grid-template-columns:auto 1fr auto;gap:11px;align-items:baseline;padding:11px 15px 9px}
+  .tk{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .tt{font-size:14px;color:var(--ink);font-weight:600}
+  .tt .who{display:block;color:var(--faint);font-size:12px;font-weight:400;margin-top:1px}
+  .chip{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap;letter-spacing:.02em}
+  .c-them{background:var(--them-bg);color:var(--them-ink)}
+  .c-us{background:var(--us-bg);color:var(--us-ink)}
+  .c-eng{background:var(--eng-bg);color:var(--eng-ink)}
+  .c-ok{background:var(--ok-bg);color:var(--ok-ink)}
+  .c-dup{background:var(--dup-bg);color:var(--dup-ink)}
+  .cbody{padding:0 15px 12px;font-size:14px}
+  .cbody dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:5px 12px}
+  @media (max-width:620px){.cbody dl{grid-template-columns:1fr;gap:1px}.chead{grid-template-columns:1fr auto}}
+  .cbody dt{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);font-weight:700;padding-top:3px}
+  .cbody dd{margin:0;color:var(--ink)}
+  .cbody dd.q{color:var(--sub)}
+  .ev{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:7px 10px;margin-top:3px;font-size:13px}
+  .ev+.ev{margin-top:5px}
+  .moved{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;margin-top:8px}
+
+  .compact .card{margin-bottom:5px}
+  .compact .chead{padding:9px 15px}
+  .compact .tt{font-weight:500;font-size:13.5px}
+
+  .prose{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:16px 19px;margin-bottom:12px}
+  .prose h3{margin:0 0 9px;font-size:17px;letter-spacing:-.01em}
+  .prose h4{margin:16px 0 5px;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+  .prose p{margin:0 0 9px;font-size:14.5px}
+  .prose ol,.prose ul{margin:0 0 9px;padding-left:20px;font-size:14.5px}
+  .prose li{margin-bottom:6px}
+
+  .mail{background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:7px;padding:15px 17px;font-size:14px;line-height:1.55;white-space:pre-wrap;overflow-x:auto}
+  .hidden{display:none}
+  #none{color:var(--faint);text-align:center;padding:34px 0;display:none;font-size:14px}
+  footer{color:var(--faint);font-size:12.5px;border-top:1px solid var(--line);margin-top:34px;padding-top:14px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="serif">Después de la reunión — ADUSA, 18 de agosto</h1>
+  <div class="stamp">Cruce de <b>5 fuentes</b>: audio completo de la llamada (55 min, transcrito local) · <b>Tracker-3</b> con las ediciones en vivo de Chris · correo de <b>James Cosseboom</b> 11:51 a.m. · correo de <b>J.R.</b> del 17 · nota de voz de J.R. &nbsp;·&nbsp; 35 tickets &nbsp;·&nbsp; uso interno</div>
+  <input id="q" type="text" placeholder="Filtrar por ticket, persona o palabra (28021, Izenda, MISC1, Melanie, export…)">
+</header>
+
+<main>
+
+<h2 class="sec">Lo que enmarca todo lo demás</h2>
+
+<div class="alert">
+  <h3>Jim abrió la llamada dudando de si hay progreso</h3>
+  <p>Antes de que Chris hablara, Jim ya había revisado la hoja por su cuenta y dijo, textual: <i>"todavía veo 16 puntos abiertos por resolver, y creo que salimos del viernes con 13 o 14. Así que no sé si estamos avanzando o no."</i></p>
+  <p>Ese es el marco real de la reunión y es lo primero que tu correo de hoy tiene que responder. La cuenta de abiertos <b>subió</b> porque entraron tickets nuevos, no porque se haya retrocedido, pero desde afuera se ve igual. Hoy cerraron cuatro, y eso hay que decirlo con números, no con adjetivos.</p>
+</div>
+
+<div class="alert">
+  <h3>La causa raíz que Appriss admitió, y la fecha que puso</h3>
+  <p>Chris se presentó como <b>CTO</b> (con Matt Kamminga, director de ingeniería de software, y un gerente de ingeniería de soporte). Explicó sin rodeos que los 502 y la lentitud vienen de la parte de <b>reportes</b>, no de la app de Incident: los reportes largos disparan el conteo de threads y arrastran a Incident, que queda dentro del radio de explosión. <b>Secure y Engage no tienen ningún impacto.</b></p>
+  <p>El compromiso con fecha: la separación de los dos sistemas <b>ya está corriendo en staging</b>, el trabajo duro de ingeniería está hecho (equipos trabajando la semana pasada y el fin de semana). Falta QA esta semana. <i>"Si tenemos el visto bueno de QA, lo desplegamos el fin de semana y para el lunes deberían ver el cambio."</i></p>
+  <p>Y la advertencia que él mismo puso: separar los dos arregla Incident, pero <b>no arregla los reportes</b>. Eso viene después, con balanceo de carga y ruteo por cliente.</p>
+</div>
+
+<div class="alert">
+  <h3>Tres cosas que revisar antes de enviar</h3>
+  <ul>
+    <li><b>El resumen del documento ya no cuadra con el detalle.</b> Chris cambió 5 estados en vivo pero la tabla de arriba no se recalculó. Dice <b>16 Resolved / 4 Pending</b>; el detalle real dice <b>20 Resolved / 0 Pending</b>. La nota de la fila 18 sigue explicando una categoría que quedó vacía.</li>
+    <li><b>El Tracker-3 es la versión interna.</b> La de J.R. al cliente tiene 10 columnas; esta tiene 14. Sobran <code>Engineer assigned</code>, <code>Cause</code>, <code>Priority</code> y sobre todo <code>Appriss Notes</code>, que hoy contiene cosas como <i>"QA not passed. Issues with deployment"</i> y <i>"Gina: unable to reproduce in test demo7"</i>. Nada de eso sale al cliente. Además J.R. renombró la columna D a <code>Action with</code> y su archivo lleva 2 hojas; el Tracker-3 tiene una.</li>
+    <li><b>La reunión del jueves choca con la migración.</b> Se acordó volver a verse el jueves 20, temprano en la tarde ET porque J.R. vuela a las 3:30. Ese mismo día arranca la ventana de RCS-28292: 20 ago 11 p.m. → 21 ago 6 a.m. ET.</li>
+  </ul>
+</div>
+
+<h2 class="sec">Se cerró en la reunión <span class="n">4</span></h2>
+<p class="seclead">ADUSA dio el visto bueno verbal. Chris fue explícito: Appriss no marca nada como resuelto por su cuenta, lo deja para que el cliente lo firme.</p>
+
+<div class="card" data-s="RCS-28177 search email number Jonathan Wright Christina Cordero Viraj Kansara universal">
+  <div class="chead"><span class="tk">RCS-28177</span><span class="tt">Error al buscar casos de usuarios con un número en el correo<span class="who">Viraj Kansara</span></span><span class="chip c-ok">Cerrado</span></div>
+  <div class="cbody"><dl>
+    <dt>La pregunta</dt><dd>Se preguntó si el arreglo fue solo para Jonathan Wright o universal. Respuesta de Appriss: la investigación se hizo <b>en paralelo para todos los usuarios que encajaran en el mismo patrón</b>, así que no debería verse en nadie más.</dd>
+    <dt>La confirmación</dt><dd><b>Christina Cordero</b> era la que seguía con problemas. Confirmó a Leigh Ann <b>minutos antes de la llamada</b> que ya puede buscar por nombre y completar un caso nuevo.</dd>
+    <dt>Ojo</dt><dd class="q">El correo de James de las 11:51 a.m. todavía dice <i>"cleared for one user, still checking with other users"</i>. Ese correo es anterior a la llamada. El cierre se apoya en la confirmación verbal.</dd>
+  </dl><span class="moved">Pending Ahold verification → Resolved</span></div>
+</div>
+
+<div class="card" data-s="RCS-28364 older cases not appearing search 1970 active employee beginning of year">
+  <div class="chead"><span class="tk">RCS-28364</span><span class="tt">Casos antiguos no aparecen para algunos usuarios<span class="who">Juan Martinez</span></span><span class="chip c-ok">Cerrado</span></div>
+  <div class="cbody"><dl>
+    <dt>Verificado en vivo</dt><dd>Se hizo la búsqueda durante la llamada: el empleado sale como activo y aparecen los casos <b>hasta el comienzo del año</b>. James lo confirmó por correo también; Leigh Ann cierra el ticket.</dd>
+    <dt>Cabo suelto</dt><dd class="q">Anthony Powell fue reportado el 14 con el mismo síntoma y no figura en ningún ticket.</dd>
+  </dl><span class="moved">Pending Ahold verification → Resolved</span></div>
+</div>
+
+<div class="card" data-s="RCS-28378 buttons missing save next Hannaford shoplifting page clarity">
+  <div class="chead"><span class="tk">RCS-28378</span><span class="tt">Faltan los botones Save y Next en algunas páginas<span class="who">Sin asignar</span></span><span class="chip c-ok">Cerrado</span></div>
+  <div class="cbody"><dl>
+    <dt>Se destrabó</dt><dd>Estaba parado porque no se podía reproducir sin saber la página. Se aclaró en vivo: los botones sí están, era la página de <b>shoplifting de Hannaford</b>, y ya quedó resuelto.</dd>
+  </dl><span class="moved">Awaiting Ahold input → Resolved</span></div>
+</div>
+
+<div class="card" data-s="RCS-28379 cases missing case owner creator assigned Diego Buelvas spreadsheet sampled">
+  <div class="chead"><span class="tk">RCS-28379</span><span class="tt">Casos sin Case Owner, Assigned To ni Creator<span class="who">Diego Buelvas</span></span><span class="chip c-ok">Cerrado</span></div>
+  <div class="cbody"><dl>
+    <dt>Verificado en vivo</dt><dd>ADUSA había entregado una hoja con un conjunto de casos con el propietario en blanco. Se tomó una muestra durante la llamada y <b>todos salieron ya poblados</b>.</dd>
+    <dt>Recordatorio</dt><dd class="q">Los casos de ejemplo van en la <b>segunda hoja</b> de la copia del cliente. El Tracker-3 no la tiene.</dd>
+  </dl><span class="moved">Active with Appriss → Resolved</span></div>
+</div>
+
+<h2 class="sec">Bloqueados detrás del despliegue del fin de semana <span class="n">4</span></h2>
+<p class="seclead">Chris fue tajante: <i>"todos esos se quedan con nosotros, al menos hasta que pasemos QA, despleguemos y veamos que ya no afecta a Incident"</i>. No se investigan por separado esta semana.</p>
+
+<div class="card" data-s="RCS-28021 Izenda export PBI Incident Export Current Location Listing Jim Cosseboom CSV XLS">
+  <div class="chead"><span class="tk">RCS-28021</span><span class="tt">No se puede usar Izenda / la exportación falla<span class="who">Juan Martinez</span></span><span class="chip c-eng">Espera deploy</span></div>
+  <div class="cbody"><dl>
+    <dt>Lo grande</dt><dd><b>James por fin dio los reportes con nombre</b>, que es exactamente lo que J.R. pidió ayer y lo que tenía frenada la investigación.</dd>
+    <dt>Evidencia</dt><dd>
+      <div class="ev"><b class="mono">PBI – Incident Export 2026 Q3 (Jim Cosseboom Test)</b><br>CSV falla · XLS <b>sí funciona</b> · el CSV programado que le llegó por correo esa mañana <b>sí funcionó</b>.</div>
+      <div class="ev"><b class="mono">PBI – Current Location Listing (Jim Cosseboom Test)</b><br>No exporta ni a CSV ni a XLS.</div>
+    </dd>
+    <dt>Lo que revela</dt><dd>El patrón separa las tres rutas: la entrega programada por correo funciona, la exportación manual desde el visor no, y depende del formato. Descarta el scheduler y apunta a la exportación bajo demanda.</dd>
+    <dt>Dato de escala</dt><dd class="q">Izenda es una función de la plataforma clásica que tienen <b>menos de cinco clientes</b>, y en ADUSA la usan <b>tres o cuatro personas</b>. El reporting nuevo de Secure ya no usa esa tecnología.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28161 location export blank FTP bulk update Shandana Khan Locations Search Export">
+  <div class="chead"><span class="tk">RCS-28161</span><span class="tt">La exportación de ubicaciones sale en blanco<span class="who">Shandana Khan</span></span><span class="chip c-eng">Espera deploy</span></div>
+  <div class="cbody"><dl>
+    <dt>Corrección importante</dt><dd>El tracker lo tiene catalogado como Izenda, pero <b>Jim lo desmintió en vivo</b>: desde su lado no pasan por Izenda para esto. Es la exportación dentro de la propia aplicación. Si por detrás termina siendo Izenda, eso está por confirmarse.</dd>
+    <dt>Ruta exacta</dt><dd><span class="ev"><span class="mono">Locations → Search → Export</span> — el archivo se genera pero sale en blanco.</span></dd>
+    <dt>Impacto real</dt><dd>Es el archivo con el que ADUSA <b>actualiza asignaciones de ubicación en bloque</b>: lo exportan, lo editan, lo suben a su FTP y se entrega al día siguiente. Sin él no pueden mover gente cuando cambia una región.</dd>
+    <dt>Estado</dt><dd class="q">Probado en test hoy. Se despliega hoy a producción y se vuelve a probar ahí.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28413 Izenda data incorrect Interview Data with Source AP REPORTS FOOD LION 268 67 Central HTML regions">
+  <div class="chead"><span class="tk">RCS-28413</span><span class="tt">Datos incorrectos en un reporte programado<span class="who">Sin asignar</span></span><span class="chip c-eng">Espera deploy</span></div>
+  <div class="cbody"><dl>
+    <dt>Lo que es</dt><dd>Un reporte <b>HTML que se distribuye automáticamente</b> por correo. Trae varias regiones y <b>solo una de las cinco o seis está mal</b>; el resto de los datos se ven correctos. Eso hace el defecto más raro, no más leve.</dd>
+    <dt>Evidencia</dt><dd>
+      <div class="ev">Reporte: <b class="mono">Interview Data with Source (AP REPORTS FOOD LION)</b><br>Central muestra <b>67 casos</b> donde debería mostrar <b>~268</b> al 27 de julio, el día antes del cambio. James adjuntó el reporte bueno: 1,553 casos / 637 tiendas / $490,692.24.</div>
+    </dd>
+    <dt>Dato clave</dt><dd>Entraron a Izenda y <b>hicieron una vista previa: los datos también faltaban ahí</b>. O sea que no es un problema de la entrega, es del reporte en sí.</dd>
+    <dt>Acción tomada</dt><dd class="q">Matt se agregó a la lista de distribución para verificar el contenido del envío desde el lado de Appriss.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28407 502 errors various functions Leigh Ann this morning Edwin Garzon overall latency">
+  <div class="chead"><span class="tk">RCS-28407</span><span class="tt">Errores 502 frecuentes en varias funciones de LPMS<span class="who">Edwin Garzon · alta prioridad</span></span><span class="chip c-eng">Espera deploy</span></div>
+  <div class="cbody"><dl>
+    <dt>En la llamada</dt><dd>Se preguntó si era un escenario concreto como el de RCS-28353. Respuesta: <b>no</b>, no se ha podido aislar nada específico. Cae dentro del trabajo general de latencia y de la separación.</dd>
+    <dt>Hoy</dt><dd>Leigh Ann reportó 502 <b>esta misma mañana</b> con el detalle en el ticket, o sea después del despliegue del 17.</dd>
+    <dt>Cifra</dt><dd class="q">Los 502 fueron <b>menos del 0.5% de todo el tráfico</b>. Como se dijo en la llamada, cuando te toca uno igual duele aunque sea medio por ciento.</dd>
+    <dt>Corrección</dt><dd class="q">La fila decía RCS-28047, que es de otra cuenta. J.R. ya la corrigió en la versión de ayer.</dd>
+  </dl></div>
+</div>
+
+<h2 class="sec">Nos toca a nosotros ahora <span class="n">5</span></h2>
+<p class="seclead">Trabajo concreto que no depende del despliegue del fin de semana.</p>
+
+<div class="card" data-s="RCS-28342 Anthony Lopez title SSO claim Janai Harrison Stacie Whetzel Jonathan Wright Melanie Engleman Active Directory mapping">
+  <div class="chead"><span class="tk">RCS-28342</span><span class="tt">Falta el cargo en el perfil de empleado<span class="who">Juan Martinez</span></span><span class="chip c-us">Appriss</span></div>
+  <div class="cbody"><dl>
+    <dt>Retrocedió</dt><dd>Estaba esperando confirmación de ADUSA y volvió a nosotros, porque siguen apareciendo casos.</dd>
+    <dt>El dato decisivo</dt><dd><b>ADUSA ya revisó su Active Directory y el cargo sí está presente de su lado.</b> Lo dijeron en la llamada: <i>"para estas personas a las que les falta del lado de LPMS, sí está presente del nuestro, así que debería venir en los datos que se pasan"</i>. Eso mueve el problema a nuestra ingesta del claim, no a su directorio.</dd>
+    <dt>Ejemplos</dt><dd>
+      <div class="ev">En el ticket: <b>Janai Harrison</b> (<span class="mono">p40051n</span>, CSCHAR), <b>Stacie Whetzel</b> (<span class="mono">p20nr53</span>, CSCEXC) y <b>Jonathan Wright</b>. Los dos primeros con capturas: campo Title vacío, 0/60.</div>
+      <div class="ev">Surgido en vivo: <b>Melanie Engleman</b> — ojo con el apellido, es <b>EL</b>, no ELLIE, por eso al principio no aparecía en la búsqueda. Se señaló como el mejor ejemplo para investigar porque además <b>se tiene la fecha de su último inicio de sesión</b>.</div>
+    </dd>
+    <dt>Por qué importa</dt><dd class="q">Con apellidos comunes como Lopez, el cargo es lo que confirma que se está asignando la aprobación a la persona correcta. Sin él, se asigna a ciegas.</dd>
+  </dl><span class="moved">Pending Ahold verification → Active with Appriss</span></div>
+</div>
+
+<div class="card" data-s="RCS-28093 employee search cross brand MISC1 division 300 location numbers Tahj Stone record count">
+  <div class="chead"><span class="tk">RCS-28093</span><span class="tt">La búsqueda de empleados no filtra por marca<span class="who">Edwin Garzon</span></span><span class="chip c-us">Appriss</span></div>
+  <div class="cbody"><dl>
+    <dt>La escala real</dt><dd>No es un caso aislado: ADUSA estima <b>alrededor de 300 números de tienda que existen en más de una marca</b>. La tienda 0001 es Food Lion y también Stop &amp; Shop.</dd>
+    <dt>Dónde está la marca</dt><dd>Sí viaja, en el campo <b class="mono">MISC1</b>, que dentro de LPMS se llama oficialmente <b>division</b>. Pero llega de forma intermitente: unos registros lo traen y otros no.</dd>
+    <dt>No es regresión</dt><dd><b>Appriss validó que el dato es idéntico en el ambiente viejo y en el nuevo</b>, y que allá se comportaba igual. Con el matiz honesto que dieron: no pueden afirmar al 100% que nunca se haya reportado antes.</dd>
+    <dt>Evidencia</dt><dd><span class="ev"><b>Tahj Stone</b>, <span class="mono">8000254153</span>, de Stop &amp; Shop #0001, aparece al buscar <b>Food Lion #0001</b>. Ocurre en <span class="mono">Admin → Manage Associates</span> y en el <b>Associate Lookup dentro de un caso</b>, donde el filtro Brand dice FOOD LION, LLC y aun así devuelve los 755 registros mezclados.</span></dd>
+    <dt>Compromiso</dt><dd>Matt se lo llevó: revisar dónde se pierde la conexión y <b>sacar un conteo de cuántos registros traen MISC1 y cuántos no</b>.</dd>
+    <dt>Prioridad</dt><dd class="q">Jim mismo dijo que no está en su lista alta porque no bloquea funcionalidad. Es la palanca para no gastar la semana aquí.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28123 case assignment approval production dummy location 9999 stop and shop Hannaford">
+  <div class="chead"><span class="tk">RCS-28123</span><span class="tt">Problemas al asignar casos<span class="who">Juan Martinez</span></span><span class="chip c-us">Appriss</span></div>
+  <div class="cbody"><dl>
+    <dt>Permiso concedido</dt><dd>Appriss pidió autorización para crear un caso real en producción, aprobarlo y seguirlo hasta el final. <b>ADUSA dijo que sí</b> y ofreció el terreno para hacerlo.</dd>
+    <dt>Dónde probar</dt><dd><span class="ev">Ubicación <b class="mono">9999</b> de la marca Stop &amp; Shop (tienen un par de ellas). Es una ubicación viva pero <b>ficticia</b>, la usan ellos mismos para probar. Nada de lo que se haga ahí ensucia datos reales.</span></dd>
+    <dt>Alcance</dt><dd>Leigh Ann cree que afecta a todas las marcas, y a <b>Hannaford más que a nadie</b> porque sus flujos son algo distintos.</dd>
+    <dt>Aparte</dt><dd class="q">Sigue sin ticket el reporte del 14: ya no se puede imprimir el PDF del caso desde la pantalla de confirmación, hay que ir al workbench.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28196 shoplifting defaults null greyed out blank Vedant Gabor conditional formatting">
+  <div class="chead"><span class="tk">RCS-28196</span><span class="tt">Dos campos que estaban en blanco ahora salen en "No"<span class="who">Vedant Shirude</span></span><span class="chip c-us">Appriss</span></div>
+  <div class="cbody"><dl>
+    <dt>Causa</dt><dd>Migración de base: una columna que admitía nulos dejó de admitirlos y caía en 0, que se lee como "No". Gabor lo trabajó con Jon y quedó corregido para este cliente. Leigh Ann ya respondió confirmando.</dd>
+    <dt>Queda un defecto encima</dt><dd>Ahora el campo muestra <b>NULL y en gris</b> en la página de AD Shoplifting. <b>Lo acordado en vivo es que debería verse en blanco</b>, como el resto, para que el usuario no crea que hay algo escrito que el sistema no acepta.</dd>
+    <dt>Sin cerrar</dt><dd class="q">Como el campo es obligatorio, un nulo no lo satisface y el usuario igual tiene que elegir Sí o No aunque nadie haya contestado. En la llamada se dijo en voz alta que <i>"eso no suena correcto"</i> y quedó ahí.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28415 28365 new users unable create cases SSO claim hierarchy top bottom Food Lion Leigh Ann training call">
+  <div class="chead"><span class="tk">RCS-28415</span><span class="tt">Usuarios nuevos no pueden crear casos tras ser provisionados<span class="who">Sin asignar</span></span><span class="chip c-us">Appriss</span></div>
+  <div class="cbody"><dl>
+    <dt>Qué pasó de verdad</dt><dd>Leigh Ann agregó la jerarquía a mano para uno de los usuarios, pero <b>seleccionó el nivel de arriba y no el de abajo</b>. Por eso el usuario solo podía crear casos para Food Lion. No fue un defecto del sistema, fue la pantalla nueva que se ve distinta a la del entrenamiento.</dd>
+    <dt>Lo de fondo</dt><dd>Estos son usuarios nuevos que antes no existían. La ubicación <b>debería mapearse sola desde el claim de SSO</b>. Appriss quedó de validar que el claim traiga la ubicación, para que no haya que arreglarlos uno por uno.</dd>
+    <dt>Compromiso extra</dt><dd>Matt ofreció <b>una llamada aparte</b> para mostrarle a Leigh Ann cómo asignar ubicaciones en la aplicación nueva. Eso no está agendado.</dd>
+    <dt>Relación</dt><dd class="q">Se conectó en vivo con RCS-28365, que es el mismo patrón visto desde el otro lado.</dd>
+  </dl></div>
+</div>
+
+<h2 class="sec">Esperando a ADUSA <span class="n">4</span></h2>
+<p class="seclead">Aquí no se avanza sin que ellos prueben o respondan.</p>
+
+<div class="card" data-s="RCS-28124 attachments upload video Hannaford txt files forbidden Leigh Ann three messages QA">
+  <div class="chead"><span class="tk">RCS-28124</span><span class="tt">No se pueden subir ciertos adjuntos<span class="who">Juan Martinez</span></span><span class="chip c-them">ADUSA</span></div>
+  <div class="cbody"><dl>
+    <dt>Se redefinió</dt><dd>Chris notó en vivo que el estado estaba mal puesto. Se aclaró: <b>ver y descargar ya funciona</b>; lo que falla es <b>adjuntar</b>, con error Forbidden. El título del ticket dice "not visible" y confunde.</dd>
+    <dt>Nuestro lado</dt><dd>El arreglo entró en el release de <b>hoy temprano</b>. Appriss probó con muchos tipos de archivo y todo lo demás funciona.</dd>
+    <dt>Único hallazgo</dt><dd><span class="ev">Los <b>.txt no funcionan</b> como se espera. Se preguntó si ese formato se usa en ADUSA. La reacción de Jim: <i>"mi instinto dice que un .txt sería inusual, aunque siempre hay alguien que ama el bloc de notas"</i>. Sin respuesta formal.</span></dd>
+    <dt>Falta</dt><dd class="q">Que alguien de ADUSA intente subir un video y diga si sirve. Leigh Ann dijo tener <b>tres mensajes pendientes de respuesta</b> para conseguir esa validación.</dd>
+  </dl><span class="moved">Pending Ahold verification → Awaiting Ahold input</span></div>
+</div>
+
+<div class="card" data-s="RCS-28292 server migration Project Robinson April Valerio store file August 21 allow list">
+  <div class="chead"><span class="tk">RCS-28292</span><span class="tt">Migración de servidor del archivo de tiendas<span class="who">Gulshan Kumar</span></span><span class="chip c-them">ADUSA</span></div>
+  <div class="cbody"><dl>
+    <dt>Resuelto por correo</dt><dd>James contestó las dos preguntas de J.R.: el contacto durante la ventana es <b>April Valerio</b>, y él mismo validará el archivo la mañana del 21.</dd>
+    <dt>Ventana</dt><dd><span class="ev"><b>20 ago 11:00 p.m. → 21 ago 6:00 a.m. hora del este.</b> ADUSA confirmó el 13 que la IP existente se mantiene.</span></dd>
+    <dt>Falta de nuestro lado</dt><dd class="q">Confirmar que no hace falta cambio en la lista blanca. Y cae el mismo día de la reunión del jueves.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28304 case tier width truncated cosmetic feature request bottom of list low priority">
+  <div class="chead"><span class="tk">RCS-28304</span><span class="tt">El nivel del caso sale truncado<span class="who">Vedant Shirude</span></span><span class="chip c-them">ADUSA</span></div>
+  <div class="cbody"><dl>
+    <dt>Zanjado</dt><dd>Ancho fijo por diseño, se truncaba igual en la plataforma anterior. Ambos lados coincidieron: <b>es cosmético, no afecta funcionalidad</b>.</dd>
+    <dt>Decisión</dt><dd>Se levanta la solicitud de mejora, pero explícitamente <b>al fondo de la lista</b>. Palabras de Jim: <i>"nice to have"</i>. Puede archivarse hasta que lo demás esté resuelto.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28281 transaction data load August 10 Secure not LPMS Lauren Linsenbach Jacquelyn Wunders workstream">
+  <div class="chead"><span class="tk">RCS-28281</span><span class="tt">Carga de transacciones del 10 de agosto incompleta<span class="who">Edwin Garzon · alta prioridad</span></span><span class="chip c-them">ADUSA</span></div>
+  <div class="cbody"><dl>
+    <dt>Cambio de alcance</dt><dd>James pidió <b>sacarlo de este workstream</b>: no está conectado con LPMS y él no lo maneja de cerca. Su lectura es que los datos requeridos no están llegando a Appriss.</dd>
+    <dt>Contactos nuevos</dt><dd><span class="ev"><b>Lauren Linsenbach</b> y <b>Jacquelyn Wunders</b>, de su equipo, son los contactos principales.</span></dd>
+    <dt>Dato nuestro</dt><dd class="q">Todos los archivos recibidos se cargaron. El volumen bajó por duplicados: 1,066,691 transacciones el 10/8 contra 2.1 a 2.3 millones del 7 al 9. Por qué se corta a media tarde sigue sin establecerse.</dd>
+    <dt>Riesgo</dt><dd class="q">Es alta prioridad y sin respuesta al cliente desde el 11. Si sale del workstream sin dueño nuevo, queda huérfano.</dd>
+  </dl></div>
+</div>
+
+<h2 class="sec">Verificando el arreglo <span class="n">1 + 1 duplicado</span></h2>
+
+<div class="card" data-s="RCS-28353 502 edit location data store profile add manager Matt validated live employee database query">
+  <div class="chead"><span class="tk">RCS-28353</span><span class="tt">Error 502 al editar datos de ubicación<span class="who">Juan Martinez</span></span><span class="chip c-eng">En verificación</span></div>
+  <div class="cbody"><dl>
+    <dt>El único reproducible</dt><dd>A diferencia de RCS-28407, este sí se aisló: pasa <b>al editar la información de una tienda, específicamente al agregar un gerente nuevo</b>. La hipótesis es que la consulta a la base de empleados tarda demasiado en volver y se cae en 502.</dd>
+    <dt>Probado en vivo</dt><dd>Matt lo validó durante la llamada y <b>obtuvo buen resultado</b>, con la honestidad de decir que podía ser casualidad. Fue una de las áreas específicamente atacadas en el fix del 17.</dd>
+    <dt>Criterio de cierre</dt><dd class="q">Acordado ahí mismo: si los 502 dejan de verse, pasa a esperar aprobación del cliente.</dd>
+  </dl></div>
+</div>
+
+<div class="card" data-s="RCS-28356 system latency duplicate skipped Camila Cortes">
+  <div class="chead"><span class="tk">RCS-28356</span><span class="tt">Latencia del sistema<span class="who">Camila Cortes · alta prioridad</span></span><span class="chip c-dup">Duplicado</span></div>
+  <div class="cbody"><dl>
+    <dt>Hallazgo</dt><dd><b>Chris lo declaró duplicado en la llamada y lo saltó</b> sin discutirlo: <i>"System latency is the same thing. This one is a duplicate, so skip that one."</i></dd>
+    <dt>Consecuencia</dt><dd>Sigue en el tracker como ticket independiente, activo y de <b>alta prioridad</b>. Eso infla la cuenta de abiertos que Jim está mirando, que es justo lo que le hizo dudar del progreso al abrir la reunión.</dd>
+    <dt>Acción</dt><dd class="q">Confirmar de cuál es duplicado, muy probablemente RCS-28353, enlazarlos en Jira y decidir si se consolida antes de generar la versión del cliente.</dd>
+  </dl></div>
+</div>
+
+<h2 class="sec">Cerrados de antes <span class="n">16</span></h2>
+<p class="seclead">Por si preguntan. Dos tienen cabos sueltos que nadie ha vuelto a tocar.</p>
+
+<div class="compact">
+<div class="card" data-s="RCS-28059 blocked Canada proxy IP addresses pendiente cabo suelto"><div class="chead"><span class="tk">RCS-28059</span><span class="tt">Mensaje "Sorry, you have been blocked": el tráfico salía por nodos canadienses y la regla de seguridad lo rechazaba. Canadá se permitió el 31/7. <b>Cabo suelto: seguimos debiéndoles las IPs de la nueva URL y por qué otros países puede salir el tráfico.</b></span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28075 timeouts root cause 60 minute session auto save pendiente cabo suelto"><div class="chead"><span class="tk">RCS-28075</span><span class="tt">Time outs de Central Station: grupos de permisos el 5/8, indexación de base el 6/8. <b>Cabo suelto: la causa raíz por escrito nunca se entregó, y el timeout de 60 minutos sin auto-guardado no se ha revisado.</b></span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28014 URL email SSO cutover"><div class="chead"><span class="tk">RCS-28014</span><span class="tt">La URL nueva pedía contraseña en vez de pasar por SSO. Resuelto en vivo el 29/7.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28042 Eric Lauseng redirect loop Employee ID Azure Entra IAM contractor"><div class="chead"><span class="tk">RCS-28042</span><span class="tt">Eric Lauseng en bucle de redirección: faltaba el Employee ID en Azure/Entra para cuentas de contratistas. Lo llenó el equipo IAM de ADUSA.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28053 non SAML link Central Station account rebuilt unlock"><div class="chead"><span class="tk">RCS-28053</span><span class="tt">Link no-SAML para Central Station: cuenta reconstruida y desbloqueada el 5/8. Queda la brecha de que un admin de ADUSA no puede cambiar correo ni desbloquear sin abrir ticket.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28135 duplicated users email digit appended"><div class="chead"><span class="tk">RCS-28135</span><span class="tt">Usuarios duplicados con un dígito añadido al correo, herencia de que el sistema viejo permitía varios login IDs por correo. Eliminados el 4/8.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28023 unable create cases division brand mismatch AP Level"><div class="chead"><span class="tk">RCS-28023</span><span class="tt">Usuarios AP nivel 1/2 no podían crear casos: las asignaciones apuntaban a registros cuya marca no coincidía con la división de la tienda. Corregido el 31/7.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28043 duplicate store numbers brands Stop Shop Giant Landover Food Lion"><div class="chead"><span class="tk">RCS-28043</span><span class="tt">Usuarios de Stop &amp; Shop y Giant de Landover veían solo la tienda equivalente de Food Lion. Corregido el 30/7.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28115 fields not clickable script error narrative critical hotfix"><div class="chead"><span class="tk">RCS-28115</span><span class="tt">Campos desplegables y el botón SAVE no respondían por un error de script en el campo de narrativa. Hotfix el 1/8. Era prioridad crítica.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28025 unable view attachments client id commas filenames header"><div class="chead"><span class="tk">RCS-28025</span><span class="tt">Adjuntos que no abrían: client ID mal configurado mandaba los archivos a la carpeta equivocada, y las comas en los nombres rompían la cabecera de respuesta. Corregido el 6/8.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28030 server time EST UTC timestamps journal attachment"><div class="chead"><span class="tk">RCS-28030</span><span class="tt">Marcas de tiempo 4 horas adelantadas: la migración dejó los perfiles en UTC en vez de Eastern. Corregido el 4/8.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28041 email sender display name declined product Outlook rules"><div class="chead"><span class="tk">RCS-28041</span><span class="tt">Pidieron quitar el nombre del remitente de los correos porque rompía sus reglas de Outlook. <b>Declinado</b>: Producto confirmó que es deliberado y no configurable por cliente. La dirección de envío no cambió, así que las reglas por dirección siguen sirviendo.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28109 Send to Flock action item case closure Matt Kamminga"><div class="chead"><span class="tk">RCS-28109</span><span class="tt">"Send to Flock" aparecía como acción al cerrar caso y ADUSA no podía quitarlo. Removido de la vista el 14/8.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28125 EBT card length Delhaize Zeus Secure test files Vlad Bogus"><div class="chead"><span class="tk">RCS-28125</span><span class="tt">Archivos de prueba para validar el cambio de largo de tarjeta EBT en Delhaize. Cargados el 6/8, marcado completo el 17/8.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28365 no locations found menu location 7225 Bikash Kumar SSO claims"><div class="chead"><span class="tk">RCS-28365</span><span class="tt">No aparecían ubicaciones al abrir un caso. Ubicación 7225 asignada el 13/8, ADUSA confirmó el 17. Se conectó en vivo con RCS-28415: es el mismo patrón de usuarios nuevos y claims de SSO.</span><span class="chip c-ok">Cerrado</span></div></div>
+<div class="card" data-s="RCS-28369 case number location change RecreateCaseNo Giant Martins 6313 6314"><div class="chead"><span class="tk">RCS-28369</span><span class="tt">El número de caso no cambiaba al mover el caso de ubicación. Fix en el release del 17, verificado en producción. <b>Discrepancia menor sin resolver: la hoja dice 6313, Jira y el caso de prueba dicen 6314.</b></span><span class="chip c-ok">Cerrado</span></div></div>
+</div>
+
+<div id="none">Sin resultados. Prueba con el número de ticket o una palabra clave.</div>
+
+<h2 class="sec">Tu pregunta: ¿el comentario va en el documento o en el ticket?</h2>
+
+<div class="prose">
+  <h3 class="serif">En los dos, y no son lo mismo</h3>
+  <p>Al cierre de la llamada la instrucción fue textual: <i>"Juan and his team will go through the sheet and make sure the Jira tickets are all up to date, and then we'll share this detailed view with you, so you can keep your team up to date."</i> Son dos acciones encadenadas, no una.</p>
+  <p>La nota de voz de J.R. de esta mañana lo dice más crudo: <i>"sweep the tickets, open the spreadsheet, sweep the tickets, make sure that they're all in a decent state and then they get a comment today"</i>, y solo después <i>"you can generate a new version of the spreadsheet to send Jim"</i>.</p>
+  <p>Y hay un tercer dato que lo confirma: al principio de la reunión, <b>Chris le anunció al cliente que tú ibas a mandar el correo</b>. Textual: <i>"one's gonna follow up with a detailed email for you and a new version of the spreadsheet"</i>. El cliente ya lo está esperando.</p>
+
+  <h4>El orden correcto</h4>
+  <ol>
+    <li><b>Comentario en cada ticket de Jira.</b> Ahí sí existe la distinción entre nota interna y comentario visible al cliente. Todo ticket con más de 24 horas sin actualización necesita uno hoy.</li>
+    <li><b>Después</b> se regenera el documento, ya con los tickets al día.</li>
+    <li>El documento limpio se comparte junto con el correo.</li>
+  </ol>
+
+  <h4>Por qué sentiste que "no hay interno"</h4>
+  <p>Tu intuición era correcta, pero la conclusión va al revés. Lo comprobé columna por columna: <b>la versión de J.R. al cliente tiene 10 columnas, la de Chris de hoy tiene 14.</b> Las que sobran son <code>Engineer assigned</code>, <code>Cause</code>, <code>Priority</code> y <code>Appriss Notes</code>.</p>
+  <p>En el documento del cliente no hay columna interna porque <b>se elimina antes de enviarlo</b>, no porque no exista contenido interno. Y hay una prueba de que Chris lo tiene claro: al compartir pantalla avisó en voz alta <i>"el tracker interno que tenemos lo estoy actualizando con estos datos"</i> y pidió permiso para <b>ocultar las filas de resueltos</b> antes de recorrer el resto. Es decir, esa hoja se curó en vivo para mostrarla.</p>
+  <p>Dicho corto: lo interno vive en Jira. El documento es la vista pública. Si escribes lo interno en el documento, no tiene dónde esconderse.</p>
+</div>
+
+<h2 class="sec">El método de J.R., desarmado</h2>
+
+<div class="prose">
+  <h3 class="serif">Su correo de ayer funcionó, y hay prueba</h3>
+  <p>James respondió <b>los once puntos, en orden, uno por uno</b>, con capturas y archivos adjuntos. Eso no pasa por casualidad. Vale la pena copiar la estructura, porque hoy te toca a ti.</p>
+
+  <h4>Las reglas que se leen del texto</h4>
+  <ol>
+    <li><b>El correo no es el reporte de estado.</b> El adjunto lo es. El correo trae solo lo que necesita respuesta de ellos: <i>"separate from the tracker, because these are the ones that move fastest with an answer from your side."</i></li>
+    <li><b>Cada punto pide una sola cosa concreta.</b> Un nombre de reporte, una cifra, una prueba, un contacto. Nunca "por favor revisen".</li>
+    <li><b>Explica por qué está trabado de su lado.</b> <i>"That one is waiting on a test rather than on us."</i> Eso quita el tono de reclamo y lo vuelve un dato.</li>
+    <li><b>Separa lo que espera una prueba, lo que espera una decisión y lo que espera información.</b> Se contestan distinto.</li>
+    <li><b>Corrige errores del cliente sin fricción y ya aplicados.</b> <i>"RCS-28047 is not one of your tickets. I believe you meant RCS-28407, and I have made that swap in the attached version."</i></li>
+    <li><b>Explica el retraso con la razón real.</b> Zona horaria y festivo en Colombia, sin excusas largas.</li>
+    <li><b>Cero jerga interna.</b> Ningún ingeniero por nombre, ningún ENG, ninguna rama, ningún ambiente.</li>
+    <li><b>Ofrece rutas, no promesas.</b> En el tema de mejora pregunta si quiere que él lo levante con el account team, en vez de comprometer fecha.</li>
+  </ol>
+
+  <h4>Qué cambia en el tuyo de hoy</h4>
+  <p>La lista de pedidos se encogió mucho: James ya entregó los reportes con nombre, la cifra del Central Division, el contacto de la migración y la prioridad de la mejora. <b>Volver a pedirle algo que contestó esta mañana es el error a evitar.</b></p>
+  <p>Y hay algo que el correo de J.R. no necesitaba y el tuyo sí: <b>responder a la duda de progreso con la que Jim abrió la llamada.</b> Cuatro cierres hoy, con nombre, es la respuesta.</p>
+</div>
+
+<h2 class="sec">Borrador para enviar hoy</h2>
+<p class="seclead">En inglés, para el cliente. Ajusta saludo y firma. Va con la versión limpia del tracker adjunta.</p>
+
+<div class="mail">Jim,
+
+Thank you for the detailed responses this morning and for the time on the call. Both moved things forward more than the last few days of ticket exchanges did.
+
+You opened by asking whether we are actually making progress, and it is a fair question when the open count goes up rather than down. Four items closed today on your team's confirmation: the case search for users with a number in their email (RCS-28177), older cases not appearing (RCS-28364), the missing Save and Next buttons, which turned out to be the Hannaford shoplifting page (RCS-28378), and the cases missing owner and creator (RCS-28379). The count has been moving up because new items keep arriving, not because work is stalling, and the attached tracker now separates the two so that is visible rather than something you have to take on trust.
+
+Two of your answers unblocked work that had been stuck. The named reports give us something specific to trace end to end, and the Central Division report with the expected count tells us whether we are chasing a reporting fault or missing cases. Both are with our team now.
+
+One item moved backwards and I want to flag it rather than let it look settled. The missing job titles, RCS-28342, were corrected on the individual records but your examples confirm the problem is wider. You have already checked your side and the title is present in your directory, so we are treating this as our mapping of the claim rather than anything for you to fix. Melanie Engleman is the example we will work from, since we also have her last sign-in.
+
+A few things still sit on your side:
+
+Attachments, RCS-28124. The upload fix went out in this morning's release and our own testing is clean apart from .txt files. Could someone try a video upload and tell us either way? Leigh Ann mentioned she has requests out for that already. On .txt, we will keep looking at it, but if that format is not something your teams actually use we would rather not hold the ticket open for it.
+
+Performance, RCS-28407 and the 502s. Leigh Ann reported 502s this morning with detail on the ticket, so we know they were still occurring after Monday's fixes. The reading we still do not have is from the Hannaford team, who reported the longest page open times. Whether they have seen a difference since Monday evening tells us if the fixes landed where it matters most.
+
+Employee search, RCS-28093. Your Tahj Stone example was exactly what we needed. We have confirmed the brand travels in the MISC1 field but is not populated on every record, and we are pulling a count of how many records carry it before proposing a route. Noted that this is not at the top of your list.
+
+The transaction data load, RCS-28281. Understood on separating it from this workstream. We will pick it up with Lauren Linsenbach and Jacquelyn Wunders directly and take it off this tracker.
+
+Case tier display, RCS-28304. Noted as low priority. We will raise the enhancement request and keep it out of the weekly focus.
+
+Two things from our side before Thursday. Your migration window is Thursday night into Friday morning, with April Valerio as the contact and your validation of the store file on the morning of the 21st; we will confirm before then that no allow-list change is needed at our end. And Matt offered to walk Leigh Ann through assigning locations in the new application, which would prevent the hierarchy issue we saw on the new user accounts. Let us know if that is useful and we will find a time.
+
+Thanks,</div>
+
+<footer>
+  <b>Fuentes.</b> Audio completo de la llamada, 55 minutos, transcrito localmente y usado como fuente principal donde contradecía notas previas · Appriss ADUSA-Support-Tracker-3.xlsx, con 13 tickets editados durante la reunión, verificados campo por campo contra Tracker-2 · correo de James Cosseboom del 18 ago 11:51 a.m. con capturas de Manage Associates, Associate Lookup y los perfiles de Janai Harrison y Stacie Whetzel · correo de J.R. Teagle del 17 ago con los once puntos · nota de voz de J.R.
+  <br><br><b>No verificado.</b> El conector de Jira estaba caído al armar esto, así que los estados vienen del tracker y de la reunión, no de Jira directamente. El nombre del Solution Expert de Jim quedó ininteligible en el audio en las dos pasadas, suena a "Dan Orkquist", conviene confirmarlo antes de escribirlo en cualquier lado.
+</footer>
+
+</main>
+
+<script>
+(function(){
+  var q=document.getElementById('q');
+  var cards=[].slice.call(document.querySelectorAll('.card'));
+  var secs=[].slice.call(document.querySelectorAll('h2.sec'));
+  q.addEventListener('input',function(){
+    var t=q.value.toLowerCase().trim(), any=false;
+    cards.forEach(function(c){
+      var hay=((c.getAttribute('data-s')||'')+' '+c.textContent).toLowerCase();
+      var show=(t==='')||hay.indexOf(t)>-1;
+      c.classList.toggle('hidden',!show);
+      if(show) any=true;
+    });
+    secs.forEach(function(s){
+      var sib=s.nextElementSibling, has=false;
+      while(sib && sib.tagName!=='H2'){
+        if(sib.classList && sib.classList.contains('card') && !sib.classList.contains('hidden')) has=true;
+        if(sib.classList && sib.classList.contains('compact') && sib.querySelectorAll('.card:not(.hidden)').length) has=true;
+        sib=sib.nextElementSibling;
+      }
+      var lead=s.nextElementSibling;
+      if(t!==''){
+        s.classList.toggle('hidden',!has);
+        if(lead && lead.classList.contains('seclead')) lead.classList.toggle('hidden',!has);
+      } else {
+        s.classList.remove('hidden');
+        if(lead && lead.classList.contains('seclead')) lead.classList.remove('hidden');
+      }
+    });
+    document.getElementById('none').style.display=any?'none':'block';
+  });
+})();
+</script>
+</body>
+</html>

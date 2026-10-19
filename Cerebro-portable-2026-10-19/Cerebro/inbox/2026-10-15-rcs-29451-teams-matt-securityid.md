@@ -1,0 +1,1 @@
+Yes. Those 49 signed in since July 2, have a level above 0 in sso.SecurityLevelAssignments, mostly 5, and their SecurityID is NULL in membership.Users and in the lpuser view. The count already leaves out Paul Bubelnik Jr, Nancy Bolhoff and Rachel Dill, which I set manually yesterday.

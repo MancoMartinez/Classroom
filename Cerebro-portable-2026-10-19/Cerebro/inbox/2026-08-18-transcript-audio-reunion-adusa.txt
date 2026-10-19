@@ -1,0 +1,670 @@
+ Yeah, yeah, I didn't hear back from Becky. She was off Friday. So I didn't get a chance but
+ I'm not
+ Real that it took time to get it right. But as of now, it's working. Okay, I think we may have been
+ Upset with the time which I don't blame him
+ But I just want to let you know that as of right now and this morning at least it was the dashboard to work
+ So I just want to follow up on that for you. All right. Thank you. I'll let Rick know
+ Hey, Jim and
+ Yeah, that was for Becky. She said maybe now and I think Jim was copied on that too. Okay
+ It should be on mute by the way
+ So these words of wisdom coming out of my mouth and you get any
+ Hey, I know Jim I mess you before I can always stay up for the first 30 minutes
+ I'm actually kind of curious like what kind of progress we've made. I was purging through the spreadsheet before
+ It looked like we still had still had 16 open
+ Items to resolve and I think we left them. We left the Friday with like, I don't know
+ 13 or 14. So it seems like I don't know if we're making progress or not making progress
+ Yeah, it's
+ Taking a couple couple items off
+ But I know and that's what I was hoping I didn't see
+ Not a ton of movement. I know we've tested some stuff
+ And I think a lot of it has to do with the eight-person notes on some releases it I think coming
+ Early this week and that's really what I want is I think
+ Hoping that those can resolve a lot of errors. You're looking for status update as to how we're looking and when we look and see those
+ Yeah, I'm Chris, I don't think we've met before I'm CTO here at this retail
+ So I wanted to come and meet you guys and talk through some of these issues with you all
+ So just a sort of way of introduction
+ I'm Chris or rip. You might see my name written as rip on some of these forms
+ Matt coming here. I think you met last time. You've spoken to few times already Matt's software engineering director and
+ Quine's here as well. He's an engineering manager in our support function
+ So we've all been very close to this over the past week
+ So if it's all right with you, I want to just talk sort of high-level to start with
+ About what's going on and what's happening what we're doing about it and then drop down into the ticket
+ So I've got an up-to-date version of the spreadsheet here
+ I wouldn't close together and then one's gonna follow up with like a detailed email for you and a new version of spreadsheet
+ Does that work for you guys?
+ Yeah, I think that sounds yeah
+ High-level picture and then we can start to get in the way. You think hopefully
+ Yes
+ Great great. Please interrupt me if I am if I go on too long
+ We have any questions or it's all jargon or anything like that. Please please keep the ice. So, um
+ This big change was as I'm sure you know was about bringing
+ Incident product onto the platform with secure and engaged
+ So one sign-in one log in only one SSO
+ For you guys to deal with and then it enables all the new features
+ That are either already available like the sidekick integration etc
+ As well as more innovation that's all in the pipe work for the instant app
+ Which we couldn't deploy on the old system because it was a old legacy platform
+ So we had to bring it in had to bring it on to Azure
+ Which we've done with you guys here now absolutely acknowledge. We've hit a lot of bumps and a lot of challenges
+ Predominantly with the user migration
+ Which I think you guys have seen a lot where like a user mapping hasn't come over correctly and that seems to be
+ The theme here and we've been spending a lot of time on this
+ We've had two retrospectives on it so far as a third to follow just to make sure we check every single thing
+ And we don't miss anything going forward
+ And then there's the performance side of it as well, which your users have been experiencing
+ Now we've isolated that down to it's not so much secure incident app itself
+ It's that reporting piece the ad hoc reporting or system reports. It shows up in your app
+ So the trouble we're seeing is coming from there and that's impacting the incident map as well
+ For example, your users were seeing some 502 HTT 502 areas
+ They were being caused by that reporting app big reports long running reports, etc
+ Having a knock-on effect on incident now, interestingly if you're using secure or gauge the other apps
+ Not effective at all the zero impact. So this is incident is being within the blast radius of these reporting problems
+ So what we're just Chris when we say report is that the eyes end at all?
+ Exactly. Yeah, exactly. Yeah the eyes of the eyes end up. Yeah, so the incident app is within the blast radius of that
+ So when that gets clogged up
+ We're like three counts go through the roof, etc. Instance be affected. So what we're doing right now
+ Well, my top priority is to separate those two
+ So that the experience using the incident app is not affected by what the reporting tools doing
+ Because some reports are big. They're really long and I'm like detailed reporting
+ They can take a few seconds to generate at times, but we really can't have that impacting the day-to-day on incident
+ so that's our
+ big thing we're doing right now to address the performance and
+ Back to the user migration totally acknowledged. There was some mistakes made there
+ Some of them for human error some some of them through process and we confident we've got a grip on that now
+ Going forward. So now our goal is to do the performance and then make sure every single one of these tickets and
+ There's some new ones coming in which we'll discuss etc. And we're finding things that as we pay more scrutiny to stuff
+ We're finding things well, that's interesting. What's going on there, etc
+ So we want to stay with this get all these tickets closed out making sure you guys are back to good
+ So what so so Chris what?
+ What is the timing of some of these things like separating the reporting and incident for example and kind of insulating the two from each other?
+ Yeah, so we have a version of that running in our staging environment right now. So the hard engineering work is done
+ We've had engineers on this like all through last week and over the weekend and we're now up at our staging of our own
+ But we have a lot of quality assurance to do on that and to make sure it's right and it's going to work
+ And it's not going to bring any other
+ impacting scenarios
+ So I would like to hope that we've got a green tick from quality assurance this week
+ And if we get that we'll roll it out over the weekend and then by Monday, we should see that change
+ Now this is a this once we do that it gives us
+ Opportunities to scale horizontally as well. So once we've separated them
+ We see the 502s go away. We see the performance impact of reporting not hurting incident
+ Then we can start to narrow our focus on the reporting
+ So it's not that we'll do this and it'll be done. We'll do it incident will be good
+ And but if reporting still isn't where we want to do what we want it once is isolated like that
+ We have opportunities various load balancing customer routing etc. You know to get back to before now. We want it
+ Just a question of reporting. Is it
+ Reporting across all your customers or is it our?
+ Reporting that's in fact in our instant now
+ It's it's not across all customers. It's that particular eyes end a piece from incident
+ so there's a
+ handful less than five customers that have that feature it's
+ It's a classic features. The component of like classic incident like the new reporting within secure, etc
+ Doesn't use any of that technology anymore
+ one thing is
+ Is if we again, we only have
+ Three four users, maybe that use eyes end up. It's I know we do have a lot of auto emails reports and
+ Typically and again, I have to look at them all those scheduled reports
+ timing of them is
+ if it's set and I know a lot of reports that I have to
+ Put my power bi run at like 4 a.m. But typically at low low use time
+ Is that an opportunity for any of the scheduled reports to reschedule them to run during off hours as opposed to?
+ Really our peak hours are probably 80 8 a.m. To 10 p.m. Um, would that would that help or?
+ Is it absolutely? Yeah, there's that's a really good color team. There's loads of opportunity
+ scenarios just like that
+ When is the system under heaviest load because we'd also want to look at is there like reference loads coming in and store feeds?
+ Etc being loaded into your system. So we don't want it to clash with them
+ We do we want to run before run after so there's opportunity there
+ Certainly if you're open to like providing a window, I need this report by 8 a.m
+ Eastern or 7 a.m
+ Eastern or something we can have our guys look at that and say okay
+ So the least busy time might be 6 a.m. Or 2 a.m
+ You know, I find the best best time to run it could cool up
+ Right. Yeah, have somebody take a look at those because it's usually they're looked at
+ Sometime in during the business day of the next day
+ Right. So if the report was they had those scheduled to run at 10 a.m
+ to run that at
+ 4 a.m. Is probably they have no effect on the delivery. It may improve the delivery report, but it's going to avoid the conflict of
+ Users trying to use the system and then the reporting trying to all use the same
+ system resources
+ Absolutely. Yeah, you did right. So once we roll out this change
+ Hopefully this weekend that should negate the report clashing with users
+ Of incident, but it won't negate users using the report team while it's generating reports
+ And that's where your suggestion will have to go. Yeah, it's a good picture
+ Is your ad hoc report where we don't run a ton of them?
+ We usually would learn to experiment and then we have them set it and forget it and have a model delivered to us
+ Yeah, yeah
+ Have you just have interested in experienced with have you experimented with the other reports in with the inside platform itself?
+ well, you can use the search composer and write your own queries and then put that on a report have that generate on a schedule I
+ Don't believe the only two reporting I'm familiar with is doing a search and
+ And then I zender was always the reporting tool
+ I know was brought up that with new security. I think the ultimate goal was to retire a zender and replace it with
+ something more robust
+ Yeah, yeah, I think that's probably a further on conversation down the road is to use a way to improve that
+ But I think for the time being we'll take a look at any of those scheduled reports and I zender see again that can
+ Help some of it. So but
+ Yeah
+ Yeah, you're right
+ We need to stay with this get this working because it's what your users are doing day to day and make sure everything's good
+ And then we can start in those conversations. We've got a whole team of solution experts
+ He's do you know who your solution expert either works with you Jim?
+ Brad do you know? I
+ Think I would be doing a work quest
+ I'll find out and get the guys through if you're interested and you have the time
+ Jim we can have a one of our consultants
+ Just give you a shout and show it to you and see if it's of interest
+ Maybe later when we're when we've got to stable
+ Okay, so before we dive into the details anymore any more questions or anything else I can help with
+ Hold on let me just go back. I did have the question on timing. Yeah
+ How many of the well, maybe we go as we go through the incidents
+ But how many of the incidents do we think are gonna be resolved from this from this change?
+ Is this a majority of them and also what is the outlook for correcting the users any of the outstanding user issues?
+ We believe they're resolved
+ As we go through there's a number that we've set as waiting for you guys to confirm
+ We don't want to close anything as fixed until you know
+ The user issues the migration steps
+ Home stores, etc. All resolved. There's one or two. We need to discuss regarding
+ Non-unique location IDs at different levels
+ But we think we've got a good grip on that now
+ So all I'm hoping is after this call. There'll be a whole load that will be set back to
+ Confirm with your team and then you'll be able to go through and go. Yeah. Yeah. Yeah, and we'll be able to close that whole load off
+ Okay
+ Okay, let's go for it
+ Matt do you want me to share?
+ I've got to open it for me
+ I
+ Okay, you guys see that or is it too big too small I
+ Can see it's got words on it. I made it big
+ Yeah, yeah, we can how's that
+ That's
+ In for the 80 USA folks this when they send me this the
+ Tracker the internal tracker we have is I'm updating it with this data
+ So what it may not any changes since I've made two hours in the past hour to me
+ Not necessarily reflected here, but I'll update our to share a trapper with this. Okay. I was gonna ask that question
+ Okay, so we haven't said anything to resolved ourselves
+ As I said, we don't do that to you guys to sign it off
+ So are you happy for me just to hide the result and then we'll go through everything else in order. That's fun
+ Okay, great
+ So everyone the formative search in our case for user has one in the email address
+ Yes, so this was we started categorizing them into these buckets. We spoke about as well
+ So this wasn't actually the digits of the email address. That's fine. This was another data
+ User migration issue we believe this is fix now and we'd like to set it to
+ What's the ticket number I'm just searching by bad and yeah 27 7 yeah, yeah
+ I'm trying to I'm trying to do the same thing. I'm trying to follow up on the same time
+ I think you're on that road
+ So
+ you have
+ One one user and one of the issues I meant to be able to some of the users
+ They're all field-based. Of course, you know if his law they're on the day off
+ But lands tracking that down and only instance. We spoke a few minutes ago. There's no idea that was still waiting to hear back from
+ that
+ No, they obey on the ticket
+ So I do see a note in that ticket from Leanne saying that she received confirmation that Jonathan
+ Right is able to see his old cases
+ and
+ So the question back was whether this was something fixed specifically just for him or universal for all affected
+ I know that we don't have a
+ Response back, but we did this
+ Concurrently so it was an investigation for all users that would fit that same pattern. We should not see
+ this
+ at all through other users
+ Lee and if you verify with Christina Cordero that I have my notes
+ You're on mute if you try to properly
+ Sweet my last an athlete and separate but I had a
+ Date this morning that Jonathan right was good that there was a you know, the user Christina Cordero was still having users
+ Still having issues
+ She confirmed with me
+ Just a few moments ago
+ actually
+ That she's able to search by name and able to successfully complete a new case
+ Okay, so she can search search cases is so she's good. Yes, sir. Okay, so I think we're probably good on resolving this
+ Yes, please
+ We're changing actually follow up here as well. Okay, the next one Anthony Lopez
+ same
+ User migration issue. We think that one's corrected as well. This is
+ 28 3 4 2. Yeah, this one is
+ It's not in this is what it is and look and we still have a few people that are issues
+ It's when we send their claim data over to SSO. It's supposed to update the user file
+ That there are some people Anthony was one of my actually adjusted manually, but I listed
+ three people in the ticket, Jedi
+ Harrison Stacey Wetzel and Jonathan Wright of folks that I just went in and sampled that their job title is not
+ Is not populating in the user database
+ So some people didn't use their title are coming over some they're not
+ And when that creates the issue is when you get to common names like Lopez is one of them when they look to search
+ To what a user looks to search to sign if they that titled confirms them
+ If they were signing it to the right person, you know
+ Yeah, okay. So we're sending title as an SSO claim. Did you say I?
+ Believe it's in the SSL claim. Yeah
+ I
+ think we did look into azure as
+ Well, they're active directory and he for these people that it's missing on the LPMS side
+ It is it is present on our side. So it should be in that data being passed
+ Okay
+ Are those couple examples that you provided in there Jim are those good ones to use as a
+ Specific use case for you know, the data coming through with an SSO
+ Yes, the Jonathan I and Stacy yes
+ Okay, that's good you can look into that
+ Right employee not restricted by store location
+ Okay, this is the one that we want to talk through with you and now keep me honest
+ So I think what we're hoping for is that based on the brand
+ the user will have a
+ store number
+ for that brand
+ To be able to search cases within that brand right for their store number
+ But what we see in the data is that those store numbers aren't unique brand
+ correct
+ so
+ Sorry, yeah, we probably have in the neighborhood
+ Not everyone
+ There's probably called 300 location numbers that exist in more than one brand
+ And from a user from the user's
+ standpoint, it seems to be working it identifies them as I
+ Employed but the food line store one not stopping shops to a one. It's the employee table
+ so when they go to search for say an employee for
+ Entering a case they do that employees search the look or brand food lines to a one
+ They'll do the search and it's returning
+ It's returning employees from all store ones as opposed to just filtered to that brands store one
+ Okay, so the brand is powerful tough
+ Yes
+ So one of the things just to kind of clarify with the employee data
+ We don't actually have a brand included with the employee field that comes across
+ we have a store number and
+ Then we don't have a brand on that page you do have a filter
+ You know that one that shows the individual brand however that data does not actually live within the employee data itself
+ If we have that information we can definitely make that work
+ Based on what I'm seeing from the employee data
+ It does not currently have the brand
+ Is that something that's new with the latest change or is that something that always work that way?
+ Based on what we're seeing data is exactly the same across both areas
+ So old environment new environment validating with existing data in the old environment. It works the same way
+ We can certainly look into making that
+ Work the way that we need to
+ But that is what we're seeing based on you know, what's there today versus what's there in the old system
+ and
+ And I can't say 100% that it did not it was never brought up as an issue
+ So we've had the employee that we've had the users bring out the hey, it's show is returning me more which leaves me
+ I believe that
+ Happen in this but within that data field and again, I'm just I'm walking into lpms on my other monitor
+ But I thought we're passing both of those attributes is not only on the employee file what?
+ Entity they're employed by as well as what location department and all that
+ And you say that's not coming across the new 25
+ So just bringing up the
+ Data here second. I guess share my screen and show you the example
+ So
+ Some people could think that this is just one
+ Again, I did a search. I said show me location food line store number one. Show me the employees and for example
+ The employees said it's listed for example here. Here's a guy. He's both stopping shop store one not not
+ Lion
+ You should the phone numbers a giveaway
+ But for example, if I just go into any one of these employees and I just look at share
+ Data that's within lpms, which I'm assuming is coming over in our employee file
+ You
+ So we get all the attributes so we have
+ Location number here at the bottom left and then the bottom right
+ and this is I know the old version of lpms as well a
+ Company the employer. It's it's throwing it into miscellaneous one
+ Okay, is that all the coming the brand
+ It's the brand and I think within lpms
+ Environment, I think officially it's referred to as the division
+ All right, so this is
+ Again that's an example someone works with stop-and-drop and they show up a full one
+ I
+ Can definitely review this in more detail to see where that
+ Disconnect is coming through
+ Okay, so it seems to be
+ Whether the data is
+ There in
+ Some
+ Some records have it so you know, I can get your record count on what is
+ Actually showing and what is not
+ You
+ You're gonna take that one to investigate much sounds like yeah, it might be I can take that away
+ Okay, all right. Hopefully it's there
+ We just couldn't map into missing it. It's a mapping mission. Yeah
+ And again
+ We had to prioritize it is probably
+ It's probably not on our top party because again, it's more about
+ It's not really nothing that's very effective functionality. It's
+ Where some of the others are
+ Yeah
+ Understood. Yeah
+ So that was twenty eight and nine three. Okay, so twenty eight one two three
+ this one
+ This is one
+ We want to seek your approval to open a case and
+ Approve it so that we can I follow this through to the end in your in your production system
+ Yeah, this is the approval or when you click the approval you can actually assign it to somebody
+ We don't know I know this is something that's used
+ Constantly on your side. I don't know if you've had any
+ Comments or updates anyone mentioned anything about how this is working or if this has continued to not work
+ but
+ If you would rather us go through the process
+ We just didn't want to go in and start approving a record to somebody within production and potentially causing some issues with the data
+ Lee and I think this is probably effect. It's affecting all the brands
+ I think Hanif are probably the most because they they were flows a little different but
+ We have any updates and
+ Do when you say want to do it live?
+ Is it want to get a user on in to troubleshoot or did it wasn't you guys playing on?
+ So we we have a locate in production. We have a location. We have actually got a couple that a 9 9 9 9
+ That is it's a live location, but dummy locations. So it doesn't affect anything. That's what we should work with you
+ Looks like a very active location under our stop and drop brain is we'll go in and we'll test a lot of stuff there
+ So if you guys wanted to do something in our production environment doing stuff in that location is not going to affect
+ Affect any bad data
+ Just to validate and make sure but if you are experiencing anything or if you happen to hear anything
+ They also let us know that we'll do further validation on our own. Okay
+ That's perfect, I love when there's some test locations like that helps. Thank you. Okay, twenty eight one nine six
+ Two fields that used to be blank now default to no. Yeah, so this was a
+ database migration
+ Miss we're at a column
+ We're not trying to bore you a column that used to allow novels now doesn't and so we defaulted a zero which is no
+ So we resolved that
+ And tested it and we think it's fixed. So we'd like to change this to a weight and confirmation
+ Yes, and I'm just responding back on that one just a few moments ago
+ Okay, as a result and the results are it does show in the field as null
+ But it you do have to select yes or no and then the conditional formatting is there as well
+ Okay
+ So with the except so we're having the issue that it was
+ Defaulting as either yes or no, whereas before it was just blank
+ now it's saying no, which is again the system's treating it as a
+ Blank from if it's a required field. No doesn't satisfy it. So they have to say yes, they know. Yes. Okay
+ That doesn't sound correct
+ Okay, it's null and grayed out is what it looks like whenever you go into the case
+ On the AD shoplifting page
+ you
+ So I guess with that
+ the
+ Expectation is for that to show as a blank value
+ Blank value like the rest. Yeah
+ I guess null is better than yes or no, but ideally if we can have it as blank so the user doesn't think hey
+ There's something in there. Why is it not accepting it?
+ Well because it wasn't entered by the user
+ Yeah, no, you're right
+ Okay, great
+ Next one 28 3 0 4 we think this one is ready as well
+ Okay, this was a
+ Request to change the width
+ Because it was truncating something. I believe look when we spoke on the ticket
+ We're gonna raise the request a feature quest for this one
+ Yeah, yeah, and that one is it's more of a
+ any and I don't know if something happened with the character length in
+ But it's more of a cosmetic. It's not affecting functionality. So I would say and raise it as a
+ Press all in this but it's not
+ functionality
+ Yeah, I would say look look let's put it at the bottom of the list
+ Yeah, never nice to have
+ Yeah, okay
+ 28 1 2 4 attachments not visible. We've got this one pending verification with your team
+ That's not right. Looks like we've retested it and it's with QA it's with our QA now
+ So we're going through the testing ourselves. So this is actually not been right. It should be all waiting
+ Yeah, and I think there might have been a conflating of tickets because if I read this ticket already certain attachments not visible
+ I believe the visibility of the attachments is fine
+ It's the ability to attach is not always working. That's when they're getting the forbidden error
+ So it's not as if if you download but it's the ups upload
+ Yeah, so this actually Chris was part of the
+ Last release that we did earlier today
+ So we it is up at the point where we want to validate
+ Okay, we yeah, we have been testing on our side with all kinds of different files in order to make sure that they're working
+ Obviously, we need to get the confirmation from your site as well to make sure that you're seeing the same thing
+ One call-out that I have seen is and I don't know how much
+ This type of file is used but TXT files are
+ Not working as expected
+ Which I don't I don't know if that's something that is normally used on your side
+ Based on what I've seen, but we are continuing to look at least at the TXT
+ but
+ Everything else that we have validated with is working as expected
+ Yeah, my gut reaction. I'll probably prove myself wrong, but a dot TXT would probably be unusual
+ Well, there's probably somebody out there who loves to use the notepad and
+ Yeah, agreed yeah, there'll be one everyone so you guys are perfect and so you believe that this
+ Should be the this issue should have been eliminated need us to test with some users who have the issue, but they can upload
+ provided
+ Lee and you'll take that one
+ Yes, sir. I've got three messages floating out there for a validation on that as well
+ Thank you unable to use a zender. Okay, so these ones will come down to that performance. We spoke about at the top
+ So we're leaving all of those with us
+ Certainly until we go through our QA and we deploy and we see it not affecting incident
+ I'm able to export files. Is that his ender as well?
+ Yeah, yeah
+ There's a neck if it's it's not to a zender who you know, it's actually in the application whether on the back end
+ It's actually has ended up. We go in these
+ Location file we do a search we come up with it with the location that we do export the export is
+ It's exporting but it's coming as blank and that's what we use to bulk update
+ Location assignments
+ So we if it's a region that people moved
+ We export it. We update and that's when we blow to our
+ FTP gets updated file gets delivered to you guys the next day
+ Okay, so that's that's the location export where you're running into this correct
+ So I've rather it's tied in with the eyes and your issue or not, but it's it's not for why zender
+ We don't go through I said to get to him. Yeah
+ Was one of those eyes and was it related to the scheduled reports coming out?
+ and
+ You having a scheduled report sent to you on the daily cadence that you were expecting
+ This next there's two eight four one for the next eyes ender issue
+ That is one that is a auto. I don't get it's got a
+ That HTML
+ Which the odd thing you're on it is there's
+ Five regions
+ In it that looks like the data might be correct for
+ Four out of the five, but one of them five out of the six, but one of them the numbers are wildly off
+ So I had sent going with I think ticket in my earlier email I sent an example of the report that did before we made the change
+ To compare to so it lost cases from the last good one to now
+ Yes, okay
+ For that one it is do you run it within eyes ender or is it only an export coming out of eyes ender?
+ I
+ Got let's hear a scheduled report that you get sent to you
+ It's a scheduled report
+ But I believe correctly wrong William when we went in today into eyes ender. Obviously we have the export is
+ Not working, but I think we went in just did a preview and the data in the preview was still missing
+ I
+ Look at the sun
+ And then interview data and if you dad was forced
+ Source okay
+ And obviously it was two hundred and sixty-eight records, and it's only pulling 67 now
+ I
+ Know that is active with us as far as what we're looking into
+ for that are we okay with me adding my email address to the
+ List where it gets sent out so I can confirm data within the actual send out from his end as well. Yes
+ I
+ Was back up to
+ Here
+ And I want to edit location data
+ If cause you update the employee data individual location records see the five or two, okay
+ Yeah
+ So, yeah, those five or two. So we're having a QA test is struggling to reproduce it
+ But we have seen in the logs those five or two errors that your users saw
+ To I don't know how much you care about the stats but of all traffic those five oh twos made less than
+ half-a-percent of
+ traffic
+ Right, but it does tell us through it as many when you use in the apple day you see well there you go
+ Whoa, what even though it's only half of one percent
+ All traffic was five or two, but again that's related to the I said the stuff so we're hoping by this separation
+ We're gonna deal with those stuff still with us
+ Okay
+ So just just update on that one because this was one we specifically were able to reproduce as long as it is coming from the store
+ Update itself. So when you're going in to the store information, you're editing a store and you're trying to add in additional manager
+ You know generally the issue on this was specifically around adding a new manager in correct
+ Correct. So it's doing a quick query of the I'm selling the employee database and it was
+ Taking a while to return result in or just going into five oh two
+ Yeah, so right now I just while we're in here and I validated I am getting a good result right now
+ That
+ Could be a fluke that could be
+ Just the fact that we're testing it right now
+ But this was one of the areas that we specifically targeted to make sure that this was
+ working as expected
+ Okay, we'll continue to review that one if we see this properties go away that won't mark this is a light in approval
+ System latency is the same
+ Same thing
+ This one is a duplicate of twenty-eight multi-fold. I'm so skip that one
+ I
+ Went searching by some users other cases are not appearing. So we've got this one notice pending
+ Verification
+ We search at the end short two cases we did a search today and it came back when
+ 1970 case it looked like it was
+ He was an active employee. We could see it
+ I think we thought two cases and just it was our cases stretching back to the beginning of the year. So
+ Excellent, thanks for that right twenty-eight three seven eight buttons missing from some page
+ Next to say funds and misses missing from some pages. Okay. Yeah, we were just looking for clarity on
+ Which pages cuz we couldn't find it. Yeah
+ It was we actually one of them happened. It's been resolved. It's the onions are there
+ And it was it was the Hannah shop of can get us Haniford was the one that they were missing on
+ Excellent good news. Thank you. So was that the case forms was that?
+ Okay, twenty-eight three seven nine cases missing case owner
+ assigned to and creator
+ Actually is been resolved as well. We had given
+ On this fresh there's any which I actually listed attack a sheep with a bunch of cases that were all the owner was blank
+ And we went in we searched was sampled a handful of those and the owners were all now populated
+ Excellent news, right?
+ We're on roll
+ Twenty-eight four or seven and frequent five. Oh twos. Yeah, I think that's gonna be insane
+ some
+ performance
+ Is it this isn't a specific one like your last case Matt where it was one
+ Sort of narrow scenario. No, we have not been able to see anything specific with us on the target
+ So it's likely be the overall
+ latency work that we're doing what I said
+ Okay, great
+ twenty-eight four one three
+ This is the
+ Sorry, I said no one that we just talked to him. Yeah, we're gonna add yourself to the list
+ Okay, then the last open ticket new users unable to create cases off to be in provision to LPS
+ We got to this one. Yeah, yeah
+ QA said goes to non unique store issue for one user
+ Location and it correct division for one location to Iraq
+ Okay, just
+ This is to do with the brand again. Oh, does that comment make sense to you?
+ I
+ Believe what happened was the location was added in manually for this user
+ So this is twenty-eight four fifteen. Let me see it
+ There are
+ Is it was a twenty eight three sixty five that looks like it was listed as being
+ Potential you guys look you said there's a
+ chair cause
+ What was the number they said Jim's right now, I'm 2365
+ 2365 here using those locations has no locations found in menu is 2365
+ So locations going to menu versus
+ So
+ Are the ears
+ new users that
+ Potentially we're not in the system before but are now logging in
+ I
+ Provisioned associates that are just given access to LPS
+ Double check their SSO claims make sure that locations are there
+ So as long as the locations are they should ideally be getting that so I can validate that part of it from the claim
+ Leanne
+ we went through how to
+ Assign locations within the new application now correct just to make sure that you have
+ Kind of the understanding of how to do that in case this comes up it looked different whenever
+ From the little training on that to what I see now. I could not get in there to figure that out
+ Okay, but I saw where they did not have a hierarchy
+ one of them
+ So yes, I manually added a meant a hierarchy for one of them
+ But it selected the top one and did not select the bottom one
+ So then whenever he tried to create cases, it was only for food line
+ Maybe that's something we can set up
+ A call to walk through that a little bit more details while I can show you
+ Exactly how to go there go through that in case something comes up
+ But we'll also look at the SSO claims
+ How long as as well to make sure because that should realistically just be mapped based on the claim data
+ Italy and I'm a totally 365 Melanie Engleman I
+ Just was just I just did a search for her in the users, and I don't even see her listed
+ That's odd if some reason I just searched under Melanie and I found out but
+ Not as a user
+ No, I found her by searching from
+ Okay
+ This
+ Disregard because either I was spelling the last name wrong or the last name was wrong in the ticket, but if I spell her name
+ correctly shows
+ EMT Ellie
+ EL it's EL not Ellie
+ Angie EL and I am that would do it
+ Doesn't she get it see any
+ Yeah, and there's there's just another example of someone again. They played down her title is not being populated
+ That's a good example to be able to look into because we also have a
+ Deep in time as to when she last logged in
+ That would be easy to review
+ Okay, that's the end of tickets so we close off with a bunch there
+ One back to that press then one back to your team
+ So what we'll do now is
+ one and his team will go through the sheet and make sure the
+ Geotickets are all up to date and then we'll share this detailed view with you. So you see you can keep your team up to date
+ And I believe we're meeting again on Thursday. There's the correct
+ Okay, good so thanks for the extra information that does help a lot
+ It's amazing how we're just talking on face-to-face so much better than over a cheer ticket sometimes, right? Yeah
+ That's gonna help us move some of these forward
+ And we'll keep you updated with sort of architectural changes as well
+ Okay
+ and deal with skate
+ just
+ We tend to be planned on meeting Thursday. I have not sent the invite out. I will send it out
+ and
+ It will probably be earlier in the afternoon Eastern time because I'm actually I have a 330 flight that afternoon
+ All right, anything else we can help with what we drop
+ Think that's in and out. I'll go and I'll take a look at some of those scheduled
+ Isenda reports and see yeah
+ Into your fix goes into place just by if any of them are being run during business hours to try to stagger them to off hours
+ Yes, please. That'd be awesome. Well, thank you much. Thank you very much for taking the time. Appreciate it
+ So I hope it's worth through some of these. Thank you
+ Thank you. Have a good day. Yes
+ Thank you
+ What
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ You
+ [BLANK_AUDIO]

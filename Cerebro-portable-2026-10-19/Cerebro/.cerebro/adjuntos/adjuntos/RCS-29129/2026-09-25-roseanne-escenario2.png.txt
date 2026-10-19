@@ -1,0 +1,156 @@
+# Adjunto 2026-09-25-roseanne-escenario2.png
+Ruta: adjuntos/RCS-29129/2026-09-25-roseanne-escenario2.png
+Tipo: png
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+Texto reconocido por OCR:
+Store 4
+BREA MALL, CA
+Reg 2
+Store 4
+Cashier 692803 Isaiah Buluran
+Loyalty Card 195077755
+Customer: Andrea Salcdeo
+Customer e-mail: andreasalcedo@ucsb.edu
+JG JOSEPHINE TOP
+138248
+Salesperson ID: 692803
+JG AINSLEY 28 TOP
+186221
+Salesperson ID: 692803
+SUBTOTAL
+SALES TAX
+TOTAL.
+Gift Card
+ITEMS SOLD
+ITEMS RETURNED
+QTY
+1.00
+Sale
+Price
+$21.00
+1.00
+$23.00
+Swiped
+?
+Redemption Amount
+$47.41
+Gift Card Information
+Redemption
+Card No
+600649***
+01/04/2026 4:12:58 PM
+Trans# 4555
+Amt
+$21.00
+$23.00
+$44.00
+$3.41
+$47.41
+$47.41
+***9244
+Store 4
+BREA MALL, CA
+Store 4
+Reg 1
+Cashier 692126 Christian Nunez
+Loyalty Card 73343185
+Customer: Andrea Saldeo
+Customer e-mail: andreasalcedo@ucsb.edu
+Trans# 7884
+Retum
+QTY
+Price
+Amt
+RIPPER FLEECE JACKET
+9757600
+Retum reason StorcReturn
+SUBTOTAL
+SALES TAX
+TOTAL
+Gift Card
+-1.00
+5-60.00
+$-45.00
+$-45.00
+$-4.73
+$-49.73
+Swiped
+$-49.73
+ITEMS SOLD
+ITEMS RETURNED
+* •
+Redemption Amount
+$-49.73
+Gift Card Information
+Redemption
+Card No
+600649**
+1****9244
+Original Transaction Information
+Return/Refund
+Original Pos
+Original Store
+37
+Original Transaction Type
+Unknown
+Original Ticket No:
+6227
+Original Cashier No:
+Original Date:
+12/23/2025
+Original EDT
+12/23/2025
+Original Ticket Amount:
+$0.00
+Original Tender Type:
+01/04/20263:52:36 PM
+Store 37
+SANTA ANITA, CA
+Store 37
+Reg 2
+Cashier 695818 Salma Rodriguez
+Loyalty Card 73343185
+Customer: Nicole Cortez
+Customer e-mail: nicolemendez705@yahoo.com
+Sale
+QTY
+Price
+RIPPER FLEECE JACKET
+9757600
+1.00
+Salesperson ID: 695818
+Discount: UNKNOWN
+PSG DOWNTOWN RODEO HOODIE
+7006588
+1.00
+Salesperson ID: 695818
+Discount: UNKNOWN
+$60.00
+$-15.00
+$60.00
+$-15.00
+SUBTOTAL
+SALES TAX
+TOTAL
+Total Discount Amount
+Debit Card
+Contactless
+Card No 536201******1317
+Account No B4KZXGUCTuGofzHxawy |
+AUTH: 0
+ITEMS SOLD
+ITEMS RETURNED
+12/22/2025 8:14:39 PM
+Trans# 6227
+Amt
+$45.00
+$60.00
+$45.00
+$60.00
+$90.00
+$9.45
+$99.45
+$30.00
+$99.45

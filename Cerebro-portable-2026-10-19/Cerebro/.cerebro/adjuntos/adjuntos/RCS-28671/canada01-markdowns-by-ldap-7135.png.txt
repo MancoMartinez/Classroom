@@ -1,0 +1,109 @@
+# Adjunto canada01-markdowns-by-ldap-7135.png
+Ruta: adjuntos/RCS-28671/canada01-markdowns-by-ldap-7135.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-28
+
+Texto reconocido por OCR:
+CANADA01 - Markdowns by LDAP o
+All POS markdowns by Cashier and Markdown Amount. Remember that Markdowns are negative values.
+Store
+Cashier
+First
+Name
+Last
+Name
+Date and
+Time
+Register
+Trans
+ID
+Trans
+Type
+7135
+DXM6269
+DONNA
+MCLURE
+7135
+DXM6269
+DONNA
+MCLURE
+7135
+7135
+7135
+DXM6269
+DXM6269
+DXM6269
+DONNA
+DONNA
+MCLURE
+MCLURE
+DONNAIMCIURE
+08/27/2026
+8:37:17 AM
+08/27/2026
+8:49:45 AM
+08/27/2026
+8:50:31 AM
+08/27/2026
+9:15:07 AM
+08/27/2026
+51
+51
+51
+51
+2
+8989
+8990
+8991
+8994
+7938
+Sale
+Sale
+Sale
+Sale
+Sale
+Void
+Trans
+Flag
+False
+False
+False
+False
+False
+Tender
+Type
+DEBIT
+DEBIT
+DEBIT
+VISA
+VISA
+Transaction
+Total
+73.07
+50.01
+25.00
+40.65
+321.58
+5 results
+Filter...
+Account Number -
+XREF
+Account
+Name
+Approval
+Manager
+LDAP
+Markdown
+Amount
+1262034041293206
+99.59
+1262034041293206
+44.26
+1262034041293206
+22.14
+1274770394233497
+35.97
+1294893693773330
+peimanabdollahi
+31.62

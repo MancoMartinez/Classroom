@@ -1,0 +1,43 @@
+# Adjunto 2026-09-14-ftp-downloaded-list.png
+Ruta: adjuntos/RCS-28911/2026-09-14-ftp-downloaded-list.png
+Tipo: png
+Ticket: RCS-28911
+Modificado: 2026-09-15
+
+Texto reconocido por OCR:
+Date:
+9/14/2026
+Time:
+V) 10:00:00 AM
+Execution time: 00:00:02.2
+Execution
+BiD Downloaded
+Full path, Folder, Name
+Success
+Text
+Standard output
+Filter..
+Full path
+Task
+results
+Result output
+Output (standard) - FTP/FTPS/SFTP/SCP
+* Realtime
+Switch to running
+© Standard error
+Job result
+CPUR
+Execution
+time
+Performance
+Table
+parsing
+Settings
+Goto
+Folder
+TEAChientelDelhaize Refloader PRODdam
+Name
+pap-DA. Employee _Info.dat
+-
+•
+Export..

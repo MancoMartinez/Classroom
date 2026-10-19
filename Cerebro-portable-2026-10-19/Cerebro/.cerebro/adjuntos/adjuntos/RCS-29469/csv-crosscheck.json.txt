@@ -1,0 +1,141 @@
+# Adjunto csv-crosscheck.json
+Ruta: adjuntos/RCS-29469/csv-crosscheck.json
+Tipo: json
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+{
+  "jacinta.titus@kgstores.com": {
+    "locations": {
+      "Username": "Jacinta.Titus@kgstores.com",
+      "Company": "",
+      "Brand": "KNG",
+      "DeptDescrShort": "R08",
+      "Zone": "A01",
+      "Region": "R08",
+      "District": "",
+      "Location": "314"
+    },
+    "team": {
+      "Username": "Jacinta.Titus@kgstores.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "emeldia.pryor@kgstores.com": {
+    "locations": {
+      "Username": "Emeldia.Pryor@kgstores.com",
+      "Company": "",
+      "Brand": "KNG",
+      "DeptDescrShort": "R03",
+      "Zone": "A01",
+      "Region": "R03",
+      "District": "",
+      "Location": "706"
+    },
+    "team": {
+      "Username": "Emeldia.Pryor@kgstores.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "christi.winters@menswearhouse.com": {
+    "locations": {
+      "Username": "Christi.Winters@menswearhouse.com",
+      "Company": "",
+      "Brand": "TMW",
+      "DeptDescrShort": "W201",
+      "Zone": "West",
+      "Region": "Central",
+      "District": "",
+      "Location": "1604"
+    },
+    "team": {
+      "Username": "Christi.Winters@menswearhouse.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "rahim.mehdiyev@menswearhouse.com": {
+    "locations": {
+      "Username": "Rahim.Mehdiyev@menswearhouse.com",
+      "Company": "",
+      "Brand": "TMW",
+      "DeptDescrShort": "W402",
+      "Zone": "West",
+      "Region": "Midwest",
+      "District": "",
+      "Location": "4151"
+    },
+    "team": {
+      "Username": "Rahim.Mehdiyev@menswearhouse.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "cheneria.chevalier@josabank.com": {
+    "locations": {
+      "Username": "Cheneria.Chevalier@josabank.com",
+      "Company": "",
+      "Brand": "JAB",
+      "DeptDescrShort": "S503",
+      "Zone": "South",
+      "Region": "Texas",
+      "District": "",
+      "Location": "761"
+    },
+    "team": {
+      "Username": "Cheneria.Chevalier@josabank.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "chris.orth@tailoredbrands.com": {
+    "locations": {
+      "Username": "Chris.Orth@tailoredbrands.com",
+      "Company": "",
+      "Brand": "SSU",
+      "DeptDescrShort": "",
+      "Zone": "CORPORATE",
+      "Region": "",
+      "District": "",
+      "Location": "2005"
+    },
+    "team": {
+      "Username": "Chris.Orth@tailoredbrands.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  },
+  "rachel.dill@menswearhouse.com": {
+    "locations": {
+      "Username": "Rachel.Dill@menswearhouse.com",
+      "Company": "",
+      "Brand": "TMW",
+      "DeptDescrShort": "S105",
+      "Zone": "South",
+      "Region": "Carolinas",
+      "District": "",
+      "Location": "1521"
+    },
+    "team": {
+      "Username": "Rachel.Dill@menswearhouse.com",
+      "Team": "Location Manager"
+    },
+    "groups": [
+      "ApprissCase Users"
+    ]
+  }
+}

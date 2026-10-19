@@ -1,0 +1,51 @@
+# Adjunto appriss_sso_permissions_20261014014506.csv
+Ruta: adjuntos/RCS-29469/appriss_sso_permissions_20261014014506.csv
+Tipo: csv
+Ticket: RCS-29469
+Modificado: 2026-10-16
+
+## Hoja appriss_sso_permissions_20261014014506.csv
+4242 filas x 2 columnas.
+
+Primeras filas (tabuladas):
+Username	Group
+Mark.Kus@tailoredbrands.com	ApprissCase Users
+William.Yeomans@tailoredbrands.com	ApprissCase Users
+Jake.Ginsberg@mooresclothing.com	ApprissCase Users
+Abiola.Egbetola@tailoredbrands.com	ApprissCase Users
+Faith.Vieney@tailoredbrands.com	ApprissCase Users
+Zack.GabrielOconnor@mooresclothing.com	ApprissCase Users
+Joana.Korita@tailoredbrands.com	ApprissCase Users
+Coburn.Cockburn@mooresclothing.com	ApprissCase Users
+Sergio.Chilelli@mooresclothing.com	ApprissCase Users
+Michael.Dancuo@mooresclothing.com	ApprissCase Users
+Sandra.Stevens@mooresclothing.com	ApprissCase Users
+Grace.Kay@mooresclothing.com	ApprissCase Users
+Zoe.Gard@mooresclothing.com	ApprissCase Users
+Angela.Williams@tailoredbrands.com	ApprissCase Users
+Maria.J.Perez@tailoredbrands.com	ApprissCase Users
+David.Shook@tailoredbrands.com	Administrators
+David.Shook@tailoredbrands.com	EBR Executives
+David.Shook@tailoredbrands.com	EBR Analysts
+David.Shook@tailoredbrands.com	EBR Investigator Supervisor
+David.Shook@tailoredbrands.com	Over Short Analysts
+David.Shook@tailoredbrands.com	EBR Investigators
+David.Shook@tailoredbrands.com	ApprissCase Users
+David.Shook@tailoredbrands.com	ApprissCase Search Users
+David.Shook@tailoredbrands.com	EBR Store Users
+Duvone.EnglandJr@tailoredbrands.com	ApprissCase Users
+Carol.Bergson@mooresclothing.com	ApprissCase Users
+Richard.Sullivan@tailoredbrands.com	ApprissCase Users
+Andrew.Dafforn@tailoredbrands.com	ApprissCase Users
+Kalisha.Roberson@tailoredbrands.com	ApprissCase Users
+Jaypee.Illescas@mooresclothing.com	ApprissCase Users
+Aaron.Baiden@mooresclothing.com	ApprissCase Users
+Elie.Kassim@mooresclothing.com	ApprissCase Users
+Philip.Elie@tailoredbrands.com	ApprissCase Users
+Christine.Couture@tailoredbrands.com	ApprissCase Users
+Donald.Deacon@mooresclothing.com	ApprissCase Users
+Laceedon.Orth@tailoredbrands.com	ApprissCase Users
+Jermaine.Francis@mooresclothing.com	ApprissCase Users
+Raul.Moreno@tailoredbrands.com	ApprissCase Users
+Sidney.Patterson@mooresclothing.com	ApprissCase Users
+... 4202 filas más.

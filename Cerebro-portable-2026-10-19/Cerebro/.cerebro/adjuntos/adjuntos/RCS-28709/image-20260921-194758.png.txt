@@ -1,0 +1,62 @@
+# Adjunto image-20260921-194758.png
+Ruta: adjuntos/RCS-28709/image-20260921-194758.png
+Tipo: png
+Ticket: RCS-28709
+Modificado: 2026-09-21
+
+Texto reconocido por OCR:
+→
+G
+La Company Links
+APPRISS
+RETAIL
+EUDEV
+eudev.arinternal.net/control/#/incident-logs
+Azure DevOps Deve...
+Kiran Test Env
+QA 450
+Welcome to Azure!...
+IT Help Desk - Jira S....
+*
+*
+My Apps
+Ask Gemini
+Pages - AALPS - Co...
+My Access
+Home / Incident Logs
+Q Search pages and clients....
+Home
+Sales Demo
+Sidekick Chat
+Sales Overview
+Customer Care
+• Support
+Ops Overview
+Talos
+WISC
+Trending Metrics
+Logs
+Incident Logs
+Search Stats
+Al Outliers
+Sidekick
+View by
+Incident
+Client
+Client
+apprisscommerce3.com (7)
+Path
+-
+logs
+20260902_error_log.txt
+20260824_error_log.txt
+20260824_debug_log.txt
+20260819_error_log.txt
+20260813_error_log.txt
+20260812_error_log.txt
+20260811_error_log.txt
+20260810_info_log.txt
+20260810_error_log.txt
+20260810_debug_log.txt
+20260807_debug_log.txt
+1

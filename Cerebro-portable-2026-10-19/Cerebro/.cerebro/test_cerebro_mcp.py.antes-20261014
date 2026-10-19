@@ -1,0 +1,30 @@
+"""Prueba del servidor real por stdio, con el mismo comando de ambos clientes."""
+import asyncio,json,sys
+from pathlib import Path
+from mcp import ClientSession,StdioServerParameters
+from mcp.client.stdio import stdio_client
+
+async def main():
+    root=Path(__file__).resolve().parent.parent
+    params=StdioServerParameters(command=str(root/'.venv-cerebro/bin/python'),args=[str(root/'bin/cerebro_mcp.py')])
+    async with stdio_client(params) as (read,write):
+        async with ClientSession(read,write) as session:
+            await session.initialize()
+            ts=await session.list_tools()
+            assert {t.name for t in ts.tools}=={'buscar_conocimiento','contexto_ticket','leer_fuente','estado_cerebro'}
+            assert all(t.annotations.readOnlyHint for t in ts.tools)
+            ticket=await session.call_tool('contexto_ticket',{'ticket':'RCS-28671'})
+            assert not ticket.isError
+            data=ticket.structuredContent or json.loads(ticket.content[0].text)
+            assert data['found'] and any('2026-09-28' in p for p in data['source_paths'])
+            source=await session.call_tool('leer_fuente',{'ruta':'AGENTS.md','linea':1,'cantidad':8})
+            assert not source.isError
+            found=await session.call_tool('buscar_conocimiento',{'consulta':'SSO Response Log','limite':5})
+            assert not found.isError
+            payload=found.structuredContent or json.loads(found.content[0].text)
+            assert payload['results'] and not payload['warnings'],payload.get('warnings')
+            assert any('SSO' in r['body'] for r in payload['results'])
+            stats=await session.call_tool('estado_cerebro',{})
+            assert not stats.isError
+            print('OK: MCP stdio, cuatro herramientas, contexto reciente, lectura y búsqueda híbrida sin degradación')
+if __name__=='__main__':asyncio.run(main())

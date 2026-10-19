@@ -1,0 +1,74 @@
+# Adjunto page-3.png
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render/page-3.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+Texto reconocido por OCR:
+Resolution Provided
+Immediate
+Short term
+Long term
+Engineering manually retriggered selected
+ADUSA cases and Infra checked provider
+delivery. This recovered some notifications;
+it did not clear the defect.
+PR 58273 adds ConfigureAwait(False) to
+QA automation ENG-9589 is in Backlog. Its
+both Await calls in the email routine. Kiran
+planned quarter is Q4 2026, set by
+confirms EU and US deployment. Customer
+automation; no committed delivery date or
+and log examples demonstrate US
+completed preventive monitoring is
+recovery.
+established.
+The fix operates prospectively. J.R. relayed Jim's request not to resend the ADUSA backlog on September 28 at 14:30 Bogotá
+time. Kiran confirmed that historical recovery is manual and that saving a case with InProcess = 1 will not trigger an alert. Do
+not assume that all historical records are permanently suppressed: behavior after a flag reset or later edit requires a separate
+recovery decision. [S4]
+Validation: ADUSA case 1600434 has 13b, a SmartAlertProcess row and End at 19:36 UTC on September 28; the over-$1,000
+alert has 13b at 19:04 and 20:09 UTC. Support published these checks in RCS-29026. Joe independently confirmed a received
+Vitamin Shoppe test. Neither result establishes full-tenant or EU validation. [S3, S6]
+Root Cause Analysis
+Confirmed mechanism, documented in ENG-9486: PR 57544 for ENG-7181 introduced targetFramework="4.8" in the ASP.NET
+httpRuntime configuration around September 24. This enabled the modern ASP.NET synchronization context.
+SendGridEmail.vb awaited the provider call without ConfigureAwait(False), capturing that context for its continuation.
+SmartAlert.vb synchronously blocked the request thread through GetAwaiter ().GetResult(). The continuation could not re-
+enter the blocked context, producing a deadlock. [S1]
+The provider could dispatch the email before the deadlock. Application execution then failed to reach 13b and the
+SmartAlertProcess insert, and IIS could return HTTP 500. The fix allows both continuations to resume without capturing the
+blocked context. It does not serialize alert runs or solve an ADUSA capacity limit. Earlier internal and customer explanations
+that described those mechanisms require correction. [S1-S3, S6]
+Related findings require separate tracking: oversized emails, malformed recipient addresses, duplicate recipients and
+incorrect assumptions about alert filters. They do not explain the shared post-release deadlock. The September 20 case lacks
+sufficient retained provider evidence to establish its exact cause. [S3, S4]
+Next Steps
+Action
+Owner / status
+Target
+Confirm rollout completion times and validate
+representative EU and US tenants end to end.
+Engineering and Support; proposed evidence
+completion.
+At retrospective
+Reconcile eligible alerts, provider delivery and stuck
+processing states before any customer-approved recovery.
+Define regression checks for runtime configuration, email
+completion, history insertion and flag cleanup.
+Support and Engineering; proposed. ADUSA
+declined backlog resend.
+QA; ENG-9589 Backlog. Scope requires
+confirmation.
+Define monitoring for stalled completion and distinguish it
+from delivery failure. Preserve provider evidence promptly.
+Engineering / Infrastructure; proposed. J.R.
+requested size-error follow-up with Vlad and Russ.
+Agree at
+retrospective
+Q42026 planning
+field; commitment
+pending
+Agree at
+retrospective
+Internal Use Only | 3

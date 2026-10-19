@@ -1,0 +1,27 @@
+-- Definition supplied by Juan after SELECT OBJECT_DEFINITION on 16 October.
+-- Evidence only. Do not execute this CREATE PROCEDURE statement.
+CREATE PROCEDURE [sso].[GetUserSecurityLevel]
+(
+    @userName NVARCHAR(256)
+)
+AS
+SET NOCOUNT ON
+DECLARE @errorLine INT,
+        @errorMessage NVARCHAR(4000)
+BEGIN TRY
+    SELECT TOP 1 [SecurityID]
+    FROM [sso].[SecurityLevelAssignments]
+    WHERE [UserName] = @userName
+      AND ([UtcDateFrom] IS NULL OR [UtcDateFrom] <= GETUTCDATE())
+      AND ([UtcDateTo] IS NULL OR [UtcDateTo] >= GETUTCDATE())
+    ORDER BY [Persistent] DESC
+    RETURN 1
+END TRY
+BEGIN CATCH
+    SET @errorMessage = ISNULL(ERROR_MESSAGE(), '-');
+    SET @errorLine = ISNULL(ERROR_LINE(), -1);
+    EXEC [secure].[LogExceptionInsert]
+        'DBServer - SSO+', 'sso.GetUserSecurityLevel', 4,
+        @errorMessage, '[sso].[GetUserSecurityLevel]', @errorLine
+    RETURN 0
+END CATCH

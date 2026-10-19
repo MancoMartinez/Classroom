@@ -1,0 +1,51 @@
+# Adjunto image-20260820-162236.png
+Ruta: adjuntos/RCS-27941/image-20260820-162236.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Search For Incident
+General Filters
+Search On
+Suspect
+First Name
+Details
+Date Filters
+People Filters
+Employee ID
+Note Text Filters
+Vehicle Filters
+-
+Last Name
+peters
+Identification No
+Account Number
+Address
+Zip
+Phone No
+Position
+City
+First Name Alias
+Employee Department
+State
+Last Name Alias
+View
+Edit View Email Attach
+Journal
+Last Name
+First Name
+LPMS Default Case View
+Incident
+Date /
+Time
+Incident Type
+Case Status
+Case No
+Store
+No
+Total
+Stolen
+No data to display
+No data to display at this time. The app seems to buffer for almost a minute before search option or the next step. Keep me posted and I appreciate
+your ongoing support.

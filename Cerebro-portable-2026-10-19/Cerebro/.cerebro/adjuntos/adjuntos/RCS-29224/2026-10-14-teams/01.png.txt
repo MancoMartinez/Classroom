@@ -1,0 +1,39 @@
+# Adjunto 01.png
+Ruta: adjuntos/RCS-29224/2026-10-14-teams/01.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-14
+
+Texto reconocido por OCR:
+• Yes. If all the inventory files move together and everything else stays the same, you're fine.
+The inventory feeds are the 14 APPRISS_* files in _sources. yml. Each one is matched as *APPRISS_NAME>*. txt. pgp:
+Feed
+CCNDET
+CCNTHS
+GLPSUB
+IITDSC
+IITFIL
+IITHDS
+IITHST
+IITVIT
+MSTPOG
+SHKDTL
+SKUFIL
+STRINVDT
+STRMST
+STRPHYINV
+Glob
+*APPRISS_CCNDET*.txt.pgp
+*APPRISS_CCNTHS*.txt.pgp
+*APPRISS_GLPSUB*,txt.pgp
+*APPRISS_IITDSC*.txt.pgp
+*APPRISS_IITFIL*.txt.pgp
+*APPRISS_IITHDS*.txt.pgp
+*APPRISS_IITHST*.txt.pgp
+*APPRISS_IITVIT*.txt.pgp
+*APPRISS_MSTP0G*.txt.pgp
+*APPRISS_SHKDTL*.txt.pgp
+*APPRISS_SKUFIL*.txt.pgp
+*APPRISS_STRINVDT*.txt.pgp
+*APPRISS_STRMST*.txt.pgp
+*APPRISS_STRPHYINV*,txt- pgp

@@ -1,0 +1,1 @@
+Hi Shandana Khan, following up on RCS-28256, the High for Tailored Brands. It has been in Under Engineering Review with you since Sep 25 and I don't see an ENG linked yet. Could you let me know who can pick it up while Matt Kamminga is out? Thanks!

@@ -1,0 +1,26 @@
+# Adjunto 763d-4291-beee-2cacefb2b0ce-image-20260827-061018.png
+Ruta: adjuntos/RCS-28612/763d-4291-beee-2cacefb2b0ce-image-20260827-061018.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Open Search
+@ Public -
+Name
+public > validation
+-
+RCS-28612_ Mapping of Missing Delivery Fee from Point of Sale
+transactions
+Type
+search
+Owner
+Christine Piacentini
+Filter
+Description |
+Delivery Fee details are empty, not including E-Comm Orders
+Scope:
+All folders
+Current folder only
+Last Changed •
+27/08/26 16:03:51

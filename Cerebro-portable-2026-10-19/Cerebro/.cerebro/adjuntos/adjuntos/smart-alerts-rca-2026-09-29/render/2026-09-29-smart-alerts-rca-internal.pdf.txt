@@ -1,0 +1,245 @@
+# Adjunto 2026-09-29-smart-alerts-rca-internal.pdf
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/render/2026-09-29-smart-alerts-rca-internal.pdf
+Tipo: pdf
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+## Página 1
+Internal Use Only | 1
+Internal Use Only
+Smart Alerts September 2026
+Root Cause Analysis Report
+September 29, 2026 | Prepared by Juan Martinez | For the internal post mortem
+Incident field Evidence supported position
+Incident start time Exact onset unconfirmed. ADUSA last completed run: September 24, 04:06:43 PDT / 11:06:43 UTC. Vitamin 
+Shoppe reported an approximate September 23 onset.
+Incident end time US recovery observed September 28. ADUSA: approximately 11:30 PDT / 18:30 UTC, reported by Jim through 
+Support. Vitamin Shoppe confirmed a test at 13:42 PDT / 20:42 UTC. Exact deployment completion times 
+remain open.
+Duration Not finalized. ADUSA reference window from last completion to reported recovery: approximately 4 days 7 
+hours 23 minutes. This is not a verified continuous email outage.
+Ticket number PBM identifier: ____________________
+Primary: RCS-29123. Related: RCS-29145 and RCS-29026. Engineering: ENG-9486.
+Severity and product RCS-29123 and RCS-29145: High. Formal P-number: __________. Secure Incident Smart Alerts, cohesion 
+mode.
+Incident Description
+ADUSA and Vitamin Shoppe reported missing Smart Alert notifications and missing alert history. Some emails reached 
+recipients while application processing failed to finish. Cases could remain flagged as in process, preventing subsequent alert 
+attempts. The September 28 correction restored processing for new activity in the validated examples. [S1–S4]
+This report covers the shared September release regression. RCS-29026 also contains an earlier September 20 nonreceipt 
+report for Food Lion case 0619-27. That run completed and recorded history; its delivery failure remains unexplained. The 
+evidence does not establish that the later regression caused the earlier failure. [S3]
+Engineering confirms the technical deadlock mechanism. The retrospective must still establish the systemic prevention gap, 
+complete impact reconciliation and assign follow-up dates. Use the worksheet on page 4 to resolve these items before 
+preparing the external RCA.
+
+## Página 2
+Internal Use Only | 2
+Incident Timeline
+Times below use Pacific Daylight Time, UTC−7. The supplied template says PST; September dates require PDT. Jira displays 
+EDT and Teams displays Bogotá time, UTC−5. Times describe the stated event, not the ticket updated field.
+Date Time PDT Action / Notes
+Sep 20 07:12 approx. Earlier case 0619-27 records completed alert processing. Reported nonreceipt remains a separate 
+unresolved cause. [S3]
+Sep 24 04:06:43 Last observed completed ADUSA run, 11:06:43 UTC. This bounds the investigation; it does not establish 
+exact onset. [S3]
+Sep 24 13:20 approx. First missing-history example identified by Leigh Ann, reported in her September 25 comment. [S3]
+Sep 25 17:47 Support publishes the corrected log analysis: 89 Begin, zero End, 76 in-process exits in the sampled 
+window; queue count rises from 217 to 222. [S3]
+Sep 27 04:17 / 04:28 Jira records escalation from Medium to High at 04:17 and on-call acknowledgement at 04:28. [S2]
+Sep 27 11:33 J.R. relays the customer workaround: extra staff run reports and send manual leadership emails; one alert 
+reportedly arrived five times. [S4]
+Sep 27 15:30 Russ finds eight of nine listed subjects in provider logs. Case 0143-14 is absent. These checks disprove a 
+complete transport outage. [S4]
+Sep 27 18:39 Kiran records ConfigureAwait(False) on both Await calls as the solution in ENG-9486. [S1]
+Sep 28 07:38 Manual QA task ENG-9533 transitions to Done. Test scope and results need attachment to the final 
+evidence package. [S5]
+Sep 28 09:43 Kiran posts “Deploying” in Teams. This is a deployment update, not proof of completed US rollout. [S4]
+Sep 28 11:30 approx. Jim reports ADUSA alerts arriving again, as published by Support in RCS-29123. [S2]
+Sep 28 13:42 Joe confirms receipt of a Vitamin Shoppe test alert in the customer-visible ticket. [S6]
+Business Impact
+ADUSA described disruption to critical incident communications across Asset Protection, Operations and Legal for at least two 
+brands, and used manual reporting and emails. Vitamin Shoppe reported failed incident notifications. Engineering identifies 
+exposure across cohesion-mode customers with active Smart Alerts. The confirmed customer examples do not measure the 
+entire population. [S1, S4, S6]
+The total of missed, duplicate and delivered notifications remains unknown. Missing SmartAlertProcess rows are not a 
+reliable count of undelivered mail. No source establishes loss of underlying incident records; confirm data integrity and the 
+unrecovered notification backlog before making a no-data-loss statement.
+
+## Página 3
+Internal Use Only | 3
+Resolution Provided
+Immediate Short term Long term
+Engineering manually retriggered selected 
+ADUSA cases and Infra checked provider 
+delivery. This recovered some notifications; 
+it did not clear the defect.
+PR 58273 adds ConfigureAwait(False) to 
+both Await calls in the email routine. Kiran 
+confirms EU and US deployment. Customer 
+and log examples demonstrate US 
+recovery.
+QA automation ENG-9589 is in Backlog. Its 
+planned quarter is Q4 2026, set by 
+automation; no committed delivery date or 
+completed preventive monitoring is 
+established.
+The fix operates prospectively. J.R. relayed Jim’s request not to resend the ADUSA backlog on September 28 at 14:30 Bogotá 
+time. Kiran confirmed that historical recovery is manual and that saving a case with InProcess = 1 will not trigger an alert. Do 
+not assume that all historical records are permanently suppressed: behavior after a flag reset or later edit requires a separate 
+recovery decision. [S4]
+Validation: ADUSA case 1600434 has 13b, a SmartAlertProcess row and End at 19:36 UTC on September 28; the over-$1,000 
+alert has 13b at 19:04 and 20:09 UTC. Support published these checks in RCS-29026. Joe independently confirmed a received 
+Vitamin Shoppe test. Neither result establishes full-tenant or EU validation. [S3, S6]
+Root Cause Analysis
+Confirmed mechanism, documented in ENG-9486: PR 57544 for ENG-7181 introduced targetFramework="4.8" in the ASP.NET 
+httpRuntime configuration around September 24. This enabled the modern ASP.NET synchronization context. 
+SendGridEmail.vb awaited the provider call without ConfigureAwait(False), capturing that context for its continuation. 
+SmartAlert.vb synchronously blocked the request thread through GetAwaiter().GetResult(). The continuation could not re-
+enter the blocked context, producing a deadlock. [S1]
+The provider could dispatch the email before the deadlock. Application execution then failed to reach 13b and the 
+SmartAlertProcess insert, and IIS could return HTTP 500. The fix allows both continuations to resume without capturing the 
+blocked context. It does not serialize alert runs or solve an ADUSA capacity limit. Earlier internal and customer explanations 
+that described those mechanisms require correction. [S1–S3, S6]
+Related findings require separate tracking: oversized emails, malformed recipient addresses, duplicate recipients and 
+incorrect assumptions about alert filters. They do not explain the shared post-release deadlock. The September 20 case lacks 
+sufficient retained provider evidence to establish its exact cause. [S3, S4]
+Next Steps
+Action Owner / status Target
+Confirm rollout completion times and validate 
+representative EU and US tenants end to end.
+Engineering and Support; proposed evidence 
+completion.
+At retrospective
+Reconcile eligible alerts, provider delivery and stuck 
+processing states before any customer-approved recovery.
+Support and Engineering; proposed. ADUSA 
+declined backlog resend.
+Agree at 
+retrospective
+Define regression checks for runtime configuration, email 
+completion, history insertion and flag cleanup.
+QA; ENG-9589 Backlog. Scope requires 
+confirmation.
+Q4 2026 planning 
+field; commitment 
+pending
+Define monitoring for stalled completion and distinguish it 
+from delivery failure. Preserve provider evidence promptly.
+Engineering / Infrastructure; proposed. J.R. 
+requested size-error follow-up with Vlad and Russ.
+Agree at 
+retrospective
+
+## Página 4
+Internal Use Only | 4
+Post Mortem Worksheet
+Facilitator: Juan Martinez. Proposed participants: Kiran Vadday, Matthew Kamminga, Russ Harmon, Gina Pilato, J.R. Teagle, 
+Kara Holthaus, Chris Rippingale and Ryan Barlow, with Vedant Shirude and the on-call/support representatives involved in 
+triage. Confirm attendance and add other incident responders. J.R. explicitly requested Kara’s participation. No meeting has 
+been scheduled by this document. [S3, S4, P2]
+Why Confirmed answer or meeting input
+1. Why did 
+alerts appear 
+missing?
+Some processing attempts never completed or wrote history; customer examples also show missing notifications. 
+Some messages reached recipients.
+2. Why did 
+processing not 
+complete?
+An asynchronous continuation waited on the ASP.NET context that the synchronous caller blocked.
+3. Why did this 
+become a 
+regression?
+The httpRuntime .NET 4.8 configuration activated the context behavior that exposed the existing blocking/await 
+interaction.
+4. Why did 
+release controls 
+allow this 
+interaction?
+________________________________________________
+Confirm regression coverage and release validation with Engineering and QA.
+5. Why did 
+detection and 
+response not 
+prevent 
+prolonged 
+impact?
+________________________________________________
+Identify the evidenced systemic gap in monitoring, testing or configuration management. Do not infer it from the fix 
+alone.
+Meeting decisions to record: exact start and end per environment; affected tenant list; missed/duplicate notification counts; 
+data integrity; residual risk; stale-case behavior; monitoring response and notification path; action owners and dates; 
+external RCA reviewer approvals.
+Decision Write in
+PBM identifier and accountable owner ________________________________________________
+Systemic root cause and prevention 
+commitment
+________________________________________________
+EU / US validation evidence and remaining 
+affected cases
+________________________________________________
+Final RCA delivery date and follow-up owner ________________________________________________
+Process and Timing
+The current PBM policy requires scheduling the retrospective within 48 hours of the request. J.R. requested it September 29 
+at 08:52 Bogotá time, so arrange it by October 1 at 08:52 Bogotá time. The policy targets the final RCA within five business 
+days of cause confirmation. Engineering recorded the solution September 27; October 2 is the conservative planning target 
+under a standard Monday-to-Friday calendar. Confirm the applicable confirmation milestone and delivery date. These are 
+planning calculations, not published commitments. [S1, S4, P1]
+The current workflow starts PBM tracking through the Problem Management label on the originating RCS. The search found 
+no matching PBM/OUTM ticket; verify tracking before creating a duplicate. Juan must perform Jira changes. The older RSI 
+policy says ten days from resolution and the older Outage page describes OUTM; use the current PBM policy for this RCA and 
+resolve the process discrepancy with the process owner. [P1–P4]
+
+## Página 5
+Internal Use Only | 5
+External delivery follows the completed retro, uses plain language and customer-specific scope, and requires approval from 
+the Support Manager, the involved department Manager and the Support VP. Do not include other customers in a customer’s 
+external RCA. [P1, P2]
+
+## Página 6
+Internal Use Only | 6
+Evidence and Sources
+Current statuses checked September 29: RCS-29123 and RCS-29026 Under Customer Review; RCS-29145 Completed, 
+resolution Resolved; ENG-9486 Development Complete; ENG-9533 Done; ENG-9589 Backlog. A ticket status does not 
+establish the exact restoration time.
+S1 Engineering cause and correction
+https://trebuco.atlassian.net/browse/ENG-9486
+Description and 19 history entries. Solution entry September 27, 21:39:56 EDT. The production label at September 28, 08:30 EDT is not an 
+environment-specific deployment completion record.
+S2 Primary ADUSA incident
+https://trebuco.atlassian.net/browse/RCS-29123
+All 10 comment entries and 20 history entries reviewed. September 28, 18:13 EDT internal and public comments contain validation and 
+prospective recovery decision. Earlier Talos triage is superseded by engineering evidence.
+S3 Earlier case and investigation
+https://trebuco.atlassian.net/browse/RCS-29026
+All 20 comment entries reviewed. Internal correction September 25, 20:47 EDT; internal resolution evidence September 28, 18:14 EDT. 
+Public history-based delivery claims are superseded by provider-aware analysis.
+S4 Teams incident thread
+Retail Ops > AALPS Issues > RCS-29123 - Ahold-Delhaize - Smart Alerts are not generating today
+76 text message entries reviewed, from Ayesha’s September 27, 06:31 Bogotá post through Kiran’s September 29, 10:23 response. 
+Attached images/CSVs were not newly parsed. Existing Cerebro evidence and published Jira findings support the referenced log examples. 
+Chris asks whether the fix is validated; Kiran explicitly says he did not test production himself.
+S5 Manual and automated QA
+https://trebuco.atlassian.net/browse/ENG-9533
+https://trebuco.atlassian.net/browse/ENG-9589
+Manual QA Done September 28, 10:38:21 EDT. Automation remains Backlog. Q4 planning metadata is not a delivery commitment.
+S6 Vitamin Shoppe confirmation
+https://trebuco.atlassian.net/browse/RCS-29145
+Seven comment entries loaded; recovery and resolution comments reviewed. Joe’s public confirmation: September 28, 16:42 EDT. Status 
+changed to Completed at 18:24:29 EDT; this is ticket resolution, not the deployment time.
+P1 Current policy and quality standard
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478066671617
+Authoritative policy: 48-hour meeting scheduling, five-business-day final RCA target, systemic Why and evidence requirements.
+P2 Current operational workflow
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478038687749
+Version 8, September 28, 2026. Retro, PBM tracking, external RCA approvals and delivery sequence.
+P3 Supplied Internal RCA template
+https://trebuco.atlassian.net/wiki/templates?space=PBM&template=474709983443
+Main report follows the supplied field and section order. Worksheet and evidence register support the retrospective.
+P4 Legacy process references
+https://trebuco.atlassian.net/wiki/spaces/RSI/pages/474840268801
+https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478022696993
+Legacy RCA SLA and Outage Ticket Process differ from current PBM instructions. Do not assume OUTM replaces current PBM tracking.
+Support contact: https://support.apprissretailcloud.com
++1-877-223-9481 / +1-866-274-3570

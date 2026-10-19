@@ -1,0 +1,15 @@
+# Adjunto image-20260910-204539.png
+Ruta: adjuntos/RCS-28881/image-20260910-204539.png
+Tipo: png
+Ticket: RCS-28881
+Modificado: 2026-09-11
+
+Texto reconocido por OCR:
+/NEXCOM
+Records
+New Case
+REPORT 5809 - Audit Follow Up
+v REPORT LINKS
+REPORT 5513 - 2023 MED Surve
+REPORT 5400 - COVID TESTING
+REPORT 5337 - Case Data

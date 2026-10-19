@@ -1,0 +1,37 @@
+CAMBIOS EN FILAS PREEXISTENTES (23-59 originales):
+  fila  29 col D 28177      'Resolved'                           -> 'Closed'
+  fila  29 col E 28177      'Pending Ahold verification'         -> 'Resolved'
+  fila  30 col E 28342      'Closed'                             -> 'Resolved'
+  fila  31 col D 28364      'Resolved'                           -> 'Closed'
+  fila  32 col D 28379      'Resolved'                           -> 'Closed'
+  fila  35 col A            'RCS-28093 /'                        -> 'RCS-28093'
+  fila  35 col D 28093      'Work in progress'                   -> 'Accepted into Development'
+  fila  36 col D 28365      'Resolved'                           -> 'Closed'
+  fila  37 col D 28415      'Completed'                          -> 'Closed'
+  fila  45 col D 28196      'Under Customer Review'              -> 'Closed'
+  fila  45 col E 28196      'Active with Appriss'                -> 'Resolved'
+  fila  46 col E 28304      'Closed'                             -> 'Resolved'
+  fila  47 col D 28369      'Resolved'                           -> 'Closed'
+  fila  52 col D 28124      'Resolved'                           -> 'Closed'
+  fila  52 col E 28124      'Awaiting Ahold input'               -> 'Resolved'
+  fila  54 col E 28021      'Closed'                             -> 'Resolved'
+  fila  55 col D 28161      'Resolved'                           -> 'Closed'
+  fila  55 col E 28161      'Active with Appriss'                -> 'Resolved'
+  fila  56 col D 28413      'Completed'                          -> 'Closed'
+  fila  56 col E 28413      'Client confirmed complete'          -> 'Resolved'
+  fila  60 col D 28353      'Under Customer Review'              -> 'Closed'
+  fila  60 col E 28353      'Active with Appriss'                -> 'Resolved'
+  fila  61 col D 28356      'Under Customer Review'              -> 'Closed'
+  fila  61 col E 28356      'Active with Appriss'                -> 'Resolved'
+  fila  62 col D 28407      'Under Customer Review'              -> 'Closed'
+  fila  62 col E 28407      'Active with Appriss'                -> 'Resolved'
+  fila  66 col D 28281      'Under Customer Review'              -> 'Work in progress'
+  fila  67 col D 28125      'Completed'                          -> 'Closed'
+  fila  68 col E 28292      'Closed'                             -> 'Resolved'
+
+Nota. Las filas indicadas son las del archivo NUEVO, ya con las inserciones aplicadas.
+Col D = Status, copiado literal de Jira el 1 sep 2026.
+Col E = Action with, alineado a las cuatro categorias del resumen.
+Col A = limpieza del sufijo suelto en RCS-28093.
+No se modifico ninguna celda de Issue summary, Next steps, ADUSA Comments,
+Appriss Notes, Engineer assigned, Cause ni Priority de las filas preexistentes.

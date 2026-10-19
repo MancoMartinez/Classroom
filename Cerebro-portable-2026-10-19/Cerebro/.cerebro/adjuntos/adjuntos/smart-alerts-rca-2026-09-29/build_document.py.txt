@@ -1,0 +1,187 @@
+# Adjunto build_document.py
+Ruta: adjuntos/smart-alerts-rca-2026-09-29/build_document.py
+Tipo: py
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-29
+
+from pathlib import Path
+from docx import Document
+from docx.shared import Inches, Pt, RGBColor
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+
+ROOT = Path('/Users/MancoMenStudio/Cerebro')
+OUT = ROOT / 'inbox/2026-09-29-smart-alerts-rca-internal.docx'
+d = Document()
+s = d.sections[0]
+s.top_margin = s.bottom_margin = Inches(.65)
+s.left_margin = s.right_margin = Inches(.7)
+s.page_width, s.page_height = Inches(8.5), Inches(11)
+for name in ['Normal', 'Title', 'Subtitle', 'Heading 1', 'Heading 2']:
+    st = d.styles[name]
+    st.font.name = 'Calibri'
+    st.font.color.rgb = RGBColor(0,0,0)
+d.styles['Normal'].font.size = Pt(10)
+d.styles['Normal'].paragraph_format.space_after = Pt(6)
+d.styles['Normal'].paragraph_format.line_spacing = 1.05
+d.styles['Title'].font.size = Pt(23)
+d.styles['Heading 1'].font.size = Pt(14)
+d.styles['Heading 1'].paragraph_format.space_before = Pt(10)
+d.styles['Heading 2'].font.size = Pt(11)
+d.core_properties.title = 'Smart Alerts September 2026 Root Cause Analysis'
+d.core_properties.author = 'Juan Martinez'
+
+def p(text, style=None):
+    return d.add_paragraph(text, style)
+def h(text):
+    d.add_heading(text, 1)
+def table(headers, rows, widths):
+    t = d.add_table(rows=1, cols=len(headers))
+    t.autofit = False
+    for c,w in zip(t.columns,widths): c.width=Inches(w)
+    for c,x in zip(t.rows[0].cells,headers): c.text=x
+    for row in rows:
+        for c,x in zip(t.add_row().cells,row): c.text=x
+    for i,row in enumerate(t.rows):
+        pr=row._tr.get_or_add_trPr()
+        pr.append(OxmlElement('w:cantSplit'))
+        if i==0: pr.append(OxmlElement('w:tblHeader'))
+        for c,w in zip(row.cells,widths):
+            c.width=Inches(w)
+            cp=c._tc.get_or_add_tcPr()
+            borders=OxmlElement('w:tcBorders')
+            for edge in ['top','left','bottom','right']:
+                e=OxmlElement('w:'+edge); e.set(qn('w:val'),'single'); e.set(qn('w:sz'),'4'); e.set(qn('w:color'),'D9D9D9'); borders.append(e)
+            cp.append(borders)
+            if i==0:
+                sh=OxmlElement('w:shd'); sh.set(qn('w:fill'),'E8EDF2'); cp.append(sh)
+            for pp in c.paragraphs:
+                pp.paragraph_format.space_after=Pt(4)
+                pp.paragraph_format.space_before=Pt(4)
+                for r in pp.runs:
+                    r.font.size=Pt(9)
+                    r.bold=i==0
+    return t
+def page(): d.add_page_break()
+
+banner=p('Internal Use Only')
+banner.runs[0].font.color.rgb=RGBColor.from_string('A31F24')
+banner.runs[0].bold=True
+p('Smart Alerts September 2026', 'Title')
+p('Root Cause Analysis Report', 'Subtitle')
+p('September 29, 2026 | Prepared by Juan Martinez | For the internal post mortem')
+table(['Incident field','Evidence supported position'],[
+ ('Incident start time','Exact onset unconfirmed. ADUSA last completed run: September 24, 04:06:43 PDT / 11:06:43 UTC. Vitamin Shoppe reported an approximate September 23 onset.'),
+ ('Incident end time','US recovery observed September 28. ADUSA: approximately 11:30 PDT / 18:30 UTC, reported by Jim through Support. Vitamin Shoppe confirmed a test at 13:42 PDT / 20:42 UTC. Exact deployment completion times remain open.'),
+ ('Duration','Not finalized. ADUSA reference window from last completion to reported recovery: approximately 4 days 7 hours 23 minutes. This is not a verified continuous email outage.'),
+ ('Ticket number','PBM identifier: ____________________\nPrimary: RCS-29123. Related: RCS-29145 and RCS-29026. Engineering: ENG-9486.'),
+ ('Severity and product','RCS-29123 and RCS-29145: High. Formal P-number: __________. Secure Incident Smart Alerts, cohesion mode.'),
+], [1.35,5.75])
+h('Incident Description')
+p('ADUSA and Vitamin Shoppe reported missing Smart Alert notifications and missing alert history. Some emails reached recipients while application processing failed to finish. Cases could remain flagged as in process, preventing subsequent alert attempts. The September 28 correction restored processing for new activity in the validated examples. [S1–S4]')
+p('This report covers the shared September release regression. RCS-29026 also contains an earlier September 20 nonreceipt report for Food Lion case 0619-27. That run completed and recorded history; its delivery failure remains unexplained. The evidence does not establish that the later regression caused the earlier failure. [S3]')
+p('Engineering confirms the technical deadlock mechanism. The retrospective must still establish the systemic prevention gap, complete impact reconciliation and assign follow-up dates. Use the worksheet on page 4 to resolve these items before preparing the external RCA.')
+
+page()
+h('Incident Timeline')
+p('Times below use Pacific Daylight Time, UTC−7. The supplied template says PST; September dates require PDT. Jira displays EDT and Teams displays Bogotá time, UTC−5. Times describe the stated event, not the ticket updated field.')
+table(['Date','Time PDT','Action / Notes'],[
+ ('Sep 20','07:12 approx.','Earlier case 0619-27 records completed alert processing. Reported nonreceipt remains a separate unresolved cause. [S3]'),
+ ('Sep 24','04:06:43','Last observed completed ADUSA run, 11:06:43 UTC. This bounds the investigation; it does not establish exact onset. [S3]'),
+ ('Sep 24','13:20 approx.','First missing-history example identified by Leigh Ann, reported in her September 25 comment. [S3]'),
+ ('Sep 25','17:47','Support publishes the corrected log analysis: 89 Begin, zero End, 76 in-process exits in the sampled window; queue count rises from 217 to 222. [S3]'),
+ ('Sep 27','04:17 / 04:28','Jira records escalation from Medium to High at 04:17 and on-call acknowledgement at 04:28. [S2]'),
+ ('Sep 27','11:33','J.R. relays the customer workaround: extra staff run reports and send manual leadership emails; one alert reportedly arrived five times. [S4]'),
+ ('Sep 27','15:30','Russ finds eight of nine listed subjects in provider logs. Case 0143-14 is absent. These checks disprove a complete transport outage. [S4]'),
+ ('Sep 27','18:39','Kiran records ConfigureAwait(False) on both Await calls as the solution in ENG-9486. [S1]'),
+ ('Sep 28','07:38','Manual QA task ENG-9533 transitions to Done. Test scope and results need attachment to the final evidence package. [S5]'),
+ ('Sep 28','09:43','Kiran posts “Deploying” in Teams. This is a deployment update, not proof of completed US rollout. [S4]'),
+ ('Sep 28','11:30 approx.','Jim reports ADUSA alerts arriving again, as published by Support in RCS-29123. [S2]'),
+ ('Sep 28','13:42','Joe confirms receipt of a Vitamin Shoppe test alert in the customer-visible ticket. [S6]'),
+], [.66,.86,5.58])
+h('Business Impact')
+p('ADUSA described disruption to critical incident communications across Asset Protection, Operations and Legal for at least two brands, and used manual reporting and emails. Vitamin Shoppe reported failed incident notifications. Engineering identifies exposure across cohesion-mode customers with active Smart Alerts. The confirmed customer examples do not measure the entire population. [S1, S4, S6]')
+p('The total of missed, duplicate and delivered notifications remains unknown. Missing SmartAlertProcess rows are not a reliable count of undelivered mail. No source establishes loss of underlying incident records; confirm data integrity and the unrecovered notification backlog before making a no-data-loss statement.')
+
+page()
+h('Resolution Provided')
+table(['Immediate','Short term','Long term'],[
+ ('Engineering manually retriggered selected ADUSA cases and Infra checked provider delivery. This recovered some notifications; it did not clear the defect.',
+  'PR 58273 adds ConfigureAwait(False) to both Await calls in the email routine. Kiran confirms EU and US deployment. Customer and log examples demonstrate US recovery.',
+  'QA automation ENG-9589 is in Backlog. Its planned quarter is Q4 2026, set by automation; no committed delivery date or completed preventive monitoring is established.')
+], [2.36,2.37,2.37])
+p('The fix operates prospectively. J.R. relayed Jim’s request not to resend the ADUSA backlog on September 28 at 14:30 Bogotá time. Kiran confirmed that historical recovery is manual and that saving a case with InProcess = 1 will not trigger an alert. Do not assume that all historical records are permanently suppressed: behavior after a flag reset or later edit requires a separate recovery decision. [S4]')
+p('Validation: ADUSA case 1600434 has 13b, a SmartAlertProcess row and End at 19:36 UTC on September 28; the over-$1,000 alert has 13b at 19:04 and 20:09 UTC. Support published these checks in RCS-29026. Joe independently confirmed a received Vitamin Shoppe test. Neither result establishes full-tenant or EU validation. [S3, S6]')
+h('Root Cause Analysis')
+p('Confirmed mechanism, documented in ENG-9486: PR 57544 for ENG-7181 introduced targetFramework="4.8" in the ASP.NET httpRuntime configuration around September 24. This enabled the modern ASP.NET synchronization context. SendGridEmail.vb awaited the provider call without ConfigureAwait(False), capturing that context for its continuation. SmartAlert.vb synchronously blocked the request thread through GetAwaiter().GetResult(). The continuation could not re-enter the blocked context, producing a deadlock. [S1]')
+p('The provider could dispatch the email before the deadlock. Application execution then failed to reach 13b and the SmartAlertProcess insert, and IIS could return HTTP 500. The fix allows both continuations to resume without capturing the blocked context. It does not serialize alert runs or solve an ADUSA capacity limit. Earlier internal and customer explanations that described those mechanisms require correction. [S1–S3, S6]')
+p('Related findings require separate tracking: oversized emails, malformed recipient addresses, duplicate recipients and incorrect assumptions about alert filters. They do not explain the shared post-release deadlock. The September 20 case lacks sufficient retained provider evidence to establish its exact cause. [S3, S4]')
+h('Next Steps')
+table(['Action','Owner / status','Target'],[
+ ('Confirm rollout completion times and validate representative EU and US tenants end to end.','Engineering and Support; proposed evidence completion.','At retrospective'),
+ ('Reconcile eligible alerts, provider delivery and stuck processing states before any customer-approved recovery.','Support and Engineering; proposed. ADUSA declined backlog resend.','Agree at retrospective'),
+ ('Define regression checks for runtime configuration, email completion, history insertion and flag cleanup.','QA; ENG-9589 Backlog. Scope requires confirmation.','Q4 2026 planning field; commitment pending'),
+ ('Define monitoring for stalled completion and distinguish it from delivery failure. Preserve provider evidence promptly.','Engineering / Infrastructure; proposed. J.R. requested size-error follow-up with Vlad and Russ.','Agree at retrospective'),
+], [3.2,2.75,1.15])
+
+page()
+worksheet_start = len(d.paragraphs)
+h('Post Mortem Worksheet')
+p('Facilitator: Juan Martinez. Proposed participants: Kiran Vadday, Matthew Kamminga, Russ Harmon, Gina Pilato, J.R. Teagle, Kara Holthaus, Chris Rippingale and Ryan Barlow, with Vedant Shirude and the on-call/support representatives involved in triage. Confirm attendance and add other incident responders. J.R. explicitly requested Kara’s participation. No meeting has been scheduled by this document. [S3, S4, P2]')
+table(['Why','Confirmed answer or meeting input'],[
+ ('1. Why did alerts appear missing?','Some processing attempts never completed or wrote history; customer examples also show missing notifications. Some messages reached recipients.'),
+ ('2. Why did processing not complete?','An asynchronous continuation waited on the ASP.NET context that the synchronous caller blocked.'),
+ ('3. Why did this become a regression?','The httpRuntime .NET 4.8 configuration activated the context behavior that exposed the existing blocking/await interaction.'),
+ ('4. Why did release controls allow this interaction?','________________________________________________\nConfirm regression coverage and release validation with Engineering and QA.'),
+ ('5. Why did detection and response not prevent prolonged impact?','________________________________________________\nIdentify the evidenced systemic gap in monitoring, testing or configuration management. Do not infer it from the fix alone.'),
+], [.98,6.12])
+p('Meeting decisions to record: exact start and end per environment; affected tenant list; missed/duplicate notification counts; data integrity; residual risk; stale-case behavior; monitoring response and notification path; action owners and dates; external RCA reviewer approvals.')
+table(['Decision','Write in'],[
+ ('PBM identifier and accountable owner','________________________________________________'),
+ ('Systemic root cause and prevention commitment','________________________________________________'),
+ ('EU / US validation evidence and remaining affected cases','________________________________________________'),
+ ('Final RCA delivery date and follow-up owner','________________________________________________'),
+], [2.5,4.6])
+h('Process and Timing')
+p('The current PBM policy requires scheduling the retrospective within 48 hours of the request. J.R. requested it September 29 at 08:52 Bogotá time, so arrange it by October 1 at 08:52 Bogotá time. The policy targets the final RCA within five business days of cause confirmation. Engineering recorded the solution September 27; October 2 is the conservative planning target under a standard Monday-to-Friday calendar. Confirm the applicable confirmation milestone and delivery date. These are planning calculations, not published commitments. [S1, S4, P1]')
+p('The current workflow starts PBM tracking through the Problem Management label on the originating RCS. The search found no matching PBM/OUTM ticket; verify tracking before creating a duplicate. Juan must perform Jira changes. The older RSI policy says ten days from resolution and the older Outage page describes OUTM; use the current PBM policy for this RCA and resolve the process discrepancy with the process owner. [P1–P4]')
+p('External delivery follows the completed retro, uses plain language and customer-specific scope, and requires approval from the Support Manager, the involved department Manager and the Support VP. Do not include other customers in a customer’s external RCA. [P1, P2]')
+
+for paragraph in d.paragraphs[worksheet_start:]:
+    if paragraph.style.name == 'Normal':
+        paragraph.paragraph_format.space_after = Pt(4)
+        for run in paragraph.runs: run.font.size = Pt(9)
+
+page()
+h('Evidence and Sources')
+p('Current statuses checked September 29: RCS-29123 and RCS-29026 Under Customer Review; RCS-29145 Completed, resolution Resolved; ENG-9486 Development Complete; ENG-9533 Done; ENG-9589 Backlog. A ticket status does not establish the exact restoration time.')
+sources = [
+ ('S1 Engineering cause and correction','https://trebuco.atlassian.net/browse/ENG-9486','Description and 19 history entries. Solution entry September 27, 21:39:56 EDT. The production label at September 28, 08:30 EDT is not an environment-specific deployment completion record.'),
+ ('S2 Primary ADUSA incident','https://trebuco.atlassian.net/browse/RCS-29123','All 10 comment entries and 20 history entries reviewed. September 28, 18:13 EDT internal and public comments contain validation and prospective recovery decision. Earlier Talos triage is superseded by engineering evidence.'),
+ ('S3 Earlier case and investigation','https://trebuco.atlassian.net/browse/RCS-29026','All 20 comment entries reviewed. Internal correction September 25, 20:47 EDT; internal resolution evidence September 28, 18:14 EDT. Public history-based delivery claims are superseded by provider-aware analysis.'),
+ ('S4 Teams incident thread','Retail Ops > AALPS Issues > RCS-29123 - Ahold-Delhaize - Smart Alerts are not generating today','76 text message entries reviewed, from Ayesha’s September 27, 06:31 Bogotá post through Kiran’s September 29, 10:23 response. Attached images/CSVs were not newly parsed. Existing Cerebro evidence and published Jira findings support the referenced log examples. Chris asks whether the fix is validated; Kiran explicitly says he did not test production himself.'),
+ ('S5 Manual and automated QA','https://trebuco.atlassian.net/browse/ENG-9533\nhttps://trebuco.atlassian.net/browse/ENG-9589','Manual QA Done September 28, 10:38:21 EDT. Automation remains Backlog. Q4 planning metadata is not a delivery commitment.'),
+ ('S6 Vitamin Shoppe confirmation','https://trebuco.atlassian.net/browse/RCS-29145','Seven comment entries loaded; recovery and resolution comments reviewed. Joe’s public confirmation: September 28, 16:42 EDT. Status changed to Completed at 18:24:29 EDT; this is ticket resolution, not the deployment time.'),
+ ('P1 Current policy and quality standard','https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478066671617','Authoritative policy: 48-hour meeting scheduling, five-business-day final RCA target, systemic Why and evidence requirements.'),
+ ('P2 Current operational workflow','https://trebuco.atlassian.net/wiki/spaces/PBM/pages/478038687749','Version 8, September 28, 2026. Retro, PBM tracking, external RCA approvals and delivery sequence.'),
+ ('P3 Supplied Internal RCA template','https://trebuco.atlassian.net/wiki/templates?space=PBM&template=474709983443','Main report follows the supplied field and section order. Worksheet and evidence register support the retrospective.'),
+ ('P4 Legacy process references','https://trebuco.atlassian.net/wiki/spaces/RSI/pages/474840268801\nhttps://trebuco.atlassian.net/wiki/spaces/PBM/pages/478022696993','Legacy RCA SLA and Outage Ticket Process differ from current PBM instructions. Do not assume OUTM replaces current PBM tracking.'),
+]
+for title,url,note in sources:
+    pp=p(title); pp.runs[0].bold=True
+    pp=p(url); pp.paragraph_format.space_after=Pt(2)
+    for r in pp.runs: r.font.size=Pt(8)
+    pp=p(note)
+    for r in pp.runs: r.font.size=Pt(9)
+p('Support contact: https://support.apprissretailcloud.com\n+1-877-223-9481 / +1-866-274-3570')
+foot=s.footer.paragraphs[0]
+foot.alignment=2
+foot.add_run('Internal Use Only | ')
+field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');foot._p.append(field)
+for r in foot.runs:r.font.size=Pt(8)
+for root in (d.styles.element, d.element):
+    for border in root.findall('.//' + qn('w:pBdr')):
+        border.getparent().remove(border)
+d.save(OUT)
+assert len(d.tables)==6
+print(OUT)

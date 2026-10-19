@@ -1,0 +1,1 @@
+My theory, in case it helps: something is marking cases as "on processing" and never clearing it, so the NettrackSmartAlert task skips every case and no alert goes out. That would explain why Leigh Ann's cases since 9/24 and my test show nothing in Smart Alert History. I could be wrong, what do you think?

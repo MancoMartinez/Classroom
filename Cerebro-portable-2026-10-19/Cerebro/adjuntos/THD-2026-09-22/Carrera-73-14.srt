@@ -1,0 +1,1196 @@
+1
+00:00:00,000 --> 00:00:05,180
+ to stem from and i definitely appreciate that i know i'm sure you guys do as well but acknowledging
+
+2
+00:00:05,180 --> 00:00:13,040
+ that there's been frustration across the board um let's see i have one thing that came up i'm not
+
+3
+00:00:13,040 --> 00:00:22,280
+ sure if camilla would be the proper audience for it so i'll ask um there seems to be a issue with
+
+4
+00:00:22,280 --> 00:00:33,120
+ work view data source and the secure side talking to each other i know val you and i were on a ticket
+
+5
+00:00:33,120 --> 00:00:37,900
+ where there was an integer problem that one was casting as an integer the other one was a string
+
+6
+00:00:37,900 --> 00:00:43,580
+ and so i had to have them go and change that around now i've realized uh trying to actually
+
+7
+00:00:43,580 --> 00:00:50,280
+ make use of it that even though they're both integers i can join to them in the secure side
+
+8
+00:00:50,280 --> 00:00:56,400
+ when i try to pull anything using the transaction id from the work review side
+
+9
+00:00:56,400 --> 00:01:01,480
+ nothing populates and transaction id is blank across the board when trying to look at it in secure
+
+10
+00:01:01,480 --> 00:01:09,160
+ and vice versa which makes the search kind of the ability kind of useless um because i can't actually
+
+11
+00:01:09,160 --> 00:01:15,160
+ join on our header information and that's um if i just want to make sure i'm looking at the right
+
+12
+00:01:15,160 --> 00:01:21,280
+ ticket that's rcs 28008 i believe so i've actually i should have brought the ticket because it was
+
+13
+00:01:21,280 --> 00:01:29,280
+ i thought it was solved out but then uh it proved to not be yeah i get that data is tricky um
+
+14
+00:01:29,280 --> 00:01:45,400
+ i'm just reviewing the ticket really fast for you so bear with me
+
+15
+00:01:45,400 --> 00:01:57,800
+ okay looks like this is with our engineering team we may need more time to identify what next steps look
+
+16
+00:01:57,800 --> 00:02:03,940
+ like but can i ask you to comment directly into the ticket with the issue that you're seeing or
+
+17
+00:02:03,940 --> 00:02:09,380
+ create a new ticket actually and i can link the two on the back end for us to review them as two
+
+18
+00:02:09,380 --> 00:02:13,700
+ you're separate i want to keep the one that's closed because that work was completed from an engineering
+
+19
+00:02:13,700 --> 00:02:17,700
+ standpoint but i'll need a new ticket to understand how to merge them together or what issues you're
+
+20
+00:02:17,700 --> 00:02:24,580
+ running into with screenshots if possible yeah yeah thank you so much i'll be on the lookout for it i
+
+21
+00:02:24,580 --> 00:02:27,140
+ will link them on the back end and we will review it accordingly
+
+22
+00:02:27,140 --> 00:02:33,860
+ uh erica did you uh have anything for you guys aside
+
+23
+00:02:33,860 --> 00:02:43,220
+ uh i just don't know where it went oh yes search is producing only errors so i know corey you created
+
+24
+00:02:43,220 --> 00:02:48,500
+ that ticket and we jumped on board with it i'm just wondering has it been resolved i know it's been
+
+25
+00:02:48,500 --> 00:02:55,540
+ accepted into development from what i can see but i'm not sure what that means yes let me pull up that
+
+26
+00:02:55,540 --> 00:02:59,300
+ ticket as well bear with me 28671
+
+27
+00:03:03,220 --> 00:03:12,260
+ um if you want i can take over that one so what accepting development means is that we found a long-term
+
+28
+00:03:12,260 --> 00:03:21,700
+ fix for the issue and that we are waiting for release and no eta have been given in that ticket just yet
+
+29
+00:03:21,700 --> 00:03:28,660
+ because we're still waiting for the engineering team to give us more details about how long it's going
+
+30
+00:03:28,660 --> 00:03:36,260
+ to take to actually deploy that on your end and see the the fix as a long term and this does not happen
+
+31
+00:03:36,260 --> 00:03:44,020
+ again um i reviewed all your tickets before this school and i already been the engineer that is
+
+32
+00:03:44,020 --> 00:03:50,180
+ taking over this unfortunately i do not have an update just for now and but i hope that at the end
+
+33
+00:03:50,180 --> 00:03:56,900
+ of the day or earlier tomorrow i can let you know and what happened specifically with this and i know
+
+34
+00:03:56,900 --> 00:04:05,940
+ that this is related um that we have another ticket that is also on the engineering review both of them
+
+35
+00:04:05,940 --> 00:04:15,620
+ are like waiting for a release um that is 28 799 um so yes that that is what i mean i hope that i
+
+36
+00:04:15,620 --> 00:04:20,980
+ have an update on that but i'm waiting for our internal engineering team to to give an epa
+
+37
+00:04:21,620 --> 00:04:28,020
+ how long it's going to take so you you have proper expectations on how long it's going to take
+
+38
+00:04:28,580 --> 00:04:34,740
+ okay so my question is the work item that we identified was an issue is going to remain an issue
+
+39
+00:04:34,740 --> 00:04:42,420
+ until they do the fix that's what i want to confirm if it's possible uh to fix that work item and then we
+
+40
+00:04:42,420 --> 00:04:50,420
+ place a long-term fix so it does not fail again in the future these are the other work items yeah
+
+41
+00:04:50,420 --> 00:04:55,700
+ yeah this one is on your work item versus a search but yeah i just wanted to make sure because i didn't
+
+42
+00:04:55,700 --> 00:05:04,420
+ want to close it out in case uh we needed to test the results once it is fixed okay yeah absolutely we're going to reach out to you once you did the
+
+43
+00:05:04,420 --> 00:05:12,740
+ code the fix is confirmed so you test it on your site and let us know it is working properly okay sounds good
+
+44
+00:05:14,820 --> 00:05:25,540
+ thank you camilla appreciate it
+
+45
+00:05:25,540 --> 00:05:31,220
+ while you're doing that i just want to thank you for offering some time with our product team i know we
+
+46
+00:05:31,220 --> 00:05:35,780
+ looked at our stats and you're among the top 20 users of our engage dashboard oh really
+
+47
+00:05:38,820 --> 00:05:44,980
+ so we're excited to pick your brain a little bit well that would be great i don't i don't mind uh
+
+48
+00:05:44,980 --> 00:05:49,860
+ having my brain picked but it would be good if the rest of the team on our side could be on the call
+
+49
+00:05:49,860 --> 00:05:55,540
+ just to kind of understand what they're looking at too but also if they have any input they want to
+
+50
+00:05:55,540 --> 00:06:01,300
+ share as well so absolutely i ask that i get added to the call as well what i'll do is once i get it i'll
+
+51
+00:06:01,300 --> 00:06:05,460
+ forward it to the team if you get it and you see that i'm not on it please feel free to forward
+
+52
+00:06:05,460 --> 00:06:10,500
+ accordingly it is coming directly from our our product and marketing team so they may you may leave
+
+53
+00:06:10,500 --> 00:06:18,420
+ me out but if they do i'll connect with you no i don't mind um at all giving feedback on uh how
+
+54
+00:06:18,420 --> 00:06:24,580
+ platforms are working just because i know that um everyone has a different point of view at how it
+
+55
+00:06:24,580 --> 00:06:29,940
+ looks and how it works so it's got a totally different point of view and we have the other
+
+56
+00:06:31,380 --> 00:06:36,100
+ well and as i mentioned as one of the top 20 we want to make sure that we're meeting all your
+
+57
+00:06:36,100 --> 00:06:41,940
+ expectations how have you i think you were like number six on the list wow
+
+58
+00:06:44,500 --> 00:06:49,620
+ how have you just like top line how have you been liking it do you find it helpful i know
+
+59
+00:06:49,620 --> 00:06:53,460
+ some of the data is limited for canada but i just wanted to kind of pick your brain high level and see
+
+60
+00:06:53,460 --> 00:07:01,620
+ what you thought i like how it functions um i'm still kind of new to using that whole customer
+
+61
+00:07:01,620 --> 00:07:09,860
+ search aspect on ebr but um i like how it pulls the information and that the returns show up a little
+
+62
+00:07:09,860 --> 00:07:14,580
+ bit differently so you have a red and then a green if it's a sale so i really love that
+
+63
+00:07:15,220 --> 00:07:22,420
+ i love the mapping because it gives us an idea of what stores these receipts are linked to so it kind of
+
+64
+00:07:22,420 --> 00:07:27,940
+ matches in a sense what we have is another program called magellan so if let's say we want to review
+
+65
+00:07:27,940 --> 00:07:34,900
+ a store credit we can kind of run that as an extra and then pinpoint the different stores that they're
+
+66
+00:07:34,900 --> 00:07:41,540
+ going to so for me i like it i'm not sure if the rest of the team has used it yet but it's always good
+
+67
+00:07:41,540 --> 00:07:48,420
+ to have kind of that feedback from them so not to call you out blaine but you were not on the top of the list
+
+68
+00:07:53,540 --> 00:08:01,060
+ i do have a question for you i don't know if camilla's the right person or one is but um matt and i were kind of
+
+69
+00:08:01,060 --> 00:08:05,940
+ discussing because i threw it out there i know that the receipts are a template
+
+70
+00:08:06,740 --> 00:08:13,780
+ but is it possible when we get let's say there's a blank order id or you know now how we have all
+
+71
+00:08:13,780 --> 00:08:19,140
+ the customer names like the address and all that information at the bottom is there a way to make
+
+72
+00:08:19,140 --> 00:08:25,860
+ it if it's null it doesn't show up unfortunately not because that's like a blanket template that we use
+
+73
+00:08:25,860 --> 00:08:30,980
+ across customers so it would be tough for us to update in one instance and not the remaining
+
+74
+00:08:32,500 --> 00:08:37,220
+ honestly it also introduces a lot of room for error if we're like hiding default like if
+
+75
+00:08:38,500 --> 00:08:43,620
+ i would be a little bit concerned to not have the default template and just showcase no versus have
+
+76
+00:08:43,620 --> 00:08:49,620
+ it hide all together yeah and i understand that and that's why i was kind of like matt said the same
+
+77
+00:08:49,620 --> 00:08:55,860
+ thing in a sense but my concern would be is let's say you use that receipt and you give it to like a
+
+78
+00:08:55,860 --> 00:09:00,820
+ police officer and then it goes to an attorney and then you get a defense lawyer and they start
+
+79
+00:09:00,820 --> 00:09:05,300
+ questioning what those blanks mean i just want to make sure we're kind of articulating it for the
+
+80
+00:09:05,300 --> 00:09:10,340
+ field so that if it does go to court or anything like that they're going to get questioned on why
+
+81
+00:09:10,340 --> 00:09:16,500
+ those are blank why you know what is the reason for this where's the information um those kinds of
+
+82
+00:09:16,500 --> 00:09:21,620
+ things so it may be some training on our side that we'll have to do but i just wanted to kind of throw
+
+83
+00:09:21,620 --> 00:09:28,340
+ that thought process out there so yeah absolutely we could also with helpful kind of set up like a
+
+84
+00:09:28,340 --> 00:09:33,060
+ legal to legal connect and have them kind of discuss what the proper verbiage would be i can certainly
+
+85
+00:09:33,060 --> 00:09:38,900
+ have one of our lawyers join a call or a legal counsel and just outline kind of like generic
+
+86
+00:09:38,900 --> 00:09:42,980
+ messaging around we only provide the data that we receive if it's not available it will always default
+
+87
+00:09:42,980 --> 00:09:49,460
+ to no whatever the case is if necessary just let me know and we can certainly set that up okay i don't
+
+88
+00:09:49,460 --> 00:09:56,340
+ know if it'll go to that extreme but i've still got to talk to uh around it but i just want to make
+
+89
+00:09:56,340 --> 00:10:02,500
+ sure because i look at it from a legal perspective too and how questions might get asked so we would
+
+90
+00:10:02,500 --> 00:10:10,100
+ have to kind of provide um an expert witness in a sense if it ever did go to court to explain that
+
+91
+00:10:10,100 --> 00:10:16,820
+ receipt and articulate and it may be something that we have to update our receipts um i forget what
+
+92
+00:10:16,820 --> 00:10:22,740
+ it's called definitions um we do have something that we we need to update as well with that because we
+
+93
+00:10:22,740 --> 00:10:30,820
+ we do give a receipt look view and then we define what each line means uh so it may be something we
+
+94
+00:10:30,820 --> 00:10:36,660
+ just need to update on our end as well so just keep me posted happy to set up connects as needed
+
+95
+00:10:37,700 --> 00:10:40,740
+ appreciate that query do you have anything else
+
+96
+00:10:43,460 --> 00:10:51,780
+ um i mean not not really from my side i think a lot of what we had to talk about revolved around the
+
+97
+00:10:52,660 --> 00:10:58,340
+ the data feed stuff which is mostly in criders wheelhouse so i don't want to
+
+98
+00:10:59,140 --> 00:11:07,060
+ speak too out of turn without him here but i guess i don't want to keep uh emailing one on the call
+
+99
+00:11:07,620 --> 00:11:13,220
+ just waiting so i mean i guess if if there's anything uh you had on that front erica like
+
+100
+00:11:13,220 --> 00:11:18,100
+ any questions you had regarding any of the recent issues i know that man i've been talking back and
+
+101
+00:11:18,100 --> 00:11:26,580
+ forth if i understand it correctly it has to do with an equation around um a calculation that we use for
+
+102
+00:11:26,580 --> 00:11:34,580
+ reporting aspect i know he sent that information to camilla i he matt's the one to talk about it because
+
+103
+00:11:34,580 --> 00:11:40,180
+ we don't even have the ability to do that type of reporting for canada so we jump off of the u.s
+
+104
+00:11:40,180 --> 00:11:45,460
+ platform because if the u.s is having problems with the data that can is going to have the same problems
+
+105
+00:11:45,460 --> 00:11:55,620
+ so or similar problems so i think for us we were also talking about getting rid of the line item report
+
+106
+00:11:56,580 --> 00:12:03,300
+ for us that was created ages ago let me just look it up for you like it's your screen and i think it's
+
+107
+00:12:03,300 --> 00:12:11,140
+ skewing the data on this just based on what matt and i were discussing based on that uh total amount
+
+108
+00:12:12,820 --> 00:12:20,500
+ yeah from my understanding uh the receipt images are fine but the transaction totals are being calculated
+
+109
+00:12:20,500 --> 00:12:28,100
+ wrong so when i like for any reporting that we build out to kind of track if there's an opportunity with
+
+110
+00:12:28,100 --> 00:12:33,540
+ the data in the background because we understand we can't have access to a person in the background so we
+
+111
+00:12:33,540 --> 00:12:41,060
+ kind of have to build out um our own warning system just just to keep track of it so that it can be
+
+112
+00:12:41,700 --> 00:12:46,980
+ dealt with at an appropriate time and right away if necessary just to give you some context like i'm in
+
+113
+00:12:46,980 --> 00:12:55,780
+ um nova scotia so i always start earlier than everybody and uh we go from there so i'm always kind of
+
+114
+00:12:55,780 --> 00:13:01,540
+ tracking this report just because it tells me a little bit about some of the missing line item data
+
+115
+00:13:01,540 --> 00:13:08,420
+ that may be occurring but i think it this reports now become skewed so um we were talking about just
+
+116
+00:13:08,420 --> 00:13:13,300
+ shutting this reporting down which i don't i'm not even sure how that works because this was created
+
+117
+00:13:14,100 --> 00:13:21,620
+ when was this creatively and it was before we before i started back with uh cit so yeah this goes back
+
+118
+00:13:21,620 --> 00:13:31,700
+ a long long way back to when melissa was still with us here yeah so this recording if if we're in
+
+119
+00:13:31,700 --> 00:13:38,820
+ agreement corey i would like matt agrees that we should probably just turn this off but i'm not sure how
+
+120
+00:13:38,820 --> 00:13:48,580
+ how to do that because i don't know when was it uh this one yes we actually haven't i haven't done
+
+121
+00:13:48,580 --> 00:13:56,340
+ this report since like i first joined um yeah i'm not sure who would know that but i mean i had no
+
+122
+00:13:56,340 --> 00:14:03,780
+ problem doing it um i don't receive it either i would have to go looking forward in the notifications
+
+123
+00:14:06,020 --> 00:14:12,260
+ how did i end up being the only one getting this because you never turned it off i guess i didn't
+
+124
+00:14:12,260 --> 00:14:17,620
+ um so just this is kind of what i refer to first thing in the morning just to give you
+
+125
+00:14:17,620 --> 00:14:24,740
+ uh camilla want an idea um to look at line item missing data and we go from there and then matt has
+
+126
+00:14:24,740 --> 00:14:30,180
+ his dashboard that he's wanted that he monitors and we're just finding that with that discrepancy with
+
+127
+00:14:30,180 --> 00:14:39,220
+ the amount it's it's skewing our reporting so i honestly i hope matt can get on the call soon
+
+128
+00:14:40,820 --> 00:14:47,460
+ um because he's got the visuals on that aspect and that side and can explain kind of how he's pulling
+
+129
+00:14:47,460 --> 00:14:56,340
+ that data yeah let me just just give like a quick overview so after some investigations what we found
+
+130
+00:14:56,340 --> 00:15:02,820
+ is that the mismatch is after the upload is the data is uploaded again so when it is uploaded the file
+
+131
+00:15:02,820 --> 00:15:08,900
+ is not calculated what we have done in the past days is that that is revealed manually by one of our
+
+132
+00:15:08,900 --> 00:15:17,060
+ engineers um and it was out of of my mistake that i informed matthew that it was already fixed like a
+
+133
+00:15:17,060 --> 00:15:25,860
+ long term um but it wasn't actually it was fixed for the 21st so today in 22nd when he created the
+
+134
+00:15:25,860 --> 00:15:33,620
+ report again and upload the data the information was i mean the the field was not calculated um so um
+
+135
+00:15:34,100 --> 00:15:40,180
+ andres there is one of our engineers he rebuilt it for today and i'm waiting for him to confirm that
+
+136
+00:15:40,180 --> 00:15:48,100
+ it is done for today report and we're working on a long-term solution and so we don't need to rebuild
+
+137
+00:15:48,100 --> 00:15:55,540
+ this every single day of course and this this was brought because of the snow tail migration that you
+
+138
+00:15:56,580 --> 00:16:03,300
+ had um late august so that is what you are seeing this in the past 20 days um
+
+139
+00:16:03,940 --> 00:16:11,060
+ so yeah we we we are we already know and we narrowed down the root cause of of this mismatch in the
+
+140
+00:16:11,060 --> 00:16:17,620
+ calculation uh but we're working on the deployment uh this is going to take a while we are just
+
+141
+00:16:17,620 --> 00:16:24,820
+ waiting for some approvals and testing before going to production um but i hope that we can have
+
+142
+00:16:25,700 --> 00:16:33,060
+ this set by the end of the week that is the expectation my biggest concern sometimes and this is just an
+
+143
+00:16:33,060 --> 00:16:41,300
+ observation from our society that when we send in an issue and it gets fixed then it seems to
+
+144
+00:16:43,220 --> 00:16:50,980
+ not backlog but it seems to fall backwards where they're not reviewing or reloading certain aspects
+
+145
+00:16:51,620 --> 00:17:00,820
+ are like is there an sop i call it or instructions and steps for the for your teams that if this happens
+
+146
+00:17:00,820 --> 00:17:08,820
+ make sure you're checking this this and this and and reloading yes absolutely and sops are part of the
+
+147
+00:17:08,820 --> 00:17:14,740
+ migrations because as you know you are not the only customers that are being migrated to snowflake all of
+
+148
+00:17:14,740 --> 00:17:21,300
+ our customers and being migrated uh but the thing is that not all customers are the same and even though
+
+149
+00:17:21,300 --> 00:17:26,500
+ that we are have like the same product for all of you not all the configurations are the same
+
+150
+00:17:27,060 --> 00:17:36,100
+ so we try to before the migration to have everything like checked on our list before going on the migration
+
+151
+00:17:36,900 --> 00:17:43,140
+ but it happens that there are some things that we can like maybe we missed or maybe we cannot
+
+152
+00:17:43,140 --> 00:17:49,220
+ anticipate because we only see that on production and based on this for example this specific issue with
+
+153
+00:17:49,220 --> 00:17:56,500
+ the uh with the field that is not calculated properly every day uh there will be an sop in place because
+
+154
+00:17:56,500 --> 00:18:03,220
+ we already know where is the not that is not connecting correctly so okay next time not only for you
+
+155
+00:18:03,220 --> 00:18:09,220
+ guys but for for other customers if there is a migration we need to make sure that this is not failing or that
+
+156
+00:18:09,220 --> 00:18:18,500
+ we confirm this um and yes i know that the migration had it bring a lot of noise on your side and and
+
+157
+00:18:19,220 --> 00:18:26,100
+ like misses and i want to apologize on that side but just want to ensure that internally we're having
+
+158
+00:18:26,100 --> 00:18:34,020
+ the conversations and with the team that is leading these migrations so we avoid disruption and also
+
+159
+00:18:34,020 --> 00:18:42,100
+ to make a fix long long term yeah it's just um we found that some things got broken just after and
+
+160
+00:18:42,900 --> 00:18:49,940
+ it and we just had a lot of them fixed in march valerie if you recall that we were having opportunities
+
+161
+00:18:49,940 --> 00:18:56,740
+ then so i'm just curious if we're going to continue to see that if there's any new changes that come
+
+162
+00:18:56,740 --> 00:19:01,380
+ forward in the future like is it always going to have something that breaks only because you see
+
+163
+00:19:01,380 --> 00:19:09,620
+ it in production but you don't see it in qa i'm gonna be pretty honest with you um i cannot say anything
+
+164
+00:19:09,620 --> 00:19:16,100
+ about march because i was not part of a priest team back then uh but now that you bring that to the
+
+165
+00:19:16,100 --> 00:19:22,500
+ conversation i'm gonna make sure to to have a conversation with valerie and also and to review
+
+166
+00:19:22,500 --> 00:19:30,500
+ your your tickets open that time to understand what happened at that time and what happened here so we
+
+167
+00:19:30,500 --> 00:19:37,380
+ can ensure less disruption in the future we need and we encourage any migrations the good thing is that we
+
+168
+00:19:37,380 --> 00:19:42,660
+ don't plan to have more migrations in the future in the near future or now the last one would be a
+
+169
+00:19:42,660 --> 00:19:51,380
+ snowflake um a unification platform but besides that we shouldn't have more migrations that could
+
+170
+00:19:51,380 --> 00:20:00,100
+ generate disruptions so yeah i can i can try to run like a pir back then on on what happened then and
+
+171
+00:20:00,100 --> 00:20:06,660
+ what happened now so that also help us as you said to have like an sop and moving forward
+
+172
+00:20:07,380 --> 00:20:13,460
+ so yeah i think i just our biggest concern is half the time something changes in the background and
+
+173
+00:20:13,460 --> 00:20:20,020
+ then all of a sudden we're finding out about it going oh hey and wait a second so i just want
+
+174
+00:20:20,020 --> 00:20:25,380
+ to make sure that you guys have the tools that you need and you guys do a great job and i must say
+
+175
+00:20:25,380 --> 00:20:31,380
+ we've had a lot of fixes go through really quick which you know is really good because in past they tend to
+
+176
+00:20:31,380 --> 00:20:37,780
+ take a little bit longer so you know kudos to you guys to really driving that and that for helping us
+
+177
+00:20:37,780 --> 00:20:46,340
+ correct those issues quickly so yeah absolutely and the aim is that you don't need you i i mean our aim
+
+178
+00:20:46,340 --> 00:20:51,860
+ is that you don't have to reach out to us because something breaks if something breaks we should be able
+
+179
+00:20:51,860 --> 00:20:58,500
+ to notice it before you notice it and we are in the process to enhancing also our monitoring systems
+
+180
+00:20:58,500 --> 00:21:07,140
+ and our alerts um the thing is that is complicated because as i said before the configuration of each
+
+181
+00:21:07,140 --> 00:21:13,940
+ customer is different even though that we sell the same service yeah because for example as as you
+
+182
+00:21:13,940 --> 00:21:19,700
+ said erica that you need that the report and the receipt do not have blank and if we can remove them
+
+183
+00:21:20,340 --> 00:21:26,900
+ you know like at this kind of requests we have other buddy the backend from other customers um so yeah
+
+184
+00:21:26,900 --> 00:21:33,940
+ we try our best and and i wanted to thank you um as a customer to be attentive patient and also to give
+
+185
+00:21:33,940 --> 00:21:41,060
+ us all the details when when you need help because that help us to to help you quicker and and to have
+
+186
+00:21:41,060 --> 00:21:48,820
+ a resolution yeah yeah which you know we try our best and we're not perfect either but um we try to make sure
+
+187
+00:21:48,820 --> 00:21:56,500
+ that you you have the tools to to fix the issue and and uh we hope we do that well so yeah yeah we really
+
+188
+00:21:56,500 --> 00:22:05,220
+ appreciate it i mean i was reviewing all your backlog in the past 25 days and it's never my team saying
+
+189
+00:22:05,780 --> 00:22:11,780
+ back like hey i need this detail or could you please give me a screenshot because you always open your
+
+190
+00:22:11,780 --> 00:22:18,100
+ ticket with all the details so for us it's time saving uh because we don't rely on waiting for
+
+191
+00:22:18,100 --> 00:22:23,460
+ you to give more updates we can just jump in with the investigation and fix it so thank you very much
+
+192
+00:22:23,460 --> 00:22:30,820
+ we would really appreciate it no problem corey do you have anything to add yeah no i mean i think that
+
+193
+00:22:30,820 --> 00:22:37,620
+ that's just the the biggest takeaway is when we submit tickets i feel like it's pretty speedy response
+
+194
+00:22:37,620 --> 00:22:45,940
+ i've never had a bad experience and with the support end of it um i i just find it a struggle of being
+
+195
+00:22:45,940 --> 00:22:53,060
+ uninformed of hey there might be an issue or even being told hey there won't be an issue and then
+
+196
+00:22:53,060 --> 00:22:58,420
+ all of a sudden i'm spending my entire week putting out fires with my end users um that that's
+
+197
+00:22:58,420 --> 00:23:02,020
+ that's the only information i really have is once the tickets are in it's great it's just
+
+198
+00:23:02,740 --> 00:23:07,380
+ the the the communication line um can sometimes leave leave me a little wanting
+
+199
+00:23:08,260 --> 00:23:12,660
+ and i've brought that up to the team including jr which i think that you guys have met but jr
+
+200
+00:23:12,660 --> 00:23:19,620
+ is camilla's boss he is our vp of global support i believe is his title don't quote me on that okay
+
+201
+00:23:20,580 --> 00:23:26,260
+ um we need to do better about alerting you ahead of time this was a migration that on our side we
+
+202
+00:23:26,260 --> 00:23:32,260
+ really thought would have minimal to no impact and we were we were just wrong on it so we're working to
+
+203
+00:23:32,260 --> 00:23:36,180
+ make sure that we're better and that we've learned from this one we've put in a lot of checks and
+
+204
+00:23:36,180 --> 00:23:41,700
+ balances after this um took place just to ensure that we don't see anything like this in the future
+
+205
+00:23:41,700 --> 00:23:46,820
+ but as camilla mentioned there should be no major there should be no major changes in the near term
+
+206
+00:23:47,380 --> 00:23:52,020
+ um it is worth noting you weren't the only client that if that experienced this impact there were
+
+207
+00:23:52,020 --> 00:23:57,140
+ quite a few across the board so we're working in real time to help across the board and definitely key
+
+208
+00:23:57,140 --> 00:24:05,860
+ learnings for us yeah i have to kind of go along with what corey says on the aspect of communication
+
+209
+00:24:05,860 --> 00:24:09,860
+ because you guys were great up until like we were getting emails saying hey there's a problem with
+
+210
+00:24:09,860 --> 00:24:15,380
+ data we're working on it then all of a sudden it like dropped off face here we're like what's going on
+
+211
+00:24:17,060 --> 00:24:23,140
+ so and i get that i mean when you have a project that big it can kind of something can always fall to
+
+212
+00:24:23,140 --> 00:24:29,220
+ the wayside and it's just we want to make sure we have a open communication or a line of communication
+
+213
+00:24:29,220 --> 00:24:36,580
+ that you guys you know don't be afraid to say hey you know there is a problem this is you know we're
+
+214
+00:24:36,580 --> 00:24:43,140
+ working on it and if you have any feedback let us know right um that kind of thing because uh we work
+
+215
+00:24:43,140 --> 00:24:48,900
+ as a team and even though you're a third party company to us you're a part of our team because
+
+216
+00:24:48,900 --> 00:24:55,300
+ you know we have to measure my co-workers yeah that's basically what we you know you guys are are
+
+217
+00:24:55,300 --> 00:25:01,940
+ great at listening and bringing that information forward when you when you identify it but when it's
+
+218
+00:25:01,940 --> 00:25:08,740
+ when the communication drops off it's almost like we're recycling back to okay what happened can you
+
+219
+00:25:08,740 --> 00:25:16,340
+ restart that communication again and uh move forward again but um other than that like it's been a great
+
+220
+00:25:16,340 --> 00:25:21,940
+ partnership so we appreciate everything that you guys do in the background is it because you guys
+
+221
+00:25:21,940 --> 00:25:26,100
+ have a different perspective and we have a different perspective because we use a day in and day out
+
+222
+00:25:27,140 --> 00:25:30,660
+ on the front facing side of it so our super user literally
+
+223
+00:25:34,020 --> 00:25:39,940
+ as i said i can break things if you want me to i mean who needs regression testing when you've got
+
+224
+00:25:39,940 --> 00:25:44,580
+ erica on a call okay send in erica you'll figure out all the books
+
+225
+00:25:49,060 --> 00:25:52,980
+ i try i just like to you know make sure things are working and that
+
+226
+00:25:52,980 --> 00:25:58,500
+ you know everybody has a good experience as well right so yeah and we appreciate that
+
+227
+00:26:00,500 --> 00:26:08,820
+ or i think go ahead nope you go oh yeah no no i was gonna say i mean um i do think that uh on the
+
+228
+00:26:08,820 --> 00:26:15,780
+ communication side things have been generally better um i feel like we've gotten the emails about hey
+
+229
+00:26:15,780 --> 00:26:23,140
+ there's been a data issue they're more frequently on time timely um i think you know just uh a little
+
+230
+00:26:23,140 --> 00:26:30,100
+ bit ways to go but i think in general you guys do a pretty good job yeah i'd say we have recently
+
+231
+00:26:30,100 --> 00:26:35,140
+ updated all like across our whole support team just we've made a lot of changes recently and i think
+
+232
+00:26:35,140 --> 00:26:40,820
+ that you'll see those changes come to fruition within the next few weeks i think it took some onboarding and
+
+233
+00:26:40,820 --> 00:26:46,420
+ that quite frankly that they onboarded and we did this migration so they were hit with a one-two punch
+
+234
+00:26:46,420 --> 00:26:52,420
+ we're working through all of that and i'm i'm over communicating at this point but all this to say
+
+235
+00:26:52,420 --> 00:27:00,740
+ it will improve yeah makes sense makes sense for sure we have two minute oh minute match should be on
+
+236
+00:27:01,300 --> 00:27:07,380
+ okay i have to go i have to go search for all the the conference rooms and pull them out he's not
+
+237
+00:27:07,380 --> 00:27:13,380
+ interested corey in the interim i did have a question for you around the sbr and i'm also
+
+238
+00:27:13,380 --> 00:27:19,140
+ sending the same question to katie but do you know like what time of day you guys have blocked
+
+239
+00:27:19,140 --> 00:27:29,300
+ for our meeting on the 22nd uh um oh yeah i still i still owe you cit stuff don't i yes please and
+
+240
+00:27:29,300 --> 00:27:35,300
+ also just a timeline we're trying to book travel and um honestly want to take the team out to dinner so
+
+241
+00:27:35,300 --> 00:27:39,220
+ i'm just trying to figure out what time we're starting and ending so that we can figure out flights and
+
+242
+00:27:39,220 --> 00:27:52,100
+ what not let me let me see the 22nd um do i currently there's nothing on my calendar for the 22nd
+
+243
+00:27:52,740 --> 00:27:54,740
+ um so what i'll do is
+
+244
+00:27:57,620 --> 00:28:05,460
+ i know that 80 had checked with and correct me if i'm wrong is it serena who manages your side of the team now
+
+245
+00:28:08,500 --> 00:28:14,420
+ uh yeah serena is now the director but uh denver is still kind of more in the weeds
+
+246
+00:28:15,220 --> 00:28:18,980
+ but i don't know what's serena i don't know exactly what serena's touching when it comes to your
+
+247
+00:28:18,980 --> 00:28:26,260
+ guys visit um so what i do is after the call i'll seek out denver and um i'll see if he has more
+
+248
+00:28:26,260 --> 00:28:33,140
+ or maybe can add me to whatever invites may exist and when i i'll endeavor to send that over to you along
+
+249
+00:28:33,140 --> 00:28:41,060
+ with uh some info about cit um okay if if not end of day today uh end of day tomorrow okay that works
+
+250
+00:28:42,340 --> 00:28:50,260
+ oh that's got a message from that let me see well corey's reviewing that erica um give us some time
+
+251
+00:28:50,260 --> 00:28:57,460
+ to review this ticket i see that it's under engineering review um but i don't have any other details i see it's an
+
+252
+00:28:57,460 --> 00:29:03,220
+ older ticket yeah and it's been open for a little while jim and i had a conversation a few months back
+
+253
+00:29:03,220 --> 00:29:09,780
+ about it um fixing it but um the other thing is too i'm noticing here there's two holder tickets that
+
+254
+00:29:10,660 --> 00:29:17,220
+ brooke created so i'm just wondering if we need to close these or
+
+255
+00:29:19,700 --> 00:29:31,460
+ 17 308. just to clean up
+
+256
+00:29:33,460 --> 00:29:38,420
+ that yeah this one's old at least these 17 308 we're live with the data pipeline
+
+257
+00:29:38,420 --> 00:29:44,420
+ so that one can be shut down or closed six five
+
+258
+00:29:51,700 --> 00:29:58,580
+ uh matt is trying to wrap up his current call uh so he is he is never going to get over here that's fine
+
+259
+00:30:01,700 --> 00:30:14,980
+ um 165 17
+
+260
+00:30:20,100 --> 00:30:22,820
+ that one is an internal ticket actually
+
+261
+00:30:24,660 --> 00:30:29,540
+ i'm surprised i see it then and from 2023 or 2024
+
+262
+00:30:30,580 --> 00:30:32,740
+ that's it before i even started at apres
+
+263
+00:30:36,340 --> 00:30:39,380
+ i believe it's safe to say that this is no longer relevant
+
+264
+00:30:45,460 --> 00:30:47,700
+ anyways might be good to clean up the dashboard
+
+265
+00:30:54,580 --> 00:31:01,380
+ if the cit thing i can definitely get you in a more timely manner uh from what it sounds like with my
+
+266
+00:31:01,380 --> 00:31:08,340
+ conversation at denver just now um it's something that uh me and him are going to sit down and try to
+
+267
+00:31:08,900 --> 00:31:14,820
+ harden out and find out if there's any plans in place already so as soon as i have info i'll send it to you
+
+268
+00:31:15,780 --> 00:31:21,140
+ awesome awesome thank you and if there's no plans in place happy to help plan just keep me posted
+
+269
+00:31:22,020 --> 00:31:27,940
+ yeah yeah i will i'll let you know that brings me to the next question for the roadmap
+
+270
+00:31:28,500 --> 00:31:36,820
+ um what was it oh credit card having the watch list like the x rock is that gonna be generated in the near future or
+
+271
+00:31:38,020 --> 00:31:43,060
+ we have not received a finalized version of our engage roadmap yet i have high level details around
+
+272
+00:31:43,060 --> 00:31:48,020
+ secure but nothing that i can share they're working on it in the last two weeks they had an off-site
+
+273
+00:31:48,020 --> 00:31:53,380
+ and assuming that the earliest i'll have something to share is for sbr in the 22nd so as soon as i have
+
+274
+00:31:53,380 --> 00:31:59,780
+ details i will i will share accordingly and how is the roadmap platform working out for
+
+275
+00:31:59,780 --> 00:32:06,340
+ other retailers like is everybody kind of liking it and being able to vote on things as far as i know
+
+276
+00:32:06,340 --> 00:32:12,180
+ yes our product team reviews it on a weekly basis and they kind of align on what the top level
+
+277
+00:32:12,180 --> 00:32:24,660
+ priorities are i haven't heard any complaints okay and we talked about getting pricing for
+
+278
+00:32:26,260 --> 00:32:32,580
+ oh what was the name of the program for the ai yeah yeah that's that's another thing uh yes
+
+279
+00:32:33,700 --> 00:32:39,220
+ it kind of dropped off from the face of the earth yeah let me ping joe on that i don't know where he
+
+280
+00:32:39,220 --> 00:32:42,340
+ left off um i just don't manage it so let me get there
+
+281
+00:32:45,460 --> 00:32:50,660
+ because i noticed in the release notes for august there was a lot about
+
+282
+00:32:52,820 --> 00:32:58,660
+ sidekick a lot of there's a lot of updates going into sidekick as of late
+
+283
+00:33:00,820 --> 00:33:05,780
+ so we're just wondering if we are going to see a pricing format for it or
+
+284
+00:33:11,700 --> 00:33:14,340
+ i just shot him a message and i will report back
+
+285
+00:33:15,780 --> 00:33:17,060
+ hey look who it is
+
+286
+00:33:18,900 --> 00:33:23,300
+ it's all good turn the mic off i know the echo immediately announced matt in the room
+
+287
+00:33:26,100 --> 00:33:30,180
+ i have my mic on so if you if you join just turn off your mic
+
+288
+00:33:30,180 --> 00:33:34,260
+ yeah i will turn off my michael no problem turn off michael
+
+289
+00:33:36,340 --> 00:33:43,380
+ how's everybody doing today uh how are you doing good thanks or or can they see us on this no
+
+290
+00:33:43,380 --> 00:33:50,420
+ um i don't have my camera on it's it's plugged in whenever my my monitor's smashed gotcha okay all
+
+291
+00:33:50,420 --> 00:33:56,180
+ right um sorry guys uh we were on another appris call val i'm gonna have some updates for you at
+
+292
+00:33:56,180 --> 00:34:04,340
+ the end of this call by the way um we're gonna do a few things um that's fine so uh i don't want to
+
+293
+00:34:04,340 --> 00:34:09,460
+ interrupt anything that's no you're done you can sleep on on so i'll just kind of wait here like
+
+294
+00:34:13,460 --> 00:34:23,700
+ i'm so sorry um all right so appreciate you joining our call today uh camilla um i'm matt i'm one
+
+295
+00:34:23,700 --> 00:34:32,340
+ of the senior analysts on the uh ap um analytics team here uh essentially wanted to talk to you today
+
+296
+00:34:32,340 --> 00:34:37,860
+ about some of the issues that we've been seeing with the data feed um really revolving around how we
+
+297
+00:34:37,860 --> 00:34:44,340
+ report out on potential issues and how you guys perform like the reloads and the reloads of the fields
+
+298
+00:34:44,340 --> 00:34:52,260
+ that we utilize um there has been something happened lately that um essentially i'm seeing an issue like
+
+299
+00:34:52,260 --> 00:35:00,820
+ almost every day now um and the problem is when you guys resolve the issues with reloads of the data
+

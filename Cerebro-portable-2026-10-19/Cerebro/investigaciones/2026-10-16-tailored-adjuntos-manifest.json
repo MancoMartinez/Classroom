@@ -1,0 +1,758 @@
+[
+  {
+    "ticket": "RCS-28256",
+    "id": "1401316",
+    "filename": "image001.png",
+    "size": 63905,
+    "path": "adjuntos/RCS-28256/1401316-image001.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441711",
+    "filename": "image001 (bc6ee0fc-4f1c-48aa-a4aa-d3374e1f21bc).png",
+    "size": 25307,
+    "path": "adjuntos/RCS-28256/1441711-image001__bc6ee0fc-4f1c-48aa-a4aa-d3374e1f21bc_.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401315",
+    "filename": "image002.png",
+    "size": 45570,
+    "path": "adjuntos/RCS-28256/1401315-image002.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441710",
+    "filename": "image002 (127b7256-b276-4ff6-bb5b-93d0f5119114).png",
+    "size": 30710,
+    "path": "adjuntos/RCS-28256/1441710-image002__127b7256-b276-4ff6-bb5b-93d0f5119114_.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401314",
+    "filename": "image003.png",
+    "size": 41316,
+    "path": "adjuntos/RCS-28256/1401314-image003.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406679",
+    "filename": "image-20260803-192847.png",
+    "size": 162267,
+    "path": "adjuntos/RCS-28256/1406679-image-20260803-192847.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401174",
+    "filename": "image-20260810-133829.png",
+    "size": 49435,
+    "path": "adjuntos/RCS-28256/1401174-image-20260810-133829.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401176",
+    "filename": "image-20260810-133921.png",
+    "size": 58388,
+    "path": "adjuntos/RCS-28256/1401176-image-20260810-133921.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401175",
+    "filename": "image-20260810-134143.png",
+    "size": 128881,
+    "path": "adjuntos/RCS-28256/1401175-image-20260810-134143.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401177",
+    "filename": "image-20260810-134314.png",
+    "size": 14976,
+    "path": "adjuntos/RCS-28256/1401177-image-20260810-134314.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401218",
+    "filename": "image-20260810-141854.png",
+    "size": 19401,
+    "path": "adjuntos/RCS-28256/1401218-image-20260810-141854.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401217",
+    "filename": "image-20260810-141921.png",
+    "size": 13886,
+    "path": "adjuntos/RCS-28256/1401217-image-20260810-141921.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401343",
+    "filename": "image-20260810-164245.png",
+    "size": 22884,
+    "path": "adjuntos/RCS-28256/1401343-image-20260810-164245.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401342",
+    "filename": "image-20260810-164336.png",
+    "size": 92794,
+    "path": "adjuntos/RCS-28256/1401342-image-20260810-164336.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1401535",
+    "filename": "image-20260810-203019.png",
+    "size": 135372,
+    "path": "adjuntos/RCS-28256/1401535-image-20260810-203019.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402240",
+    "filename": "image-20260811-153415.png",
+    "size": 12763,
+    "path": "adjuntos/RCS-28256/1402240-image-20260811-153415.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402241",
+    "filename": "image-20260811-185225.png",
+    "size": 5392,
+    "path": "adjuntos/RCS-28256/1402241-image-20260811-185225.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1402239",
+    "filename": "image-20260811-185703.png",
+    "size": 76931,
+    "path": "adjuntos/RCS-28256/1402239-image-20260811-185703.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404486",
+    "filename": "image-20260814-134128.png",
+    "size": 14940,
+    "path": "adjuntos/RCS-28256/1404486-image-20260814-134128.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404599",
+    "filename": "image-20260814-163134.png",
+    "size": 79129,
+    "path": "adjuntos/RCS-28256/1404599-image-20260814-163134.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1404598",
+    "filename": "image-20260814-163158.png",
+    "size": 85124,
+    "path": "adjuntos/RCS-28256/1404598-image-20260814-163158.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406319",
+    "filename": "image-20260818-140934.png",
+    "size": 72166,
+    "path": "adjuntos/RCS-28256/1406319-image-20260818-140934.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406320",
+    "filename": "image-20260818-140955.png",
+    "size": 24032,
+    "path": "adjuntos/RCS-28256/1406320-image-20260818-140955.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406340",
+    "filename": "image-20260818-142306.png",
+    "size": 30772,
+    "path": "adjuntos/RCS-28256/1406340-image-20260818-142306.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406341",
+    "filename": "image-20260818-142730.png",
+    "size": 144629,
+    "path": "adjuntos/RCS-28256/1406341-image-20260818-142730.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1406680",
+    "filename": "image-20260818-182207.png",
+    "size": 71510,
+    "path": "adjuntos/RCS-28256/1406680-image-20260818-182207.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1410337",
+    "filename": "image-20260824-211757.png",
+    "size": 41231,
+    "path": "adjuntos/RCS-28256/1410337-image-20260824-211757.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1410336",
+    "filename": "image-20260824-212609.png",
+    "size": 6077,
+    "path": "adjuntos/RCS-28256/1410336-image-20260824-212609.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418696",
+    "filename": "image-20260908-190622.png",
+    "size": 40943,
+    "path": "adjuntos/RCS-28256/1418696-image-20260908-190622.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418697",
+    "filename": "image-20260908-190702.png",
+    "size": 32576,
+    "path": "adjuntos/RCS-28256/1418697-image-20260908-190702.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1418712",
+    "filename": "image-20260908-191212.png",
+    "size": 41086,
+    "path": "adjuntos/RCS-28256/1418712-image-20260908-191212.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441727",
+    "filename": "image-20260922-211934.png",
+    "size": 20485,
+    "path": "adjuntos/RCS-28256/1441727-image-20260922-211934.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441732",
+    "filename": "image-20260922-212640.png",
+    "size": 115513,
+    "path": "adjuntos/RCS-28256/1441732-image-20260922-212640.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441728",
+    "filename": "image-20260922-213544.png",
+    "size": 87759,
+    "path": "adjuntos/RCS-28256/1441728-image-20260922-213544.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441733",
+    "filename": "image-20260923-110205.png",
+    "size": 149126,
+    "path": "adjuntos/RCS-28256/1441733-image-20260923-110205.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441735",
+    "filename": "image-20260923-111349.png",
+    "size": 189981,
+    "path": "adjuntos/RCS-28256/1441735-image-20260923-111349.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1431162",
+    "filename": "image-20260928-165357.png",
+    "size": 36433,
+    "path": "adjuntos/RCS-28256/1431162-image-20260928-165357.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441734",
+    "filename": "image-20261001-144919.png",
+    "size": 34338,
+    "path": "adjuntos/RCS-28256/1441734-image-20261001-144919.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441726",
+    "filename": "image-20261001-145430.png",
+    "size": 19164,
+    "path": "adjuntos/RCS-28256/1441726-image-20261001-145430.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441730",
+    "filename": "image-20261001-150348.png",
+    "size": 95949,
+    "path": "adjuntos/RCS-28256/1441730-image-20261001-150348.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441737",
+    "filename": "image-20261001-152242.png",
+    "size": 153057,
+    "path": "adjuntos/RCS-28256/1441737-image-20261001-152242.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441729",
+    "filename": "image-20261001-153754.png",
+    "size": 137713,
+    "path": "adjuntos/RCS-28256/1441729-image-20261001-153754.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1439996",
+    "filename": "image-20261012-193511.png",
+    "size": 37135,
+    "path": "adjuntos/RCS-28256/1439996-image-20261012-193511.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440047",
+    "filename": "image-20261012-203545.png",
+    "size": 78316,
+    "path": "adjuntos/RCS-28256/1440047-image-20261012-203545.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440544",
+    "filename": "image-20261013-135030.png",
+    "size": 50110,
+    "path": "adjuntos/RCS-28256/1440544-image-20261013-135030.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1440543",
+    "filename": "image-20261013-135323.png",
+    "size": 54927,
+    "path": "adjuntos/RCS-28256/1440543-image-20261013-135323.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441731",
+    "filename": "image-20261014-154021.png",
+    "size": 93458,
+    "path": "adjuntos/RCS-28256/1441731-image-20261014-154021.png"
+  },
+  {
+    "ticket": "RCS-28256",
+    "id": "1441736",
+    "filename": "image-20261014-160957.png",
+    "size": 47747,
+    "path": "adjuntos/RCS-28256/1441736-image-20261014-160957.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388505",
+    "filename": "image-20260617-141956.png",
+    "size": 79028,
+    "path": "adjuntos/RCS-27578/1388505-image-20260617-141956.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388503",
+    "filename": "image-20260617-201637.png",
+    "size": 88894,
+    "path": "adjuntos/RCS-27578/1388503-image-20260617-201637.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1374290",
+    "filename": "image-20260626-174933.png",
+    "size": 35509,
+    "path": "adjuntos/RCS-27578/1374290-image-20260626-174933.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375205",
+    "filename": "image-20260629-132917.png",
+    "size": 37986,
+    "path": "adjuntos/RCS-27578/1375205-image-20260629-132917.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375209",
+    "filename": "image-20260629-133652.png",
+    "size": 161199,
+    "path": "adjuntos/RCS-27578/1375209-image-20260629-133652.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375826",
+    "filename": "image-20260630-180651.png",
+    "size": 38724,
+    "path": "adjuntos/RCS-27578/1375826-image-20260630-180651.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1375825",
+    "filename": "image-20260630-180704.png",
+    "size": 30758,
+    "path": "adjuntos/RCS-27578/1375825-image-20260630-180704.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378614",
+    "filename": "image-20260706-142909.png",
+    "size": 28216,
+    "path": "adjuntos/RCS-27578/1378614-image-20260706-142909.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378616",
+    "filename": "image-20260706-143108.png",
+    "size": 42882,
+    "path": "adjuntos/RCS-27578/1378616-image-20260706-143108.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378612",
+    "filename": "image-20260706-143135.png",
+    "size": 37843,
+    "path": "adjuntos/RCS-27578/1378612-image-20260706-143135.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378613",
+    "filename": "image-20260706-143155.png",
+    "size": 36844,
+    "path": "adjuntos/RCS-27578/1378613-image-20260706-143155.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1378615",
+    "filename": "image-20260706-143217.png",
+    "size": 120853,
+    "path": "adjuntos/RCS-27578/1378615-image-20260706-143217.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388497",
+    "filename": "image-20260721-202524.png",
+    "size": 92318,
+    "path": "adjuntos/RCS-27578/1388497-image-20260721-202524.png"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388499",
+    "filename": "RE_ Appriss SSO & Incident .msg",
+    "size": 694272,
+    "path": "adjuntos/RCS-27578/1388499-RE__Appriss_SSO___Incident_.msg"
+  },
+  {
+    "ticket": "RCS-27578",
+    "id": "1388501",
+    "filename": "RE_ Appriss SSO & Incident  (41b2a6bb-928a-428c-b99f-81be164ae04d).msg",
+    "size": 1516032,
+    "path": "adjuntos/RCS-27578/1388501-RE__Appriss_SSO___Incident___41b2a6bb-928a-428c-b99f-81be164ae04d_.msg"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1411197",
+    "filename": "image001 (da0a2557-1eca-4220-a157-5ec176c3a2d0).png",
+    "size": 224566,
+    "path": "adjuntos/RCS-27941/1411197-image001__da0a2557-1eca-4220-a157-5ec176c3a2d0_.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414784",
+    "filename": "image002.png",
+    "size": 153399,
+    "path": "adjuntos/RCS-27941/1414784-image002.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414783",
+    "filename": "image003.png",
+    "size": 138865,
+    "path": "adjuntos/RCS-27941/1414783-image003.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389660",
+    "filename": "image-20260722-211547.png",
+    "size": 48179,
+    "path": "adjuntos/RCS-27941/1389660-image-20260722-211547.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389661",
+    "filename": "image-20260722-212051.png",
+    "size": 54736,
+    "path": "adjuntos/RCS-27941/1389661-image-20260722-212051.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389656",
+    "filename": "image-20260722-212119.png",
+    "size": 35560,
+    "path": "adjuntos/RCS-27941/1389656-image-20260722-212119.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389659",
+    "filename": "image-20260722-212147.png",
+    "size": 22431,
+    "path": "adjuntos/RCS-27941/1389659-image-20260722-212147.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389658",
+    "filename": "image-20260722-212224.png",
+    "size": 96539,
+    "path": "adjuntos/RCS-27941/1389658-image-20260722-212224.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389654",
+    "filename": "image-20260722-212252.png",
+    "size": 63184,
+    "path": "adjuntos/RCS-27941/1389654-image-20260722-212252.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389657",
+    "filename": "image-20260722-212324.png",
+    "size": 60804,
+    "path": "adjuntos/RCS-27941/1389657-image-20260722-212324.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1389655",
+    "filename": "image-20260722-212430.png",
+    "size": 47445,
+    "path": "adjuntos/RCS-27941/1389655-image-20260722-212430.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1392616",
+    "filename": "image-20260728-140910.png",
+    "size": 77613,
+    "path": "adjuntos/RCS-27941/1392616-image-20260728-140910.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1403922",
+    "filename": "image-20260813-202708.png",
+    "size": 62298,
+    "path": "adjuntos/RCS-27941/1403922-image-20260813-202708.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1403921",
+    "filename": "image-20260813-202829.png",
+    "size": 31450,
+    "path": "adjuntos/RCS-27941/1403921-image-20260813-202829.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408101",
+    "filename": "image-20260820-162157.png",
+    "size": 93483,
+    "path": "adjuntos/RCS-27941/1408101-image-20260820-162157.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408100",
+    "filename": "image-20260820-162236.png",
+    "size": 77252,
+    "path": "adjuntos/RCS-27941/1408100-image-20260820-162236.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408102",
+    "filename": "image-20260820-163953.png",
+    "size": 81528,
+    "path": "adjuntos/RCS-27941/1408102-image-20260820-163953.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408103",
+    "filename": "image-20260820-164013.png",
+    "size": 42462,
+    "path": "adjuntos/RCS-27941/1408103-image-20260820-164013.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408104",
+    "filename": "image-20260820-164054.png",
+    "size": 41811,
+    "path": "adjuntos/RCS-27941/1408104-image-20260820-164054.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1408105",
+    "filename": "image-20260820-164113.png",
+    "size": 72813,
+    "path": "adjuntos/RCS-27941/1408105-image-20260820-164113.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414961",
+    "filename": "image-20260901-161834.png",
+    "size": 83729,
+    "path": "adjuntos/RCS-27941/1414961-image-20260901-161834.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414958",
+    "filename": "image-20260901-161900.png",
+    "size": 84441,
+    "path": "adjuntos/RCS-27941/1414958-image-20260901-161900.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414960",
+    "filename": "image-20260901-161911.png",
+    "size": 83374,
+    "path": "adjuntos/RCS-27941/1414960-image-20260901-161911.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1414959",
+    "filename": "image-20260901-162059.png",
+    "size": 119915,
+    "path": "adjuntos/RCS-27941/1414959-image-20260901-162059.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1415521",
+    "filename": "image-20260902-142504.png",
+    "size": 137842,
+    "path": "adjuntos/RCS-27941/1415521-image-20260902-142504.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1415520",
+    "filename": "image-20260902-143027.png",
+    "size": 59115,
+    "path": "adjuntos/RCS-27941/1415520-image-20260902-143027.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1418720",
+    "filename": "image-20260908-202446.png",
+    "size": 107585,
+    "path": "adjuntos/RCS-27941/1418720-image-20260908-202446.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1419146",
+    "filename": "image-20260909-141159.png",
+    "size": 105694,
+    "path": "adjuntos/RCS-27941/1419146-image-20260909-141159.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420026",
+    "filename": "image-20260910-151207.png",
+    "size": 36228,
+    "path": "adjuntos/RCS-27941/1420026-image-20260910-151207.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420027",
+    "filename": "image-20260910-151231.png",
+    "size": 72308,
+    "path": "adjuntos/RCS-27941/1420027-image-20260910-151231.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420024",
+    "filename": "image-20260910-151409.png",
+    "size": 25196,
+    "path": "adjuntos/RCS-27941/1420024-image-20260910-151409.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420025",
+    "filename": "image-20260910-151445.png",
+    "size": 24790,
+    "path": "adjuntos/RCS-27941/1420025-image-20260910-151445.png"
+  },
+  {
+    "ticket": "RCS-27941",
+    "id": "1420452",
+    "filename": "image-20260911-000238.png",
+    "size": 136647,
+    "path": "adjuntos/RCS-27941/1420452-image-20260911-000238.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424220",
+    "filename": "image-20260917-144320.png",
+    "size": 47960,
+    "path": "adjuntos/RCS-28973/1424220-image-20260917-144320.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424217",
+    "filename": "image-20260917-144340.png",
+    "size": 45429,
+    "path": "adjuntos/RCS-28973/1424217-image-20260917-144340.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424223",
+    "filename": "image-20260917-144409.png",
+    "size": 47319,
+    "path": "adjuntos/RCS-28973/1424223-image-20260917-144409.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424221",
+    "filename": "image-20260917-144427.png",
+    "size": 43431,
+    "path": "adjuntos/RCS-28973/1424221-image-20260917-144427.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424218",
+    "filename": "image-20260917-144520.png",
+    "size": 46706,
+    "path": "adjuntos/RCS-28973/1424218-image-20260917-144520.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424219",
+    "filename": "image-20260917-144537.png",
+    "size": 43668,
+    "path": "adjuntos/RCS-28973/1424219-image-20260917-144537.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424224",
+    "filename": "image-20260917-144558.png",
+    "size": 46729,
+    "path": "adjuntos/RCS-28973/1424224-image-20260917-144558.png"
+  },
+  {
+    "ticket": "RCS-28973",
+    "id": "1424222",
+    "filename": "image-20260917-144618.png",
+    "size": 42637,
+    "path": "adjuntos/RCS-28973/1424222-image-20260917-144618.png"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1426964",
+    "filename": "image-20260921-175822.png",
+    "size": 159652,
+    "path": "adjuntos/RCS-29027/1426964-image-20260921-175822.png"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1426963",
+    "filename": "image-20260921-175903.png",
+    "size": 128804,
+    "path": "adjuntos/RCS-29027/1426963-image-20260921-175903.png"
+  },
+  {
+    "ticket": "RCS-29027",
+    "id": "1428810",
+    "filename": "image-20260924-083142.png",
+    "size": 118368,
+    "path": "adjuntos/RCS-29027/1428810-image-20260924-083142.png"
+  },
+  {
+    "ticket": "RCS-28157",
+    "id": "1398927",
+    "filename": "image-20260806-113947.png",
+    "size": 182609,
+    "path": "adjuntos/RCS-28157/1398927-image-20260806-113947.png"
+  }
+]

@@ -1,0 +1,55 @@
+# Adjunto image-20260820-162157.png
+Ruta: adjuntos/RCS-27941/image-20260820-162157.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Hi Colton,
+See attached error message when I search "Peters", also I was delayed responding to this message due to the delay in accessing the Appriss platform
+Thank you for continuing to resolve this issue.
+* Load View
+a Save View Select Fields
+• Search
+E- Export -
+• Clear Fields
+Search For Incident
+General Filters
+Search On
+Suspect
+First Name
+Account Number
+Address
+Zip
+Details
+Date Filters
+People Filters
+Note Text Filters
+Employee ID
+Phone No
+Position
+City
+First Name Alias
+Vehicle Filters
+Last Name
+Peters
+Identification No
+Employee Department
+State
+Last Name Alias
+LPMS Default Case View
+View
+Edit View Email Attach |
+Journal Last Name
+First Name
+Incident
+Date /
+Time
+Incident Type
+No data to display
+Case Status
+Case No
+Store
+No
+Total
+Stolen

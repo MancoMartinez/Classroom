@@ -1,0 +1,55 @@
+# RCS-28223, que muestra cada archivo
+
+## McDonald's Manager and Crew Cash Audit.pdf
+Subido por Hugo Cortez el 13 ago 2026 21:56 ET. Hecho en PowerPoint, dos paginas, sin capa de
+texto. Son dos capturas de pantalla del navegador de Hugo, tomadas a las 6:38 PM y 6:40 PM PT del
+13 ago. Hugo ya habia recuperado el acceso cuando las tomo. El Session Error del mismo dia fue a
+las 12:49 PM.
+
+Ambas paginas comparten el panel Audit Information de la izquierda:
+Audit Name Restaurant Cash Audit. Audit Date 8/6/2026 11:55 AM. Audit Number 959-30133.
+Ntnl Store No 959 CULVER CITY, CA. Status In Progress. Assigned To, Owner y Created By Hugo Cortez.
+Due Date y Audit Completion Date vacios.
+
+### Pagina 1, seccion Manager Week 1
+URL visible en la barra:
+https://apps.apprissretail.com/mcdonalds/nettrack/Audit/screens/incident/402/audit/screens/AuditSection_V24_S4.aspx?AuditMas...
+
+Pregunta 1: "Is current week's restaurant cash at or below .05%?". Trae control Response tipo
+desplegable, vacio, "(0 of 0 pts)", y un campo Comments que si acepta texto. Hugo escribio ahi:
+"TEST. For questions #2, #4 & #6, managers were able to input their results in the comments section
+and add names."
+
+Pregunta 2: "Are there any managers who are at +/- $2 threshold as per Cash Management Policy?
+If so, identify the top two (2) managers, dollar amount and what action was taken."
+Response dice "Yes", "(0 of 0 pts) (Failed)". Debajo renderiza una tabla de nueve columnas:
+Employee Name, Coaching, 1st Verbal, 2nd Verbal, 1st Written, 2nd Written, First and Final,
+Termination, Comments. Dos filas. Todas las celdas vacias, sin control de entrada visible.
+
+Pregunta 3 asoma al pie: "Are T-Red AFTER at or below .90% for the current week?" con su Response.
+
+### Pagina 2, seccion Crew Week 1
+URL visible:
+https://apps.apprissretail.com/mcdonalds/nettrack/Audit/screens/incident/402/audit/screens/AuditSection_V24_S9.aspx?AuditMas...
+
+Pregunta 1: "Are any crew members above cash +/- $2 for the week?". Response desplegable vacio,
+"(0 of 0 pts)". Comments con texto de Hugo: "The same goes for questions #2, #4, #5, #7 & #8".
+
+Pregunta 2: "If so, identify the top two (2) crew members, dollar amount, and what action was
+taken." No trae control Response ni puntaje, solo el icono de ayuda y el clip de adjunto. Renderiza
+la misma tabla de nueve columnas con dos filas vacias, identica a la de Manager.
+
+Pregunta 3 asoma al pie: "Are any crew members at or above .90% for T-Red?" con su Response.
+
+## image001.png
+1.4 KB. Firma de correo de Hugo Cortez, sin valor tecnico.
+
+## image001 (e2b8fae3...).png
+Captura del Session Error del 13 ago 12:49 PM. URL
+https://apps.apprissretail.com/mcdonalds/nettrack/?id=L
+Texto: "Session Error. Your Incident session could not be established. This is usually caused by a
+temporary account configuration issue. Please return to the Secure portal and sign in again."
+Corresponde al problema de login, que se separo a RCS-28486. No es evidencia del defecto de audit.
+
+## image-20260819-201232.png
+Subido por Automation for Jira el 19 ago. Mismo Session Error.

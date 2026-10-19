@@ -1,0 +1,16 @@
+# Adjunto 2026-09-01-ericka-wi-248159-events-error.png
+Ruta: adjuntos/RCS-28671/2026-09-01-ericka-wi-248159-events-error.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Y Filter
+selected
+Error Information
+Something went wrong while trying to get the information you requested.
+Something went wrong while trying to get the information you requested.
+Your tracking code for the error:
+774fbb98-fc34-4cd0-8ee8-538f85d2967d
+4 Pinned (0/4)
+OK

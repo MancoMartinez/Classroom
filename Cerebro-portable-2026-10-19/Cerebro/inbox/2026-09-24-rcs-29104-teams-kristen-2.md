@@ -1,0 +1,1 @@
+Thanks Kristen. If it helps their IT, a good sample is store CHA266, ticket 533653 on 9/17. It should carry a Visa tender for 450.47, and it never reached us. The question for them is whether the files they send us still include tender records since early May.

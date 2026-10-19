@@ -1,0 +1,1 @@
+Thank you so much, Carl, that was quick! Yes, I will go back to the customer. Before I do, I would like to confirm the work items for the 24 Aug to 27 Sep period show up. Will the generator pick up that period on its own now, or does it need a rerun on your side? And would you mind sharing what you changed, so I can note it on the ticket? Thanks again!

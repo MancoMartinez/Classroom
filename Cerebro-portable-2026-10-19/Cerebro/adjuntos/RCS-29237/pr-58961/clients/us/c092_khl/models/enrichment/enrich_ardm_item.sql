@@ -1,0 +1,303 @@
+{{ client_mapping_config(layer='enrichment') }}
+
+/*
+    Enrichment ardm_item for c092_khl (Kohl's) — V2 format.
+    Mirrors the post-INSERT UPDATE logic of pyardm ARDM_2_Item.sql + cross-table fixes
+    that pyardm runs after the main INSERT (lines 720-979).
+
+    Per-row UPDATEs applied here:
+      1. linediscountamount = - SUM(itemdiscount.amount) per (TID, recordseqno)
+      2. priceadjflg = TRUE when same-article paired-sign match exists in TID
+      3. saleflg/returnflg swap for header.transactiontype=16 + amountcharged<0
+      4. receiptedflg=TRUE for ecom returns (ecomflg=1 AND returnflg=1)
+      5. ecomflg=TRUE when header.linkno IS NOT NULL (all items in TID get flag)
+      6. isfirstscanneditemflg / islastscanneditemflg = min/max recordseqno per TID where entrymode=1
+      7. origtransactionid resolved via ardm_lookback('ardm_header') from (origstoreno/posno/ticketno/origtradingday)
+      8. iteminorigreceiptflg = TRUE when same articleid exists in orig transaction (cross-batch).
+      9. x_origorderno = orig header.linkno when current store NOT ecom + item has returnflg=TRUE
+         (pyardm ARDM_9:386-413, BORIS overlay; mirrors the recalled-side x_origorderno).
+*/
+
+WITH items AS (
+    SELECT * FROM {{ mapping_base('ardm_item') }}
+),
+header AS (
+    SELECT transactionid, transactiontype, stdtransactiontype, linkno
+    FROM {{ mapping_base('ardm_header') }}
+),
+itemdisc_sums AS (
+    -- pyardm ARDM_2_ItemDiscount.sql:543-551 — linediscountamount = SUM(-amount)
+    SELECT transactionid, itemrecordseqno AS recordseqno,
+           SUM(-amount)::NUMBER(38,6) AS linediscountamount_sum
+    FROM {{ mapping_base('ardm_itemdiscount') }}
+    GROUP BY transactionid, itemrecordseqno
+),
+paired_sign_articles AS (
+    -- pyardm ARDM_2_Item.sql:728-742 — paired-sign self-join: same TID, same articleid,
+    -- different recordseqno, opposite-sign amounts where abs(neg) > abs(pos) OR abs(pos) < abs(neg)
+    -- AND both rows have cancelflg=FALSE AND voidedflg=FALSE.
+    SELECT DISTINCT a.transactionid, a.recordseqno
+    FROM items a
+    JOIN items b
+      ON a.transactionid = b.transactionid
+     AND a.articleid = b.articleid
+     AND a.recordseqno <> b.recordseqno
+     AND a.cancelflg = FALSE
+     AND b.cancelflg = FALSE
+     AND a.voidedflg = FALSE
+     AND b.voidedflg = FALSE
+     AND ((a.amountcharged < 0 AND b.amountcharged > 0 AND ABS(a.amountcharged) > ABS(b.amountcharged))
+          OR (a.amountcharged > 0 AND b.amountcharged < 0 AND ABS(a.amountcharged) < ABS(b.amountcharged)))
+),
+firstlast_scanned AS (
+    -- pyardm ARDM_2_Item.sql:962-979 — min/max recordseqno per TID where entrymode=1
+    SELECT transactionid,
+           MIN(recordseqno) AS min_seq,
+           MAX(recordseqno) AS max_seq
+    FROM items
+    WHERE entrymode = 1
+    GROUP BY transactionid
+),
+recalled_natural_keys AS (
+    -- Get recalled transactions with natural orig keys from the current run.
+    -- The MAP layer always emits null::INT for origtransactionid (it cannot do
+    -- cross-batch resolution), so we resolve directly via ardm_lookback('ardm_header')
+    -- below rather than depending on mapping_base to carry a resolved TID.
+    SELECT DISTINCT
+        r.transactionid,
+        r.origstoreno,
+        r.origposno,
+        r.origticketno,
+        r.origtradingday
+    FROM {{ mapping_base('ardm_recalledtransaction') }} r
+    WHERE r.recalltype = 1
+      AND r.origstoreno IS NOT NULL
+      AND COALESCE(r.origticketno, 0) != 0
+),
+affected_orig_item_keys AS (
+    SELECT DISTINCT origstoreno, origposno, origticketno, origtradingday
+    FROM recalled_natural_keys
+),
+orig_header_for_item AS (
+    -- Direct header lookup — mirrors enrich_ardm_recalledtransaction's approach.
+    -- max_months=14 covers origs back to ~May 2025 (ARDM_HEADER floor 2024-05-10).
+    SELECT
+        h.transactionid AS origtransactionid,
+        h.storeno, h.posno, h.ticketno, h.tradingday
+    FROM {{ ardm_lookback('ardm_header', max_months=14) }} h
+    WHERE EXISTS (
+        SELECT 1 FROM affected_orig_item_keys k
+        WHERE k.origstoreno   = h.storeno
+          AND k.origposno     = h.posno
+          AND k.origticketno  = h.ticketno
+          AND k.origtradingday = h.tradingday
+    )
+    QUALIFY ROW_NUMBER() OVER (
+        PARTITION BY h.storeno, h.posno, h.ticketno, h.tradingday
+        ORDER BY h.endtransdatetime DESC NULLS LAST
+    ) = 1
+),
+recall_orig AS (
+    -- pyardm ARDM_5_RecalledTransaction.sql:426-436 — set ardm_item.origtransactionid
+    -- from recalledtransaction natural keys resolved to orig header TID.
+    SELECT
+        rk.transactionid,
+        rk.origstoreno,
+        rk.origposno,
+        rk.origticketno,
+        rk.origtradingday,
+        oh.origtransactionid
+    FROM recalled_natural_keys rk
+    INNER JOIN orig_header_for_item oh
+        ON oh.storeno    = rk.origstoreno
+        AND oh.posno     = rk.origposno
+        AND oh.ticketno  = rk.origticketno
+        AND oh.tradingday = rk.origtradingday
+),
+txn_single_orig AS (
+    -- A return transaction whose recalltype=1 recalls resolve to exactly ONE orig
+    -- transaction. For these, the orig key is unambiguous at the transaction level —
+    -- mirroring pyardm, which stamps every return item's OrigStoreNo from a single
+    -- transaction-level original key (ns0_originaltransactionkey via i2 in ARDM_2),
+    -- not from a per-item field. Used to flag return items that carry no item-level
+    -- orig key (origstoreno IS NULL) — ~87% of recalltype=1 txns.
+    SELECT transactionid,
+           MAX(origtransactionid) AS origtransactionid,
+           MAX(origstoreno)       AS origstoreno,
+           MAX(origposno)         AS origposno,
+           MAX(origticketno)      AS origticketno,
+           MAX(origtradingday)    AS origtradingday
+    FROM recall_orig
+    GROUP BY transactionid
+    HAVING COUNT(DISTINCT origtransactionid) = 1
+),
+orig_article_match AS (
+    -- pyardm ARDM_9_FastFact_custom.sql:142-165 — iteminorigreceiptflg = TRUE when
+    -- same articleid exists in the originating transaction (cross-batch).
+    -- Branch 1: items that carry item-level orig keys → match recall by those keys.
+    SELECT DISTINCT
+        cur.transactionid,
+        cur.recordseqno
+    FROM items cur
+    JOIN recall_orig rc
+      ON rc.transactionid = cur.transactionid
+     AND rc.origstoreno = cur.origstoreno
+     AND rc.origposno = cur.origposno
+     AND rc.origticketno = cur.origticketno
+     AND rc.origtradingday = cur.origtradingday
+    JOIN {{ ardm_lookback('ardm_item', max_months=14) }} orig
+      ON orig.transactionid = rc.origtransactionid
+     AND orig.articleid = cur.articleid
+    UNION
+    -- Branch 2: return items with NO item-level orig key (origstoreno IS NULL) in a
+    -- single-orig recall transaction. Pyardm assigns the txn-level orig key to every
+    -- such item, then flags on article match. Restricted to single-orig txns so the
+    -- orig is unambiguous — multi-orig txns (~13%) are left unflagged rather than
+    -- risk binding an item to the wrong original (would over-set vs pyardm).
+    SELECT DISTINCT
+        cur.transactionid,
+        cur.recordseqno
+    FROM items cur
+    JOIN txn_single_orig tso
+      ON tso.transactionid = cur.transactionid
+    JOIN {{ ardm_lookback('ardm_item', max_months=14) }} orig
+      ON orig.transactionid = tso.origtransactionid
+     AND orig.articleid = cur.articleid
+    -- Return items only: pyardm stamps the orig key (and thus the flag) on return
+    -- items, never on sale lines. Without this, a sale line whose article happens to
+    -- also appear in the orig transaction would be flagged (over-set vs pyardm).
+    WHERE cur.origstoreno IS NULL AND cur.returnflg
+),
+
+-- pyardm ARDM_9_FastFact_custom.sql:386-413 — BORIS x_origorderno overlay on item.
+-- Set from orig header linkno where current store is NOT an ecom store AND item.returnflg=TRUE.
+-- depends_on: {{ ref('reference_location') }}
+ecom_stores AS (
+    SELECT DISTINCT locationid
+    FROM {{ source('prod', 'reference_location') }}
+    WHERE coalesce(locationhierarchy3description, '') ILIKE '%ecom%'
+),
+
+orig_keys_for_item AS (
+    -- Affected origtransactionids derived from current-batch recalledtransaction (RecallType=1
+    -- propagates orig* into items per recall_orig above). Bound the lookback scope.
+    SELECT DISTINCT rc.origtransactionid
+    FROM recall_orig rc
+    WHERE rc.origtransactionid IS NOT NULL
+),
+
+orig_header_linkno AS (
+    SELECT
+        h.transactionid AS origtransactionid,
+        h.linkno        AS orig_linkno
+    FROM {{ ardm_lookback('ardm_header', max_months=14) }} h
+    WHERE EXISTS (
+        SELECT 1 FROM orig_keys_for_item k
+        WHERE k.origtransactionid = h.transactionid
+    )
+    QUALIFY ROW_NUMBER() OVER (
+        PARTITION BY h.transactionid
+        ORDER BY h.endtransdatetime DESC NULLS LAST
+    ) = 1
+)
+
+SELECT
+    items.* EXCLUDE (linediscountamount, priceadjflg, saleflg, returnflg, ecomflg,
+                     receiptedflg, isfirstscanneditemflg, islastscanneditemflg,
+                     origstoreno, origposno, origticketno, origtradingday,
+                     origtransactionid, iteminorigreceiptflg, x_origorderno),
+
+    -- linediscountamount overlay from itemdiscount sum
+    COALESCE(id.linediscountamount_sum, items.linediscountamount, 0)::NUMBER(38,6)               AS linediscountamount,
+
+    -- priceadjflg overlay from paired-sign match
+    (CASE WHEN psa.transactionid IS NOT NULL THEN TRUE ELSE items.priceadjflg END)::BOOLEAN      AS priceadjflg,
+
+    -- saleflg / returnflg swap for transactiontype=16 (post-void) + amountcharged<0
+    (CASE
+        WHEN h.transactiontype = 16 AND items.voidedflg = FALSE AND items.cancelflg = FALSE
+             AND items.saleflg = TRUE AND items.amountcharged < 0 THEN FALSE
+        ELSE items.saleflg
+     END)::BOOLEAN                                                                                AS saleflg,
+    (CASE
+        WHEN h.transactiontype = 16 AND items.voidedflg = FALSE AND items.cancelflg = FALSE
+             AND items.saleflg = TRUE AND items.amountcharged < 0 THEN TRUE
+        ELSE items.returnflg
+     END)::BOOLEAN                                                                                AS returnflg,
+
+    -- ecomflg propagation: TRUE when header.linkno IS NOT NULL (RCS-20796)
+    (CASE
+        WHEN h.linkno IS NOT NULL THEN TRUE
+        ELSE items.ecomflg
+     END)::BOOLEAN                                                                                AS ecomflg,
+
+    -- receiptedflg=TRUE for ecom returns
+    (CASE
+        WHEN (h.linkno IS NOT NULL OR items.ecomflg = TRUE)
+             AND (CASE
+                    WHEN h.transactiontype = 16 AND items.voidedflg = FALSE AND items.cancelflg = FALSE
+                         AND items.saleflg = TRUE AND items.amountcharged < 0 THEN TRUE
+                    ELSE items.returnflg
+                  END) = TRUE THEN TRUE
+        ELSE items.receiptedflg
+     END)::BOOLEAN                                                                                AS receiptedflg,
+
+    -- isfirstscanneditemflg / islastscanneditemflg from min/max recordseqno per TID
+    (CASE WHEN fl.min_seq = items.recordseqno THEN TRUE ELSE FALSE END)::BOOLEAN                  AS isfirstscanneditemflg,
+    (CASE WHEN fl.max_seq = items.recordseqno THEN TRUE ELSE FALSE END)::BOOLEAN                  AS islastscanneditemflg,
+
+    -- orig* keys: use the item's own keys when present, else the txn-level single-orig
+    -- recall key (pyardm ARDM_2 i2 + ARDM_5: every return item gets one txn-level orig key).
+    -- Gated to return items in single-orig txns; multi-orig left NULL (can't disambiguate).
+    (CASE WHEN items.origstoreno IS NOT NULL THEN items.origstoreno
+          WHEN items.returnflg THEN tso2.origstoreno END)::INT                                     AS origstoreno,
+    (CASE WHEN items.origstoreno IS NOT NULL THEN items.origposno
+          WHEN items.returnflg THEN tso2.origposno END)::INT                                       AS origposno,
+    (CASE WHEN items.origstoreno IS NOT NULL THEN items.origticketno
+          WHEN items.returnflg THEN tso2.origticketno END)::INT                                    AS origticketno,
+    (CASE WHEN items.origstoreno IS NOT NULL THEN items.origtradingday
+          WHEN items.returnflg THEN tso2.origtradingday END)::DATE                                 AS origtradingday,
+    (CASE WHEN items.origstoreno IS NOT NULL THEN rc.origtransactionid
+          WHEN items.returnflg THEN tso2.origtransactionid END)::INT                               AS origtransactionid,
+
+    -- iteminorigreceiptflg = TRUE when articleid match in orig transaction items
+    (CASE WHEN oam.transactionid IS NOT NULL THEN TRUE ELSE FALSE END)::BOOLEAN                   AS iteminorigreceiptflg,
+
+    -- x_origorderno: pyardm ARDM_9:386-413 BORIS overlay.
+    -- Set from orig header.linkno when:
+    --   (a) current store is NOT an ecom store (reference_location.locationhierarchy3description ILIKE '%ecom%')
+    --   (b) item has returnflg=TRUE (post-swap)
+    --   (c) orig header resolved via origtransactionid lookback
+    (CASE
+        WHEN items.storeno NOT IN (SELECT locationid FROM ecom_stores)
+             AND (CASE
+                    WHEN h.transactiontype = 16 AND items.voidedflg = FALSE AND items.cancelflg = FALSE
+                         AND items.saleflg = TRUE AND items.amountcharged < 0 THEN TRUE
+                    ELSE items.returnflg
+                  END) = TRUE
+        THEN ohl.orig_linkno::VARCHAR
+        ELSE items.x_origorderno
+     END)::VARCHAR                                                                                AS x_origorderno
+
+FROM items
+LEFT JOIN itemdisc_sums id
+       ON id.transactionid = items.transactionid AND id.recordseqno = items.recordseqno
+LEFT JOIN paired_sign_articles psa
+       ON psa.transactionid = items.transactionid AND psa.recordseqno = items.recordseqno
+LEFT JOIN header h
+       ON h.transactionid = items.transactionid
+LEFT JOIN firstlast_scanned fl
+       ON fl.transactionid = items.transactionid
+LEFT JOIN recall_orig rc
+       ON rc.transactionid = items.transactionid
+      AND rc.origstoreno = items.origstoreno
+      AND rc.origposno = items.origposno
+      AND rc.origticketno = items.origticketno
+      AND rc.origtradingday = items.origtradingday
+LEFT JOIN orig_article_match oam
+       ON oam.transactionid = items.transactionid AND oam.recordseqno = items.recordseqno
+LEFT JOIN txn_single_orig tso2
+       ON tso2.transactionid = items.transactionid
+LEFT JOIN orig_header_linkno ohl
+       ON ohl.origtransactionid = COALESCE(rc.origtransactionid,
+              CASE WHEN items.returnflg THEN tso2.origtransactionid END)

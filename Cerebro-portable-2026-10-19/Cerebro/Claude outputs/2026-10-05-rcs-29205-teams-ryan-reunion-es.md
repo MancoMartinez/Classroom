@@ -1,0 +1,1 @@
+¡No te preocupes, Ryan, tiene todo el sentido! Uso el Scheduling Assistant de Outlook y te mando la invitación dentro de tu horario. Pienso invitar al equipo de soporte para que todos aprendan el flujo. ¿Hay alguien más que quieras que incluya, de Delivery o del equipo de SnowTime? ¡Gracias de nuevo por organizar esto!

@@ -1,0 +1,97 @@
+{
+  "descripcion": "Etiquetas de referencia para el clasificador de urgencia de bin/cola.py. Se fijaron el 24 ago 2026, se refrescaron el 3 sep y el 8 sep 2026 leyendo el ultimo comentario publico, no bot y no interno, de los 17 tickets abiertos de Juan ese dia, uno por uno contra el volcado crudo de Jira. Cualquier cambio al lexico se mide contra esto antes de darlo por bueno. Este set caduca solo: a medida que pasan los dias los tickets reciben comentarios nuevos y las etiquetas dejan de reflejar el ultimo movimiento real. Corre bin/refrescar_eval.py antes de creerle a una caida de exactitud. Si un ticket tiene comentarios posteriores a la fecha de 'fijado', su etiqueta no es evidencia contra el codigo.",
+  "fijado": "2026-10-01T10:28:28-04:00",
+  "niveles": {
+    "1": "TE TOCA RESPONDER, el ultimo humano de cara al cliente fue el cliente",
+    "2": "PROMESA SIN CUMPLIR, Appriss prometio un update que no llego",
+    "3": "ESPERANDO AL CLIENTE, Appriss pidio algo y no contestan",
+    "4": "EN MOVIMIENTO INTERNO, nada pendiente de cara al cliente"
+  },
+  "casos": [
+    {
+      "ticket": "RCS-27941",
+      "nivel": 3,
+      "evidencia": "10 sep: Juan ajusto el permiso de Beverly y pide a Colton que verifique de nuevo. Pelota del cliente"
+    },
+    {
+      "ticket": "RCS-28294",
+      "nivel": 2,
+      "evidencia": "28 sep: sigue sin respuesta de Tatiana desde la promesa de Juan del 24 sep sobre el fix permanente de ingenieria. Promesa sin cumplir sigue en pie, nivel 2 real, ya son 4 dias. El clasificador dio nivel 4 esta corrida, revisar el lexico de promesas viejas en bin/cola.py"
+    },
+    {
+      "ticket": "RCS-28753",
+      "nivel": 3,
+      "evidencia": "14 sep: Damir dice que por ahora pueden cerrar y que el escribe si sale algo mas. Pelota del cliente. Fix de apostrofe curvo del 14 sep hizo visible el cierre"
+    },
+    {
+      "ticket": "RCS-27676",
+      "nivel": 3,
+      "evidencia": "Juan: the public IP addresses we need to whitelist, pide confirmacion de Azure"
+    },
+    {
+      "ticket": "RCS-27959",
+      "nivel": 3,
+      "evidencia": "Juan: could you run your tests and confirm"
+    },
+    {
+      "ticket": "RCS-28122",
+      "nivel": 3,
+      "evidencia": "Juan: could you confirm whether the issue has been fully resolved"
+    },
+    {
+      "ticket": "RCS-28282",
+      "nivel": 3,
+      "evidencia": "Juan: we need the list of countries, once you send that we will apply it"
+    },
+    {
+      "ticket": "RCS-28289",
+      "nivel": 1,
+      "evidencia": "23 sep: Joe Austin, cliente, confirmo que ya se corrigio del lado de ellos. Ultimo humano de cara al cliente fue el cliente, nivel 1 real, etiqueta anterior vencida"
+    },
+    {
+      "ticket": "RCS-28496",
+      "nivel": 3,
+      "evidencia": "Juan: I'll wait for the response to the comment my colleague Rajith requested"
+    },
+    {
+      "ticket": "RCS-28099",
+      "nivel": 3,
+      "evidencia": "24 sep: Juan pregunto a James McKenna si avanzo combinando los seis lotes de datos y si puede confirmar fecha o cerrar el ticket. Sin respuesta del cliente desde entonces, pelota del cliente, nivel 3 real. Etiqueta anterior citaba a David Vargas, no aparece en el volcado actual, vencida"
+    },
+    {
+      "ticket": "RCS-28153",
+      "nivel": 4,
+      "evidencia": "bitacora 27 ago posterior al ultimo comentario, fix liberado en ENG-7184, falta pegar"
+    },
+    {
+      "ticket": "RCS-28327",
+      "nivel": 4,
+      "evidencia": "Juan: investigation is active, no voy a dar fecha hasta confirmar la causa, sin promesa de fecha"
+    },
+    {
+      "ticket": "RCS-28581",
+      "nivel": 4,
+      "evidencia": "bitacora 31 ago posterior al ultimo comentario, investigacion arrancada sobre DO-9495"
+    },
+    {
+      "ticket": "RCS-27765",
+      "nivel": 3,
+      "evidencia": "24 sep: Juan pregunto a Heaven Poirot si el equipo de Matthew ya termino de revisar el formato del archivo de la tienda 358. Sin respuesta del cliente desde entonces, pelota del cliente, nivel 3 real. El override de bitacora del 14 sep quedo superado por esta pregunta mas nueva"
+    },
+    {
+      "ticket": "RCS-27791",
+      "nivel": 4,
+      "evidencia": "Juan: wanted to confirm that everything is working on your end, tono de cierre no de pedido explicito"
+    },
+    {
+      "ticket": "RCS-28671",
+      "nivel": 2,
+      "evidencia": "30 sep: tras regenerar y verificar los work items el 29 sep, Ericka Smith reporto un problema nuevo de carga lenta y pantalla en blanco con el WI 253175. Sanath Acharya respondio con acuse generico de Appriss Retail Support, sin dato real. Promesa de respuesta sin cumplir, nivel 2 real. Etiqueta anterior del 29 sep quedo vencida por el cierre del trabajo y el reclamo nuevo del 30"
+    },
+    {
+      "ticket": "RCS-28756",
+      "nivel": 4,
+      "evidencia": "24 sep: Ganesh Nayak, Delivery interno, pregunto por update. Sigue sin nada pendiente de cara al cliente externo, nivel 4 se mantiene, alerta de mencion directa visible aparte"
+    }
+  ]
+}

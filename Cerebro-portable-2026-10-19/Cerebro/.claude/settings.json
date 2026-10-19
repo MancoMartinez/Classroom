@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(bin/guardar:*)",
+      "Bash(./bin/guardar:*)",
+      "Bash(python3 bin/guardar.py:*)",
+      "Bash(python3 bin/ingerir_inbox.py:*)",
+      "Bash(python bin/ingerir_inbox.py:*)",
+      "Bash(cerrar:*)",
+      "Bash(ingerir-aplicar:*)",
+      "mcp__Atlassian_Rovo__addCommentToJiraIssue",
+      "mcp__Atlassian_Rovo__transitionJiraIssue",
+      "mcp__Atlassian_Rovo__editJiraIssue",
+      "mcp__Atlassian_Rovo__createJiraIssue",
+      "mcp__Atlassian_Rovo__addWorklogToJiraIssue",
+      "mcp__Atlassian_Rovo__createIssueLink",
+      "mcp__Atlassian_Rovo-d847c6c2__addCommentToJiraIssue",
+      "mcp__Atlassian_Rovo-d847c6c2__transitionJiraIssue",
+      "mcp__Atlassian_Rovo-d847c6c2__editJiraIssue",
+      "mcp__Atlassian_Rovo-d847c6c2__createJiraIssue",
+      "mcp__Atlassian_Rovo-d847c6c2__addWorklogToJiraIssue",
+      "mcp__Atlassian_Rovo-d847c6c2__createIssueLink"
+    ]
+  }
+}

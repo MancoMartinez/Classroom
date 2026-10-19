@@ -1,0 +1,1 @@
+Hi Przemysław, I checked with Ryan and Peyman about the GPC reload since 5/4. Ryan thinks you know GPC best, and Peyman offered to work on it together with us. Do you think you might have time to help with the reload? No pressure at all, just let me know what works for you.

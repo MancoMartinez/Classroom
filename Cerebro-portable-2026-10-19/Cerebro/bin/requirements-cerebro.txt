@@ -1,0 +1,6 @@
+sentence-transformers==6.1.0
+numpy==2.5.3
+mcp==1.27.1
+# Solo para bin/entrenar_embeddings.py, cuando haya datos suficientes:
+# datasets accelerate
+pypdf  # extracción de texto de PDF en bin/adjuntos.py

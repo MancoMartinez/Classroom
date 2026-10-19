@@ -1,0 +1,5 @@
+Hi Anushka, thanks for getting PR 58962 merged, I can see the C166_SBX deploy went through this morning. I ran a quick check on my side and wanted to share what I am seeing, in case I am reading it wrong.
+
+REFERENCE_PARTNEROWNEDTENDERTOKEN does not show up in ARDM_PRODUCTION.C166_SBX yet. Refunds with x_partnerownedtoken = TRUE are still 0 for every week from 24 Aug through the week of 12 Oct, against roughly 1,000 a week before the cutover.
+
+I am guessing this is just because the seed, the tender rebuild and the paid in and paid out reload have not run yet. Could you let me know when the operator has had a chance to run them? I will rerun the checks and the 24 Aug to 27 Sep work items on my side right after. Thank you!

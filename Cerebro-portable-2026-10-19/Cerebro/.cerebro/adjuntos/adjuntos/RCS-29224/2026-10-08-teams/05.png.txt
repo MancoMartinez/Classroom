@@ -1,0 +1,60 @@
+# Adjunto 05.png
+Ruta: adjuntos/RCS-29224/2026-10-08-teams/05.png
+Tipo: png
+Ticket: RCS-29224
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+1. Does pyardm cause a 1-day delay?
+- pyardm doesn't shift dates. tradingday is the file's own transaction date.
+- pyardm only loads a batch when all four POS file types for that date are present: tlogjda, TRE_TranHeader, TRE_TranDetail and TRE_TranTender. Anything
+incomplete waits in the
+landing folder.
+- In practice pyardm waits for the tlog. The TRE files land at about 07:20 and the tlog at about 22:10, roughly 15 hours later.
+- SnowTime builds the TRE data as soon as it lands. That's the "one day sooner" the client sees.
+2. What's fine
+- Items don't get orphaned. ARDM_ITEM rows with no header number 0 for every tradingday from 09-28 to 10-07.
+- Header and detail transaction
+IDs agree, because the header, detail and tender files land within about 30
+seconds of each
+other.
+- Headers have one transaction ID per natural key, so there are no duplicate headers.
+3. What's wrong
+- department and taxamount on TRE-sourced item rows come from a tlog join in map_ardm_item. The tlog isn't in the window when the 07:20 fire runs.
+- Prod for tradingdays 10-01 to 10-07 shows about 100% null department and about 100% zero taxamount on TRE rows.
+- In a lab window where both feeds were present, the same columns were 5.1% null and 22% zero. So the cause is window membership, not bad mapping. About 5% stay null even when both
+feeds are present.
+- I haven't established when this started.
+4. Inventory delay
+The customer's proposed 8-hour delay for the inventory feed is fine. The inventory feeds only touch reference_product. costofgoodssold, which could be about 8 hours staler. They're i
+part of the item department and taxamount path.
+5. Why self-healing alone won't
+fix it
+replays stored prod
+rows through enrichment and never re-runs the tlog join in mapping. Enrichment can't read
+flat_*, and the XBR
+rows don't overlap the TRE Lines, so
+they can't donate department.
+Proposed best fix
+Persist the tlog line attributes and join them in enrichment.
+1. New table:
+add a custom ardm_detail table, for example ardm_tlogline, registered in custom_tables, map_ardm_tlogline reads flat_tlog_detail and flat_tlog_tax and emits departmen
+item_description and tax. It carries the store, register, ticket, trading day and line keys, and a transaction ID computed
+2. Enrichment change: in enrich_ardm_item, left join mapping_base('ardm_tlogline'). For Verify rows, COALESCE department, description and tax from it. mapping_base includes the pro
+side for enrolled transactions, so the fix works whichever feed arrives first.
+3. Re-enrolment: the tlog-line rows put their transaction IDs into the registry at the 22:10 fire. That pulls the prod Verify rows back through enrichment and fastfact, so no
+predicate is needed. The fastfact columns that aggregate item department or tax recompute too.
+4. Backstop: add a self-healing rule only if the transaction IDs turn out not to match: X_recordsource = "Verify' AND department IS NULL, with
+a 2 to 3 day lookback.
+5. History: REBUILD_RANGE (operator-run) over an arrival window that covers both the 07:20 and 22:10 drops for
+each affected
+First find the earliest bad tradingday by checking
+null department per tradingday further back.
+Check first: confirm the tlog-derived transaction ID equals the TRE-derived one for the same line. The evidence so
+far (one ID per natural key in prod headers)
+but doesn't prove it. If they differ, join on the natural key and use the backstop predicate.
+No-code alternative: run the production task once daily after 22:10, so one window holds both feeds. This mirrors pyardm's timing but gives up the earlier availability. It's also
+fragile, because a late tlog on any day brings the bug back for that day.
+- XBR-sourced rows show taxamount at 100% zero even in the lab window where both feeds were present. I haven't looked into it.
+- The new table has no pyardm counterpart, so compare may flag it.
+Want me to start with the transaction-ID check?

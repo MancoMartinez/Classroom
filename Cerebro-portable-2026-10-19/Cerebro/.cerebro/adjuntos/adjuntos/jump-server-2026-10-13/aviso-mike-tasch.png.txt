@@ -1,0 +1,40 @@
+# Adjunto aviso-mike-tasch.png
+Ruta: adjuntos/jump-server-2026-10-13/aviso-mike-tasch.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+[ACTION REQUIRED] US Jump Servers - VMPWUSSHRDJUMP
+Summary by Copilot
+Team,
+We are consolidating our US based jump servers to just one. The new jump server has the same software packages as the existing jump servers.
+NEW JUMP SERVER — use this one going forward:
+Hostname: VMPWUS2SHRDJUMP
+Old jump servers (retiring October 14):
+USL-LA4-RDP01|
+USL-LA4-RDP02
+PLA4MT-RDP01|
+DEVWUS2DSM01
+DSDEV-MULTI01|
+DSDEV-MULTI02
+DSDEV-MULTI03
+PEVOPRD-UTIL01|
+**Timeline:**
+• This week: New server is live and ready
+• October 14: Old servers go offline
+**Quick Start:**
+Both servers will work for the next 3 weeks, so you can switch at your own pace. Make sure to copy any files you require from the old jump servers as they will not be available after they
+are decommissioned.
+**Common questions:**
+Q: Will my login credentials change?
+A: Nope! Same credentials, same permissions. Just a new host.
+Q: Can I still use the old server?
+A: Yes, until October 14. But we recommend switching over when you get a chance.
+Q: What if I get an error?
+A: Please create a helpdesk ticket at Appriss Retail Help Center
+Thanks,
+Mike Tasch
+Infrastructure and Cloud Engineering Manager
+mtasch@apprissretail.com
+X

@@ -1,0 +1,1 @@
+Hi Shandana Khan, on RCS-28671 / ENG-8659, I may be missing something. The customer can't find 248159 because it was never regenerated: only 2 of the 17 work items came back after the 9/25 rerun. Could ENG-8659 be reopened for the remaining 15, or is WISC New Run in Control Panel the path you meant for support? Data is in my internal note on the RCS.

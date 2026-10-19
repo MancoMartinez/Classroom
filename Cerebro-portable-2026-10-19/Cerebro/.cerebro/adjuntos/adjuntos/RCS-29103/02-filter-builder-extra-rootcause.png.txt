@@ -1,0 +1,24 @@
+# Adjunto 02-filter-builder-extra-rootcause.png
+Ruta: adjuntos/RCS-29103/02-filter-builder-extra-rootcause.png
+Tipo: png
+Ticket: RCS-29103
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+< G
+& https://apps.apprissretail.com/staterbros/nettrack/Admin/ManageSmartAlerts.aspx
+Ca Corp links 9 @ FaceFirst 60 LPMS A Agilence SB Price Book SB Scan App SB Shop | Stater Bro...../
+* Free Al Photo Enha... LT OKTA LVT - Sign In # Flock Safety @ BeyondTrust: Cons... & TLOxp - Login a DeFlock Maps | AL...
+|/
+SB Stream | Microsoft...
+| [
+...
+CONFIGURATION...
+Smart Alert Configuration
+Shoplifting Cont
+Filter Builder
+Or o
+Shoplifting Extra Root Cause Equals Written Warning o
+Shoplifting Extra Root Cause Equals Last and Final Warning ©
+OK
+Cancel

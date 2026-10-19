@@ -1,0 +1,21 @@
+# Adjunto image-20260820-164054.png
+Ruta: adjuntos/RCS-27941/image-20260820-164054.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Portal > Settings > Users
+Francesca Ramos
+User details
+Permission groups
+Hierarchies
+User teams
+Secure Incident
+New
+Advanced Properties
+SSO+
+Secure Incident
+Secure Incident security groups can be configured in Incident Admin
+Incident Security ID O
+Location Manager

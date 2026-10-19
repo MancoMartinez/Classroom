@@ -1,0 +1,9 @@
+{
+  "sources": 3232,
+  "chunks": 13663,
+  "vector_chunks": 13663,
+  "model": "intfloat/multilingual-e5-small",
+  "synced": "2026-09-28T22:44:37.622004+00:00",
+  "coverage": "SQLite knowledge_chunks/items y texto completo de inbox, bitácora, memorias, investigaciones, flujos, triage y Claude outputs. Fichas y espejo son vistas duplicadas; se leen por ticket. Adjuntos binarios no indexados.",
+  "warning": "Fechas son de documentos, no prueba de vigencia. Estado de tickets requiere Jira. Coaparición no demuestra causa común."
+}

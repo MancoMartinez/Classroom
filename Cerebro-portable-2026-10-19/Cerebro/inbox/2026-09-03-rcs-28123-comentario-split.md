@@ -1,0 +1,1 @@
+Splitting the reassignment notification email issue reported by Leigh Ann Stubbs on 9/1 into its own ticket, RCS-28766, since it is a distinct symptom from the confirmation popup this ticket tracks. That popup question is closed as working as designed, see the 9/3 comment above. Track the notification email issue on RCS-28766 going forward.

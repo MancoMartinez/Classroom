@@ -1,0 +1,12 @@
+# Adjunto image-20260831-132917.png
+Ruta: adjuntos/RCS-28671/image-20260831-132917.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Portal > Secure Store >
+Results
+A
+Sorry but we couldn't process your search
+Your tracking code for this error is: 7f39278d-ebfd-5af1-9a85-131fc3dff2cb

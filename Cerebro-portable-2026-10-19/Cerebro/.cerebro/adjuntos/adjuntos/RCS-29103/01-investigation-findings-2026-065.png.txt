@@ -1,0 +1,60 @@
+# Adjunto 01-investigation-findings-2026-065.png
+Ruta: adjuntos/RCS-29103/01-investigation-findings-2026-065.png
+Tipo: png
+Ticket: RCS-29103
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+##
+APPRISS
+RETAIL
+Case Information
+Investigation Findings
+Investigator Assigned
+Security Use Only
+Overview
+1 ₴ = =
+Normal
+Arial
+Notify Legal (SECURITY USE ONLY)
+No
+Incident Type
+Discrimination/Harassment
+Incident Date
+9/16/2026
+Case No
+2026-065-
+DISCRIMINATION/HARASS
+MENT-1
+Accused Name
+Brockelmeyer, Melissa
+Store No
+065
+Store
+Store #65 - Mountain Plaza
+Upland, CA
+909-981-3237
+Case Status
+s
+12
+Case Name
+Case Owner
+Kevin Beacham
+Assigned To
+Kevin Beacham
+Created By
+Kevin Beacham
+Save
++
+Back to Menu
+Tasks
+Calendar
+Quick Links
+Support
+Admin
+User To
+Investigation Findings
+ER Handled
+Inconclusive
+Substantiated
+Cancel

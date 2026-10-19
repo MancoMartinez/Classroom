@@ -1,0 +1,39 @@
+# Adjunto HARVit1.har
+Ruta: adjuntos/RCS-28032/HARVit1.har
+Tipo: har
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+HAR con 80 peticiones. Las 30 más lentas, en ms:
+total	método	estado	wait	receive	inicio	url
+594	POST	200	585.9950002243221	3.9189993403851986	2026-08-25T00:36:42.433Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&kf=1&ct=1787618202433
+559	GET	200	548.2490001309515	7.079999893903732	2026-08-25T00:36:40.887Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+465	GET	200	271.4159997896552	2.7729999274015427	2026-08-25T00:36:51.902Z	https://data.useranalytics.apprissretail.com/data/devlog/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618211902&jzb=eJytUmFr2zAU_CtGn-M4SZc60xi
+449	POST	200	442.88999995458124	3.3089998178184032	2026-08-25T00:36:43.036Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+448	GET	200	249.2180002140701	1.7900001257658005	2026-08-25T00:36:46.901Z	https://data.useranalytics.apprissretail.com/data/devlog/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618206900&jzb=eJztVFFvm0wQ_Cvono0xtrEx1Sc
+411	POST	200	406.0329997752607	1.6310005448758602	2026-08-25T00:36:47.157Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+386	POST	200	378.16900007161496	2.791999839246273	2026-08-25T00:36:41.892Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+379	POST	200	371.7370002195537	4.929000046104193	2026-08-25T00:36:44.412Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+377	GET	200	368.6739998909533	1.9170003943145275	2026-08-25T00:37:02.274Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618222272&jzb=eJztV91z2jgQ_1cYzT2GYAcIhK
+376	GET	200	367.53600022417305	2.059999853372574	2026-08-25T00:37:02.275Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618222273&jzb=eJztV_9v6jYQ_1ci_7RJpDSkAc
+367	POST	200	361.15000021848084	2.0239995792508125	2026-08-25T00:36:44.797Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+347	POST	200	337.8909997757077	2.9080002568662167	2026-08-25T00:36:45.760Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/Audit/NewAudit.aspx
+307	POST	200	301.4170002235174	2.930999733507633	2026-08-25T00:36:47.117Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618207117
+291	POST	200	252.21899977067113	11.29300007596612	2026-08-25T00:37:04.092Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618224091
+283	POST	200	275.58999996441605	4.629000090062618	2026-08-25T00:36:57.111Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618217111
+279	POST	200	273.9630001567304	2.2849994711577892	2026-08-25T00:36:52.107Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618212107
+264	GET	200	258.774000074625	2.013999968767166	2026-08-25T00:36:42.220Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618202216&jzb=eJxtkN9vm0AMx_-Xe45CrpQAeV
+247	GET	200	239.78500022408366	1.3489997945725918	2026-08-25T00:37:02.274Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618222273&jzb=eJztWF1z2jgX_iuM570MBYdQSK
+237	GET	200	227.87099989691376	2.3390003480017185	2026-08-25T00:37:02.275Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618222273&jzb=eJztWP1u4kYQfxXLf7VSCHEI4e
+223	GET	200	215.0370001488328	1.7610001377761364	2026-08-25T00:37:02.275Z	https://data.useranalytics.apprissretail.com/data/ptm.gif/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618222273&jzb=eJztWVtz4rgS_isuP52tCiGGEE
+221	GET	200	215.54900002095104	1.4579999260604382	2026-08-25T00:36:41.945Z	https://data.useranalytics.apprissretail.com/data/guide.json/82edd03f-ac89-4e41-86e3-75065a314d0f?id=35&jzb=eJyFUN1u0zAUfhdfd0maZImXKyrYpqHRgkojBELVaXLWuktsYx9n
+205	POST	200	197.87499979972839	2.5490005500614643	2026-08-25T00:44:02.111Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618642111
+203	POST	200	195.47100012415646	3.8399999029934406	2026-08-25T00:37:02.113Z	https://data.useranalytics.apprissretail.com/data/rec/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&recordingId=7VwWJS5a9I1w1diT&ct=1787618222113
+193	OPTIONS	200	189.9490001439154	1.3529998250305653	2026-08-25T00:36:46.905Z	https://data.useranalytics.apprissretail.com/data/devlog/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618206900&jzb=eJztVFFvm0wQ_Cvono0xtrEx1Sc
+190	GET	200	182.60699987620114	1.213999930769205	2026-08-25T00:36:41.906Z	https://data.useranalytics.apprissretail.com/data/recordingconf/82edd03f-ac89-4e41-86e3-75065a314d0f?jzb=eJyFTz1PwzAQ_S-eS1wlFaoy0YGBhSWCNbokp_Yg_tD5HBBV_3vPJbA
+187	OPTIONS	200	184.36000010848045	1.5559997409582138	2026-08-25T00:36:51.905Z	https://data.useranalytics.apprissretail.com/data/devlog/82edd03f-ac89-4e41-86e3-75065a314d0f?v=2.338.0_prod-eu&ct=1787618211902&jzb=eJytUmFr2zAU_CtGn-M4SZc60xi
+117	GET	200	110.7160001809597	1.7309999093413353	2026-08-25T00:36:41.933Z	https://apps.apprissretail.com/favicon.ico
+94	GET	304	88.10800004786253	1.9859997555613518	2026-08-25T00:36:41.638Z	https://cdn.eu.pendo.io/agent/static/82edd03f-ac89-4e41-86e3-75065a314d0f/pendo.js
+0	GET	200	0.12499978765845299	0.02600019797682762	2026-08-25T00:36:41.512Z	https://apps.apprissretail.com/vitaminshoppe/nettrack/webfonts/LatoLatin-Bold.woff
+0	GET	200	0.1000002957880497	0.018999911844730377	2026-08-25T00:36:41.639Z	https://apps.apprissretail.com/vitaminshoppe/platform/styles/all.min.css
+Estados: 200=79, 304=1

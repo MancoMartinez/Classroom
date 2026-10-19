@@ -1,0 +1,30 @@
+# Adjunto image-20260722-212252.png
+Ruta: adjuntos/RCS-27941/image-20260722-212252.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Portal > Settings > SSO+
+dexter.monroe@tailoredbrands.com
+Navigation
+Teams
+Permission Groups
+Teams
+Location Hierarchy
+Security Level
+Choose values to add
+Nothing selected
+Team Namel
+Administrators
+Field Loss Prevention
+Date From
+Date To
+Persistent
+True
+False
+2 results
+Filter...
+Inserted Date Time
+07/01/2026,11:15:05 AM
+07/20/2026, 11:22:38 PM

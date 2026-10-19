@@ -1,0 +1,411 @@
+{
+  "descripcion": "Set de evaluacion para decidir si el cerebro necesita vectores. Cada caso es una pregunta escrita como Juan la escribiria, sintoma primero, evitando a proposito el vocabulario tecnico del fragmento correcto. El ancla es una expresion regular que identifica los fragmentos que responden. Regla de calidad fijada el 8 sep 2026: un ancla debe apuntar a entre 1 y 30 fragmentos. Un ancla que apunta a cien fragmentos se acierta por azar y no mide nada, y un ancla que no apunta a ninguno descarta la pregunta en silencio. Al ampliar de 32 a 88 casos se apretaron diez anclas del set original que apuntaban a mas de treinta fragmentos o a ninguno.",
+  "fijado": "2026-09-08",
+  "metrica": "hit-rate@5. Un caso acierta si alguno de los fragmentos ancla sale en los primeros cinco resultados.",
+  "casos": [
+    {
+      "q": "un usuario tiene el distrito asignado pero no ve ninguna tienda",
+      "ancla": "LHUA.*StoreIdent|StoreIdent.*LHUA"
+    },
+    {
+      "q": "el reporte no baja cuando le doy exportar pero el envio automatico si llega",
+      "ancla": "Izenda.*(programad|scheduled)|(programad|scheduled).*Izenda"
+    },
+    {
+      "q": "despues de mover el caso a otra tienda quedo el numero viejo",
+      "ancla": "RecreateCaseNo"
+    },
+    {
+      "q": "una pantalla quedo rota despues de la migracion como la arreglo",
+      "ancla": "9QQP|Screen Designer"
+    },
+    {
+      "q": "no se puede bajar el archivo adjunto en pdf",
+      "ancla": "ERMS.*lpms|lpms.*ERMS"
+    },
+    {
+      "q": "la opcion esta activada en la configuracion pero no hace efecto",
+      "ancla": "CustomerEditedValue"
+    },
+    {
+      "q": "no puedo saber si la falla de ingreso es de ellos o nuestra",
+      "ancla": "SSO Response Log"
+    },
+    {
+      "q": "el usuario que migraron no aparece en la tabla de identidad",
+      "ancla": "LPUser2"
+    },
+    {
+      "q": "el cliente dice que va lento como compruebo donde se pierde el tiempo",
+      "ancla": "DevTools"
+    },
+    {
+      "q": "de un dia para otro se puso lenta sin que nadie cambiara nada",
+      "ancla": "Query Store|cardinalidad"
+    },
+    {
+      "q": "bloquearon a un usuario desde la proteccion de red que hago",
+      "ancla": "Ray ID"
+    },
+    {
+      "q": "quien sabe de los datos de greenplum y las instancias",
+      "ancla": "pyardm"
+    },
+    {
+      "q": "como dejo el ticket bien cerrado para que no quede marcado",
+      "ancla": "Resolve.{0,20}Completed.{0,60}Close|dos dropdowns de Resolution"
+    },
+    {
+      "q": "cuando puedo avisarle al cliente que el arreglo ya salio",
+      "ancla": "no comentar al cliente antes|antes de Under Support Review"
+    },
+    {
+      "q": "que hay que hacer antes de entregarle el analisis de causa al cliente",
+      "ancla": "Shorthand|OUTM"
+    },
+    {
+      "q": "como paso un caso al equipo de tercer nivel",
+      "ancla": "se auto.?crea un ENG|auto-crea|autocrea"
+    },
+    {
+      "q": "como separo en jira lo de una plataforma de la otra",
+      "ancla": "15196|Product Type"
+    },
+    {
+      "q": "donde encuentro quien lleva la cuenta y el numero interno del cliente",
+      "ancla": "ficha.{0,30}cliente|client ID.{0,30}CSM|CSM.{0,20}PM.{0,20}client ID"
+    },
+    {
+      "q": "como me conecto a la base de datos de un cliente",
+      "ancla": "Bastion|SSMS"
+    },
+    {
+      "q": "en que servidor de datos esta cada cuenta",
+      "ancla": "Product Delivery Client Matrix"
+    },
+    {
+      "q": "le pusieron dos zonas y solo le carga una",
+      "ancla": "multidistrito|dos distritos"
+    },
+    {
+      "q": "donde se deshabilita una cuenta de usuario",
+      "ancla": "flag Disabled|Disabled.{0,25}Control Panel"
+    },
+    {
+      "q": "cual direccion es la nueva plataforma y cual la vieja",
+      "ancla": "apps\\.apprissretail\\.com.{0,80}nettrack|host.{0,20}PU"
+    },
+    {
+      "q": "que se rompio con el cambio grande del mes pasado",
+      "ancla": "Unificaci[oó]n.*Kiran|Kiran.*Unificaci[oó]n"
+    },
+    {
+      "q": "que formato lleva la planilla que le mandamos a la cuenta grande",
+      "ancla": "tracker.*(Teagle|J\\.R\\.)|(Teagle|J\\.R\\.).*tracker"
+    },
+    {
+      "q": "que paso cuando los jefes del cliente se metieron a reclamar",
+      "ancla": "escalaci[oó]n ejecutiva|14 ago"
+    },
+    {
+      "q": "quienes son del equipo y de donde es cada uno",
+      "ancla": "roster real|equipo Support.{0,40}fuente de verdad"
+    },
+    {
+      "q": "los casos nuevos que abrio el contacto y nadie tomo",
+      "ancla": "28519|28533|28535"
+    },
+    {
+      "q": "por que el pedido de revisar los registros de acceso estaba mal planteado",
+      "ancla": "28442|Torrid"
+    },
+    {
+      "q": "por que a la persona le sale que no tiene permiso al abrir el enlace",
+      "ancla": "28219|Nordstrom"
+    },
+    {
+      "q": "cuanto costaria mover esto a otro motor de inteligencia",
+      "ancla": "costo real de mover|API de Claude"
+    },
+    {
+      "q": "por que la busqueda por significado dejo de funcionar",
+      "ancla": "embedding.{0,40}(nunca|sin)|168 de los 1623"
+    },
+    {
+      "q": "cambie los tipos de auditoria en una alerta y la pantalla lo guarda pero no pasa nada",
+      "ancla": "FiltersSQL|ManageSmartAlerts"
+    },
+    {
+      "q": "el correo de aviso dejo de salir cuando reasignan un caso",
+      "ancla": "EmailOnReassign|ReAssignCase\\.aspx"
+    },
+    {
+      "q": "las notificaciones salen un dia tarde de lo que deberian",
+      "ancla": "frontera de fecha UTC|trigger until the following day"
+    },
+    {
+      "q": "los avisos automaticos no salen si el usuario entro por la pantalla rapida",
+      "ancla": "Quick Entry|ENG-7359"
+    },
+    {
+      "q": "el aviso no encuentra el documento que deberia adjuntar",
+      "ancla": "GetBlobSize|FileLen\\(strPath\\)|blob storage gate"
+    },
+    {
+      "q": "el error dice que no encuentra una carpeta temporal",
+      "ancla": "TempArea"
+    },
+    {
+      "q": "al cliente le sale una pantalla que dice que fue bloqueado antes de poder entrar",
+      "ancla": "Sorry, you have been blocked"
+    },
+    {
+      "q": "varios usuarios de canada no pueden autenticarse desde esta mañana",
+      "ancla": "VaultOperationLimitReached|Key Vault"
+    },
+    {
+      "q": "le vuelvo a poner el equipo al usuario y al dia siguiente lo perdio otra vez",
+      "ancla": "Mandatory Teams"
+    },
+    {
+      "q": "como se si el proveedor de identidad del cliente esta respondiendo o no",
+      "ancla": "SSO Response Log"
+    },
+    {
+      "q": "el trafico del cliente sale por un proveedor de seguridad y lo rechazan",
+      "ancla": "ZSCALER|Zscaler"
+    },
+    {
+      "q": "necesito el identificador que trae la pantalla de rechazo para agrupar los casos",
+      "ancla": "Ray ID"
+    },
+    {
+      "q": "el navegador muestra un error de puerta de enlace y no hay rastro del proveedor de cdn",
+      "ancla": "YARP|Yarp"
+    },
+    {
+      "q": "mucha gente cierra la pestaña antes de que cargue, como lo mido",
+      "ancla": "\\b499\\b"
+    },
+    {
+      "q": "la misma consulta paso de instantanea a tardar un minuto sin que nadie desplegara",
+      "ancla": "CardinalityEstimationModelVersion|estimador de cardinalidad"
+    },
+    {
+      "q": "cual es el tope de tiempo que aguanta la aplicacion antes de rendirse",
+      "ancla": "CommandTimeout"
+    },
+    {
+      "q": "el cliente dice que tarda muchisimo y no tengo ningun numero propio",
+      "ancla": "Waiting for server response|TTFB"
+    },
+    {
+      "q": "el cliente no puede grabar la sesion del navegador, de donde saco los tiempos",
+      "ancla": "App Insights|appi-prd-wus2-arp"
+    },
+    {
+      "q": "a quien le queda el ticket cuando lo mando a infraestructura",
+      "ancla": "Under Infrastructure Review"
+    },
+    {
+      "q": "que tengo que dejar escrito antes de pasarlo a ingenieria",
+      "ancla": "antes de escalar|before this ticket can be moved to Engineering"
+    },
+    {
+      "q": "el cliente pide algo que no existe todavia en el producto",
+      "ancla": "Ideas Portal|Pendo"
+    },
+    {
+      "q": "cada cuanto tengo que actualizar un ticket segun su prioridad",
+      "ancla": "Critical.{0,30}hora"
+    },
+    {
+      "q": "el usuario le da a exportar el reporte y no descarga nada",
+      "ancla": "ENG-5649"
+    },
+    {
+      "q": "el reporte se ve bien en pantalla pero el envio programado trae otra cosa",
+      "ancla": "dos rutas|visor y la entrega"
+    },
+    {
+      "q": "el usuario tiene el distrito asignado pero no le aparece ninguna tienda",
+      "ancla": "LHUA"
+    },
+    {
+      "q": "un usuario que pertenece a dos zonas solo ve una",
+      "ancla": "multidistrito|dos distritos"
+    },
+    {
+      "q": "hay tres tablas distintas con usuarios y no se cual manda",
+      "ancla": "LPUser2"
+    },
+    {
+      "q": "como entro a la base de datos de un tenant para consultar",
+      "ancla": "Bastion"
+    },
+    {
+      "q": "movi el caso de tienda y quedo con el numero de antes",
+      "ancla": "RecreateCaseNo"
+    },
+    {
+      "q": "la pantalla salio rota y da not found",
+      "ancla": "9QQP"
+    },
+    {
+      "q": "la configuracion dice una cosa y el sistema se comporta distinto",
+      "ancla": "CustomerEditedValue"
+    },
+    {
+      "q": "el archivo pdf no se deja descargar",
+      "ancla": "ERMS.{0,60}lpms|lpms.{0,60}ERMS"
+    },
+    {
+      "q": "que va en el tracker del cliente y que no",
+      "ancla": "tracker interno|tracker de cliente|tracker del cliente"
+    },
+    {
+      "q": "como redacto el analisis de causa para el cliente",
+      "ancla": "Shorthand"
+    },
+    {
+      "q": "por que no puedo escribir en la base desde el entorno de la app",
+      "ancla": "disk I/O error"
+    },
+    {
+      "q": "como ordeno mis tickets por lo que de verdad urge",
+      "ancla": "TE TOCA RESPONDER"
+    },
+    {
+      "q": "las etiquetas con las que mido el ordenador de la cola quedaron viejas",
+      "ancla": "caduca|vencid"
+    },
+    {
+      "q": "donde vive cada cliente en la plataforma de datos",
+      "ancla": "ARDM_PRODUCTION|instancia.{0,40}Greenplum"
+    },
+    {
+      "q": "el ticket lleva semanas sin moverse y nadie le pone nota",
+      "ancla": "Under Support Review.{0,60}parad|atascad"
+    },
+    {
+      "q": "me piden separar en el tablero lo de un producto y lo del otro",
+      "ancla": "Product Type|cf\\[15196\\]"
+    },
+    {
+      "q": "un ticket dice escalado pero es solo una etiqueta",
+      "ancla": "Escalated.*label|label.*Escalated"
+    },
+    {
+      "q": "a que estados puedo mover un ticket que esta marcado como urgente",
+      "ancla": "Work in progress.{0,30}551|transicion.{0,20}551"
+    },
+    {
+      "q": "el correo automatico corta el numero de tienda",
+      "ancla": "\"075\".{0,20}\"75\"|075.{0,10}a.{0,10}75"
+    },
+    {
+      "q": "los usuarios migrados no aparecen en la tabla de identidad",
+      "ancla": "13 usuarios|membership\\.Users"
+    },
+    {
+      "q": "el adjunto grande no sube",
+      "ancla": "4 MB|cuatro MB"
+    },
+    {
+      "q": "que hago si el cliente manda una captura sin el pie de pagina",
+      "ancla": "baja(r)? el scroll|capturar el pie"
+    },
+    {
+      "q": "el cliente de nike pregunta como se calcula un descuento manual",
+      "ancla": "Manual Discount Amount"
+    },
+    {
+      "q": "dejaron de llegar los archivos de comercio electronico",
+      "ancla": "raw_order|load_raw_ecom"
+    },
+    {
+      "q": "un caso de siete once copia mal el codigo corto",
+      "ancla": "7-Eleven|7-eleven"
+    },
+    {
+      "q": "la cookie de sesion se renueva sola en una ventana movil",
+      "ancla": "TryRefreshPlatformCohesionCookie|CPFCookie"
+    },
+    {
+      "q": "cuantos tickets tiene cada ingeniero ahora mismo",
+      "ancla": "RANKING COMPLETO|carga de tickets"
+    },
+    {
+      "q": "el ingeniero dice que una vez desplegado todos los clientes tienen el mismo codigo",
+      "ancla": "all the clients get the same code"
+    },
+    {
+      "q": "que pasa con las alertas cuando migran la base de datos",
+      "ancla": "Sportsman|migraci.{0,30}base de datos.{0,40}alert"
+    },
+    {
+      "q": "el usuario entra pero no ve los elementos de trabajo nuevos",
+      "ancla": "900, 901, 902|VirtualFilePath"
+    },
+    {
+      "q": "por que la busqueda del cerebro devuelve poco",
+      "ancla": "recall@5|FTS5"
+    },
+    {
+      "q": "el equipo de datos del retailer recibe el ticket, que campos le pongo",
+      "ancla": "Sprint.{0,30}RCS Support Team|Team Ownership"
+    },
+    {
+      "q": "el cliente quiere saber por que se cayo el servicio y nadie le contesto",
+      "ancla": "What was the root cause"
+    },
+    {
+      "q": "hay dos tickets del mismo sintoma en clientes distintos, los junto",
+      "ancla": "agrupar no es causa|no enlazarlos|No enlazarlos"
+    },
+    {
+      "q": "cuando una consulta se pone lenta puedo forzar el plan bueno",
+      "ancla": "forzar un plan|is_forced_plan"
+    },
+    {
+      "q": "como saco la lista de planes de ejecucion de los ultimos dias",
+      "ancla": "query_store_runtime_stats|sys\\.query_store"
+    },
+    {
+      "q": "el numero de version de la base de datos influye en la lentitud",
+      "ancla": "compatibility_level|nivel de compatibilidad"
+    },
+    {
+      "q": "que hago cuando ingenieria devuelve el ticket diciendo que es configuracion",
+      "ancla": "devolvio a Under Delivery|no es bug"
+    },
+    {
+      "q": "necesito saber si un arreglo ya salio en que version",
+      "ancla": "Release 1/2|August 2026 Release"
+    },
+    {
+      "q": "un ingeniero confirmo por chat que la ruta correcta es otra",
+      "ancla": "waiting for Engineering IMO|Jon Morgan"
+    },
+    {
+      "q": "el estado que suena a base de datos no lo usa nadie",
+      "ancla": "Waiting for Database Services|Under Database Services Review"
+    },
+    {
+      "q": "cuando el cliente ya reviso y quedo bien, que sigue",
+      "ancla": "Closed.{0,40}verifica|cliente verifica"
+    },
+    {
+      "q": "los usuarios de una tienda no reciben nada y los de otra si",
+      "ancla": "Store 9718|store.{0,20}complet.{0,20}auditor"
+    },
+    {
+      "q": "me piden el detalle de una transaccion que no aparece",
+      "ancla": "fti\\.Transactions|ARDM_PRODUCTION"
+    },
+    {
+      "q": "el trabajo quedo generado antes de que existieran los datos",
+      "ancla": "work item.{0,60}antes|generated before the underlying event"
+    }
+  ]
+}

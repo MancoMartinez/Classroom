@@ -1,0 +1,1 @@
+Hi Adarsh, just following up on RCS-29205, the Starbucks NA ticket with the five c166_sbx fields that stopped arriving at the SnowTime cutover. The customer asked for an update today, so I wanted to check whether someone from your team has been able to pick it up. If it helps, I am happy to jump on a quick call or add anything else to the ticket. Thank you so much!

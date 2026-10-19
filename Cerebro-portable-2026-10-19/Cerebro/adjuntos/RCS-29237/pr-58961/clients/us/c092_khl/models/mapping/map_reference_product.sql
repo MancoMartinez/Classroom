@@ -1,0 +1,49 @@
+{{ client_mapping_config(layer='mapping') }}
+
+/*
+    Mapping reference_product for c092_khl (Kohl's) — V2 format.
+    Source: ref_item pipe-delimited CSV (H/D — D filtered by flat).
+    Mirrors pyardm/us/c092khl/ardm/sql/load_sql_scripts/Reference_Product.sql.
+
+    Key derivations:
+      articleid       = upc_nbr (VARCHAR primary key)
+      hierarchy 1..3  = dept/major-class/sub-class
+      hierarchy 4..6  = business group / unused / business area
+    Pyardm dedups by `distinct on (upc_nbr) ... order by upc_nbr, filename desc`
+    — V2 mapping_base handles file-winning dedup at the framework boundary.
+*/
+
+select
+    -- articleid/upc normalized (strip leading zeros) to resolve consistently against
+    -- ardm_item.articleid regardless of which feed zero-pads the UPC — see RCS-29237.
+    ltrim(trim(upc_nbr), '0')::VARCHAR                     as articleid,
+    trim(dept_nbr)::VARCHAR                                as producthierarchy1,
+    trim(dept_nm)::VARCHAR                                 as producthierarchy1description,
+    trim(maj_cl_nbr)::VARCHAR                              as producthierarchy2,
+    trim(maj_cl_nm)::VARCHAR                               as producthierarchy2description,
+    nullif(trim(sub_cl_nbr), '')::VARCHAR                  as producthierarchy3,
+    nullif(trim(sub_cl_nm), '')::VARCHAR                   as producthierarchy3description,
+    nullif(trim(bus_gp_nbr), '')::VARCHAR                  as producthierarchy4,
+    null::VARCHAR                                          as producthierarchy4description,
+    null::VARCHAR                                          as producthierarchy5,
+    null::VARCHAR                                          as producthierarchy5description,
+    nullif(trim(bus_gp_desc), '')::VARCHAR                 as producthierarchy6,
+    nullif(trim(bus_area_desc), '')::VARCHAR               as producthierarchy6description,
+    COALESCE(NULLIF(TRIM(sku_desc), ''), TRIM(upc_nbr))::VARCHAR as productname,
+    nullif(trim(vs_desc), '')::VARCHAR                     as productdescription,
+    nullif(trim(vs_desc), '')::VARCHAR                     as receiptdescription,
+    nullif(trim(sku_nbr), '')::VARCHAR                     as alternatesku,
+    null::DATE                                            as releasedate,
+    src.file_arrival_time::TIMESTAMP_NTZ                   as inserteddatetime,
+    src.file_arrival_time::TIMESTAMP_NTZ                   as updateddatetime,
+    null::VARCHAR                                          as orderunitid,
+    null::INT                                             as quantityperorderunit,
+    nullif(trim(vs_nbr), '')::VARCHAR                      as vendorproductid,
+    nullif(trim(vnd_nbr), '')::VARCHAR                     as vendorid,
+    nullif(trim(ent_nm_desc), '')::VARCHAR                 as vendorname,
+    null::VARCHAR                                          as imageurl,
+    ltrim(trim(upc_nbr), '0')::VARCHAR                     as upc,
+    null::NUMBER(38,6)                                     as costofgoodssold,
+    src.file_name::VARCHAR                                 as filename
+from {{ ref('flat_item') }} src
+where upc_nbr is not null and trim(upc_nbr) <> ''

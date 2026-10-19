@@ -1,0 +1,52 @@
+# Adjunto e64c-4148-8cee-d43ba2718c52-image-20260827-055554.png
+Ruta: adjuntos/RCS-28612/e64c-4148-8cee-d43ba2718c52-image-20260827-055554.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Transaction ID
+2608264200321847850
+Store
+No
+56
+Cashier
+No
+1080038
+End Trans
+Date 1F
+Time
+26/08/2026
+2:01:49 PM
+Register
+Transaction
+207
+45
+Transaction
+Amount
+68.95
+Void
+Transaction
+Flg
+False
+Customer
+Full Name
+SHIRLEY-ANN
+CANTON
+Keycode
+218683600
+Item Receipt
+Description
+Delivery
+Carrier
+Delivery
+Comments
+Delivery
+Contact
+Delivery
+Free
+Reason |
+...-.
+VAN HEUSEN
+VTSB103Q_PNVB
+TAILORED PRINT

@@ -1,0 +1,35 @@
+# Adjunto image-20260722-212430.png
+Ruta: adjuntos/RCS-27941/image-20260722-212430.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Edit
+View
+Email Attach
+View
+Journal
+Last Name
+Harvey
+First Name
+Michael
+Incident
+Date /
+Time
+5/12/2026
+3:10 PM
+Incident Type
+Discounts
+LPMS Default Case View
+Case Status
+Case No
+OPEN
+2026-TMW-
+40003407-INT-6
+Store
+No
+Total
+Stolen
+4000340:
+$0.00

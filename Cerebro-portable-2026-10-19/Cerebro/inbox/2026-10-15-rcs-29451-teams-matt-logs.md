@@ -1,0 +1,3 @@
+I found Rachel Dill's sign in from October 13 at 19:23 UTC in Grafana. It was her first sign in, so her account was created right then.
+The sequence is: UserCreate, then "Sso user created" with SecurityID null in the user data, then SsoService assigns the SSO Extra permission groups, ApprissCase Users and Basic Users, and the Location Manager team, then Saml2 logs her on. There is no line about the security level, and her SecurityID stayed NULL. Her row in sso.SecurityLevelAssignments, level 5, was already loaded that morning at 10:42 UTC.
+So at sign in the groups and teams come from SSO+, and the security level does not seem to. I am checking whether the other users created by SSO this week ended up the same way.

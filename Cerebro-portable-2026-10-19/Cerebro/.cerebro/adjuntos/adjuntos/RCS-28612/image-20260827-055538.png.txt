@@ -1,0 +1,38 @@
+# Adjunto image-20260827-055538.png
+Ruta: adjuntos/RCS-28612/image-20260827-055538.png
+Tipo: png
+Ticket: RCS-28612
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Myer Group
+North Lakes
+www.myer.com.au
+Myer Pty Ltd
+26/08/2026 2:01:49 PM
+Team Member: Suzanne
+Store 56
+Pos 207
+Cashier 1080038
+MYER one Number: 6278041053428518
+Trans# 45
+*** SALE ***
+QTY
+Price
+Amt
+VAN HEUSEN VTSB103Q_ PNVB TAILORED PRINT
+218683600
+$79.95
+Class Group: 3311
+$59 Van Heusen business shirts (401....
+$-20.95
+Value Change Reason: BUY GET OFFER
+$59.00
+TOTAL
+$68.95
+Mastercard
+$68.95
+Card No 7067FE9FC269DBAB43A1C2FAF39D6250D47C788...
+AUTH: 21067
+TAX INVOICE
+GST Incl. In Total $6.27

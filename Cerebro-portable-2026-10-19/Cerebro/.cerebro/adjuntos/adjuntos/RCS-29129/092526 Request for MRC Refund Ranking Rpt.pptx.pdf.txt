@@ -1,0 +1,19 @@
+# Adjunto 092526 Request for MRC Refund Ranking Rpt.pptx.pdf
+Ruta: adjuntos/RCS-29129/092526 Request for MRC Refund Ranking Rpt.pptx.pdf
+Tipo: pdf
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+## Página 1
+Based on the below CASH REFUND RANKING Rpt, originally created by Nicole Myers, Pacsun is requesting an identical Ranking report by DOLLARS and COUNT for 
+MERCH CARD REFUNDS: 
+Below, current location of the “CASH REFUNDS w RANKING DOLLARS COUNT REPORT”:
+9/25/2026 1
+Note:  We tweaked Nicole’s
+original rpt & added the 
+ability to search by STORE 
+in the query prompt
+
+## Página 2
+Below, screenshot of the first 3 lines of the report, “CASH REFUNDS w RANKING DOLLARS COUNT REPORT”:
+9/25/2026 2

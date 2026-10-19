@@ -1,0 +1,26 @@
+# Adjunto image-20260924-210107.png
+Ruta: adjuntos/RCS-29037/image-20260924-210107.png
+Tipo: png
+Ticket: RCS-29037
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+Claire's - Data Integrations Status Update
+CA
+Chris Angelica< Chris.Angelica@claires.com>
+To: Chris Angelica <Chris.Angelica@claires.com>
+44 ÷
+Thu 9/24/2026 10:44 AM
+EXTERNAL SENDER
+Dear Claire's Data Integrations Partner:
+You are receiving this message as you are a platform that currently receives data from Claire's via an existing integration.
+This message is to confirm that Claire's external integrations have been offline since early Saturday morning, September 19. Our systems remain
+offline. There is no current ETA as to when they will resume operability.
+We understand that your integrations cannot be supported right now. I will keep you periodically updated on any developments on this topic.
+I will reach out to you individually in the next few days to arrange how we'll resume data to you. Considerations we'll touch upon include:
+- If resumed transmissions will simply "turn on"
+- If there are historical updates we need to provide
+- If there are any other important topics to address
+Please feel free to continue to reach out to me for status or other support during this period.
+Thank you for your partnership.
+Chris

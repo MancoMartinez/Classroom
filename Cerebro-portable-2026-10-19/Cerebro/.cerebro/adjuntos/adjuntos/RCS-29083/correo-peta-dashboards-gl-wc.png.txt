@@ -1,0 +1,151 @@
+# Adjunto correo-peta-dashboards-gl-wc.png
+Ruta: adjuntos/RCS-29083/correo-peta-dashboards-gl-wc.png
+Tipo: png
+Ticket: RCS-29083
+Modificado: 2026-09-25
+
+Texto reconocido por OCR:
+Hi Vinh-I need to have a ticket created with Appriss for a production issue with the claim files for Sedgwick and Gallagher Bassett. It seems now that I have the ticket portal for Secure Incident WAl that is the only portal
+I'm being directed to in Jira. Would you have a ticket created for Appriss to investigate what caused the claims files to stop running and have them correct and send to the TPAs. It appears they haven't run since 9/21. This
+needs some priority as no new WC or GL claims are being reported to the TPAs.
+7 Day Rolling GL - 7-Eleven
+Store
+Issue date
+status
+37827
+17518
+34278
+37036
+11218
+43147
+24053
+41711
+37883
+38831
+14336
+20944
+44640
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+0/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+GR20
+Pending
+Pending
+Pending
+New
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+New
+IN-37827-COR-2026-0023
+IN-17518-FRA-2026-0004
+IN-34278-FRA-2026-0005
+IN-37036-FRA-2026-0002
+IN-11218-FRA-2026-0001
+IN-43147-FRA-2026-0005
+IN-41711-FRA-2026-0002
+IN-37883-COR-2026-0022
+IN-38831-FRA-2026-0005
+IN-20944-FRA-2026-0002
+Request Sub Type
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+General Liability
+Process Status
+7 Day Rolling WC - 7-Eleven
+Store
+Issue date
+Status
+42235
+21883
+40303
+32182
+34644
+43029
+MO156
+33955
+47140
+45748
+48468
+44442
+38955
+9/23/2028
+9/23/2026
+9/22/2028:
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2026
+9/22/2028:
+9/22/2026
+9/22/2028
+9/22/2026
+9/22/2028
+9/21/2028
+Pending
+Pending
+rending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+Pending
+GR29
+Incident Number
+IN-42235-COR-2028-0016
+IN-21883-COR-2026-0008
+IN-40303-COR-2026-0008
+IN-32182-COR-2026-0002
+IN-34644-FRA-2026-0016
+IN-43029-COR-2026-0002
+IN-55134-COR-2026-0001
+IN-33955-FRA-2026-0003
+IN-47140-COR-2026-0025
+IN-45748-COR-2026-0003
+IN-46468-COR-2026-0008
+IN-44442-COR-2026-0003
+IN-36955-FRA-2028-0009
+Request Sub Type
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Workers Comp
+Process Status

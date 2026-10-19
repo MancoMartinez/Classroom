@@ -1,0 +1,292 @@
+{
+  "ticket": "RCS-29104",
+  "found": true,
+  "direct_evidence": [
+    {
+      "id": 13438,
+      "path": "inbox/2026-09-28-rcs-29104-teams-jeff-ryan.md",
+      "line": 1,
+      "end_line": 9,
+      "title": "2026-09-28-rcs-29104-teams-jeff-ryan",
+      "body": "Sure. Summary for RCS-29104, GPC 356:\n\nWhat happened: GPC sends each order as a set of 3 files: order, line items and tender. Since 5/4 they often re-send an order a day later with only order and line items, and that replaces the complete one without its tender. About 40% of GPC transactions since 5/4 have no tender in Secure. Example: the 9/18 tender file has 545,902 lines and only 318,705 ended up loaded. GPC found it while investigating refund fraud they could not see in Secure.\n\nWhat needs to be done:\n1. GPC needs to go back to sending the full set of 3 files every time, as agreed at onboarding. Kristen Dyer is checking with them.\n2. The data since 5/4 needs a reload from Archive. Przemysław outlined the approach: load several days together, drop incomplete orders before the rest of the scripts, and process week by week. Peyman offered to support whoever takes it.\n\nPrzemysław also mentioned he is leaving at the end of October, so it would help if the person who takes this could get a quick walkthrough from him before then.",
+      "date": "2026-09-28"
+    },
+    {
+      "id": 13260,
+      "path": "inbox/2026-09-25-rcs-29104-teams-kristen-3.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-kristen-3",
+      "body": "Hi Kristen, quick update on RCS-29104. GPC sends header, item and tender in separate files. When the tender file for a transaction is missing, the transaction loads without payment details. I am confirming with our data team whether the tender files for the affected stores reached us. If they did not, GPC IT will need to resend full header, item and tender sets from early May onward. I will let you know as soon as I have that confirmation, so their IT has the exact ask.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13261,
+      "path": "inbox/2026-09-25-rcs-29104-teams-kristen-4.md",
+      "line": 1,
+      "end_line": 3,
+      "title": "2026-09-25-rcs-29104-teams-kristen-4",
+      "body": "Hi Kristen, I think we found what is going on with RCS-29104. GPC sends each order as a set of 3 files: order, line items and tender. From what I can see, since early May some orders come in again a day later with only the order and line items, and that version replaces the first one without its payment. That is what happened with the refund in your example.\n\nWhen you talk to GPC, do you think you could ask if anything changed in their export around early May? I believe they agreed during onboarding to always send the 3 files together, so maybe something shifted on their side. I am also checking with our data team how we could recover the transactions since then, and I will keep you posted.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13262,
+      "path": "inbox/2026-09-25-rcs-29104-teams-peyman-2.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-peyman-2",
+      "body": "Hi Peyman, thanks for pointing me the right way on RCS-29104. You were right, it is on the GPC side. Since 5/4 they often send an order again without its tender file, which replaces the complete one. Kristen is checking with GPC now. Przemysław mentioned a reload from Archive is possible but would take some work, so I was wondering who on Delivery might usually handle something like that, or if a full re-send from GPC would be the better path.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13263,
+      "path": "inbox/2026-09-25-rcs-29104-teams-peyman-3.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-peyman-3",
+      "body": "Thanks Peyman, that helps. Just so you have the full picture: Ryan told me earlier he has no context on GPC and pointed me to Przemysław. Przemysław helped us find the cause and explained how the reload from Archive could be done, but he did not mention having time to take it. I will ask Ryan if Przemysław or someone on his team could pick it up, and I will let you know how it goes. And yes, I have RCS-29130 on my radar. Have a good weekend!",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13264,
+      "path": "inbox/2026-09-25-rcs-29104-teams-peyman-4.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-peyman-4",
+      "body": "Sounds good, thank you Peyman. I will wait to hear from Ryan and let you know. Really appreciate the support on this one.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13265,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw-2.md",
+      "line": 1,
+      "end_line": 3,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw-2",
+      "body": "Thanks Przemysław, that helps a lot. The later commits from Damodaran start on 8/31, and the gap already starts on 5/4, so I do not think they caused it. The ratio also stays flat around the 9/16 change.\n\nBefore I go back to GPC, could you check one thing for me? For store CHA266 on 9/17, did a tender file arrive, and does it include ticket 533653? If it never arrived, I will ask GPC to resend full sets from 5/4 onward. If it did arrive, I would like to understand what happened with it, including whether the decrypted_input change on 5/3 plays a part.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13266,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw-3.md",
+      "line": 1,
+      "end_line": 7,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw-3",
+      "body": "Thanks Przemysław, it is the same order: the header has order_id 600006266~533653~N~20260915. The tender row came in the 9/18 tender file, line 240047, and its header came one day later in the 9/19 orders file. The tender never reached ardm_tender.\n\nThe 9/18 tender file has 545,902 lines and 318,705 loaded, 58.4%, the same ratio I see for GPC since 5/4. I checked 7 rows around line 240047. The 3 that loaded had their header in the same day orders file. The 3 that did not had their header in the next day file, and one has no header yet.\n\nAt scale, for 9/14 to 9/18 no loaded tender has a header from a later file. For 4/20 to 4/30 there are 1,961 of those. So it looks like a tender that arrives before its header used to be kept and now is dropped. I may be missing something from the historical load in April.\n\nCould the loader be dropping tender rows when the header is not there yet? And since the tender files are in Archive, could 5/4 onward be reloaded once the headers are in?",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13267,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw-4.md",
+      "line": 1,
+      "end_line": 3,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw-4",
+      "body": "That matches what I see. For order 600006266~533653~N~20260915, the tender came in the 9/18 set and the order came again in the 9/19 set, so the 9/19 order would have replaced it without a tender. It has been happening since 5/4 for about 40% of GPC transactions, so it looks like their export changed around that date.\n\nI will ask GPC to send the full set of 3 files every time an order is sent. For the gap since 5/4, the tender files are still in Archive. Could we rebuild those orders from Archive, or does GPC need to re-send full sets for that whole period?",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13268,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw-5.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw-5",
+      "body": "Thank you so much, Przemysław, this was really helpful. It fits what I see, so I think you are right that they stopped keeping the full set. Kristen is reaching out to GPC now to ask what changed. I will let you know what they say, and I really appreciate you taking the time to walk me through all of this.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13269,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw-6.md",
+      "line": 1,
+      "end_line": 1,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw-6",
+      "body": "Hi Przemysław, I checked with Ryan and Peyman about the GPC reload since 5/4. Ryan thinks you know GPC best, and Peyman offered to work on it together with us. Do you think you might have time to help with the reload? No pressure at all, just let me know what works for you.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13270,
+      "path": "inbox/2026-09-25-rcs-29104-teams-przemyslaw.md",
+      "line": 1,
+      "end_line": 5,
+      "title": "2026-09-25-rcs-29104-teams-przemyslaw",
+      "body": "Hi Przemysław, Ryan DeVries mentioned you mapped GPC 356. Could you help me with RCS-29104? https://trebuco.atlassian.net/browse/RCS-29104\n\nSince trading day 2026-05-04, about 40% of GPC transactions in ardm_356 load with header and items but no tender rows, across roughly 1,650 stores. Example: store CHA266, ticket 533653 on 9/17, a Visa refund with no tender.\n\nThe closest change I see in c356gpc is c736cbfa on 5/3, load_raw_pos.py with decrypted_input going from True to False. I may be reading it wrong. Where does the tender come from for GPC, and could that change affect it?",
+      "date": "2026-09-25"
+    }
+  ],
+  "source_paths": [
+    "inbox/2026-09-28-rcs-29104-teams-jeff-ryan.md",
+    "inbox/2026-09-25-rcs-29104-teams-kristen-3.md",
+    "inbox/2026-09-25-rcs-29104-teams-kristen-4.md",
+    "inbox/2026-09-25-rcs-29104-teams-peyman-2.md",
+    "inbox/2026-09-25-rcs-29104-teams-peyman-3.md",
+    "inbox/2026-09-25-rcs-29104-teams-peyman-4.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw-2.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw-3.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw-4.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw-5.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw-6.md",
+    "inbox/2026-09-25-rcs-29104-teams-przemyslaw.md",
+    "inbox/2026-09-25-rcs-29104-teams-ryan-2.md",
+    "inbox/2026-09-25-rcs-29104-teams-ryan-3.md",
+    "inbox/2026-09-25-rcs-29104-teams-ryan.md",
+    "Claude outputs/2026-09-24-rcs-29104-respuesta-jim.md",
+    "Claude outputs/2026-09-24-rcs-29104-teams-kristen-2.md",
+    "inbox/2026-09-24-rcs-29104-comentario-interno.md",
+    "inbox/2026-09-24-rcs-29104-respuesta-jim.md",
+    "inbox/2026-09-24-rcs-29104-teams-kristen-2.md",
+    "inbox/2026-09-24-rcs-29104-teams-kristen.md",
+    "inbox/2026-09-24-rcs-29104-teams-peyman.md",
+    "inbox/2026-09-24-rcs-29104.md",
+    "bitacora/RCS-29104.md",
+    "inbox/2026-09-25-backlog-82-facilidad.md",
+    "inbox/2026-09-25-cola-actual-cambios-y-cierres.md",
+    "inbox/2026-09-25-cola-tarde-prioridades.md",
+    "inbox/2026-09-25-rcs-29128-evaluacion.md",
+    "inbox/2026-09-24-cola-prioridades-respuestas.md"
+  ],
+  "sources_total": 29,
+  "reference_evidence": [
+    {
+      "id": 13165,
+      "path": "inbox/2026-09-25-backlog-82-facilidad.md",
+      "line": 13,
+      "end_line": 17,
+      "title": "2026-09-25-backlog-82-facilidad | Backlog 82: orden por facilidad, 25 septiembre 2026",
+      "body": "Historial: RCS-26883 documenta reportes y referencias personalizados por Nicole Myers y Vlad, confirmación de funcionamiento y cambio permanente el 22 jun. RCS-29039: Roseanne confirmó el 23 sep que reaparecieron sus reportes; estado actual UCR, pese al anuncio de cierre. RCS-24233: cambios de tender exigieron mapeo y PR, por lo que no asumir equivalencia por etiqueta. RCS-29104, bitácora local, enseña a distinguir archivo recibido de fila cargada; no demuestra causa común con Jewel.\n\nMétodo: bin/buscar, fichas e índices locales, Rovo Search, JQL dirigido, descripciones y comentarios en Jira y revisión visual completa de los dos PDF. No se inspeccionó Composer ni datos productivos. No existe causa técnica confirmada para los tres tickets. No se ejecutaron cambios ni se enviaron mensajes. Las búsquedas semánticas avisaron cobertura parcial; la cola se verificó directamente.\n\nFichas de acción: 2026-09-25-rcs-29129-evaluacion.md, 2026-09-25-rcs-29127-evaluacion.md y 2026-09-25-rcs-29128-evaluacion.md en inbox. Juan puede ingerir las notas desde su terminal con cerrar.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13168,
+      "path": "inbox/2026-09-25-cola-actual-cambios-y-cierres.md",
+      "line": 15,
+      "end_line": 22,
+      "title": "2026-09-25-cola-actual-cambios-y-cierres",
+      "body": "5. RCS-29104 GPC, High, Delivery. Escalación y respuesta del 24; sin nuevos comentarios en RCS. Seguir dueño técnico y revisión de datos fuente.\n6. RCS-28281 Ahold, High, UCR. Reenvío solicitado anoche; sin respuesta nueva. Mantener seguimiento a DXC y consulta interna de recuperación.\n7. RCS-28294 Vallarta, Medium, WIP. Cliente informado el 24. ENG-9152: último comentario 22 sep, alcance aclarado. Obtener planificación del fix permanente; mitigado.\n8. RCS-28881 NEXCOM, Medium, WIP. Lunes 28 acordado. Verificar invitación y sesión; Jira no confirma calendario.\n9. RCS-28667 ADUSA usuarios, Medium, WIP. Alternativa manual y respuesta el 24. Fijar fecha con especialista SSO e IT.\n10. RCS-28984 Skechers, High, UCR. Seguimiento anoche. Hoy solo recordatorio automático de siete días; no respuesta del cliente.\n11. RCS-28223 McDonald’s, Medium, UCR. Seguimiento publicado anoche; espera retest.\n12. RCS-28351 Blain’s, Medium, UCR. Último pedido anoche con fecha explícita 29 sep; respetarla. Aviso automático 14 días el 22 sep, final 28 días aún no consta.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 13173,
+      "path": "inbox/2026-09-25-cola-tarde-prioridades.md",
+      "line": 7,
+      "end_line": 14,
+      "title": "2026-09-25-cola-tarde-prioridades",
+      "body": "Fuentes: RCS-29123 descripción y comentario 3364643; RCS-29026 comentario 3364480; inbox/2026-09-25-rcs-29026-hallazgo-codigo.md.\n\nPrioridad 2: RCS-28256 Tailored Brands, High. Último público 18 sep, siete días. Nota interna de ayer recoge investigación de Matt sin causa. Pedir próximo hito/fecha y actualizar a Colton hoy.\n\nPrioridad 3: RCS-28756 Nike. Ya respondiste a Ganesh. RTS-206999 comentario 3364610 de hoy 13:42 Bogotá: pipeline 20260925.2 corriendo en load_raw_ecom_blob.py; 8/28 llega a 15,701, 9/1 a 32,008. Falta respuesta sobre archivos pendientes, capacidad y fin de recuperación. Push interno con Peyman, no nuevo acuse vacío.\n\nPrioridad 4: RCS-29104 GPC, High. Kristen escribió hoy 11:07 Bogotá que contactó al cliente sobre archivos sin tender. Seguimiento activo; coordinar con ella y Delivery sin duplicar pedido. No convertir su correo en confirmación de causa.\n",
+      "date": "2026-09-25"
+    }
+  ],
+  "related_mentions": [
+    {
+      "ticket": "RCS-28294",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28881",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28667",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28984",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28223",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28351",
+      "sources": [
+        "inbox/2026-09-24-cola-prioridades-respuestas.md",
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-29130",
+      "sources": [
+        "bitacora/RCS-29104.md",
+        "inbox/2026-09-25-rcs-29104-teams-peyman-3.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28632",
+      "sources": [
+        "inbox/2026-09-24-rcs-29104-comentario-interno.md",
+        "inbox/2026-09-24-rcs-29104.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-26883",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-29039",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-24233",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-29129",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-29127",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-29128",
+      "sources": [
+        "inbox/2026-09-25-backlog-82-facilidad.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    },
+    {
+      "ticket": "RCS-28281",
+      "sources": [
+        "inbox/2026-09-25-cola-actual-cambios-y-cierres.md"
+      ],
+      "kind": "coaparición, verificar relación"
+    }
+  ],
+  "ficha": "/Users/MancoMenStudio/Cerebro/tickets/RCS-29104.md",
+  "instruction": "Prioriza la bitácora completa y notas recientes. La ficha puede estar atrasada. Consulta Jira para estado y compromisos actuales; no tratar borradores como enviados."
+}

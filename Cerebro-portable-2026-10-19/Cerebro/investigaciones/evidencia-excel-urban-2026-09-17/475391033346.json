@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"data\":{\"id\":\"475391033346\",\"type\":\"page\",\"title\":\"System Search - How to check editing permissions for users\",\"status\":\"current\",\"spaceId\":\"4708335613\",\"snapshotToken\":\"v:1\",\"detail\":\"full\",\"body\":{\"format\":\"markdown\",\"value\":\"*Related Issues:*\\n\\n<https://trebuco.atlassian.net/jira/servicedesk/projects/RCS/queues/custom/67/RCS-12040> \\n\\n*Investigation Steps:*\\n\\n- Review the “Edit System Search Permission” in *system → ebr → ardm → store → builder → “Secure Store”* - example in the screenshot below:\\n\\n- Users who are not part of any of the listed permission groups above, will not be able to edit the CardLink search (*system → ebr → smarttracksearches → “SameTenderCard Transactions”*); whereas users with any of the above permissions are able to “Save” over a CardLink search.\\n- To verify the Edit permission for users, within the transaction receipt (transaction viewer), click on the card number (hyperlink) \\n- Once the card number (hyperlink) is clicked, the page is redirected to a “SameTenderCardTransactions” page (system search) - example below:\\n\\n- Users with Edit permission can see “Composer” and “Save” options (as seen in the screenshot above).\\n- Note: Only Support has the “Edit” permission to directly edit the “SameTenderCardTransactions” system search (in *system → ebr → smarttracksearches → “SameTenderCard Transactions”*).\\n\",\"lossyConversion\":true,\"lostFeatures\":[\"u\",\"ac:image\",\"ri:attachment\"]},\"metadata\":{\"hasSpaceInstructions\":false,\"totalViews\":9,\"authorId\":\"629e1fa49248fe006910f97f\",\"version\":{\"number\":1,\"createdAt\":\"2024-05-13T22:52:26.605Z\",\"message\":\"\"}}}}"
+    }
+  ],
+  "isError": false
+}

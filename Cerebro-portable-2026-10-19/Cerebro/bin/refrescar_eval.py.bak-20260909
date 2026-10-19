@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""Avisa cuando las etiquetas del clasificador vencieron, antes de culpar al codigo.
+
+El set de cola/EVAL-clasificador.json caduca solo. Se fija leyendo el ultimo comentario de
+cada ticket un dia concreto. Cada comentario nuevo que llega despues deja esa etiqueta
+describiendo un momento que ya paso. Medido el 8 sep 2026: la exactitud marcaba 73% y los
+cuatro fallos eran cuatro de los seis tickets con comentarios posteriores a la fecha de
+fijado. Refrescar dos etiquetas subio la exactitud a 87% sin tocar una linea del lexico.
+
+Uso:
+    python3 bin/refrescar_eval.py                 el informe, dice que etiquetas vencieron
+    python3 bin/refrescar_eval.py --fijar         sella la fecha de hoy, ya revisadas a mano
+
+Sale con codigo 1 si hay etiquetas vencidas. Corre esto antes de eval_cola.py.
+"""
+import json, os, sys, datetime, importlib.util
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+spec = importlib.util.spec_from_file_location("cola", os.path.join(ROOT, "bin", "cola.py"))
+cola = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(cola)
+
+EVAL = os.path.join(ROOT, "cola", "EVAL-clasificador.json")
+DUMP = os.path.join(ROOT, "cola", "jira-dump.json")
+BOTS = cola.BOTS
+
+gold = json.load(open(EVAL, encoding="utf-8"))
+fijado = gold["fijado"]
+esperado = {c["ticket"]: c for c in gold["casos"]}
+dump = json.load(open(DUMP, encoding="utf-8"))
+ahora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-4)))
+
+vencidas, vivas, sin_datos = [], 0, []
+for issue in dump["issues"]["nodes"]:
+    tid = issue["key"]
+    if tid not in esperado:
+        continue
+    cs = [c for c in issue["fields"].get("comment", {}).get("comments", [])
+          if not c["author"]["accountId"].startswith(BOTS)]
+    if not cs:
+        sin_datos.append(tid)
+        continue
+    ult = cs[-1]
+    fecha = ult["created"][:10]
+    if fecha > fijado:
+        modelo = cola.clasificar_final(issue, ahora)[0]
+        vencidas.append({
+            "ticket": tid, "fecha": fecha, "gold": esperado[tid]["nivel"],
+            "modelo": modelo["nivel"], "etiqueta": modelo["etiqueta"],
+            "autor": ult["author"]["displayName"],
+            "cliente": cola.es_cliente(ult["author"]["accountId"], ult["author"]["displayName"]),
+            "texto": cola.limpiar(ult["body"])[:240],
+        })
+    else:
+        vivas += 1
+
+print(f"etiquetas fijadas el {fijado}")
+print(f"vigentes {vivas}   vencidas {len(vencidas)}   sin comentarios {len(sin_datos)}")
+
+if not vencidas:
+    print("\nel set esta al dia. eval_cola.py mide el lexico, no el calendario.")
+    sys.exit(0)
+
+print("\nEstas etiquetas describen un momento que ya paso. Lee cada una y decide el nivel real")
+print("antes de creerle a una caida de exactitud.\n")
+for v in vencidas:
+    marca = "coinciden" if v["gold"] == v["modelo"] else f"DIFIEREN gold={v['gold']} modelo={v['modelo']}"
+    print(f"  {v['ticket']}  ultimo comentario {v['fecha']}  {marca}")
+    print(f"     {v['autor']}{' (cliente)' if v['cliente'] else ''}: {v['texto']}")
+    print(f"     el modelo hoy dice nivel {v['modelo']}, {v['etiqueta']}")
+    print()
+
+if "--fijar" in sys.argv:
+    hoy = datetime.date.today().isoformat()
+    gold["fijado"] = hoy
+    json.dump(gold, open(EVAL, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(f"fecha de fijado sellada en {hoy}. Las etiquetas que no editaste quedaron como estaban.")
+    sys.exit(0)
+
+print("Edita cola/EVAL-clasificador.json donde haga falta y despues corre:")
+print("  python3 bin/refrescar_eval.py --fijar")
+sys.exit(1)

@@ -1,0 +1,53 @@
+# Adjunto 2026-09-09-azure-captured-messages-juan-tooltip-6h.png
+Ruta: adjuntos/RCS-28756/2026-09-09-azure-captured-messages-juan-tooltip-6h.png
+Tipo: png
+Ticket: RCS-28756
+Modificado: 2026-09-09
+
+Texto reconocido por OCR:
+Microsoft Azure
+Q Search resources, services, and docs (G+/)
+" Copilot
+Home › prd-datacloud-wus2-ehub-1
+• prd-datacloud-wus2-ehub-1 | Metrics * ...
+Event Hubs Namespace
+• Search
+* Overview
+Activity log
+9 Access control (IAM)
+* Tags
+X Diagnose and solve problems
+Fo Data Explorer
+A. Resource visualizer
+Events
+› Settings
+› Entities
+› Monitoring
+› Automation
+> Help
+- New chart
+) Refresh
+LE Share V
+Sum Captured Messages. for pro-datacloud-wus2-ehub-1 where EntityName = 'C67 _rawdata_order'
++ Add metric
+*y Add filter *x Apply splitting
+ET prd-datacloud-wus2-ehub-1, Captured Messages., Sum ∞
+T Entity... = c67_rawdat... •
+1.80M
+Aug 20 9:00 AM
+• Captured Messages. (Sum), prd-datacloud-wus2-ehu…
+1.17M
+X
+Local Time: Last 30 days (Automatic - 6 hours)
+LE Line chart VE Drill into Logs V Q New alert rule
+H Save to dashboard V * ...
+600k
+400k
+200k
+Aug 16
+Aug 209:00 AM
+Captured Messages. (Sum), prd-datacloud-wus2-ehub-1 |1.17M
+Aug 23
+Aug 30
+Sep 06
+UTC-05:00

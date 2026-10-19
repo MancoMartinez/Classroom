@@ -1,0 +1,52 @@
+# Adjunto image-20260415-174353.png
+Ruta: adjuntos/confluence-474627801097/image-20260415-174353.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-10-13
+
+Texto reconocido por OCR:
+Intermediate
+category
+Possible bug or
+code-related issue
+Issue with
+implemented data /
+config
+Changes or updates
+to data / config or
+other billable items
+New feature request
+Ticket type
+Incident
+Escalation
+target
+Engineering
+Incident
+Delivery
+Change
+Request
+CSM
+Feature
+Request
+Customer
+Feedback
+Portal
+Notes
+L2 identifies a likely defect
+and escalates to
+Engineering for investigation
+and fix.
+Problems with data or
+configuration that was
+already deployed are routec
+to the Delivery team for
+remediation.
+Any work involving
+configuration changes/items
+hat may incur a charge is
+passed to the Customer
+Success Manager.
+Customer-initiated requests
+for new functionality are
+referred to the Customer
+Feedback Portal.

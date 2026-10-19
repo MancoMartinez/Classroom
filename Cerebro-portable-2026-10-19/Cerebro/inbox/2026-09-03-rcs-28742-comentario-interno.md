@@ -1,0 +1,1 @@
+Ran Build All Screens again on the Stater Bros tenant. Retested the same case, 2026-083-STORE SHOPLIFT-220, seven times. All seven saves went through clean, no blank screen. Looks good for now, keeping an eye on it since the issue was intermittent before.

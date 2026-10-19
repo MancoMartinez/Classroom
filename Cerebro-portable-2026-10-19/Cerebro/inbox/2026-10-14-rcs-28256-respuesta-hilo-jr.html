@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Correo J.R. RCS-28256</title>
+<style>body{font-family:Aptos,Calibri,Arial,sans-serif;font-size:11pt;line-height:1.45;color:#111;background:#fff;max-width:720px;margin:16px}p{margin:0 0 10px}ul{margin:0 0 12px 18px;padding:0}li{margin:0 0 4px}.t{margin:16px 0 4px;text-decoration:underline}a{color:#0563c1}</style></head>
+<body>
+<p>J.R., Camila and Rae,</p>
+<p>Here is the update on Tailored Brands after reviewing the four tickets and the user data behind them.</p>
+
+<p class="t">Summary</p>
+<p>Two separate causes explain why blank Incident Security ID cases keep appearing. Both were confirmed in the database today.</p>
+
+<p class="t">1. Level not applied at sign in. Engineering</p>
+<ul>
+<li>46 users who signed in since the July 2 fix have Location Manager or District Manager in the daily file, but no level on their account.</li>
+<li>All 46 lack an Incident user record. Every user who has one received the level, 79 of 79.</li>
+<li>Example: Christi Winters has had a manual level since April 17, signed in July 14, and still had none.</li>
+</ul>
+
+<p class="t">2. Office locations missing on our side. Data</p>
+<ul>
+<li>287 Incident users receive an office location in the daily file that is not in our location table.</li>
+<li>They get no hierarchy, so they cannot pick a store when creating an incident. Chris Orth is one of them.</li>
+</ul>
+<p>Also, the October 14 SSO file has not loaded yet. The latest load is from October 13.</p>
+
+<p class="t">Done today</p>
+<ul>
+<li>Set the level for Paul Bubelnik Jr, Nancy Bolhoff and Rachel Dill. Chaz Hyman and Vincent Fortner already had it.</li>
+<li>Asked Colton which store Chris Orth should be assigned to.</li>
+<li>Posted the findings in <a href="https://trebuco.atlassian.net/browse/RCS-28256">RCS-28256</a> and proposed splitting it into one ticket per cause. The slowness stays there with <a href="https://trebuco.atlassian.net/browse/ENG-9990">ENG-9990</a>.</li>
+</ul>
+
+<p class="t">Next</p>
+<ul>
+<li>Waiting on Matthew Kamminga on whether the sign in issue goes to Engineering. The location issue would go to Delivery.</li>
+<li>Once we confirm the manual fix holds after sign in, we can apply it to the other affected accounts.</li>
+</ul>
+
+<p class="t">Ticket history</p>
+<ul>
+<li><a href="https://trebuco.atlassian.net/browse/RCS-27269">RCS-27269</a>, June 4: built the load of the Incident level from the daily file into Secure.</li>
+<li><a href="https://trebuco.atlassian.net/browse/RCS-27578">RCS-27578</a>, June 26: Secure ignored those levels at sign in. Fixed July 2.</li>
+<li><a href="https://trebuco.atlassian.net/browse/RCS-27941">RCS-27941</a>, July 22: a separate Case Type security configuration. Resolved September 16.</li>
+<li><a href="https://trebuco.atlassian.net/browse/RCS-28256">RCS-28256</a>, August 10: slow loads, plus the access reports above.</li>
+</ul>
+
+<p>Rae, Friday October 16 at 12:00 PM ET works for me for the meeting with Tailored, if that is still the slot.</p>
+<p>Camila, RCS-28256 is past 60 days, so Jira asks for a Support management review first. Could we use a few minutes before Friday?</p>
+
+<p>Juan Martinez<br>Appriss Retail Support</p>
+</body></html>

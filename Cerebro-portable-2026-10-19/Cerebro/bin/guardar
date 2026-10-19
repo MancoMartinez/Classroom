@@ -1,0 +1,53 @@
+#!/bin/bash
+# Guarda una nota en el segundo cerebro. Portable: escribe en la base del bundle.
+#   guardar --carpetas                    lista las carpetas con sus IDs
+#   echo "texto" | guardar 26 "Título"    guarda el cuerpo desde stdin
+#   guardar 26 "Título" < archivo.md
+set -uo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DB="${CEREBRO_DB:-$ROOT/brain/sessions.db}"
+[ -f "$DB" ] || { echo "no encuentro la base en $DB"; exit 1; }
+
+if [ "${1:-}" = "--carpetas" ]; then
+  python3 - "$DB" <<'PY'
+import sqlite3, sys
+c = sqlite3.connect("file:%s?mode=ro" % sys.argv[1], uri=True)
+for fid, name, n in c.execute("""SELECT f.id,f.name,COUNT(k.id) FROM knowledge_folders f
+        LEFT JOIN knowledge_chunks k ON k.folder_id=f.id GROUP BY f.id ORDER BY f.id"""):
+    print(f"  {fid:>3}  {name}  ({n})")
+PY
+  exit 0
+fi
+
+FOLDER="${1:-}"; shift || true; TITLE="${*:-}"
+[ -z "$FOLDER" ] || [ -z "$TITLE" ] && {
+  echo "uso: guardar <carpeta> \"título\"   (cuerpo por stdin)"; echo "     guardar --carpetas"; exit 1; }
+
+# En macOS, Moscú abierta bloquea la escritura.
+pgrep -f "Moscu.app/Contents/MacOS/Moscu" >/dev/null 2>&1 && {
+  echo "Moscú está abierta. Ciérrala antes de escribir."; exit 1; }
+
+BODY=$(cat)
+[ -z "$BODY" ] && { echo "no llegó cuerpo por stdin"; exit 1; }
+
+# Backup antes de escribir, y rotacion. Sin rotar, ocho copias de 31MB comieron 250MB
+# de la carpeta y la volvieron impracticable de migrar. Se guardan las dos mas recientes.
+cp "$DB" "$DB.bak-$(date +%Y%m%d-%H%M%S)"
+ls -1t "$DB".bak-* 2>/dev/null | tail -n +3 | while read -r viejo; do rm -f "$viejo"; done
+export CEREBRO_BODY="$BODY"
+python3 - "$DB" "$FOLDER" "$TITLE" <<'PY'
+import sqlite3, sys, time, os
+db, folder, title = sys.argv[1], int(sys.argv[2]), sys.argv[3]
+body = os.environ["CEREBRO_BODY"]
+con = sqlite3.connect(db); cur = con.cursor()
+if not cur.execute("SELECT 1 FROM knowledge_folders WHERE id=?", (folder,)).fetchone():
+    sys.exit(f"la carpeta {folder} no existe, corre: guardar --carpetas")
+ordv = cur.execute("SELECT COALESCE(MAX(ord),0)+1 FROM knowledge_chunks WHERE folder_id=?",
+                   (folder,)).fetchone()[0]
+cur.execute("""INSERT INTO knowledge_chunks
+    (folder_id,title,body,source_path,ord,created_at,contextualized_body,embedding_model,embedding_dim)
+    VALUES(?,?,?,?,?,?,'','',0)""", (folder, title, body, "terminal", ordv, int(time.time())))
+con.commit()
+print("guardado, chunk", cur.lastrowid)
+con.close()
+PY

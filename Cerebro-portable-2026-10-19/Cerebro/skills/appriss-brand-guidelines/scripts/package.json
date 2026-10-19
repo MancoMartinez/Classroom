@@ -1,0 +1,12 @@
+{
+  "name": "appriss-brand-pptx",
+  "version": "1.0.0",
+  "description": "Appriss Retail branded PPTX generator",
+  "main": "brand-test.js",
+  "scripts": {
+    "generate": "node brand-test.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}

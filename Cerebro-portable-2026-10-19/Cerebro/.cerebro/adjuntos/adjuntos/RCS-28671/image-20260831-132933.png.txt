@@ -1,0 +1,40 @@
+# Adjunto image-20260831-132933.png
+Ruta: adjuntos/RCS-28671/image-20260831-132933.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Results
+Line Item Void - General Search e
+All line item voids by a selected parameters
+Parameters
+Select all
+REQ O HEADER
+REQ O
+HEADER
+Transaction Date Between
+June
+$ 01
+$ 2026 $ • And August = 31
+$ 2026 $ •
+Store Number Equalto 2605
+® HEADER
+Cashier LDAP Equal to
+UBMKVT7
+HEADER
+Transaction Total Between
+Parameter
+And
+Parameter
+HEADER
+Total Line Item Void Amount Between
+Parameter
+And Parameter
+TENDER Account Number - XREF Equal to
+Parameter
+ITEM
+SKU In Parameter
+TENDER
+Tender Type Group In
+Parameter

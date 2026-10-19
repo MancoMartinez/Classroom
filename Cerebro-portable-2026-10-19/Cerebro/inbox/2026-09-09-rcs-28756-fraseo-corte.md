@@ -1,0 +1,1 @@
+The last ECOM order data we received from Nike came in on 2026-08-27 at 19:02 UTC. Nothing has arrived since that point, which is why trading day 2026-08-28 is the first day with zero ECOM records and why our earlier note referred to the loss starting on 2026-08-28. The gap has continued every day through 2026-09-09.

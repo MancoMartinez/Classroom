@@ -1,0 +1,26 @@
+# Adjunto image-20260729-161351.png
+Ruta: adjuntos/RCS-28032/image-20260729-161351.png
+Tipo: png
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Spaces / Retail Customer Support
+Customers
+Customers
+Organizations
+Products
+Add context about your customers
+You can now add custom detall flelds to your customer profiles and use this information on work Items and anywhere you can filter using JQL. To get started, create your fields in "Manage detalls". Then you can us
+Read more about customer detall flelds • Dismiss
+These people can request help in your space. You can select a customer to view and manage their information.
+loseph.austin@vitaminshoppe.com
+Filter v
+Customer not found? Try refining your search.
+Joe Austin
+Open requests
+4 open
+Closed requests
+70 closed
+Status O
+Active

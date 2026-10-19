@@ -1,0 +1,12 @@
+# Adjunto image (8).png
+Ruta: adjuntos/RCS-28032/image (8).png
+Tipo: png
+Ticket: RCS-28032
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Session Error
+Your Incident session could not be established. This is usually
+caused by a temporary account configuration issue.
+Please return to the Secure portal and sign in again. If the problem
+persists, contact your administrator.

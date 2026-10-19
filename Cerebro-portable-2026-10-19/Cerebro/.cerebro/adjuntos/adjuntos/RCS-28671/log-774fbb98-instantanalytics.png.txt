@@ -1,0 +1,40 @@
+# Adjunto log-774fbb98-instantanalytics.png
+Ruta: adjuntos/RCS-28671/log-774fbb98-instantanalytics.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-28
+
+Texto reconocido por OCR:
+Logs
+Log Source
+Grafana
+homedepot.com (85)
+Severity
+All
+@ Last 3 days
+C open in Grafana
+~ Filters
+Quick filters:
+User token
+774fbb98-fc34-4cd0-8ee8-538f85d2967d
+Troce lol
+Instance ID
+Azure Application
+Message filter
+Client e
+85
+Logged Date -
+Time
+2026-09-
+O1119:17:56.153
+Severity ê
+Component
+Condon
+Message
+Error
+Core.InstantAnalytics.InstantAnalyticsService
+GetinstantAnalyticsEvents
+System.Exception: The Events relating to this instant analytics result could not be found. at Sysrepublic. Secure Core.InstantAnalytics.InstantAnalyticsService.GetinstantAnalyticsEvents(Guid filD,
+Guid tilelD, JObject parameters) in D: \a \_work \2\s \Sources \Core \Core \Instant Analytics \Core \InstantAnalyticsService csline 306 at
+PlatformULAreas. Viewer.Controllers.ApiController.InstantAnalyticsEventsAsync(String sourceApp, Guid ftilD, Guid tileD) in
+D: \a\_work\2\s \Sources \Ul\ PlatformUl \Areas \ Viewer \Controllers \ApiController.cs:line 156

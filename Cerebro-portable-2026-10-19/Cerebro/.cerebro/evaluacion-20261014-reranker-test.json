@@ -1,0 +1,194 @@
+{
+  "fecha": "2026-10-15T01:30:47.655203+00:00",
+  "particion": "test",
+  "referencia": "hybrid",
+  "config": {
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "embedding_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "reranker": {
+      "enabled": false,
+      "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "revision": null,
+      "top_n": 30,
+      "max_length": 512
+    },
+    "penalizacion_reemplazado": 0.5,
+    "vigencia_volatil_dias": 3
+  },
+  "indice": {
+    "sources": 3976,
+    "chunks": 18398,
+    "vector_chunks": 18398,
+    "model": "intfloat/multilingual-e5-small"
+  },
+  "conjuntos": {
+    "anclas": {
+      "bm25": {
+        "n": 32,
+        "hit1": 0.0938,
+        "hit5": 0.25,
+        "mrr": 0.143,
+        "ndcg": 0.0604,
+        "recall": 0.0587,
+        "p50_s": 0.0035,
+        "p95_s": 0.0069,
+        "delta_hit5_ic95": [
+          -0.3438,
+          0.0312
+        ],
+        "delta_mrr_ic95": [
+          -0.2112,
+          -0.0083
+        ],
+        "delta_ndcg_ic95": [
+          -0.0894,
+          -0.0184
+        ]
+      },
+      "hybrid": {
+        "n": 32,
+        "hit1": 0.1562,
+        "hit5": 0.4062,
+        "mrr": 0.2511,
+        "ndcg": 0.1138,
+        "recall": 0.1049,
+        "p50_s": 0.0701,
+        "p95_s": 0.0845
+      },
+      "rerank": {
+        "n": 32,
+        "hit1": 0.25,
+        "hit5": 0.4375,
+        "mrr": 0.3327,
+        "ndcg": 0.161,
+        "recall": 0.139,
+        "p50_s": 2.1826,
+        "p95_s": 2.7363,
+        "delta_hit5_ic95": [
+          -0.0938,
+          0.1562
+        ],
+        "delta_mrr_ic95": [
+          -0.0381,
+          0.2087
+        ],
+        "delta_ndcg_ic95": [
+          -0.0039,
+          0.1061
+        ]
+      }
+    },
+    "precedentes": {
+      "bm25": {
+        "n": 24,
+        "hit1": 0.0417,
+        "hit5": 0.1667,
+        "mrr": 0.1001,
+        "ndcg": 0.0581,
+        "recall": 0.0772,
+        "p50_s": 0.0033,
+        "p95_s": 0.0053,
+        "delta_hit5_ic95": [
+          0.0,
+          0.125
+        ],
+        "delta_mrr_ic95": [
+          -0.0417,
+          0.1371
+        ],
+        "delta_ndcg_ic95": [
+          -0.0319,
+          0.0369
+        ]
+      },
+      "hybrid": {
+        "n": 24,
+        "hit1": 0.0,
+        "hit5": 0.125,
+        "mrr": 0.0682,
+        "ndcg": 0.0568,
+        "recall": 0.1022,
+        "p50_s": 0.0687,
+        "p95_s": 0.0751
+      },
+      "rerank": {
+        "n": 24,
+        "hit1": 0.0,
+        "hit5": 0.25,
+        "mrr": 0.1115,
+        "ndcg": 0.0683,
+        "recall": 0.1226,
+        "p50_s": 2.5641,
+        "p95_s": 3.1568,
+        "delta_hit5_ic95": [
+          -0.125,
+          0.375
+        ],
+        "delta_mrr_ic95": [
+          -0.0398,
+          0.1308
+        ],
+        "delta_ndcg_ic95": [
+          -0.0462,
+          0.0674
+        ]
+      }
+    },
+    "todos": {
+      "bm25": {
+        "n": 56,
+        "hit1": 0.0714,
+        "hit5": 0.2143,
+        "mrr": 0.1246,
+        "ndcg": 0.0594,
+        "recall": 0.0666,
+        "p50_s": 0.0033,
+        "p95_s": 0.0069,
+        "delta_hit5_ic95": [
+          -0.1786,
+          0.0357
+        ],
+        "delta_mrr_ic95": [
+          -0.1184,
+          0.0256
+        ],
+        "delta_ndcg_ic95": [
+          -0.0571,
+          -0.0036
+        ]
+      },
+      "hybrid": {
+        "n": 56,
+        "hit1": 0.0893,
+        "hit5": 0.2857,
+        "mrr": 0.1727,
+        "ndcg": 0.0894,
+        "recall": 0.1038,
+        "p50_s": 0.069,
+        "p95_s": 0.0839
+      },
+      "rerank": {
+        "n": 56,
+        "hit1": 0.1429,
+        "hit5": 0.3571,
+        "mrr": 0.2379,
+        "ndcg": 0.1213,
+        "recall": 0.132,
+        "p50_s": 2.4531,
+        "p95_s": 3.1011,
+        "delta_hit5_ic95": [
+          -0.0714,
+          0.1964
+        ],
+        "delta_mrr_ic95": [
+          -0.0155,
+          0.1448
+        ],
+        "delta_ndcg_ic95": [
+          -0.0088,
+          0.0731
+        ]
+      }
+    }
+  }
+}

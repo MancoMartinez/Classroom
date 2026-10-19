@@ -1,0 +1,55 @@
+# Adjunto 05-alert-history-205157.png
+Ruta: adjuntos/RCS-29103/05-alert-history-205157.png
+Tipo: png
+Ticket: RCS-29103
+Modificado: 2026-09-24
+
+Texto reconocido por OCR:
+< G&https://apps.apprissretail.com/staterbros/nettrack/LPMS/ManageAlertHistory.aspx?SuspectID=205157&MasterCaseID=200177&ShopliftingID=205157&Storeldent=335
+603 LPMS
+A Agilence
+SB Price Book
+SB Scan App
+SB Shop | Stater Bros... • Free Al Photo Enha... LT OKTA LVT - Sign In d Flock Safety @ BeyondTrust: Cons...
+Ca Corp links
+##
+E FaceFirst
+7 APPRISS
+ETAI
+Case Information
+tu TLOxp - Login
+a DeFlock Maps |AL...
+/ |
+| [
+SB Stream | Microsoft...
+CONFIGURATION...
+Back to Menu
+Tasks
+Calendar
+Quick Links
+Support
+Admin
+Us
+Smart Alert History
+Incident Date
+9/23/2026
+Case No
+2026-058-DISCIPLINE
+REQUEST-41
+Accused Name
+Mc Fly, Marty
+Store No
+058
+Store
+Store #58 - Palm
+Highland, CA
+909-864-0122
+Case Status
+Run Date
+Smart Alert Name
+Smart Alert History
+Run Status
+No Matching Alerts Found.
+Email Addresses
+Assigned To
+Close

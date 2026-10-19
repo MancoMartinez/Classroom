@@ -1,0 +1,81 @@
+# Adjunto 2026-09-25-roseanne-escenario1.png
+Ruta: adjuntos/RCS-29129/2026-09-25-roseanne-escenario1.png
+Tipo: png
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+Texto reconocido por OCR:
+MRC # 1067 issued for -$67.95
+Not redeemed at Store # 92 as of 9/2/26
+Store 92
+ROOSEVELT FIELD, NY
+Reg 1
+Store 92
+Cashier 698128 William Vega
+Retum
+Price
+S-64.95
+QTY
+KAIA ULT LR BAGGY COPENHA
+858746
+-1.00
+SUBTOTAL
+SALES TAX
+TOTAL
+Gift Card
+Swiped
+ITEMS SOLD
+ITEMS RETURNED
+Redemption Amount
+$-67.95
+Gift Card Information
+Redemption
+Card No
+600649********1067
+08/03/20267:23:51 PM
+Trans# 8630
+.......
+Amt
+$-64.95
+S-64,95
+$-3.00
+$-67.95
+$-67.95
+....
+Below, MRC # 7066 issued for -$69.79
+Store 492
+UNIVERSITY MALL, UT
+Reg 2
+Store 492
+Cashier 641807 Malia Ah Kuoi
+Loyalty Card M-0015348889
+Customer. christine morley
+Customer e-mail: fortgarrison5@gmail.com
+Trans# 7410
+QTY
+-1.00
+Retum
+Price
+$-64.95
+L GIRLFRIEND GENESIS
+7289903
+SUBTOTAL
+SALES TAX
+TOTAL
+Gift Card
+ITEMS SOLD
+ITEMS RETURNED
+Redemption Amount
+$-69.79
+Keyed
+Amt
+$-64.95
+$-64.95
+$-4.84
+$-69.79
+$-69.79
+Gift Card Information
+Redemption
+Card No
+*==********-- 7066
+09/05/20261:51:45 PM

@@ -1,0 +1,20 @@
+# Adjunto 2026-09-01-ericka-wi-248159-error-detalle.png
+Ruta: adjuntos/RCS-28671/2026-09-01-ericka-wi-248159-error-detalle.png
+Tipo: png
+Ticket: RCS-28671
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Portal > Work Item
+Events
+Transactions
+• Investigation
+7 Filter
+• Journal
+Selected
+Nothing selected.
+4 Pinned (0/4)
+Pin some items to see them here.
+E3 Expand
+There has been a system error. Please contact support.
+Show Me Details ×

@@ -1,0 +1,53 @@
+# Adjunto 2026-09-25-composer-cash-display.png
+Ruta: adjuntos/RCS-29129/2026-09-25-composer-cash-display.png
+Tipo: png
+Ticket: RCS-29129
+Modificado: 2026-09-25
+
+Texto reconocido por OCR:
+• Dependencies
+= B
+= =
+= =
+Sum of Amount
+Sorting: Ascending
+Unique Count of Appriss Trans ID
+Rank of
+= Add Display Field
+Sorting Order: 0
+Display Filters
++ Add Filter
+AND
+e Add Group
+Expanded Display Fields
+= HEADER
+Store No
+= HEADER Cashier No
+HEADER End Trans Date Time
+= HEADER Register Number
+= HEADER Transaction Number
+HEADER Transaction Amount
+HEADER
+Void Ticket Flg
+= Add Display Field
+Sorting: Descending
+Sorting Order: 0
+*
+Data Area: Secure Store
+4
+g
+Change Area
+Cash Refund DOLLAR Amt
+Cash Refund Trans COUNT
+RANK of Trans Amt and Count
+: -
+^
+^
+: -
+Ü
+: -
+: -
+Ü
+: -
+4:26 PM
+9/25/2026

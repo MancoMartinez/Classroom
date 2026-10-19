@@ -1,0 +1,127 @@
+# Adjunto 1403034.png
+Ruta: investigaciones/evidencia-excel-urban-2026-09-17/1403034.png
+Tipo: png
+Ticket: sin ticket en la ruta
+Modificado: 2026-09-17
+
+Texto reconocido por OCR:
+Portal > Secure Store > Explorer › Composer
+Results
+Email Only Lookup 2025-09-03 •
+Lookup by order number only
+i
+Store
+No
+End Trans
+Date 1=
+Time
+870
+08/05/2026
+4:49:31 PM
+870
+07/20/2026
+2:30:32 PM
+870 05/16/2026
+8:45:59 AM
+870
+01/07/2026
+8:40:25 AM
+870
+08/16/2025
+8:39:55 AM
+Employee
+Flg
+False
+False
+False
+False
+False
+Loyalty
+ID No
+Order No
+C008700306677
+C008700224687
+C008700224033
+C008700304684
+C008700221132
+Customer E Mail
+Customer
+Full
+Name
+canaanloudermilk@gmail.com
+Canaan
+Loudermilk
+canaanloudermilk@gmail.com
+Canaan
+Loudermilk
+canaanloudermilk@gmail.com
+Canaan
+Loudermilk
+canaanloudermilk@gmail.com
+Canaan
+Loudermilk
+canaanloudermilk@gmail.com
+Canaan
+Loudermilk
+Customer
+Address1
+74
+Washington
+PI
+74
+Washington
+PI
+74
+Washington
+Pl
+74
+Washington
+Place
+74
+Washington
+PI
+Customer
+Day
+Phone
+Number
+8456645882
+8456645882
+8456645882
+8456645882
+8456645882
+Ship
+To
+Full
+Name
+Ship To
+Address
+1
+8 results
+Cashier
+No
+338553
+338553-
+Trans
+Amount
+-185.37
+Register
+338553
+338553
+-42.59
+-425.64
+Tabular
+Cha
+× Г
+Total
+Staff
+Discount
+Amount
+0.0
+0.0
+0.0
+338553
+338553
+-105.21
+0.0
+-43.84
+0.0

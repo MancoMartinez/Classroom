@@ -1,0 +1,504 @@
+{
+ "generado": "2026-09-17T12:07:52.749694-04:00",
+ "total": 18,
+ "tickets": [
+  {
+   "ticket": "RCS-28558",
+   "resumen": "Tailored Brands-Case Class Type Recovery",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "Colton Neal",
+   "labels": [],
+   "edad": 23,
+   "nivel": 1,
+   "etiqueta": "TE TOCA RESPONDER",
+   "motivo": "Colton Neal escribio hace 0 dias y nadie de Appriss contesto",
+   "dias": 0,
+   "alertas": [],
+   "silencio_cliente": 1,
+   "avance_real": false,
+   "dias_desde_toma": null,
+   "causa_estado": "sin ficha",
+   "causa_texto": "",
+   "ultimo_autor": "Colton Neal",
+   "ultimo_texto": "Hey J.R. No worries about adding him! This issue has been resolved and can be marked as completed. Thank you, Colton Neal",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28558"
+  },
+  {
+   "ticket": "RCS-28342",
+   "resumen": "Ahold-Delhaize - Anthony Lopez - Employee data missing from profile",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "leighann.stubbs@adusa.com",
+   "labels": [
+    "EB&F_scheduled",
+    "Uni_Jul_26_DuplicateEmail"
+   ],
+   "edad": 35,
+   "nivel": 1,
+   "etiqueta": "TE TOCA RESPONDER",
+   "motivo": "leighann.stubbs@adusa.com escribio hace 0 dias y nadie de Appriss contesto",
+   "dias": 0,
+   "alertas": [],
+   "silencio_cliente": 0,
+   "avance_real": true,
+   "dias_desde_toma": 29,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "leighann.stubbs@adusa.com",
+   "ultimo_texto": "I can see Daniel's information in the User tab.",
+   "bitacora": {
+    "fecha": "2026-09-14",
+    "nota": "Fix de titulos documentado: MERGE de Kiran Vadday del 17 ago, y aviso del cambio a JobDescription desde el 15 sep. Nota en inbox para aplicar al nuevo usuario reportado. (22:21)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28342"
+  },
+  {
+   "ticket": "RCS-28256",
+   "resumen": "Appriss Incident Time Out(s) and Slow Load times",
+   "estado": "Work in progress",
+   "prioridad": "High",
+   "reporta": "Colton Neal",
+   "labels": [
+    "EB&F_scheduled",
+    "Uni_Jul_26_Timeouts"
+   ],
+   "edad": 38,
+   "nivel": 1,
+   "etiqueta": "TE TOCA RESPONDER",
+   "motivo": "Colton Neal escribio hace 0 dias y nadie de Appriss contesto",
+   "dias": 0,
+   "alertas": [],
+   "silencio_cliente": 0,
+   "avance_real": true,
+   "dias_desde_toma": 26,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Colton Neal",
+   "ultimo_texto": "Hey Juan, It still takes between 35 and 40 seconds to jump from Secure to Incident. One User (Matthew Sincic) reported a time out issue on Monday (09/14) at approximately 10:12AM CST, but he did not send me a screenshot of the timeout message. I haven't heard of any other users experiencing time out",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28256"
+  },
+  {
+   "ticket": "RCS-28756",
+   "resumen": "Appriss Internal - Nike - ECOM Load issue since 28th August",
+   "estado": "Under Support Review",
+   "prioridad": "Medium",
+   "reporta": "Ganesh Nayak",
+   "labels": [],
+   "edad": 13,
+   "nivel": 1,
+   "etiqueta": "TE TOCA RESPONDER",
+   "motivo": "Sanath Acharya te pidio algo directo hace 0 dias y nadie de Appriss contesto",
+   "dias": 0,
+   "alertas": [
+    "Sanath Acharya te menciono directo"
+   ],
+   "silencio_cliente": 0,
+   "avance_real": true,
+   "dias_desde_toma": 12,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Sanath Acharya",
+   "ultimo_texto": "Hello @Juan Martinez, Could you please provide an update on this issue.",
+   "bitacora": {
+    "fecha": "2026-09-10",
+    "nota": "Ayesha Mehar insistio tres veces: 13:06 y 14:11 en el ticket, mas recordatorio por Teams a las\n17:20 de ayer. Pregunta concreta: que informacion es segura para compartir con el cliente. El ticket\nya quedo en Under Support Review.\n\nHallazgo que cierra las cuatro preguntas abiertas. Confluence PD 477499490306, Ingestion API -\nEventHub, de Carl Costelow, documenta el flujo completo: el cliente hace P"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28756"
+  },
+  {
+   "ticket": "RCS-28223",
+   "resumen": "McDonald's - Restaurant Manager and Crew Cash Audit Questions",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Hugo Cortez",
+   "labels": [
+    "Escalated",
+    "Uni_Jul_26_SSOMapping"
+   ],
+   "edad": 41,
+   "nivel": 2,
+   "etiqueta": "PROMESA SIN CUMPLIR",
+   "motivo": "prometiste un update hace 2 dias y no llego",
+   "dias": 2,
+   "alertas": [],
+   "silencio_cliente": 2,
+   "avance_real": true,
+   "dias_desde_toma": 20,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Hugo Cortez , Thank you for checking back in, and I am sorry for the wait on this one. I ran a test on this today and the grid columns accepted input on my end, all the way from Coaching through Termination. Before I call this resolved, I want to confirm it on your side too. Could you have one o",
+   "bitacora": {
+    "fecha": "2026-08-27",
+    "nota": "Retomado tras la salida de David Vargas. Extraido del PDF de Hugo el Client ID 402 y las dos pantallas, S4 Manager y S9 Crew. Contestadas las dos preguntas de Kamminga: si son grid, y pasos de reproduccion escritos. Comentario interno listo para pegar. (19:33)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28223"
+  },
+  {
+   "ticket": "RCS-28282",
+   "resumen": "Co-op - Intermittent blocked access notification when selecting transaction details",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Michelle Welsh",
+   "labels": [],
+   "edad": 37,
+   "nivel": 3,
+   "etiqueta": "ESPERANDO AL CLIENTE",
+   "motivo": "pediste algo hace 26 dias y no hay respuesta",
+   "dias": 26,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 26 dias",
+    "SLA en riesgo, prioridad Medium: llevas 36 dias desde que tomaste el ticket sin avance escrito en la solucion, techo de trabajo 7 dias"
+   ],
+   "silencio_cliente": 26,
+   "avance_real": false,
+   "dias_desde_toma": 36,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Michelle Welsh , Thanks for the screenshot, and apologies for the delay coming back to you. Access by country is something we configure for you. To set it correctly we need the list of countries your users should be able to reach the application from, and any you want blocked. Once you send that",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28282"
+  },
+  {
+   "ticket": "RCS-28289",
+   "resumen": "Vitamin Shoppe - Blocked Users",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Joe Austin",
+   "labels": [
+    "Uni_Jul_26_WAFAccess"
+   ],
+   "edad": 37,
+   "nivel": 3,
+   "etiqueta": "ESPERANDO AL CLIENTE",
+   "motivo": "Joe Austin se comprometio a volver hace 9 dias y no ha vuelto",
+   "dias": 9,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 22 dias"
+   ],
+   "silencio_cliente": 22,
+   "avance_real": true,
+   "dias_desde_toma": 36,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Joe Austin",
+   "ultimo_texto": "Good morning We are still working on our end for this ticket and figuring out where his IP is tunneling from. Once I hear back from IT, I will let you know. Thanks Joe",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28289"
+  },
+  {
+   "ticket": "RCS-28240",
+   "resumen": "United Supermarkets <> Appriss Retail Platform Unification Announcement | Appriss Incident Update Requested",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Emma Gomez",
+   "labels": [
+    "EB&F_scheduled",
+    "FromEmail",
+    "L1"
+   ],
+   "edad": 40,
+   "nivel": 3,
+   "etiqueta": "ESPERANDO AL CLIENTE",
+   "motivo": "pediste algo hace 8 dias y no hay respuesta",
+   "dias": 8,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 8 dias"
+   ],
+   "silencio_cliente": 8,
+   "avance_real": true,
+   "dias_desde_toma": 8,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Emma Gomez , thank you for sending the screenshots. I owe you an update on this ticket. Nobody confirmed ownership since you opened it on August 7, and that is on us. Your screenshots show two Azure AD sign in errors, AADSTS650059 and AADSTS700016, both referencing tenant Safeway, Inc. I need yo",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28240"
+  },
+  {
+   "ticket": "RCS-28351",
+   "resumen": "Blain's - Unable to Attach Files to Case Reports",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "James. Check",
+   "labels": [
+    "Uni_Jul_26_Attachments"
+   ],
+   "edad": 35,
+   "nivel": 3,
+   "etiqueta": "ESPERANDO AL CLIENTE",
+   "motivo": "pediste algo hace 8 dias y no hay respuesta",
+   "dias": 8,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 8 dias"
+   ],
+   "silencio_cliente": 8,
+   "avance_real": true,
+   "dias_desde_toma": 8,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @James. Check I'll be reviewing and implementing the solutions for your ticket. The fix has already been deployed, but I want you to verify if you're still experiencing errors. If you are, it's important that you send me screenshots with the URL included and step-by-step instructions so I can sol",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28351"
+  },
+  {
+   "ticket": "RCS-27791",
+   "resumen": "Guess - Audit Question not appearing correctly in Grid Style since url changeover.",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Stephanie Benedetti",
+   "labels": [
+    "60daysopen",
+    "EB&F_scheduled"
+   ],
+   "edad": 66,
+   "nivel": 4,
+   "etiqueta": "EN MOVIMIENTO INTERNO",
+   "motivo": "sin nada pendiente de cara al cliente",
+   "dias": 14,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 14 dias",
+    "SLA en riesgo, prioridad Medium: llevas 14 dias desde que tomaste el ticket sin avance escrito en la solucion, techo de trabajo 7 dias"
+   ],
+   "silencio_cliente": 14,
+   "avance_real": false,
+   "dias_desde_toma": 14,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Stephanie Benedetti Sorry for the delay on the ticket update. I wanted to confirm that everything is working on your end since all the changes were applied correctly. Thanks.",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-27791"
+  },
+  {
+   "ticket": "RCS-28581",
+   "resumen": "CWH- POS Number has regressed to previous mapping",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "James McKenna",
+   "labels": [],
+   "edad": 22,
+   "nivel": 4,
+   "etiqueta": "EN MOVIMIENTO INTERNO",
+   "motivo": "sin nada pendiente de cara al cliente",
+   "dias": 13,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 13 dias",
+    "SLA en riesgo, prioridad Medium: llevas 20 dias desde que tomaste el ticket sin avance escrito en la solucion, techo de trabajo 7 dias"
+   ],
+   "silencio_cliente": 13,
+   "avance_real": false,
+   "dias_desde_toma": 20,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "James McKenna",
+   "ultimo_texto": "Thanks @Juan let me know if you need any further details. ‌",
+   "bitacora": {
+    "fecha": "2026-08-31",
+    "nota": "Investigacion arrancada. Encontrado DO-9495 como el fix original del mapeo POS a ardm_header_vw.machine_name, cerrado 29 abr 2026 sin fixVersion y materializado por recarga manual de un archivo c248_rawdata. Descartado el updated del 19 ago de DO-9495, era bulk edit de label. Adjuntos guardados y descritos: las dos capturas son de tiendas distintas, 036 y 803, asi que la evidencia no separa discri"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28581"
+  },
+  {
+   "ticket": "RCS-28281",
+   "resumen": "Ahold - Transaction Data Load For August 10, 2026 Incomplete  (AHL/ Ahold Instance of 5.4)",
+   "estado": "Under Customer Review",
+   "prioridad": "High",
+   "reporta": "Jacquelyn Wunders",
+   "labels": [],
+   "edad": 37,
+   "nivel": 4,
+   "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+   "motivo": "lo reportaste el 2026-09-07 y todavia no esta en Jira",
+   "dias": 9,
+   "alertas": [
+    "el cliente no oye nada de Appriss hace 9 dias",
+    "SLA en riesgo, prioridad High: llevas 29 dias desde que tomaste el ticket sin avance escrito en la solucion, techo de trabajo 3 dias"
+   ],
+   "silencio_cliente": 9,
+   "avance_real": false,
+   "dias_desde_toma": 29,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Rodney Cummings , Thank you for the update. We committed on 8/27 to reviewing this with our internal team. That review is still open on our side. Can Becky run the same 10 minute check she did on 8/20 between 6 and 8 PM for the other flagged dates, 8/11, 8/12, 8/19, 8/20, 8/22 and 8/25. We will ",
+   "bitacora": {
+    "fecha": "2026-09-07",
+    "nota": "Investigado el estancamiento. Causa es un traspaso a Nikita del 27 ago que no se completo y una pregunta interna de Ayesha sobre analisis de huecos en bloques de 10 minutos que quedo sin responder. Entregados informe e instructivo con pasos para cerrar ownership, verificar la base de tenant, escalar a Viraj y actualizar al cliente. (09:28)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28281"
+  },
+  {
+   "ticket": "RCS-28294",
+   "resumen": "Vallarta - Smart Alerts no Triggering ",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "Tatiana Barcenas",
+   "labels": [
+    "EB&F_scheduled",
+    "Uni_Jul_26_AlertsNotifications"
+   ],
+   "edad": 36,
+   "nivel": 4,
+   "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+   "motivo": "lo reportaste el 2026-09-17 y todavia no esta en Jira",
+   "dias": 2,
+   "alertas": [],
+   "silencio_cliente": 2,
+   "avance_real": true,
+   "dias_desde_toma": 22,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Tatiana Barcenas",
+   "ultimo_texto": "Hello Juan, Thank you for your assistance and updates. Regards, Tatiana Barcenas",
+   "bitacora": {
+    "fecha": "2026-09-17",
+    "nota": "Aclarado con Juan: confirmar causa no es lo mismo que resolverla, el fix lo hace Engineering. Orden fijado: 1 crear ticket login, 2 responder a Shandana con numero real, 3 transicionar a Under Engineering Review, 4 avisar a Tatiana con inbox/2026-09-17-rcs-28294-respuesta-tatiana-split.md (15:25)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28294"
+  },
+  {
+   "ticket": "RCS-28099",
+   "resumen": "CWH - HYP to RCS - Item Discount Logic",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "James McKenna",
+   "labels": [
+    "EB&F_scheduled",
+    "clientproject"
+   ],
+   "edad": 49,
+   "nivel": 4,
+   "etiqueta": "EN MOVIMIENTO INTERNO",
+   "motivo": "sin nada pendiente de cara al cliente",
+   "dias": 2,
+   "alertas": [],
+   "silencio_cliente": 2,
+   "avance_real": false,
+   "dias_desde_toma": 2,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "James McKenna",
+   "ultimo_texto": "Hi Juan, Our team still need more time, this is a lot of work as we have 6 lots of data to combine, will update when I have more of a timeline --- | Regards, **James McKenna** National Loss Prevention Operations & Analytics Manager : Loss Prevention **M** +61 423 662 900 **E** [james.mckenna@chemist",
+   "bitacora": null,
+   "url": "https://trebuco.atlassian.net/browse/RCS-28099"
+  },
+  {
+   "ticket": "RCS-28881",
+   "resumen": "Nexcom - Unable to Edit APIS Audit",
+   "estado": "Work in progress",
+   "prioridad": "Medium",
+   "reporta": "Carlo Conty",
+   "labels": [],
+   "edad": 6,
+   "nivel": 4,
+   "etiqueta": "EN MOVIMIENTO INTERNO",
+   "motivo": "sin nada pendiente de cara al cliente",
+   "dias": 1,
+   "alertas": [
+    "Carlo Conty te menciono directo"
+   ],
+   "silencio_cliente": 1,
+   "avance_real": true,
+   "dias_desde_toma": 5,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Carlo Conty",
+   "ultimo_texto": "Good morning, Juan! The page sits blank as soon as I click the audit and it takes about 8-10 minutes for the \"This Page Isn't Responding\" prompt to pop up. After clicking the audit: Prompt after 8-10 minutes. Our Operations team decided yesterday to split the Annual Review into two separate audits-R",
+   "bitacora": {
+    "fecha": "2026-09-15",
+    "nota": "Carlo respondio 07:27 ET. El template ANNUAL OPS/SERVICES REVIEW aparece con Form status.0 y\nTemplate deleted.0, o sea ni borrado ni expirado. Cae la hipotesis del template borrado.\nEl editor del template SI le abre. Lo que no abre son los formularios de adentro. Trece formularios\ncuelgan del template, uno por año desde 2019 mas cuatro de 2026, y solo cargan tres, IDs 577, 575\ny 341. Otro template"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28881"
+  },
+  {
+   "ticket": "RCS-28871",
+   "resumen": " Walgreens -Peak Season Readiness 2026 : 3rd party connect (Appriss Retail)",
+   "estado": "Under Infrastructure Review",
+   "prioridad": "Medium",
+   "reporta": "Shreedhar Anand",
+   "labels": [],
+   "edad": 6,
+   "nivel": 4,
+   "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+   "motivo": "lo reportaste el 2026-09-15 y todavia no esta en Jira",
+   "dias": 1,
+   "alertas": [],
+   "silencio_cliente": 1,
+   "avance_real": true,
+   "dias_desde_toma": 6,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Shreedhar Anand , Thank you for your patience on this one. I have updates on three of the four items from your questionnaire. For certificates, Walgreens is currently part of a migration project that will remove the need for the certificate that requires manual renewal today. Since that project ",
+   "bitacora": {
+    "fecha": "2026-09-15",
+    "nota": "Investigacion: cuestionario de Peak Season Readiness es infra (certs, stress test/auto-scaling), no Support. Precedentes RCS-27847 Samsung y RCS-27840 Kohl's. Falta identificar quien entrega contact list/escalation matrix a cliente. (15:46)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28871"
+  },
+  {
+   "ticket": "RCS-27765",
+   "resumen": "Winn-Dixie - Data file check",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Heaven Poirot",
+   "labels": [
+    "EB&F_scheduled",
+    "Support_Data_Team"
+   ],
+   "edad": 68,
+   "nivel": 4,
+   "etiqueta": "EN MOVIMIENTO INTERNO",
+   "motivo": "sin nada pendiente de cara al cliente",
+   "dias": 0,
+   "alertas": [],
+   "silencio_cliente": 0,
+   "avance_real": true,
+   "dias_desde_toma": 61,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Heaven Poirot , Thank you for the update. We will keep the ticket open while Matthew and the team review whether the file is being generated in the expected format. Please let me know once that review is complete. If another submission is sent, please include the date and time so I can verify wh",
+   "bitacora": {
+    "fecha": "2026-09-14",
+    "nota": "Revisado en vivo. El reenvio del 9-10 sep entro por el proceso API regular, sin archivo separado. Appriss no ha verificado el conteo posterior. Tres pasos de verificacion en inbox/2026-09-14-rcs-27765.md (17:52)"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-27765"
+  },
+  {
+   "ticket": "RCS-28212",
+   "resumen": "APIS - Elevated Cases have wrong Case Type",
+   "estado": "Under Customer Review",
+   "prioridad": "Medium",
+   "reporta": "Vinh Luong",
+   "labels": [
+    "EB&F_scheduled",
+    "Escalated"
+   ],
+   "edad": 42,
+   "nivel": 4,
+   "etiqueta": "TRABAJADO, SIN PEGAR EN JIRA",
+   "motivo": "lo reportaste el 2026-09-16 y todavia no esta en Jira",
+   "dias": 0,
+   "alertas": [],
+   "silencio_cliente": 0,
+   "avance_real": true,
+   "dias_desde_toma": 1,
+   "causa_estado": "sin causa registrada",
+   "causa_texto": "",
+   "ultimo_autor": "Juan Martinez",
+   "ultimo_texto": "Hi @Vinh Luong , we've corrected the Corporate case type configuration on our side. Could you please check the affected cases and report and let us know if you're seeing the expected results? Thank you.",
+   "bitacora": {
+    "fecha": "2026-09-16",
+    "nota": ", causa raiz confirmada por Ingenieria, Matt Kamminga\n\nMatt responde en Teams tras ver el hallazgo de ayer. Cita textual: \"this is incorrect configuration\nwithin the application. The client has the ability to configure the base value for each event type\nin this way. When elevating from an incident to a case the value is transferred across.\" Despues:\n\"incidents are configured to be cor, cases are c"
+   },
+   "url": "https://trebuco.atlassian.net/browse/RCS-28212"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+# Adjunto MicrosoftTeams-video.mp4
+Ruta: adjuntos/RCS-29310/MicrosoftTeams-video.mp4
+Tipo: mp4
+Ticket: RCS-29310
+Modificado: 2026-10-09
+
+Video de 2.2 MB. Sin transcripción.

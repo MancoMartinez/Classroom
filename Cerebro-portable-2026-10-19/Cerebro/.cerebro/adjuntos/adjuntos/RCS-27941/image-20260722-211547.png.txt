@@ -1,0 +1,26 @@
+# Adjunto image-20260722-211547.png
+Ruta: adjuntos/RCS-27941/image-20260722-211547.png
+Tipo: png
+Ticket: RCS-27941
+Modificado: 2026-09-08
+
+Texto reconocido por OCR:
+Permission Groups
+Choose values to add
+Nothing selected
+Group Name
+ApprissCase Search Users
+ApprissCase Users
+Basic Users
+Date From
+Date To
+Persistent
+True
+False
+True
+3 results
+Filter...
+Inserted Date Time
+04/14/2026, 07:59:26 AM
+07/20/2026, 11:22:37 PM
+04/27/2026.12:43:13 PM
